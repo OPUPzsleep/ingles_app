@@ -984,6 +984,10 @@ export const GRAM_CONCEPTS: GramConcept[] = [
         "body": "Consejo práctico: pregúntate si lo que sigue es un punto de partida en el calendario (una fecha, un día, un año, un momento: \"since 2020\", \"since Monday\", \"since I was a child\") → usa SINCE. Si lo que sigue es una cantidad de tiempo que puedes contar (minutos, horas, días, años: \"for two years\", \"for a while\", \"for ages\") → usa FOR. Truco rápido: si puedes poner un número antes de la palabra (2 years, 10 minutes), es FOR; si es una fecha o momento concreto en el calendario, es SINCE."
       },
       {
+        "type": "tip",
+        "body": "Truco: SINCE = semilla (marca el punto exacto donde se plantó la acción, el inicio). FOR = flecha (representa la duración completa recorrida)."
+      },
+      {
         "type": "warn",
         "body": "Ambas se usan casi siempre con present perfect (\"I have lived...\", \"She has worked...\"), no con presente simple como en español."
       }
@@ -1010,6 +1014,10 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       {
         "type": "tip",
         "body": "Consejo práctico: usa MAKE cuando al final obtienes algo nuevo, un resultado u objeto que antes no existía (make a cake, make money, make a plan, make a mistake, make noise). Usa DO para actividades, tareas o tiempo dedicado a algo, sin crear un objeto nuevo (do homework, do the shopping, do exercise, do a favor). Truco rápido: si al terminar puedes señalar \"esto\" con el dedo (un pastel, un plan, un error), probablemente es MAKE; si es una actividad o tarea general, es DO."
+      },
+      {
+        "type": "tip",
+        "body": "Truco: MAKE = Manualidad/Manufactura — lo usas cuando creas o fabricas algo que antes no existía (make a cake, make a plan). DO = Deberes — lo usas para tareas y rutinas donde no fabricas nada físico (do homework, do exercise)."
       },
       {
         "type": "warn",
@@ -1291,6 +1299,155 @@ export const GRAM_CONCEPTS: GramConcept[] = [
             "I would have spoken"
           ]
         ]
+      }
+    ]
+  },
+  {
+    "id": "palabras-que-se-confunden-por-ortografia",
+    "cat": "terminologia",
+    "title": "Palabras que se confunden por ortografía",
+    "tag": "Truco de ortografía",
+    "blocks": [
+      {
+        "type": "def",
+        "heading": "Dessert vs Desert",
+        "body": "Dos palabras que se escriben casi igual pero significan cosas muy distintas."
+      },
+      {
+        "type": "tip",
+        "body": "Truco: deSSert (postre) lleva doble S porque siempre quieres Servirte Segundo — quieres repetir. deSert (desierto) lleva una sola S porque está Solo y vacío."
+      },
+      {
+        "type": "example",
+        "text": "For dessert, we had chocolate cake. · The Sahara is the largest hot desert in the world.",
+        "transl": "De postre, comimos pastel de chocolate. · El Sahara es el desierto cálido más grande del mundo."
+      }
+    ]
+  },
+  {
+    "id": "sonido-th",
+    "cat": "pronunciacion",
+    "title": "El sonido TH (think / this)",
+    "tag": "Sonido difícil",
+    "blocks": [
+      {
+        "type": "def",
+        "heading": "¿Qué es?",
+        "body": "El sonido \"th\" no existe en español, así que hay que aprenderlo desde cero — no es una S, una D, una T ni una F, aunque los hispanohablantes tienden a reemplazarlo por esos sonidos."
+      },
+      {
+        "type": "compare",
+        "esLabel": "🇲🇽 Español",
+        "esBody": "No tenemos este sonido. Solemos decir algo como \"tink\" o \"sink\" en vez de \"think\".",
+        "enLabel": "🇺🇸 Inglés",
+        "enBody": "Se produce con la punta de la lengua ENTRE los dientes, dejando salir el aire suavemente."
+      },
+      {
+        "type": "tip",
+        "body": "Truco: pon la punta de la lengua entre los dientes de arriba y abajo, como si fueras a sacarla un poquito, y sopla aire suave. Si te vibra la garganta al hacerlo, es el \"th\" sonoro de THIS/THAT/THE. Si no vibra, es el sordo de THINK/THANKS/THREE."
+      },
+      {
+        "type": "example",
+        "text": "think /θɪŋk/ (sordo) · this /ðɪs/ (sonoro) · three /θriː/ vs tree /triː/",
+        "transl": "Si dices \"tree\" (árbol) en vez de \"three\" (tres), la lengua se quedó atrás de los dientes en vez de entre ellos."
+      }
+    ]
+  },
+  {
+    "id": "v-vs-b",
+    "cat": "pronunciacion",
+    "title": "V vs B (very / berry)",
+    "tag": "Sonido difícil",
+    "blocks": [
+      {
+        "type": "def",
+        "heading": "¿Qué es?",
+        "body": "En español, B y V suenan exactamente igual (ambas son /b/). En inglés son dos sonidos distintos, y confundirlos puede cambiar el significado de la palabra."
+      },
+      {
+        "type": "compare",
+        "esLabel": "🇲🇽 Español",
+        "esBody": "\"Vaca\" y \"baca\" suenan igual — no hay diferencia al hablar.",
+        "enLabel": "🇺🇸 Inglés",
+        "enBody": "\"vote\" /voʊt/ (votar) y \"boat\" /boʊt/ (barco) son palabras completamente distintas."
+      },
+      {
+        "type": "tip",
+        "body": "Truco: para la V, muerde suavemente tu labio inferior con los dientes de arriba y deja vibrar el aire — como el zumbido de una abeja \"vvvv\". Para la B, junta los labios y suéltalos de golpe, sin dientes y sin vibración."
+      },
+      {
+        "type": "example",
+        "text": "very /ˈveri/ vs berry /ˈberi/ · vote /voʊt/ vs boat /boʊt/"
+      }
+    ]
+  },
+  {
+    "id": "acento-sustantivo-vs-verbo",
+    "cat": "pronunciacion",
+    "title": "Acento: sustantivo vs verbo (PREsent / preSENT)",
+    "tag": "Acentuación",
+    "blocks": [
+      {
+        "type": "def",
+        "heading": "¿Qué es?",
+        "body": "Muchas palabras de dos sílabas cambian de significado (sustantivo o verbo) solo moviendo el acento — sin cambiar ni una letra."
+      },
+      {
+        "type": "compare",
+        "esLabel": "🇲🇽 Español",
+        "esBody": "El acento casi nunca distingue entre sustantivo y verbo.",
+        "enLabel": "🇺🇸 Inglés",
+        "enBody": "PREsent (sustantivo: regalo) vs preSENT (verbo: presentar) — misma palabra, distinto significado según el acento."
+      },
+      {
+        "type": "tip",
+        "body": "Truco: \"el nombre va primero\" — en el SUSTANTIVO, el acento cae en la PRIMERA sílaba. En el VERBO, el acento se mueve a la SEGUNDA."
+      },
+      {
+        "type": "example",
+        "text": "RECord /ˈrekɔːrd/ (sustantivo: disco) vs reCORD /rɪˈkɔːrd/ (verbo: grabar) · PREsent vs preSENT · Import (n.) vs imPORT (v.)"
+      }
+    ]
+  },
+  {
+    "id": "ed-pronunciacion",
+    "cat": "pronunciacion",
+    "title": "La terminación -ED en el pasado",
+    "tag": "Regla de sonido",
+    "blocks": [
+      {
+        "type": "def",
+        "heading": "¿Qué es?",
+        "body": "La terminación -ED de los verbos regulares en pasado no siempre suena igual — depende de cómo termina el verbo antes de agregarla."
+      },
+      {
+        "type": "table",
+        "cols": [
+          "Termina en…",
+          "Se pronuncia",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Sonido sordo (p, k, f, s, sh, ch)",
+            "/t/",
+            "worked /wɜːrkt/"
+          ],
+          [
+            "Sonido sonoro o vocal",
+            "/d/",
+            "lived /lɪvd/"
+          ],
+          [
+            "La letra T o D",
+            "/ɪd/ (sílaba extra)",
+            "wanted /ˈwɒntɪd/"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "body": "Truco: solo cuando el verbo YA termina en T o D se agrega una sílaba extra (\"id\") — es como si la palabra necesitara una sílaba de más para no chocar con el mismo sonido. En todos los demás casos, -ed es solo un sonido /t/ o /d/ pegado al final, sin sílaba nueva."
       }
     ]
   }

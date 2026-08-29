@@ -464,6 +464,11 @@ export const presentPerfectUnits: Record<number, Unit> = {
         "head": "When vs How long",
         "body": "'When did it start?' → past simple | 'How long has it been going on?' → present perfect",
         "note": "When did you start learning English? (past simple) · How long have you been learning English? (present perfect)"
+      },
+      {
+        "head": "Truco: SINCE = semilla, FOR = flecha",
+        "body": "SINCE es como una semilla: marca el punto exacto donde se plantó/empezó la acción (desde). FOR es como una flecha: representa la duración completa recorrida (por/durante).",
+        "note": "I've lived here SINCE 2015. (el punto de partida) · I've lived here FOR 5 years. (la duración)"
       }
     ],
     "quiz": [

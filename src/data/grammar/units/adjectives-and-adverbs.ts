@@ -14,6 +14,11 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "head": "-ED adjectives — describe the person's feeling",
         "body": "-ed adjectives say how a PERSON feels.",
         "note": "I was bored during the film. (I felt boredom) · She was shocked by the news. · Are you interested in art?"
+      },
+      {
+        "head": "Truco: -ED = Estado, -ING = INgrediente",
+        "body": "-ED describe tu Estado de ánimo (cómo te sientes TÚ). -ING es el INgrediente que causa ese sentimiento en otros (la cosa o situación).",
+        "note": "I am bored. (mi estado) · The movie is boring. (el ingrediente que causa el aburrimiento)"
       }
     ],
     "table": {

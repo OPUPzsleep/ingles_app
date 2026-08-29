@@ -19,6 +19,11 @@ export const prepositionsUnits: Record<number, Unit> = {
         "head": "IN — months, years, seasons, longer periods",
         "body": "For months, years, seasons, and parts of the day.",
         "note": "in January · in 2024 · in summer · in the morning / afternoon / evening · in the 19th century"
+      },
+      {
+        "head": "Truco: AT exacTo, ON calendario, IN INmenso",
+        "body": "AT = 'Ahora exactamenTe' (horas y momentos precisos). ON = días que pONes en el calendario (días y fechas concretas). IN = INmenso (meses, años, estaciones — periodos más grandes).",
+        "note": "AT 3:00pm · ON Monday · IN 2024"
       }
     ],
     "table": {

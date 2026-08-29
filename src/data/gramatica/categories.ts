@@ -8,4 +8,5 @@ export const GRAM_CATS: GramCategory[] = [
   { id: 'frases', name: 'Tipos de frases', icon: '🏗️', desc: 'Estructura oracional' },
   { id: 'diferencias', name: 'ES vs EN', icon: '🔀', desc: 'Diferencias clave' },
   { id: 'terminologia', name: 'Terminología gramatical', icon: '📖', desc: 'Glosario completo' },
+  { id: 'pronunciacion', name: 'Trucos de pronunciación', icon: '🔊', desc: 'Sonidos difíciles para hispanohablantes' },
 ];
