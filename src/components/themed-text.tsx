@@ -4,7 +4,17 @@ import { Fonts, ThemeColor } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
 export type ThemedTextProps = TextProps & {
-  type?: 'default' | 'title' | 'small' | 'smallBold' | 'subtitle' | 'link' | 'linkPrimary' | 'code';
+  type?:
+    | 'default'
+    | 'title'
+    | 'small'
+    | 'smallBold'
+    | 'subtitle'
+    | 'link'
+    | 'linkPrimary'
+    | 'code'
+    | 'cardTitle'
+    | 'label';
   themeColor?: ThemeColor;
 };
 
@@ -23,6 +33,8 @@ export function ThemedText({ style, type = 'default', themeColor, ...rest }: The
         type === 'link' && styles.link,
         type === 'linkPrimary' && styles.linkPrimary,
         type === 'code' && styles.code,
+        type === 'cardTitle' && styles.cardTitle,
+        type === 'label' && styles.label,
         style,
       ]}
       {...rest}
@@ -69,5 +81,17 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.mono,
     fontWeight: Platform.select({ android: 700 }) ?? 500,
     fontSize: 12,
+  },
+  cardTitle: {
+    fontSize: 19,
+    lineHeight: 25,
+    fontWeight: 700,
+  },
+  label: {
+    fontSize: 11,
+    lineHeight: 14,
+    fontWeight: 700,
+    textTransform: 'uppercase',
+    letterSpacing: 0.4,
   },
 });

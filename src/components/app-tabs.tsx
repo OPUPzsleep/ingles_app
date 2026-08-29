@@ -5,27 +5,31 @@ import { Colors } from '@/constants/theme';
 
 export default function AppTabs() {
   const scheme = useColorScheme();
-  const colors = Colors[scheme === 'unspecified' ? 'light' : scheme];
+  const colors = Colors[scheme === 'unspecified' ? 'light' : scheme ?? 'light'];
 
   return (
     <NativeTabs
       backgroundColor={colors.background}
-      indicatorColor={colors.backgroundElement}
-      labelStyle={{ selected: { color: colors.text } }}>
+      indicatorColor={colors.backgroundSelected}
+      labelStyle={{ selected: { color: colors.primary } }}>
       <NativeTabs.Trigger name="index">
-        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/home.png')}
-          renderingMode="template"
-        />
+        <NativeTabs.Trigger.Label>Inicio</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="house.fill" md="home" />
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger name="explore">
-        <NativeTabs.Trigger.Label>Explore</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/explore.png')}
-          renderingMode="template"
-        />
+      <NativeTabs.Trigger name="aprender">
+        <NativeTabs.Trigger.Label>Aprender</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="book.fill" md="menu_book" />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="tarjetas">
+        <NativeTabs.Trigger.Label>Tarjetas</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="rectangle.stack.fill" md="layers" />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="vocabulario">
+        <NativeTabs.Trigger.Label>Vocabulario</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="character.book.closed.fill" md="translate" />
       </NativeTabs.Trigger>
     </NativeTabs>
   );
