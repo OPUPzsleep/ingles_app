@@ -7,17 +7,17 @@ export const pastPerfectUnits: Record<number, Unit> = {
     "explain": [
       {
         "head": "Form",
-        "body": "had + past participle (same for all persons)",
+        "body": "The past perfect is formed with 'had' followed by the past participle of the main verb, and unlike the present perfect, this form never changes with the subject — it's always 'had', whether the subject is I, she, or they. This simplicity makes it one of the easier tenses to form once you already know your past participles from the present perfect. Negatives and questions follow the same pattern as other 'have' tenses: 'hadn't' for negatives, and 'had' moved before the subject for questions.",
         "note": "I had finished · She had gone · They had eaten · We hadn't started · Had you met?"
       },
       {
         "head": "The earlier of two past actions",
-        "body": "Use past perfect for the action that happened FIRST, before another past action.",
+        "body": "The past perfect's main job is to show that one past action happened before another past action — it marks whichever event came first in a sequence of two. In 'when I arrived at the party, Tom had already gone home', the leaving happened first (past perfect) and the arriving happened second (past simple), even though both events are described in the same sentence. Without the past perfect, it would be ambiguous which event came first; with it, the order is crystal clear.",
         "note": "When I arrived at the party, Tom had already gone home. (1st: Tom left. 2nd: I arrived.)"
       },
       {
         "head": "With: because / after / by the time / before",
-        "body": "Common with these conjunctions to show sequence.",
+        "body": "The past perfect frequently appears alongside conjunctions like 'because', 'after', 'by the time', and 'before', which naturally set up a sequence between two past events. These words already hint at an order of events, and the past perfect confirms which one happened earlier by marking it explicitly. 'She was tired because she hadn't slept well' and 'by the time I got there, the film had started' both use this pattern to make the earlier event unmistakable.",
         "note": "She was tired because she hadn't slept well. · By the time I got there, the film had started."
       }
     ],
@@ -93,12 +93,12 @@ export const pastPerfectUnits: Record<number, Unit> = {
     "explain": [
       {
         "head": "Form",
-        "body": "had been + verb-ing",
+        "body": "The past perfect continuous is formed with 'had been' plus the main verb in its -ing form, combining the past perfect's sense of 'before another past moment' with the continuous's sense of an ongoing activity. Like the simple past perfect, 'had' never changes regardless of the subject, so the whole structure stays identical for I, we, she, or they. This form lets you describe not just that something happened earlier, but that it was actively in progress for some time before that other past moment.",
         "note": "I had been waiting · She had been working · They had been studying"
       },
       {
         "head": "Activity before a past moment",
-        "body": "For an activity in progress before a past moment (often explains a past state).",
+        "body": "We use the past perfect continuous for an activity that was in progress for some time before a specific past moment, often to explain why someone was in a certain state at that point. 'I was tired because I had been working all day' uses the ongoing activity (working) to explain a past feeling (tiredness), and 'when he arrived, we had been waiting for two hours' emphasizes the duration of the waiting up until his arrival. The focus is on the activity and how long it lasted, much like the present perfect continuous does for now, but shifted one step further into the past.",
         "note": "I was tired because I had been working all day. · When he arrived, we had been waiting for two hours."
       }
     ],
@@ -139,17 +139,17 @@ export const pastPerfectUnits: Record<number, Unit> = {
     "explain": [
       {
         "head": "Have and have got — same meaning",
-        "body": "'Have' and 'have got' mean the same for possession. 'Have got' is more informal/British.",
+        "body": "'Have' and 'have got' express exactly the same meaning when talking about possession, relationships, or characteristics — there's no difference in meaning between 'I have a car' and 'I've got a car'. The only real difference is style: 'have got' is more common in informal, spoken British English, while plain 'have' works everywhere and is more typical in American English and in writing. Both are completely correct, so the choice mostly comes down to register and habit rather than grammar rules.",
         "note": "I have a car. = I've got a car. · Do you have any brothers? = Have you got any brothers?"
       },
       {
         "head": "Questions and negatives",
-        "body": "Have: Do you have...? / I don't have... | Have got: Have you got...? / I haven't got...",
+        "body": "Because 'have' and 'have got' work differently, they form questions and negatives in different ways. Plain 'have' behaves like an ordinary verb and needs 'do/does' as an auxiliary — 'do you have a pen?', 'I don't have one'. 'Have got' instead treats 'have' as an auxiliary itself, so no 'do' is needed — 'have you got a pen?', 'I haven't got one'. Both versions are equally correct; just don't mix the two patterns together in the same sentence.",
         "note": "Do you have a pen? / Have you got a pen? (both correct)"
       },
       {
         "head": "Past tense — only 'had'",
-        "body": "For past tense, only use 'had' (not 'had got' in standard English).",
+        "body": "In the past tense, the 'have got' pattern disappears, and standard English uses only 'had' for possession, with no 'got' attached. So 'I had a dog when I was young' is correct, while 'I had got a dog' is not standard, even though 'have got' was fine in the present. This is a common trap for learners who assume the present-tense pattern simply carries over into the past.",
         "note": "I had a dog when I was young. (NOT: I had got a dog)"
       }
     ],
@@ -201,17 +201,17 @@ export const pastPerfectUnits: Record<number, Unit> = {
     "explain": [
       {
         "head": "Used to — past habit or state",
-        "body": "Use 'used to + infinitive' for something that happened regularly in the past but doesn't happen now.",
+        "body": "'Used to' plus the base form of a verb describes a habit or state that was regularly true in the past but has since stopped being true — the key idea is a clear contrast between 'then' and 'now'. 'I used to play tennis a lot, but I don't play now' explicitly makes that contrast, and even without saying it outright, 'used to' always implies the situation is no longer the case. It works both for repeated actions (playing tennis) and for lasting past states (used to live in London).",
         "note": "I used to play tennis a lot, but I don't play now. · She used to live in London."
       },
       {
         "head": "Question and negative",
-        "body": "Did you use to...? / I didn't use to... (no -d in negative/question)",
+        "body": "In questions and negatives, 'used to' loses its -d and becomes simply 'use to', appearing after the auxiliary 'did' or 'didn't' — 'did you use to smoke?' and 'I didn't use to like vegetables'. This happens because 'did' already carries the past tense marking, so 'used' doesn't need its own -ed ending anymore, exactly like any other verb after 'did'. Writing 'did you used to' is a very common mistake, since it feels natural to keep the -d, but standard English drops it.",
         "note": "Did you use to smoke? · I didn't use to like vegetables, but I do now."
       },
       {
         "head": "Used to vs Past Simple",
-        "body": "'Used to' emphasises that something was a habit. Past simple can also express habits.",
+        "body": "'Used to' specifically emphasizes that something was a repeated habit or a state that lasted over time in the past, highlighting the contrast with the present. The ordinary past simple can express the same habitual meaning too, just with less emphasis on that habit-versus-now contrast — 'I used to walk to school' and 'I walked to school every day' can both describe the same repeated past routine. The difference is mostly one of emphasis: 'used to' foregrounds the idea that things are different now, while the past simple just states what happened.",
         "note": "I used to walk to school. = I walked to school every day. (both correct for habits)"
       }
     ],

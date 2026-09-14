@@ -7,16 +7,16 @@ export const reportedSpeechUnits: Record<number, Unit> = {
     "explain": [
       {
         "head": "Direct vs Reported speech",
-        "body": "Direct: 'I'm tired,' she said. Reported: She said (that) she was tired."
+        "body": "Direct speech quotes someone's exact words, usually inside quotation marks: 'I'm tired,' she said. Reported speech instead tells us what someone said without quoting them word for word, which means dropping the quotation marks and often shifting pronouns and verb tenses to fit the new context: She said (that) she was tired. The word 'that' here is optional and can always be left out without changing the meaning."
       },
       {
         "head": "Tense backshift in reported speech",
-        "body": "When reporting, verb tenses shift back one step.",
+        "body": "When you report what someone said, the verb tense usually moves one step back into the past, even if what they said is still true — this pattern is called 'backshift'. It happens because the act of reporting takes place later than the original words were spoken, so the whole sentence gets anchored further back in time. Present simple becomes past simple, present continuous becomes past continuous, and past simple becomes past perfect, exactly as shown in the examples.",
         "note": "'I work here.' → He said he worked there.\n'I'm working.' → He said he was working.\n'I worked.' → He said he had worked."
       },
       {
         "head": "Will → would / can → could",
-        "body": "Modal verbs also shift back.",
+        "body": "Modal verbs follow the same backshift pattern as other tenses: 'will' becomes 'would' and 'can' becomes 'could' once you move a sentence into reported speech. This keeps the sentence consistent, since anything reported after a past-tense reporting verb like 'she said' or 'he asked' needs to sit one step further back in time. Not every modal changes, though — 'should', 'might', 'could', and 'would' already are the 'back' form, so they stay the same.",
         "note": "'I will come.' → She said she would come.\n'I can help.' → He said he could help."
       }
     ],
@@ -104,17 +104,17 @@ export const reportedSpeechUnits: Record<number, Unit> = {
     "explain": [
       {
         "head": "Reported questions — word order changes",
-        "body": "In reported questions, use statement word order (not question word order). No do/does/did.",
+        "body": "When you report a question, it stops being a direct question and becomes part of a larger statement, so it must follow normal statement word order (subject before verb) instead of the inverted order direct questions use. The auxiliary 'do/does/did' also disappears, because it was only needed to create that inversion in the first place. Learners often keep the question order out of habit, but 'she asked where I lived' is correct while 'she asked where did I live' is not.",
         "note": "'Where do you live?' → She asked me where I lived. (NOT: where did I live)"
       },
       {
         "head": "Yes/No questions → whether/if",
-        "body": "Yes/No questions become 'if' or 'whether' in reported speech.",
+        "body": "A direct question expecting a yes-or-no answer has no question word like 'where' or 'what' to introduce it once it's reported, so English uses 'if' or 'whether' to fill that role instead. The two words work the same way here and are generally interchangeable. The rest of the sentence still follows the normal reported-speech rules: statement word order and, usually, a tense backshift.",
         "note": "'Are you coming?' → She asked if/whether I was coming."
       },
       {
         "head": "Time and place changes",
-        "body": "Time and place expressions change in reported speech.",
+        "body": "When the moment or place of reporting is different from when and where the original words were spoken, time and place expressions need to change to stay accurate — something called 'today' last week is no longer 'today' when you report it now, so it becomes 'that day'. The same logic applies to place words, such as 'here' becoming 'there' once you are no longer in that location. These are not rules to apply mechanically every time — they only matter when the context has genuinely changed.",
         "note": "now→then, today→that day, yesterday→the day before, here→there, tomorrow→the next day"
       }
     ],

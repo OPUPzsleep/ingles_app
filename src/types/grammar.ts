@@ -21,6 +21,44 @@ export interface Flashcard {
   back: string;
 }
 
+export type SyntaxRole = 'subject' | 'verb' | 'object' | 'connector';
+
+export interface SyntaxChip {
+  text: string;
+  role?: SyntaxRole;
+}
+
+export interface GrammarFormula {
+  label?: string;
+  chips: SyntaxChip[];
+}
+
+export interface ContrastSide {
+  label: string;
+  example: string;
+  highlight?: string;
+}
+
+export interface ContrastCard {
+  left: ContrastSide;
+  right: ContrastSide;
+  caption?: string;
+}
+
+export type ChatSpeaker = 'user' | 'other';
+
+export interface ChatMessage {
+  speaker: ChatSpeaker;
+  text: string;
+  translation?: string;
+}
+
+export interface ReadingStory {
+  title?: string;
+  body: string;
+  translation?: string;
+}
+
 export interface Unit {
   title: string;
   topic: string;
@@ -28,6 +66,12 @@ export interface Unit {
   table?: ReferenceTable;
   quiz: QuizQuestion[];
   flashcards: Flashcard[];
+  syntaxChips?: GrammarFormula[];
+  contrastCard?: ContrastCard;
+  simulatedChat?: ChatMessage[];
+  readingText?: ReadingStory;
+  tips?: string[];
+  dailyWords?: VocabEntry[];
 }
 
 export interface Topic {
