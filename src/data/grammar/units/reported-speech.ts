@@ -96,7 +96,12 @@ export const reportedSpeechUnits: Record<number, Unit> = {
         "front": "Tense backshift in reported speech",
         "back": "DIRECT → REPORTED:\n'I work' → said he WORKED\n'I'm working' → said he WAS WORKING\n'I worked' → said he HAD WORKED\n'I will' → said he WOULD\n'I can' → said he COULD"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "What She Told Me",
+      "body": "Yesterday I bumped into my old friend Laura. She told me she worked at a hospital now. 'I work here as a nurse,' she said, and she seemed really happy. She also said she was studying for a new certification and that she would finish it next year. I asked about her brother, and she said he had moved to Canada two years ago. She told me he could speak French fluently now. Before we said goodbye, she said she would call me soon to catch up properly. I really hope she does!",
+      "translation": "Ayer me encontré con mi vieja amiga Laura. Me dijo que ahora trabajaba en un hospital. 'Trabajo aquí como enfermera,' dijo, y parecía realmente feliz. También dijo que estaba estudiando para una nueva certificación y que la terminaría el próximo año. Le pregunté por su hermano, y dijo que se había mudado a Canadá hace dos años. Me contó que ahora podía hablar francés con fluidez. Antes de despedirnos, dijo que me llamaría pronto para ponernos al día como es debido. ¡Realmente espero que lo haga!"
+    }
   },
   "48": {
     "title": "Reported Speech 2 (Questions)",
@@ -147,6 +152,16 @@ export const reportedSpeechUnits: Record<number, Unit> = {
         "front": "Reported questions — word order",
         "back": "DIRECT: 'Where does she live?'\nREPORTED: He asked where she LIVED. ✅\n(NOT: He asked where did she live ❌)\n\nKey: use statement word order in reported questions."
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "How was your job interview?", "translation": "¿Cómo estuvo tu entrevista de trabajo?" },
+      { "speaker": "user", "text": "It was interesting. They asked me where I had studied.", "translation": "Estuvo interesante. Me preguntaron dónde había estudiado." },
+      { "speaker": "other", "text": "What else did they ask?", "translation": "¿Qué más te preguntaron?" },
+      { "speaker": "user", "text": "They asked if I was available to start immediately.", "translation": "Me preguntaron si estaba disponible para empezar de inmediato." },
+      { "speaker": "other", "text": "Did they ask about your salary expectations?", "translation": "¿Te preguntaron sobre tus expectativas salariales?" },
+      { "speaker": "user", "text": "Yes, they asked how much I wanted to earn.", "translation": "Sí, me preguntaron cuánto quería ganar." },
+      { "speaker": "other", "text": "What did you say?", "translation": "¿Qué dijiste?" },
+      { "speaker": "user", "text": "I told them I wasn't sure yet.", "translation": "Les dije que todavía no estaba seguro." }
     ]
   }
 };

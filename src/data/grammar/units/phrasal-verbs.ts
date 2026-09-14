@@ -94,7 +94,12 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
         "front": "Phrasal verbs — separable vs inseparable",
         "back": "SEPARABLE: verb + object + particle OR verb + particle + object\n'Turn off the TV.' / 'Turn the TV off.' ✅\n\nINSEPARABLE: object always AFTER particle\n'Look after the children.' ✅\n'Look the children after.' ❌"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Babysitting Night",
+      "body": "Tonight I'm looking after my little cousin while my aunt is out. Before she left, she said, 'Please turn off the TV before he gets too sleepy, and turn on the hallway light so he isn't scared.' We had dinner, and then he wanted to play, so I told him, 'Sit down and let's read a book instead.' Halfway through the story, my aunt called — her car had broken down on the highway! I promised to look after him until she found a taxi. By the time she finally got home, he had already woken up twice asking for water, and I was exhausted!",
+      "translation": "Esta noche estoy cuidando a mi primito mientras mi tía salió. Antes de irse, dijo: 'Por favor apaga la tele antes de que le dé sueño, y enciende la luz del pasillo para que no tenga miedo.' Cenamos, y luego quiso jugar, así que le dije: 'Siéntate y mejor leamos un libro.' A la mitad del cuento, mi tía llamó — ¡su carro se había averiado en la autopista! Le prometí cuidarlo hasta que encontrara un taxi. Para cuando por fin llegó a casa, él ya se había despertado dos veces pidiendo agua, ¡y yo estaba agotada!"
+    }
   },
   "138": {
     "title": "Phrasal verbs 2: in/out",
@@ -145,6 +150,15 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
         "front": "Phrasal verbs: IN/OUT",
         "back": "fill IN · fit IN · join IN · take IN (understand)\ncarry OUT · find OUT · run OUT of · work OUT\ngive OUT · hand OUT · sell OUT"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Welcome! First, can you fill in this form with your details?", "translation": "¡Bienvenido! Primero, ¿puedes llenar este formulario con tus datos?" },
+      { "speaker": "user", "text": "Sure. I hope I fit in well with the team.", "translation": "Claro. Espero encajar bien con el equipo." },
+      { "speaker": "other", "text": "Don't worry, everyone will help you find out how things work here.", "translation": "No te preocupes, todos te ayudarán a descubrir cómo funcionan las cosas aquí." },
+      { "speaker": "user", "text": "Great. Is there a meeting I can join in today?", "translation": "Genial. ¿Hay alguna reunión en la que pueda participar hoy?" },
+      { "speaker": "other", "text": "Yes, at 3pm. We need to carry out a small project this week.", "translation": "Sí, a las 3pm. Necesitamos llevar a cabo un pequeño proyecto esta semana." },
+      { "speaker": "user", "text": "Perfect, I'll look up the client's information before then.", "translation": "Perfecto, buscaré la información del cliente antes de eso." },
+      { "speaker": "other", "text": "Good idea — oh, and we just ran out of coffee, so bring your own!", "translation": "Buena idea — ah, y se nos acabó el café, ¡así que trae el tuyo!" }
     ]
   },
   "139": {
@@ -201,7 +215,12 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
         "front": "Phrasal verbs: OUT",
         "back": "run OUT of = have no more\nfind OUT = discover\nwork OUT = exercise / calculate / solve\ncarry OUT = perform\nsell OUT = sell everything\npoint OUT = indicate"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Cleaning the Attic",
+      "body": "On Saturday, my brother and I decided to clean out the attic. Halfway through, we ran out of boxes, so we had to stop and buy more. While sorting through old things, I came across a box of photos from when we were kids — I hadn't seen them in years! My brother tried to work out how old we were in one picture, but he couldn't remember the exact year. Then he pointed out that our mom had written the date on the back of each photo. We laughed and kept working until it got dark, and somehow we still hadn't finished!",
+      "translation": "El sábado, mi hermano y yo decidimos limpiar el ático. A la mitad, se nos acabaron las cajas, así que tuvimos que parar y comprar más. Mientras ordenábamos cosas viejas, encontré por casualidad una caja de fotos de cuando éramos niños — ¡no las había visto en años! Mi hermano intentó calcular qué edad teníamos en una foto, pero no recordaba el año exacto. Entonces señaló que nuestra mamá había escrito la fecha detrás de cada foto. Nos reímos y seguimos trabajando hasta que oscureció, ¡y de alguna manera todavía no habíamos terminado!"
+    }
   },
   "140": {
     "title": "Phrasal verbs 4: on/off (1)",
@@ -257,6 +276,15 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
         "front": "Phrasal verbs: ON/OFF (1)",
         "back": "go ON = continue\nturn ON/OFF = switch on/off\nput ON = wear / start (music/TV)\ntake OFF = remove / plane departs\ngo OFF = ring (alarm) / explode / go bad"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Your alarm went off twenty minutes ago! Why are you still in bed?", "translation": "¡Tu alarma sonó hace veinte minutos! ¿Por qué sigues en la cama?" },
+      { "speaker": "user", "text": "Sorry, I turned it off and fell back asleep.", "translation": "Perdón, la apagué y me volví a dormir." },
+      { "speaker": "other", "text": "Come on, get up! Put on your clothes, we have to go.", "translation": "¡Vamos, levántate! Ponte la ropa, tenemos que irnos." },
+      { "speaker": "user", "text": "Can we put off the meeting until tomorrow? I'm so tired.", "translation": "¿Podemos posponer la reunión hasta mañana? Estoy muy cansado." },
+      { "speaker": "other", "text": "No, we can't. Just turn on the shower and wake yourself up.", "translation": "No, no podemos. Solo enciende la ducha y despiértate." },
+      { "speaker": "user", "text": "Okay, okay, I'm going on with my morning now.", "translation": "Está bien, está bien, ya sigo con mi mañana." },
+      { "speaker": "other", "text": "Good. And don't forget to take off your pajamas first!", "translation": "Bien. ¡Y no olvides quitarte la pijama primero!" }
     ]
   },
   "141": {
@@ -313,7 +341,12 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
         "front": "Phrasal verbs: ON/OFF (2)",
         "back": "call OFF = cancel\nput OFF = postpone / discourage\nturn DOWN = refuse / reduce\nturn UP = arrive / increase volume\ncut OFF = interrupt / stop supply"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Storm",
+      "body": "Last month, my cousin was planning her wedding, but a huge storm was coming. Her family had to call off the outdoor ceremony and move everything inside. She almost wanted to give up and cancel the whole day, but her friends convinced her to continue. During the storm, the electricity was cut off for two hours, so everyone waited with candles. Surprisingly, more guests turned up than expected, even in the bad weather! Someone suggested turning down the music so people could talk, and in the end, it became one of the most memorable weddings anyone had ever seen.",
+      "translation": "El mes pasado, mi prima estaba planeando su boda, pero se acercaba una tormenta enorme. Su familia tuvo que cancelar la ceremonia al aire libre y mover todo adentro. Casi quiso rendirse y cancelar todo el día, pero sus amigas la convencieron de seguir adelante. Durante la tormenta, se cortó la electricidad por dos horas, así que todos esperaron con velas. Sorprendentemente, llegaron más invitados de los esperados, ¡incluso con el mal clima! Alguien sugirió bajar el volumen de la música para que la gente pudiera hablar, y al final, se convirtió en una de las bodas más memorables que alguien haya visto."
+    }
   },
   "142": {
     "title": "Phrasal verbs 6: up/down",
@@ -369,6 +402,14 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
         "front": "Phrasal verbs: UP/DOWN",
         "back": "give UP = quit\ntake UP = start a hobby\nbring UP = raise a child / mention\npick UP = collect / learn casually\nlet DOWN = disappoint\nturn DOWN = refuse"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Can you pick me up from the airport on Friday?", "translation": "¿Puedes recogerme en el aeropuerto el viernes?" },
+      { "speaker": "user", "text": "Of course, I won't let you down. What time do you land?", "translation": "Claro, no te voy a fallar. ¿A qué hora aterrizas?" },
+      { "speaker": "other", "text": "Around 6pm. By the way, I took up painting while I was traveling.", "translation": "Como a las 6pm. Por cierto, empecé a pintar como pasatiempo mientras viajaba." },
+      { "speaker": "user", "text": "Nice! Don't bring up how bad my drawings are, though.", "translation": "¡Qué bien! Pero no menciones lo malos que son mis dibujos." },
+      { "speaker": "other", "text": "Ha, I would never! I just hope I can put up with airport traffic.", "translation": "Ja, ¡jamás lo haría! Solo espero poder aguantar el tráfico del aeropuerto." },
+      { "speaker": "user", "text": "It's usually not too bad on Fridays. See you soon!", "translation": "Normalmente no está tan mal los viernes. ¡Nos vemos pronto!" }
     ]
   },
   "143": {
@@ -425,7 +466,12 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
         "front": "Phrasal verbs: UP (1)",
         "back": "set UP = establish\nmake UP = invent / reconcile\nend UP = finally be somewhere\nbuild UP = increase gradually\ngive UP = stop trying\nbottom UP = from the base"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Starting a Business Together",
+      "body": "My sister and I always looked up to our grandfather, who ran a small bakery for forty years. Last year, we decided to set up our own café in his memory. At first, everything went well, but we fell out with each other over small decisions, like the menu and the colors of the walls. We didn't speak for almost a month. Eventually, we both missed working together, so we made up over coffee — appropriately, in a café. Now, after all those arguments, we somehow ended up with a business we're both proud of, and it feels like he's still watching over us.",
+      "translation": "Mi hermana y yo siempre admiramos a nuestro abuelo, que tuvo una pequeña panadería durante cuarenta años. El año pasado, decidimos abrir nuestra propia cafetería en su memoria. Al principio todo iba bien, pero tuvimos una fuerte discusión por decisiones pequeñas, como el menú y los colores de las paredes. No nos hablamos durante casi un mes. Con el tiempo, ambas extrañamos trabajar juntas, así que hicimos las paces tomando un café — apropiadamente, en una cafetería. Ahora, después de todas esas discusiones, terminamos con un negocio del que ambas estamos orgullosas, y se siente como si él todavía nos estuviera cuidando."
+    }
   },
   "144": {
     "title": "Phrasal verbs 8: up (2)",
@@ -481,6 +527,14 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
         "front": "Phrasal verbs: UP (2)",
         "back": "come UP with = produce an idea\nput UP with = tolerate\nkeep UP with = maintain the same pace\ncatch UP = reach the same level\nuse UP = consume completely"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "How are you feeling? Are you ready to deal with all the homework?", "translation": "¿Cómo te sientes? ¿Listo para lidiar con toda la tarea?" },
+      { "speaker": "user", "text": "Not really. I don't know how I'll catch up after a whole week off.", "translation": "La verdad no. No sé cómo voy a ponerme al día después de una semana entera." },
+      { "speaker": "other", "text": "Don't worry, the teacher will come up with a plan to help you.", "translation": "No te preocupes, la profesora va a idear un plan para ayudarte." },
+      { "speaker": "user", "text": "I hope so. It's also hard to keep up with the group project.", "translation": "Eso espero. También es difícil mantener el ritmo con el proyecto grupal." },
+      { "speaker": "other", "text": "Your teammates understand. You'll get used to the new routine soon.", "translation": "Tus compañeros entienden. Pronto te acostumbrarás a la nueva rutina." },
+      { "speaker": "user", "text": "Thanks, that makes me feel better.", "translation": "Gracias, eso me hace sentir mejor." }
     ]
   },
   "145": {
@@ -537,6 +591,11 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
         "front": "Phrasal verbs: AWAY/BACK",
         "back": "get AWAY = escape / go on holiday\ngive AWAY = donate / reveal a secret\nthrow AWAY = discard\ncall BACK = phone again\nget BACK = return\npay BACK = repay"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "A Weekend Away",
+      "body": "I needed to get away from the city, so I spent the weekend at my parents' house. While I was there, we cleaned out the garage together. We decided to throw away broken tools and give away old furniture to a neighbor who needed it. In the middle of sorting boxes, my mom found letters from my grandmother and broke down in tears — she still misses her so much. Later, my friend called to ask when I would get back to the city, but I told her I'd call back after dinner. Before I left, my dad reminded me to pay back the money I borrowed last month!",
+      "translation": "Necesitaba alejarme de la ciudad, así que pasé el fin de semana en casa de mis padres. Mientras estuve ahí, limpiamos el garaje juntos. Decidimos tirar las herramientas rotas y regalar los muebles viejos a un vecino que los necesitaba. En medio de ordenar cajas, mi mamá encontró cartas de mi abuela y se echó a llorar — todavía la extraña muchísimo. Más tarde, mi amiga llamó para preguntar cuándo regresaría a la ciudad, pero le dije que la llamaría de vuelta después de la cena. Antes de irme, ¡mi papá me recordó que le devolviera el dinero que le pedí prestado el mes pasado!"
+    }
   }
 };

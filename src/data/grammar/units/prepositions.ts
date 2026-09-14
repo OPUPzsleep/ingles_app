@@ -106,7 +106,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "AT / ON / IN for time",
         "back": "AT → clock times, fixed expressions:\nat 5pm · at midnight · at the weekend\n\nON → days and dates:\non Monday · on 3rd May · on my birthday\n\nIN → months, years, seasons, parts of day:\nin June · in 2020 · in summer · in the morning"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "My Weekly Routine",
+      "body": "I have a busy week. On Monday, I go to the gym at 7 o'clock in the morning. On Wednesdays, I always have lunch with my sister — we usually meet at noon. In the evening, I like to read for an hour before bed. At the weekend, everything changes: on Saturday morning I sleep late, and in the afternoon I go shopping. On Sundays, I visit my grandparents; we always have dinner together at around six. In summer, we eat outside in the garden, but in winter we stay inside. My favorite time of the year is Christmas — at Christmas, the whole family gets together, and on Christmas Day we open presents in the morning.",
+      "translation": "Tengo una semana ocupada. Los lunes voy al gimnasio a las 7 de la mañana. Los miércoles siempre almuerzo con mi hermana — normalmente nos vemos al mediodía. Por la tarde/noche, me gusta leer una hora antes de dormir. El fin de semana, todo cambia: el sábado por la mañana duermo hasta tarde, y por la tarde voy de compras. Los domingos visito a mis abuelos; siempre cenamos juntos alrededor de las seis. En verano comemos afuera en el jardín, pero en invierno nos quedamos adentro. Mi época favorita del año es Navidad — en Navidad, toda la familia se reúne, y el día de Navidad abrimos los regalos por la mañana."
+    }
   },
   "122": {
     "title": "On Time and In Time / At the End and In the End",
@@ -173,7 +178,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "ON TIME vs IN TIME",
         "back": "ON TIME = punctual, at the scheduled time:\n'The train arrived ON TIME.' (exactly when planned)\n\nIN TIME = early enough (not too late):\n'I arrived IN TIME to get a seat.' (before it started)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Almost Late for the Film",
+      "body": "Yesterday we almost missed the movie. The bus was late, and I was afraid we wouldn't arrive in time. Luckily, we got to the cinema just in time to buy popcorn before the film started. The film itself began exactly on time, which surprised me — that cinema is never on time! At the end of the film, everyone in the theater was crying; it was a very emotional story. In the end, though, I was glad we went, because the film taught us something important about family. Next time, I want to leave home earlier so we don't have to run just to be in time again.",
+      "translation": "Ayer casi perdimos la película. El autobús llegó tarde, y tenía miedo de que no llegáramos a tiempo. Por suerte, llegamos al cine justo a tiempo para comprar palomitas antes de que empezara la película. La película en sí comenzó exactamente a la hora prevista, lo cual me sorprendió — ¡ese cine nunca es puntual! Al final de la película, todos en la sala estaban llorando; fue una historia muy emotiva. Al final, sin embargo, me alegré de haber ido, porque la película nos enseñó algo importante sobre la familia. La próxima vez, quiero salir de casa más temprano para no tener que correr solo para llegar a tiempo otra vez."
+    }
   },
   "123": {
     "title": "In / At / On (position) 1",
@@ -235,7 +245,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "IN / AT / ON for position",
         "back": "IN = enclosed space/area:\nin a room · in a city · in the street\n\nAT = specific point/location:\nat the door · at the station · at school\n\nON = surface:\non the table · on the wall · on the bus"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "A Tour of My New Apartment",
+      "body": "Welcome to my new apartment! When you come in, there's a mirror on the wall and my shoes are on the floor by the door. The kitchen is small, but there's a table in the corner where I eat breakfast. My laptop is always on the table, and my books are on the shelf. In the living room, there's a big sofa, and a lamp is on the little table beside it. At the top of the stairs is my bedroom. In the bedroom, my bed is next to the window, and there's a photo of my family on the wall. I love sitting in the living room in the evening, looking at the city lights.",
+      "translation": "¡Bienvenido a mi nuevo apartamento! Cuando entras, hay un espejo en la pared y mis zapatos están en el suelo junto a la puerta. La cocina es pequeña, pero hay una mesa en la esquina donde desayuno. Mi laptop siempre está sobre la mesa, y mis libros están en el estante. En la sala, hay un sofá grande, y hay una lámpara sobre la mesita de al lado. Arriba de las escaleras está mi habitación. En la habitación, mi cama está junto a la ventana, y hay una foto de mi familia en la pared. Me encanta sentarme en la sala por la noche, mirando las luces de la ciudad."
+    }
   },
   "124": {
     "title": "In / At / On (position) 2",
@@ -286,7 +301,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Fixed expressions: AT / IN for locations",
         "back": "AT HOME · AT SCHOOL · AT WORK · AT UNIVERSITY\n(= activities/functions)\n\nIN HOSPITAL · IN PRISON · IN BED\n(= inside the institution)\n\nIN THE CENTRE · ON THE LEFT · AT THE TOP"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "A Visit to the Hospital",
+      "body": "My friend Laura is in hospital this week — she broke her leg while skiing. I visited her yesterday. The hospital is on the corner of a busy street, and her room is on the third floor. When I'm not at work, I try to visit her every day. She's usually in bed, watching TV or reading. Her husband is not in hospital, but he's not at home either — he's always at work, so I keep her company. The doctor said she can't go back to school (she's a teacher) for at least a month. I told her, 'Don't worry, when you're not in bed anymore, we'll go for a coffee together.'",
+      "translation": "Mi amiga Laura está en el hospital esta semana — se rompió una pierna esquiando. La visité ayer. El hospital está en la esquina de una calle muy transitada, y su habitación está en el tercer piso. Cuando no estoy en el trabajo, trato de visitarla todos los días. Normalmente está en la cama, viendo televisión o leyendo. Su esposo no está en el hospital, pero tampoco está en casa — siempre está trabajando, así que le hago compañía. El médico dijo que no puede volver a la escuela (es maestra) por al menos un mes. Le dije: 'No te preocupes, cuando ya no estés en cama, iremos a tomar un café juntas.'"
+    }
   },
   "125": {
     "title": "In / At / On (Position) 3",
@@ -348,7 +368,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Leftover position expressions",
         "back": "IN the corner (room) / ON the corner (street)\nIN the back/front (car) / AT the back/front (building, queue)\nIN a photo/newspaper/book"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "A Strange Taxi Ride",
+      "body": "I took a taxi to the airport this morning. I sat in the back of the taxi because the driver's dog was in the front seat! There was a small shop on the corner of the street, and in the corner of the taxi window, I noticed a funny sticker. While we waited in traffic, I checked my phone and saw a photo of my brother in the newspaper — he won a running competition! I was so proud. When we finally arrived, I paid quickly and ran to the back of the queue at security, hoping I wouldn't miss my flight.",
+      "translation": "Tomé un taxi al aeropuerto esta mañana. Me senté en la parte de atrás del taxi porque el perro del conductor iba en el asiento delantero. Había una tiendita en la esquina de la calle, y en la esquina de la ventana del taxi noté una calcomanía graciosa. Mientras esperábamos en el tráfico, revisé mi teléfono y vi una foto de mi hermano en el periódico — ¡ganó una competencia de atletismo! Estaba muy orgullosa. Cuando finalmente llegamos, pagué rápido y corrí hasta el final de la fila en seguridad, esperando no perder mi vuelo."
+    }
   },
   "126": {
     "title": "To, at, in and into",
@@ -404,7 +429,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Movement prepositions: TO / INTO / OUT OF",
         "back": "TO = movement toward: 'I'm going TO Paris.'\nINTO = movement to inside: 'She walked INTO the room.'\nOUT OF = movement from inside: 'He walked OUT OF the building.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Running Late for Work",
+      "body": "This morning I was late for work. I ran to the bus stop, but the bus had already left, so I had to walk to the office instead. When I finally arrived at the building, I rushed into the lobby and pressed the elevator button. I walked into my office and my boss looked surprised. 'Where were you?' she asked. I explained that I had left my keys in the car and had to go back to get them. Later, when I took my lunch out of my bag, I realized I had forgotten my wallet too — it was definitely not my day!",
+      "translation": "Esta mañana llegué tarde al trabajo. Corrí hasta la parada de autobús, pero el autobús ya se había ido, así que tuve que caminar hasta la oficina. Cuando finalmente llegué al edificio, entré corriendo al vestíbulo y presioné el botón del ascensor. Entré a mi oficina y mi jefa se sorprendió. '¿Dónde estabas?', preguntó. Le expliqué que había dejado las llaves en el auto y tuve que volver por ellas. Más tarde, cuando saqué mi almuerzo de la bolsa, me di cuenta de que también había olvidado mi billetera — definitivamente no era mi día."
+    }
   },
   "127": {
     "title": "In/on/at (other uses)",
@@ -465,6 +495,16 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Fixed expressions: AT / IN / ON",
         "back": "AT HOME · AT SCHOOL · AT WORK (activities)\nIN BED · IN HOSPITAL · IN PRISON (inside)\nON THE LEFT · ON THE BUS · ON THE PHONE"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "How are you getting to the concert tonight?", "translation": "¿Cómo vas a ir al concierto esta noche?" },
+      { "speaker": "user", "text": "I'm going on the train, it's faster than the bus.", "translation": "Voy en tren, es más rápido que el autobús." },
+      { "speaker": "other", "text": "Really? I usually go on the bus because it stops near my house.", "translation": "¿En serio? Yo normalmente voy en autobús porque para cerca de mi casa." },
+      { "speaker": "user", "text": "I'll be on the phone with you if I get lost, ok?", "translation": "Estaré al teléfono contigo si me pierdo, ¿vale?" },
+      { "speaker": "other", "text": "Sure. Are you at work right now?", "translation": "Claro. ¿Estás en el trabajo ahora mismo?" },
+      { "speaker": "user", "text": "Yes, I'm at the office, but I finish at six.", "translation": "Sí, estoy en la oficina, pero termino a las seis." },
+      { "speaker": "user", "text": "I'll be in bed by midnight after the concert!", "translation": "¡Estaré en la cama antes de la medianoche después del concierto!" },
+      { "speaker": "other", "text": "Ha! Have fun. See you at the station in the evening.", "translation": "¡Ja! Que lo disfrutes. Nos vemos en la estación por la noche." }
     ]
   },
   "128": {
@@ -521,7 +561,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "BY — main uses",
         "back": "TRANSPORT: by car, by bus, by train (no article)\nPASSIVE AGENT: 'written BY Shakespeare'\nPOSITION: 'She sat BY the window.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Museum Exhibition",
+      "body": "Next week, a new exhibition opens at the museum, and one famous painting will be shown for the first time — it was painted by a local artist over twenty years ago. I need to finish writing the article about it by Friday, so I'm working quickly. I usually travel to the museum by bus, but today I decided to walk, and on the way, I stopped and sat by the river for a few minutes to think about the article. My desk at the office is by the window, so I can see the museum from there. If I don't finish the article by tonight, my editor will be very angry!",
+      "translation": "La próxima semana se inaugura una nueva exposición en el museo, y se mostrará por primera vez un cuadro famoso — fue pintado por un artista local hace más de veinte años. Necesito terminar de escribir el artículo sobre esto antes del viernes, así que estoy trabajando rápido. Normalmente voy al museo en autobús, pero hoy decidí caminar, y en el camino me detuve y me senté junto al río unos minutos para pensar en el artículo. Mi escritorio en la oficina está junto a la ventana, así que puedo ver el museo desde ahí. ¡Si no termino el artículo para esta noche, mi editor se va a enojar mucho!"
+    }
   },
   "129": {
     "title": "Noun + preposition",
@@ -572,7 +617,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Noun + Preposition",
         "back": "reason FOR · cause OF · solution TO\ndemand FOR · increase IN · damage TO\nneed FOR · attitude TOWARDS · connection WITH"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "A Problem at the Factory",
+      "body": "There has been a big increase in the number of complaints this month, and management wants to understand the reason for this. Customers say there's damage to many of the boxes when they arrive, and nobody has found a solution to the problem yet. My manager has a very negative attitude towards change, so it's hard to suggest new ideas. I think there's a connection with the old packaging machine and the damage, but I need more proof. Everyone agrees there's a need for a new system, but changing it will take time and money. We are meeting tomorrow to talk about possible solutions to this problem.",
+      "translation": "Ha habido un gran aumento en el número de quejas este mes, y la gerencia quiere entender la razón de esto. Los clientes dicen que hay daños en muchas de las cajas cuando llegan, y nadie ha encontrado todavía una solución al problema. Mi jefe tiene una actitud muy negativa hacia el cambio, así que es difícil sugerir nuevas ideas. Creo que hay una conexión entre la vieja máquina de empaquetado y los daños, pero necesito más pruebas. Todos están de acuerdo en que hay una necesidad de un nuevo sistema, pero cambiarlo tomará tiempo y dinero. Mañana nos reunimos para hablar de posibles soluciones a este problema."
+    }
   },
   "130": {
     "title": "Adjective + preposition 1",
@@ -628,7 +678,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Adjective + Preposition (group 1)",
         "back": "afraid OF · proud OF · tired OF · aware OF\ninterested IN · good AT · bad AT\nworried ABOUT · excited ABOUT\nresponsible FOR · famous FOR"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Before the Interview",
+      "body": "My sister is very nervous — she's afraid of making mistakes in her job interview tomorrow. She's actually good at answering questions, but she's not very confident. I told her, 'You should be proud of everything you've achieved.' She's interested in marketing, and the company is famous for its creative advertising, so it's a great opportunity. She's also excited about the possibility of working in a big city. Her friend is responsible for helping her prepare, so they practiced questions together all afternoon. I'm sure she'll do great — I'm not worried about it at all!",
+      "translation": "Mi hermana está muy nerviosa — tiene miedo de cometer errores en su entrevista de trabajo mañana. En realidad es buena para responder preguntas, pero no tiene mucha confianza. Le dije: 'Deberías estar orgullosa de todo lo que has logrado.' Está interesada en marketing, y la empresa es famosa por su publicidad creativa, así que es una gran oportunidad. También está emocionada por la posibilidad de trabajar en una gran ciudad. Su amiga es responsable de ayudarla a prepararse, así que practicaron preguntas juntas toda la tarde. Estoy segura de que le irá muy bien — ¡a mí no me preocupa nada en absoluto!"
+    }
   },
   "131": {
     "title": "Adjective + preposition 2",
@@ -679,7 +734,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Adjective + Preposition (group 2)",
         "back": "similar TO · opposite TO · married TO\nkind TO · used TO · accustomed TO\ndifferent FROM · satisfied WITH\nconnected TO/WITH · impressed BY"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Comparing Two Cities",
+      "body": "My new apartment is very different from my old one — it's much smaller, but I'm slowly getting used to it. My neighbor is married to a chef, and they're always cooking something delicious; the smell is similar to my grandmother's kitchen. I'm satisfied with my decision to move here, even though it was difficult at first. My best friend is very kind to everyone in the building, and she's always ready to help. Last week, I was really impressed by how friendly people are here — it's completely different from the city where I grew up, where nobody was accustomed to talking to their neighbors.",
+      "translation": "Mi nuevo apartamento es muy diferente al anterior — es mucho más pequeño, pero poco a poco me estoy acostumbrando. Mi vecino está casado con un chef, y siempre están cocinando algo delicioso; el olor es parecido al de la cocina de mi abuela. Estoy satisfecha con mi decisión de mudarme aquí, aunque al principio fue difícil. Mi mejor amiga es muy amable con todos en el edificio, y siempre está lista para ayudar. La semana pasada me impresionó mucho lo amable que es la gente aquí — es completamente diferente de la ciudad donde crecí, donde nadie estaba acostumbrado a hablar con sus vecinos."
+    }
   },
   "132": {
     "title": "Verb + preposition 1",
@@ -730,6 +790,14 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Verb + TO and AT",
         "back": "VERB + TO: speak TO, listen TO, explain TO, apologise TO\nVERB + AT: look AT, stare AT, laugh AT, shout AT\n\nTHROW TO (for someone to catch) vs\nTHROW AT (aggressive direction)"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Did you see that boy shouting at his dog in the park?", "translation": "¿Viste a ese chico gritándole a su perro en el parque?" },
+      { "speaker": "user", "text": "Yes, it was terrible! He should talk to it calmly, not shout at it.", "translation": "¡Sí, fue terrible! Debería hablarle con calma, no gritarle." },
+      { "speaker": "other", "text": "I know. And then he threw a stick at the fence out of anger.", "translation": "Lo sé. Y después le tiró un palo a la cerca por enojo." },
+      { "speaker": "user", "text": "That's so different from when kids play — normally you throw the ball to someone, not at something.", "translation": "Eso es muy distinto de cuando los niños juegan — normalmente le lanzas la pelota a alguien, no le tiras algo." },
+      { "speaker": "other", "text": "Exactly. I wanted to explain to him why that's not okay.", "translation": "Exacto. Quería explicarle por qué eso no está bien." },
+      { "speaker": "user", "text": "Maybe we should speak to his parents about it.", "translation": "Tal vez deberíamos hablar con sus padres sobre esto." }
     ]
   },
   "133": {
@@ -781,6 +849,14 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Verb + ABOUT and OF",
         "back": "ABOUT: talk ABOUT, complain ABOUT, worry ABOUT, hear ABOUT, dream ABOUT\nOF: think OF (opinion), approve OF, consist OF, remind OF"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "What do you think of this restaurant?", "translation": "¿Qué piensas de este restaurante?" },
+      { "speaker": "user", "text": "Honestly, I've been thinking about it a lot, and I'm not sure.", "translation": "Honestamente, he estado pensando mucho en eso, y no estoy segura." },
+      { "speaker": "other", "text": "I keep hearing people complain about the slow service.", "translation": "Sigo escuchando a la gente quejarse del servicio lento." },
+      { "speaker": "user", "text": "Yes, and the chef always talks about using local ingredients, but this dish doesn't consist of anything special.", "translation": "Sí, y el chef siempre habla de usar ingredientes locales, pero este plato no está hecho de nada especial." },
+      { "speaker": "other", "text": "I dreamed about eating pasta all week, and now I'm disappointed!", "translation": "¡Soñé con comer pasta toda la semana, y ahora estoy decepcionado!" },
+      { "speaker": "user", "text": "Let's not worry about it — next time we'll try a different place.", "translation": "No nos preocupemos por eso — la próxima vez probaremos otro lugar." }
     ]
   },
   "134": {
@@ -832,7 +908,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Verb + FOR",
         "back": "wait FOR · search FOR · ask FOR · pay FOR\napply FOR · hope FOR · blame (sb) FOR\nthank (sb) FOR · apologise FOR"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Applying for a New Job",
+      "body": "Last month, I applied for a job at a design company, and I've been waiting for their reply ever since. I asked for feedback from a friend who works there, and she agreed to help me prepare. When the interview day came, I was so nervous that I arrived late, so I apologised for being late immediately. Luckily, the manager didn't blame me for the traffic — she understood. I thanked her for her patience and paid for coffee for both of us afterward. Now I'm just hoping for good news. If I get the job, I'll finally stop searching for a new opportunity every weekend!",
+      "translation": "El mes pasado postulé para un trabajo en una empresa de diseño, y desde entonces he estado esperando su respuesta. Le pedí opinión a una amiga que trabaja ahí, y ella aceptó ayudarme a prepararme. Cuando llegó el día de la entrevista, estaba tan nerviosa que llegué tarde, así que me disculpé de inmediato por la tardanza. Por suerte, la gerente no me culpó por el tráfico — lo entendió. Le agradecí su paciencia y pagué el café para las dos después. Ahora solo espero buenas noticias. ¡Si consigo el trabajo, finalmente dejaré de buscar una nueva oportunidad cada fin de semana!"
+    }
   },
   "135": {
     "title": "Verb + preposition 4",
@@ -883,7 +964,12 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Verb + FROM / IN",
         "back": "FROM: suffer FROM, recover FROM, protect FROM, prevent FROM\nIN: believe IN, succeed IN, specialize IN, invest IN"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Recovering and Starting Fresh",
+      "body": "My uncle has been suffering from back pain for months, but he's finally recovering from his injury. The doctors protected him from further damage by recommending complete rest. During this time, he started reading about business and now believes in taking more risks with his savings. He recently invested in a small company that specializes in renewable energy, and he succeeded in doubling his money within a year! He always says that everything depends on patience and good information, not luck. I admire how he turned a difficult situation into something positive — he even convinced me to believe in my own ideas more.",
+      "translation": "Mi tío ha estado sufriendo de dolor de espalda durante meses, pero finalmente se está recuperando de su lesión. Los médicos lo protegieron de más daño recomendándole descanso completo. Durante este tiempo, empezó a leer sobre negocios y ahora cree en tomar más riesgos con sus ahorros. Recientemente invirtió en una pequeña empresa que se especializa en energía renovable, ¡y logró duplicar su dinero en un año! Siempre dice que todo depende de la paciencia y la buena información, no de la suerte. Admiro cómo convirtió una situación difícil en algo positivo — incluso me convenció de creer más en mis propias ideas."
+    }
   },
   "136": {
     "title": "Verb + preposition 5",
@@ -939,6 +1025,14 @@ export const prepositionsUnits: Record<number, Unit> = {
         "front": "Verb + ON",
         "back": "depend ON · rely ON · concentrate ON\ninsist ON · comment ON · spend (money/time) ON\ncongratuate sb ON · base (sth) ON"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "I heard the good news! Congratulations on your promotion!", "translation": "¡Escuché la buena noticia! ¡Felicitaciones por tu ascenso!" },
+      { "speaker": "user", "text": "Thank you! I couldn't have done it without my team — I really rely on them.", "translation": "¡Gracias! No podría haberlo logrado sin mi equipo — de verdad dependo de ellos." },
+      { "speaker": "other", "text": "You always concentrate on your work so well. Did you spend a lot of money on the celebration dinner?", "translation": "Siempre te concentras muy bien en tu trabajo. ¿Gastaste mucho dinero en la cena de celebración?" },
+      { "speaker": "user", "text": "A little, yes! My boss commented on how much I've improved this year.", "translation": "¡Un poco, sí! Mi jefe comentó lo mucho que he mejorado este año." },
+      { "speaker": "other", "text": "That's wonderful. Everything you've achieved is based on hard work.", "translation": "Qué maravilla. Todo lo que has logrado está basado en trabajo duro." },
+      { "speaker": "user", "text": "Thanks! I insisted on inviting the whole team to celebrate together.", "translation": "¡Gracias! Insistí en invitar a todo el equipo para celebrar juntos." }
     ]
   }
 };

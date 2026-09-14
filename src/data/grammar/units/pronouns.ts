@@ -49,7 +49,12 @@ export const pronounsUnits: Record<number, Unit> = {
         "front": "Reflexive pronouns",
         "back": "I → MYSELF\nyou → YOURSELF / YOURSELVES\nhe → HIMSELF · she → HERSELF\nit → ITSELF · we → OURSELVES\nthey → THEMSELVES\n\nBY + reflexive = alone:\n'She lives by herself.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Living Alone",
+      "body": "After university, Daniel decided to live by himself for the first time. At first, he found it strange to cook only for himself and talk to himself in the empty apartment. One evening, he cut himself while chopping vegetables and laughed, saying, \"I really need to be more careful when I'm by myself!\" Slowly, he learned to enjoy his own company. He taught himself to cook new dishes and even started painting, just for himself. His friends often asked, \"Don't you get lonely living by yourself?\" But Daniel smiled and said, \"Not really — I've learned to take care of myself, and I'm proud of that.\"",
+      "translation": "Después de la universidad, Daniel decidió vivir solo por primera vez. Al principio, le pareció extraño cocinar solo para sí mismo y hablar consigo mismo en el apartamento vacío. Una noche, se cortó mientras picaba verduras y se rió, diciendo: \"¡De verdad necesito tener más cuidado cuando estoy solo!\" Poco a poco, aprendió a disfrutar de su propia compañía. Se enseñó a sí mismo a cocinar platos nuevos e incluso empezó a pintar, solo para él. Sus amigos a menudo le preguntaban: \"¿No te sientes solo viviendo por tu cuenta?\" Pero Daniel sonreía y decía: \"La verdad no — he aprendido a cuidarme a mí mismo, y estoy orgulloso de eso.\""
+    }
   },
   "83": {
     "title": "A Friend of Mine / My Own",
@@ -111,6 +116,14 @@ export const pronounsUnits: Record<number, Unit> = {
         "front": "A friend OF MINE (not \"of me\")",
         "back": "a friend of mine · a colleague of his · some photos of hers\n(NOT: a friend of me ❌)"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Whose car is that outside? It's beautiful.", "translation": "¿De quién es ese auto de afuera? Es hermoso." },
+      { "speaker": "user", "text": "It belongs to a friend of mine. He just bought it last week.", "translation": "Es de un amigo mío. Lo compró la semana pasada." },
+      { "speaker": "other", "text": "Lucky him! I still don't have my own car.", "translation": "¡Qué suerte tiene! Yo todavía no tengo auto propio." },
+      { "speaker": "user", "text": "Neither do I. I always borrow one from a colleague of mine.", "translation": "Yo tampoco. Siempre le pido uno prestado a un colega mío." },
+      { "speaker": "other", "text": "I'd love to have a car of my own someday.", "translation": "Me encantaría tener un auto propio algún día." },
+      { "speaker": "user", "text": "Same here. For now, I just dream about it on my own.", "translation": "Igual yo. Por ahora, solo lo sueño yo solo." }
     ]
   },
   "84": {
@@ -173,7 +186,12 @@ export const pronounsUnits: Record<number, Unit> = {
         "front": "THERE vs IT",
         "back": "THERE = something exists: 'There's a problem.'\nIT = weather / time / distance / general situation: 'It's cold.' · 'It's 5 o'clock.' · 'It's far.' · 'It's fun to travel.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Village in the Mountains",
+      "body": "There's a small village near the mountains that I visit every summer. It's usually cold there, even in July, so it's important to bring a warm jacket. There are only about two hundred people living in the village, but there's always something interesting happening. Last year, it was raining every day, which was unusual. There was a little café where I would sit for hours; it's the perfect place to read a book. It's about a two-hour drive from the city, but it's worth every minute. There's nothing quite like waking up there and looking at the mountains outside the window.",
+      "translation": "Hay un pueblito cerca de las montañas que visito cada verano. Ahí normalmente hace frío, incluso en julio, así que es importante llevar una chaqueta abrigada. Solo viven unas doscientas personas en el pueblo, pero siempre está pasando algo interesante. El año pasado, llovía todos los días, lo cual era inusual. Había un pequeño café donde me sentaba por horas; es el lugar perfecto para leer un libro. Queda a unas dos horas en auto desde la ciudad, pero vale cada minuto. No hay nada como despertar ahí y mirar las montañas por la ventana."
+    }
   },
   "85": {
     "title": "Some and Any",
@@ -224,6 +242,14 @@ export const pronounsUnits: Record<number, Unit> = {
         "front": "SOME vs ANY — the basic rule",
         "back": "SOME → positive sentences:\n'I have some money.'\n\nANY → negatives and most questions:\n'I don't have any money.'\n'Do you have any questions?'\n\nEXCEPTION: SOME in offers/requests:\n'Would you like some coffee?'"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Welcome! Would you like some water while you look at the menu?", "translation": "¡Bienvenidos! ¿Les gustaría algo de agua mientras miran el menú?" },
+      { "speaker": "user", "text": "Yes, please. Do you have any vegetarian options?", "translation": "Sí, por favor. ¿Tienen alguna opción vegetariana?" },
+      { "speaker": "other", "text": "Of course, we have some great salads and a few pasta dishes.", "translation": "Claro, tenemos algunas ensaladas excelentes y algunos platos de pasta." },
+      { "speaker": "user", "text": "Great. Could I also have some bread while we decide?", "translation": "Genial. ¿Podría también tener un poco de pan mientras decidimos?" },
+      { "speaker": "other", "text": "Of course. We don't have any specials tonight, but everything is fresh.", "translation": "Claro. No tenemos ningún plato especial esta noche, pero todo está fresco." },
+      { "speaker": "user", "text": "That's fine. I'll have some pasta and a salad, please.", "translation": "Está bien. Voy a pedir pasta y una ensalada, por favor." }
     ]
   },
   "86": {
@@ -275,7 +301,12 @@ export const pronounsUnits: Record<number, Unit> = {
         "front": "NO / NONE / NOTHING / NOBODY",
         "back": "NO + noun: 'I have no money.'\nNONE (alone): 'How much? None.'\nNONE OF: 'None of them came.'\nNOTHING: 'Nothing happened.'\nNOBODY/NO ONE: 'Nobody called.'\n\nAll these = POSITIVE verb (not double negative)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Missing Files",
+      "body": "The office was completely empty on Monday morning. There was no sign of the missing files, and nobody knew where they had gone. \"Did anyone see anything strange last night?\" the manager asked, but nobody answered. She checked the security cameras, but there was nothing unusual on the recordings — no one had entered the building after hours. \"None of the doors were forced open,\" the security guard said, \"and none of the windows were broken either.\" The manager sighed. \"So nothing was stolen, and nobody came in, but the files are gone. That makes no sense at all.\" It seemed like there was no explanation — until someone remembered the cleaning staff had moved boxes the day before.",
+      "translation": "La oficina estaba completamente vacía el lunes por la mañana. No había ninguna señal de los archivos desaparecidos, y nadie sabía adónde habían ido. \"¿Alguien vio algo extraño anoche?\" preguntó la gerente, pero nadie respondió. Revisó las cámaras de seguridad, pero no había nada inusual en las grabaciones — nadie había entrado al edificio fuera de horario. \"Ninguna de las puertas fue forzada\", dijo el guardia de seguridad, \"y ninguna de las ventanas se rompió tampoco.\" La gerente suspiró. \"Entonces no se robó nada, y nadie entró, pero los archivos no están. Eso no tiene ningún sentido.\" Parecía que no había ninguna explicación — hasta que alguien recordó que el personal de limpieza había movido cajas el día anterior."
+    }
   },
   "87": {
     "title": "Much, Many, Little, Few",
@@ -350,6 +381,14 @@ export const pronounsUnits: Record<number, Unit> = {
         "front": "MUCH/MANY/LITTLE/FEW — summary",
         "back": "MANY + countable plural: many books\nMUCH + uncountable: much money\n\nA FEW + countable: a few friends (some, OK)\nFEW + countable: few friends (barely any, negative)\n\nA LITTLE + uncountable: a little time (some)\nLITTLE + uncountable: little time (barely any)"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "How much milk do we need for the recipe?", "translation": "¿Cuánta leche necesitamos para la receta?" },
+      { "speaker": "user", "text": "Not much, just a little. But we need many eggs — about six.", "translation": "No mucha, solo un poco. Pero necesitamos muchos huevos — como seis." },
+      { "speaker": "other", "text": "We only have a few left in the fridge.", "translation": "Solo nos quedan unos pocos en el refrigerador." },
+      { "speaker": "user", "text": "Then we should buy more. How many apples do you want?", "translation": "Entonces deberíamos comprar más. ¿Cuántas manzanas quieres?" },
+      { "speaker": "other", "text": "Just a few, we don't need many this week.", "translation": "Solo unas pocas, no necesitamos muchas esta semana." },
+      { "speaker": "user", "text": "Okay. We have very little time before the store closes, let's hurry!", "translation": "Bien. Tenemos muy poco tiempo antes de que cierre la tienda, ¡apurémonos!" }
     ]
   },
   "88": {
@@ -396,7 +435,12 @@ export const pronounsUnits: Record<number, Unit> = {
         "front": "ALL / MOST / SOME + noun vs + of + the + noun",
         "back": "GENERAL: All people, Most students, Some teachers\n(no 'of' when talking generally)\n\nSPECIFIC: All of the people, Most of my students\n(add 'of' + the/my/these etc.)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Free Time Survey",
+      "body": "Our teacher gave the class a survey about free time. All of the students answered honestly, and the results were surprising. Most of the class said they spend too much time on their phones. Some of the students admitted they read books every day, but none of them said they read more than an hour. Interestingly, all students agreed that they need more free time overall. When asked if any of them wanted less homework, every single hand went up. \"None of you are alone in feeling this way,\" the teacher laughed. \"Most people your age feel exactly the same.\"",
+      "translation": "Nuestra maestra le dio a la clase una encuesta sobre el tiempo libre. Todos los estudiantes respondieron con sinceridad, y los resultados fueron sorprendentes. La mayoría de la clase dijo que pasa demasiado tiempo en su teléfono. Algunos de los estudiantes admitieron que leen libros todos los días, pero ninguno de ellos dijo que lee más de una hora. Curiosamente, todos los estudiantes estuvieron de acuerdo en que necesitan más tiempo libre en general. Cuando se les preguntó si alguno quería menos tarea, se levantaron todas las manos. \"Ninguno de ustedes está solo sintiéndose así\", se rió la maestra. \"La mayoría de las personas de su edad se sienten exactamente igual.\""
+    }
   },
   "89": {
     "title": "Both / Either / Neither",
@@ -447,6 +491,14 @@ export const pronounsUnits: Record<number, Unit> = {
         "front": "BOTH / EITHER / NEITHER (two things)",
         "back": "BOTH = the two (positive):\n'Both options are fine.'\n\nEITHER = one or the other:\n'You can have either.' (your choice)\n\nNEITHER = not one, not the other:\n'Neither is good.' (= not this one, not that one)"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Should we go to the Italian place or the Mexican one?", "translation": "¿Vamos al lugar italiano o al mexicano?" },
+      { "speaker": "user", "text": "Either is fine with me, honestly. I like both restaurants.", "translation": "Cualquiera de los dos me parece bien, honestamente. Me gustan ambos restaurantes." },
+      { "speaker": "other", "text": "I can't decide. Neither one is open on Mondays, though.", "translation": "No puedo decidir. Sin embargo, ninguno de los dos abre los lunes." },
+      { "speaker": "user", "text": "That's true. Both of them are closed today, actually.", "translation": "Es verdad. De hecho, los dos están cerrados hoy." },
+      { "speaker": "other", "text": "So neither option works tonight. What about pizza instead?", "translation": "Así que ninguna de las dos opciones funciona esta noche. ¿Qué tal pizza en su lugar?" },
+      { "speaker": "user", "text": "Perfect, I like either pizza or pasta — both sound great right now.", "translation": "Perfecto, me gusta tanto la pizza como la pasta — ambas suenan geniales ahora mismo." }
     ]
   },
   "90": {
@@ -514,7 +566,12 @@ export const pronounsUnits: Record<number, Unit> = {
         "front": "ALL THE cake = THE WHOLE cake",
         "back": "Both mean the complete thing, just different word order:\nall the cake = the whole cake\nall the class = the whole class\n(but 'whole' needs a SINGULAR noun; 'all' also works with plural/uncountable nouns)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "A Whole Day of Cleaning",
+      "body": "Maria had a whole list of things to do. She spent all morning cleaning the house and every room needed attention. By noon, she had cleaned the whole kitchen, the whole living room, and even the whole garage. She worked all day without stopping, and every task felt harder than the last. \"I've cleaned the whole apartment,\" she said, exhausted, \"and I did it all by myself.\" She had spent all afternoon on the laundry too — every piece of clothing was finally clean. That evening, she sat down and thought, \"I deserve the whole weekend to rest after working all week like this.\"",
+      "translation": "María tenía toda una lista de cosas por hacer. Pasó toda la mañana limpiando la casa y cada habitación necesitaba atención. Al mediodía, ya había limpiado toda la cocina, toda la sala y hasta todo el garaje. Trabajó todo el día sin parar, y cada tarea se sentía más difícil que la anterior. \"Limpié todo el apartamento\", dijo, agotada, \"y lo hice yo sola.\" También había pasado toda la tarde con la ropa — cada prenda finalmente estaba limpia. Esa noche, se sentó y pensó: \"Merezco todo el fin de semana para descansar después de trabajar toda la semana así.\""
+    }
   },
   "91": {
     "title": "Each and Every",
@@ -565,6 +622,14 @@ export const pronounsUnits: Record<number, Unit> = {
         "front": "EACH vs EVERY",
         "back": "EACH = individual focus:\n'Each student got a different question.'\nCan be used with TWO things.\n\nEVERY = group focus:\n'Every student must attend.'\nOnly with THREE or more.\n\nBoth take SINGULAR verb."
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Good morning class. Each of you will get a different worksheet today.", "translation": "Buenos días clase. Cada uno de ustedes recibirá una hoja de trabajo diferente hoy." },
+      { "speaker": "user", "text": "Does every student get the same number of questions?", "translation": "¿Todos los estudiantes reciben el mismo número de preguntas?" },
+      { "speaker": "other", "text": "Yes, every worksheet has exactly ten questions, but each one is different.", "translation": "Sí, cada hoja tiene exactamente diez preguntas, pero cada una es diferente." },
+      { "speaker": "user", "text": "What if there are only two of us left in the group?", "translation": "¿Qué pasa si solo quedamos dos en el grupo?" },
+      { "speaker": "other", "text": "Then each of you will still get your own worksheet.", "translation": "Entonces cada uno de ustedes de todas formas recibirá su propia hoja." },
+      { "speaker": "user", "text": "Got it. I check my work every day, so this should be easy.", "translation": "Entendido. Reviso mi trabajo todos los días, así que esto debería ser fácil." }
     ]
   }
 };

@@ -56,7 +56,12 @@ export const conjunctionsUnits: Record<number, Unit> = {
         "front": "ALTHOUGH vs DESPITE/IN SPITE OF",
         "back": "ALTHOUGH + clause (subject + verb):\n'Although it was raining, we went out.'\n\nDESPITE / IN SPITE OF + noun or -ing:\n'Despite the rain, we went out.'\n'In spite of feeling tired, she worked.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Mountain Trip",
+      "body": "Although the weather forecast was terrible, we decided to go hiking anyway. Even though it started raining after an hour, nobody wanted to turn back. Despite the mud and the cold wind, we kept climbing, laughing at how ridiculous we looked. In spite of feeling exhausted, we reached the top just before sunset. Though the view was hidden by clouds, we were proud of ourselves. My sister said, 'Even though we're soaked and freezing, this was worth it.' Despite everything that went wrong, it turned out to be one of our favorite trips ever, and we're already planning the next one, although next time we'll check the weather more carefully.",
+      "translation": "Aunque el pronóstico del tiempo era terrible, decidimos ir de excursión de todos modos. Aun cuando empezó a llover después de una hora, nadie quería regresar. A pesar del barro y el viento frío, seguimos subiendo, riéndonos de lo ridículos que nos veíamos. A pesar de sentirnos agotados, llegamos a la cima justo antes del atardecer. Aunque la vista estaba oculta por las nubes, estábamos orgullosos de nosotros mismos. Mi hermana dijo: 'Aunque estamos empapados y helados, valió la pena.' A pesar de todo lo que salió mal, resultó ser uno de nuestros viajes favoritos, y ya estamos planeando el próximo, aunque la próxima vez revisaremos el clima con más cuidado."
+    }
   },
   "114": {
     "title": "In Case",
@@ -101,6 +106,15 @@ export const conjunctionsUnits: Record<number, Unit> = {
         "front": "IN CASE vs IF",
         "back": "IF = conditional (only act if it happens):\n'IF it rains, I'll use my umbrella.' (action only if it rains)\n\nIN CASE = precaution (act now, just to be safe):\n'I'll take my umbrella IN CASE it rains.' (take it now regardless)"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Are you all packed for the camping trip?", "translation": "¿Ya tienes todo empacado para el viaje de campamento?" },
+      { "speaker": "user", "text": "Almost. I'm bringing a first-aid kit in case someone gets hurt.", "translation": "Casi. Voy a llevar un botiquín de primeros auxilios por si alguien se lastima." },
+      { "speaker": "other", "text": "Good idea. What about the weather?", "translation": "Buena idea. ¿Y qué hay del clima?" },
+      { "speaker": "user", "text": "I'm taking a rain jacket in case it rains, even though the forecast looks fine.", "translation": "Voy a llevar una chaqueta impermeable por si llueve, aunque el pronóstico se ve bien." },
+      { "speaker": "other", "text": "Smart. I never bring extra water in case we run out.", "translation": "Inteligente. Yo nunca llevo agua extra por si se nos acaba." },
+      { "speaker": "user", "text": "You should! I always pack extra snacks in case we get hungry on the trail.", "translation": "¡Deberías! Yo siempre empaco bocadillos extra por si nos da hambre en el sendero." },
+      { "speaker": "other", "text": "Okay, you've convinced me. I'll bring a flashlight in case it gets dark before we set up camp.", "translation": "Bien, me convenciste. Voy a llevar una linterna por si oscurece antes de que armemos el campamento." }
     ]
   },
   "115": {
@@ -147,6 +161,15 @@ export const conjunctionsUnits: Record<number, Unit> = {
         "front": "UNLESS vs AS LONG AS",
         "back": "UNLESS = if not:\n'I'll come UNLESS it rains.' (= if it doesn't rain)\n\nAS LONG AS / PROVIDED (THAT) = on the condition that:\n'You can come AS LONG AS you're quiet.'\n'I'll lend it to you PROVIDED you return it.'"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Can I bring my little brother to your party?", "translation": "¿Puedo llevar a mi hermano pequeño a tu fiesta?" },
+      { "speaker": "user", "text": "Sure, as long as he doesn't touch the sound system.", "translation": "Claro, siempre y cuando no toque el equipo de sonido." },
+      { "speaker": "other", "text": "He won't. What time should we arrive?", "translation": "No lo hará. ¿A qué hora deberíamos llegar?" },
+      { "speaker": "user", "text": "Anytime after seven, unless it's raining — then we'll move it inside.", "translation": "En cualquier momento después de las siete, a menos que esté lloviendo — entonces la haremos adentro." },
+      { "speaker": "other", "text": "Got it. Can I bring my dog too?", "translation": "Entendido. ¿Puedo llevar a mi perro también?" },
+      { "speaker": "user", "text": "That's fine, provided he's friendly with other dogs.", "translation": "Está bien, siempre que sea amigable con otros perros." },
+      { "speaker": "other", "text": "He's very friendly, unless someone tries to take his food!", "translation": "Es muy amigable, ¡a menos que alguien intente quitarle su comida!" }
     ]
   },
   "116": {
@@ -198,7 +221,12 @@ export const conjunctionsUnits: Record<number, Unit> = {
         "front": "AS — three meanings",
         "back": "1. TIME (= while, at the same time):\n'As I was leaving, my phone rang.'\n\n2. REASON (= since/because):\n'As it was late, I went home.'\n\n3. MANNER (= in the way that):\n'Do it AS I showed you.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Learning to Cook",
+      "body": "As my grandmother taught me to make soup, she explained every step carefully. 'Do it as I do, not as the recipe says,' she told me, stirring the pot slowly. As the onions began to soften, the kitchen filled with a wonderful smell. As there was no fresh basil in the fridge, we used dried basil instead. 'It won't taste exactly as the original recipe intends,' she said, 'but it will still be delicious.' As we waited for the soup to cook, she told me stories about her own grandmother. As I watched her work, I realized cooking wasn't just about following instructions — it was about patience, love, and doing things as she had always done them.",
+      "translation": "Mientras mi abuela me enseñaba a hacer sopa, explicaba cada paso con cuidado. 'Hazlo como yo lo hago, no como dice la receta', me dijo, revolviendo la olla lentamente. A medida que las cebollas comenzaban a ablandarse, la cocina se llenó de un aroma maravilloso. Como no había albahaca fresca en el refrigerador, usamos albahaca seca en su lugar. 'No sabrá exactamente como pretende la receta original', dijo, 'pero seguirá siendo deliciosa.' Mientras esperábamos a que se cocinara la sopa, me contó historias sobre su propia abuela. Mientras la observaba trabajar, me di cuenta de que cocinar no se trataba solo de seguir instrucciones — se trataba de paciencia, amor y hacer las cosas como ella siempre las había hecho."
+    }
   },
   "117": {
     "title": "Like and As",
@@ -249,6 +277,14 @@ export const conjunctionsUnits: Record<number, Unit> = {
         "front": "LIKE vs AS — the difference",
         "back": "LIKE = similar to:\n'She runs LIKE a professional.' (she's not one)\n\nAS = in the function/role of:\n'She works AS a nurse.' (she IS a nurse)\n\nTip: as = real role. like = comparison."
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Tell me about your new coworker.", "translation": "Cuéntame sobre tu nuevo compañero de trabajo." },
+      { "speaker": "user", "text": "He's really talented. He works as a graphic designer, but he draws like a professional artist.", "translation": "Es muy talentoso. Trabaja como diseñador gráfico, pero dibuja como un artista profesional." },
+      { "speaker": "other", "text": "Wow. Does he act like the boss sometimes?", "translation": "Vaya. ¿Actúa como el jefe a veces?" },
+      { "speaker": "user", "text": "No, but he sometimes acts as team leader when our manager is away.", "translation": "No, pero a veces actúa como líder del equipo cuando nuestro gerente no está." },
+      { "speaker": "other", "text": "That's a real responsibility, not just a comparison then.", "translation": "Esa es una responsabilidad real, entonces, no solo una comparación." },
+      { "speaker": "user", "text": "Exactly. And he treats every project as his own — he cares like a real owner.", "translation": "Exacto. Y trata cada proyecto como si fuera suyo — se preocupa como un verdadero dueño." }
     ]
   },
   "118": {
@@ -311,7 +347,12 @@ export const conjunctionsUnits: Record<number, Unit> = {
         "front": "LIKE + noun vs AS IF + clause",
         "back": "LIKE + noun/pronoun: \"She sings like an angel.\"\nAS IF/AS THOUGH + clause: \"She sings as if she were an angel.\"\nUse a past verb after \"as if\" for something untrue: \"He acts as if he WERE rich.\" (he isn't)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Strange Neighbor",
+      "body": "Our new neighbor is very odd. He looks like he never sleeps — his eyes are always dark and tired. He talks as if he knew everyone in town, even though he only moved here last month. Yesterday he waved at me as though we were old friends, but I'd never spoken to him before. It sounds like he works at night, because his lights are always on. He drives an old car that sounds as if it's about to fall apart. My mom says he acts as if he owned the whole street, walking around like he's the mayor. Honestly, it feels like we're living next to a mystery.",
+      "translation": "Nuestro nuevo vecino es muy extraño. Parece como si nunca durmiera — sus ojos siempre se ven oscuros y cansados. Habla como si conociera a todos en el pueblo, aunque se mudó aquí apenas el mes pasado. Ayer me saludó como si fuéramos viejos amigos, pero nunca había hablado con él antes. Suena como si trabajara de noche, porque sus luces siempre están encendidas. Conduce un auto viejo que suena como si estuviera a punto de desarmarse. Mi mamá dice que actúa como si fuera dueño de toda la calle, caminando como si fuera el alcalde. Sinceramente, se siente como si viviéramos junto a un misterio."
+    }
   },
   "119": {
     "title": "During / For / While",
@@ -373,7 +414,12 @@ export const conjunctionsUnits: Record<number, Unit> = {
         "front": "DURING / FOR / WHILE",
         "back": "DURING + noun (WHEN?):\n'I slept DURING the meeting.'\n\nFOR + period (HOW LONG?):\n'I slept FOR three hours.'\n\nWHILE + clause (SIMULTANEOUS):\n'WHILE I was sleeping, it rained.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "A Busy Office Day",
+      "body": "My phone rang three times during the morning meeting, which was embarrassing. I had been working on the same report for six hours, and while I was trying to finish it, my computer suddenly crashed. During lunch, I didn't even stop to eat — I just kept typing while my sandwich sat untouched for over an hour. My boss walked past while I was rewriting the whole document from memory. 'You've been at your desk for the entire day,' she said, surprised. During the afternoon, things finally calmed down, and while my colleagues left early, I stayed for two more hours to finish everything. By the end, I had been working for almost twelve hours straight.",
+      "translation": "Mi teléfono sonó tres veces durante la reunión de la mañana, lo cual fue vergonzoso. Había estado trabajando en el mismo informe durante seis horas, y mientras intentaba terminarlo, mi computadora se apagó de repente. Durante el almuerzo, ni siquiera paré para comer — seguí escribiendo mientras mi sándwich quedó intacto por más de una hora. Mi jefa pasó mientras yo reescribía todo el documento de memoria. 'Has estado en tu escritorio todo el día', dijo, sorprendida. Durante la tarde, las cosas finalmente se calmaron, y mientras mis compañeros se fueron temprano, yo me quedé dos horas más para terminar todo. Al final, había estado trabajando casi doce horas seguidas."
+    }
   },
   "120": {
     "title": "By and Until / By the Time",
@@ -424,6 +470,14 @@ export const conjunctionsUnits: Record<number, Unit> = {
         "front": "BY vs UNTIL",
         "back": "BY = deadline (at or before a time):\n'I'll finish it BY tomorrow.' (any time up to tomorrow)\n\nUNTIL = continues up to a time:\n'I'll wait UNTIL tomorrow.' (waiting the whole time)\n\n'I'll be there BY 6.' ✅ (arrival deadline)\n'I'll wait UNTIL 6.' ✅ (waiting up to 6)"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Can you finish the presentation by Thursday?", "translation": "¿Puedes terminar la presentación para el jueves?" },
+      { "speaker": "user", "text": "Yes, I'll have it ready by Wednesday night, actually.", "translation": "Sí, de hecho la tendré lista para el miércoles por la noche." },
+      { "speaker": "other", "text": "Great. Will you be in the office until then?", "translation": "Genial. ¿Vas a estar en la oficina hasta entonces?" },
+      { "speaker": "user", "text": "I'll be working until pretty late tonight, but I should be done by nine.", "translation": "Voy a estar trabajando hasta bastante tarde esta noche, pero debería terminar para las nueve." },
+      { "speaker": "other", "text": "And by the time the client arrives tomorrow, everything will be ready?", "translation": "¿Y para cuando llegue el cliente mañana, todo estará listo?" },
+      { "speaker": "user", "text": "Definitely. By the time they walk in, we'll have set up the whole room.", "translation": "Definitivamente. Para cuando entren, ya habremos organizado toda la sala." }
     ]
   }
 };

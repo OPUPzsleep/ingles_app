@@ -97,7 +97,12 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "-ING vs -ED adjectives — the rule",
         "back": "-ING = the THING that causes a feeling:\n'The film is boring.' (it causes boredom)\n\n-ED = how a PERSON feels:\n'I am bored.' (I feel the boredom)\n\nTIP: THING → -ing. PERSON → -ed."
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Movie Night",
+      "body": "Last Friday, my friends came over for a movie night. We picked a horror film that everyone said was terrifying, but honestly, I found it boring. Ana was excited before it started, but after twenty minutes she looked confused — the plot was really confusing! Halfway through, Luis fell asleep because he was exhausted after a long week at work. I was a little disappointed; I expected something more exciting. In the end, we turned it off and watched a comedy instead, which was actually more interesting. Everyone agreed it was a relaxing night, even if the horror movie was a total disappointment.",
+      "translation": "El viernes pasado, mis amigos vinieron a mi casa para una noche de películas. Elegimos una película de terror que todos decían que era aterradora, pero, sinceramente, me pareció aburrida. Ana estaba emocionada antes de que empezara, pero después de veinte minutos se veía confundida — ¡la trama era realmente confusa! A la mitad, Luis se quedó dormido porque estaba agotado después de una larga semana de trabajo. Yo estaba un poco decepcionado; esperaba algo más emocionante. Al final, la apagamos y vimos una comedia, que en realidad fue más interesante. Todos coincidimos en que fue una noche relajante, aunque la película de terror fue una decepción total."
+    }
   },
   "99": {
     "title": "Adjectives: Order",
@@ -143,7 +148,12 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "Order of adjectives: OSASCOMP",
         "back": "Opinion → Size → Age → Shape → Colour → Origin → Material → Purpose\n\nExample:\n'a LOVELY SMALL OLD ROUND GREEN FRENCH SILVER cooking knife'\n\nIn practice, rarely more than 3 adjectives together."
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Market in Cusco",
+      "body": "On our trip to Peru, we visited a small market in Cusco full of colourful stalls. My sister found a beautiful old wooden mask and wanted to buy it immediately. I preferred a lovely little round leather bag instead. Near the entrance, an old man was selling a big black Peruvian wool blanket, and next to him, a young woman offered a gorgeous long red silk scarf. My husband bought a strange small green stone necklace as a souvenir. Everything was handmade, and the seller explained that each beautiful traditional item told a different story about the region.",
+      "translation": "En nuestro viaje a Perú, visitamos un pequeño mercado en Cusco lleno de puestos coloridos. Mi hermana encontró una hermosa máscara de madera vieja y quiso comprarla de inmediato. Yo preferí un pequeño y bonito bolso redondo de cuero. Cerca de la entrada, un hombre mayor vendía una gran manta negra de lana peruana, y junto a él, una mujer joven ofrecía una hermosa bufanda de seda roja y larga. Mi esposo compró un extraño y pequeño collar de piedra verde como recuerdo. Todo era hecho a mano, y el vendedor explicó que cada hermoso objeto tradicional contaba una historia diferente sobre la región."
+    }
   },
   "100": {
     "title": "Adjectives and Adverbs 1",
@@ -194,7 +204,12 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "GOOD vs WELL",
         "back": "GOOD = adjective (describes a noun):\n'She's a GOOD teacher.' · 'The food is GOOD.'\n\nWELL = adverb (describes a verb):\n'She teaches WELL.' · 'He plays WELL.'\n\nWELL = adjective (= healthy):\n'Are you WELL?' · 'I feel WELL.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Final Match",
+      "body": "Our local team played really well on Saturday. Their new striker is a good player, and he ran fast all game. He didn't score, but he passed the ball well to his teammates. The goalkeeper played especially well too — he saved three difficult shots. After the match, the coach said, 'It was a good performance, and everyone worked well together.' My brother, who plays for the other team, wasn't feeling well that day, so he couldn't play his best. Even so, he said politely, 'You played a good game. Congratulations!' It was a good day for football in our town.",
+      "translation": "Nuestro equipo local jugó muy bien el sábado. Su nuevo delantero es un buen jugador, y corrió rápido todo el partido. No anotó, pero pasó bien el balón a sus compañeros. El portero también jugó especialmente bien — atajó tres tiros difíciles. Después del partido, el entrenador dijo: 'Fue una buena actuación, y todos trabajaron bien juntos.' Mi hermano, que juega en el otro equipo, no se sentía bien ese día, así que no pudo jugar en su mejor nivel. Aun así, dijo cortésmente: 'Jugaron un buen partido. ¡Felicidades!' Fue un buen día para el fútbol en nuestro pueblo."
+    }
   },
   "101": {
     "title": "Adjectives and Adverbs 2 (fast/hard/hardly)",
@@ -240,7 +255,12 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "HARD vs HARDLY",
         "back": "HARD (adverb) = with effort:\n'She works HARD.' (many hours, much effort)\n\nHARDLY (adverb) = almost not:\n'I HARDLY know him.' (I barely know him)\n\nThey are completely DIFFERENT!"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Final Exams",
+      "body": "This week I have my final exams, so I've been studying hard every night. My roommate is a fast reader — she finishes a whole chapter in ten minutes — but I read slowly and have to check the dictionary constantly. I can hardly remember all the vocabulary for the English test tomorrow. Yesterday I stayed up late, and now I'm hardly able to keep my eyes open. My teacher always says, 'Study hard, but rest well too,' but this week I've hardly slept at all. Tomorrow I'll wake up early and run fast to the exam room, hoping I've prepared hard enough.",
+      "translation": "Esta semana tengo mis exámenes finales, así que he estado estudiando duro todas las noches. Mi compañera de cuarto lee rápido — termina un capítulo entero en diez minutos — pero yo leo despacio y tengo que revisar el diccionario constantemente. Casi no recuerdo todo el vocabulario para el examen de inglés de mañana. Ayer me quedé despierto hasta tarde, y ahora casi no puedo mantener los ojos abiertos. Mi profesora siempre dice: 'Estudien duro, pero descansen bien también,' pero esta semana casi no he dormido. Mañana me levantaré temprano e iré corriendo rápido al salón del examen, esperando haberme preparado lo suficientemente duro."
+    }
   },
   "102": {
     "title": "So and Such",
@@ -286,7 +306,12 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "SO vs SUCH",
         "back": "SO + adjective/adverb (no noun):\n'The film was SO boring.'\n'She speaks SO quickly.'\n\nSUCH + (a/an) + (adjective) + noun:\n'It was SUCH a boring film.'\n'SUCH beautiful weather!'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "My Cousin's Wedding",
+      "body": "Last weekend I went to my cousin's wedding, and it was such a beautiful event! The bride looked so elegant in her white dress, and the garden was decorated with such lovely flowers. The ceremony was so emotional that my aunt cried the whole time. Afterwards, there was such delicious food that everyone asked for more. The band played so well that people danced until midnight. My cousin gave such a touching speech about her husband that the whole room went quiet. It was such a wonderful day, and everyone agreed it was one of the best weddings they had ever attended.",
+      "translation": "El fin de semana pasado fui a la boda de mi prima, ¡y fue un evento tan hermoso! La novia se veía tan elegante con su vestido blanco, y el jardín estaba decorado con flores tan hermosas. La ceremonia fue tan emotiva que mi tía lloró todo el tiempo. Después, hubo comida tan deliciosa que todos pidieron más. La banda tocó tan bien que la gente bailó hasta la medianoche. Mi prima dio un discurso tan conmovedor sobre su esposo que todo el salón se quedó en silencio. Fue un día tan maravilloso, y todos coincidieron en que fue una de las mejores bodas a las que habían asistido."
+    }
   },
   "103": {
     "title": "Enough and Too",
@@ -337,6 +362,15 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "TOO vs ENOUGH + to infinitive",
         "back": "TOO + adj + TO do:\n'It's too cold to swim.' (= so cold I can't)\n\nAdj + ENOUGH + TO do:\n'She's tall enough to reach it.' (= sufficiently tall)\n\nNOT enough + TO do:\n'He's not old enough to vote.'"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "user", "text": "Can you taste the soup? I think it might be too salty.", "translation": "¿Puedes probar la sopa? Creo que podría estar demasiado salada." },
+      { "speaker": "other", "text": "Hmm, it's not too salty, but it's not hot enough yet.", "translation": "Mmm, no está demasiado salada, pero todavía no está suficientemente caliente." },
+      { "speaker": "user", "text": "Okay, I'll leave it on the stove a bit longer. Is the rice ready?", "translation": "Bueno, la dejaré en la estufa un poco más. ¿Está lista el arroz?" },
+      { "speaker": "other", "text": "Almost — it's too hard to eat right now, it needs five more minutes.", "translation": "Casi — está demasiado dura para comer ahora mismo, necesita cinco minutos más." },
+      { "speaker": "user", "text": "Good. Do we have enough bread for everyone?", "translation": "Bien. ¿Tenemos suficiente pan para todos?" },
+      { "speaker": "other", "text": "I think so, but I'm not sure it's fresh enough to serve. Let me check.", "translation": "Creo que sí, pero no estoy seguro de que esté suficientemente fresco para servirlo. Déjame revisar." },
+      { "speaker": "user", "text": "It smells fine. I think we're finally ready to eat!", "translation": "Huele bien. ¡Creo que por fin estamos listos para comer!" }
     ]
   },
   "104": {
@@ -393,7 +427,12 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "FAIRLY / QUITE / RATHER / PRETTY",
         "back": "FAIRLY = moderately (neutral):\n'It was fairly good.' (OK but not great)\n\nQUITE = more than fairly:\n'It's quite good.' (moderately good)\n\nRATHER = surprisingly or quite a lot:\n'It's rather cold for July!' (unexpectedly)\n\nPRETTY = informal = quite:\n'It's pretty good.' (informal)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Hiking in the Mountains",
+      "body": "We went hiking in the mountains last weekend, and the weather was rather strange for August — it was actually quite cold at the top. The trail was fairly easy at the beginning, just a gentle path through the trees, but it got quite steep near the summit. My friend Carlos, who hikes every week, said the view was pretty amazing, and I agreed it was quite a spectacular sight. The wind was rather strong, so we were fairly happy we brought jackets. Overall, it was a pretty tiring day, but the fairly clear sky and the rather dramatic scenery made it completely worth it.",
+      "translation": "Fuimos de excursión a las montañas el fin de semana pasado, y el clima estaba bastante extraño para agosto — de hecho, hacía bastante frío en la cima. El sendero era bastante fácil al principio, solo un camino suave entre los árboles, pero se volvió bastante empinado cerca de la cumbre. Mi amigo Carlos, que hace senderismo cada semana, dijo que la vista era bastante increíble, y yo estuve de acuerdo en que era un paisaje bastante espectacular. El viento era bastante fuerte, así que estábamos bastante contentos de haber traído chaquetas. En general, fue un día bastante agotador, pero el cielo bastante despejado y el paisaje bastante dramático hicieron que valiera completamente la pena."
+    }
   },
   "105": {
     "title": "Comparative 1 (bigger / more expensive)",
@@ -494,7 +533,12 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "Comparative rules — short vs long adjectives",
         "back": "SHORT (1-2 syllables) → add -ER:\nold→older · big→bigger · happy→happier\n\nLONG (2+ syllables) → MORE:\nmore expensive · more comfortable\n\nIRREGULAR:\ngood→better · bad→worse · far→further"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Looking for an Apartment",
+      "body": "My partner and I are looking for a new apartment, and we've seen five places so far. The first one was cheaper than the others, but it was also smaller and darker. The second apartment was bigger and had a nicer kitchen, but it was noisier because it's near a busy street. The third one was the most interesting: it was older than the rest, with high ceilings, but the rent was more expensive than we wanted to pay. Our agent said the fourth apartment was better value, and honestly, it felt safer too. In the end, we chose the one that was quieter and closer to my office.",
+      "translation": "Mi pareja y yo estamos buscando un nuevo apartamento, y hasta ahora hemos visto cinco lugares. El primero era más barato que los otros, pero también era más pequeño y oscuro. El segundo apartamento era más grande y tenía una cocina más bonita, pero era más ruidoso porque está cerca de una calle concurrida. El tercero fue el más interesante: era más antiguo que el resto, con techos altos, pero la renta era más cara de lo que queríamos pagar. Nuestro agente dijo que el cuarto apartamento tenía mejor valor, y honestamente, también se sentía más seguro. Al final, elegimos el que era más tranquilo y más cercano a mi oficina."
+    }
   },
   "106": {
     "title": "Comparative 2 (much better / getting better)",
@@ -545,7 +589,12 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "Making comparatives stronger or weaker",
         "back": "MUCH/FAR/A LOT + comparative (big difference):\n'This is MUCH better.' · 'FAR more expensive.'\n\nA BIT/A LITTLE + comparative (small difference):\n'It's A BIT colder today.' · 'A LITTLE better.'\n\nGETTING + comparative (gradual change):\n'It's GETTING colder.' / 'I'm GETTING better.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "My Gym Progress",
+      "body": "I started going to the gym three months ago, and my trainer says I'm getting much stronger every week. In the beginning, I could barely lift the smallest weights, but now I'm far more confident, and my arms are a lot bigger than before. Running is getting easier too — I used to get tired after five minutes, but now I can run a little longer each time. My diet is a bit healthier as well, since I stopped eating so much sugar. My friend Marta, who's been going for a year, is much fitter than me, but my trainer says I'm improving far faster than most beginners.",
+      "translation": "Empecé a ir al gimnasio hace tres meses, y mi entrenador dice que me estoy poniendo mucho más fuerte cada semana. Al principio, apenas podía levantar las pesas más pequeñas, pero ahora tengo mucha más confianza, y mis brazos son mucho más grandes que antes. Correr también se está volviendo más fácil — antes me cansaba después de cinco minutos, pero ahora puedo correr un poco más cada vez. Mi dieta también es un poco más saludable, ya que dejé de comer tanta azúcar. Mi amiga Marta, que lleva un año yendo, está mucho más en forma que yo, pero mi entrenador dice que estoy mejorando mucho más rápido que la mayoría de los principiantes."
+    }
   },
   "107": {
     "title": "Comparative 3 (as … as)",
@@ -596,6 +645,15 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "AS...AS for comparisons",
         "back": "EQUAL: as + adj + as:\n'She's AS TALL AS her brother.'\n\nNOT EQUAL: not as + adj + as:\n'I'm NOT AS TALL AS her.'\n\nTHE SAME AS:\n'My bag is THE SAME AS yours.'\n\nDIFFERENT FROM:\n'English is DIFFERENT FROM Spanish.'"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "user", "text": "Have you met my cousin Daniel? He's as tall as my dad now!", "translation": "¿Conociste a mi primo Daniel? ¡Ahora es tan alto como mi papá!" },
+      { "speaker": "other", "text": "Really? Is he as old as you?", "translation": "¿En serio? ¿Es tan mayor como tú?" },
+      { "speaker": "user", "text": "No, he's younger, but he's not as shy as he used to be.", "translation": "No, es menor, pero ya no es tan tímido como antes." },
+      { "speaker": "other", "text": "That's funny, my sister is the same. She's as confident as our older brother now.", "translation": "Qué gracioso, mi hermana es igual. Ahora es tan segura de sí misma como nuestro hermano mayor." },
+      { "speaker": "user", "text": "Their personalities are similar to each other's, actually.", "translation": "Sus personalidades son bastante parecidas, la verdad." },
+      { "speaker": "other", "text": "True, but Daniel isn't as talkative as your sister, is he?", "translation": "Cierto, pero Daniel no es tan hablador como tu hermana, ¿verdad?" },
+      { "speaker": "user", "text": "Ha, no one is as talkative as her!", "translation": "Ja, ¡nadie es tan hablador como ella!" }
     ]
   },
   "108": {
@@ -652,7 +710,12 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "Superlative rules",
         "back": "SHORT → THE + adj + EST:\nold→THE OLDEST · big→THE BIGGEST\n\nLONG → THE MOST + adj:\nTHE MOST EXPENSIVE · THE MOST BEAUTIFUL\n\nIRREGULAR:\ngood→THE BEST · bad→THE WORST · far→THE FURTHEST"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Best Meal of the Trip",
+      "body": "During our trip to Italy, we ate at a tiny restaurant in Naples that turned out to be the best meal I've ever had. The pizza was the most delicious thing on the menu, made in the oldest oven in the city. Our waiter told us it was also the busiest restaurant in the neighbourhood, and I believed him — it was the noisiest place we visited all week. The dessert was the sweetest tiramisu I've ever tasted, and the coffee afterward was the strongest I've had in years. My husband said it was definitely the most memorable dinner of our whole vacation, and I completely agree — nothing else came close.",
+      "translation": "Durante nuestro viaje a Italia, comimos en un pequeño restaurante en Nápoles que resultó ser la mejor comida que he probado en mi vida. La pizza era lo más delicioso del menú, hecha en el horno más antiguo de la ciudad. Nuestro mesero nos dijo que también era el restaurante más concurrido del barrio, y le creí — fue el lugar más ruidoso que visitamos en toda la semana. El postre fue el tiramisú más dulce que he probado, y el café después fue el más fuerte que he tomado en años. Mi esposo dijo que definitivamente fue la cena más memorable de todas nuestras vacaciones, y estoy completamente de acuerdo — nada más se le comparó."
+    }
   },
   "109": {
     "title": "Word Order 1",
@@ -692,7 +755,12 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "Adverb position — key rule",
         "back": "NEVER put an adverb between VERB and OBJECT:\n'She speaks English WELL.' ✅\n'She speaks WELL English.' ❌\n\nAdverb goes: before the verb, after the verb, or at end of sentence."
       }
-    ]
+    ],
+    "readingText": {
+      "title": "My First Day at the Office",
+      "body": "Yesterday was my first day at the new office. I met my manager in the lobby at nine o'clock, and she explained the project carefully to me. I understand English quite well, but I still speak Spanish fluently with two other coworkers during lunch. In the afternoon, I answered emails quickly at my new desk, and I organized my files neatly in the drawer. My manager said I learned the software fast for a first day. After work, I walked home slowly because it was raining, and I called my mother happily to tell her everything went well.",
+      "translation": "Ayer fue mi primer día en la nueva oficina. Conocí a mi jefa en el vestíbulo a las nueve en punto, y ella me explicó el proyecto con cuidado. Entiendo inglés bastante bien, pero todavía hablo español con fluidez con otros dos compañeros durante el almuerzo. Por la tarde, respondí correos rápidamente en mi nuevo escritorio, y organicé mis archivos con orden en el cajón. Mi jefa dijo que aprendí el programa rápido para ser el primer día. Después del trabajo, caminé a casa despacio porque estaba lloviendo, y llamé a mi mamá con alegría para contarle que todo salió bien."
+    }
   },
   "110": {
     "title": "Word Order 2 (adverbs with the verb)",
@@ -743,6 +811,15 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "Frequency adverbs — position",
         "back": "BEFORE main verb:\n'I ALWAYS eat breakfast.'\n'She USUALLY drives.'\n\nAFTER BE:\n'He IS ALWAYS late.'\n'They ARE OFTEN tired.'\n\nAFTER auxiliary:\n'I have NEVER done this.' · 'She doesn't USUALLY come.'"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "What's your morning routine like on weekdays?", "translation": "¿Cómo es tu rutina matutina entre semana?" },
+      { "speaker": "user", "text": "I usually wake up at six, but I'm always tired at first.", "translation": "Normalmente me despierto a las seis, pero siempre estoy cansado al principio." },
+      { "speaker": "other", "text": "Do you always have breakfast before work?", "translation": "¿Siempre desayunas antes del trabajo?" },
+      { "speaker": "user", "text": "I usually do, but sometimes I'm too late and I don't usually eat much.", "translation": "Normalmente sí, pero a veces se me hace tarde y normalmente no como mucho." },
+      { "speaker": "other", "text": "I'm never hungry that early, honestly.", "translation": "Sinceramente, nunca tengo hambre tan temprano." },
+      { "speaker": "user", "text": "Really? I'm often starving by nine o'clock.", "translation": "¿En serio? Seguido tengo mucha hambre para las nueve." },
+      { "speaker": "other", "text": "That's funny — I've never noticed that about you before.", "translation": "Qué gracioso — nunca me había fijado en eso antes." }
     ]
   },
   "111": {
@@ -799,6 +876,15 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "STILL / ANY MORE / YET / ALREADY",
         "back": "STILL = continuing (often surprisingly):\n'He's STILL sleeping.' (at noon!)\n\nANY MORE = stopped:\n'She doesn't live here ANY MORE.'\n\nYET = expected but not happened (neg/questions):\n'Have you finished YET?'\n\nALREADY = happened sooner than expected:\n'I've ALREADY done it.'"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Have you washed the dishes yet?", "translation": "¿Ya lavaste los platos?" },
+      { "speaker": "user", "text": "Yes, I've already washed them, and I've already taken out the trash too.", "translation": "Sí, ya los lavé, y ya saqué la basura también." },
+      { "speaker": "other", "text": "Great. Is Marco still cleaning his room?", "translation": "Genial. ¿Marco todavía está limpiando su cuarto?" },
+      { "speaker": "user", "text": "He's still doing it — he's been in there for two hours!", "translation": "Todavía lo está haciendo — ¡lleva dos horas ahí adentro!" },
+      { "speaker": "other", "text": "Wow. Doesn't he live with his girlfriend any more?", "translation": "Vaya. ¿Ya no vive con su novia?" },
+      { "speaker": "user", "text": "No, they broke up, so he doesn't live there any more. He moved back here.", "translation": "No, terminaron, así que ya no vive ahí. Se regresó aquí." },
+      { "speaker": "other", "text": "I see. Well, I haven't finished my homework yet, so I should go study.", "translation": "Ya veo. Bueno, todavía no he terminado mi tarea, así que debería ir a estudiar." }
     ]
   },
   "112": {
@@ -845,6 +931,11 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
         "front": "EVEN — usage",
         "back": "= surprising or unexpected:\n'EVEN Tom apologised.' (I didn't expect that!)\n'She DIDN'T EVEN say hello.' (very rude)\n\nEVEN + comparative = stronger:\n'This is EVEN better than I expected.'\n'It's EVEN worse now.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "A Strange Day at the Office",
+      "body": "My coworker Sofia had the strangest day at the office yesterday. She's normally very calm, but she was even more nervous than usual before her presentation. Even the manager, who never smiles, laughed at her jokes! During the meeting, she didn't even check her notes once, and she answered every question perfectly. Even her biggest critic admitted the presentation was even better than last year's. Later, she didn't even stop for lunch because clients kept calling. By the end of the day, she was even more exhausted than after her hardest project, but she said it was even more rewarding than she expected.",
+      "translation": "Mi compañera Sofía tuvo el día más extraño en la oficina ayer. Normalmente es muy tranquila, pero estaba incluso más nerviosa de lo habitual antes de su presentación. ¡Hasta el jefe, que nunca sonríe, se rió con sus chistes! Durante la reunión, ni siquiera revisó sus notas una vez, y respondió todas las preguntas perfectamente. Hasta su crítico más duro admitió que la presentación fue aún mejor que la del año pasado. Más tarde, ni siquiera paró para almorzar porque los clientes seguían llamando. Al final del día, estaba incluso más agotada que después de su proyecto más difícil, pero dijo que fue aún más gratificante de lo que esperaba."
+    }
   }
 };

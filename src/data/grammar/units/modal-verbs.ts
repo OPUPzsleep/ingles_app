@@ -292,7 +292,12 @@ export const modalVerbsUnits: Record<number, Unit> = {
         "front": "MUST vs CAN'T for deduction",
         "back": "MUST = I'm sure it's TRUE:\n'You must be tired.' (evidence: awake since 5am)\n\nCAN'T = I'm sure it's NOT TRUE:\n'That can't be right.' (it's impossible)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "The Locked Room",
+      "body": "Detective Ray stood in the locked room and frowned. \"The window is closed, and the door was locked from the inside,\" he said. \"The thief must still be in this house — there's nowhere else to go.\" He picked up a coffee cup from the table. \"This is still warm, so someone must have been here just a few minutes ago.\" The guard shook his head. \"Nobody left through the front door, sir. It can't have been anyone from outside.\" Ray smiled and pointed at the old bookshelf. \"Then there must be another way out — a secret door, maybe.\" Behind a painting, he found it. \"I knew it! This must be how the thief escaped.\"",
+      "translation": "El detective Ray se paró en la habitación cerrada y frunció el ceño. \"La ventana está cerrada, y la puerta fue cerrada con llave desde adentro\", dijo. \"El ladrón debe seguir en esta casa — no hay otro lugar adonde ir.\" Tomó una taza de café de la mesa. \"Todavía está tibia, así que alguien debe haber estado aquí hace solo unos minutos.\" El guardia negó con la cabeza. \"Nadie salió por la puerta principal, señor. No puede haber sido alguien de afuera.\" Ray sonrió y señaló la vieja estantería. \"Entonces debe haber otra salida — quizás una puerta secreta.\" Detrás de un cuadro, la encontró. \"¡Lo sabía! Así debe haber escapado el ladrón.\""
+    }
   },
   "29": {
     "title": "May and Might 1",
@@ -354,6 +359,14 @@ export const modalVerbsUnits: Record<number, Unit> = {
         "front": "MAY vs MIGHT — difference",
         "back": "Both express POSSIBILITY (maybe, perhaps)\nMight is sometimes slightly less certain than may.\n\n'It may rain.' = possible\n'It might rain.' = a little less certain\n\nIn practice, they are usually interchangeable."
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Do you have any plans for the weekend?", "translation": "¿Tienes planes para el fin de semana?" },
+      { "speaker": "user", "text": "I'm not sure yet. I might go hiking if the weather is good.", "translation": "Todavía no estoy seguro. Podría ir de excursión si hace buen tiempo." },
+      { "speaker": "other", "text": "It may rain on Saturday, actually.", "translation": "De hecho, puede que llueva el sábado." },
+      { "speaker": "user", "text": "Then I might just stay home and read instead.", "translation": "Entonces quizás me quede en casa leyendo." },
+      { "speaker": "other", "text": "May I join you? I love reading too.", "translation": "¿Puedo unirme? A mí también me encanta leer." },
+      { "speaker": "user", "text": "Of course! You might even borrow one of my books.", "translation": "¡Claro! Hasta podrías llevarte prestado uno de mis libros." }
     ]
   },
   "30": {
@@ -400,7 +413,12 @@ export const modalVerbsUnits: Record<number, Unit> = {
         "front": "MIGHT AS WELL",
         "back": "= there's no better option, so let's do this:\n'We might as well wait.' (there's nothing better to do)\n\nSimilar to: 'We may as well wait.' or 'Let's just wait.'"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Nothing to Do",
+      "body": "It was Sunday afternoon, and Clara had nothing planned. \"I might as well clean the house,\" she thought, \"since there's nothing better to do.\" While cleaning, she found an old letter under the sofa. It was addressed to her brother, but it looked like it had never been opened. \"He may have forgotten about this,\" she thought, \"or he might have never seen it at all.\" She decided to call him. \"I found an old letter here,\" she said. \"You might have dropped it years ago.\" Her brother laughed. \"I may as well come over and see it myself!\" An hour later, he arrived, and they spent the afternoon remembering old times.",
+      "translation": "Era domingo por la tarde, y Clara no tenía nada planeado. \"Más vale que limpie la casa\", pensó, \"ya que no hay nada mejor que hacer.\" Mientras limpiaba, encontró una carta vieja debajo del sofá. Estaba dirigida a su hermano, pero parecía que nunca la habían abierto. \"Puede que se le haya olvidado\", pensó, \"o puede que nunca la haya visto.\" Decidió llamarlo. \"Encontré una carta vieja aquí\", dijo. \"Puede que se te haya caído hace años.\" Su hermano se rió. \"¡Mejor voy y la veo yo mismo!\" Una hora después, llegó, y pasaron la tarde recordando viejos tiempos."
+    }
   },
   "31": {
     "title": "Have To and Must",
@@ -482,6 +500,14 @@ export const modalVerbsUnits: Record<number, Unit> = {
         "front": "MUST vs HAVE TO vs DON'T HAVE TO",
         "back": "MUST = I feel it's important (personal):\n'I must lose weight.' (my own decision)\n\nHAVE TO = external obligation:\n'I have to work late.' (boss said so)\n\nDON'T HAVE TO = not necessary:\n'You don't have to wear a tie.' (optional)"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Do you have to wear a uniform at your new job?", "translation": "¿Tienes que usar uniforme en tu nuevo trabajo?" },
+      { "speaker": "user", "text": "Yes, I have to wear a suit every day. It's company policy.", "translation": "Sí, tengo que usar traje todos los días. Es política de la empresa." },
+      { "speaker": "other", "text": "That sounds strict. I must say, I really admire how professional you look.", "translation": "Suena estricto. Debo decir que admiro lo profesional que te ves." },
+      { "speaker": "user", "text": "Thanks! But I don't have to wear a tie on Fridays, which is nice.", "translation": "¡Gracias! Pero no tengo que usar corbata los viernes, lo cual es agradable." },
+      { "speaker": "other", "text": "I must remember to dress better for my interview tomorrow.", "translation": "Debo acordarme de vestirme mejor para mi entrevista de mañana." },
+      { "speaker": "user", "text": "You really must! First impressions matter a lot.", "translation": "¡De verdad debes hacerlo! Las primeras impresiones importan mucho." }
     ]
   },
   "32": {
@@ -533,7 +559,12 @@ export const modalVerbsUnits: Record<number, Unit> = {
         "front": "MUSTN'T vs NEEDN'T / DON'T HAVE TO",
         "back": "MUSTN'T = NOT ALLOWED:\n'You mustn't park here.' (it's forbidden)\n\nNEEDN'T / DON'T HAVE TO = NOT NECESSARY:\n'You needn't come.' (you can, but it's not required)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Museum Rules",
+      "body": "Our class visited the art museum yesterday. Before we went in, the teacher gave us some rules. \"You mustn't touch the paintings,\" she said, \"and you mustn't use flash photography — it damages the art.\" Then she smiled. \"But you needn't stay silent the whole time. You can talk quietly and ask questions.\" Inside, a guard reminded us again: \"You mustn't run in the gallery, and you mustn't eat or drink near the artworks.\" My friend asked if we needed tickets to enter each room. \"You needn't buy separate tickets,\" the guard answered. \"One ticket lets you see everything.\" We had a wonderful afternoon, and nobody broke any rules.",
+      "translation": "Nuestra clase visitó el museo de arte ayer. Antes de entrar, la maestra nos dio algunas reglas. \"No deben tocar las pinturas\", dijo, \"y no deben usar flash al fotografiar — daña el arte.\" Luego sonrió. \"Pero no necesitan quedarse en silencio todo el tiempo. Pueden hablar en voz baja y hacer preguntas.\" Adentro, un guardia nos recordó de nuevo: \"No deben correr en la galería, y no deben comer ni beber cerca de las obras.\" Mi amiga preguntó si necesitábamos boletos para entrar a cada sala. \"No necesitan comprar boletos separados\", respondió el guardia. \"Un boleto les permite ver todo.\" Tuvimos una tarde maravillosa, y nadie rompió ninguna regla."
+    }
   },
   "33": {
     "title": "Should 1",
@@ -595,6 +626,14 @@ export const modalVerbsUnits: Record<number, Unit> = {
         "front": "SHOULD vs MUST — difference",
         "back": "SHOULD = mild advice/recommendation:\n'You should eat more vegetables.' (suggestion)\n\nMUST = strong obligation:\n'You must stop at a red light.' (law)\n\nSHOULD HAVE = past regret:\n'I should have studied harder.'"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "I've had a terrible headache all day.", "translation": "He tenido un dolor de cabeza terrible todo el día." },
+      { "speaker": "user", "text": "You should drink some water and rest for a while.", "translation": "Deberías tomar agua y descansar un rato." },
+      { "speaker": "other", "text": "Maybe you're right. Do you think I should see a doctor?", "translation": "Tal vez tengas razón. ¿Crees que debería ir al médico?" },
+      { "speaker": "user", "text": "If it doesn't go away by tomorrow, you should definitely go.", "translation": "Si no se te quita para mañana, definitivamente deberías ir." },
+      { "speaker": "other", "text": "The pharmacy should still be open now, right?", "translation": "La farmacia debería seguir abierta ahora, ¿verdad?" },
+      { "speaker": "user", "text": "Yes, it should be — they close at nine. You shouldn't wait any longer.", "translation": "Sí, debería estarlo — cierran a las nueve. No deberías esperar más." }
     ]
   },
   "34": {
@@ -641,7 +680,12 @@ export const modalVerbsUnits: Record<number, Unit> = {
         "front": "SHOULD HAVE done",
         "back": "= It was the right thing but DIDN'T happen:\n'I should have studied harder.' (I didn't → I failed)\n\nSHOULDN'T HAVE done:\n'I shouldn't have eaten so much.' (I did → I regret it)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Exam Regrets",
+      "body": "Mark stared at his exam results and sighed. He should have studied harder — he knew that now. Instead of reading his notes the night before, he had gone out with friends, and now he regretted it. \"I shouldn't have wasted so much time watching movies,\" he thought. His teacher had suggested that he should ask for extra help weeks earlier, but Mark hadn't listened. \"I should have taken her advice,\" he admitted to himself. His friend Lisa, who had passed easily, said, \"You shouldn't have left everything until the last minute. Next time, you should start preparing early.\" Mark nodded. He knew she was right, and he promised himself things would be different next semester.",
+      "translation": "Mark miró los resultados de su examen y suspiró. Debería haber estudiado más — ahora lo sabía. En lugar de leer sus apuntes la noche anterior, había salido con amigos, y ahora se arrepentía. \"No debería haber perdido tanto tiempo viendo películas\", pensó. Su maestra le había sugerido semanas antes que pidiera ayuda extra, pero Mark no había escuchado. \"Debería haber seguido su consejo\", se admitió a sí mismo. Su amiga Lisa, que había aprobado fácilmente, le dijo: \"No deberías haber dejado todo para el último momento. La próxima vez, deberías empezar a prepararte temprano.\" Mark asintió. Sabía que ella tenía razón, y se prometió que las cosas serían diferentes el próximo semestre."
+    }
   },
   "35": {
     "title": "I'd Better / It's Time…",
@@ -687,6 +731,14 @@ export const modalVerbsUnits: Record<number, Unit> = {
         "front": "I'D BETTER vs IT'S TIME",
         "back": "I'D BETTER + base verb (urgent advice):\n'You'd better hurry or you'll miss the bus.'\n\nIT'S TIME + subject + past simple (overdue):\n'It's time you went to bed.' (you should have gone earlier)"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "It's already 7:45! It's time we left for the airport.", "translation": "¡Ya son las 7:45! Ya es hora de que salgamos para el aeropuerto." },
+      { "speaker": "user", "text": "You're right, we'd better hurry or we'll miss the flight.", "translation": "Tienes razón, mejor nos apuramos o perderemos el vuelo." },
+      { "speaker": "other", "text": "Where are the passports? It's time you found them!", "translation": "¿Dónde están los pasaportes? ¡Ya es hora de que los encuentres!" },
+      { "speaker": "user", "text": "I've got them. We'd better call a taxi right now.", "translation": "Los tengo. Mejor pedimos un taxi ahora mismo." },
+      { "speaker": "other", "text": "You'd better not forget your phone charger again.", "translation": "Mejor no olvides tu cargador de teléfono otra vez." },
+      { "speaker": "user", "text": "Don't worry, it's already in my bag. It's time to go!", "translation": "No te preocupes, ya está en mi bolso. ¡Es hora de irnos!" }
     ]
   },
   "36": {
@@ -749,7 +801,12 @@ export const modalVerbsUnits: Record<number, Unit> = {
         "front": "WOULD — three main uses",
         "back": "1. CONDITIONAL: 'If I had time, I would help.'\n2. POLITE REQUEST: 'Would you mind waiting?'\n3. PAST HABIT: 'We would go fishing every Sunday.' (= used to)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Grandmother's Stories",
+      "body": "When I was a child, my grandmother would tell me stories every night before bed. We would sit by the fireplace, and she would describe magical worlds full of dragons and castles. I loved those evenings so much that sometimes I wonder: if she were still here, what would she think of the stories I write now? I think she would be proud. Sometimes I imagine calling her and asking, \"Would you like to hear my new story?\" She would probably smile and say, \"Of course, dear — I would love that.\" I miss those simple evenings, and I would give anything to hear her voice again.",
+      "translation": "Cuando era niño, mi abuela me contaba historias cada noche antes de dormir. Nos sentábamos junto a la chimenea, y ella describía mundos mágicos llenos de dragones y castillos. Me encantaban tanto esas noches que a veces me pregunto: si ella todavía estuviera aquí, ¿qué pensaría de las historias que escribo ahora? Creo que estaría orgullosa. A veces imagino llamarla y preguntarle: \"¿Te gustaría escuchar mi nueva historia?\" Probablemente sonreiría y diría: \"Claro que sí, querido — me encantaría.\" Extraño esas tardes sencillas, y daría cualquier cosa por escuchar su voz de nuevo."
+    }
   },
   "37": {
     "title": "Can / Could / Would you…? (Requests)",
@@ -800,6 +857,14 @@ export const modalVerbsUnits: Record<number, Unit> = {
         "front": "Requests: CAN vs COULD vs WOULD YOU MIND",
         "back": "CAN you help me? (informal, direct)\nCOULD you help me? (more polite)\nWOULD YOU MIND helping me? (very polite)\n\n'Would you mind' → always + -ing"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Excuse me, could you help me carry these boxes?", "translation": "Disculpa, ¿podrías ayudarme a cargar estas cajas?" },
+      { "speaker": "user", "text": "Of course! Can you tell me where they need to go?", "translation": "¡Claro! ¿Puedes decirme adónde tienen que ir?" },
+      { "speaker": "other", "text": "To the meeting room upstairs, please. Would you mind taking the heavier one?", "translation": "A la sala de reuniones de arriba, por favor. ¿Te importaría llevar la más pesada?" },
+      { "speaker": "user", "text": "Not at all. Would you mind holding the door for me?", "translation": "Para nada. ¿Te importaría sostenerme la puerta?" },
+      { "speaker": "other", "text": "Sure. Do you mind if I go ahead and turn on the lights?", "translation": "Claro. ¿Te molesta si me adelanto y enciendo las luces?" },
+      { "speaker": "user", "text": "Not at all, go ahead. Could you also grab my notebook from the desk?", "translation": "Para nada, adelante. ¿Podrías también agarrar mi cuaderno del escritorio?" }
     ]
   }
 };

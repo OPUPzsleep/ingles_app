@@ -80,7 +80,12 @@ export const conditionalsUnits: Record<number, Unit> = {
         "front": "1st vs 2nd conditional — key difference",
         "back": "1ST: real/possible → If it rains, I'll stay home.\n2ND: unreal/imaginary → If I were a bird, I would fly away. (I'm not a bird)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Two Kinds of Plans",
+      "body": "This weekend, if the weather is good, we'll go camping in the mountains. If it rains, we'll stay home and watch movies instead. My brother, on the other hand, loves to dream about impossible things. He always says, 'If I had a million dollars, I would buy an island and never work again.' I tell him, 'If I were you, I'd be more realistic!' But he just laughs and says, 'If I won the lottery, I would travel the world first.' I guess dreaming doesn't cost anything — even if it never comes true.",
+      "translation": "Este fin de semana, si hace buen tiempo, iremos a acampar a las montañas. Si llueve, nos quedaremos en casa viendo películas. Mi hermano, en cambio, ama soñar con cosas imposibles. Siempre dice: 'Si tuviera un millón de dólares, compraría una isla y nunca más trabajaría.' Le digo: '¡Si yo fuera tú, sería más realista!' Pero él solo se ríe y dice: 'Si me ganara la lotería, primero viajaría por el mundo.' Supongo que soñar no cuesta nada — aunque nunca se haga realidad."
+    }
   },
   "39": {
     "title": "If I Knew… / I Wish I Knew…",
@@ -142,7 +147,12 @@ export const conditionalsUnits: Record<number, Unit> = {
         "front": "WISH + past simple vs WISH + would",
         "back": "WISH + past simple = wish things were different NOW:\n'I wish I knew her name.' (I don't know)\n\nWISH + would = complaint about behaviour:\n'I wish you would stop shouting!' (you keep shouting and I hate it)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "My Noisy Neighbor",
+      "body": "I wish I lived in a quieter street. Every night, my neighbor plays loud music until midnight, and I wish he would turn it down. I wish I were brave enough to knock on his door and complain, but I'm too shy. My sister says, 'I wish you would just talk to him instead of complaining to me!' She's probably right. I also wish I had thicker walls in my apartment — then the noise wouldn't bother me so much. For now, I just put on my headphones and wish for a peaceful night's sleep.",
+      "translation": "Ojalá viviera en una calle más tranquila. Cada noche, mi vecino pone música fuerte hasta la medianoche, y ojalá bajara el volumen. Ojalá fuera lo suficientemente valiente para tocar su puerta y quejarme, pero soy muy tímido. Mi hermana dice: '¡Ojalá simplemente hablaras con él en vez de quejarte conmigo!' Probablemente tiene razón. También ojalá tuviera paredes más gruesas en mi apartamento — así el ruido no me molestaría tanto. Por ahora, solo me pongo los audífonos y deseo tener una noche de sueño tranquila."
+    }
   },
   "40": {
     "title": "If I Had Known… / I Wish I Had Known…",
@@ -199,7 +209,12 @@ export const conditionalsUnits: Record<number, Unit> = {
         "front": "3rd Conditional — structure",
         "back": "IF + had + past participle → WOULD HAVE + past participle\n\nIf I had left earlier, I would have caught the train.\n(I didn't leave early → I missed the train)\n\nFor IMAGINARY PAST situations."
       }
-    ]
+    ],
+    "readingText": {
+      "title": "A Missed Opportunity",
+      "body": "Last month, I missed a job interview because my alarm didn't go off. If I had set a second alarm, I would have woken up on time. If I had woken up on time, I would have gotten the job — I'm sure of it. I wish I had checked my phone the night before. I wish I hadn't stayed up so late watching movies. My friend told me, 'If you had called them and explained, they might have understood.' But I was too embarrassed to call. Now I just wish I had done things differently.",
+      "translation": "El mes pasado, perdí una entrevista de trabajo porque mi alarma no sonó. Si hubiera puesto una segunda alarma, me habría despertado a tiempo. Si me hubiera despertado a tiempo, habría conseguido el trabajo — estoy seguro. Ojalá hubiera revisado mi teléfono la noche anterior. Ojalá no me hubiera quedado despierto hasta tan tarde viendo películas. Mi amigo me dijo: 'Si los hubieras llamado y explicado, tal vez lo habrían entendido.' Pero me daba mucha vergüenza llamar. Ahora solo desearía haber hecho las cosas de otra manera."
+    }
   },
   "41": {
     "title": "Wish",
@@ -245,6 +260,11 @@ export const conditionalsUnits: Record<number, Unit> = {
         "front": "IF ONLY vs I WISH",
         "back": "Both express wishes and regrets, but IF ONLY is more emphatic:\n\nI wish I were taller.\n= If only I were taller! (stronger)\n\nI wish I hadn't said that.\n= If only I hadn't said that! (stronger)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "New Year Wishes",
+      "body": "Every New Year, I think about my life. I wish I were more organized — I always lose my keys! I wish my coworker would stop leaving dirty cups on my desk; it drives me crazy. And if only I had studied harder in university, I might have a better job now. My best friend says, 'If only you would relax a little!' She's right — I worry too much. If only life came with a manual, everything would be so much easier. But for now, I'll keep wishing and hoping things slowly get better.",
+      "translation": "Cada Año Nuevo, pienso en mi vida. Ojalá fuera más organizado — ¡siempre pierdo mis llaves! Ojalá mi compañero de trabajo dejara de dejar tazas sucias en mi escritorio; me vuelve loco. Y ojalá hubiera estudiado más en la universidad, tal vez tendría un mejor trabajo ahora. Mi mejor amiga dice: '¡Ojalá te relajaras un poco!' Tiene razón — me preocupo demasiado. Si la vida viniera con un manual, todo sería mucho más fácil. Pero por ahora, seguiré deseando y esperando que las cosas mejoren poco a poco."
+    }
   }
 };

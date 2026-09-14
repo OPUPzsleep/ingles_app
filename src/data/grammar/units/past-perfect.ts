@@ -85,7 +85,12 @@ export const pastPerfectUnits: Record<number, Unit> = {
         "front": "Complete: 'By the time I got to the station, the train ___.'",
         "back": "By the time I got to the station, the train HAD ALREADY LEFT.\n(past perfect = the earlier action)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Too Late for the Surprise",
+      "body": "When I got to the office yesterday, something strange had happened. My colleagues had already left, and someone had turned off all the lights. I later found out there had been a surprise party planned for me, but by the time I arrived, everyone had already gone home! Apparently, my boss had sent an email about it, but I hadn't checked my inbox that morning. Because I hadn't read the message, I missed the whole thing. By the time I found out, it was too late to celebrate.",
+      "translation": "Cuando llegué a la oficina ayer, algo extraño había pasado. Mis colegas ya se habían ido, y alguien había apagado todas las luces. Luego descubrí que se había planeado una fiesta sorpresa para mí, pero cuando llegué, ¡todos ya se habían ido a casa! Al parecer, mi jefe había enviado un correo sobre eso, pero yo no había revisado mi bandeja de entrada esa mañana. Como no había leído el mensaje, me perdí todo. Cuando me enteré, ya era demasiado tarde para celebrar."
+    }
   },
   "16": {
     "title": "Past Perfect Continuous (I had been doing)",
@@ -131,7 +136,12 @@ export const pastPerfectUnits: Record<number, Unit> = {
         "front": "Past Perfect vs Past Perfect Continuous",
         "back": "SIMPLE: She had written 3 emails. (completed, result)\nCONTINUOUS: She had been writing emails. (activity, duration)\n\nBoth: activity/state before another past moment"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Finally, a Break",
+      "body": "By the time my shift ended, I had been standing at the counter for eight hours straight. My feet hurt because I had been working non-stop since early morning. My coworker looked exhausted too — she had been dealing with angry customers all afternoon. When our manager finally arrived, we had been waiting almost twenty minutes for him to open the storeroom. He apologized and explained he had been driving through terrible traffic. After such a long day, we were both relieved it was finally over.",
+      "translation": "Para cuando terminó mi turno, había estado de pie en el mostrador durante ocho horas seguidas. Me dolían los pies porque había estado trabajando sin parar desde temprano en la mañana. Mi compañera también se veía agotada — había estado lidiando con clientes molestos toda la tarde. Cuando nuestro gerente finalmente llegó, llevábamos casi veinte minutos esperando a que abriera la bodega. Se disculpó y explicó que había estado manejando en un tráfico terrible. Después de un día tan largo, ambos nos sentimos aliviados de que por fin hubiera terminado."
+    }
   },
   "17": {
     "title": "Have and Have Got",
@@ -193,6 +203,14 @@ export const pastPerfectUnits: Record<number, Unit> = {
         "front": "Have vs Have Got",
         "back": "SAME MEANING (possession):\nI have a car. = I've got a car.\n\nPast: only HAVE (had):\nI had a car when I was young. ✅\nI had got a car when I was young. ❌"
       }
+    ],
+    "simulatedChat": [
+      { "speaker": "other", "text": "Have you got any brothers or sisters?", "translation": "¿Tienes hermanos o hermanas?" },
+      { "speaker": "user", "text": "Yes, I've got two brothers. Do you have any pets?", "translation": "Sí, tengo dos hermanos. ¿Tú tienes alguna mascota?" },
+      { "speaker": "other", "text": "I don't have any pets now, but I had a rabbit when I was young.", "translation": "Ahora no tengo mascotas, pero tuve un conejo cuando era joven." },
+      { "speaker": "user", "text": "That's cute! Have you got a car?", "translation": "¡Qué lindo! ¿Tienes auto?" },
+      { "speaker": "other", "text": "No, I haven't got a car, but I've got a bicycle.", "translation": "No, no tengo auto, pero tengo bicicleta." },
+      { "speaker": "user", "text": "Nice! I have a car, but I didn't have one last year.", "translation": "¡Qué bien! Yo tengo auto, pero no tenía uno el año pasado." }
     ]
   },
   "18": {
@@ -255,6 +273,11 @@ export const pastPerfectUnits: Record<number, Unit> = {
         "front": "USED TO do vs AM/GET USED TO doing",
         "back": "USED TO + infinitive = past habit (no longer):\n'I used to smoke.' (I don't smoke now)\n\nAM USED TO + -ing = am accustomed to:\n'I'm used to getting up early.' (it feels normal to me)"
       }
-    ]
+    ],
+    "readingText": {
+      "title": "Then and Now",
+      "body": "When I was a teenager, I used to eat fast food every day, but now I prefer cooking healthy meals at home. I used to stay up until 3 a.m. playing video games, but I don't do that anymore. Did you use to live in a small town? I used to live in the countryside, and I used to walk to school every morning. My habits have changed a lot since then. I didn't use to like vegetables, but now I eat them with every meal. It's strange how different life used to be.",
+      "translation": "Cuando era adolescente, solía comer comida rápida todos los días, pero ahora prefiero cocinar comidas saludables en casa. Solía quedarme despierto hasta las 3 a.m. jugando videojuegos, pero ya no hago eso. ¿Tú solías vivir en un pueblo pequeño? Yo solía vivir en el campo, y solía caminar a la escuela todas las mañanas. Mis hábitos han cambiado mucho desde entonces. Antes no me gustaban las verduras, pero ahora las como en cada comida. Es extraño lo diferente que solía ser la vida."
+    }
   }
 };
