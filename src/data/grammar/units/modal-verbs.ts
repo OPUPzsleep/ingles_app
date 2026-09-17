@@ -6,23 +6,23 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "CAN — present ability/possibility",
-        "body": "We use 'can' to talk about general abilities and possibilities that exist right now, in the present. It covers physical skills (swimming, speaking a language) and also things that are simply possible in general, not tied to one specific moment. The same word 'can' covers both a personal skill and a general truth about the world — the context tells you which one is meant.",
+        "head": "Can: habilidad o posibilidad",
+        "body": "Usamos 'can' para habilidades y posibilidades generales en el presente: destrezas físicas (nadar, hablar un idioma) o hechos posibles en general. La misma palabra sirve para una habilidad personal o una verdad general — el contexto aclara cuál es.",
         "note": "I can swim. · Can you speak French? · The weather can be cold here."
       },
       {
-        "head": "COULD — past general ability",
-        "body": "'Could' is the past form of 'can', and we use it for an ability you had generally, over a period of time, in the past — not one single successful moment. It answers 'Were you able to do this back then, in general?' rather than 'Did you manage to do it on one occasion?'. For ONE specific successful action, English switches to 'was/were able to' instead — mixing the two up is one of the most common mistakes learners make.",
+        "head": "Could: habilidad general en pasado",
+        "body": "'Could' es el pasado de 'can' y describe una habilidad que tenías durante un tiempo, no un logro puntual. Para UN éxito concreto en una ocasión se usa 'was/were able to'. Confundir ambos es un error muy común.",
         "note": "When I was young, I could run very fast. · She could speak three languages."
       },
       {
-        "head": "WAS/WERE ABLE TO — specific past success",
-        "body": "When you're describing a single, specific occasion where someone succeeded at something — especially something difficult or unexpected — English prefers 'was/were able to' instead of 'could'. Think of it as marking one real event with a clear result, not a general skill someone had. This is the mirror image of 'could' above: general ability over time uses 'could', one concrete achievement uses 'was/were able to'.",
+        "head": "Was/were able to: logro puntual",
+        "body": "Para un logro concreto en una ocasión específica, sobre todo algo difícil, se usa 'was/were able to' en vez de 'could'. Marca un evento real con resultado, no una habilidad general: 'could' es la capacidad general, 'was able to' el logro puntual.",
         "note": "The fire spread, but everyone was able to escape. · I was able to find a parking space."
       },
       {
-        "head": "BE ABLE TO — other tenses",
-        "body": "'Can' and 'could' are modal verbs, and modals don't have every tense — there's no future form of 'can', for example. Whenever you need an ability idea in a tense 'can'/'could' can't cover (future, present perfect, after 'to'...), 'be able to' steps in as the substitute, conjugating like a normal verb: will be able to, have been able to, to be able to.",
+        "head": "Be able to: en otros tiempos",
+        "body": "'Can' y 'could' son modales sin todos los tiempos (no existe futuro de 'can'). 'Be able to' los sustituye donde falten, conjugándose como un verbo normal: will be able to, have been able to, to be able to.",
         "note": "I will be able to help you tomorrow. · I've never been able to understand maths."
       }
     ],
@@ -56,8 +56,8 @@ export const modalVerbsUnits: Record<number, Unit> = {
       "\"Can't\" y \"can\" a veces suenan casi igual en inglés rápido — escucha la vocal: can /kən/ (débil) vs can't /kænt/ (fuerte)."
     ],
     "dailyWords": [
-      { "w": "ability", "ipa": "/əˈbɪləti/", "def": "habilidad, capacidad", "ex": "She has a natural ability for languages." },
-      { "w": "manage to", "ipa": "/ˈmænɪdʒ tuː/", "def": "lograr (con esfuerzo)", "ex": "I managed to finish on time." }
+      { "w": "ability", "ipa": "/əˈbɪləti/", "aprox": "abíliti", "def": "habilidad, capacidad", "ex": "She has a natural ability for languages." },
+      { "w": "manage to", "ipa": "/ˈmænɪdʒ tuː/", "aprox": "mánich tu", "def": "lograr (con esfuerzo)", "ex": "I managed to finish on time." }
     ],
     "table": {
       "cols": [
@@ -98,7 +98,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "managed"
         ],
         "ans": 1,
-        "exp": "Specific past achievement → 'was able to escape'."
+        "exp": "Logro puntual en el pasado → 'was able to escape'."
       },
       {
         "q": "When I was a child, I ___ climb trees very quickly.",
@@ -109,7 +109,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "am able to"
         ],
         "ans": 2,
-        "exp": "General past ability → 'could'."
+        "exp": "Habilidad general en el pasado → 'could'."
       },
       {
         "q": "'___ you help me for a moment, please?'",
@@ -120,7 +120,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "Shall"
         ],
         "ans": 1,
-        "exp": "'Could you help me?' is more polite than 'Can you help me?'"
+        "exp": "'Could you help me?' es más cortés que 'Can you help me?'"
       },
       {
         "q": "I looked everywhere but I ___ find my passport.",
@@ -131,7 +131,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "mustn't"
         ],
         "ans": 0,
-        "exp": "Past inability → 'couldn't find'."
+        "exp": "Incapacidad en el pasado → 'couldn't find'."
       }
     ],
     "flashcards": [
@@ -146,18 +146,18 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "Could do — present/future possibility",
-        "body": "We use 'could' to talk about something that is possible right now or in the future — an option that exists, without committing to it as a certainty or a firm plan. It's a softer, more tentative way of suggesting something than saying you definitely will do it. This is different from the past uses of 'could' covered elsewhere in this topic: here 'could' points forward to a possibility, not backward to a past ability.",
+        "head": "Could do: posibilidad presente/futura",
+        "body": "Usamos 'could' para algo posible ahora o en el futuro, sin comprometerte como algo seguro — más suave que decir que lo harás. Aquí 'could' apunta hacia adelante, a diferencia de los usos de pasado de este mismo tema.",
         "note": "I could go now if you want. · We could try a different approach."
       },
       {
-        "head": "Could have done — unrealized past possibility",
-        "body": "'Could have done' describes something that was possible or within someone's power in the past, but which never actually happened. It's used to talk about a missed opportunity or an option that existed at the time, often with a hint of regret or criticism, as in 'You could have called me!' meaning it was possible but you chose not to. This contrasts with 'was/were able to', which describes something that did happen.",
+        "head": "Could have done: posibilidad no realizada",
+        "body": "'Could have done' describe algo que era posible en el pasado pero nunca ocurrió, a menudo con matiz de reproche: 'You could have called me!' implica que pudiste hacerlo y no quisiste. Se opone a 'was/were able to', que sí ocurrió.",
         "note": "You could have called me! (but you didn't) · She could have passed if she'd studied."
       },
       {
-        "head": "Couldn't have done — past impossibility",
-        "body": "'Couldn't have done' is the negative counterpart of 'could have done', used to say that something was completely impossible in the past, based on the facts or evidence available. It expresses certainty that an event did not and could not have happened, rather than simple past inability — 'It couldn't have been Tom' means we are sure it wasn't him, because we know he was somewhere else at the time.",
+        "head": "Couldn't have done: imposibilidad pasada",
+        "body": "'Couldn't have done' es el negativo de 'could have done': expresa certeza de que algo NO pudo pasar, según la evidencia — no es simple incapacidad. 'It couldn't have been Tom' significa que estamos seguros de que no fue él.",
         "note": "It couldn't have been Tom — he was abroad. · The letter couldn't have arrived already."
       }
     ],
@@ -171,7 +171,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "ought"
         ],
         "ans": 1,
-        "exp": "Unrealized past possibility (but didn't happen) → 'could have told'."
+        "exp": "Posibilidad pasada no realizada → 'could have told'."
       },
       {
         "q": "It ___ been Emma — she was at work all day.",
@@ -182,7 +182,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "can't"
         ],
         "ans": 0,
-        "exp": "Past impossibility → 'couldn't have been'."
+        "exp": "Imposibilidad en el pasado → 'couldn't have been'."
       },
       {
         "q": "I'm free this evening. We ___ go out if you want.",
@@ -193,7 +193,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "might have"
         ],
         "ans": 0,
-        "exp": "Present/future option → 'could': 'We could go out.'"
+        "exp": "Opción presente/futura → 'could': 'We could go out.'"
       }
     ],
     "flashcards": [
@@ -228,8 +228,8 @@ export const modalVerbsUnits: Record<number, Unit> = {
       "\"Could have\" = era posible pero no pasó; \"couldn't have\" = es imposible que pasara. No los confundas con un simple \"didn't\"."
     ],
     "dailyWords": [
-      { "w": "missed opportunity", "ipa": "/mɪst ˌɒpəˈtjuːnəti/", "def": "oportunidad perdida", "ex": "Not applying for that job was a missed opportunity." },
-      { "w": "last-minute", "ipa": "/ˌlɑːst ˈmɪnɪt/", "def": "de último momento", "ex": "It was a last-minute decision to join the band." }
+      { "w": "missed opportunity", "ipa": "/mɪst ˌɒpəˈtjuːnəti/", "aprox": "mist opotiúnati", "def": "oportunidad perdida", "ex": "Not applying for that job was a missed opportunity." },
+      { "w": "last-minute", "ipa": "/ˌlɑːst ˈmɪnɪt/", "aprox": "last mínit", "def": "de último momento", "ex": "It was a last-minute decision to join the band." }
     ]
   },
   "28": {
@@ -237,18 +237,18 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "Must — sure it's true",
-        "body": "We use 'must' to express a strong logical conclusion — not an obligation here, but a deduction — when the evidence available makes us almost certain that something is true. It's how English expresses 'I'm sure this is the case', based on reasoning from what we observe, such as someone being awake since 5am making it logical that they must be tired.",
+        "head": "Must: seguro que es verdad",
+        "body": "Usamos 'must' para una deducción lógica fuerte, no una obligación: la evidencia nos hace estar casi seguros de algo. Es decir 'seguro que...' basado en lo que observamos, por ejemplo si alguien lleva despierto desde las 5am.",
         "note": "You must be tired — you've been awake since 5am. · She must be at home — the lights are on."
       },
       {
-        "head": "Can't — sure it's NOT true",
-        "body": "'Can't' is the negative deduction that mirrors 'must': we use it when the evidence makes us sure that something is impossible or false, not simply 'not obligatory'. It expresses strong certainty in the opposite direction from 'must' — if 'must' means 'I'm sure it's true', 'can't' means 'I'm sure it's not true', as in 'That can't be Tom, he's in Paris'.",
+        "head": "Can't: seguro que NO es verdad",
+        "body": "'Can't' es la deducción negativa opuesta a 'must': la evidencia nos hace estar seguros de que algo es imposible o falso, no simplemente 'no obligatorio'. Si 'must' es 'seguro que sí', 'can't' es 'seguro que no'.",
         "note": "That can't be Tom — he's in Paris. · You can't be hungry! You just ate."
       },
       {
-        "head": "Must have / Can't have — past deduction",
-        "body": "To make the same kind of confident deduction about something in the past, we add 'have' + past participle: 'must have done' for something we're sure did happen, and 'can't have done' for something we're sure did not happen. The logic is identical to 'must' and 'can't' in the present — only the time reference moves into the past.",
+        "head": "Must have / can't have: deducción en pasado",
+        "body": "Para deducir con la misma seguridad sobre el pasado, se añade 'have' + participio: 'must have done' si estamos seguros de que pasó, 'can't have done' si estamos seguros de que no pasó. Misma lógica que en presente, solo cambia el tiempo.",
         "note": "She must have left already. · They can't have arrived — the road was closed."
       }
     ],
@@ -262,7 +262,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "have to"
         ],
         "ans": 1,
-        "exp": "Logical deduction (I'm sure you're tired) → 'must': 'You must be tired.'"
+        "exp": "Deducción lógica (seguro que estás cansado) → 'must': 'You must be tired.'"
       },
       {
         "q": "That ___ be right — it's impossible!",
@@ -273,7 +273,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "mustn't"
         ],
         "ans": 2,
-        "exp": "Sure it's NOT true → 'can't': 'That can't be right.'"
+        "exp": "Seguro que NO es verdad → 'can't': 'That can't be right.'"
       },
       {
         "q": "She ___ have left already — her bag is still here.",
@@ -284,7 +284,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "could"
         ],
         "ans": 1,
-        "exp": "Past deduction (impossible she left — bag is here) → 'can't have left'."
+        "exp": "Deducción en pasado (imposible que se fuera — su bolso está aquí) → 'can't have left'."
       }
     ],
     "flashcards": [
@@ -304,18 +304,18 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "May / Might — possibility",
-        "body": "'May' and 'might' both express that something is possible in the present or future — roughly equivalent to saying 'maybe' or 'perhaps' before a sentence. They work in almost the same way and can usually be swapped for each other without a real change in meaning, unlike 'must' and 'can't', which express certainty rather than mere possibility.",
+        "head": "May / might: posibilidad",
+        "body": "'May' y 'might' expresan que algo es posible en presente o futuro, como decir 'quizás' o 'tal vez'. Funcionan casi igual y suelen intercambiarse, a diferencia de 'must'/'can't', que expresan certeza en vez de mera posibilidad.",
         "note": "It may rain tomorrow. · She might be at home. · I might not come to the party."
       },
       {
-        "head": "Might — slightly less certain",
-        "body": "Although 'may' and 'might' are largely interchangeable, native speakers sometimes use 'might' to suggest a slightly lower degree of certainty than 'may' — a small nuance rather than a strict rule. In practice this difference is subtle enough that in everyday speech, choosing one over the other rarely changes how a sentence is understood.",
+        "head": "Might: un poco menos seguro",
+        "body": "Aunque 'may' y 'might' son casi intercambiables, a veces 'might' sugiere un poco menos certeza que 'may' — un matiz sutil, no una regla estricta. En la práctica casi no cambia cómo se entiende la frase.",
         "note": "I may go out tonight. (quite possible) · I might go out. (a little less certain)"
       },
       {
-        "head": "May I / Might I — permission (formal)",
-        "body": "Besides expressing possibility, 'may' also has a separate, more formal use for asking permission — 'May I sit here?' is a polite, somewhat formal way to ask if something is allowed. 'Might I' takes this a step further into very formal or old-fashioned politeness, often used to soften a suggestion, such as 'Might I suggest an alternative?'.",
+        "head": "May I / might I: pedir permiso",
+        "body": "'May' también sirve para pedir permiso de forma educada y algo formal: 'May I sit here?'. 'Might I' es aún más formal o anticuado, y suaviza una sugerencia, como en 'Might I suggest an alternative?'.",
         "note": "May I sit here? · May I ask you something? · Might I suggest an alternative?"
       }
     ],
@@ -329,7 +329,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "will"
         ],
         "ans": 2,
-        "exp": "Uncertain possibility → 'might': 'She might be at home.'"
+        "exp": "Posibilidad incierta → 'might': 'She might be at home.'"
       },
       {
         "q": "Take an umbrella — it ___ rain later.",
@@ -340,7 +340,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "should"
         ],
         "ans": 2,
-        "exp": "Possible future event → 'may' or 'might': 'it may rain'."
+        "exp": "Evento futuro posible → 'may' o 'might': 'it may rain'."
       },
       {
         "q": "___ I use your phone?",
@@ -351,7 +351,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "Will"
         ],
         "ans": 2,
-        "exp": "Asking permission politely → 'May I use your phone?'"
+        "exp": "Pedir permiso educadamente → 'May I use your phone?'"
       }
     ],
     "flashcards": [
@@ -374,13 +374,13 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "Might as well / May as well",
-        "body": "'Might as well' (or 'may as well') is used when there's no better option available, so you decide to do something simply because there's nothing more worthwhile to do instead. It carries a slightly resigned, practical tone — not enthusiasm, just a recognition that this is the most sensible choice given the circumstances. 'May as well' means exactly the same thing, and the two are fully interchangeable.",
+        "head": "Might as well / may as well",
+        "body": "'Might as well' (o 'may as well') se usa cuando no hay mejor opción, así que haces algo simplemente porque no hay nada más útil que hacer. Tiene un tono resignado y práctico, no de entusiasmo. Ambas formas significan exactamente lo mismo.",
         "note": "We might as well wait here. · You might as well tell the truth. · I may as well go home."
       },
       {
-        "head": "May/might have done — past possibility",
-        "body": "'May have done' and 'might have done' express uncertainty about something that possibly happened in the past — we don't know for sure, but it's one plausible explanation. This is a weaker claim than 'must have done', which expresses near-certainty; here we're only saying it's one possibility among others, as in 'She may have forgotten about the meeting' — maybe, but we can't be sure.",
+        "head": "May/might have done: posibilidad pasada",
+        "body": "'May/might have done' expresan incertidumbre sobre algo que quizás pasó en el pasado — una explicación posible, no segura. Es más débil que 'must have done', que expresa casi certeza: 'She may have forgotten' es solo una posibilidad entre otras.",
         "note": "She may have forgotten about the meeting. · They might have left already."
       }
     ],
@@ -394,7 +394,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "must"
         ],
         "ans": 1,
-        "exp": "No better option available → 'might as well': 'We might as well stay home.'"
+        "exp": "No hay mejor opción → 'might as well': 'We might as well stay home.'"
       },
       {
         "q": "She's not here. She ___ have gone to the library.",
@@ -405,7 +405,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "could"
         ],
         "ans": 2,
-        "exp": "Uncertain past possibility → 'might have gone'."
+        "exp": "Posibilidad incierta en el pasado → 'might have gone'."
       }
     ],
     "flashcards": [
@@ -425,18 +425,18 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "Must — speaker's obligation",
-        "body": "We use 'must' when the obligation comes from the speaker's own feelings or judgment — you personally believe something is necessary or important, rather than being told to do it by an outside rule. 'I must call my mother' expresses your own sense that it matters, not a requirement imposed by someone else.",
+        "head": "Must: obligación personal",
+        "body": "Usamos 'must' cuando la obligación viene del propio hablante — crees que algo es necesario, no porque una regla externa lo exija. 'I must call my mother' expresa tu propio sentir, no una norma impuesta.",
         "note": "I must call my mother. (I feel I should) · You must try this restaurant! (I strongly recommend)"
       },
       {
-        "head": "Have to — external obligation",
-        "body": "'Have to' expresses an obligation that comes from outside the speaker — a law, a rule, a boss, or some other external authority requiring the action, rather than the speaker's personal opinion. 'I have to be at work by 9' points to a schedule or rule set by someone else, which is the key contrast with 'must', where the obligation comes from the speaker's own feelings.",
+        "head": "Have to: obligación externa",
+        "body": "'Have to' expresa una obligación que viene de fuera: una ley, una regla, un jefe. 'I have to be at work by 9' señala un horario impuesto por otro, al contrario que 'must', que nace del propio hablante.",
         "note": "I have to be at work by 9. (the rule) · She has to wear a uniform. (company rule)"
       },
       {
-        "head": "Don't have to — no obligation",
-        "body": "'Don't have to' means there is no obligation at all — the action is optional, and you're free to do it or not as you choose. This is a completely different idea from 'mustn't', which means something is forbidden; 'don't have to' simply removes the requirement, it doesn't prohibit the action.",
+        "head": "Don't have to: sin obligación",
+        "body": "'Don't have to' significa que no hay obligación alguna: la acción es opcional. Es muy distinto de 'mustn't', que prohíbe; 'don't have to' solo elimina el requisito, no prohíbe nada.",
         "note": "You don't have to come if you don't want to. · She doesn't have to work on Sundays."
       }
     ],
@@ -470,7 +470,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "need to"
         ],
         "ans": 1,
-        "exp": "External law/obligation → 'have to'."
+        "exp": "Obligación externa/ley → 'have to'."
       },
       {
         "q": "You ___ see this film! It's amazing. (strong recommendation)",
@@ -481,7 +481,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "should"
         ],
         "ans": 1,
-        "exp": "Speaker's strong personal feeling → 'must': 'You must see this film!'"
+        "exp": "Sentimiento personal fuerte del hablante → 'must': 'You must see this film!'"
       },
       {
         "q": "You ___ come to the party if you don't want to.",
@@ -492,7 +492,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "should"
         ],
         "ans": 1,
-        "exp": "Not necessary (but OK if you do) → 'don't have to'."
+        "exp": "No es necesario (pero puedes hacerlo) → 'don't have to'."
       }
     ],
     "flashcards": [
@@ -515,18 +515,18 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "Must — obligation",
-        "body": "'Must' expresses a strong sense of obligation or necessity — something that has to be done, whether because of a rule, a law, or the speaker's own conviction that it's important. It sits at the strong end of the obligation scale, stronger than milder suggestions like 'should'.",
+        "head": "Must: obligación",
+        "body": "'Must' expresa una obligación o necesidad fuerte: algo que hay que hacer, ya sea por una regla o por convicción propia. Es más fuerte que sugerencias suaves como 'should'.",
         "note": "You must stop at a red light. · I must remember to call her."
       },
       {
-        "head": "Mustn't — prohibition",
-        "body": "'Mustn't' means an action is forbidden — it is not allowed, and you should not do it under any circumstances. This is very different from simply saying something isn't necessary; 'mustn't' actively bans the action, rather than just removing a requirement to do it.",
+        "head": "Mustn't: prohibición",
+        "body": "'Mustn't' significa que una acción está prohibida bajo cualquier circunstancia. Es muy distinto de decir que algo no es necesario: 'mustn't' prohíbe activamente, no solo quita un requisito.",
         "note": "You mustn't smoke in here. · She mustn't tell anyone."
       },
       {
-        "head": "Needn't / Don't need to — not necessary",
-        "body": "'Needn't' and 'don't need to' mean that something is not necessary — there's no requirement to do it, but you're still free to do it if you want to. This is the opposite of 'mustn't': 'mustn't' forbids an action, while 'needn't' simply removes any obligation to perform it, leaving the choice open.",
+        "head": "Needn't / don't need to: no es necesario",
+        "body": "'Needn't' y 'don't need to' significan que algo no es necesario, aunque puedes hacerlo si quieres. Es lo opuesto de 'mustn't': este prohíbe, 'needn't' solo quita la obligación.",
         "note": "You needn't worry. · You don't need to bring anything."
       }
     ],
@@ -540,7 +540,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "couldn't"
         ],
         "ans": 2,
-        "exp": "Prohibition (NOT allowed) → 'mustn't': 'You mustn't tell anyone!'"
+        "exp": "Prohibición (NO permitido) → 'mustn't': 'You mustn't tell anyone!'"
       },
       {
         "q": "You ___ hurry — we have plenty of time.",
@@ -551,7 +551,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "can't"
         ],
         "ans": 1,
-        "exp": "Not necessary → 'needn't': 'You needn't hurry.' (= You don't need to hurry.)"
+        "exp": "No es necesario → 'needn't': 'You needn't hurry.' (= You don't need to hurry.)"
       }
     ],
     "flashcards": [
@@ -571,18 +571,18 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "Should — advice/recommendation",
-        "body": "'Should' is used to give advice or say what you think is the right or best course of action, based on your opinion rather than a strict rule. It's noticeably weaker than 'must': 'You should see a doctor' is a recommendation you're free to ignore, not an obligation.",
+        "head": "Should: consejo o recomendación",
+        "body": "'Should' se usa para dar consejos u opinar sobre lo correcto, basándote en tu opinión, no en una regla estricta. Es más suave que 'must': 'You should see a doctor' es una recomendación que puedes ignorar.",
         "note": "You look pale. You should see a doctor. · She should study more if she wants to pass."
       },
       {
-        "head": "Should — expectation",
-        "body": "'Should' can also express what you expect to happen, based on what normally happens or what seems logical, rather than giving advice about what to do. 'The package should arrive tomorrow' means you expect this outcome based on the usual timeline, though you're not entirely certain, unlike 'must', which expresses much stronger certainty.",
+        "head": "Should: expectativa",
+        "body": "'Should' también expresa lo que esperas que pase, según lo normal o lógico, no un consejo. 'The package should arrive tomorrow' expresa expectativa, sin la certeza fuerte de 'must'.",
         "note": "The package should arrive tomorrow. · You should be able to find it easily."
       },
       {
-        "head": "Shouldn't — advice against",
-        "body": "'Shouldn't' is simply the negative of 'should': it's used to advise against doing something, saying it's not a good idea in your opinion. Like 'should', it's a recommendation rather than a firm prohibition — 'mustn't' would be the stronger word if something were actually forbidden rather than just unwise.",
+        "head": "Shouldn't: consejo en contra",
+        "body": "'Shouldn't' es el negativo de 'should': aconseja no hacer algo porque en tu opinión no es buena idea. Es una recomendación, no una prohibición firme como 'mustn't'.",
         "note": "You shouldn't eat so much sugar. · We shouldn't be late."
       }
     ],
@@ -596,7 +596,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "would"
         ],
         "ans": 1,
-        "exp": "Advice → 'should': 'You should get some rest.'"
+        "exp": "Consejo → 'should': 'You should get some rest.'"
       },
       {
         "q": "The film ___ be good — it has 5-star reviews.",
@@ -607,7 +607,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "would"
         ],
         "ans": 0,
-        "exp": "Expectation → 'should': 'The film should be good.'"
+        "exp": "Expectativa → 'should': 'The film should be good.'"
       },
       {
         "q": "You ___ park here — it's illegal.",
@@ -618,7 +618,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "couldn't"
         ],
         "ans": 0,
-        "exp": "Advice against → 'shouldn't'. (Mustn't is also possible but stronger — prohibition)"
+        "exp": "Consejo en contra → 'shouldn't'. ('Mustn't' también es posible pero más fuerte — prohibición)"
       }
     ],
     "flashcards": [
@@ -641,13 +641,13 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "Should have done — past regret",
-        "body": "'Should have done' looks back at a past situation and says that a particular action would have been the right thing to do, but it didn't actually happen — so there's a sense of regret or criticism attached. 'I should have called her' means calling her was the right thing, but you didn't do it, and now you regret that. 'Shouldn't have done' works the same way in reverse, for something that did happen but was the wrong choice.",
+        "head": "Should have done: arrepentimiento",
+        "body": "'Should have done' mira al pasado y dice que algo era lo correcto pero no pasó, con tono de arrepentimiento: 'I should have called her' implica que no la llamaste y ahora lo lamentas. 'Shouldn't have done' es al revés, para algo que sí pasó pero fue un error.",
         "note": "I should have called her. (I didn't, but it was the right thing to do) · You shouldn't have said that."
       },
       {
-        "head": "Should after: suggest, recommend, insist",
-        "body": "After certain verbs that express a wish for something to happen — suggest, recommend, insist, demand — English often uses 'should' + base verb in the following clause, even though the meaning isn't really about advice here. 'I suggested that he should go' expresses what someone wanted to happen, and this 'should' can often be dropped entirely in British English, leaving just the base form: 'I suggested that he go'.",
+        "head": "Should tras suggest, recommend, insist",
+        "body": "Tras verbos como 'suggest', 'recommend' o 'insist', el inglés suele usar 'should' + verbo base, aunque no sea un consejo. 'I suggested that he should go' expresa un deseo, y en inglés británico se puede omitir 'should': 'I suggested that he go'.",
         "note": "I suggested that he should go. · She insisted that I should come."
       }
     ],
@@ -661,7 +661,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "could"
         ],
         "ans": 1,
-        "exp": "Past regret/mistake → 'should have called': it was right but didn't happen."
+        "exp": "Arrepentimiento pasado → 'should have called': era lo correcto pero no pasó."
       },
       {
         "q": "You ___ said that. It was very rude.",
@@ -672,7 +672,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "mustn't have"
         ],
         "ans": 1,
-        "exp": "Regret about past action (it was wrong) → 'shouldn't have said'."
+        "exp": "Arrepentimiento de algo que sí pasó (estuvo mal) → 'shouldn't have said'."
       }
     ],
     "flashcards": [
@@ -692,13 +692,13 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "I'd better do — urgent advice",
-        "body": "'I'd better' (short for 'I had better') is used for urgent, immediate advice or a warning about a specific situation, often implying a negative consequence if the advice isn't followed. It's similar in meaning to 'should', but carries more urgency and is tied to a specific moment rather than general advice — 'I'd better go now or I'll be late' warns of a concrete result if you don't act.",
+        "head": "I'd better: consejo urgente",
+        "body": "'I'd better' (de 'I had better') da un consejo urgente para una situación concreta, con una consecuencia negativa si no se sigue. Es parecido a 'should' pero más urgente: 'I'd better go now or I'll be late'.",
         "note": "I'd better go now or I'll be late. · You'd better not be late or he'll be angry."
       },
       {
-        "head": "It's time — overdue action",
-        "body": "'It's time' + subject + past simple form is used to say that something should be happening now, or is already a little overdue — even though the verb looks like a past tense, it doesn't refer to the past at all. 'It's time you went to bed' means you should be going to bed right now, and the slightly unusual grammar (past simple with a present/future meaning) is a fixed pattern specific to this expression.",
+        "head": "It's time: acción pendiente",
+        "body": "'It's time' + sujeto + pasado simple indica que algo debería estar pasando ya, aunque no se refiera al pasado real. 'It's time you went to bed' significa que ya deberías estar acostándote — es una estructura fija propia de esta expresión.",
         "note": "It's time you went to bed. · It's time we left. · It's time he stopped complaining."
       }
     ],
@@ -712,7 +712,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "must"
         ],
         "ans": 0,
-        "exp": "'I'd better' = I had better. 'You'd better' = You had better."
+        "exp": "'I'd better' es la forma corta de 'I had better'."
       },
       {
         "q": "It's time you ___ to bed. It's midnight!",
@@ -723,7 +723,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "have gone"
         ],
         "ans": 1,
-        "exp": "'It's time + subject + past simple' for overdue action: 'It's time you went'."
+        "exp": "'It's time' + sujeto + pasado simple para algo pendiente: 'It's time you went'."
       }
     ],
     "flashcards": [
@@ -746,18 +746,18 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "Would — conditional",
-        "body": "'Would' is used in the result clause of second conditional sentences, describing an imagined or hypothetical result that would happen if an unreal or unlikely condition were true. 'If I had more time, I would learn to paint' imagines a situation that isn't currently real, and 'would' marks the imagined consequence of that unreal condition.",
+        "head": "Would: condicional",
+        "body": "'Would' aparece en la consecuencia de oraciones condicionales de segundo tipo, describiendo un resultado imaginario si se cumpliera una condición irreal. 'If I had more time, I would learn to paint' imagina algo que no es real ahora.",
         "note": "If I had more time, I would learn to paint. · She would call you if she had your number."
       },
       {
-        "head": "Would — polite requests",
-        "body": "'Would' is also used to soften requests and make them sound more polite and formal than using 'will' would. 'Would you help me, please?' feels noticeably more courteous than 'Will you help me?', which can sound more like a direct demand — this is a separate use of 'would' from the conditional one above, purely about politeness.",
+        "head": "Would: peticiones corteses",
+        "body": "'Would' también suaviza peticiones, sonando más cortés y formal que 'will'. 'Would you help me, please?' es más educado que 'Will you help me?', que puede sonar a orden directa.",
         "note": "Would you help me please? · Would you mind waiting?"
       },
       {
-        "head": "Would — past habits",
-        "body": "'Would' + base verb can describe a repeated action or habit in the past, similar in meaning to 'used to'. 'When I was a child, I would go fishing with my father every weekend' describes a repeated past routine, not a single event. Unlike 'used to', though, 'would' in this sense can only describe repeated actions, not past states — you can say 'I used to live in Spain' but not 'I would live in Spain' with that meaning.",
+        "head": "Would: hábitos en pasado",
+        "body": "'Would' + verbo base describe una acción repetida o hábito en el pasado, similar a 'used to'. A diferencia de 'used to', solo sirve para acciones repetidas, no estados: se dice 'I used to live in Spain' pero no 'I would live in Spain' con ese sentido.",
         "note": "When I was a child, I would go fishing with my father every weekend."
       }
     ],
@@ -771,7 +771,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "should"
         ],
         "ans": 1,
-        "exp": "2nd conditional result → 'would': 'I would travel the world.'"
+        "exp": "Consecuencia del segundo condicional → 'would': 'I would travel the world.'"
       },
       {
         "q": "___ you mind closing the door?",
@@ -782,7 +782,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "Should"
         ],
         "ans": 1,
-        "exp": "Polite request → 'Would you mind…?'"
+        "exp": "Petición cortés → 'Would you mind…?'"
       },
       {
         "q": "When I was a child, I ___ visit my grandparents every Sunday.",
@@ -793,7 +793,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "was"
         ],
         "ans": 1,
-        "exp": "Past repeated habit → 'would': 'I would visit…' (or 'used to visit')."
+        "exp": "Hábito repetido en el pasado → 'would': 'I would visit…' (o 'used to visit')."
       }
     ],
     "flashcards": [
@@ -813,18 +813,18 @@ export const modalVerbsUnits: Record<number, Unit> = {
     "topic": "Modal Verbs",
     "explain": [
       {
-        "head": "Making requests — polite scale",
-        "body": "These three ways of making a request sit on a scale of increasing politeness and formality: 'Can you...?' is the most direct and informal, 'Could you...?' is a step more polite, and 'Would you mind...?' is the most polite and indirect of the three. Choosing the right one depends on the situation — who you're speaking to and how big the favor is — with more formal or unfamiliar situations calling for the more polite forms further along the scale.",
+        "head": "Peticiones: escala de cortesía",
+        "body": "Estas tres formas de pedir algo van de menos a más cortés: 'Can you...?' es directo e informal, 'Could you...?' es más educado, y 'Would you mind...?' es la más cortés e indirecta. La elección depende de la situación y de lo grande que sea el favor.",
         "note": "Can you help me? (informal) · Could you help me? (more polite) · Would you mind helping me? (very polite)"
       },
       {
-        "head": "Would you mind…? — requires -ing",
-        "body": "'Would you mind' is always followed by the -ing form (gerund) of the verb, never the base form or 'to' + verb — 'Would you mind closing the door?' is correct, while 'Would you mind to close' is not. This is because 'mind' here behaves like a verb that takes a gerund object, literally asking whether the action would bother the other person.",
+        "head": "Would you mind…?: exige -ing",
+        "body": "'Would you mind' siempre va seguido de -ing (gerundio), nunca de verbo base o 'to' + verbo: 'Would you mind closing the door?' es correcto, 'Would you mind to close' no. Aquí 'mind' funciona como verbo que lleva gerundio.",
         "note": "Would you mind closing the door? · Would you mind waiting a moment?"
       },
       {
-        "head": "Do you mind if I…? — asking permission",
-        "body": "'Do you mind if I...?' is a polite way of asking for permission to do something yourself, rather than asking someone else to do something for you — it's the permission-asking counterpart to the request forms above. Because it's phrased as a question about whether something would bother the listener, saying 'no' or 'not at all' actually means permission is granted, which can confuse learners expecting 'yes' to mean agreement.",
+        "head": "Do you mind if I…?: pedir permiso",
+        "body": "'Do you mind if I...?' pide permiso para hacer algo tú mismo, no para pedirle algo a otro. Como pregunta si algo molestaría, decir 'no' o 'not at all' significa que sí se concede el permiso — puede confundir porque aquí 'no' es afirmativo.",
         "note": "Do you mind if I open the window? · Would you mind if I left early?"
       }
     ],
@@ -838,7 +838,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "Must"
         ],
         "ans": 2,
-        "exp": "Polite request → 'Could you lend me…?'"
+        "exp": "Petición cortés → 'Could you lend me…?'"
       },
       {
         "q": "Would you mind ___ the TV? I'm trying to work.",
@@ -849,7 +849,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
           "turned off"
         ],
         "ans": 2,
-        "exp": "'Would you mind' + -ing: 'turning off the TV'."
+        "exp": "Tras 'would you mind' va -ing: 'turning off the TV'."
       }
     ],
     "flashcards": [

@@ -6,18 +6,18 @@ export const questionsUnits: Record<number, Unit> = {
     "topic": "Questions",
     "explain": [
       {
-        "head": "Word order in questions",
-        "body": "To turn a statement into a yes/no question, English inverts the normal word order: instead of subject-then-verb, the auxiliary verb moves to the front, ahead of the subject, while the main verb stays in its usual place after the subject. 'Are you coming?', 'Does she like it?', and 'Have you seen it?' all follow this same inversion pattern regardless of which auxiliary is involved. If a sentence has no auxiliary already, as with present simple or past simple main verbs, English adds 'do/does/did' specifically to make this inversion possible.",
+        "head": "Orden de las preguntas",
+        "body": "En inglés el auxiliar se coloca delante del sujeto y el verbo principal se queda después. Si la frase no tiene auxiliar propio, se añade \"do/does/did\" solo para poder hacer esa inversión.",
         "note": "Are you coming? · Does she like it? · Did they arrive? · Have you seen it?"
       },
       {
-        "head": "Wh- questions",
-        "body": "Questions that ask for specific information rather than a yes/no answer simply add a question word (who, what, where, why, and so on) in front of the same auxiliary-subject-verb pattern used for yes/no questions. 'Where do you live?' and 'Why did you leave?' both keep the auxiliary immediately after the question word and before the subject, exactly like a normal yes/no question with one extra word tacked onto the front. This consistency means that once you're comfortable with basic question inversion, adding wh-words on top is a small extra step rather than a completely new rule.",
+        "head": "Preguntas con wh-",
+        "body": "Las preguntas que piden información (who, what, where, why...) solo añaden la palabra interrogativa delante del mismo orden auxiliar-sujeto-verbo de las preguntas de sí/no. 'Where do you live?' mantiene el auxiliar justo después de la palabra interrogativa y antes del sujeto, como una pregunta normal con una palabra extra delante.",
         "note": "Where do you live? · What time does the train leave? · Why did you leave?"
       },
       {
-        "head": "Questions with prepositions",
-        "body": "When a question involves a preposition (about, at, to, for...), English typically strands that preposition at the very end of the sentence rather than keeping it attached to the question word at the front. 'What are you looking at?' and 'Who are you talking to?' both leave the preposition dangling at the end, which can feel unusual for speakers of languages that always keep the preposition with its noun or question word. While a more formal alternative exists, moving the preposition to the front as in 'To whom are you talking?', the end-position version is by far the more natural, everyday choice in spoken English.",
+        "head": "Preposición al final",
+        "body": "Cuando la pregunta lleva una preposición (about, at, to, for...), lo normal en inglés es dejarla al final de la frase en vez de pegarla a la palabra interrogativa, como en 'What are you looking at?' o 'Who are you talking to?'. Existe la forma formal con la preposición al principio ('To whom are you talking?'), pero en el habla cotidiana casi siempre va al final.",
         "note": "What are you looking at? · Who are you talking to? · What did you buy that for?"
       }
     ],
@@ -31,7 +31,7 @@ export const questionsUnits: Record<number, Unit> = {
           "Has"
         ],
         "ans": 0,
-        "exp": "Present simple question with he/she/it → 'Does'."
+        "exp": "Pregunta en presente simple con he/she/it → 'Does'."
       },
       {
         "q": "What time ___ the last train leave?",
@@ -42,7 +42,7 @@ export const questionsUnits: Record<number, Unit> = {
           "has"
         ],
         "ans": 1,
-        "exp": "Present simple question with 'the train' (= it) → 'does'."
+        "exp": "Pregunta en presente simple con 'the train' (= it) → 'does'."
       },
       {
         "q": "How long ___ you been waiting?",
@@ -53,7 +53,7 @@ export const questionsUnits: Record<number, Unit> = {
           "are"
         ],
         "ans": 2,
-        "exp": "Present perfect question → 'have': 'How long have you been waiting?'"
+        "exp": "Pregunta en presente perfecto → 'have': 'How long have you been waiting?'"
       }
     ],
     "flashcards": [
@@ -76,13 +76,13 @@ export const questionsUnits: Record<number, Unit> = {
     "topic": "Questions",
     "explain": [
       {
-        "head": "Questions about the subject — no auxiliary",
-        "body": "When the question word itself is doing the action — that is, it's the subject of the sentence rather than the object — no auxiliary verb is needed at all, and the word order stays exactly like a normal statement. 'Who called?' works this way because 'who' is the one doing the calling, so the sentence just states 'who' followed directly by the verb, with nothing to invert. This is an exception to the usual question-inversion rule, and it only applies when the question word replaces the subject, not the object, which is the contrast covered in the next block.",
+        "head": "Preguntas sobre el sujeto",
+        "body": "Cuando la palabra interrogativa es el sujeto de la acción (no el objeto), no se necesita ningún auxiliar y el orden es igual al de una frase afirmativa. 'Who called?' funciona así porque 'who' es quien llama; no hay nada que invertir.",
         "note": "Who called? (who = subject) · What happened? · Which team won?"
       },
       {
-        "head": "Questions about the object — use auxiliary",
-        "body": "When the question word stands in for the object of the sentence instead of the subject, the normal rules of question formation come back into play, and an auxiliary is required along with subject-auxiliary inversion. 'Who did you call?' needs 'did' because 'you' is the one performing the action, the subject, while 'who' is merely the person being called, the object. A quick way to tell the two cases apart: if you can answer the question by simply replacing the question word with a name in the exact same word order, it was a subject question; if the word order needs the auxiliary added, it's an object question.",
+        "head": "Preguntas sobre el objeto",
+        "body": "Cuando la palabra interrogativa representa el objeto (no el sujeto), se necesita el auxiliar de siempre con inversión: 'Who did you call?' lleva 'did' porque 'you' es el sujeto y 'who' es el objeto. Truco: si puedes responder sustituyendo la palabra interrogativa por un nombre sin cambiar el orden, era pregunta de sujeto.",
         "note": "Who did you call? (you = subject, who = object) · What did you do? · Which team did you support?"
       }
     ],
@@ -96,7 +96,7 @@ export const questionsUnits: Record<number, Unit> = {
           "Which"
         ],
         "ans": 1,
-        "exp": "'What' = subject → no auxiliary: 'What happened?'"
+        "exp": "'What' = sujeto → sin auxiliar: 'What happened?'"
       },
       {
         "q": "___ did you meet at the party? (object question)",
@@ -107,7 +107,7 @@ export const questionsUnits: Record<number, Unit> = {
           "What"
         ],
         "ans": 0,
-        "exp": "'Who' = object → 'Who did you meet?' (auxiliary needed)"
+        "exp": "'Who' = objeto → 'Who did you meet?' (necesita auxiliar)"
       }
     ],
     "flashcards": [
@@ -131,18 +131,18 @@ export const questionsUnits: Record<number, Unit> = {
     "topic": "Questions",
     "explain": [
       {
-        "head": "Auxiliary verbs for emphasis",
-        "body": "Auxiliary verbs aren't only used for questions and negatives — in a positive sentence, stressing do/does/did adds strong emphasis, usually to contradict something that was just said or assumed. If someone claims 'you don't believe me', responding 'I DO believe you!' uses 'do' purely for emphasis, since the sentence would be grammatically complete without it. This emphatic use only works with a verb that doesn't already have its own auxiliary or 'be' — you wouldn't need it with a verb like 'am' or 'can', which can already carry stress on their own.",
+        "head": "Auxiliares para dar énfasis",
+        "body": "Los auxiliares do/does/did también sirven para enfatizar una frase afirmativa, normalmente para contradecir algo que se acaba de decir. Si alguien dice 'you don't believe me', responder 'I DO believe you!' usa 'do' solo para dar fuerza, aunque la frase sería correcta sin él.",
         "note": "'You don't believe me.' 'I DO believe you!' · 'She doesn't care.' 'She DOES care!'"
       },
       {
-        "head": "Short answers",
-        "body": "A short answer to a yes/no question echoes back whichever auxiliary verb was used in the question, rather than repeating the whole sentence or just saying a bare 'yes' or 'no'. 'Are you tired?' gets the answer 'Yes, I am', echoing 'are' as 'am' to match the subject, and 'Did you go?' gets 'Yes, I did', echoing 'did'. This matching pattern is what makes short answers sound natural in English — answering with just 'Yes' or 'No' without the auxiliary tends to sound blunt or overly abrupt.",
+        "head": "Respuestas cortas",
+        "body": "Una respuesta corta repite el mismo auxiliar de la pregunta en vez de un simple 'sí' o 'no': 'Are you tired?' → 'Yes, I am.'; 'Did you go?' → 'Yes, I did.'. Responder solo 'Yes' o 'No' sin el auxiliar suena cortante en inglés.",
         "note": "'Are you tired?' 'Yes, I am.' 'No, I'm not.' · 'Did you go?' 'Yes, I did.' 'No, I didn't.'"
       },
       {
-        "head": "So/Neither + auxiliary",
-        "body": "To agree with what someone just said, English uses 'so' or 'neither' followed by the matching auxiliary and then the subject, instead of repeating the whole idea. 'So' agrees with a positive statement, 'I'm tired.' 'So am I.' meaning I am tired too, while 'neither' agrees with a negative one, 'I don't like it.' 'Neither do I.' meaning I don't like it either. Both structures require the auxiliary to match the one used in the original sentence, following the same echoing logic as short answers above.",
+        "head": "So / Neither + auxiliar",
+        "body": "Para mostrar acuerdo se usa 'so' (con frase afirmativa) o 'neither' (con negativa) seguido del auxiliar correspondiente: 'I'm tired.' 'So am I.' o 'I don't like it.' 'Neither do I.'. El auxiliar debe coincidir con el de la frase original, igual que en las respuestas cortas.",
         "note": "'I'm tired.' 'So am I.' · 'I don't like it.' 'Neither do I.'"
       }
     ],
@@ -156,7 +156,7 @@ export const questionsUnits: Record<number, Unit> = {
           "will"
         ],
         "ans": 1,
-        "exp": "Short answer matching the auxiliary: 'Yes, I am.'"
+        "exp": "Respuesta corta que repite el auxiliar: 'Yes, I am.'"
       },
       {
         "q": "'I can't swim.' '___ I.'",
@@ -167,7 +167,7 @@ export const questionsUnits: Record<number, Unit> = {
           "Neither do"
         ],
         "ans": 2,
-        "exp": "Agreement with negative → 'Neither can I.'"
+        "exp": "Acuerdo con frase negativa → 'Neither can I.'"
       }
     ],
     "flashcards": [
@@ -192,18 +192,18 @@ export const questionsUnits: Record<number, Unit> = {
     "topic": "Questions",
     "explain": [
       {
-        "head": "Question tags — basic rule",
-        "body": "A question tag is the short 'isn't it?' or 'don't you?' piece added to the end of a statement, usually to check that the listener agrees or to invite a response. The core rule is that the tag always flips the polarity of the main sentence: a positive statement gets a negative tag ('It's cold, isn't it?'), and a negative statement gets a positive tag ('She doesn't smoke, does she?'). This constant flipping is what makes tag questions feel like a genuine check for agreement rather than a real request for new information.",
+        "head": "Coletillas interrogativas — regla básica",
+        "body": "Una question tag es la pieza corta ('isn't it?', 'don't you?') al final de una frase para confirmar algo, parecido al '¿verdad?' del español. La regla es que siempre invierte la polaridad: frase afirmativa → tag negativa, frase negativa → tag afirmativa.",
         "note": "It's cold, isn't it? · You like coffee, don't you? · She doesn't smoke, does she?"
       },
       {
-        "head": "Tags with auxiliaries",
-        "body": "Beyond flipping positive to negative or vice versa, the tag must also repeat whichever auxiliary verb the main sentence already used, rather than defaulting to 'do/does/did'. 'You can swim, can't you?' uses 'can' in the tag because 'can' was the verb in the main clause, and 'they've arrived, haven't they?' echoes 'have'. Only when the main sentence has no auxiliary of its own, an ordinary present or past simple verb, does the tag fall back on 'do/does/did', matching the same logic used for short answers.",
+        "head": "Coletillas con auxiliares",
+        "body": "Además de invertir la polaridad, la tag repite el auxiliar exacto de la frase principal: 'You can swim, can't you?' usa 'can', y 'they've arrived, haven't they?' usa 'have'. Solo cuando la frase no tiene auxiliar propio se recurre a 'do/does/did'.",
         "note": "You can swim, can't you? · They've arrived, haven't they? · You were there, weren't you?"
       },
       {
         "head": "I am → aren't I",
-        "body": "'I am' is the one genuinely irregular case in the whole question-tag system: logically the negative tag should be 'amn't I?', but that form doesn't actually exist in standard English. Instead, native speakers use 'aren't I?' as the accepted negative tag for 'I am', even though 'are' doesn't otherwise go with 'I' anywhere else in the language. It's simply an exception to be memorized on its own, since applying the normal auxiliary-matching rule from the previous block would produce a form nobody actually says.",
+        "body": "'I am' es la única excepción real: lógicamente la tag negativa sería 'amn't I?', pero esa forma no existe en inglés estándar. En su lugar se usa 'aren't I?', aunque 'are' normalmente no acompaña a 'I' en ningún otro caso.",
         "note": "I'm right, aren't I? · I'm late, aren't I?"
       }
     ],
@@ -217,7 +217,7 @@ export const questionsUnits: Record<number, Unit> = {
           "wasn't"
         ],
         "ans": 1,
-        "exp": "Positive sentence → negative tag: 'isn't it?'"
+        "exp": "Frase afirmativa → tag negativa: 'isn't it?'"
       },
       {
         "q": "She doesn't smoke, ___ she?",
@@ -228,7 +228,7 @@ export const questionsUnits: Record<number, Unit> = {
           "isn't"
         ],
         "ans": 0,
-        "exp": "Negative sentence → positive tag: 'does she?'"
+        "exp": "Frase negativa → tag afirmativa: 'does she?'"
       },
       {
         "q": "I'm right, ___ I?",
@@ -239,7 +239,7 @@ export const questionsUnits: Record<number, Unit> = {
           "isn't"
         ],
         "ans": 2,
-        "exp": "Special case: 'I am' → 'aren't I?'"
+        "exp": "Caso especial: 'I am' → 'aren't I?'"
       }
     ],
     "flashcards": [

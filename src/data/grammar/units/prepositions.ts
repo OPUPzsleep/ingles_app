@@ -6,23 +6,23 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "AT — specific times and fixed expressions",
-        "body": "We use 'AT' for a precise point in time rather than a stretch of time — an exact clock time, or a handful of fixed expressions that name one specific moment instead of a day, date, or longer period. Because these expressions don't fit neatly into 'a day' (which takes ON) or 'a longer period' (which takes IN), English just treats them as points and pairs them with AT — learn them as a short list alongside the exact clock times.",
+        "head": "AT — horas y expresiones fijas",
+        "body": "Usamos 'AT' para un momento exacto: una hora concreta del reloj o expresiones fijas que nombran un instante preciso, no un día ni un periodo largo. Al no encajar en 'un día' (ON) ni en 'un periodo' (IN), se aprenden como lista corta junto con las horas exactas.",
         "note": "at 6 o'clock · at midnight · at noon · at the weekend · at Christmas · at night · at the moment"
       },
       {
-        "head": "ON — days and dates",
-        "body": "We use 'ON' whenever we're talking about one single day or a specific date — think of marking it on a calendar. This covers named days of the week, exact dates, and days defined by an occasion, like 'my birthday' or 'Christmas Day'. It sits between AT (a precise moment inside a day) and IN (a longer stretch that contains many days).",
+        "head": "ON — días y fechas",
+        "body": "Usamos 'ON' para un día concreto o una fecha exacta, como si la marcáramos en un calendario. Incluye días de la semana, fechas exactas y días definidos por una ocasión, como 'mi cumpleaños' o 'Christmas Day'. Está entre AT (un instante preciso) e IN (un periodo largo).",
         "note": "on Monday · on 25th June · on my birthday · on Christmas Day · on weekdays"
       },
       {
-        "head": "IN — months, years, seasons, longer periods",
-        "body": "We use 'IN' for longer periods that contain many days — months, years, seasons, centuries — and also for the general parts of the day (morning, afternoon, evening), which are treated as broad stretches rather than one exact moment. As a rough guide, the bigger and less exact the time period, the more likely it is to take 'IN'.",
+        "head": "IN — meses, años, periodos largos",
+        "body": "Usamos 'IN' para periodos largos con muchos días —meses, años, estaciones, siglos— y también para las partes generales del día (mañana, tarde, noche), tratadas como tramos amplios. Cuanto más grande e impreciso sea el periodo, más probable que use 'IN'.",
         "note": "in January · in 2024 · in summer · in the morning / afternoon / evening · in the 19th century"
       },
       {
-        "head": "Truco: AT exacTo, ON calendario, IN INmenso",
-        "body": "This is a memory trick built around Spanish hint words that share letters with the English preposition. AT matches 'Ahora exactamenTe' (right now, exactly) for precise moments; ON matches days you 'pONes' (put) on a calendar; IN matches 'INmenso' (immense) for big stretches like months and years. Spotting the capital letters hiding inside each Spanish word is a quick way to recall which preposition fits which kind of time expression.",
+        "head": "Truco: AT/ON/IN",
+        "body": "Truco con palabras en español: AT viene de 'Ahora exactamenTe' para momentos precisos; ON de las cosas que 'pONes' en el calendario; IN de 'INmenso' para periodos grandes como meses o años. Busca la mayúscula escondida en cada palabra.",
         "note": "AT 3:00pm · ON Monday · IN 2024"
       }
     ],
@@ -65,7 +65,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by"
         ],
         "ans": 1,
-        "exp": "Day of the week → 'on': 'on Monday'."
+        "exp": "Día de la semana → 'on': 'on Monday'."
       },
       {
         "q": "She was born ___ 1995.",
@@ -76,7 +76,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by"
         ],
         "ans": 2,
-        "exp": "Year → 'in': 'in 1995'."
+        "exp": "Año → 'in': 'in 1995'."
       },
       {
         "q": "The film starts ___ 8 o'clock.",
@@ -87,7 +87,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by"
         ],
         "ans": 0,
-        "exp": "Clock time → 'at': 'at 8 o'clock'."
+        "exp": "Hora del reloj → 'at': 'at 8 o'clock'."
       },
       {
         "q": "I usually go for a walk ___ the evening.",
@@ -98,7 +98,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by"
         ],
         "ans": 2,
-        "exp": "Part of the day → 'in': 'in the evening'."
+        "exp": "Parte del día → 'in': 'in the evening'."
       }
     ],
     "flashcards": [
@@ -118,23 +118,23 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "On time — punctual (the planned time)",
-        "body": "'On time' describes something happening exactly when it was scheduled or planned — neither early nor late, hitting the planned moment precisely. It's the phrase to reach for whenever punctuality itself is the point, such as trains, meetings, or flights keeping to their timetable. Contrast this with 'in time' below, which is about having enough time to make something, not about hitting an exact schedule.",
+        "head": "On time — puntual",
+        "body": "'On time' significa exactamente a la hora prevista, ni antes ni después. Se usa cuando lo importante es la puntualidad —trenes, reuniones o vuelos que cumplen su horario—. A diferencia de 'in time', no se trata de tener margen sino de cumplir la hora exacta.",
         "note": "The train arrived on time. · Please be on time for the meeting."
       },
       {
-        "head": "In time — early enough",
-        "body": "'In time' means arriving or finishing with enough time to spare before some event or deadline — the emphasis is on not being too late, rather than on matching an exact planned moment. You can be 'in time' a little early or right at the last possible second, as long as you make it before the cut-off. This is the key difference from 'on time', which is strictly about punctuality to a schedule, not about beating a deadline.",
+        "head": "In time — a tiempo",
+        "body": "'In time' significa llegar o terminar con margen suficiente antes de un evento o plazo; importa no llegar tarde, no acertar una hora exacta. Puedes llegar con mucho margen o en el último segundo, a diferencia de 'on time', que exige puntualidad exacta.",
         "note": "I arrived in time to get a seat. · Will we be in time for the film?"
       },
       {
-        "head": "At the end — final point",
-        "body": "'At the end (of something)' points to the literal final part or moment of a specific thing you can name — a film, a book, a month, a road — much like 'at' marks a precise point elsewhere in English. It's a spatial or temporal marker: it tells you WHERE within that specific thing you are, right at its conclusion. This is different from 'in the end' below, which isn't about a literal position at all but about how a process turned out.",
+        "head": "At the end — el final",
+        "body": "'At the end (of algo)' señala el punto final literal de algo concreto —una película, un libro, un mes, una calle—, igual que 'at' marca un punto preciso. Es un marcador de posición, distinto de 'in the end', que no habla de posición sino de cómo terminó un proceso.",
         "note": "At the end of the film, everyone cried. · At the end of the month."
       },
       {
-        "head": "In the end — finally / after a long time",
-        "body": "'In the end' means 'eventually' or 'after all the events, discussion, or waiting' — it describes how a situation was finally resolved, not a literal position within something. It often carries a sense that there were doubts, delays, or a process along the way before reaching that final outcome. Unlike 'at the end (of X)', which needs a specific thing to attach to, 'in the end' stands alone as a comment on how things eventually turned out.",
+        "head": "In the end — al final",
+        "body": "'In the end' significa 'finalmente', tras dudas, demoras o discusión —describe cómo se resolvió una situación, no una posición literal. A diferencia de 'at the end (of X)', que necesita algo concreto, 'in the end' funciona solo, como comentario sobre el resultado.",
         "note": "I thought she wouldn't come, but in the end she did. · In the end, we decided to stay."
       }
     ],
@@ -148,7 +148,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "in the end"
         ],
         "ans": 1,
-        "exp": "Punctual, at scheduled time → 'on time'."
+        "exp": "Puntual, a la hora prevista → 'on time'."
       },
       {
         "q": "I got there just ___ to catch the last train.",
@@ -159,7 +159,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by time"
         ],
         "ans": 1,
-        "exp": "Early enough (just barely) → 'in time': 'just in time to catch'."
+        "exp": "Con margen suficiente (justo a tiempo) → 'in time': 'just in time to catch'."
       },
       {
         "q": "___, he admitted he was wrong. (after a long process)",
@@ -170,7 +170,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "In time"
         ],
         "ans": 1,
-        "exp": "Eventually, after a long process → 'In the end'."
+        "exp": "Finalmente, tras un proceso largo → 'In the end'."
       }
     ],
     "flashcards": [
@@ -190,18 +190,18 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "IN — enclosed space / country / city",
-        "body": "'In' is used for locations that surround or contain something, treating the space as a three-dimensional area you are inside of — a room, a building, a city, a country, or even a photo. The common thread is enclosure: whatever you're describing is inside the boundaries of that space, however large or small. This differs from 'at', which treats a location as a single point rather than an enclosing area (see below).",
+        "head": "IN — espacio cerrado",
+        "body": "'In' se usa para lugares que rodean o contienen algo, como un espacio tridimensional en el que estás dentro: una habitación, un edificio, una ciudad, un país o incluso una foto. La idea clave es el encierro, sin importar el tamaño. Se diferencia de 'at', que trata el lugar como un punto, no un área.",
         "note": "in a room · in a building · in London · in France · in the street · in a photo"
       },
       {
-        "head": "AT — specific point / location",
-        "body": "'At' treats a place as a single point rather than a space you're inside of — useful for locations defined by their function or exact position, like a door, a station, or a specific address, rather than by their physical size. The focus is on WHERE something is located, not on what surrounds it. This contrasts with 'in', which emphasizes being enclosed within an area, and with 'on', which emphasizes contact with a surface.",
+        "head": "AT — punto específico",
+        "body": "'At' trata un lugar como un único punto, no como un espacio en el que estás dentro: útil para lugares definidos por su función o posición exacta, como una puerta, una estación o una dirección concreta. Importa DÓNDE está algo, no lo que lo rodea.",
         "note": "at the door · at the top/bottom · at the station · at the airport · at school · at work"
       },
       {
-        "head": "ON — surface / transport / floor",
-        "body": "'On' describes contact with a surface — something resting on top of or attached to it, such as a table, a wall, or a floor of a building — rather than being enclosed within a space or located at a single point. It also extends to certain forms of transport (bus, train, plane), where passengers are thought of as being on board a larger vehicle they can move around in. Together, IN (enclosed space), AT (a point), and ON (a surface) cover most everyday position expressions in English.",
+        "head": "ON — superficie",
+        "body": "'On' describe contacto con una superficie —algo apoyado o pegado a ella, como una mesa, una pared o un piso— en vez de estar encerrado o en un punto. También se usa con transporte público grande (bus, tren, avión), donde te imaginas a bordo. Juntas, IN/AT/ON cubren casi toda posición cotidiana.",
         "note": "on the table · on the wall · on the first floor · on the bus · on the left/right"
       }
     ],
@@ -215,7 +215,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by"
         ],
         "ans": 2,
-        "exp": "Enclosed area → 'in': 'She's in the garden.'"
+        "exp": "Área cerrada → 'in': 'She's in the garden.'"
       },
       {
         "q": "He's waiting ___ the bus stop.",
@@ -226,7 +226,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by"
         ],
         "ans": 2,
-        "exp": "Specific point/location → 'at': 'He's waiting at the bus stop.'"
+        "exp": "Punto específico → 'at': 'He's waiting at the bus stop.'"
       },
       {
         "q": "There's a spider ___ the ceiling.",
@@ -237,7 +237,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by"
         ],
         "ans": 1,
-        "exp": "Surface → 'on': 'There's a spider on the ceiling.'"
+        "exp": "Superficie → 'on': 'There's a spider on the ceiling.'"
       }
     ],
     "flashcards": [
@@ -257,18 +257,18 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "At home / at school / at work / at university",
-        "body": "These fixed expressions use 'at' not because the place is a single tiny point, but because English treats them as naming an ACTIVITY or FUNCTION — studying, working — rather than a physical building. Saying 'at school' focuses on the fact that someone is there to study, not on the size or shape of the building itself. Because they're fixed phrases, they're best learned as set expressions rather than derived from a general rule.",
+        "head": "AT — casa, escuela, trabajo",
+        "body": "Estas expresiones fijas usan 'at' no porque el lugar sea un punto diminuto, sino porque el inglés las trata como una ACTIVIDAD o FUNCIÓN —estudiar, trabajar— más que un edificio físico. Al ser frases fijas, es mejor memorizarlas tal cual, en vez de deducirlas de una regla general.",
         "note": "She's at work. · The children are at school. · He's at home. · She's at university."
       },
       {
-        "head": "In hospital / in prison / in bed",
-        "body": "These expressions use 'in' because they emphasize being inside the institution as a participant in what it's for — a patient in a hospital, an inmate in a prison, a sleeper in bed — rather than just visiting the building. Notice that British English typically drops the article ('in hospital', not 'in the hospital') in these fixed phrases, which differs from what the general 'enclosed space' rule for 'in' might lead you to expect. Like the 'at' expressions above, these are best memorized as set phrases.",
+        "head": "IN — hospital, cárcel, cama",
+        "body": "Estas expresiones usan 'in' porque enfatizan estar dentro de la institución como participante de su función —un paciente, un preso, alguien durmiendo— y no solo de visita. En inglés británico se suele omitir el artículo ('in hospital', no 'in the hospital'). Memorízalas como frases fijas.",
         "note": "He's in hospital. (he's a patient) · She's in bed. (she's sleeping/resting) · He's in prison."
       },
       {
-        "head": "On the left/right · On the corner · On the top floor",
-        "body": "These expressions use 'on' because they describe a position along a line or edge (left/right, a corner where two streets meet) or a specific level within a building (a floor), continuing the 'surface or level' idea behind 'on' from the previous unit. They don't fit neatly into 'in' (enclosed space) or 'at' (a single point), since they describe relative position or level instead. As with the other groups here, treat them as fixed expressions to memorize rather than reasoning them out each time.",
+        "head": "ON — izquierda, esquina, piso",
+        "body": "Estas expresiones usan 'on' porque describen una posición a lo largo de una línea o borde (izquierda/derecha, una esquina) o un nivel dentro de un edificio (un piso), siguiendo la idea de 'superficie o nivel' de 'on'. No encajan en 'in' ni 'at'; memorízalas como frases fijas.",
         "note": "Turn on the left. · The bank is on the corner. · I live on the top floor."
       }
     ],
@@ -282,7 +282,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by"
         ],
         "ans": 2,
-        "exp": "Institution where she's a patient → 'in hospital'."
+        "exp": "Institución donde ella es paciente → 'in hospital'."
       },
       {
         "q": "He's not here — he's ___ work.",
@@ -293,7 +293,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "to"
         ],
         "ans": 2,
-        "exp": "Function/activity location → 'at work'."
+        "exp": "Lugar por función/actividad → 'at work'."
       }
     ],
     "flashcards": [
@@ -313,18 +313,18 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "IN THE CORNER vs ON THE CORNER",
-        "body": "These two phrases look almost identical but describe completely different kinds of corners: 'in the corner' refers to an internal angle inside an enclosed space, like where two walls of a room meet — hence 'in', matching the enclosed-space rule. 'On the corner', by contrast, refers to an external corner outside, where two streets intersect — a point along a surface (the street), hence 'on'. The preposition changes because the type of space being described changes, even though the English word 'corner' stays the same.",
+        "head": "IN vs ON the corner",
+        "body": "Estas frases parecen iguales pero describen esquinas distintas: 'in the corner' es un ángulo interno dentro de un espacio cerrado, como donde se juntan dos paredes —de ahí 'in'—. 'On the corner' es una esquina externa donde se cruzan dos calles —un punto sobre una superficie—, de ahí 'on'.",
         "note": "The lamp is in the corner of the room. · There is a shop on the corner of the street."
       },
       {
-        "head": "IN THE FRONT/BACK vs AT THE FRONT/BACK",
-        "body": "The choice between 'in' and 'at' here depends on whether you're inside an enclosed space or positioned at a point relative to something larger. Cars, and other small vehicles, are treated as enclosed spaces you sit inside, so 'in the front/back of the car' follows the same logic as 'in a room'. Buildings, queues, and groups of people, however, are treated as things you're positioned at a point of — 'at the front/back' — because you're not literally inside them the way you are inside a car.",
+        "head": "IN vs AT the front/back",
+        "body": "La elección depende de si estás dentro de un espacio cerrado o en un punto relativo a algo más grande. Los coches se tratan como espacios cerrados, así que 'in the front/back of the car' sigue la lógica de 'in a room'. Edificios, filas y grupos de personas usan 'at', porque no estás literalmente dentro de ellos.",
         "note": "She sat in the back of the taxi. · He stood at the back of the queue."
       },
       {
-        "head": "IN a photograph, picture, book, newspaper",
-        "body": "'In' is used for anything that appears within the contents of printed or framed media — a photo, a picture, a newspaper, a book — because the image or text is treated as an enclosed space containing information, just like a room contains people. You appear 'in' a photo the same way you'd be 'in' a room: contained within its boundaries. This extends the enclosed-space logic of 'in' beyond physical locations to visual and printed content.",
+        "head": "IN — fotos, libros, periódicos",
+        "body": "'In' se usa para cualquier cosa que aparece dentro del contenido de medios impresos o enmarcados —una foto, un cuadro, un periódico, un libro— porque se trata la imagen o el texto como un espacio cerrado que contiene información, igual que una habitación contiene gente.",
         "note": "You look great in this photo. · I read about it in the newspaper."
       }
     ],
@@ -338,7 +338,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "to the corner"
         ],
         "ans": 1,
-        "exp": "Inside a room → 'in the corner'."
+        "exp": "Dentro de una habitación → 'in the corner'."
       },
       {
         "q": "He was sitting ___ of the car, not driving.",
@@ -349,7 +349,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "to the back"
         ],
         "ans": 1,
-        "exp": "Inside a vehicle → 'in the back'."
+        "exp": "Dentro de un vehículo → 'in the back'."
       },
       {
         "q": "I saw your photo ___ the newspaper.",
@@ -360,7 +360,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "to"
         ],
         "ans": 2,
-        "exp": "Printed media → 'in'."
+        "exp": "Medio impreso → 'in'."
       }
     ],
     "flashcards": [
@@ -380,23 +380,23 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "TO — movement toward a place",
-        "body": "'To' marks the destination of a movement verb — it tells you where someone or something is heading, without saying anything about whether they arrive or go inside. It works with a wide range of movement verbs (go, walk, come, travel) and simply expresses direction toward a place. This is different from 'into', which adds the idea of actually entering an enclosed space, not just heading toward it.",
+        "head": "TO — movimiento hacia",
+        "body": "'To' marca el destino de un verbo de movimiento: indica hacia dónde se dirige alguien, sin decir si llega o entra. Funciona con muchos verbos de movimiento (go, walk, come, travel) y expresa solo dirección. Se diferencia de 'into', que añade la idea de entrar realmente a un espacio cerrado.",
         "note": "I'm going to Paris. · She walked to the door. · Come to my house."
       },
       {
-        "head": "INTO — movement to the inside",
-        "body": "'Into' combines the idea of movement with the idea of entering an enclosed space — it's used specifically when someone or something crosses from outside to inside, like walking into a room or getting into a car. This makes it more specific than 'to', which shows only general direction without implying entry. If there's no sense of crossing a boundary into an enclosed space, plain 'to' is usually enough.",
+        "head": "INTO — movimiento hacia adentro",
+        "body": "'Into' combina movimiento con la idea de entrar a un espacio cerrado —cruzar de afuera hacia adentro, como entrar a una habitación o subir a un coche. Es más específico que 'to', que solo muestra dirección general sin implicar entrada. Sin ese cruce de frontera, basta con 'to'.",
         "note": "She walked into the room. · He got into the car. · Water got into the engine."
       },
       {
-        "head": "AT — arriving at a point",
-        "body": "When a movement verb like 'arrive' is followed by a specific point, building, or event, English uses 'at' rather than 'to' — 'arrived at the airport', not 'arrived to the airport'. This might seem to contradict the 'to = movement toward a destination' rule, but 'arrive' is treated as already completing the movement and landing at that point, following the same logic as 'at' marking a precise position rather than 'to' marking direction. This exception is worth memorizing, since it trips up many learners.",
+        "head": "AT — llegar a un punto",
+        "body": "Cuando 'arrive' va seguido de un punto, edificio o evento concreto, el inglés usa 'at', no 'to': 'arrived at the airport', nunca 'arrived to the airport'. 'Arrive' se trata como movimiento ya completado que aterriza en ese punto. Vale la pena memorizar esta excepción.",
         "note": "We arrived at the airport. · They arrived at the party late. · NOT: arrived to the airport ❌"
       },
       {
-        "head": "OUT OF — movement from the inside",
-        "body": "'Out of' is the direct opposite of 'into': it describes movement that starts inside an enclosed space and ends outside it, such as walking out of a building or taking something out of a bag. Just as 'into' emphasizes crossing a boundary to get in, 'out of' emphasizes crossing that same boundary to get out. Together, into/out of form a clear pair for describing entry and exit.",
+        "head": "OUT OF — salir de adentro",
+        "body": "'Out of' es lo opuesto de 'into': describe movimiento que empieza dentro de un espacio cerrado y termina afuera, como salir de un edificio o sacar algo de una bolsa. Junto con 'into', forman un par claro para entrada y salida.",
         "note": "He walked out of the building. · She took the keys out of her bag."
       }
     ],
@@ -410,7 +410,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "at"
         ],
         "ans": 1,
-        "exp": "Movement into enclosed space → 'into'."
+        "exp": "Movimiento hacia un espacio cerrado → 'into'."
       },
       {
         "q": "They arrived ___ the airport two hours early.",
@@ -421,7 +421,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "on"
         ],
         "ans": 2,
-        "exp": "Specific point → 'at': 'arrived at the airport'."
+        "exp": "Punto específico → 'at': 'arrived at the airport'."
       }
     ],
     "flashcards": [
@@ -441,28 +441,28 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "IN — parts of the day and enclosed situations",
-        "body": "'In' extends beyond physical spaces to cover general parts of the day (morning, afternoon, evening), which are treated as broad time periods you're 'inside' of rather than exact points. It also continues its enclosed-space logic for things you're physically inside, like a bed, a car, a hospital, or a prison. Both uses rely on the same underlying idea: 'in' marks something as contained within a broader space or period.",
+        "head": "IN — partes del día",
+        "body": "'In' también cubre las partes generales del día (mañana, tarde, noche), tratadas como periodos amplios en los que estás 'dentro', y sigue su lógica de espacio cerrado para cosas físicas: cama, coche, hospital, cárcel. Ambos usos comparten la misma idea: contenido dentro de algo más amplio.",
         "note": "in the morning · in the afternoon · in bed · in hospital · in the car"
       },
       {
-        "head": "AT — activities and specific points",
-        "body": "'At' groups together two related ideas seen elsewhere in this unit: locations defined by the activity that happens there (work, school, home) and locations treated as a single precise point (a bus stop, a door). In both cases, the size or interior of the place isn't the focus — what matters is either the function of the place or its position as a point. This is why 'at' contrasts with 'in', which always emphasizes being enclosed within a space.",
+        "head": "AT — actividades y puntos",
+        "body": "'At' junta dos ideas: lugares definidos por la actividad que ocurre ahí (trabajo, escuela, casa) y lugares tratados como un punto preciso (una parada, una puerta). En ambos casos no importa el tamaño ni el interior, sino la función o la posición.",
         "note": "at work · at school · at home · at the bus stop"
       },
       {
-        "head": "ON — surfaces and public transport",
-        "body": "'On' keeps its core meaning of contact with a surface, but also extends to larger public transport — buses, trains, and planes — where passengers are imagined as being on board a vehicle they can walk around inside. Smaller, more enclosed vehicles like cars and taxis switch to 'in' instead, because they feel like a contained box rather than a vehicle you move around within. This size-based distinction — ON for a big vehicle with an aisle, IN for a small enclosed one — is one of the more memorable exceptions in this area of grammar.",
+        "head": "ON — superficies y transporte",
+        "body": "'On' mantiene su sentido de contacto con una superficie, pero también se usa con transporte público grande —bus, tren, avión—, donde te imaginas a bordo, pudiendo caminar dentro. Vehículos pequeños y cerrados, como coches y taxis, usan 'in' porque se sienten como una caja cerrada.",
         "note": "on the bus · on the train · on the left · on the phone · on the radio"
       },
       {
         "head": "Truco: ¿tiene pasillo?",
-        "body": "This is a memory trick built around a Spanish word game: ask yourself whether the vehicle has an aisle you can walk down. The Spanish word for 'with' is 'con', which hides the letters 'ON' inside it — for vehicles WITH an aisle (bus, train, plane), use 'ON'. The Spanish word for 'without' is 'sin', which hides 'IN' inside it — for vehicles WITHOUT an aisle (car, taxi), use 'IN'. Spotting these hidden English prepositions inside their Spanish opposites makes the rule easy to recall.",
+        "body": "Truco con palabras en español: 'con' esconde 'ON' —para vehículos CON pasillo (bus, tren, avión), usa 'ON'. 'Sin' esconde 'IN' —para vehículos SIN pasillo (coche, taxi), usa 'IN'. Encontrar estas preposiciones escondidas ayuda a recordar la regla.",
         "note": "ON the bus · ON the train · ON the plane (con pasillo) · IN the car · IN the taxi (sin pasillo)"
       },
       {
-        "head": "Fixed expressions to memorize",
-        "body": "Not every preposition combination in English follows a clean logical pattern — some are simply fixed by convention and have to be learned as set phrases rather than derived from a rule. 'In bed', 'on the phone', and 'at night' are classic examples: each uses a different preposition for a similarly 'small, specific' situation, with no consistent underlying logic linking them. When you hit one of these fixed expressions, the most efficient approach is simply to memorize the whole phrase as a single unit.",
+        "head": "Expresiones fijas para memorizar",
+        "body": "No todas las combinaciones de preposiciones siguen una lógica clara —algunas son simplemente fijas por convención y hay que aprenderlas como frases completas. 'In bed', 'on the phone' y 'at night' son ejemplos clásicos: cada una usa una preposición distinta sin un patrón consistente entre ellas.",
         "note": "in bed (NOT on bed) · on the phone (NOT at the phone) · at night (NOT in night)"
       }
     ],
@@ -476,7 +476,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by"
         ],
         "ans": 2,
-        "exp": "Part of day → 'in': 'in the morning'."
+        "exp": "Parte del día → 'in': 'in the morning'."
       },
       {
         "q": "She's ___ work right now.",
@@ -487,7 +487,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "by"
         ],
         "ans": 2,
-        "exp": "Activity/function location → 'at work'."
+        "exp": "Lugar por actividad/función → 'at work'."
       }
     ],
     "flashcards": [
@@ -512,23 +512,23 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "BY — the agent in the passive voice",
-        "body": "In a passive sentence, the person or thing that actually performs the action is called the agent, and English introduces it with 'by' whenever it's worth mentioning. This mirrors the normal subject of an active sentence ('Picasso painted the picture') being pushed to the end of the passive version ('The picture was painted by Picasso'). As with the passive generally, the 'by' phrase is only included when the doer is genuinely important information, not simply because a passive sentence technically allows it.",
+        "head": "BY — el agente en pasiva",
+        "body": "En una oración pasiva, quien realiza la acción se llama agente, y el inglés lo introduce con 'by' cuando vale la pena mencionarlo. Así, el sujeto de la activa ('Picasso painted the picture') pasa al final de la pasiva ('The picture was painted by Picasso'). Solo se incluye cuando el agente es información relevante.",
         "note": "The painting was made by Picasso. · The window was broken by the storm."
       },
       {
-        "head": "BY — method of transport",
-        "body": "'By' combines with a mode of transport, used without an article, to describe how you travel from one place to another — by car, by bus, by train. This is a fixed pattern: adding 'the' or 'a' changes the meaning entirely, since 'in my car' or 'in the car' describes being physically inside a specific vehicle rather than naming the general method of travel. Keep 'by + transport' as a set phrase distinct from prepositions of position like 'in' or 'on'.",
+        "head": "BY — medio de transporte",
+        "body": "'By' se combina con un medio de transporte, sin artículo, para describir cómo viajas: by car, by bus, by train. Es un patrón fijo: añadir 'the' o 'a' cambia el significado, porque 'in my car' describe estar físicamente dentro de un vehículo concreto, no el medio general.",
         "note": "by car · by bus · by train · by plane · NOT: by the car ❌ (but: in my car ✅)"
       },
       {
-        "head": "BY — near/beside",
-        "body": "Beyond marking an agent or a method of transport, 'by' also has a simple positional meaning close to 'next to' or 'beside' — describing something located immediately alongside another thing, like a window or a bed. This is a more literal, spatial use of the word, unrelated to the passive-voice or transport senses above. Context usually makes it obvious which of the three meanings of 'by' is intended.",
+        "head": "BY — cerca de",
+        "body": "Además de marcar el agente o el transporte, 'by' también significa 'al lado de' o 'junto a' —describe algo ubicado justo al lado de otra cosa, como una ventana o una cama. Es un uso espacial más literal, distinto de los sentidos de pasiva o transporte.",
         "note": "She sat by the window. · There is a lamp by the bed."
       },
       {
-        "head": "BY — deadline",
-        "body": "'By' + a time expression sets a deadline — it means the action must happen at that time or earlier, but never later. This is subtly different from 'at', which points to one exact moment, and from 'until', which describes something continuing up to a point and then stopping; 'by' is specifically about a limit that shouldn't be crossed. It's the natural choice whenever you're talking about a due date or a latest acceptable time.",
+        "head": "BY — fecha límite",
+        "body": "'By' más una expresión de tiempo marca un plazo: la acción debe ocurrir en ese momento o antes, nunca después. Es distinto de 'at' (un momento exacto) y de 'until' (algo que continúa hasta un punto y luego para); 'by' es específicamente un límite que no se debe cruzar.",
         "note": "Please finish this by Friday. · I'll be home by 6 o'clock."
       }
     ],
@@ -542,7 +542,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "of"
         ],
         "ans": 2,
-        "exp": "Agent in passive → 'by'."
+        "exp": "Agente en pasiva → 'by'."
       },
       {
         "q": "She travels ___ train every day.",
@@ -553,7 +553,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "at"
         ],
         "ans": 2,
-        "exp": "Method of transport → 'by train'."
+        "exp": "Medio de transporte → 'by train'."
       }
     ],
     "flashcards": [
@@ -573,18 +573,18 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "Nouns followed by a fixed preposition",
-        "body": "A large number of English nouns are conventionally paired with one specific preposition whenever they introduce what they relate to, and there's no reliable rule for predicting which preposition a given noun takes just from its meaning. This means these noun-preposition pairs have to be learned and memorized individually, the same way you'd learn any other piece of vocabulary. Because Spanish often pairs the equivalent noun with a different preposition, direct translation is an unreliable guide here.",
+        "head": "Sustantivo + preposición fija",
+        "body": "Muchos sustantivos en inglés se combinan siempre con una preposición específica al introducir aquello con lo que se relacionan, y no hay una regla fiable para predecir cuál. Hay que aprender estos pares de memoria, como cualquier vocabulario. El español suele usar una preposición distinta, así que traducir literalmente no ayuda.",
         "note": "the reason for · the cause of · a solution to · an increase in · damage to"
       },
       {
-        "head": "Nouns related to feelings and attitudes",
-        "body": "Nouns that describe a feeling, need, or attitude toward something tend to cluster around a small set of prepositions — FOR (a need for something), TOWARDS (an attitude towards something), or WITH (a connection with something) — depending on the specific noun. While there's a loose pattern here, the exact preposition still has to be learned noun by noun, since these three options aren't fully interchangeable. Grouping them this way at least narrows down the likely candidates when you're unsure.",
+        "head": "Sustantivos de sentimientos y actitudes",
+        "body": "Los sustantivos que describen un sentimiento, necesidad o actitud hacia algo tienden a agruparse en torno a FOR (una necesidad de algo), TOWARDS (una actitud hacia algo) o WITH (una conexión con algo), según el sustantivo. Hay un patrón parcial, pero la preposición exacta sigue aprendiéndose caso por caso.",
         "note": "a need for help · an attitude towards work · a connection with the past"
       },
       {
-        "head": "Noun + preposition vs. verb + preposition",
-        "body": "Because many nouns are formed from a related verb (increase/to increase, solution/to solve), you might expect the same preposition to carry over from the verb to the noun form, and sometimes it does — 'increase in' matches 'increase in size'. Other times, though, the noun takes a completely different preposition from its related verb, as with 'solve a problem' but 'a solution TO a problem'. Because the pattern isn't reliable, it's safest to check and learn the noun's preposition separately rather than assuming it matches the verb.",
+        "head": "Sustantivo vs. verbo + preposición",
+        "body": "Como muchos sustantivos vienen de un verbo relacionado (increase/to increase), podrías esperar que compartan preposición, y a veces sí ocurre —'increase in' como 'increase in size'. Otras veces el sustantivo usa una preposición distinta a la del verbo, como 'solve a problem' pero 'a solution TO a problem'. Mejor comprobar cada caso.",
         "note": "to increase in size / an increase IN size (match) · to solve a problem / a solution TO a problem (different)"
       }
     ],
@@ -598,7 +598,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "about"
         ],
         "ans": 1,
-        "exp": "'Increase IN' → fixed noun + preposition."
+        "exp": "'Increase IN' → sustantivo + preposición fija."
       },
       {
         "q": "We need a solution ___ this problem.",
@@ -609,7 +609,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "about"
         ],
         "ans": 2,
-        "exp": "'Solution TO' a problem."
+        "exp": "'Solution TO' un problema."
       }
     ],
     "flashcards": [
@@ -629,23 +629,23 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "Adjective + OF",
-        "body": "A group of adjectives describing feelings, judgments, or awareness about something — proud, afraid, aware, tired, and similar words — are conventionally followed by 'of' when introducing what causes that feeling. As with noun-preposition pairs, there's no deep logical reason 'of' is chosen for this particular group; it's simply the fixed pattern these adjectives follow, and needs to be learned alongside the adjective itself. Substituting a different preposition here would sound clearly wrong to a native speaker.",
+        "head": "Adjetivo + OF",
+        "body": "Un grupo de adjetivos de sentimientos, juicios o conciencia sobre algo —proud, afraid, aware, tired— van seguidos de 'of' al introducir la causa de ese sentimiento. No hay una razón lógica profunda para 'of'; es simplemente el patrón fijo de este grupo, y hay que aprenderlo junto al adjetivo.",
         "note": "I'm proud of you. · She's afraid of spiders. · Are you aware of the problem?"
       },
       {
-        "head": "Adjective + AT — ability",
-        "body": "'At' follows adjectives that judge someone's skill or competence at doing something — good, bad, great, terrible — describing the specific activity or area where that skill applies. This use of 'at' echoes its role elsewhere as marking a specific point or area, here applied to a skill or subject rather than a physical location. It's one of the more predictable adjective + preposition patterns, since 'at' consistently shows up whenever ability is being judged.",
+        "head": "Adjetivo + AT — habilidad",
+        "body": "'At' sigue a adjetivos que juzgan la habilidad o competencia de alguien haciendo algo —good, bad, great, terrible—, describiendo la actividad concreta donde se aplica esa habilidad. Es uno de los patrones más predecibles: 'at' aparece siempre que se juzga una habilidad.",
         "note": "She's good at cooking. · He's bad at maths. · I'm not very good at singing."
       },
       {
-        "head": "Adjective + IN / ABOUT",
-        "body": "'In' typically follows adjectives about mental engagement with a topic, like being interested in something, while 'about' typically follows adjectives describing an emotional reaction connected to a topic, like being worried or excited about something. The distinction is subtle — both describe a connection to a subject — but the emotional-reaction adjectives lean toward 'about' and the engagement/interest ones lean toward 'in'. As always with these pairs, it's worth learning each adjective with its typical preposition rather than guessing from the pattern alone.",
+        "head": "Adjetivo + IN / ABOUT",
+        "body": "'In' suele seguir a adjetivos sobre interés mental en un tema (interested in), mientras que 'about' suele seguir a adjetivos de reacción emocional relacionada con un tema (worried, excited about). La diferencia es sutil; conviene aprender cada adjetivo con su preposición típica.",
         "note": "interested in history · worried about the exam · excited about the trip"
       },
       {
-        "head": "Adjective + FOR",
-        "body": "'For' follows adjectives that describe responsibility for something (responsible for the project) or reputation for something (famous for its museums) — in both cases introducing what the responsibility or reputation is actually about. This is a distinct use from the 'of' and 'at' patterns above, since it's specifically tied to the ideas of accountability and being known for something. Learning these as fixed pairs — 'responsible for', 'famous for' — is more reliable than trying to derive the preposition from first principles.",
+        "head": "Adjetivo + FOR",
+        "body": "'For' sigue a adjetivos de responsabilidad (responsible for) o fama por algo (famous for), introduciendo aquello de lo que se es responsable o por lo que se es conocido. Mejor aprender 'responsible for' y 'famous for' como pares fijos que deducir la preposición.",
         "note": "She's responsible for the project. · Paris is famous for its museums."
       }
     ],
@@ -659,7 +659,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "at"
         ],
         "ans": 0,
-        "exp": "'Proud OF' → fixed adjective + preposition."
+        "exp": "'Proud OF' → adjetivo + preposición fija."
       },
       {
         "q": "She's not very good ___ cooking.",
@@ -670,7 +670,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "of"
         ],
         "ans": 1,
-        "exp": "'Good AT' → 'good at cooking'."
+        "exp": "'Good AT' → 'good at cooking' (habilidad)."
       }
     ],
     "flashcards": [
@@ -690,18 +690,18 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "Adjective + TO",
-        "body": "'To' follows adjectives that express a relationship, comparison, or connection between two things or people — similar to, married to, kind to — linking the adjective to whatever it's being related or compared against. The common thread across these adjectives is a link or comparison pointing from one thing toward another, which matches 'to' being used elsewhere in English for direction and connection. As with the previous unit, memorizing each adjective-preposition pair is more reliable than guessing.",
+        "head": "Adjetivo + TO",
+        "body": "'To' sigue a adjetivos que expresan relación, comparación o conexión entre dos cosas o personas —similar to, married to, kind to—, vinculando el adjetivo con aquello a lo que se compara. El hilo común es una conexión que apunta de una cosa hacia otra, igual que 'to' marca dirección.",
         "note": "This is similar to my old phone. · He's married to a doctor. · Be kind to your sister."
       },
       {
         "head": "DIFFERENT FROM",
-        "body": "In careful, standard English, 'different' is normally followed by 'from' rather than 'to' or 'than' (though those alternatives do appear informally), so 'from' is the safest choice in writing. 'Used to' and 'accustomed to', despite looking similar to the infinitive 'to' used with base verbs, are actually followed by a noun or an -ing form here, not a base verb — 'used to the noise', 'accustomed to working late', never 'used to work' with this meaning. This is a common trap, since 'used to' also exists as a completely different structure describing past habits ('I used to work there'), which does take a base verb.",
+        "body": "En inglés formal, 'different' va seguido de 'from', no de 'to' ni 'than' (aunque esas alternativas existen informalmente). 'Used to' y 'accustomed to', pese a parecerse al infinitivo, van seguidos de sustantivo o forma en -ing —'used to the noise', nunca 'used to work' con este significado, que corresponde a otra estructura distinta para hábitos pasados.",
         "note": "This is different from what I expected. · I'm used to the noise now. · She's accustomed to working late."
       },
       {
-        "head": "Adjective + WITH / BY",
-        "body": "'With' typically follows adjectives describing satisfaction or contentment (satisfied with the results), while 'by' typically follows adjectives describing the cause of a reaction, especially when it echoes the passive voice's use of 'by' for an agent (impressed by her presentation — she caused the impression). The distinction mirrors the passive: 'by' introduces what caused the feeling, much like it introduces who performed an action. Both are worth learning as fixed pairs alongside their adjectives.",
+        "head": "Adjetivo + WITH / BY",
+        "body": "'With' suele seguir a adjetivos de satisfacción (satisfied with), mientras que 'by' suele seguir a adjetivos sobre la causa de una reacción, casi como el 'by' de la pasiva (impressed by her presentation —ella causó la impresión). La distinción refleja la pasiva: 'by' introduce la causa.",
         "note": "I am satisfied with the results. · We were impressed by her presentation."
       }
     ],
@@ -715,7 +715,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "at"
         ],
         "ans": 2,
-        "exp": "'Married TO' → fixed adjective + preposition."
+        "exp": "'Married TO' → adjetivo + preposición fija."
       },
       {
         "q": "This is very different ___ what I expected.",
@@ -726,7 +726,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "as"
         ],
         "ans": 2,
-        "exp": "'Different FROM' (formal)."
+        "exp": "'Different FROM' (uso formal)."
       }
     ],
     "flashcards": [
@@ -746,18 +746,18 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "Verb + TO — communicating with someone",
-        "body": "Verbs that describe communication directed at a specific person — speak, listen, apologise, explain — typically take 'to', since the preposition marks the person as the destination or target of the communication, similar to how 'to' marks a destination of physical movement. The person being spoken to, listened to, or apologised to is grammatically parallel to a place you're heading toward. This groups naturally with the 'at' verbs below, which express a similar direction but with a more negative or focused undertone.",
+        "head": "Verbo + TO — comunicarse",
+        "body": "Los verbos de comunicación dirigida a una persona concreta —speak, listen, apologise, explain— suelen llevar 'to', porque la preposición marca a la persona como destino de la comunicación, igual que 'to' marca un destino físico. Se agrupa con los verbos con 'at' de abajo, con un matiz más negativo.",
         "note": "I need to speak to the manager. · Listen to me! · She apologised to her friend."
       },
       {
-        "head": "Verb + AT — directing attention or aggression",
-        "body": "Verbs describing looking, reacting, or directing attention toward something — stare, shout, laugh — often take 'at', especially when there's a focused, sudden, or negative quality to the action, distinguishing them from the more neutral communication verbs that take 'to'. The 'at' here marks a target being aimed at, similar to how 'at' marks a precise point elsewhere with this preposition. Recognizing this negative or intense undertone helps you predict when 'at' rather than 'to' is the right choice.",
+        "head": "Verbo + AT — dirigir atención",
+        "body": "Verbos de mirar, reaccionar o dirigir atención hacia algo —stare, shout, laugh— suelen llevar 'at', sobre todo con un matiz negativo o repentino, a diferencia de los verbos de comunicación neutral con 'to'. Ese matiz negativo ayuda a predecir cuándo usar 'at' en vez de 'to'.",
         "note": "Stop shouting at me! · Don't laugh at him. · She stared at the painting."
       },
       {
         "head": "THROW TO vs THROW AT",
-        "body": "This single verb, 'throw', makes the TO-versus-AT distinction especially clear because both prepositions are grammatically possible but produce very different meanings. 'Throw the ball TO someone' is a cooperative, neutral action meant to help them catch it, while 'throw a stone AT something' is aggressive, meant to hit or damage the target. Comparing the two side by side is a useful way to internalize the general pattern: 'to' for neutral or helpful direction, 'at' for aggressive or forceful direction.",
+        "body": "El verbo 'throw' muestra bien la diferencia entre TO y AT: 'throw the ball TO someone' es una acción cooperativa para que la atrapen, mientras 'throw a stone AT something' es agresiva, para golpear el objetivo. Compararlos ayuda a interiorizar el patrón: 'to' neutral, 'at' agresivo.",
         "note": "He threw the ball to me. (so I could catch it) · He threw a stone at the window. (to hit it)"
       }
     ],
@@ -771,7 +771,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "with"
         ],
         "ans": 1,
-        "exp": "'Shout AT' (aggressive direction)."
+        "exp": "'Shout AT' (dirección agresiva)."
       },
       {
         "q": "I need to speak ___ the manager.",
@@ -782,7 +782,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "for"
         ],
         "ans": 2,
-        "exp": "'Speak TO' someone."
+        "exp": "'Speak TO' alguien."
       }
     ],
     "flashcards": [
@@ -805,18 +805,18 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "Verb + ABOUT — talking or thinking about a topic",
-        "body": "'About' follows verbs that describe thinking, talking, dreaming, or feeling something in connection with a general subject or topic — complain about, dream about, talk about — introducing the topic the mental or verbal activity concerns. Unlike the more targeted 'to' or 'at' verbs from the previous unit, these verbs aren't aimed at a person but connected to a broader subject matter. This makes 'about' the natural default preposition whenever a verb concerns a topic rather than a target.",
+        "head": "Verbo + ABOUT — un tema",
+        "body": "'About' sigue a verbos de pensar, hablar, soñar o sentir algo sobre un tema general —complain about, dream about, talk about—, introduciendo el tema del que trata la actividad. A diferencia de los verbos dirigidos con 'to' o 'at', estos no apuntan a una persona sino a un asunto.",
         "note": "Stop complaining about the weather! · I often dream about flying. · We talked about the trip."
       },
       {
-        "head": "Verb + OF — opinions and composition",
-        "body": "'Of' follows verbs in two related situations: asking for or giving a quick opinion (What do you think OF this?) and describing what something is composed or made of (This dish consists OF rice and vegetables). Both uses connect the verb to something that defines or characterizes the subject — an opinion characterizes your view of it, and ingredients characterize what it's built from. Learning 'think of' and 'consist of' as fixed pairs avoids confusing 'of' with the more general 'about'.",
+        "head": "Verbo + OF — opinión y composición",
+        "body": "'Of' sigue a verbos en dos casos: pedir o dar una opinión rápida (What do you think OF this?) y describir de qué está hecho algo (consists OF rice and vegetables). Ambos conectan el verbo con algo que caracteriza al sujeto. Aprende 'think of' y 'consist of' como pares fijos.",
         "note": "What do you think of my haircut? · This dish consists of rice and vegetables."
       },
       {
         "head": "THINK OF vs THINK ABOUT",
-        "body": "Although both use the same verb, 'think of' and 'think about' carry noticeably different meanings: 'think of' usually asks for or gives an immediate, surface-level opinion or reaction, while 'think about' suggests a more sustained, careful process of consideration or reflection. 'What do you think of the plan?' wants a quick judgment; 'I'm thinking about changing jobs' describes an ongoing deliberation. This pair is a good example of how the same verb can shift meaning noticeably depending on which preposition follows it.",
+        "body": "Aunque usan el mismo verbo, tienen significados distintos: 'think of' pide una opinión inmediata y superficial, mientras 'think about' sugiere una reflexión más sostenida. 'What do you think of the plan?' quiere un juicio rápido; 'I'm thinking about changing jobs' describe una deliberación en curso.",
         "note": "What do you think of the plan? (opinion) · I'm thinking about changing jobs. (considering)"
       }
     ],
@@ -830,7 +830,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "at"
         ],
         "ans": 1,
-        "exp": "'Complain ABOUT' something."
+        "exp": "'Complain ABOUT' algo."
       },
       {
         "q": "What do you think ___ my new haircut?",
@@ -841,7 +841,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "for"
         ],
         "ans": 1,
-        "exp": "'Think OF' = asking opinion."
+        "exp": "'Think OF' = pedir opinión."
       }
     ],
     "flashcards": [
@@ -864,18 +864,18 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "Verb + FOR — purpose or reason",
-        "body": "'For' follows verbs describing an action aimed at obtaining or achieving something — waiting for, searching for, asking for, paying for — introducing the goal or purpose behind the action. In each case, the thing after 'for' is what the subject wants, needs, or is working toward, which is the common thread linking these otherwise different verbs. This use of 'for' marking purpose is distinct from the 'for' used to explain a cause, covered in the next block.",
+        "head": "Verbo + FOR — propósito",
+        "body": "'For' sigue a verbos de acciones dirigidas a obtener algo —waiting for, searching for, asking for, paying for—, introduciendo la meta o el propósito de la acción. Lo que sigue a 'for' es lo que el sujeto quiere, necesita o busca lograr. Distinto del 'for' que explica una causa.",
         "note": "I've been waiting for you for an hour! · Can you pay for the tickets?"
       },
       {
-        "head": "Verb + FOR — cause (thank/blame/apologise)",
-        "body": "'For' also introduces the REASON behind an emotional or social response — what someone is thanked for, blamed for, or apologised for — rather than a goal being pursued, as in the previous block. Here, 'for' functions more like 'because of', explaining why the thanking, blaming, or apologising is happening. Even though it's the same preposition as the purpose use above, the underlying logic — reason versus goal — is different enough that it helps to think of these as two related but separate patterns.",
+        "head": "Verbo + FOR — causa",
+        "body": "'For' también introduce la RAZÓN de una respuesta emocional o social —por qué se agradece, se culpa o se pide disculpas—, no una meta como antes. Aquí funciona como 'because of'. Aunque es la misma preposición, la lógica —razón vs. meta— es distinta.",
         "note": "He thanked me for helping him. · Don't blame me for this! · I apologised for being late."
       },
       {
         "head": "APPLY FOR / HOPE FOR",
-        "body": "'Apply for' and 'hope for' both use 'for' to introduce the specific thing being sought or wished for — a job you're applying for, good weather you're hoping for — continuing the purpose sense of 'for' from earlier in this unit. In both cases, the outcome hasn't happened yet; the verb expresses working toward or wishing for something still uncertain. Grouping them with 'wait for' and 'search for' reinforces that 'for' consistently marks a desired goal across many different verbs.",
+        "body": "'Apply for' y 'hope for' usan 'for' para introducir lo que se busca o se desea —un trabajo, buen clima—, siguiendo el sentido de propósito de 'for'. En ambos casos el resultado aún es incierto. Agrúpalos con 'wait for' y 'search for' para reforzar el patrón 'for = meta deseada'.",
         "note": "She applied for the job. · We are hoping for good weather."
       }
     ],
@@ -889,7 +889,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "at"
         ],
         "ans": 1,
-        "exp": "'Wait FOR' someone."
+        "exp": "'Wait FOR' a alguien."
       },
       {
         "q": "He thanked me ___ helping him.",
@@ -900,7 +900,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "to"
         ],
         "ans": 1,
-        "exp": "'Thank someone FOR' something."
+        "exp": "'Thank someone FOR' algo."
       }
     ],
     "flashcards": [
@@ -920,18 +920,18 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "Verb + FROM — origin, illness, protection",
-        "body": "'From' follows verbs describing separation, origin, or distance from something — suffering from an illness, protecting against harm, recovering from a setback — all sharing the underlying idea of moving away from, or being kept apart from, something negative. This matches 'from' being used elsewhere in English to mark a starting point or source, here applied to illnesses and dangers rather than places. Recognizing this shared 'moving away from something bad' theme makes it easier to remember which verbs pair with 'from'.",
+        "head": "Verbo + FROM — origen, protección",
+        "body": "'From' sigue a verbos de separación, origen o distancia de algo —suffer from, protect from, recover from—, compartiendo la idea de alejarse o mantenerse aparte de algo negativo. Coincide con el 'from' que marca un punto de partida, aplicado aquí a enfermedades y peligros.",
         "note": "She suffers from terrible headaches. · This cream protects your skin from the sun. · He is recovering from the flu."
       },
       {
-        "head": "Verb + IN — belief, success, specialization",
-        "body": "'In' follows verbs about deep involvement in or commitment to something — believing in an idea, succeeding in a task, specializing in a field, investing in something — treating that idea or field as a space the subject is deeply engaged within, echoing 'in' marking an enclosed area elsewhere in English. This differs from the more surface-level 'of' used for opinions, since these verbs describe a stronger, more committed relationship to the topic. Learning this group together helps distinguish it from the more purpose-driven 'for' verbs.",
+        "head": "Verbo + IN — creencia, éxito",
+        "body": "'In' sigue a verbos de compromiso profundo con algo —believe in, succeed in, specialize in, invest in—, tratando esa idea o campo como un espacio en el que el sujeto está involucrado, como el 'in' de espacio cerrado. Es más fuerte que el 'of' superficial de las opiniones.",
         "note": "I believe in second chances. · He specializes in tax law. · They invested in new technology."
       },
       {
-        "head": "DEPEND ON (not depend of)",
-        "body": "'Depend' is always followed by 'on', never 'of' — a detail that trips up Spanish speakers especially, since the Spanish equivalent 'depender de' translates literally as 'depend OF', creating a natural but incorrect assumption. In English, 'on' here expresses the idea of relying on or being supported by something, similar to how 'on' is used for support or reliance elsewhere in the language. Because the direct translation misleads rather than helps, this is one of the noun/verb-preposition pairs most worth memorizing deliberately.",
+        "head": "DEPEND ON",
+        "body": "'Depend' siempre va con 'on', nunca con 'of' —un error común en hispanohablantes, porque 'depender de' sugiere 'depend OF'. En inglés, 'on' expresa la idea de apoyarse en algo, como el 'on' de soporte en otros contextos. Vale la pena memorizarlo a propósito.",
         "note": "I depend on my parents for money. · It depends on the weather."
       }
     ],
@@ -945,7 +945,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "of"
         ],
         "ans": 2,
-        "exp": "'Suffer FROM' an illness."
+        "exp": "'Suffer FROM' una enfermedad."
       },
       {
         "q": "I depend ___ my parents for money.",
@@ -956,7 +956,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "about"
         ],
         "ans": 1,
-        "exp": "'Depend ON' someone."
+        "exp": "'Depend ON' alguien."
       }
     ],
     "flashcards": [
@@ -976,23 +976,23 @@ export const prepositionsUnits: Record<number, Unit> = {
     "topic": "Prepositions",
     "explain": [
       {
-        "head": "Verb + ON — reliance and focus",
-        "body": "'On' follows verbs describing reliance or focused attention — depending on, relying on, concentrating on — continuing the same 'support or reliance' sense of 'on' introduced with 'depend on' in the previous unit. In each case, the subject is leaning on, or directing focus toward, whatever follows 'on', much like physically resting something on a surface. Grouping these verbs together makes the underlying 'on = support/focus' pattern easier to recognize and remember.",
+        "head": "Verbo + ON — apoyo y foco",
+        "body": "'On' sigue a verbos de dependencia o atención enfocada —depend on, rely on, concentrate on—, continuando el sentido de 'apoyo' de 'depend on' de la unidad anterior. El sujeto se apoya en, o dirige su atención hacia, lo que sigue a 'on', como algo apoyado sobre una superficie.",
         "note": "I rely on my sister for advice. · Try to concentrate on your work. · You can depend on me."
       },
       {
-        "head": "Verb + ON — spending and commenting",
-        "body": "'On' also introduces what money or time gets spent on, or what a comment is directed toward — spend money ON clothes, comment ON a presentation — extending its role from marking reliance to marking the target or object of an action. In the spending sense, 'on' answers 'what was the money used for'; in the commenting sense, it answers 'what is being talked about'. Both uses still fit the general theme of 'on' marking something an action is directed toward or focused on.",
+        "head": "Verbo + ON — gastar y comentar",
+        "body": "'On' también introduce en qué se gasta dinero o tiempo, o hacia qué se dirige un comentario —spend money ON clothes, comment ON a presentation—. En el gasto responde 'para qué se usó el dinero'; en el comentario, 'de qué se habla'.",
         "note": "She spent a lot of money on clothes. · He commented on my presentation."
       },
       {
-        "head": "SUCCEED IN doing something",
-        "body": "'Succeed' is specifically followed by 'in' plus an -ing form or a noun, describing the area or activity within which the success happens — succeeded IN passing the exam — echoing the 'in' pattern from the previous unit for belief, success, and specialization. Learners sometimes wrongly use 'at' (confusing it with 'good at') or a plain infinitive ('succeeded to pass'), but neither is correct in standard English. Keeping this fixed pattern in mind avoids one of the more common preposition mistakes with this verb.",
+        "head": "SUCCEED IN",
+        "body": "'Succeed' va seguido de 'in' más una forma en -ing o un sustantivo, describiendo el área donde ocurre el éxito —succeeded IN passing the exam—, siguiendo el patrón de 'in' de la unidad anterior. Evita el error común de usar 'at' o un infinitivo ('succeeded to pass').",
         "note": "He succeeded in passing the exam. · NOT: succeeded to pass ❌"
       },
       {
-        "head": "CONGRATULATE somebody ON something",
-        "body": "'Congratulate' takes 'on' to introduce the specific achievement or event being celebrated — congratulated her ON her promotion — treating that achievement as the focus the congratulations are directed at, similar to the other 'on' verbs in this unit. This is a common point of confusion for Spanish speakers, since 'felicitar por' would suggest 'for' rather than 'on'. Learning 'congratulate... on...' as a fixed combination avoids that direct-translation trap.",
+        "head": "CONGRATULATE... ON...",
+        "body": "'Congratulate' lleva 'on' para introducir el logro o evento que se celebra —congratulated her ON her promotion—, tratando ese logro como el foco de la felicitación. Es una trampa común para hispanohablantes, porque 'felicitar por' sugeriría 'for' en vez de 'on'.",
         "note": "I congratulated her on her promotion."
       }
     ],
@@ -1006,7 +1006,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "for"
         ],
         "ans": 1,
-        "exp": "'Succeed IN' doing something."
+        "exp": "'Succeed IN' hacer algo."
       },
       {
         "q": "I believe ___ the importance of education.",
@@ -1017,7 +1017,7 @@ export const prepositionsUnits: Record<number, Unit> = {
           "for"
         ],
         "ans": 2,
-        "exp": "'Believe IN' something."
+        "exp": "'Believe IN' algo."
       }
     ],
     "flashcards": [

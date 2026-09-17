@@ -89,6 +89,8 @@ export interface PronunTip {
 export interface VocabEntry {
   w: string;
   ipa: string;
+  /** Pronunciación aproximada leída a la española, sin corchetes: "jeló". */
+  aprox?: string;
   def: string;
   ex: string;
 }

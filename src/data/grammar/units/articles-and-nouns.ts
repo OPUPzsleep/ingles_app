@@ -6,18 +6,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "Countable nouns (can count)",
-        "body": "Countable nouns refer to individual things you can count one by one, so they exist in two forms: singular (a dog) and plural (two dogs). Because each one is a separate unit, you can put a/an in front of the singular form or a number in front of the plural. This is different from uncountable nouns, which describe things as a whole mass rather than separate items, so they don't behave the same way with a/an or numbers.",
+        "head": "Sustantivos contables",
+        "body": "Nombran cosas que puedes contar una a una, así que tienen singular (a dog) y plural (two dogs). Al ser unidades separadas, admiten 'a/an' delante del singular o un número delante del plural.",
         "note": "a dog / two dogs · a chair / three chairs · a book / many books"
       },
       {
-        "head": "Uncountable nouns (cannot count)",
-        "body": "Uncountable nouns describe things as a substance, idea, or mass rather than as separate countable units — liquids, abstract concepts, or collections treated as a whole. Because there's no way to count them one by one, they have no plural form and never take 'a/an'; instead you say 'some water' or 'a glass of water'. Since they're treated as one single mass, the verb that goes with them is always singular, even though the word might look like it could be plural.",
+        "head": "Sustantivos incontables",
+        "body": "Nombran una masa, sustancia o idea, no unidades sueltas. No tienen plural ni llevan 'a/an': se dice 'some water' o 'a glass of water'. Como se ven como un todo, siempre van con verbo en singular.",
         "note": "water · music · information · advice · furniture · luggage · knowledge · money · news"
       },
       {
-        "head": "Common mistakes",
-        "body": "A frequent source of errors for Spanish speakers is that some nouns which are countable in Spanish (una información, un consejo) are uncountable in English, so learners naturally try to add 'a/an' or a plural -s to them out of habit. Words like 'information', 'advice', 'furniture' and 'news' must be treated as uncountable in English regardless of how they behave in Spanish. When you need to count one instance of these, English uses a counting phrase instead, such as 'a piece of advice' or 'a piece of information'.",
+        "head": "Errores frecuentes",
+        "body": "Palabras que en español sí contamos (una información, un consejo) en inglés son incontables: information, advice, furniture, news. Nunca llevan 'a/an' ni '-s'. Para referirte a una sola unidad usa 'a piece of advice' o 'a piece of information'.",
         "note": "information (not 'an information' ❌) · advice (not 'an advice' ❌) · news is (not 'news are' ❌)"
       }
     ],
@@ -31,7 +31,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "the information"
         ],
         "ans": 0,
-        "exp": "'Information' is uncountable → no plural, no 'an': 'some information'."
+        "exp": "'Information' es incontable: sin plural y sin 'an'. Va 'some information'."
       },
       {
         "q": "She gave me a useful ___.",
@@ -42,7 +42,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "informations"
         ],
         "ans": 2,
-        "exp": "Advice is uncountable. Use 'a piece of advice' for one."
+        "exp": "'Advice' es incontable; para una sola unidad se dice 'a piece of advice'."
       }
     ],
     "flashcards": [
@@ -77,8 +77,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "Para contar un incontable, usa 'a piece of...': 'a piece of advice', 'a piece of furniture' — así distingues uno solo dentro de la masa."
     ],
     "dailyWords": [
-      { "w": "furniture", "ipa": "/ˈfɜːrnɪtʃər/", "def": "muebles (incontable)", "ex": "We need to buy some furniture for the living room." },
-      { "w": "piece of advice", "ipa": "/piːs əv ədˈvaɪs/", "def": "un consejo", "ex": "Let me give you a piece of advice before your interview." }
+      { "w": "furniture", "ipa": "/ˈfɜːrnɪtʃər/", "aprox": "férnicher", "def": "muebles (incontable)", "ex": "We need to buy some furniture for the living room." },
+      { "w": "piece of advice", "ipa": "/piːs əv ədˈvaɪs/", "aprox": "piis ov adváis", "def": "un consejo", "ex": "Let me give you a piece of advice before your interview." }
     ]
   },
   "70": {
@@ -86,13 +86,13 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "Some nouns can be countable or uncountable",
-        "body": "A number of nouns can be either countable or uncountable depending on what you mean, and the meaning shifts along with the grammar. Used uncountably, a noun like 'coffee' refers to the substance in general, but used countably as 'a coffee' or 'two coffees', it refers to individual servings or cups. The same pattern applies to 'hair': uncountable use means hair in general, while countable use ('a hair') means one single strand.",
+        "head": "Doble uso: contable o incontable",
+        "body": "Algunas palabras cambian de sentido según sean contables o no: 'coffee' sin artículo es el café en general, pero 'a coffee' o 'two coffees' son tazas concretas. Igual pasa con 'hair': en general es incontable, pero 'a hair' es un solo pelo.",
         "note": "coffee (uncountable: I like coffee) vs 'two coffees' (two cups). Hair (general) vs 'a hair' (one strand)."
       },
       {
-        "head": "Quantifiers with countable and uncountable",
-        "body": "Because countable and uncountable nouns behave differently, the quantifier you choose has to match the type of noun you're describing. Words like 'some', 'any' and 'no' are flexible and work with both types, but 'many' and 'few' only pair with countable plural nouns, while 'much' and 'little' only pair with uncountable nouns. 'A lot of', 'lots of' and 'plenty of' are the safest choice when you're unsure, since they work with both.",
+        "head": "Cuantificadores según el tipo",
+        "body": "El cuantificador debe coincidir con el tipo de sustantivo: 'some/any/no' sirven para ambos, 'many/few' solo con contables en plural, y 'much/little' solo con incontables. Si dudas, usa 'a lot of' o 'plenty of', que valen para los dos casos.",
         "note": "some/any/no: both · many/few: countable · much/little: uncountable · a lot of/lots of/plenty of: both"
       }
     ],
@@ -106,7 +106,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "several"
         ],
         "ans": 1,
-        "exp": "'Milk' is uncountable → use 'much': 'not much milk'."
+        "exp": "'Milk' es incontable → se usa 'much': 'not much milk'."
       },
       {
         "q": "There are ___ people waiting outside.",
@@ -117,7 +117,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "a little"
         ],
         "ans": 2,
-        "exp": "'People' is countable (plural) → use 'a few': 'a few people'."
+        "exp": "'People' es contable (plural) → se usa 'a few': 'a few people'."
       }
     ],
     "flashcards": [
@@ -153,8 +153,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "'Much' va con incontables ('much milk') y 'many' con contables en plural ('many biscuits') — no los mezcles."
     ],
     "dailyWords": [
-      { "w": "biscuit", "ipa": "/ˈbɪskɪt/", "def": "galleta (BrE)", "ex": "She had a biscuit with her tea." },
-      { "w": "a couple of", "ipa": "/ə ˈkʌpəl əv/", "def": "un par de, un par", "ex": "Can I get a couple of coffees to go?" }
+      { "w": "biscuit", "ipa": "/ˈbɪskɪt/", "aprox": "bísket", "def": "galleta (BrE)", "ex": "She had a biscuit with her tea." },
+      { "w": "a couple of", "ipa": "/ə ˈkʌpəl əv/", "aprox": "e cápol ov", "def": "un par de, un par", "ex": "Can I get a couple of coffees to go?" }
     ]
   },
   "71": {
@@ -162,18 +162,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "A/An — singular countable",
-        "body": "'A' or 'an' goes in front of a singular countable noun when you're talking about one example of something without saying exactly which one — any pen, any apple, any dog. Choose 'an' before a vowel sound and 'a' before a consonant sound. Because it marks something as one unspecified item, a/an only works with singular countable nouns, never with plurals or uncountables.",
+        "head": "A/An: contable singular",
+        "body": "'A' o 'an' se usan antes de un sustantivo contable singular para referirse a uno cualquiera, sin especificar cuál. Se usa 'an' antes de sonido vocálico y 'a' antes de consonante. Nunca se usan con plurales ni incontables.",
         "note": "I need a pen. · She bought an apple. · There's a dog in the garden."
       },
       {
-        "head": "Some — plural countable (positive)",
-        "body": "'Some' is the natural choice when you want to say there's a quantity of something in a positive sentence, without stating an exact number. It works with plural countable nouns ('some pens', 'some friends') and equally with uncountable nouns ('some water'), since in both cases you're pointing to 'an amount of' something rather than one single item. In negative sentences and most questions, English switches to 'any' instead, covered next.",
+        "head": "Some: contable plural (afirmativa)",
+        "body": "'Some' se usa en frases afirmativas para indicar una cantidad sin decir un número exacto. Sirve tanto para contables en plural ('some pens') como para incontables ('some water'). En negativas y preguntas se cambia a 'any'.",
         "note": "I need some pens. · She bought some apples. · I have some friends coming."
       },
       {
-        "head": "Any — plural countable (negative/questions)",
-        "body": "'Any' takes over from 'some' in negative sentences and in most questions, because in these contexts you're talking about a quantity that might not exist at all (zero pens), rather than confirming a positive amount. It works with plural countable nouns ('any pens') and uncountables ('any water') the same way 'some' does in positive sentences. As a rule of thumb: positive statement → some, negative or question → any.",
+        "head": "Any: negativas y preguntas",
+        "body": "'Any' sustituye a 'some' en negaciones y en la mayoría de preguntas, porque ahí se habla de una cantidad que podría ser cero. Funciona igual con plurales contables e incontables. Regla práctica: afirmativa → some; negativa o pregunta → any.",
         "note": "I don't have any pens. · Do you have any questions? · Are there any tickets left?"
       }
     ],
@@ -187,7 +187,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "the"
         ],
         "ans": 2,
-        "exp": "Singular countable, first mention → 'an': 'an envelope'."
+        "exp": "Contable singular, primera mención → 'an': 'an envelope'."
       },
       {
         "q": "There aren't ___ tickets left.",
@@ -198,7 +198,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "any"
         ],
         "ans": 3,
-        "exp": "Negative sentence, plural countable → 'any': 'aren't any tickets'."
+        "exp": "Frase negativa, contable plural → 'any': 'aren't any tickets'."
       }
     ],
     "flashcards": [
@@ -234,8 +234,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "En ofertas o peticiones educadas usamos 'some' incluso en preguntas: 'Would you like some tea?'"
     ],
     "dailyWords": [
-      { "w": "loaf (of bread)", "ipa": "/loʊf/", "def": "barra o pan de molde", "ex": "I bought a loaf of bread this morning." },
-      { "w": "leftover(s)", "ipa": "/ˈleftoʊvər(z)/", "def": "sobras", "ex": "We had some leftovers for dinner." }
+      { "w": "loaf (of bread)", "ipa": "/loʊf/", "aprox": "lóuf", "def": "barra o pan de molde", "ex": "I bought a loaf of bread this morning." },
+      { "w": "leftover(s)", "ipa": "/ˈleftoʊvər(z)/", "aprox": "léftouver(s)", "def": "sobras", "ex": "We had some leftovers for dinner." }
     ]
   },
   "72": {
@@ -243,18 +243,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "A/AN — indefinite (first mention / not specific)",
-        "body": "Use 'a/an' the first time you mention something, when your listener has no way of knowing yet which specific one you mean. It signals 'one example of this type of thing' rather than a particular, identifiable item. Once that thing has already been mentioned or is clear from context, English switches to 'the' instead, because now both speaker and listener know exactly which one is meant.",
+        "head": "A/An: primera mención",
+        "body": "Se usa 'a/an' la primera vez que mencionas algo, cuando el oyente aún no sabe cuál en concreto. Indica 'uno cualquiera de este tipo'. Cuando ya se conoce o queda claro por el contexto, se pasa a usar 'the'.",
         "note": "I saw a dog. · She's an engineer. · I need a pen."
       },
       {
-        "head": "THE — definite (known / specific)",
-        "body": "'The' marks something as specific and identifiable — you use it when both you and your listener know exactly which person, thing, or place is being talked about. This often happens after something has already been introduced with 'a/an' ('I saw a dog. The dog was barking'), but it can also apply to something obvious from the situation, like 'the window' in the room you're both in. A useful test: could the listener point to the exact one you mean? If yes, use 'the'.",
+        "head": "The: algo conocido y específico",
+        "body": "'The' marca algo específico e identificable, cuando tú y tu oyente ya sabéis exactamente de cuál se habla — a menudo tras haberlo introducido con 'a/an'. Truco: si el oyente puede señalar exactamente cuál es, usa 'the'.",
         "note": "I saw a dog. The dog was barking. · Can you close the window? (the specific one in this room)"
       },
       {
-        "head": "THE — unique things",
-        "body": "'The' is also used for things that are unique — there's only one of them in the world (or in our shared experience), so there's never any doubt about which one you mean. The sun, the moon, the sky and the internet fall into this category, since there's nothing to distinguish them from other examples of the same kind. This is really the same logic as the 'known/specific' use above, just applied to things that are always specific by their very nature.",
+        "head": "The: cosas únicas",
+        "body": "'The' también se usa con cosas únicas en el mundo, donde no hay duda de a cuál te refieres: the sun, the moon, the sky, the internet. Es la misma lógica de 'the' conocido, aplicada a algo siempre específico por naturaleza.",
         "note": "the sun · the moon · the sky · the world · the internet · the earth"
       }
     ],
@@ -268,7 +268,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "—"
         ],
         "ans": 0,
-        "exp": "Job description → 'a': 'She's a nurse.'"
+        "exp": "Profesión → 'a': 'She's a nurse.'"
       },
       {
         "q": "___ sun rises in the east.",
@@ -279,7 +279,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "—"
         ],
         "ans": 2,
-        "exp": "Unique thing → 'The sun'."
+        "exp": "Algo único → 'The sun'."
       },
       {
         "q": "I need ___ umbrella. It's raining!",
@@ -290,7 +290,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "—"
         ],
         "ans": 1,
-        "exp": "First mention, vowel sound → 'an umbrella'."
+        "exp": "Primera mención, sonido vocálico → 'an umbrella'."
       }
     ],
     "flashcards": [
@@ -325,8 +325,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "Truco: si tu oyente puede señalar exactamente de qué hablas, usa 'the'; si no, usa 'a/an'."
     ],
     "dailyWords": [
-      { "w": "gate", "ipa": "/ɡeɪt/", "def": "portón, verja", "ex": "He was waiting by the gate." },
-      { "w": "roof", "ipa": "/ruːf/", "def": "tejado, techo", "ex": "There's a cat on the roof again." }
+      { "w": "gate", "ipa": "/ɡeɪt/", "aprox": "guéit", "def": "portón, verja", "ex": "He was waiting by the gate." },
+      { "w": "roof", "ipa": "/ruːf/", "aprox": "ruf", "def": "tejado, techo", "ex": "There's a cat on the roof again." }
     ]
   },
   "73": {
@@ -334,18 +334,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "The with species/inventions",
-        "body": "'The' can refer to an entire species or category as a single representative concept, not one specific animal or object. Saying 'the whale' means whales as a species in general, and 'the telephone' means the telephone as an invention or category of device, not any particular whale or phone. This is a special, more formal use of 'the' for generalizing, distinct from its everyday use to point at one specific, known item.",
+        "head": "The con especies e inventos",
+        "body": "'The' puede referirse a toda una especie o invento como concepto general, no a un ejemplar concreto: 'the whale' son las ballenas como especie, y 'the telephone' es el teléfono como invento. Es un uso más formal, distinto del 'the' cotidiano que señala algo conocido.",
         "note": "The whale is the largest mammal. · The telephone was invented by Bell."
       },
       {
-        "head": "The with adjectives as nouns",
-        "body": "Putting 'the' directly in front of certain adjectives turns them into a noun phrase naming a whole group of people who share that characteristic — 'the rich' means rich people in general, not one specific rich person. These phrases are always plural in meaning and take a plural verb, even though there's no separate plural noun visible. This pattern only works with a limited set of adjectives describing people (the poor, the elderly, the unemployed, the homeless), not with adjectives in general.",
+        "head": "The + adjetivo = grupo de personas",
+        "body": "Poner 'the' delante de ciertos adjetivos crea un sustantivo que nombra a todo un grupo de personas: 'the rich' son los ricos en general. Estas frases son siempre plurales y llevan verbo en plural, aunque no lleven '-s'. Solo funciona con un grupo limitado de adjetivos sobre personas.",
         "note": "the rich, the poor, the elderly, the sick, the unemployed, the homeless"
       },
       {
-        "head": "The with nationality words",
-        "body": "Similarly, 'the' combines with certain nationality adjectives to mean the people of that nation as a whole, rather than one individual — 'the French' means French people in general. This works with nationality words that are adjectives rather than nouns (French, Chinese, British), and like 'the rich' above, the phrase takes a plural verb even without a visible plural ending. For nationalities with a separate noun form (a Spaniard, an Italian), you can also just add -s normally to make a countable plural.",
+        "head": "The + nacionalidad = todo un pueblo",
+        "body": "'The' también se combina con adjetivos de nacionalidad para hablar del pueblo entero: 'the French' son los franceses en general. Funciona con nacionalidades que son adjetivos (French, Chinese, British) y, como arriba, lleva verbo en plural sin '-s' visible.",
         "note": "The French love food. · The Chinese invented paper. · The British drink a lot of tea."
       }
     ],
@@ -359,7 +359,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "—"
         ],
         "ans": 1,
-        "exp": "Referring to the invention in general → 'The telephone'."
+        "exp": "Referirse al invento en general → 'The telephone'."
       },
       {
         "q": "The government should do more to help ___ poor.",
@@ -370,7 +370,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "—"
         ],
         "ans": 1,
-        "exp": "'The + adjective' refers to the group: 'the poor'."
+        "exp": "'The + adjetivo' se refiere al grupo: 'the poor'."
       }
     ],
     "flashcards": [
@@ -405,8 +405,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "Para nacionalidades sin forma de sustantivo propia (French, Chinese, British), usa 'the' + adjetivo para hablar del pueblo entero: 'the French'."
     ],
     "dailyWords": [
-      { "w": "homeless", "ipa": "/ˈhoʊmləs/", "def": "sin hogar", "ex": "The shelter helps the homeless find a place to sleep." },
-      { "w": "charity", "ipa": "/ˈtʃærəti/", "def": "organización benéfica", "ex": "She works for a charity that supports the elderly." }
+      { "w": "homeless", "ipa": "/ˈhoʊmləs/", "aprox": "jóumles", "def": "sin hogar", "ex": "The shelter helps the homeless find a place to sleep." },
+      { "w": "charity", "ipa": "/ˈtʃærəti/", "aprox": "chárati", "def": "organización benéfica", "ex": "She works for a charity that supports the elderly." }
     ]
   },
   "74": {
@@ -414,18 +414,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "Geographical names — THE",
-        "body": "Certain categories of geographical name always take 'the': rivers, oceans and seas, mountain ranges, deserts, groups of islands, and countries whose official name is plural or contains a word like 'republic', 'kingdom' or 'states'. The common thread is that these names describe something made up of multiple parts (a chain of mountains, a group of islands) or that originally described a place rather than functioning as a pure proper name. Compare this with single, standalone geographical features below, which normally take no article at all.",
+        "head": "Nombres geográficos con The",
+        "body": "Ríos, océanos, cadenas montañosas, desiertos, grupos de islas y países cuyo nombre oficial es plural o incluye 'republic/kingdom/states' siempre llevan 'the'. El nexo común: describen algo formado por varias partes, como un conjunto de montañas o islas.",
         "note": "the Thames · the Pacific · the Alps · the Sahara · the Philippines · the United States"
       },
       {
-        "head": "Geographical names — NO article",
-        "body": "Most geographical names that refer to one single, self-contained place take no article at all: continents, most countries, individual lakes, single mountains, and cities. These names function as ordinary proper nouns, the same way a person's name does, so they don't need 'the' to mark them as specific — the name alone already does that job. This is the opposite pattern from the 'the'-taking categories above, which describe something plural or composite in nature.",
+        "head": "Nombres geográficos sin artículo",
+        "body": "La mayoría de nombres geográficos de un solo lugar autónomo no llevan artículo: continentes, casi todos los países, lagos individuales, montañas sueltas y ciudades. Funcionan como un nombre propio, igual que el nombre de una persona.",
         "note": "Europe, Brazil, Lake Victoria, Mount Everest, Paris (no 'the')"
       },
       {
-        "head": "Streets, places",
-        "body": "The same no-article rule extends to most named streets, parks, stations and airports, since these are also treated as proper names that already identify one specific place on their own — Oxford Street, Hyde Park, Heathrow Airport. You don't need 'the' in front of them any more than you would in front of a person's name. There are a few historical exceptions (like 'the Mall'), but as a general rule, named streets and landmarks skip the article.",
+        "head": "Calles y lugares",
+        "body": "La misma regla de 'sin artículo' se aplica a la mayoría de calles, parques, estaciones y aeropuertos con nombre propio: Oxford Street, Hyde Park, Heathrow Airport. Hay pocas excepciones históricas (como 'the Mall'), pero en general no llevan 'the'.",
         "note": "Oxford Street, Hyde Park, Heathrow Airport, Euston Station (no 'the')"
       }
     ],
@@ -439,7 +439,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "An"
         ],
         "ans": 2,
-        "exp": "River → 'the': 'The Amazon'."
+        "exp": "Río → 'the': 'The Amazon'."
       },
       {
         "q": "I've always wanted to visit ___ Japan.",
@@ -450,7 +450,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "an"
         ],
         "ans": 2,
-        "exp": "Most countries → no article: 'visit Japan'."
+        "exp": "La mayoría de países → sin artículo: 'visit Japan'."
       }
     ],
     "flashcards": [
@@ -485,8 +485,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "Países individuales, ciudades y lagos normalmente NO llevan artículo: 'Brazil', 'Paris', 'Lake Michigan' — igual que un nombre propio."
     ],
     "dailyWords": [
-      { "w": "range (mountain range)", "ipa": "/reɪndʒ/", "def": "cadena montañosa", "ex": "The Andes is the longest mountain range in the world." },
-      { "w": "overseas", "ipa": "/ˌoʊvərˈsiːz/", "def": "en el extranjero, allende los mares", "ex": "He got a job overseas last year." }
+      { "w": "range (mountain range)", "ipa": "/reɪndʒ/", "aprox": "réinch", "def": "cadena montañosa", "ex": "The Andes is the longest mountain range in the world." },
+      { "w": "overseas", "ipa": "/ˌoʊvərˈsiːz/", "aprox": "óuversís", "def": "en el extranjero, allende los mares", "ex": "He got a job overseas last year." }
     ]
   },
   "75": {
@@ -494,18 +494,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "General activity — no THE",
-        "body": "A small group of nouns — school, university, prison, church, bed — drop the article when you're talking about the normal, expected activity associated with that place: studying, being punished, worshipping, sleeping. In this use, the focus is on the activity or purpose, not on the building itself, so 'go to school' means 'be a student', regardless of which building is involved. This is a special exception to the usual rule that a specific place needs 'the'.",
+        "head": "Actividad habitual: sin The",
+        "body": "Palabras como school, university, prison, church o bed pierden el artículo cuando hablas de su actividad normal: estudiar, cumplir condena, rezar, dormir. El foco está en la actividad, no en el edificio, así que 'go to school' significa 'ser estudiante'.",
         "note": "go to school (study) · go to prison (be punished) · go to bed (sleep)"
       },
       {
-        "head": "The specific building — WITH THE",
-        "body": "As soon as you're referring to the physical building itself, for a reason other than its normal purpose, 'the' comes back — 'go to the school' means visiting the building (for a meeting, say), not attending as a student. The contrast with the block above is entirely about purpose: same word, same place, but 'the' appears the moment the normal function isn't what's meant. This distinction — no article for the institution's purpose, 'the' for the physical building — is a common trap for learners.",
+        "head": "El edificio concreto: con The",
+        "body": "En cuanto hablas del edificio en sí, por otro motivo distinto a su función habitual, vuelve 'the': 'go to the school' es visitar el edificio, no asistir como alumno. Mismo lugar, misma palabra, pero 'the' aparece cuando cambia el propósito.",
         "note": "go to the school (visit, e.g. to talk to a teacher) · go to the prison (deliver something)"
       },
       {
-        "head": "IN HOSPITAL (British English)",
-        "body": "'Hospital' follows the same institution-vs-building logic as school, but with a regional twist: in British English, 'in hospital' (with no article) means being there as a patient, following the same pattern as 'in school'. American English doesn't make this distinction and normally says 'in the hospital' even for a patient. If you're following British usage, remember to drop 'the' specifically for this meaning, even though American media may make 'the hospital' sound more natural.",
+        "head": "In hospital (inglés británico)",
+        "body": "'Hospital' sigue la misma lógica: en inglés británico, 'in hospital' (sin artículo) significa estar allí como paciente, igual que 'in school'. El inglés americano no distingue y suele decir 'in the hospital' incluso para un paciente.",
         "note": "She's in hospital. She broke her leg."
       }
     ],
@@ -519,7 +519,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "schools"
         ],
         "ans": 1,
-        "exp": "'Go to school' (general activity, no 'the')."
+        "exp": "'Go to school' (actividad general, sin 'the')."
       },
       {
         "q": "I went to ___ to talk to the teacher.",
@@ -530,7 +530,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "schools"
         ],
         "ans": 1,
-        "exp": "With 'the' = the specific building, not as a student."
+        "exp": "Con 'the' = el edificio concreto, no como alumno."
       },
       {
         "q": "She's ___. She broke her leg.",
@@ -541,7 +541,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "hospital"
         ],
         "ans": 1,
-        "exp": "British English: 'in hospital' (as a patient) — no 'the'."
+        "exp": "Inglés británico: 'in hospital' (como paciente) — sin 'the'."
       }
     ],
     "flashcards": [
@@ -578,8 +578,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "En inglés británico, 'in hospital' (sin 'the') significa que alguien es paciente; en inglés americano se dice normalmente 'in the hospital'."
     ],
     "dailyWords": [
-      { "w": "patient", "ipa": "/ˈpeɪʃənt/", "def": "paciente (de un hospital)", "ex": "She's been a patient at this hospital before." },
-      { "w": "meeting", "ipa": "/ˈmiːtɪŋ/", "def": "reunión", "ex": "I have a meeting with the teacher tomorrow." }
+      { "w": "patient", "ipa": "/ˈpeɪʃənt/", "aprox": "péishent", "def": "paciente (de un hospital)", "ex": "She's been a patient at this hospital before." },
+      { "w": "meeting", "ipa": "/ˈmiːtɪŋ/", "aprox": "míting", "def": "reunión", "ex": "I have a meeting with the teacher tomorrow." }
     ]
   },
   "76": {
@@ -587,18 +587,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "Musical instruments — WITH THE",
-        "body": "When you talk about someone's ability or activity of playing a musical instrument, English adds 'the' in front of the instrument's name — 'play the guitar', 'play the piano' — treating the instrument almost like a unique category, similar to how 'the' works with inventions. This is a fixed pattern specific to instruments; it doesn't extend to sports or games, which take no article at all ('play tennis', 'play chess').",
+        "head": "Instrumentos musicales: con The",
+        "body": "Al hablar de tocar un instrumento musical, el inglés añade 'the': 'play the guitar', 'play the piano'. Es un patrón fijo solo para instrumentos; los deportes y juegos no llevan artículo ('play tennis', 'play chess').",
         "note": "play the guitar · play the piano · play the violin"
       },
       {
-        "head": "Meals — no article",
-        "body": "The names of meals — breakfast, lunch, dinner — normally appear with no article at all when you're talking about the meal as a general routine event: 'have breakfast', 'have dinner'. Adding 'the' or 'a' would wrongly suggest one specific, previously mentioned meal rather than the everyday event, so 'have the dinner' sounds unnatural in English. An article only appears if the meal is described with an adjective, as in 'we had a lovely dinner'.",
+        "head": "Comidas: sin artículo",
+        "body": "Los nombres de comidas (breakfast, lunch, dinner) no llevan artículo cuando hablas de la rutina en general: 'have breakfast', 'have dinner'. Solo aparece un artículo si la comida lleva un adjetivo delante: 'we had a lovely dinner'.",
         "note": "have breakfast/lunch/dinner (NOT: have the dinner ❌)"
       },
       {
-        "head": "Media — fixed patterns",
-        "body": "Expressions about media don't all follow the same pattern, so they're best learned as fixed phrases: 'on the radio' and 'on the phone' both take 'the', treating the radio or phone almost like a unique medium or device, similar to 'the internet'. 'On television' (or 'on TV'), however, usually drops the article, treating television as an activity or broadcast medium rather than a specific object. Since there's no single rule that predicts this, it's worth memorizing each expression individually.",
+        "head": "Medios: expresiones fijas",
+        "body": "Las expresiones sobre medios no siguen una única regla: 'on the radio' y 'on the phone' llevan 'the', pero 'on television' normalmente no lo lleva. Al no haber una regla general, conviene memorizar cada expresión por separado.",
         "note": "I heard it on the radio. · What is on television tonight?"
       }
     ],
@@ -612,7 +612,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "some"
         ],
         "ans": 2,
-        "exp": "Use 'the' with musical instruments: 'play the guitar'."
+        "exp": "Se usa 'the' con instrumentos musicales: 'play the guitar'."
       },
       {
         "q": "I heard it ___ radio.",
@@ -623,7 +623,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "on"
         ],
         "ans": 1,
-        "exp": "'On the radio' (fixed expression with the)."
+        "exp": "'On the radio' (expresión fija con 'the')."
       },
       {
         "q": "We have ___ dinner at 8.",
@@ -634,7 +634,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "an"
         ],
         "ans": 2,
-        "exp": "No article with meals in general: 'have dinner/lunch/breakfast'."
+        "exp": "Sin artículo con comidas en general: 'have dinner/lunch/breakfast'."
       }
     ],
     "flashcards": [
@@ -672,8 +672,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "'On the radio' y 'on the phone' llevan 'the', pero 'on television' normalmente no — son excepciones que hay que memorizar."
     ],
     "dailyWords": [
-      { "w": "instrument", "ipa": "/ˈɪnstrəmənt/", "def": "instrumento (musical)", "ex": "The violin is a difficult instrument to learn." },
-      { "w": "documentary", "ipa": "/ˌdɒkjuˈmentri/", "def": "documental", "ex": "We watched a documentary about the ocean." }
+      { "w": "instrument", "ipa": "/ˈɪnstrəmənt/", "aprox": "ínstrument", "def": "instrumento (musical)", "ex": "The violin is a difficult instrument to learn." },
+      { "w": "documentary", "ipa": "/ˌdɒkjuˈmentri/", "aprox": "dokiuméntri", "def": "documental", "ex": "We watched a documentary about the ocean." }
     ]
   },
   "77": {
@@ -681,18 +681,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "Most countries and continents — no article",
-        "body": "Continents and the vast majority of country names — especially single-word ones like Japan, Brazil or Mexico — take no article at all, because they function as simple proper names, just like a person's name. This is the default pattern you should assume unless a country's official name clearly falls into one of the special categories described next. Getting this right matters because adding 'the' to an ordinary country name (e.g. 'the Japan') is a very noticeable mistake.",
+        "head": "Países y continentes: sin artículo",
+        "body": "Los continentes y la mayoría de países, sobre todo los de una sola palabra (Japan, Brazil, Mexico), no llevan artículo: funcionan como un nombre propio. Es el patrón por defecto salvo que el país entre en una de las categorías especiales siguientes.",
         "note": "Africa · Japan · Brazil · Mexico"
       },
       {
-        "head": "Countries with plural names or 'republic/kingdom' — THE",
-        "body": "Countries take 'the' when their official name is grammatically plural (the Netherlands, the Philippines) or explicitly describes a union of parts, a republic, or a kingdom (the United States, the United Kingdom). The logic mirrors the geographical rule from Unit 74: a name describing something composed of multiple states, islands, or regions behaves like a plural or collective noun and needs 'the' to introduce it, unlike a simple, single-unit country name.",
+        "head": "Países plurales o 'republic/kingdom': con The",
+        "body": "Los países llevan 'the' cuando su nombre oficial es plural (the Netherlands, the Philippines) o describe una unión, república o reino (the United States, the United Kingdom). La lógica es la misma que con accidentes geográficos: un nombre que describe varias partes se comporta como plural.",
         "note": "the Netherlands · the United States · the United Kingdom · the Philippines"
       },
       {
-        "head": "Cities and streets — usually no article",
-        "body": "Like most countries, the names of cities, streets, parks and squares are normally treated as proper names in their own right and don't take 'the' — London, Oxford Street, Central Park. The name itself is already specific enough to identify the place, so no article is needed to do that job. As with countries, there are a handful of well-known exceptions, but they're rare enough to be learned individually rather than as a rule.",
+        "head": "Ciudades y calles: normalmente sin artículo",
+        "body": "Al igual que la mayoría de países, ciudades, calles, parques y plazas se tratan como nombres propios y no llevan 'the': London, Oxford Street, Central Park. El propio nombre ya es suficientemente específico para identificar el lugar.",
         "note": "London · Oxford Street · Central Park"
       }
     ],
@@ -735,7 +735,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "The Japans"
         ],
         "ans": 1,
-        "exp": "Countries normally have no article."
+        "exp": "Los países normalmente no llevan artículo."
       },
       {
         "q": "___ has 50 states.",
@@ -746,7 +746,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "United State"
         ],
         "ans": 1,
-        "exp": "Plural/union country name → 'the'."
+        "exp": "Nombre de país plural o de unión → 'the'."
       },
       {
         "q": "She lives in ___.",
@@ -757,7 +757,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "Londons"
         ],
         "ans": 1,
-        "exp": "Cities take no article."
+        "exp": "Las ciudades no llevan artículo."
       }
     ],
     "flashcards": [
@@ -792,8 +792,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "Si el nombre del país es plural o incluye 'republic/kingdom/states', lleva 'the': 'the Philippines', 'the United Kingdom'."
     ],
     "dailyWords": [
-      { "w": "trip", "ipa": "/trɪp/", "def": "viaje (corto)", "ex": "We're planning a trip to Japan next year." },
-      { "w": "overseas", "ipa": "/ˌoʊvərˈsiːz/", "def": "en el extranjero, allende los mares", "ex": "She has never lived overseas before." }
+      { "w": "trip", "ipa": "/trɪp/", "aprox": "trip", "def": "viaje (corto)", "ex": "We're planning a trip to Japan next year." },
+      { "w": "overseas", "ipa": "/ˌoʊvərˈsiːz/", "aprox": "óuversís", "def": "en el extranjero, allende los mares", "ex": "She has never lived overseas before." }
     ]
   },
   "78": {
@@ -801,18 +801,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "Single mountains and lakes — no article",
-        "body": "A single, individual mountain or lake, referred to by its own name, takes no article — Everest, Kilimanjaro, Lake Superior — following the same 'proper name' logic as cities and single countries. Because each of these names already picks out one specific, unique place, adding 'the' would be redundant. This contrasts with ranges and groups of these same kinds of features, covered next, which do take 'the'.",
+        "head": "Montañas y lagos individuales: sin artículo",
+        "body": "Una montaña o lago individual, nombrado por su propio nombre, no lleva artículo: Everest, Kilimanjaro, Lake Superior — igual que ciudades y países de un solo nombre. Cada nombre ya señala un lugar único, así que 'the' sería redundante.",
         "note": "Everest · Kilimanjaro · Lake Superior"
       },
       {
-        "head": "Mountain ranges and island groups — THE",
-        "body": "As soon as several mountains or islands are named together as a range or group, the name takes 'the' — the Alps, the Andes, the Canary Islands — because the name is really describing a collection of separate peaks or islands, which behaves grammatically like a plural. This is the same pattern seen with plural country names like 'the Netherlands': a name covering multiple parts needs 'the', while a name for one single item doesn't.",
+        "head": "Cadenas montañosas e islas: con The",
+        "body": "En cuanto varias montañas o islas se nombran juntas como cadena o grupo, el nombre lleva 'the': the Alps, the Andes, the Canary Islands. El nombre describe realmente un conjunto de picos o islas, que se comporta como un plural.",
         "note": "the Alps · the Andes · the Canary Islands"
       },
       {
-        "head": "Oceans, seas, rivers, canals — always THE",
-        "body": "Oceans, seas, rivers and canals always take 'the', regardless of whether the name is grammatically singular or plural — the Pacific, the Nile, the Suez Canal. Unlike mountains or lakes, these bodies of water are thought of as one continuous, connected system rather than a bounded, standalone place, and that category consistently takes the article in English. This is simply a fixed rule to memorize for this class of geographical name, since it doesn't follow the plural/singular logic used elsewhere in this unit.",
+        "head": "Océanos, mares, ríos y canales: siempre con The",
+        "body": "Océanos, mares, ríos y canales siempre llevan 'the', sea cual sea la forma del nombre: the Pacific, the Nile, the Suez Canal. Se piensan como un sistema continuo y conectado, no como un lugar delimitado; es una regla fija que memorizar.",
         "note": "the Pacific · the Mediterranean · the Nile · the Suez Canal"
       }
     ],
@@ -855,7 +855,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "Everests"
         ],
         "ans": 1,
-        "exp": "Single mountains: no article."
+        "exp": "Montañas individuales: sin artículo."
       },
       {
         "q": "___ separate Europe from Asia in the south.",
@@ -866,7 +866,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "Ural"
         ],
         "ans": 1,
-        "exp": "Mountain ranges take 'the'."
+        "exp": "Las cadenas montañosas llevan 'the'."
       },
       {
         "q": "The ship crossed ___.",
@@ -877,7 +877,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "Atlantics"
         ],
         "ans": 1,
-        "exp": "Oceans always take 'the'."
+        "exp": "Los océanos siempre llevan 'the'."
       }
     ],
     "flashcards": [
@@ -912,8 +912,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "Océanos, mares, ríos y canales SIEMPRE llevan 'the', sin importar si sus nombres suenan singulares o plurales: 'the Pacific', 'the Nile'."
     ],
     "dailyWords": [
-      { "w": "peak", "ipa": "/piːk/", "def": "cima, pico", "ex": "They reached the peak just before sunset." },
-      { "w": "expedition", "ipa": "/ˌekspəˈdɪʃən/", "def": "expedición", "ex": "The expedition to Everest took two months." }
+      { "w": "peak", "ipa": "/piːk/", "aprox": "pik", "def": "cima, pico", "ex": "They reached the peak just before sunset." },
+      { "w": "expedition", "ipa": "/ˌekspəˈdɪʃən/", "aprox": "ekspedíshon", "def": "expedición", "ex": "The expedition to Everest took two months." }
     ]
   },
   "79": {
@@ -921,18 +921,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "Regular plurals — add -s or -es",
-        "body": "Most English nouns simply add -s to form the plural (book → books). Nouns already ending in a sound that would be hard to pronounce with just -s — endings like -s, -sh, -ch, -x, or -o — add an extra syllable with -es instead (bus → buses, church → churches). And when a noun ends in a consonant followed by -y, the y changes to i before adding -es (baby → babies), since English spelling avoids that ending combination.",
+        "head": "Plurales regulares: -s o -es",
+        "body": "La mayoría de sustantivos añaden '-s' para el plural (book→books). Los que terminan en un sonido difícil de pronunciar con solo '-s' (-s, -sh, -ch, -x, -o) añaden '-es' (bus→buses). Si terminan en consonante + y, la y cambia a i (baby→babies).",
         "note": "book→books · bus→buses · church→churches · baby→babies · photo→photos"
       },
       {
-        "head": "Irregular plurals",
-        "body": "A small set of very common nouns don't follow any of the regular -s/-es patterns at all and instead change form completely or internally: man→men, woman→women, child→children, foot→feet, tooth→teeth, mouse→mice, person→people. These come from older forms of English that survived into the modern language, so there's no shortcut except memorizing them — but because they're such frequent, everyday words, they're worth learning early and well.",
+        "head": "Plurales irregulares",
+        "body": "Un grupo reducido de sustantivos muy comunes cambia de forma por completo: man→men, woman→women, child→children, foot→feet, tooth→teeth, mouse→mice, person→people. No siguen ninguna regla; hay que memorizarlos, pero son palabras muy frecuentes.",
         "note": "man→men · woman→women · child→children · foot→feet · tooth→teeth · mouse→mice · person→people"
       },
       {
-        "head": "Nouns with no plural (always singular)",
-        "body": "Some nouns look plural because they end in -s, but they're grammatically always singular and take a singular verb — news, mathematics, physics, economics, measles. Historically many of these come from words for academic subjects or from collective/uncountable ideas, which is why English treats them as one single thing rather than as countable items. This is why 'The news is good' is correct even though 'news' ends in -s like a normal plural.",
+        "head": "Sustantivos siempre singulares",
+        "body": "Algunas palabras parecen plurales por terminar en '-s', pero son siempre singulares y llevan verbo en singular: news, mathematics, physics, economics, measles. Por eso 'The news is good' es correcto, aunque 'news' acabe en '-s' como un plural normal.",
         "note": "news (is) · mathematics (is) · physics (is) · economics (is) · measles (is)"
       }
     ],
@@ -946,7 +946,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "child"
         ],
         "ans": 2,
-        "exp": "Irregular plural: child → children."
+        "exp": "Plural irregular: child → children."
       },
       {
         "q": "The news ___ good today.",
@@ -957,7 +957,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "be"
         ],
         "ans": 2,
-        "exp": "'News' is singular despite the -s: 'The news is good.'"
+        "exp": "'News' es singular pese a la '-s': 'The news is good.'"
       }
     ],
     "flashcards": [
@@ -992,8 +992,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "Palabras como 'news', 'mathematics' o 'physics' terminan en '-s' pero llevan verbo singular: 'The news IS good', no 'are'."
     ],
     "dailyWords": [
-      { "w": "toothbrush", "ipa": "/ˈtuːθbrʌʃ/", "def": "cepillo de dientes", "ex": "Don't forget your toothbrush before bed." },
-      { "w": "barefoot", "ipa": "/ˈberfʊt/", "def": "descalzo", "ex": "The kids love running barefoot on the beach." }
+      { "w": "toothbrush", "ipa": "/ˈtuːθbrʌʃ/", "aprox": "túzbrash", "def": "cepillo de dientes", "ex": "Don't forget your toothbrush before bed." },
+      { "w": "barefoot", "ipa": "/ˈberfʊt/", "aprox": "bérfut", "def": "descalzo", "ex": "The kids love running barefoot on the beach." }
     ]
   },
   "80": {
@@ -1001,13 +1001,13 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "Compound nouns",
-        "body": "English frequently combines two nouns into a compound, where the first noun functions like an adjective, describing or classifying the second noun rather than naming a separate thing itself. A 'bus stop' is a stop (the main thing) that is for buses (the first noun tells you what kind), and the same logic applies to 'car park', 'kitchen table' and 'phone call'. Recognizing which noun is the 'head' (the second one) helps you understand what the whole compound actually refers to.",
+        "head": "Sustantivos compuestos",
+        "body": "El inglés combina dos sustantivos en uno compuesto, donde el primero funciona como adjetivo y describe al segundo. 'Bus stop' es una parada (lo principal) que es para autobuses. Reconocer cuál es la palabra principal (la segunda) ayuda a entender el significado.",
         "note": "bus stop · car park · kitchen table · football match · phone call"
       },
       {
-        "head": "The first noun is always singular",
-        "body": "Even when the meaning clearly involves more than one of something, the first noun in a compound stays in its singular form, because it's functioning as a describing word (like an adjective) rather than as a countable noun in its own right — 'a bookshop' is a shop for books (plural meaning), not 'a booksshop'. The same rule applies to compound adjectives built from numbers, like 'a five-minute walk' or 'a three-hour journey', where 'minute' and 'hour' never take an -s even though the walk lasts several minutes.",
+        "head": "El primer sustantivo va en singular",
+        "body": "Aunque el significado sea plural, el primer sustantivo del compuesto se queda en singular, porque funciona como adjetivo: 'a bookshop' es una tienda de libros, no 'booksshop'. Igual pasa con números: 'a five-minute walk', nunca 'five-minutes'.",
         "note": "a bookshop (= a shop for books) · a five-minute walk · a three-hour journey"
       }
     ],
@@ -1021,7 +1021,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "posting office"
         ],
         "ans": 2,
-        "exp": "Compound noun: 'post office' (first noun singular)."
+        "exp": "Sustantivo compuesto: 'post office' (primer sustantivo en singular)."
       },
       {
         "q": "It's only a ___ walk from here.",
@@ -1032,7 +1032,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "minutes five"
         ],
         "ans": 2,
-        "exp": "Compound adjective: 'a five-minute walk' (hyphenated, no -s)."
+        "exp": "Adjetivo compuesto: 'a five-minute walk' (con guion, sin '-s')."
       }
     ],
     "flashcards": [
@@ -1062,8 +1062,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "Con números, el adjetivo compuesto tampoco lleva '-s': 'a five-minute walk', no 'a five-minutes walk'."
     ],
     "dailyWords": [
-      { "w": "car park", "ipa": "/kɑːr pɑːrk/", "def": "aparcamiento (BrE)", "ex": "I left my car in the car park near the station." },
-      { "w": "sports centre", "ipa": "/spɔːrts ˈsentər/", "def": "polideportivo", "ex": "We play basketball at the sports centre every week." }
+      { "w": "car park", "ipa": "/kɑːr pɑːrk/", "aprox": "car park", "def": "aparcamiento (BrE)", "ex": "I left my car in the car park near the station." },
+      { "w": "sports centre", "ipa": "/spɔːrts ˈsentər/", "aprox": "espórts sénter", "def": "polideportivo", "ex": "We play basketball at the sports centre every week." }
     ]
   },
   "81": {
@@ -1071,18 +1071,18 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
     "topic": "Articles & Nouns",
     "explain": [
       {
-        "head": "Apostrophe 's — people and animals",
-        "body": "The possessive 's is the natural way to show that something belongs to a person or animal — Tom's car, my sister's room, the cat's tail — because it treats the owner as an active, animate 'possessor' placed directly before the thing owned. This word order (owner + 's + thing) mirrors how possession is usually expressed for living beings in English, and it's generally preferred over 'of' whenever the possessor is a person or animal.",
+        "head": "Apóstrofo 's: personas y animales",
+        "body": "El posesivo 's es la forma natural de mostrar que algo pertenece a una persona o animal: Tom's car, my sister's room, the cat's tail. El orden (dueño + 's + cosa) es el habitual para seres vivos, y se prefiere frente a 'of' cuando el poseedor es animado.",
         "note": "Tom's car · my sister's room · the cat's tail · the company's director"
       },
       {
-        "head": "Of — things and ideas",
-        "body": "When the 'owner' is a thing or an abstract idea rather than a living being, English normally expresses the relationship with 'of' instead of 's — 'the end of the film', 'the door of the car' — because inanimate objects don't 'possess' something the way a person does; it's more of a whole-and-part relationship. Using 's here ('the film's end') is possible in some contexts but sounds less natural than 'of' for most everyday things.",
+        "head": "Of: cosas e ideas",
+        "body": "Cuando el 'dueño' es una cosa o idea abstracta, se usa 'of' en vez de 's: 'the end of the film', 'the door of the car'. Los objetos no 'poseen' nada como una persona; es más bien una relación de parte y todo.",
         "note": "the end of the film · the door of the car · the price of the tickets"
       },
       {
-        "head": "Double possessive — a friend of Tom's",
-        "body": "The 'double possessive' pattern (a/this/that + noun + of + possessive) is used to single out one item from among several belonging to someone — 'a friend of Tom's' means one of Tom's (probably many) friends, not his only friend. It combines the 'of' structure with the 's ending on the same word, which is why it looks doubled, and it works the same way with possessive pronouns: 'a colleague of mine', 'a fan of hers'.",
+        "head": "Posesivo doble: a friend of Tom's",
+        "body": "El posesivo doble (a/this/that + sustantivo + of + posesivo) señala un elemento entre varios de alguien: 'a friend of Tom's' es uno de los (probablemente muchos) amigos de Tom. Funciona igual con pronombres posesivos: 'a colleague of mine'.",
         "note": "She's a friend of Tom's. · He's a colleague of mine. · I'm a fan of hers."
       }
     ],
@@ -1096,7 +1096,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "Pauls wife"
         ],
         "ans": 2,
-        "exp": "Person's possession → apostrophe 's: 'Paul's wife'."
+        "exp": "Posesión de una persona → apóstrofo 's: 'Paul's wife'."
       },
       {
         "q": "What's ___ the film?",
@@ -1107,7 +1107,7 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
           "end of the"
         ],
         "ans": 0,
-        "exp": "For things → 'of': 'the end of the film'."
+        "exp": "Para cosas → 'of': 'the end of the film'."
       }
     ],
     "flashcards": [
@@ -1143,8 +1143,8 @@ export const articlesAndNounsUnits: Record<number, Unit> = {
       "El posesivo doble ('a friend of mine', no 'a friend of me') siempre usa el pronombre posesivo, nunca el pronombre objeto."
     ],
     "dailyWords": [
-      { "w": "owner", "ipa": "/ˈoʊnər/", "def": "dueño, propietario", "ex": "Who is the owner of this car?" },
-      { "w": "colleague", "ipa": "/ˈkɒliːɡ/", "def": "colega, compañero de trabajo", "ex": "She's a colleague of mine from work." }
+      { "w": "owner", "ipa": "/ˈoʊnər/", "aprox": "óuner", "def": "dueño, propietario", "ex": "Who is the owner of this car?" },
+      { "w": "colleague", "ipa": "/ˈkɒliːɡ/", "aprox": "cólig", "def": "colega, compañero de trabajo", "ex": "She's a colleague of mine from work." }
     ]
   }
 };

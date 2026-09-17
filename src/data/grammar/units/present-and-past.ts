@@ -6,23 +6,23 @@ export const presentAndPastUnits: Record<number, Unit> = {
     "topic": "Present & Past",
     "explain": [
       {
-        "head": "Form",
-        "body": "The present continuous combines a form of the verb 'be' — am, is, or are — with the main verb ending in -ing. Which 'be' form you choose depends only on the subject (I → am, he/she/it → is, we/you/they → are), while the -ing ending on the main verb stays the same for everyone. This two-part structure is also what you use to build negatives (am/is/are + not + -ing) and questions (am/is/are + subject + -ing).",
+        "head": "Forma",
+        "body": "Se forma con am/is/are + verbo terminado en -ing. El auxiliar depende del sujeto (I → am; he/she/it → is; we/you/they → are) y el -ing no cambia nunca. Con ese mismo auxiliar se construyen las negativas (+ not) y las preguntas.",
         "note": "I am working · She is eating · They are playing"
       },
       {
-        "head": "Action happening NOW",
-        "body": "We use the present continuous to talk about an action that is happening right now, exactly at the moment we are speaking — you could point at it as it unfolds. This is the most basic use of the tense: the action started a little before now and hasn't finished yet. It contrasts with the present simple, which describes things that are generally or always true rather than something taking place this very second.",
+        "head": "Acción ahora mismo",
+        "body": "Describe algo que ocurre justo en el momento de hablar: empezó hace poco y todavía no termina. Es nuestro \"estoy haciendo\". A diferencia del present simple, no habla de lo que siempre es cierto, sino de lo que pasa en este instante.",
         "note": "Please be quiet! I'm trying to work. · 'Where's Tom?' 'He's having a shower.'"
       },
       {
-        "head": "Temporary / around now",
-        "body": "The present continuous also covers longer, temporary situations that are in progress 'around now' — this week, this month, this period of your life — even if you are not doing the action at this exact second. For example, you can be 'reading a great book at the moment' while actually sitting somewhere doing nothing at all, because the activity is still ongoing over these days. This temporary sense is what separates it from the present simple, which is reserved for permanent habits and facts.",
+        "head": "Situación temporal",
+        "body": "También vale para algo en curso \"en estos días\", aunque no lo estés haciendo en este segundo. Puedes decir que estás leyendo un libro aunque ahora no lo tengas en la mano: lo tienes a medias. Lo temporal va en continuo; lo permanente, en present simple.",
         "note": "I'm reading a great book at the moment. (not reading right now, but in the middle of it)"
       },
       {
-        "head": "Changes in progress",
-        "body": "We also use the present continuous with verbs that describe a gradual change happening over time, such as getting, becoming, increasing, rising, falling, and growing. These verbs describe a process moving from one state to another right now, in this period, rather than a finished fact — which is why they pair naturally with the -ing form instead of the present simple. Saying 'the population is increasing' frames it as an ongoing trend, not a fixed, permanent truth.",
+        "head": "Cambios en marcha",
+        "body": "Con verbos de cambio gradual (get, become, increase, rise, fall, grow) el continuo indica un proceso que avanza ahora, no un dato fijo. \"The population is increasing\" presenta una tendencia en marcha, no una verdad permanente.",
         "note": "The population is increasing fast. · Is your English getting better?"
       }
     ],
@@ -60,7 +60,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "trying"
         ],
         "ans": 1,
-        "exp": "Action happening NOW → present continuous: 'am trying'."
+        "exp": "Acción justo AHORA → presente continuo: 'am trying'."
       },
       {
         "q": "Look! It ___ outside.",
@@ -71,7 +71,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "rain"
         ],
         "ans": 1,
-        "exp": "Action at moment of speaking → 'is raining'."
+        "exp": "Ocurre en el momento de hablar → 'is raining'."
       },
       {
         "q": "Kate wants to work in Italy, so she ___ Italian.",
@@ -82,7 +82,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "learned"
         ],
         "ans": 2,
-        "exp": "In progress around now → 'is learning'."
+        "exp": "En marcha en esta época → 'is learning'."
       },
       {
         "q": "The population ___ very fast.",
@@ -93,7 +93,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "grew"
         ],
         "ans": 2,
-        "exp": "Change in progress → 'is growing'."
+        "exp": "Cambio en marcha → 'is growing'."
       }
     ],
     "flashcards": [
@@ -127,8 +127,8 @@ export const presentAndPastUnits: Record<number, Unit> = {
       "Contrae 'is' y 'are' al hablar para sonar natural: 'she's eating', 'they're playing' — la forma completa suena muy formal."
     ],
     "dailyWords": [
-      { "w": "currently", "ipa": "/ˈkʌrəntli/", "def": "actualmente, en este momento", "ex": "I'm currently working on a new project." },
-      { "w": "at the moment", "ipa": "/ət ðə ˈməʊmənt/", "def": "en este momento, ahora mismo", "ex": "She's busy at the moment." }
+      { "w": "currently", "ipa": "/ˈkʌrəntli/", "aprox": "kárentli", "def": "actualmente, en este momento", "ex": "I'm currently working on a new project." },
+      { "w": "at the moment", "ipa": "/ət ðə ˈməʊmənt/", "aprox": "at de móument", "def": "en este momento, ahora mismo", "ex": "She's busy at the moment." }
     ]
   },
   "2": {
@@ -136,23 +136,23 @@ export const presentAndPastUnits: Record<number, Unit> = {
     "topic": "Present & Past",
     "explain": [
       {
-        "head": "Form",
-        "body": "The present simple uses the base form of the verb for I, we, you, and they, but adds an -s or -es ending when the subject is he, she, or it. This extra letter on third-person singular verbs is one of the most commonly forgotten rules for learners, since no other subject needs it. Negatives and questions are built with do/does instead of changing the main verb, which is why the -s disappears in 'she doesn't work' and 'does she work?'.",
+        "head": "Forma",
+        "body": "Se usa el verbo en su forma base con I/you/we/they, y se añade -s o -es con he/she/it. Esa -s es el despiste más típico, porque ningún otro sujeto la lleva. En negativas y preguntas entra do/does y el verbo vuelve a la base: \"she doesn't work\".",
         "note": "I work · She works · They go · He does"
       },
       {
-        "head": "General facts and truths",
-        "body": "The present simple is the tense we reach for when describing things that are always true, regardless of the moment we are speaking — scientific facts, permanent states, general truths about the world. Because these facts don't change from one day to the next, there's no sense of 'in progress' about them, which is exactly why the continuous form would sound wrong here. Saying 'water boils at 100°C' describes a permanent property, not something happening right now in front of you.",
+        "head": "Hechos generales",
+        "body": "Para lo que es siempre verdad: hechos científicos, estados permanentes, verdades generales. Como no cambian de un día para otro, no hay nada \"en curso\" y el continuo sonaría raro. \"Water boils at 100°C\" describe una propiedad fija, no algo que pasa ahora.",
         "note": "Water boils at 100°C. · The earth goes round the sun."
       },
       {
-        "head": "Habits and routines",
-        "body": "We also use the present simple for habits and routines — actions that are repeated regularly over time, even if they are not happening at this exact moment. Adverbs of frequency like always, usually, often, sometimes, and never typically go with this tense because they describe how regularly something happens, not a single ongoing event. So 'I usually get up at 7' describes a repeated pattern, whereas 'I am getting up' would describe just one specific instance.",
+        "head": "Hábitos y rutinas",
+        "body": "Para acciones que se repiten con regularidad, aunque no ocurran en este momento. Lo acompañan always, usually, often, sometimes y never. \"I usually get up at 7\" describe un patrón repetido; \"I am getting up\" sería una sola vez, ahora.",
         "note": "I usually get up at 7. · She never drinks coffee."
       },
       {
-        "head": "Performative verbs",
-        "body": "Certain verbs — like promise, suggest, apologise, and agree — describe an action that is completed simply by saying the words, so English uses the present simple with them rather than the continuous. The act of speaking IS the promise or the suggestion, not a process building up to it, so there's no 'in progress' stage to highlight with -ing. That's why we say 'I promise I won't be late' and not 'I am promising', even though the moment of speaking is technically 'now'.",
+        "head": "Verbos performativos",
+        "body": "Verbos como promise, suggest, apologise o agree cumplen la acción al pronunciarlos, así que van en simple. Al decir \"I promise\" ya estás prometiendo: no hay proceso en curso que marcar con -ing. Por eso nunca se dice \"I am promising\".",
         "note": "I promise I won't be late. · I suggest you try again."
       }
     ],
@@ -188,7 +188,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "going"
         ],
         "ans": 2,
-        "exp": "General fact → present simple: 'goes'."
+        "exp": "Hecho general → present simple: 'goes'."
       },
       {
         "q": "___ you usually go to the gym?",
@@ -199,7 +199,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "Have"
         ],
         "ans": 1,
-        "exp": "Habit question with I/you → 'Do': 'Do you usually go…?'"
+        "exp": "Pregunta sobre un hábito con I/you → 'Do': 'Do you usually go…?'"
       },
       {
         "q": "She ___ coffee. She prefers tea.",
@@ -210,7 +210,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "not drinks"
         ],
         "ans": 0,
-        "exp": "Negative habit with he/she → 'doesn't drink'."
+        "exp": "Negativa habitual con he/she → 'doesn't drink'."
       },
       {
         "q": "I ___ I won't tell anyone. Trust me.",
@@ -221,7 +221,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "promised"
         ],
         "ans": 0,
-        "exp": "Performative verb → present simple: 'I promise'."
+        "exp": "Verbo performativo → present simple: 'I promise'."
       }
     ],
     "flashcards": [
@@ -252,8 +252,8 @@ export const presentAndPastUnits: Record<number, Unit> = {
       "Para preguntas y negaciones usa 'do/does' y deja el verbo principal en su forma base: 'Does she work?', nunca 'Works she?'."
     ],
     "dailyWords": [
-      { "w": "routine", "ipa": "/ruːˈtiːn/", "def": "rutina", "ex": "Coffee is part of my morning routine." },
-      { "w": "usually", "ipa": "/ˈjuːʒuəli/", "def": "normalmente, generalmente", "ex": "I usually walk to work." }
+      { "w": "routine", "ipa": "/ruːˈtiːn/", "aprox": "rutín", "def": "rutina", "ex": "Coffee is part of my morning routine." },
+      { "w": "usually", "ipa": "/ˈjuːʒuəli/", "aprox": "iúshuali", "def": "normalmente, generalmente", "ex": "I usually walk to work." }
     ]
   },
   "3": {
@@ -261,18 +261,18 @@ export const presentAndPastUnits: Record<number, Unit> = {
     "topic": "Present & Past",
     "explain": [
       {
-        "head": "Continuous = NOW or temporary",
-        "body": "Use the continuous form whenever you are describing an action that is currently in progress or a situation you consider temporary, not permanent. The idea is one of something 'mid-way' — started but not finished, or true for now but expected to change. This is why 'the water is boiling' works for what's happening on the stove right now, and 'I'm staying with friends' signals a short-term arrangement rather than where you actually live.",
+        "head": "Continuo: ahora o temporal",
+        "body": "El continuo describe algo en curso o que consideras pasajero: empezado y sin terminar, o cierto solo por ahora. Por eso \"the water is boiling\" habla de lo que pasa en la cocina, y \"I'm staying with friends\" indica algo temporal, no dónde vives.",
         "note": "The water is boiling. · I'm staying with friends for a few weeks."
       },
       {
-        "head": "Simple = general or permanent",
-        "body": "Use the simple form for habits, general facts, and situations you consider permanent or long-term, with no sense of 'in progress' about them. These are things that stay true across time rather than describing what's happening at this precise moment. Compare 'water boils at 100°C' (a permanent fact about water) with 'the water is boiling' (something happening on your stove right now) — same verb, but a completely different meaning depending on the tense.",
+        "head": "Simple: general o permanente",
+        "body": "El simple sirve para hábitos, hechos y situaciones permanentes, sin idea de \"en curso\". Compara \"water boils at 100°C\" (propiedad del agua) con \"the water is boiling\" (ahora, en tu cocina): mismo verbo, significados totalmente distintos.",
         "note": "Water boils at 100°C. · My parents live in London."
       },
       {
-        "head": "'I always do' vs 'I'm always doing'",
-        "body": "'Always' with the present simple simply describes a neutral, regular habit, with no emotion attached — 'I always lock the door' just states a fact about your routine. But 'always' with the present continuous takes on a special, critical meaning: it suggests something happens more often than expected or wanted, and the speaker is mildly annoyed about it. So 'he's always losing his keys' doesn't mean it happens literally every time — it means it happens too frequently and it's frustrating.",
+        "head": "Always: neutro o crítico",
+        "body": "Con el simple, \"always\" es un hábito neutro: cierras la puerta siempre, sin más. Con el continuo se convierte en queja: \"he's always losing his keys\" no significa literalmente siempre, sino demasiado a menudo y me molesta.",
         "note": "He's always losing his keys. (happens too often) · I always lock the door. (habit, neutral)"
       }
     ],
@@ -306,7 +306,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "flow"
         ],
         "ans": 1,
-        "exp": "Permanent geographical fact → present simple: 'flows'."
+        "exp": "Hecho geográfico permanente → present simple: 'flows'."
       },
       {
         "q": "The river ___ very fast today — much faster than usual.",
@@ -317,7 +317,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "flowed"
         ],
         "ans": 2,
-        "exp": "Temporary situation right now → present continuous: 'is flowing'."
+        "exp": "Situación temporal ahora mismo → presente continuo: 'is flowing'."
       },
       {
         "q": "He ___ always ___ his keys. It's so annoying!",
@@ -328,7 +328,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "has/lost"
         ],
         "ans": 0,
-        "exp": "'He's always losing' = happens too often (critical use)."
+        "exp": "'He's always losing' = pasa demasiado a menudo (uso crítico)."
       },
       {
         "q": "My parents ___ in London. They've been there all their lives.",
@@ -339,7 +339,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "lived"
         ],
         "ans": 1,
-        "exp": "Permanent situation → present simple: 'live'."
+        "exp": "Situación permanente → present simple: 'live'."
       }
     ],
     "flashcards": [
@@ -374,8 +374,8 @@ export const presentAndPastUnits: Record<number, Unit> = {
       "Antes de traducir desde el español, pregúntate: ¿es algo temporal (continuo) o permanente/habitual (simple)? Esa es la clave para elegir el tiempo correcto."
     ],
     "dailyWords": [
-      { "w": "temporary", "ipa": "/ˈtemprəri/", "def": "temporal, provisional", "ex": "It's just a temporary solution." },
-      { "w": "for now", "ipa": "/fɔːr naʊ/", "def": "por ahora, de momento", "ex": "I'm staying here for now." }
+      { "w": "temporary", "ipa": "/ˈtemprəri/", "aprox": "témprari", "def": "temporal, provisional", "ex": "It's just a temporary solution." },
+      { "w": "for now", "ipa": "/fɔːr naʊ/", "aprox": "for náu", "def": "por ahora, de momento", "ex": "I'm staying here for now." }
     ]
   },
   "4": {
@@ -383,23 +383,23 @@ export const presentAndPastUnits: Record<number, Unit> = {
     "topic": "Present & Past",
     "explain": [
       {
-        "head": "Stative verbs — NOT normally continuous",
-        "body": "Stative verbs describe a state of mind, feeling, or fact — like knowing, wanting, or understanding — rather than something you actively do, so they don't fit the idea of an action 'in progress' that the continuous form expresses. Because there's no ongoing process to highlight, these verbs almost always stay in the simple form, even when you're talking about right now. That's why we say 'I want something to eat' and 'do you understand?', never 'I'm wanting' or 'are you understanding?'.",
+        "head": "Verbos de estado",
+        "body": "Describen estados mentales, sentimientos o hechos (know, want, understand), no acciones que se hacen, así que no admiten la idea de \"en curso\". Van en simple aunque hables de este momento: se dice \"I want something to eat\", nunca \"I'm wanting\".",
         "note": "I want something to eat. (NOT: I'm wanting) · Do you understand? (NOT: Are you understanding?)"
       },
       {
-        "head": "THINK — two meanings",
-        "body": "'Think' behaves differently depending on its meaning. When it means 'believe' or expresses an opinion, it's stative and stays in the simple form — 'what do you think of my idea?' is asking for your opinion, not describing a mental process happening live. But when 'think' means 'consider' or 'have in mind as a possibility', it describes an active, ongoing process, so the continuous is used instead — 'I'm thinking of quitting' means you are actively weighing up the idea right now.",
+        "head": "Think: dos sentidos",
+        "body": "Cuando \"think\" significa opinar o creer, es verbo de estado y va en simple: \"What do you think of my idea?\". Cuando significa plantearse algo, es un proceso activo y va en continuo: \"I'm thinking of quitting\".",
         "note": "What do you think of my idea? (opinion) · I'm thinking of quitting. (considering now)"
       },
       {
-        "head": "SEE / HEAR / SMELL / TASTE",
-        "body": "Verbs of perception like see, hear, smell, and taste are normally stative and use the simple form, because they describe an involuntary sensation rather than a deliberate action — 'do you see that?' just means the image is reaching your eyes, with no effort involved. However, when these same verbs describe a deliberate, arranged action, the continuous becomes possible: 'I'm seeing Tom tomorrow' doesn't mean your eyes are working, it means you have a meeting planned with him.",
+        "head": "Verbos de percepción",
+        "body": "See, hear, smell y taste describen sensaciones involuntarias y van en simple: \"Do you see that?\". Pero si describen algo deliberado o planeado, sí admiten continuo: \"I'm seeing Tom tomorrow\" es una cita, no percepción.",
         "note": "Do you see that? (perception) · I'm seeing Tom tomorrow. (arranged meeting)"
       },
       {
-        "head": "BE + adjective = continuous for behaviour",
-        "body": "'Be' is normally stative, but 'be + adjective' can take the continuous form when it describes temporary behaviour rather than a permanent character trait. 'He is being very selfish' means he is acting selfishly right now, in this specific situation — it implies the behaviour is unusual for him. Compare that with 'he is selfish', which uses the simple form to describe selfishness as a fixed part of who he is, all the time.",
+        "head": "Be + adjetivo: conducta",
+        "body": "\"Be\" suele ser de estado, pero con adjetivo el continuo describe una conducta pasajera: \"He's being very selfish\" significa que hoy se está portando así, no es lo normal en él. \"He is selfish\" describe su carácter de siempre.",
         "note": "He's being very selfish. (behaving selfishly right now) · He is selfish. (his character)"
       }
     ],
@@ -437,7 +437,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "wanting"
         ],
         "ans": 1,
-        "exp": "'Want' is stative → never continuous: 'I want'."
+        "exp": "'Want' es verbo de estado → nunca continuo: 'I want'."
       },
       {
         "q": "What ___ you ___ of my plan?",
@@ -448,7 +448,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "do/thinking"
         ],
         "ans": 0,
-        "exp": "'Think' = opinion → present simple: 'What do you think of…?'"
+        "exp": "'Think' = opinión → present simple: 'What do you think of…?'"
       },
       {
         "q": "I can't understand why he ___ so rude today.",
@@ -459,7 +459,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "has been"
         ],
         "ans": 1,
-        "exp": "'Being' = behaving. He's acting rude right now (unusual): 'he is being rude'."
+        "exp": "'Being' = comportándose. Hoy actúa así, no es lo normal: 'he is being rude'."
       },
       {
         "q": "___ you ___ that man over there?",
@@ -470,7 +470,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "Are/see"
         ],
         "ans": 1,
-        "exp": "'See' as perception → present simple: 'Do you see that man?'"
+        "exp": "'See' como percepción → present simple: 'Do you see that man?'"
       }
     ],
     "flashcards": [
@@ -509,8 +509,8 @@ export const presentAndPastUnits: Record<number, Unit> = {
       "'Think' tiene dos caras: para dar una opinión usa la forma simple ('I think it's great'); para plantearte algo usa la continua ('I'm thinking about it')."
     ],
     "dailyWords": [
-      { "w": "behaviour", "ipa": "/bɪˈheɪvjər/", "def": "comportamiento", "ex": "His behaviour was strange yesterday." },
-      { "w": "to consider", "ipa": "/kənˈsɪdər/", "def": "considerar, plantearse", "ex": "I'm considering a change of job." }
+      { "w": "behaviour", "ipa": "/bɪˈheɪvjər/", "aprox": "bijéivior", "def": "comportamiento", "ex": "His behaviour was strange yesterday." },
+      { "w": "to consider", "ipa": "/kənˈsɪdər/", "aprox": "kensíder", "def": "considerar, plantearse", "ex": "I'm considering a change of job." }
     ]
   },
   "5": {
@@ -518,21 +518,21 @@ export const presentAndPastUnits: Record<number, Unit> = {
     "topic": "Present & Past",
     "explain": [
       {
-        "head": "Regular verbs — add -ed",
-        "body": "Most English verbs are 'regular': you form their past tense simply by adding -ed to the base verb, as in work→worked or play→played. A few spelling changes apply along the way — verbs ending in a consonant plus y change to -ied (study→studied), and some short verbs double their final consonant before adding -ed (stop→stopped). Learning this pattern lets you form the past tense of the vast majority of English verbs without memorizing anything extra."
+        "head": "Verbos regulares: -ed",
+        "body": "La mayoría de los verbos forma el pasado añadiendo -ed: work→worked, play→played. Hay pequeños cambios de escritura: consonante + y pasa a -ied (study→studied) y algunos verbos cortos doblan la consonante final (stop→stopped)."
       },
       {
-        "head": "Irregular verbs — memorize",
-        "body": "Irregular verbs don't follow the -ed pattern at all — instead, each one changes in its own unpredictable way, so there's no shortcut except memorizing them individually, as in go→went, see→saw, and write→wrote. These tend to be some of the most frequently used verbs in English, which is exactly why native speakers use them constantly without noticing they're irregular. There's no way to guess an irregular past form from the base verb, so building up this list through practice is an essential part of learning the past simple."
+        "head": "Verbos irregulares",
+        "body": "No siguen ninguna regla: cada uno cambia a su manera (go→went, see→saw, write→wrote) y hay que memorizarlos uno a uno. Son justo los verbos más usados del inglés, así que aparecen todo el rato. No se pueden deducir de la forma base."
       },
       {
-        "head": "Questions and negatives — use DID",
-        "body": "To form negatives and questions in the past simple, English uses the auxiliary 'did' (or 'didn't') together with the base form of the main verb — never the -ed or irregular past form. The past tense is already expressed by 'did', so adding it again to the main verb would be redundant, which is why 'did you enjoyed?' is wrong and 'did you enjoy?' is correct. This rule applies to every verb, regular or irregular, once 'did' or 'didn't' appears in the sentence.",
+        "head": "Preguntas y negativas: did",
+        "body": "Con did/didn't el verbo principal vuelve a su forma base, nunca al pasado: el pasado ya lo marca \"did\". Por eso \"Did you enjoy it?\" es correcto y \"Did you enjoyed?\" no. Sirve para todos los verbos, regulares e irregulares.",
         "note": "Did you enjoy it? · I didn't go out. · What did you do? (NOT: Did you enjoyed? ❌)"
       },
       {
-        "head": "Was / Were",
-        "body": "The verb 'be' has its own special past tense forms instead of following the regular -ed pattern: 'was' for I, he, she, and it, and 'were' for we, you, and they. Unlike other verbs, 'was/were' also forms its own negatives and questions directly, without needing 'did' — so you get 'it wasn't cold' and 'were they at home?' rather than a form with 'did'. Because 'be' is one of the most frequent verbs in the language, these irregular forms are worth learning early and solidly.",
+        "head": "Was y were",
+        "body": "El verbo \"be\" tiene su propio pasado: was con I/he/she/it y were con we/you/they. Además forma negativas y preguntas por sí solo, sin \"did\": \"It wasn't cold\", \"Were they at home?\". Al ser tan frecuente, conviene aprenderlo pronto.",
         "note": "It was cold. · Were they at home? · I wasn't hungry."
       }
     ],
@@ -574,7 +574,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "write"
         ],
         "ans": 1,
-        "exp": "Completed past action → past simple: 'wrote'."
+        "exp": "Acción pasada y terminada → past simple: 'wrote'."
       },
       {
         "q": "___ you go out last night?",
@@ -585,7 +585,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "Do"
         ],
         "ans": 0,
-        "exp": "Past simple question → 'Did you go out?'"
+        "exp": "Pregunta en pasado simple → 'Did you go out?'"
       },
       {
         "q": "I didn't ___ anything because I had no money.",
@@ -596,7 +596,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "buyed"
         ],
         "ans": 1,
-        "exp": "After 'didn't', use BASE verb: 'didn't buy'."
+        "exp": "Después de 'didn't', verbo en forma BASE: 'didn't buy'."
       },
       {
         "q": "They ___ able to come because they were busy.",
@@ -607,7 +607,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "don't"
         ],
         "ans": 0,
-        "exp": "Past of 'be' → 'They weren't able to come.'"
+        "exp": "Pasado de 'be' → 'They weren't able to come.'"
       }
     ],
     "flashcards": [
@@ -643,8 +643,8 @@ export const presentAndPastUnits: Record<number, Unit> = {
       "Después de 'did/didn't', el verbo principal SIEMPRE va en infinitivo sin 'to': 'did you go?', nunca 'did you went?'."
     ],
     "dailyWords": [
-      { "w": "to arrive", "ipa": "/əˈraɪv/", "def": "llegar", "ex": "The train arrived late again." },
-      { "w": "in the end", "ipa": "/ɪn ðə end/", "def": "al final, a fin de cuentas", "ex": "In the end, we decided to stay home." }
+      { "w": "to arrive", "ipa": "/əˈraɪv/", "aprox": "aráiv", "def": "llegar", "ex": "The train arrived late again." },
+      { "w": "in the end", "ipa": "/ɪn ðə end/", "aprox": "in de énd", "def": "al final, a fin de cuentas", "ex": "In the end, we decided to stay home." }
     ]
   },
   "6": {
@@ -652,23 +652,23 @@ export const presentAndPastUnits: Record<number, Unit> = {
     "topic": "Present & Past",
     "explain": [
       {
-        "head": "Form",
-        "body": "The past continuous is formed with 'was' or 'were' plus the main verb ending in -ing, following the same pattern as the present continuous but shifted into the past. Use 'was' with I, he, she, and it, and 'were' with we, you, and they. Because it's built from 'be' + -ing, negatives and questions work the same way as in the present continuous, just with 'was/were' instead of 'am/is/are'.",
+        "head": "Forma",
+        "body": "Se forma con was/were + verbo en -ing: was con I/he/she/it y were con we/you/they. Es el mismo esquema del presente continuo, pero trasladado al pasado, así que negativas y preguntas funcionan exactamente igual.",
         "note": "I was sleeping · She was working · They were playing"
       },
       {
-        "head": "Action in progress at a past time",
-        "body": "We use the past continuous to describe an action that was already in progress at a specific moment in the past — you can picture it as being in the middle of happening at that point, with no clear start or end mentioned. Naming the exact past moment, like 'this time yesterday' or 'at 10pm', is what triggers this tense, because we're describing what someone was doing at that instant, not what they did overall. This contrasts with the past simple, which presents an action as a complete, finished event.",
+        "head": "En curso en el pasado",
+        "body": "Describe algo que ya estaba pasando en un momento concreto del pasado, a medias, sin decir cuándo empezó ni cuándo acabó. Lo activa una referencia horaria: \"At 10pm they were watching TV\". El pasado simple, en cambio, presenta la acción ya completa.",
         "note": "This time yesterday I was lying on the beach. · At 10pm they were watching TV."
       },
       {
-        "head": "Interrupted action (while/when)",
-        "body": "One of the most common patterns with the past continuous is describing a longer background action that was interrupted by a shorter, completed one. The longer action in progress takes the past continuous, while the shorter action that cuts into it takes the past simple — as in 'I was watching TV when the phone rang', where watching TV is the ongoing background and the phone ringing is the sudden interruption. 'While' and 'when' are the typical signal words that introduce this kind of sentence.",
+        "head": "Acción interrumpida",
+        "body": "La acción larga de fondo va en pasado continuo y la corta que la corta va en pasado simple: \"I was watching TV when the phone rang\". \"While\" y \"when\" son las palabras que suelen introducir este tipo de frase.",
         "note": "I was watching TV when the phone rang. · While I was cooking, he arrived."
       },
       {
-        "head": "Two simultaneous past actions",
-        "body": "The past continuous can also describe two separate actions that were happening at the same time in the past, both in progress together rather than one interrupting the other. 'While I was studying, my sister was listening to music' shows two parallel, ongoing activities running side by side, connected by 'while'. This use highlights simultaneity rather than sequence, which is why both verbs appear in the continuous form instead of just one.",
+        "head": "Dos acciones a la vez",
+        "body": "Cuando dos acciones estaban en curso al mismo tiempo, ambas van en pasado continuo unidas por \"while\": \"While I was studying, my sister was listening to music\". Aquí no hay interrupción, solo simultaneidad.",
         "note": "While I was studying, my sister was listening to music."
       }
     ],
@@ -706,7 +706,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "am living"
         ],
         "ans": 2,
-        "exp": "Action in progress at a specific past time → 'was living'."
+        "exp": "Acción en curso en un momento concreto del pasado → 'was living'."
       },
       {
         "q": "I ___ TV when the phone ___.",
@@ -717,7 +717,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "was watching/was ringing"
         ],
         "ans": 1,
-        "exp": "Interrupted action: 'was watching' (continuous) + 'rang' (interruption)."
+        "exp": "Acción interrumpida: 'was watching' (continuo) + 'rang' (interrupción)."
       },
       {
         "q": "While she ___ dinner, the doorbell ___.",
@@ -728,7 +728,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "made/was ringing"
         ],
         "ans": 1,
-        "exp": "Past continuous + past simple interruption: 'was making / rang'."
+        "exp": "Pasado continuo + interrupción en pasado simple: 'was making / rang'."
       },
       {
         "q": "What ___ you ___ at 8 o'clock last night?",
@@ -739,7 +739,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
           "do/do"
         ],
         "ans": 1,
-        "exp": "Action in progress at past time → 'were you doing?'"
+        "exp": "Acción en curso en un momento del pasado → 'were you doing?'"
       }
     ],
     "flashcards": [
@@ -775,8 +775,8 @@ export const presentAndPastUnits: Record<number, Unit> = {
       "'While' suele introducir el pasado continuo (la acción en progreso), y 'when' suele introducir la interrupción en pasado simple."
     ],
     "dailyWords": [
-      { "w": "suddenly", "ipa": "/ˈsʌdənli/", "def": "de repente", "ex": "Suddenly, the lights went out." },
-      { "w": "meanwhile", "ipa": "/ˈmiːnwaɪl/", "def": "mientras tanto", "ex": "Meanwhile, my sister was watching TV." }
+      { "w": "suddenly", "ipa": "/ˈsʌdənli/", "aprox": "sádenli", "def": "de repente", "ex": "Suddenly, the lights went out." },
+      { "w": "meanwhile", "ipa": "/ˈmiːnwaɪl/", "aprox": "míinuail", "def": "mientras tanto", "ex": "Meanwhile, my sister was watching TV." }
     ]
   }
 };

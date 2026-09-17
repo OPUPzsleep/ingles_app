@@ -6,17 +6,17 @@ export const reportedSpeechUnits: Record<number, Unit> = {
     "topic": "Reported Speech",
     "explain": [
       {
-        "head": "Direct vs Reported speech",
-        "body": "Direct speech quotes someone's exact words, usually inside quotation marks: 'I'm tired,' she said. Reported speech instead tells us what someone said without quoting them word for word, which means dropping the quotation marks and often shifting pronouns and verb tenses to fit the new context: She said (that) she was tired. The word 'that' here is optional and can always be left out without changing the meaning."
+        "head": "Estilo directo e indirecto",
+        "body": "El estilo directo cita las palabras exactas entre comillas. El indirecto cuenta lo que alguien dijo sin comillas, ajustando pronombres y tiempos verbales al nuevo contexto. La palabra 'that' es opcional: puedes omitirla sin cambiar el significado."
       },
       {
-        "head": "Tense backshift in reported speech",
-        "body": "When you report what someone said, the verb tense usually moves one step back into the past, even if what they said is still true — this pattern is called 'backshift'. It happens because the act of reporting takes place later than the original words were spoken, so the whole sentence gets anchored further back in time. Present simple becomes past simple, present continuous becomes past continuous, and past simple becomes past perfect, exactly as shown in the examples.",
+        "head": "El verbo retrocede un paso",
+        "body": "Al reportar, el verbo suele retroceder un tiempo hacia el pasado, aunque lo dicho siga siendo verdad. Presente simple pasa a pasado simple, presente continuo a pasado continuo y pasado simple a pasado perfecto.",
         "note": "'I work here.' → He said he worked there.\n'I'm working.' → He said he was working.\n'I worked.' → He said he had worked."
       },
       {
-        "head": "Will → would / can → could",
-        "body": "Modal verbs follow the same backshift pattern as other tenses: 'will' becomes 'would' and 'can' becomes 'could' once you move a sentence into reported speech. This keeps the sentence consistent, since anything reported after a past-tense reporting verb like 'she said' or 'he asked' needs to sit one step further back in time. Not every modal changes, though — 'should', 'might', 'could', and 'would' already are the 'back' form, so they stay the same.",
+        "head": "Will pasa a would",
+        "body": "Los modales retroceden igual que los demás verbos: 'will' se vuelve 'would' y 'can' se vuelve 'could'. En cambio 'should', 'might', 'could' y 'would' ya son formas retrasadas, así que no cambian.",
         "note": "'I will come.' → She said she would come.\n'I can help.' → He said he could help."
       }
     ],
@@ -66,7 +66,7 @@ export const reportedSpeechUnits: Record<number, Unit> = {
           "has been"
         ],
         "ans": 1,
-        "exp": "Present → past in reported speech: 'was'."
+        "exp": "En estilo indirecto el presente pasa a pasado: 'was'."
       },
       {
         "q": "'I will call you,' he said. → He said he ___ me.",
@@ -77,7 +77,7 @@ export const reportedSpeechUnits: Record<number, Unit> = {
           "is calling"
         ],
         "ans": 1,
-        "exp": "Will → would in reported speech: 'he said he would call'."
+        "exp": "'Will' se convierte en 'would': 'he said he would call'."
       },
       {
         "q": "'I've finished,' Anna said. → Anna said she ___ finished.",
@@ -88,7 +88,7 @@ export const reportedSpeechUnits: Record<number, Unit> = {
           "was"
         ],
         "ans": 2,
-        "exp": "Present perfect → past perfect: 'had finished'."
+        "exp": "El present perfect pasa a past perfect: 'had finished'."
       }
     ],
     "flashcards": [
@@ -108,18 +108,18 @@ export const reportedSpeechUnits: Record<number, Unit> = {
     "topic": "Reported Speech",
     "explain": [
       {
-        "head": "Reported questions — word order changes",
-        "body": "When you report a question, it stops being a direct question and becomes part of a larger statement, so it must follow normal statement word order (subject before verb) instead of the inverted order direct questions use. The auxiliary 'do/does/did' also disappears, because it was only needed to create that inversion in the first place. Learners often keep the question order out of habit, but 'she asked where I lived' is correct while 'she asked where did I live' is not.",
+        "head": "Orden de frase afirmativa",
+        "body": "Al reportarla, la pregunta pasa a formar parte de una afirmación: se usa el orden sujeto + verbo y desaparece el auxiliar 'do/does/did'. Por eso 'she asked where I lived' es correcto y 'she asked where did I live' no lo es.",
         "note": "'Where do you live?' → She asked me where I lived. (NOT: where did I live)"
       },
       {
-        "head": "Yes/No questions → whether/if",
-        "body": "A direct question expecting a yes-or-no answer has no question word like 'where' or 'what' to introduce it once it's reported, so English uses 'if' or 'whether' to fill that role instead. The two words work the same way here and are generally interchangeable. The rest of the sentence still follows the normal reported-speech rules: statement word order and, usually, a tense backshift.",
+        "head": "Preguntas de sí o no",
+        "body": "Si la pregunta no lleva palabra interrogativa, se introduce con 'if' o 'whether', que equivalen a nuestro 'si'. Las dos son intercambiables, y el resto sigue las reglas de siempre: orden de afirmación y retroceso del verbo.",
         "note": "'Are you coming?' → She asked if/whether I was coming."
       },
       {
-        "head": "Time and place changes",
-        "body": "When the moment or place of reporting is different from when and where the original words were spoken, time and place expressions need to change to stay accurate — something called 'today' last week is no longer 'today' when you report it now, so it becomes 'that day'. The same logic applies to place words, such as 'here' becoming 'there' once you are no longer in that location. These are not rules to apply mechanically every time — they only matter when the context has genuinely changed.",
+        "head": "Cambios de tiempo y lugar",
+        "body": "Si reportas desde otro momento u otro sitio, las expresiones de tiempo y lugar se ajustan: 'today' pasa a 'that day' y 'here' pasa a 'there'. No es automático: solo cambian cuando el contexto realmente es distinto.",
         "note": "now→then, today→that day, yesterday→the day before, here→there, tomorrow→the next day"
       }
     ],
@@ -133,7 +133,7 @@ export const reportedSpeechUnits: Record<number, Unit> = {
           "was living"
         ],
         "ans": 2,
-        "exp": "Reported question: backshift + statement order: 'where I lived'."
+        "exp": "Pregunta reportada: verbo atrás y orden de afirmación: 'where I lived'."
       },
       {
         "q": "'Are you happy?' → He asked me ___ I was happy.",
@@ -144,7 +144,7 @@ export const reportedSpeechUnits: Record<number, Unit> = {
           "which"
         ],
         "ans": 0,
-        "exp": "Yes/No question → reported with 'if': 'he asked if I was happy'."
+        "exp": "Pregunta de sí/no: se reporta con 'if': 'he asked if I was happy'."
       }
     ],
     "flashcards": [

@@ -6,23 +6,23 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
     "topic": "Phrasal Verbs",
     "explain": [
       {
-        "head": "What is a phrasal verb?",
-        "body": "A phrasal verb combines a verb with one or two small particles — words like 'up', 'off', 'on', or 'out' that look like prepositions or adverbs but function here as part of the verb itself. The combined meaning is often completely unrelated to the individual words, so you cannot guess it just by translating each piece separately; it has to be learned as a single unit, almost like a brand-new word. This is exactly why phrasal verbs are one of the hardest parts of English for learners — the pieces are simple, but together they mean something new.",
+        "head": "¿Qué es un phrasal verb?",
+        "body": "Un phrasal verb combina un verbo con una o dos partículas ('up', 'off', 'on', 'out'...) que parecen preposiciones pero funcionan como parte del verbo. El significado conjunto suele no tener relación con las palabras por separado, así que hay que aprenderlo como una unidad, casi como una palabra nueva.",
         "note": "give up = stop trying (not 'dar arriba') · look after = take care of (not 'mirar después')"
       },
       {
-        "head": "Separable phrasal verbs",
-        "body": "Separable phrasal verbs allow the object to go in two possible positions: right after the particle, or squeezed in between the verb and the particle. When the object is a pronoun ('it', 'them', 'her'...) rather than a full noun, though, only the middle position is allowed — the pronoun must split the verb and particle apart. This is a strict rule rather than a style choice, so 'turn off it' is always wrong even though 'turn off the TV' and 'turn the TV off' are both fine.",
+        "head": "Phrasal verbs separables",
+        "body": "En los separables, el objeto puede ir después de la partícula o entre el verbo y la partícula. Pero si el objeto es un pronombre ('it', 'them', 'her'...), solo se permite la posición intermedia: 'turn off it' siempre es incorrecto, aunque 'turn off the TV' y 'turn the TV off' sean válidos.",
         "note": "Turn off the TV. = Turn the TV off. ✅ · Turn it off. ✅ (NOT: Turn off it. ❌)"
       },
       {
-        "head": "Inseparable phrasal verbs",
-        "body": "Inseparable phrasal verbs behave differently: the verb and particle form a fixed unit that can never be split, so the object — whether it's a full noun or a pronoun — always comes after the particle. This is the mirror image of separable phrasal verbs, where a pronoun object forces the middle position; here, a pronoun still goes at the very end. There's no reliable shortcut for telling which phrasal verbs are separable and which are inseparable, so it's worth learning each one together with its pattern.",
+        "head": "Phrasal verbs inseparables",
+        "body": "Aquí el verbo y la partícula forman una unidad fija que nunca se separa, así que el objeto —sea sustantivo o pronombre— siempre va después de la partícula. No hay atajo fiable para saber si un phrasal verb es separable o no; conviene aprender cada uno junto con su patrón.",
         "note": "Look after the children. = Look after them. ✅ (NOT: Look the children after. ❌)"
       },
       {
-        "head": "Intransitive phrasal verbs",
-        "body": "Some phrasal verbs are intransitive, meaning they take no object at all — the action they describe is complete in itself, with nothing being acted upon. Because there's no object, the separable-versus-inseparable question simply doesn't apply to these verbs. You just use the verb and particle together as a fixed combination, as in 'the car broke down' or 'she woke up'.",
+        "head": "Phrasal verbs intransitivos",
+        "body": "Algunos phrasal verbs no llevan objeto: la acción se completa sola, sin nada sobre lo que actuar. Como no hay objeto, la distinción separable/inseparable no aplica; simplemente se usa el verbo con su partícula como combinación fija.",
         "note": "The car broke down. · She woke up late. · Please sit down."
       }
     ],
@@ -75,7 +75,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "stop"
         ],
         "ans": 0,
-        "exp": "Separable phrasal verb: 'turn off the TV'."
+        "exp": "Phrasal verb separable: 'turn off the TV'."
       },
       {
         "q": "The car ___ on the motorway.",
@@ -86,7 +86,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "breaking down"
         ],
         "ans": 1,
-        "exp": "'Break down' = stop working."
+        "exp": "'Break down' = dejar de funcionar."
       }
     ],
     "flashcards": [
@@ -106,18 +106,18 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
     "topic": "Phrasal Verbs",
     "explain": [
       {
-        "head": "IN — completing, joining, entering",
-        "body": "The particle 'in' often carries a sense of entering, completing, or becoming part of something — filling in a form completes it with the missing information, joining in a game means entering the activity, and fitting in means becoming accepted as part of a group. Recognizing this shared thread of 'entering/completing' can help you guess the rough meaning of new 'in' phrasal verbs, even though the exact translation still has to be learned.",
+        "head": "IN: completar, unirse, entrar",
+        "body": "La partícula 'in' suele indicar entrar, completar o volverse parte de algo: llenar un formulario ('fill in'), unirse a una actividad ('join in') o ser aceptado en un grupo ('fit in'). Reconocer esta idea de 'entrar/completar' ayuda a intuir el significado de nuevos phrasal verbs con 'in'.",
         "note": "Please fill in the form. · Come and join in the game. · Did you fit in at your new school?"
       },
       {
-        "head": "OUT — discovering, completing, using up",
-        "body": "The particle 'out' often signals that something is being brought into the open (finding it out, discovering it), carried all the way through to completion (carrying out a plan), or used up entirely until nothing remains (running out of milk). These senses of 'revealing' and 'exhausting/completing' recur across many 'out' phrasal verbs, which is why the same particle turns up in so many different-looking expressions.",
+        "head": "OUT: descubrir, completar, agotar",
+        "body": "'Out' suele indicar que algo sale a la luz (descubrirlo), se lleva a cabo hasta el final (un plan), o se agota por completo (la leche). Estas ideas de 'revelar' y 'agotar/completar' se repiten en muchos phrasal verbs con 'out'.",
         "note": "She found out the truth. · We carried out the plan. · We have run out of milk."
       },
       {
-        "head": "LOOK UP — checking information",
-        "body": "'Look up' specifically means to search for a piece of information in a reference source, such as a dictionary, a book, or a website, in order to find its meaning or spelling. It's easy to confuse with similar-looking phrasal verbs: 'look at' just means to direct your eyes toward something, and 'look for' means to search for something you've lost or want to find — neither implies a reference source the way 'look up' does.",
+        "head": "LOOK UP: buscar información",
+        "body": "'Look up' significa buscar un dato en una fuente de referencia (diccionario, libro, sitio web) para conocer su significado u ortografía. No confundir con 'look at' (mirar algo) ni 'look for' (buscar algo perdido), que no implican una fuente de consulta.",
         "note": "I looked up the word in the dictionary. · Look it up online."
       }
     ],
@@ -131,7 +131,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "fill out of"
         ],
         "ans": 0,
-        "exp": "'Fill in' = complete a form."
+        "exp": "'Fill in' = completar un formulario."
       },
       {
         "q": "She ___ a lot of information on the topic.",
@@ -142,7 +142,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "looked in"
         ],
         "ans": 2,
-        "exp": "'Look up' = find information."
+        "exp": "'Look up' = buscar información."
       }
     ],
     "flashcards": [
@@ -166,23 +166,23 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
     "topic": "Phrasal Verbs",
     "explain": [
       {
-        "head": "RUN OUT OF — no more left",
-        "body": "'Run out of' describes the moment a supply is completely used up and nothing remains — you had something, and now you don't. Unlike many phrasal verbs, this one is always followed by 'of' before its object ('run out of time', 'run out of petrol'), and dropping that 'of' is a common mistake worth avoiding.",
+        "head": "RUN OUT OF: se acabó",
+        "body": "'Run out of' describe el momento en que una provisión se agota por completo. A diferencia de otros phrasal verbs, siempre lleva 'of' antes del objeto ('run out of time'), y omitirlo es un error común que conviene evitar.",
         "note": "We have run out of time. · The car ran out of petrol."
       },
       {
-        "head": "WORK OUT — several meanings",
-        "body": "'Work out' is one of those phrasal verbs with several unrelated meanings that you have to tell apart by context: it can mean to exercise physically at a gym, to calculate a number or solve a problem through reasoning, or — when the subject is a plan or situation rather than a person — to turn out successfully in the end. All three meanings share only a loose idea of reaching a result through effort, so the surrounding sentence is what tells you which one is meant.",
+        "head": "WORK OUT: varios significados",
+        "body": "'Work out' tiene varios significados que se distinguen por el contexto: hacer ejercicio, calcular o resolver un problema, o —si el sujeto es un plan— salir bien al final. Los tres comparten la idea de llegar a un resultado con esfuerzo.",
         "note": "I work out at the gym. · Can you work out the total cost? · I hope things work out for you."
       },
       {
-        "head": "COME ACROSS — finding by chance",
-        "body": "'Come across' describes an unplanned discovery — you find or meet something or someone by chance, while you were doing or looking for something else entirely. This contrasts with a deliberate search: if you had actively been trying to find it, 'look for' or 'find' would be the more natural choice instead.",
+        "head": "COME ACROSS: encontrar por casualidad",
+        "body": "'Come across' describe un descubrimiento no planeado: encuentras algo o a alguien por casualidad mientras hacías otra cosa. Si la búsqueda hubiera sido deliberada, sería más natural usar 'look for' o 'find'.",
         "note": "I came across some old photos while cleaning. · I came across an interesting article."
       },
       {
-        "head": "POINT OUT — drawing attention to something",
-        "body": "'Point out' means to draw someone's attention to a fact, detail, or mistake that they might otherwise have missed or not noticed on their own. It's often used for a helpful or corrective observation — pointing out an error in a report means telling someone about it so it can be fixed, not just mentioning something at random.",
+        "head": "POINT OUT: señalar algo",
+        "body": "'Point out' significa llamar la atención de alguien sobre un hecho, detalle o error que quizá no había notado. Suele usarse para una observación útil o correctiva, no solo para mencionar algo al azar.",
         "note": "She pointed out a mistake in the report."
       }
     ],
@@ -196,7 +196,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "run off"
         ],
         "ans": 0,
-        "exp": "'Run out of' = have no more of something."
+        "exp": "'Run out of' = no quedar más de algo."
       },
       {
         "q": "I ___ some old photos while cleaning.",
@@ -207,7 +207,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "came out"
         ],
         "ans": 0,
-        "exp": "'Come across' = find by chance."
+        "exp": "'Come across' = encontrar por casualidad."
       }
     ],
     "flashcards": [
@@ -227,23 +227,23 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
     "topic": "Phrasal Verbs",
     "explain": [
       {
-        "head": "ON — continuing and operating",
-        "body": "The particle 'on' often carries a sense of continuation or activation. 'Go on' means to keep continuing an action or story without stopping, 'turn on' starts up a device or a light, and 'put on' means to dress yourself in a piece of clothing. Although these look similar, each combination has become its own fixed expression that needs to be learned individually.",
+        "head": "ON: continuar y activar",
+        "body": "'On' suele indicar continuación o activación: 'go on' es seguir sin parar, 'turn on' enciende un aparato o luz, y 'put on' es ponerse una prenda de ropa. Aunque parecidas, cada combinación es una expresión fija que se aprende por separado.",
         "note": "Please go on with your story. · Turn on the lights. · Put on your coat."
       },
       {
-        "head": "OFF — stopping and departing",
-        "body": "The particle 'off' often signals stopping or separating from something. 'Turn off' switches a device off so it stops running, and 'take off' has two quite different senses depending on the subject — for a person, it means to remove an item of clothing, while for a plane, it means to leave the ground and begin flying. Context makes clear which meaning of 'take off' is intended.",
+        "head": "OFF: detener y partir",
+        "body": "'Off' suele indicar detener algo o separarse de ello. 'Turn off' apaga un aparato, y 'take off' cambia de sentido según el sujeto: quitarse ropa (persona) o despegar (avión). El contexto aclara cuál se usa.",
         "note": "Turn off the TV before bed. · Take off your shoes. · The plane took off on time."
       },
       {
-        "head": "GO OFF — several meanings",
-        "body": "'Go off' is another phrasal verb with several distinct meanings depending on the subject: an alarm 'goes off' when it starts ringing, a bomb 'goes off' when it explodes, and food 'goes off' when it spoils and becomes unfit to eat. All three share a loose idea of something being suddenly triggered or changing state, but the subject and context tell you which sense applies.",
+        "head": "GO OFF: varios significados",
+        "body": "'Go off' cambia de sentido según el sujeto: una alarma 'goes off' cuando suena, una bomba cuando explota, y la comida cuando se echa a perder. Los tres comparten la idea de algo que se dispara o cambia de estado de repente.",
         "note": "The alarm went off at 6am. · The bomb went off. · This milk has gone off."
       },
       {
-        "head": "PUT OFF and TURN DOWN — refusing",
-        "body": "'Put off' means to delay or reschedule something to a later time, while 'turn down' means to reject or refuse an offer, invitation, or request outright. Even though both can involve a kind of negative response, they are not interchangeable: postponing a meeting is not the same as refusing a job offer, so the right verb depends on whether you're delaying something or declining it.",
+        "head": "PUT OFF y TURN DOWN: rechazar",
+        "body": "'Put off' es posponer algo para más tarde, mientras que 'turn down' es rechazar una oferta o invitación directamente. No son intercambiables: aplazar una reunión no es lo mismo que rechazar un trabajo.",
         "note": "The meeting was put off until next week. · She turned down the job offer."
       }
     ],
@@ -257,7 +257,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "put on"
         ],
         "ans": 1,
-        "exp": "'Put off' = postpone."
+        "exp": "'Put off' = posponer."
       },
       {
         "q": "She ___ the job offer because the pay was too low.",
@@ -268,7 +268,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "turned out"
         ],
         "ans": 0,
-        "exp": "'Turn down' = refuse an offer."
+        "exp": "'Turn down' = rechazar una oferta."
       }
     ],
     "flashcards": [
@@ -292,23 +292,23 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
     "topic": "Phrasal Verbs",
     "explain": [
       {
-        "head": "GIVE UP — stopping a habit",
-        "body": "'Give up' means to stop doing something you used to do regularly, often a habit like smoking, or to abandon an effort or attempt before finishing it. It carries a sense of quitting rather than simply pausing — once you 'give up' on something, the implication is that you don't plan to continue or try again.",
+        "head": "GIVE UP: dejar un hábito",
+        "body": "'Give up' es dejar de hacer algo que solías hacer, como fumar, o abandonar un intento antes de terminarlo. Implica dejarlo del todo, no solo pausar: si 'das up' algo, se entiende que no piensas retomarlo.",
         "note": "He gave up smoking three years ago. · Do not give up — you are almost there!"
       },
       {
-        "head": "CALL OFF — cancelling",
-        "body": "'Call off' means to cancel something that was previously planned or arranged, such as a wedding, a match, or a meeting. It implies an active decision to stop something from going ahead, rather than the event simply failing to happen on its own.",
+        "head": "CALL OFF: cancelar",
+        "body": "'Call off' es cancelar algo que estaba planeado, como una boda o una reunión. Implica una decisión activa de detenerlo, no que el evento simplemente no ocurriera por sí solo.",
         "note": "They called off the wedding. · The match was called off because of rain."
       },
       {
-        "head": "TURN UP / TURN DOWN — volume and arrival",
-        "body": "'Turn up' and 'turn down' most commonly refer to adjusting volume or intensity — turning music up makes it louder, turning it down makes it quieter. But 'turn up' has a second, unrelated meaning: to arrive somewhere, often unexpectedly or later than planned. Only context tells you whether 'turn up' refers to volume or arrival.",
+        "head": "TURN UP / TURN DOWN: volumen y llegada",
+        "body": "'Turn up' y 'turn down' suelen referirse al volumen: subir o bajar. Pero 'turn up' tiene otro significado sin relación: llegar a algún lugar, a veces inesperadamente. Solo el contexto aclara cuál es.",
         "note": "Can you turn up the music? · She turned up an hour late."
       },
       {
-        "head": "CUT OFF — interrupting a supply or connection",
-        "body": "'Cut off' means to abruptly stop something that was flowing or continuing — this can be a utility supply like electricity or water being disconnected, or a person being interrupted mid-sentence so they can't finish speaking. In both cases, something ongoing is suddenly and completely stopped.",
+        "head": "CUT OFF: interrumpir",
+        "body": "'Cut off' es detener bruscamente algo que fluía: un suministro como la luz o el agua, o a una persona a mitad de una frase. En ambos casos, algo continuo se corta de repente y por completo.",
         "note": "Our electricity was cut off. · Sorry, I didn't mean to cut you off."
       }
     ],
@@ -322,7 +322,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "gave away"
         ],
         "ans": 0,
-        "exp": "'Give up' = stop doing something."
+        "exp": "'Give up' = dejar de hacer algo."
       },
       {
         "q": "The fire alarm ___ during the night.",
@@ -333,7 +333,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "went up"
         ],
         "ans": 0,
-        "exp": "'Go off' = ring/sound (alarm) or explode."
+        "exp": "'Go off' = sonar (alarma) o explotar."
       }
     ],
     "flashcards": [
@@ -353,23 +353,23 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
     "topic": "Phrasal Verbs",
     "explain": [
       {
-        "head": "PICK UP — collecting and learning informally",
-        "body": "'Pick up' has two common, unrelated meanings: to collect a person or object, typically by car, from a particular place ('I'll pick you up at 6'), and to acquire a skill or knowledge informally, through exposure and practice rather than structured study ('she picked up Japanese by watching films'). Context — what follows the phrase and what the object is — makes clear which sense is intended.",
+        "head": "PICK UP: recoger y aprender",
+        "body": "'Pick up' tiene dos sentidos sin relación: recoger a alguien o algo, normalmente en auto ('I'll pick you up at 6'), y adquirir una habilidad de forma informal, sin estudio estructurado ('she picked up Japanese by watching films'). El contexto aclara cuál aplica.",
         "note": "I'll pick you up at 6. · She picked up Japanese just by watching films."
       },
       {
-        "head": "TAKE UP and BRING UP",
-        "body": "'Take up' means to begin a new hobby or activity that you didn't do before, showing a fresh commitment of time to it. 'Bring up' has two separate senses: to raise a child from birth to adulthood, or to introduce a topic into a conversation that wasn't being discussed yet. The two phrasal verbs look similar in structure but have completely different meanings, so it helps to learn them as separate fixed expressions.",
+        "head": "TAKE UP y BRING UP",
+        "body": "'Take up' es empezar un nuevo pasatiempo. 'Bring up' tiene dos sentidos distintos: criar a un hijo, o mencionar un tema en una conversación. Se parecen en estructura pero significan cosas totalmente distintas.",
         "note": "He took up painting last year. · She was brought up in Spain. · Do not bring up politics at dinner."
       },
       {
-        "head": "PUT UP WITH — tolerating",
-        "body": "'Put up with' means to endure or tolerate something unpleasant or annoying without complaining or trying to stop it. It's a three-word phrasal verb, and the object always comes after 'with' at the very end — you cannot separate the parts or place the object in the middle, unlike some two-word separable phrasal verbs.",
+        "head": "PUT UP WITH: tolerar",
+        "body": "'Put up with' es aguantar algo molesto sin quejarte ni intentar detenerlo. Es un phrasal verb de tres palabras: el objeto siempre va después de 'with', al final, sin separarse como en otros separables de dos palabras.",
         "note": "I cannot put up with his constant complaints. · How do you put up with this noise?"
       },
       {
-        "head": "LET DOWN — disappointing",
-        "body": "'Let someone down' means to disappoint them by failing to fulfil an expectation, promise, or responsibility they were counting on you for. It implies the other person trusted or relied on you in some way, and that trust wasn't rewarded — a slightly stronger, more personal word than simply 'disappoint'.",
+        "head": "LET DOWN: decepcionar",
+        "body": "'Let someone down' es decepcionar a alguien al no cumplir una expectativa o promesa que esperaba de ti. Implica que esa persona confiaba en ti y esa confianza no se cumplió; es más fuerte y personal que 'disappoint'.",
         "note": "I promise I will not let you down."
       }
     ],
@@ -383,7 +383,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "picked in"
         ],
         "ans": 0,
-        "exp": "'Pick up' = learn informally."
+        "exp": "'Pick up' = aprender de forma informal."
       },
       {
         "q": "I can't ___ with his constant complaints.",
@@ -394,7 +394,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "put in"
         ],
         "ans": 0,
-        "exp": "'Put up with' = tolerate."
+        "exp": "'Put up with' = tolerar."
       }
     ],
     "flashcards": [
@@ -417,23 +417,23 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
     "topic": "Phrasal Verbs",
     "explain": [
       {
-        "head": "LOOK UP TO — admiring someone",
-        "body": "'Look up to' someone means to admire and respect them, often seeing them as an example or role model to follow, typically because of their achievements, character, or position. It has a natural opposite, 'look down on', which means to consider someone inferior or to feel superior to them — the two expressions form a clear pair of contrasting attitudes toward another person.",
+        "head": "LOOK UP TO: admirar a alguien",
+        "body": "'Look up to' es admirar y respetar a alguien, viéndolo como ejemplo a seguir por sus logros o carácter. Su opuesto es 'look down on': considerar a alguien inferior. Forman un par de actitudes contrarias.",
         "note": "He was looked up to as a hero after saving the child. · Kids often look up to their older siblings."
       },
       {
-        "head": "FALL OUT WITH — arguing",
-        "body": "'Fall out with' someone describes having a serious disagreement or argument that damages or ends a relationship, not just a minor difference of opinion. The phrase usually implies some lasting consequence — the people involved may stop speaking to each other afterward, since the argument leaves real damage behind.",
+        "head": "FALL OUT WITH: pelearse",
+        "body": "'Fall out with' alguien describe una discusión seria que daña o termina una relación, no solo una diferencia menor. Suele implicar una consecuencia duradera, como dejar de hablarse después.",
         "note": "She fell out with her sister. They do not speak anymore."
       },
       {
-        "head": "SET UP and END UP",
-        "body": "'Set up' means to establish, organize, or start something from scratch, such as a company or a piece of equipment — it marks a deliberate beginning. 'End up', by contrast, describes where you finally arrive after a series of events, often somewhere unplanned or unexpected, as when getting lost leads you to end up in the wrong town. The two verbs sit at opposite ends of a process: one marks a planned start, the other an often-unplanned result.",
+        "head": "SET UP y END UP",
+        "body": "'Set up' es establecer algo desde cero, como una empresa: un comienzo deliberado. 'End up' describe dónde terminas tras una serie de eventos, a menudo sin planearlo. Son opuestos: uno marca un inicio planeado, el otro un resultado imprevisto.",
         "note": "They set up a new company. · We got lost and ended up in the wrong town."
       },
       {
-        "head": "MAKE UP — invent or reconcile",
-        "body": "'Make up' has two quite different meanings depending on context: to invent something, like a story or an excuse, that isn't true, or for two people who have argued to become friends again and resolve their disagreement. Despite sharing the same words, these two senses have nothing to do with each other, so the surrounding sentence is what tells you which one is meant.",
+        "head": "MAKE UP: inventar o reconciliarse",
+        "body": "'Make up' tiene dos sentidos distintos según el contexto: inventar algo falso, como una excusa, o que dos personas hagan las paces tras una pelea. Aunque comparten las mismas palabras, no tienen relación entre sí.",
         "note": "He made up an excuse. · They had a fight but made up the next day."
       }
     ],
@@ -447,7 +447,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "looked into"
         ],
         "ans": 1,
-        "exp": "'Look up to' = admire/respect."
+        "exp": "'Look up to' = admirar/respetar."
       },
       {
         "q": "She ___ her sister. They don't speak anymore.",
@@ -458,7 +458,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "fell over"
         ],
         "ans": 0,
-        "exp": "'Fall out with' = have a serious argument."
+        "exp": "'Fall out with' = tener una discusión seria."
       }
     ],
     "flashcards": [
@@ -478,23 +478,23 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
     "topic": "Phrasal Verbs",
     "explain": [
       {
-        "head": "DEAL WITH — handling a problem",
-        "body": "'Deal with' means to take responsibility for a problem, task, or situation and actively handle it, rather than ignoring it or leaving it unresolved. It's a general-purpose expression that works for almost any kind of issue that needs addressing, from a broken appliance to a difficult person.",
+        "head": "DEAL WITH: manejar un problema",
+        "body": "'Deal with' es responsabilizarte de un problema y afrontarlo activamente, en vez de ignorarlo. Es una expresión general que sirve para casi cualquier asunto que necesite atención, desde un aparato roto hasta una persona difícil.",
         "note": "We need to deal with this issue before it gets worse."
       },
       {
-        "head": "COME UP WITH — producing an idea",
-        "body": "'Come up with' means to think of or produce something new, such as an idea, plan, excuse, or solution, often through creative or mental effort. It emphasizes the moment something is generated, usually in response to a need or a problem that required a solution.",
+        "head": "COME UP WITH: producir una idea",
+        "body": "'Come up with' es pensar o producir algo nuevo, como una idea o solución, mediante esfuerzo creativo o mental. Resalta el momento en que algo se genera, normalmente para resolver una necesidad.",
         "note": "She came up with a brilliant idea."
       },
       {
-        "head": "KEEP UP WITH and CATCH UP",
-        "body": "'Keep up with' means to maintain the same pace, speed, or level as someone or something else without falling behind — like keeping up with the news by following it continuously. 'Catch up', by contrast, describes closing a gap after you've already fallen behind, until you reach the same level as everyone else. So 'keep up' is about staying level throughout, while 'catch up' is about recovering lost ground.",
+        "head": "KEEP UP WITH y CATCH UP",
+        "body": "'Keep up with' es mantener el mismo ritmo que otros sin quedarte atrás. 'Catch up' es cerrar la brecha después de haberte quedado atrás, hasta alcanzar el mismo nivel. Uno es mantenerse al día; el otro, recuperar terreno perdido.",
         "note": "It is hard to keep up with all the news. · I missed a class, so I need to catch up."
       },
       {
-        "head": "GET USED TO — becoming accustomed",
-        "body": "'Get used to' followed by a noun or an -ing form describes the gradual process of becoming familiar and comfortable with something new, until it no longer feels strange. It's easy to confuse with 'used to' + base verb, which instead describes a past habit that no longer happens ('I used to smoke') — the two look similar but express completely different ideas, one about adapting to something present, the other about a discontinued past routine.",
+        "head": "GET USED TO: acostumbrarse",
+        "body": "'Get used to' + sustantivo o -ing describe el proceso de acostumbrarte a algo nuevo. No confundir con 'used to' + verbo base, que describe un hábito pasado que ya no ocurre ('I used to smoke'): una es adaptación presente, la otra rutina descontinuada.",
         "note": "It took me a while to get used to the new software. · I'm used to waking up early now."
       }
     ],
@@ -508,7 +508,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "deal off"
         ],
         "ans": 0,
-        "exp": "'Deal with' = handle a problem."
+        "exp": "'Deal with' = manejar un problema."
       },
       {
         "q": "It took me a while to ___ the new software.",
@@ -519,7 +519,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "get off"
         ],
         "ans": 2,
-        "exp": "'Get used to' = become accustomed to."
+        "exp": "'Get used to' = acostumbrarse a algo."
       }
     ],
     "flashcards": [
@@ -542,23 +542,23 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
     "topic": "Phrasal Verbs",
     "explain": [
       {
-        "head": "AWAY — leaving, discarding, giving",
-        "body": "The particle 'away' often signals distance being created — leaving a place, getting rid of an object you no longer want, or giving something to another person so it's no longer yours. 'Get away' means to escape or take a break somewhere else, 'throw away' means to discard, and 'give away' means to hand something over for free. This shared sense of moving something (or yourself) apart from where it was is what connects these otherwise different verbs.",
+        "head": "AWAY: irse, tirar, regalar",
+        "body": "'Away' suele indicar que se crea distancia: irse de un lugar, deshacerte de algo, o dárselo a otra persona. 'Get away' es escapar o hacer una escapada, 'throw away' es tirar, y 'give away' es regalar. Todos comparten la idea de alejar algo (o alejarte tú).",
         "note": "Let's get away for the weekend. · Don't throw away that box! · She gave away all her old clothes."
       },
       {
-        "head": "GIVE AWAY — revealing a secret",
-        "body": "Besides meaning to donate something, 'give away' also has a second sense: to accidentally reveal information that was meant to stay secret, such as the ending of a film or a surprise. In both meanings, something that belonged only to you — an object or a piece of private information — ends up being handed over to someone else, whether intentionally or not.",
+        "head": "GIVE AWAY: revelar un secreto",
+        "body": "Además de donar, 'give away' también significa revelar sin querer información que debía ser secreta, como el final de una película. En ambos sentidos, algo que era solo tuyo termina en manos de otro, a propósito o por accidente.",
         "note": "Do not give away the ending of the film!"
       },
       {
-        "head": "BACK — returning and repeating",
-        "body": "The particle 'back' typically signals a return to an earlier point — physically returning somewhere, returning an object or favor, or repeating an action that already happened once before. 'Call back' means to return a phone call, 'get back' means to return to a place, and 'pay back' means to return money you owe. This common thread of 'returning' runs through most 'back' phrasal verbs, even though the exact activity differs each time.",
+        "head": "BACK: volver y repetir",
+        "body": "'Back' suele indicar un regreso a un punto anterior: volver físicamente, devolver algo, o repetir una acción ya hecha antes. 'Call back' es devolver una llamada, 'get back' es regresar, y 'pay back' es devolver dinero. La idea de 'volver' conecta la mayoría de estos verbos.",
         "note": "I'll call you back later. · What time will you get back? · He paid back the loan."
       },
       {
-        "head": "BREAK DOWN — losing emotional control",
-        "body": "'Break down' most familiarly describes a machine or vehicle stopping working, but when the subject is a person, it takes on a very different meaning: losing emotional control and crying, often after receiving upsetting news. The link between the two senses is the idea of something, or someone, suddenly failing to keep functioning normally — a car stops running, a person stops holding back their emotions.",
+        "head": "BREAK DOWN: perder el control emocional",
+        "body": "'Break down' describe una máquina que deja de funcionar, pero con una persona como sujeto significa perder el control emocional y llorar, a menudo tras una mala noticia. El vínculo entre ambos sentidos: algo deja de funcionar con normalidad.",
         "note": "She broke down in tears when she heard the news."
       }
     ],
@@ -572,7 +572,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "breaks away"
         ],
         "ans": 0,
-        "exp": "'Break down' (person) = cry / lose control emotionally."
+        "exp": "'Break down' (persona) = llorar / perder el control emocional."
       },
       {
         "q": "They ___ an agreement after hours of negotiation.",
@@ -583,7 +583,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
           "came over"
         ],
         "ans": 0,
-        "exp": "'Come up with' = produce/think of something."
+        "exp": "'Come up with' = producir/pensar algo."
       }
     ],
     "flashcards": [

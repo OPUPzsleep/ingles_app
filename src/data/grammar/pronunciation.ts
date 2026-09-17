@@ -29,36 +29,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "concentrate",
         "ipa": "/ˈkɒnsəntreɪt/",
+        "aprox": "kónsentreit",
         "def": "concentrarse",
         "ex": "I'm trying to concentrate."
       },
       {
         "w": "at the moment",
         "ipa": "/æt ðə ˈmoʊmənt/",
+        "aprox": "at de móument",
         "def": "en este momento",
         "ex": "I'm busy at the moment."
       },
       {
         "w": "currently",
         "ipa": "/ˈkɜːrəntli/",
+        "aprox": "kérrentli",
         "def": "actualmente",
         "ex": "She's currently working from home."
       },
       {
         "w": "still",
         "ipa": "/stɪl/",
+        "aprox": "stíl",
         "def": "todavía",
         "ex": "Are you still waiting?"
       },
       {
         "w": "right now",
         "ipa": "/raɪt naʊ/",
+        "aprox": "rait náu",
         "def": "ahora mismo",
         "ex": "I can't talk right now."
       },
       {
         "w": "getting better",
         "ipa": "/ˈɡetɪŋ ˈbetər/",
+        "aprox": "guétin béter",
         "def": "mejorando",
         "ex": "My English is getting better."
       }
@@ -88,36 +94,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "usually",
         "ipa": "/ˈjuːʒuəli/",
+        "aprox": "iúshuali",
         "def": "normalmente / generalmente",
         "ex": "I usually wake up at 7."
       },
       {
         "w": "always",
         "ipa": "/ˈɔːlweɪz/",
+        "aprox": "ólueis",
         "def": "siempre",
         "ex": "She always drinks coffee."
       },
       {
         "w": "never",
         "ipa": "/ˈnevər/",
+        "aprox": "néver",
         "def": "nunca",
         "ex": "He never eats meat."
       },
       {
         "w": "sometimes",
         "ipa": "/ˈsʌmtaɪmz/",
+        "aprox": "sámtaimz",
         "def": "a veces",
         "ex": "I sometimes work late."
       },
       {
         "w": "often",
         "ipa": "/ˈɒfən/",
+        "aprox": "ófen",
         "def": "frecuentemente",
         "ex": "Do you often go to the gym?"
       },
       {
         "w": "every day",
         "ipa": "/ˈevri deɪ/",
+        "aprox": "évri dei",
         "def": "todos los días",
         "ex": "I study English every day."
       }
@@ -149,36 +161,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "yesterday",
         "ipa": "/ˈjestərdeɪ/",
+        "aprox": "iésterdei",
         "def": "ayer",
         "ex": "I called her yesterday."
       },
       {
         "w": "last week",
         "ipa": "/læst wiːk/",
+        "aprox": "last uík",
         "def": "la semana pasada",
         "ex": "We met last week."
       },
       {
         "w": "ago",
         "ipa": "/əˈɡoʊ/",
+        "aprox": "egóu",
         "def": "hace (tiempo)",
         "ex": "I saw him two days ago."
       },
       {
         "w": "in 2020",
         "ipa": "/ɪn ˌtwenti ˈtwenti/",
+        "aprox": "in tuenti tuénti",
         "def": "en 2020",
         "ex": "She was born in 2020."
       },
       {
         "w": "suddenly",
         "ipa": "/ˈsʌdənli/",
+        "aprox": "sádenli",
         "def": "de repente",
         "ex": "Suddenly the phone rang."
       },
       {
         "w": "immediately",
         "ipa": "/ɪˈmiːdiətli/",
+        "aprox": "imídietli",
         "def": "inmediatamente",
         "ex": "She left immediately."
       }
@@ -210,36 +228,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "just",
         "ipa": "/dʒʌst/",
+        "aprox": "yást",
         "def": "justo / recién",
         "ex": "I've just arrived."
       },
       {
         "w": "already",
         "ipa": "/ɔːlˈredi/",
+        "aprox": "olrédi",
         "def": "ya",
         "ex": "She's already left."
       },
       {
         "w": "yet",
         "ipa": "/jet/",
+        "aprox": "iét",
         "def": "todavía / ya (preguntas)",
         "ex": "Have you finished yet?"
       },
       {
         "w": "ever",
         "ipa": "/ˈevər/",
+        "aprox": "éver",
         "def": "alguna vez",
         "ex": "Have you ever been to Japan?"
       },
       {
         "w": "never",
         "ipa": "/ˈnevər/",
+        "aprox": "néver",
         "def": "nunca",
         "ex": "I've never tried sushi."
       },
       {
         "w": "recently",
         "ipa": "/ˈriːsəntli/",
+        "aprox": "rísentli",
         "def": "recientemente",
         "ex": "Have you seen him recently?"
       }
@@ -261,24 +285,28 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "by the time",
         "ipa": "/baɪ ðə taɪm/",
+        "aprox": "bai de táim",
         "def": "cuando / para cuando",
         "ex": "By the time I arrived, she had left."
       },
       {
         "w": "already",
         "ipa": "/ɔːlˈredi/",
+        "aprox": "olrédi",
         "def": "ya (énfasis en pasado)",
         "ex": "He had already eaten."
       },
       {
         "w": "before",
         "ipa": "/bɪˈfɔːr/",
+        "aprox": "bifór",
         "def": "antes",
         "ex": "I had met her before."
       },
       {
         "w": "after",
         "ipa": "/ˈæftər/",
+        "aprox": "áfter",
         "def": "después de",
         "ex": "After she had left, I called."
       }
@@ -309,36 +337,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "manage to",
         "ipa": "/ˈmænɪdʒ tʊ/",
+        "aprox": "mánich tu",
         "def": "lograr / poder (con esfuerzo)",
         "ex": "I managed to pass the exam."
       },
       {
         "w": "be able to",
         "ipa": "/biː ˈeɪbəl tʊ/",
+        "aprox": "bi éibol tu",
         "def": "ser capaz de / poder",
         "ex": "Will you be able to come?"
       },
       {
         "w": "succeed in",
         "ipa": "/səkˈsiːd ɪn/",
+        "aprox": "seksíd in",
         "def": "tener éxito en / lograr",
         "ex": "She succeeded in finding a job."
       },
       {
         "w": "fluent",
         "ipa": "/ˈfluːənt/",
+        "aprox": "flúent",
         "def": "fluido / con fluidez",
         "ex": "He's fluent in Spanish."
       },
       {
         "w": "capable of",
         "ipa": "/ˈkeɪpəbəl əv/",
+        "aprox": "kéipabol ov",
         "def": "capaz de",
         "ex": "She's capable of great things."
       },
       {
         "w": "struggle to",
         "ipa": "/ˈstrʌɡəl tʊ/",
+        "aprox": "strágol tu",
         "def": "luchar por / tener dificultad para",
         "ex": "I struggle to wake up early."
       }
@@ -368,36 +402,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "suppose",
         "ipa": "/səˈpoʊz/",
+        "aprox": "sepóus",
         "def": "suponer / imaginar",
         "ex": "Suppose you won the lottery..."
       },
       {
         "w": "unless",
         "ipa": "/ənˈles/",
+        "aprox": "enlés",
         "def": "a menos que",
         "ex": "I'll go unless it rains."
       },
       {
         "w": "provided that",
         "ipa": "/prəˈvaɪdɪd ðæt/",
+        "aprox": "prevaídid dat",
         "def": "siempre que / con tal de que",
         "ex": "I'll help provided that you try."
       },
       {
         "w": "in that case",
         "ipa": "/ɪn ðæt keɪs/",
+        "aprox": "in dat kéis",
         "def": "en ese caso",
         "ex": "In that case, I'd stay home."
       },
       {
         "w": "otherwise",
         "ipa": "/ˈʌðərwaɪz/",
+        "aprox": "áderuais",
         "def": "de lo contrario",
         "ex": "Study hard, otherwise you'll fail."
       },
       {
         "w": "as long as",
         "ipa": "/æz lɒŋ æz/",
+        "aprox": "as lóng as",
         "def": "siempre que / mientras que",
         "ex": "You can come as long as you're quiet."
       }
@@ -428,36 +468,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "be made of",
         "ipa": "/biː meɪd ʌv/",
+        "aprox": "bi méid ov",
         "def": "estar hecho de",
         "ex": "The table is made of wood."
       },
       {
         "w": "be built in",
         "ipa": "/biː bɪlt ɪn/",
+        "aprox": "bi bílt in",
         "def": "ser construido en",
         "ex": "The bridge was built in 1950."
       },
       {
         "w": "be known as",
         "ipa": "/biː noʊn æz/",
+        "aprox": "bi nóun as",
         "def": "ser conocido como",
         "ex": "He's known as a great teacher."
       },
       {
         "w": "be sent",
         "ipa": "/biː sent/",
+        "aprox": "bi sént",
         "def": "ser enviado",
         "ex": "The letter was sent yesterday."
       },
       {
         "w": "be expected",
         "ipa": "/biː ɪkˈspektɪd/",
+        "aprox": "bi ekspékted",
         "def": "se espera que",
         "ex": "She is expected to arrive soon."
       },
       {
         "w": "be considered",
         "ipa": "/biː kənˈsɪdərd/",
+        "aprox": "bi konsíderd",
         "def": "ser considerado",
         "ex": "It's considered rude to interrupt."
       }
@@ -488,36 +534,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "the Internet",
         "ipa": "/ðə ˈɪntərnet/",
+        "aprox": "de ínternet",
         "def": "el internet (siempre con 'the')",
         "ex": "I found it on the Internet."
       },
       {
         "w": "a couple of",
         "ipa": "/ə ˈkʌpəl əv/",
+        "aprox": "e kápol ov",
         "def": "un par de",
         "ex": "I'll be there in a couple of minutes."
       },
       {
         "w": "in general",
         "ipa": "/ɪn ˈdʒenərəl/",
+        "aprox": "in yéneral",
         "def": "en general",
         "ex": "In general, I like coffee."
       },
       {
         "w": "specific",
         "ipa": "/spəˈsɪfɪk/",
+        "aprox": "spesífik",
         "def": "específico",
         "ex": "Is there a specific reason?"
       },
       {
         "w": "introduce",
         "ipa": "/ˌɪntrəˈdjuːs/",
+        "aprox": "intrediús",
         "def": "presentar / mencionar por primera vez",
         "ex": "Let me introduce a new concept."
       },
       {
         "w": "unique",
         "ipa": "/juːˈniːk/",
+        "aprox": "iuník",
         "def": "único",
         "ex": "The sun is unique in our solar system."
       }
@@ -539,24 +591,28 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "relative clause",
         "ipa": "/ˈrelətɪv klɔːz/",
+        "aprox": "rélativ klós",
         "def": "oración de relativo",
         "ex": "The man who called is my boss."
       },
       {
         "w": "refer to",
         "ipa": "/rɪˈfɜːr tʊ/",
+        "aprox": "rifér tu",
         "def": "referirse a",
         "ex": "Who does 'he' refer to?"
       },
       {
         "w": "identify",
         "ipa": "/aɪˈdentɪfaɪ/",
+        "aprox": "aidéntifai",
         "def": "identificar",
         "ex": "Which clause identifies the person?"
       },
       {
         "w": "define",
         "ipa": "/dɪˈfaɪn/",
+        "aprox": "difáin",
         "def": "definir",
         "ex": "A defining clause gives essential information."
       }
@@ -578,24 +634,28 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "nevertheless",
         "ipa": "/ˌnevərðəˈles/",
+        "aprox": "neverdelés",
         "def": "sin embargo / no obstante",
         "ex": "It was hard. Nevertheless, she succeeded."
       },
       {
         "w": "however",
         "ipa": "/haʊˈevər/",
+        "aprox": "jauéver",
         "def": "sin embargo",
         "ex": "I was tired. However, I kept going."
       },
       {
         "w": "even so",
         "ipa": "/ˈiːvən soʊ/",
+        "aprox": "íven sóu",
         "def": "aun así",
         "ex": "It rained. Even so, we went out."
       },
       {
         "w": "in spite of this",
         "ipa": "/ɪn spaɪt əv ðɪs/",
+        "aprox": "in spáit ov dis",
         "def": "a pesar de esto",
         "ex": "In spite of this, she passed."
       }
@@ -625,36 +685,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "slightly",
         "ipa": "/ˈslaɪtli/",
+        "aprox": "sláitli",
         "def": "ligeramente",
         "ex": "It's slightly better than before."
       },
       {
         "w": "considerably",
         "ipa": "/kənˈsɪdərəbli/",
+        "aprox": "konsíderabli",
         "def": "considerablemente",
         "ex": "It's considerably more expensive."
       },
       {
         "w": "far more",
         "ipa": "/fɑːr mɔːr/",
+        "aprox": "far mór",
         "def": "mucho más",
         "ex": "This is far more interesting."
       },
       {
         "w": "by far",
         "ipa": "/baɪ fɑːr/",
+        "aprox": "bai fár",
         "def": "con diferencia",
         "ex": "She's by far the best student."
       },
       {
         "w": "whereas",
         "ipa": "/weərˈæz/",
+        "aprox": "uerás",
         "def": "mientras que (contraste)",
         "ex": "He's tall, whereas his brother is short."
       },
       {
         "w": "in comparison",
         "ipa": "/ɪn kəmˈpærɪsən/",
+        "aprox": "in kompárison",
         "def": "en comparación",
         "ex": "In comparison, this is much cheaper."
       }
@@ -676,36 +742,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "on time",
         "ipa": "/ɒn taɪm/",
+        "aprox": "on táim",
         "def": "puntual / a tiempo",
         "ex": "The train arrived on time."
       },
       {
         "w": "in time",
         "ipa": "/ɪn taɪm/",
+        "aprox": "in táim",
         "def": "a tiempo (suficiente)",
         "ex": "We arrived in time to catch the train."
       },
       {
         "w": "at the moment",
         "ipa": "/æt ðə ˈmoʊmənt/",
+        "aprox": "at de móument",
         "def": "en este momento",
         "ex": "She's busy at the moment."
       },
       {
         "w": "in the end",
         "ipa": "/ɪn ðə end/",
+        "aprox": "in di énd",
         "def": "al final / finalmente",
         "ex": "In the end, everything worked out."
       },
       {
         "w": "at last",
         "ipa": "/æt læst/",
+        "aprox": "at lást",
         "def": "por fin",
         "ex": "At last, the weekend is here!"
       },
       {
         "w": "by now",
         "ipa": "/baɪ naʊ/",
+        "aprox": "bai náu",
         "def": "a estas alturas / para ahora",
         "ex": "She should be home by now."
       }
@@ -727,36 +799,42 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       {
         "w": "give up",
         "ipa": "/ɡɪv ˈʌp/",
+        "aprox": "guiv áp",
         "def": "rendirse / dejar de",
         "ex": "Don't give up! Keep trying."
       },
       {
         "w": "look after",
         "ipa": "/lʊk ˈæftər/",
+        "aprox": "luk áfter",
         "def": "cuidar de",
         "ex": "Can you look after the kids?"
       },
       {
         "w": "find out",
         "ipa": "/faɪnd ˈaʊt/",
+        "aprox": "fáind áut",
         "def": "descubrir / enterarse",
         "ex": "I need to find out what happened."
       },
       {
         "w": "put off",
         "ipa": "/pʊt ˈɒf/",
+        "aprox": "put óf",
         "def": "posponer",
         "ex": "Don't put off what you can do today."
       },
       {
         "w": "carry on",
         "ipa": "/ˌkæri ˈɒn/",
+        "aprox": "kári ón",
         "def": "continuar / seguir",
         "ex": "Carry on — you're doing great."
       },
       {
         "w": "run out of",
         "ipa": "/rʌn ˈaʊt əv/",
+        "aprox": "ran áut ov",
         "def": "quedarse sin",
         "ex": "We've run out of milk."
       }

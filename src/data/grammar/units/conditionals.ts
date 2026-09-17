@@ -6,18 +6,18 @@ export const conditionalsUnits: Record<number, Unit> = {
     "topic": "Conditionals",
     "explain": [
       {
-        "head": "1st Conditional — real/possible",
-        "body": "The first conditional describes a future situation that is realistic and quite likely to happen — a genuine possibility, not just a fantasy. The structure is 'if + present simple' in the condition clause, followed by 'will + base verb' in the result clause, because the present simple here is simply the grammar's way of marking a real future condition. Compare this with the second conditional below, which uses a very similar pattern but shifts everything to describe something imaginary rather than realistic.",
+        "head": "1er condicional: futuro real",
+        "body": "Describe algo que sí puede pasar en el futuro. Fórmula: 'if + presente simple' + 'will + verbo base'. Igual que en español ('si llueve, nos quedaremos'), después de 'if' nunca se pone 'will'.",
         "note": "If it rains tomorrow, we'll stay at home. · If you study hard, you will pass."
       },
       {
-        "head": "2nd Conditional — unreal/imaginary NOW",
-        "body": "The second conditional describes a situation that is imaginary, hypothetical, or simply untrue right now — you're talking about a different, invented present, not a realistic possibility. The structure is 'if + past simple' followed by 'would/could + base verb'; the past tense here doesn't refer to past time at all, it's a grammatical signal that the whole idea is unreal. This is what separates it from the first conditional, which uses present tense forms because it describes something that could genuinely happen.",
+        "head": "2do condicional: presente imaginario",
+        "body": "Habla de algo irreal o hipotético en el presente. Fórmula: 'if + pasado simple' + 'would/could + verbo base'. Ese pasado no indica tiempo pasado: equivale al subjuntivo español de 'si tuviera…, viajaría'.",
         "note": "If I had a car, I would drive you. (I don't have a car) · If I were rich, I'd travel the world."
       },
       {
-        "head": "Were for all persons (2nd conditional)",
-        "body": "Because the second conditional is about something unreal, English traditionally uses the special form 'were' (instead of 'was') with every subject — I, he, she, it — inside the if-clause, as an extra grammatical marker that the situation is imaginary. You'll still hear 'was' used informally in casual speech, but 'were' is considered the correct and more formal choice, especially in the common fixed phrase 'if I were you'. This 'were' is a leftover of an older verb form English once used specifically for unreal or hypothetical ideas.",
+        "head": "Were con todas las personas",
+        "body": "En el 2do condicional se usa 'were' con todos los sujetos, no 'was': marca que la situación es imaginaria, como el 'fuera' del español. En el habla informal se oye 'was', pero 'were' es lo correcto, sobre todo en 'if I were you'.",
         "note": "If I were you… · If she were here… · If it were possible…"
       }
     ],
@@ -50,7 +50,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "will have"
         ],
         "ans": 1,
-        "exp": "2nd conditional: if + past simple → 'If I had…'"
+        "exp": "2do condicional: if + pasado simple → 'If I had…'"
       },
       {
         "q": "If it ___ tomorrow, we'll cancel the picnic.",
@@ -61,7 +61,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "rain"
         ],
         "ans": 1,
-        "exp": "1st conditional: if + present simple → 'if it rains'"
+        "exp": "1er condicional: if + presente simple → 'if it rains'"
       },
       {
         "q": "If I ___ you, I'd talk to her about it.",
@@ -72,7 +72,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "be"
         ],
         "ans": 2,
-        "exp": "2nd conditional: use 'were': 'If I were you…'"
+        "exp": "2do condicional: se usa 'were': 'If I were you…'"
       }
     ],
     "flashcards": [
@@ -92,18 +92,18 @@ export const conditionalsUnits: Record<number, Unit> = {
     "topic": "Conditionals",
     "explain": [
       {
-        "head": "I wish + past simple — present wish",
-        "body": "We use 'wish + past simple' to talk about something in the present that we would like to be different, even though, in reality, it isn't — you're imagining an alternative present, not talking about the past. Just like in the second conditional, the past tense form doesn't refer to past time; it's the grammar's way of marking the idea as unreal or contrary to fact. The underlying feeling is regret or longing about how things currently stand.",
+        "head": "Wish + pasado simple: deseo presente",
+        "body": "Usamos 'wish + pasado simple' para desear que algo del presente fuera distinto, aunque en realidad no lo es. Igual que en el 2do condicional, ese pasado no indica tiempo pasado, sino que marca la idea como irreal. Expresa añoranza o pesar por cómo están las cosas ahora.",
         "note": "I wish I knew the answer. (I don't know) · I wish I had a car. (I don't have one)"
       },
       {
-        "head": "I wish + were",
-        "body": "For the same reason as in the second conditional, 'wish' sentences traditionally use 'were' rather than 'was' for every subject, since the whole sentence describes something unreal about the present. 'I wish I were taller' and 'I wish it weren't so cold' both keep this special form even though 'was' is sometimes heard informally. Using 'were' consistently is the safer, more standard choice, especially in writing.",
+        "head": "Wish + were para todos",
+        "body": "Por la misma razón que en el 2do condicional, con 'wish' se usa 'were' con todos los sujetos, ya que la frase describe algo irreal del presente. En el habla informal se oye 'was', pero 'were' es lo correcto, sobre todo al escribir.",
         "note": "I wish I were taller. · I wish it weren't so cold. · He wishes he were here."
       },
       {
-        "head": "I wish + would — complaints",
-        "body": "'Wish + would' is used to talk about someone else's behavior, or a situation, that annoys you and that you want to change — it usually carries a tone of complaint or frustration, not a neutral wish. Unlike 'wish + past simple', which describes a fixed state you'd like to be different, 'wish + would' focuses on an action you want someone (or something, like the weather) to start or stop doing. You generally can't use 'wish + would' about yourself, since you can't complain about your own uncooperative behavior in the same way.",
+        "head": "Wish + would: quejas",
+        "body": "'Wish + would' sirve para quejarte del comportamiento de alguien (o del clima) que te molesta, no para un deseo neutral. A diferencia de 'wish + pasado simple', que describe un estado fijo, aquí quieres que alguien empiece o deje de hacer algo. No se usa sobre uno mismo.",
         "note": "I wish you would stop making that noise. · I wish it would stop raining."
       }
     ],
@@ -117,7 +117,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "had known"
         ],
         "ans": 1,
-        "exp": "Present wish (I don't know) → wish + past simple: 'I wish I knew'."
+        "exp": "Deseo presente (no lo sé) → wish + pasado simple: 'I wish I knew'."
       },
       {
         "q": "She wishes she ___ taller.",
@@ -128,7 +128,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "would be"
         ],
         "ans": 2,
-        "exp": "Wish about present situation → wish + were: 'She wishes she were taller.'"
+        "exp": "Deseo sobre el presente → wish + were: 'She wishes she were taller.'"
       },
       {
         "q": "I wish you ___ stop talking so loudly!",
@@ -139,7 +139,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "should"
         ],
         "ans": 1,
-        "exp": "Complaint about behaviour → wish + would: 'I wish you would stop.'"
+        "exp": "Queja sobre un comportamiento → wish + would: 'I wish you would stop.'"
       }
     ],
     "flashcards": [
@@ -159,13 +159,13 @@ export const conditionalsUnits: Record<number, Unit> = {
     "topic": "Conditionals",
     "explain": [
       {
-        "head": "3rd Conditional — imaginary past",
-        "body": "The third conditional talks about an imaginary change to something that already happened in the past — the real events are fixed and can't change, so you're picturing a different past and its different, equally imaginary result. The structure is 'if + past perfect' in the condition, followed by 'would/could/might + have + past participle' in the result. Unlike the first and second conditionals, which are about the future or present, the third conditional always looks back at events that are already over and cannot be undone.",
+        "head": "3er condicional: pasado imaginario",
+        "body": "El 3er condicional imagina un cambio en algo que ya pasó: los hechos reales no pueden cambiar, así que te imaginas un pasado distinto y un resultado también imaginario. Fórmula: 'if + pasado perfecto' + 'would/could/might + have + participio'. Siempre mira hacia hechos ya terminados.",
         "note": "If I had known about the party, I would have come. · If she had studied harder, she would have passed."
       },
       {
-        "head": "I wish + past perfect — past regret",
-        "body": "We use 'wish + past perfect' to express regret about something in the past that we cannot change — you're wishing that an earlier event, or your own earlier action, had gone differently. It follows the same logic as the third conditional: the past perfect marks the idea as an imaginary alternative to something that really happened. The difference is that 'wish' expresses the personal feeling of regret directly, without needing a full if/result sentence.",
+        "head": "Wish + pasado perfecto: arrepentimiento",
+        "body": "Usamos 'wish + pasado perfecto' para lamentar algo del pasado que ya no se puede cambiar, igual que en el 3er condicional. La diferencia es que 'wish' expresa el arrepentimiento directamente, sin necesitar una oración completa con 'if'.",
         "note": "I wish I had studied harder. (I didn't — I regret it) · I wish I hadn't said that."
       }
     ],
@@ -179,7 +179,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "would know"
         ],
         "ans": 1,
-        "exp": "3rd conditional: if + past perfect → 'If I had known'."
+        "exp": "3er condicional: if + pasado perfecto → 'If I had known'."
       },
       {
         "q": "If she had studied harder, she ___ the exam.",
@@ -190,7 +190,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "had passed"
         ],
         "ans": 2,
-        "exp": "3rd conditional result → would + have + pp: 'would have passed'."
+        "exp": "Resultado del 3er condicional → would + have + participio: 'would have passed'."
       },
       {
         "q": "I wish I ___ so rude to her yesterday.",
@@ -201,7 +201,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "didn't be"
         ],
         "ans": 2,
-        "exp": "Past regret → wish + past perfect: 'I wish I hadn't been rude.'"
+        "exp": "Arrepentimiento pasado → wish + pasado perfecto: 'I wish I hadn't been rude.'"
       }
     ],
     "flashcards": [
@@ -221,13 +221,13 @@ export const conditionalsUnits: Record<number, Unit> = {
     "topic": "Conditionals",
     "explain": [
       {
-        "head": "Wish — summary of uses",
-        "body": "'Wish' changes its following verb form depending on what kind of wish you're making: 'wish + past simple' for something you want to be different right now, 'wish + would' for a complaint about someone's ongoing behavior, and 'wish + past perfect' for regret about something already finished in the past. Even though all three use 'wish', the tense that follows tells you whether the unreal idea is about the present, someone's actions, or the past. Recognizing which time each pattern refers to is the key to using 'wish' correctly.",
+        "head": "Wish: resumen de usos",
+        "body": "'Wish' cambia de forma según el deseo: 'wish + pasado simple' para algo distinto ahora, 'wish + would' para quejarte del comportamiento de alguien, y 'wish + pasado perfecto' para lamentar algo ya terminado. El tiempo verbal indica a qué momento se refiere el deseo.",
         "note": "I wish I were richer. (now) · I wish you would listen. (complaint) · I wish I had gone. (past regret)"
       },
       {
-        "head": "If only — stronger wish/regret",
-        "body": "'If only' expresses exactly the same kinds of wishes and regrets as 'I wish' — about the present, about someone's behavior, or about the past — but with more emotional force, often used when something matters a great deal to the speaker or when the regret feels especially strong. Grammatically, it follows all the same tense patterns as 'wish' (past simple, would, past perfect); only the intensity and the typical exclamation mark change. Think of it as 'I wish' turned up in volume, rather than a different grammar rule.",
+        "head": "If only: deseo más intenso",
+        "body": "'If only' expresa lo mismo que 'I wish' —sobre el presente, el comportamiento de alguien o el pasado— pero con más fuerza emocional. Sigue los mismos patrones gramaticales; solo cambia la intensidad, como un 'wish' más enfático.",
         "note": "If only I had more money! · If only I hadn't said that! · If only I could fly!"
       }
     ],
@@ -241,7 +241,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "Would"
         ],
         "ans": 1,
-        "exp": "'If only' = strong wish/regret: 'If only I had more time!'"
+        "exp": "'If only' = deseo o arrepentimiento intenso: 'If only I had more time!'"
       },
       {
         "q": "I wish I ___ that — it was a huge mistake.",
@@ -252,7 +252,7 @@ export const conditionalsUnits: Record<number, Unit> = {
           "haven't said"
         ],
         "ans": 1,
-        "exp": "Past regret → wish + past perfect: 'I wish I hadn't said that.'"
+        "exp": "Arrepentimiento pasado → wish + pasado perfecto: 'I wish I hadn't said that.'"
       }
     ],
     "flashcards": [

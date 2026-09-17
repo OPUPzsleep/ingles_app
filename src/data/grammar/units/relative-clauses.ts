@@ -6,18 +6,18 @@ export const relativeClausesUnits: Record<number, Unit> = {
     "topic": "Relative Clauses",
     "explain": [
       {
-        "head": "Who — for people",
-        "body": "We use 'who' to introduce a clause that gives more information about a person, joining two related ideas into one sentence instead of repeating the person's name or starting a new sentence. 'Who' always points back to a person, never a thing, and it can act as either the subject or the object of its own clause. Compare it with 'which' below, which does the same job but only for things, not people.",
+        "head": "WHO: para personas",
+        "body": "Introduce información sobre una persona, igual que el 'que' español en 'el hombre que vive al lado'. Nunca se usa con cosas. Dentro de su propia frase puede funcionar como sujeto o como objeto.",
         "note": "The man who lives next door is a doctor. · The woman who called you is my sister."
       },
       {
-        "head": "Which — for things",
-        "body": "'Which' plays the same role as 'who', introducing a clause that identifies or adds information about a noun, but only when that noun is a thing, animal, or idea rather than a person. Like 'who', it lets you avoid repeating the noun by linking the extra information directly onto it. If the noun refers to a person, English switches to 'who' instead — confusing the two is a common mistake for learners.",
+        "head": "WHICH: para cosas",
+        "body": "Hace el mismo trabajo que 'who', pero con cosas, animales o ideas. En español usamos 'que' para todo; en inglés hay que elegir: persona → who, cosa → which. Confundirlos es el fallo más típico.",
         "note": "The book which I'm reading is great. · The car which broke down was brand new."
       },
       {
-        "head": "That — for people or things",
-        "body": "'That' is a flexible alternative that can stand in for either 'who' (people) or 'which' (things) in defining clauses — the type that identifies exactly who or what you mean, with no comma. It's especially common in spoken English, since it works for both categories without you needing to choose between them. It cannot, however, be used in non-defining clauses (the ones set off by commas that simply add extra information), where 'who' or 'which' are required instead.",
+        "head": "THAT: vale para ambos",
+        "body": "Sustituye tanto a 'who' como a 'which' en las frases sin comas, las que identifican de quién o de qué hablas. Es la opción más cómoda al hablar. Lo que no puede es aparecer después de una coma.",
         "note": "The man that lives next door is a doctor. · The book that I'm reading is great."
       }
     ],
@@ -31,7 +31,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "where"
         ],
         "ans": 1,
-        "exp": "Person → 'who': 'The woman who lives next door.'"
+        "exp": "Persona → 'who': 'The woman who lives next door.'"
       },
       {
         "q": "The book ___ I'm reading is very interesting.",
@@ -42,7 +42,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "where"
         ],
         "ans": 2,
-        "exp": "Thing → 'which' (or 'that'): 'The book which I'm reading.'"
+        "exp": "Cosa → 'which' (o 'that'): 'The book which I'm reading.'"
       }
     ],
     "flashcards": [
@@ -77,8 +77,8 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "THAT no se puede usar después de una coma (en cláusulas no definitorias) — ahí siempre hace falta who o which."
     ],
     "dailyWords": [
-      { "w": "neighbour", "ipa": "/ˈneɪbər/", "def": "vecino/a", "ex": "My neighbour is a very kind person." },
-      { "w": "package", "ipa": "/ˈpækɪdʒ/", "def": "paquete", "ex": "I received a package this morning." }
+      { "w": "neighbour", "ipa": "/ˈneɪbər/", "aprox": "néibor", "def": "vecino/a", "ex": "My neighbour is a very kind person." },
+      { "w": "package", "ipa": "/ˈpækɪdʒ/", "aprox": "pákich", "def": "paquete", "ex": "I received a package this morning." }
     ]
   },
   "93": {
@@ -86,13 +86,13 @@ export const relativeClausesUnits: Record<number, Unit> = {
     "topic": "Relative Clauses",
     "explain": [
       {
-        "head": "Omitting who/that/which — object clauses",
-        "body": "When the relative pronoun functions as the OBJECT of its own clause — meaning some other person or thing is the one doing the action inside that clause — English allows you to drop the pronoun completely and still be understood. This is extremely common in everyday spoken English, where leaving it out often sounds more natural than including it. The test is simple: ask who or what is performing the action inside the clause; if it isn't the relative pronoun itself, omission is possible.",
+        "head": "Omitir el pronombre: objeto",
+        "body": "Cuando who/that/which es el OBJETO de su propia cláusula (otra persona o cosa hace la acción), puedes omitirlo sin problema. Es muy común en el habla cotidiana, donde suena más natural que incluirlo. Truco: pregunta quién hace la acción dentro de la cláusula; si no es el pronombre, se puede quitar.",
         "note": "The book (that) I'm reading is good. (that = object) · The man (who) I met was kind."
       },
       {
-        "head": "Cannot omit — subject clauses",
-        "body": "When the relative pronoun is itself the SUBJECT of the clause — the one carrying out the action — it must stay in the sentence, because removing it would leave the clause without a subject and the sentence would stop making sense. This is the mirror image of the object case above: object pronouns are optional, subject pronouns are compulsory. A quick check is to look at what comes right after who/that/which — a verb means it's the subject and must stay, while another noun usually means it's the object and can be dropped.",
+        "head": "No se puede omitir: sujeto",
+        "body": "Cuando el pronombre relativo ES el sujeto de la cláusula (el que realiza la acción), debe quedarse siempre — quitarlo dejaría la cláusula sin sujeto. Es lo contrario del caso anterior: objeto opcional, sujeto obligatorio. Truco: si justo después va un verbo, es sujeto y no se omite.",
         "note": "The man who called me was Tom. (who = subject — cannot omit) · The book which changed my life."
       }
     ],
@@ -106,7 +106,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "there"
         ],
         "ans": 0,
-        "exp": "'We stayed at' → 'hotel' is the object of 'stayed at' → relative pronoun can be omitted."
+        "exp": "'We stayed at' → 'hotel' es el objeto de 'stayed at', así que el pronombre relativo se puede omitir."
       },
       {
         "q": "The woman ___ phoned was my sister.",
@@ -117,7 +117,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "whose"
         ],
         "ans": 1,
-        "exp": "'Phoned' → 'woman' is the SUBJECT → cannot omit: 'who phoned'."
+        "exp": "'Phoned' → 'woman' es el SUJETO, así que no se puede omitir: 'who phoned'."
       }
     ],
     "flashcards": [
@@ -149,8 +149,8 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "En el habla cotidiana, omitir el pronombre objeto (the book I read, not the book that I read) suena más natural que incluirlo."
     ],
     "dailyWords": [
-      { "w": "wallet", "ipa": "/ˈwɒlɪt/", "def": "cartera, billetera", "ex": "I lost my wallet on the bus." },
-      { "w": "grateful", "ipa": "/ˈɡreɪtfl/", "def": "agradecido", "ex": "She was very grateful for the help." }
+      { "w": "wallet", "ipa": "/ˈwɒlɪt/", "aprox": "uólit", "def": "cartera, billetera", "ex": "I lost my wallet on the bus." },
+      { "w": "grateful", "ipa": "/ˈɡreɪtfl/", "aprox": "gréitful", "def": "agradecido", "ex": "She was very grateful for the help." }
     ]
   },
   "94": {
@@ -158,18 +158,18 @@ export const relativeClausesUnits: Record<number, Unit> = {
     "topic": "Relative Clauses",
     "explain": [
       {
-        "head": "Whose — possessive",
-        "body": "'Whose' is the possessive relative pronoun — it shows that something belongs to the person, or occasionally the thing, just mentioned, replacing a possessive word like 'his', 'her', or 'their'. It can be used for both people and things, unlike 'who', which only ever refers to people. Think of it as merging two sentences ('I know a man. His brother is famous.') into one by replacing the possessive with 'whose'.",
+        "head": "WHOSE: posesivo",
+        "body": "'Whose' muestra posesión (de quién es algo) y sustituye a un posesivo como 'his', 'her' o 'their'. A diferencia de 'who', puede usarse tanto con personas como con cosas. Piensa en él como fusionar dos frases: 'I know a man. His brother is famous' → 'I know a man whose brother is famous'.",
         "note": "The woman whose car was stolen is very upset. · I know a man whose brother is a famous actor."
       },
       {
-        "head": "Whom — formal object (people)",
-        "body": "'Whom' is the traditional object form of 'who', used when the person is the OBJECT of the relative clause rather than its subject. It belongs mainly to formal or written English — in everyday conversation, most native speakers simply use 'who' instead, or drop the pronoun altogether when the grammar allows it. Recognizing 'whom' is useful for reading formal texts, but you're unlikely to need it much in casual speech.",
+        "head": "WHOM: objeto formal",
+        "body": "'Whom' es la forma objeto de 'who', usada cuando la persona es el OBJETO de la cláusula. Pertenece al inglés formal o escrito; en conversación normal casi todos dicen simplemente 'who', o lo omiten directamente. Sirve sobre todo para reconocerlo al leer.",
         "note": "The man whom I met was kind. (formal) = The man I met was kind. (informal)"
       },
       {
-        "head": "Where — places",
-        "body": "'Where' introduces a relative clause describing a place, replacing clunkier combinations like 'in which' or 'at which' so you don't have to juggle a preposition together with 'which'. It works in both defining clauses (identifying exactly which place you mean) and non-defining clauses (adding extra detail about a place already named). Just as 'who' is the person-version and 'which' the thing-version of the relative pronoun, 'where' is the dedicated place-version.",
+        "head": "WHERE: lugares",
+        "body": "'Where' introduce una cláusula sobre un lugar, evitando combinaciones incómodas como 'in which' o 'at which'. Funciona igual en cláusulas definitorias (identifican el lugar) y no definitorias (dan un dato extra). Es el equivalente de 'who' (personas) y 'which' (cosas), pero para lugares.",
         "note": "The city where I was born is in the south. · The hotel where we stayed was lovely."
       }
     ],
@@ -183,7 +183,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "whom"
         ],
         "ans": 2,
-        "exp": "Possessive → 'whose': 'The student whose phone rang.'"
+        "exp": "Posesivo → 'whose': 'The student whose phone rang.'"
       },
       {
         "q": "That's the restaurant ___ we had our first date.",
@@ -194,7 +194,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "that"
         ],
         "ans": 2,
-        "exp": "Place → 'where': 'the restaurant where we had our first date'."
+        "exp": "Lugar → 'where': 'the restaurant where we had our first date'."
       }
     ],
     "flashcards": [
@@ -230,8 +230,8 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "WHOM casi ha desaparecido del inglés hablado; en conversación normal se usa 'who' o simplemente se omite el pronombre."
     ],
     "dailyWords": [
-      { "w": "grandparents", "ipa": "/ˈɡrænpeərənts/", "def": "abuelos", "ex": "My grandparents live in the countryside." },
-      { "w": "aunt", "ipa": "/ɑːnt/", "def": "tía", "ex": "My aunt is visiting us this weekend." }
+      { "w": "grandparents", "ipa": "/ˈɡrænpeərənts/", "aprox": "gránpearents", "def": "abuelos", "ex": "My grandparents live in the countryside." },
+      { "w": "aunt", "ipa": "/ɑːnt/", "aprox": "aant", "def": "tía", "ex": "My aunt is visiting us this weekend." }
     ]
   },
   "95": {
@@ -239,13 +239,13 @@ export const relativeClausesUnits: Record<number, Unit> = {
     "topic": "Relative Clauses",
     "explain": [
       {
-        "head": "Non-defining relative clauses — extra info",
-        "body": "A non-defining relative clause adds extra, non-essential information about someone or something that has already been fully identified — the sentence would still make complete sense without it. Because this information is 'extra' rather than 'identifying', it's set off from the rest of the sentence with commas, much like a parenthetical remark. This contrasts with defining clauses (below), which have no commas because the information inside them is essential to knowing exactly who or what is meant.",
+        "head": "Cláusulas no definitorias",
+        "body": "Una cláusula no definitoria añade información extra, no esencial, sobre algo ya identificado del todo — la frase tendría sentido sin ella. Por eso va entre comas, como un inciso. Se diferencia de las definitorias, que no llevan comas porque su información es imprescindible.",
         "note": "My brother, who lives in London, is a doctor. (extra info — I only have one brother) · Paris, which is the capital of France, is beautiful."
       },
       {
-        "head": "Defining vs Non-defining",
-        "body": "The presence or absence of commas signals which type of relative clause you're looking at: no commas means the clause is defining — essential information needed to know exactly which person or thing is being talked about. Commas mean the clause is non-defining — extra, removable detail about someone or something already clearly identified, often because there's only one of them, like 'my sister'. A useful test is to try removing the clause: if that changes who or what is being referred to, it's defining; if it only removes a nice-to-have detail, it's non-defining.",
+        "head": "Definitorias vs no definitorias",
+        "body": "Las comas indican el tipo de cláusula: sin comas es definitoria (esencial para saber de quién o qué hablamos); con comas es no definitoria (info extra y prescindible, como con 'my sister'). Truco: quita la cláusula mentalmente — si cambia el significado, es definitoria; si solo pierdes un dato, no lo es.",
         "note": "'The woman who called me is my sister.' (needed — which woman?) · 'My sister, who called me, is a teacher.' (extra info)"
       }
     ],
@@ -259,7 +259,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "whose"
         ],
         "ans": 2,
-        "exp": "Non-defining (extra info, with commas) + person → 'who'. (NOT 'that' in non-defining clauses)"
+        "exp": "No definitoria (info extra, con comas) + persona → 'who'. ('That' nunca se usa en no definitorias)."
       },
       {
         "q": "The man ___ called was my boss.",
@@ -270,7 +270,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "that,"
         ],
         "ans": 0,
-        "exp": "Defining clause (needed to identify which man) → no commas, 'who'."
+        "exp": "Cláusula definitoria (necesaria para identificar al hombre) → sin comas, 'who'."
       }
     ],
     "flashcards": [
@@ -302,8 +302,8 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "THAT nunca se usa en cláusulas no definitorias — en esos casos hace falta who o which, aunque hables de una persona."
     ],
     "dailyWords": [
-      { "w": "reservation", "ipa": "/ˌrezəˈveɪʃn/", "def": "reserva", "ex": "We made a reservation for eight o'clock." },
-      { "w": "thrilled", "ipa": "/θrɪld/", "def": "encantado, emocionadísimo", "ex": "She was thrilled to see her old friend." }
+      { "w": "reservation", "ipa": "/ˌrezəˈveɪʃn/", "aprox": "rezervéishon", "def": "reserva", "ex": "We made a reservation for eight o'clock." },
+      { "w": "thrilled", "ipa": "/θrɪld/", "aprox": "zrild", "def": "encantado, emocionadísimo", "ex": "She was thrilled to see her old friend." }
     ]
   },
   "96": {
@@ -311,13 +311,13 @@ export const relativeClausesUnits: Record<number, Unit> = {
     "topic": "Relative Clauses",
     "explain": [
       {
-        "head": "-ing to replace who/which + active verb",
-        "body": "When a relative clause uses 'who' or 'which' together with the continuous form of an active verb (is/are/was + -ing), you can shorten it by dropping both the pronoun and the auxiliary 'be', leaving just the bare -ing participle attached to the noun. This works because the -ing form alone still communicates an ongoing, active action, just more economically than the full clause. It's common in both speech and writing whenever the underlying meaning is active rather than passive — for a passive meaning, the -ed form is used instead (see below).",
+        "head": "-ING sustituye verbo activo",
+        "body": "Cuando la cláusula usa who/which + forma continua activa (is/are/was + -ing), se puede acortar quitando el pronombre y el verbo 'be', dejando solo el gerundio. El -ing por sí solo ya comunica una acción activa en curso, de forma más económica. Para significado pasivo se usa -ed (ver abajo).",
         "note": "The man who is standing in the corner → The man standing in the corner. · The car which is parked outside → The car parked outside."
       },
       {
-        "head": "-ed to replace who/which + passive verb",
-        "body": "When a relative clause uses 'who' or 'which' together with a passive verb (was/were/is + past participle), you can shorten it in the same way, but this time keeping the past participle — regular -ed or an irregular form like 'written' or 'built' — instead of an -ing form. The participle alone still signals that the noun is on the receiving end of the action, not the one doing it, exactly what the passive expressed in the full clause. This is the passive counterpart to the -ing rule above: active meaning shortens to -ing, passive meaning shortens to -ed/-en.",
+        "head": "-ED sustituye verbo pasivo",
+        "body": "Cuando la cláusula usa who/which + verbo pasivo (was/were/is + participio), se acorta igual pero conservando el participio pasado, regular o irregular ('written', 'built'). El participio indica que el sustantivo recibe la acción, no la realiza. Es el espejo del -ing: activo → -ing, pasivo → -ed.",
         "note": "The letter which was written by Tom → The letter written by Tom. · The bridge that was built in 1900 → The bridge built in 1900."
       }
     ],
@@ -331,7 +331,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "to sit"
         ],
         "ans": 1,
-        "exp": "Active verb → -ing: 'the woman sitting in the corner'."
+        "exp": "Verbo activo → -ing: 'the woman sitting in the corner'."
       },
       {
         "q": "The car ___ outside belongs to Tom. (which was parked)",
@@ -342,7 +342,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "parks"
         ],
         "ans": 2,
-        "exp": "Passive verb → -ed: 'the car parked outside'."
+        "exp": "Verbo pasivo → -ed: 'the car parked outside'."
       }
     ],
     "flashcards": [
@@ -374,8 +374,8 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "Con verbos irregulares, el participio pasado no siempre termina en -ed: 'built', 'written', 'made' funcionan igual que 'painted' o 'parked'."
     ],
     "dailyWords": [
-      { "w": "exhibition", "ipa": "/ˌeksɪˈbɪʃn/", "def": "exposición", "ex": "We visited an art exhibition last Sunday." },
-      { "w": "sculpture", "ipa": "/ˈskʌlptʃər/", "def": "escultura", "ex": "The sculpture in the garden is beautiful." }
+      { "w": "exhibition", "ipa": "/ˌeksɪˈbɪʃn/", "aprox": "eksibíshon", "def": "exposición", "ex": "We visited an art exhibition last Sunday." },
+      { "w": "sculpture", "ipa": "/ˈskʌlptʃər/", "aprox": "skálpcher", "def": "escultura", "ex": "The sculpture in the garden is beautiful." }
     ]
   },
   "97": {
@@ -383,18 +383,18 @@ export const relativeClausesUnits: Record<number, Unit> = {
     "topic": "Relative Clauses",
     "explain": [
       {
-        "head": "-ING clauses — active meaning",
-        "body": "Placing a bare -ing form right after a noun is a compact way of saying 'who/which is/are/was doing that action', without needing the relative pronoun or the verb 'be'. Because the -ing form itself already expresses an active, ongoing action, this construction only works when the noun is DOING the action, not receiving it. It's extremely common in both news writing and everyday description, since it packs the same information into fewer words.",
+        "head": "-ING: significado activo",
+        "body": "Poner un gerundio justo después de un sustantivo equivale a decir 'who/which is/was' + esa acción, sin necesitar el pronombre ni 'be'. Solo funciona cuando el sustantivo HACE la acción, no cuando la recibe. Es muy frecuente en noticias y descripciones cotidianas.",
         "note": "The man talking to Sarah is my brother. (= who is talking) · Police stopped a car driving the wrong way."
       },
       {
-        "head": "-ED clauses — passive meaning",
-        "body": "Placing a past participle — regular -ed or an irregular form like 'injured' or 'written' — right after a noun compresses 'who/which is/are/was + past participle' into a single word, carrying a PASSIVE meaning: the noun is what the action happens TO, not what performs it. This is the mirror image of the -ing clause above: -ing marks the doer of an action, -ed marks the receiver of one. Choosing correctly depends entirely on whether the noun is acting or being acted upon.",
+        "head": "-ED: significado pasivo",
+        "body": "Un participio pasado (regular o irregular, como 'injured' o 'written') justo después de un sustantivo comprime 'who/which is/was' + participio, con significado PASIVO: el sustantivo recibe la acción. Es el espejo del -ing: uno marca quien actúa, el otro quien la recibe.",
         "note": "The boy injured in the accident is in hospital. (= who was injured) · Documents written in English are accepted."
       },
       {
-        "head": "Why use them?",
-        "body": "Beyond simply being shorter, these participle clauses let writers avoid the repetitive pattern of 'who/which/that + be' appearing again and again in a text, which can sound clunky when describing several people or things one after another. This is one reason they show up so often in news reports and formal writing, where compact, information-dense sentences are valued. Recognizing them when reading is just as important as being able to produce them yourself, since you'll meet this pattern constantly in real English texts.",
+        "head": "¿Para qué sirven?",
+        "body": "Además de ser más cortas, estas cláusulas evitan repetir 'who/which/that + be' una y otra vez, algo que suena forzado al describir varias cosas seguidas. Por eso aparecen tanto en noticias y textos formales. Saber reconocerlas al leer es tan importante como saber producirlas.",
         "note": "The people invited to the party all came. (= who were invited)"
       }
     ],
@@ -408,7 +408,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "talks"
         ],
         "ans": 1,
-        "exp": "Active meaning → -ing clause."
+        "exp": "Significado activo → cláusula con -ing."
       },
       {
         "q": "The window ___ in the storm needs fixing.",
@@ -419,7 +419,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "breaks"
         ],
         "ans": 2,
-        "exp": "Passive meaning (the window was broken) → -ed clause."
+        "exp": "Significado pasivo (the window was broken) → cláusula con -ed."
       },
       {
         "q": "Do you know the man ___ over there?",
@@ -430,7 +430,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
           "stands"
         ],
         "ans": 0,
-        "exp": "Active → -ing."
+        "exp": "Activo → -ing."
       }
     ],
     "flashcards": [
@@ -462,8 +462,8 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "Pregúntate siempre: ¿el sustantivo hace la acción (-ing) o la recibe (participio pasado)? Esa es la única regla que necesitas."
     ],
     "dailyWords": [
-      { "w": "motorway", "ipa": "/ˈməʊtəweɪ/", "def": "autopista (inglés británico)", "ex": "There was an accident on the motorway this morning." },
-      { "w": "resident", "ipa": "/ˈrezɪdənt/", "def": "residente, vecino", "ex": "Local residents complained about the noise." }
+      { "w": "motorway", "ipa": "/ˈməʊtəweɪ/", "aprox": "móuteuei", "def": "autopista (inglés británico)", "ex": "There was an accident on the motorway this morning." },
+      { "w": "resident", "ipa": "/ˈrezɪdənt/", "aprox": "rézident", "def": "residente, vecino", "ex": "Local residents complained about the noise." }
     ]
   }
 };

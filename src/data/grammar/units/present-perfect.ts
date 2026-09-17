@@ -6,23 +6,23 @@ export const presentPerfectUnits: Record<number, Unit> = {
     "topic": "Present Perfect",
     "explain": [
       {
-        "head": "Form",
-        "body": "The present perfect is formed with 'have' or 'has' followed by the past participle of the main verb — 'have' for I, you, we, and they, and 'has' for he, she, and it. Many past participles are regular (the same -ed form as the past simple), but irregular verbs have their own special participle, like 'gone' or 'written', which must be learned separately. In everyday speech these auxiliaries are almost always contracted, so 'I have worked' becomes 'I've worked' and 'she has gone' becomes 'she's gone'.",
+        "head": "Forma",
+        "body": "Se forma con have/has + participio pasado: 'have' con I/you/we/they y 'has' con he/she/it. Muchos participios son regulares (-ed, como el pasado simple), pero los irregulares (gone, written...) hay que aprenderlos aparte. Al hablar casi siempre se contrae: 'I've worked', 'she's gone'.",
         "note": "I have worked → I've worked · She has gone → She's gone"
       },
       {
-        "head": "Result connected to NOW",
-        "body": "The present perfect is used when something that happened in the past still matters or has a visible effect right now, even though we don't say exactly when it happened. The focus isn't really on the past event itself, but on its consequence in the present — 'I've lost my key' tells you I don't have it now, and 'he's gone to Paris' tells you he's there at this moment. This present-day connection is what separates the present perfect from the past simple, which simply reports a finished event without linking it to now.",
+        "head": "Resultado conectado con AHORA",
+        "body": "Se usa cuando algo pasado sigue importando o teniendo efecto ahora, aunque no digamos cuándo ocurrió. El foco no está en el hecho pasado, sino en su consecuencia presente: 'I've lost my key' indica que ahora no la tienes. Aquí está la diferencia clave con el pretérito perfecto español, que no siempre implica esa conexión con el presente.",
         "note": "I've lost my key. (= I don't have it NOW) · He's gone to Paris. (= he's there NOW)"
       },
       {
-        "head": "Life experience (ever/never)",
-        "body": "We also use the present perfect to talk about experiences a person has had at some point in their life up to now, without saying exactly when — the emphasis is on whether it happened at all, not on the specific occasion. Questions with 'ever' ask about any time up to the present ('have you ever eaten sushi?'), and 'never' denies it ever happening ('I've never been to Canada'). If you later specify when it happened, English switches to the past simple instead, since the sentence now focuses on a particular moment rather than the experience in general.",
+        "head": "Experiencia de vida (ever/never)",
+        "body": "Habla de experiencias vividas hasta ahora, sin decir cuándo exactamente — importa si pasó, no el momento. 'Ever' pregunta por cualquier momento ('have you ever eaten sushi?') y 'never' lo niega. Si luego especificas cuándo pasó, se cambia a pasado simple.",
         "note": "Have you ever eaten sushi? · I've never been to Canada."
       },
       {
-        "head": "Recent news — just/recently/already/yet",
-        "body": "The present perfect is also the natural tense for announcing news or recent information, treating it as freshly relevant to the present moment rather than a distant past fact. Words like 'just' (very recently), 'already' (sooner than expected), and 'yet' (used in questions and negatives) commonly appear with it to pin down how recent or expected the news is. Once the conversation moves on to give more specific details about when or how it happened, speakers typically shift into the past simple.",
+        "head": "Noticias recientes — just/already/yet",
+        "body": "Es el tiempo natural para anunciar noticias recientes, como algo fresco y relevante ahora mismo. 'Just' (hace un momento), 'already' (antes de lo esperado) y 'yet' (en preguntas/negativas) marcan qué tan reciente o esperado es. Al dar más detalles, se suele pasar a pasado simple.",
         "note": "She's just arrived. · I've already eaten. · Have you done it yet?"
       }
     ],
@@ -55,7 +55,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "lose"
         ],
         "ans": 1,
-        "exp": "Result NOW → present perfect: 'I've lost it.' (I don't have it now)"
+        "exp": "Resultado AHORA → present perfect: 'I've lost it.' (ya no la tengo)"
       },
       {
         "q": "___ you ever been to Japan?",
@@ -66,7 +66,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "Are"
         ],
         "ans": 1,
-        "exp": "Life experience → present perfect: 'Have you ever been…?'"
+        "exp": "Experiencia de vida → present perfect: 'Have you ever been…?'"
       },
       {
         "q": "She ___ just arrived. She's in the lobby.",
@@ -77,7 +77,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "is"
         ],
         "ans": 0,
-        "exp": "Recent event with 'just' → present perfect: 'has just arrived'."
+        "exp": "Hecho reciente con 'just' → present perfect: 'has just arrived'."
       },
       {
         "q": "I've never ___ sushi.",
@@ -88,7 +88,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "eating"
         ],
         "ans": 1,
-        "exp": "Present perfect uses past participle: 'I've never eaten.'"
+        "exp": "El present perfect usa el participio: 'I've never eaten.'"
       }
     ],
     "flashcards": [
@@ -122,8 +122,8 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "'Has gone' (sigue allí) y 'has been' (fue y volvió) no son intercambiables — confundirlos es un error clásico."
     ],
     "dailyWords": [
-      { "w": "news", "ipa": "/njuːz/", "def": "noticia(s)", "ex": "I've got some good news for you." },
-      { "w": "experience", "ipa": "/ɪkˈspɪəriəns/", "def": "experiencia", "ex": "Have you ever had this experience before?" }
+      { "w": "news", "ipa": "/njuːz/", "aprox": "niús", "def": "noticia(s)", "ex": "I've got some good news for you." },
+      { "w": "experience", "ipa": "/ɪkˈspɪəriəns/", "aprox": "ekspírians", "def": "experiencia", "ex": "Have you ever had this experience before?" }
     ]
   },
   "8": {
@@ -131,23 +131,23 @@ export const presentPerfectUnits: Record<number, Unit> = {
     "topic": "Present Perfect",
     "explain": [
       {
-        "head": "JUST — very recently",
-        "body": "'Just' is used with the present perfect to say that something happened a very short time ago — moments before now, so recent it still feels connected to the present. It slots in between the auxiliary and the past participle, as in 'I've just spoken to Tom', highlighting how fresh the news or action is. This immediacy is exactly why it pairs so naturally with the present-perfect idea of a past event still relevant right now.",
+        "head": "JUST — hace un momento",
+        "body": "'Just' indica que algo pasó hace muy poco, tan reciente que aún se siente conectado con el presente. Va entre el auxiliar y el participio: 'I've just spoken to Tom'. Por eso encaja tan bien con la idea del present perfect.",
         "note": "I've just spoken to Tom. · She's just left — you've missed her!"
       },
       {
-        "head": "ALREADY — sooner than expected",
-        "body": "'Already' is used in positive present-perfect sentences to say that something happened sooner than expected, often to show that a task is done before someone assumed it would be. In 'I've already eaten', the speaker emphasizes that the eating is finished ahead of when the listener might have thought. Like 'just', it sits between the auxiliary and the past participle, and it reinforces the present-perfect sense of a completed action being relevant right now.",
+        "head": "ALREADY — antes de lo esperado",
+        "body": "'Already' se usa en frases afirmativas para decir que algo pasó antes de lo esperado, resaltando que ya está hecho. En 'I've already eaten', el hablante subraya que ya comió, antes de lo que el oyente suponía. Va entre el auxiliar y el participio, igual que 'just'.",
         "note": "'Would you like some food?' 'No thanks, I've already eaten.'"
       },
       {
-        "head": "YET — by now (negatives and questions)",
-        "body": "'Yet' appears in negative present-perfect sentences and questions to talk about whether something has happened up to now, usually placed at the very end of the sentence. In a question, 'have you done it yet?' asks if the action has occurred by this point; in a negative, 'I haven't spoken to her yet' states that it hasn't happened so far, but implies it still might. Unlike 'already', 'yet' doesn't carry any sense of surprise — it's simply checking the current status of something expected to happen.",
+        "head": "YET — todavía (negativas/preguntas)",
+        "body": "'Yet' se usa en negativas y preguntas para preguntar o decir si algo ha pasado hasta ahora, casi siempre al final de la frase: 'have you done it yet?', 'I haven't spoken to her yet'. A diferencia de 'already', no implica sorpresa, solo comprueba el estado actual.",
         "note": "Have you done it yet? · I haven't spoken to her yet."
       },
       {
-        "head": "EVER / NEVER — life experience",
-        "body": "'Ever' and 'never' are used with the present perfect to talk about life experience up to now, without pointing to any specific occasion. 'Ever' means 'at any point in your life' and is mainly used in questions, as in 'have you ever met a famous person?', while 'never' is its negative counterpart, meaning 'at no point ever', as in 'I've never eaten oysters'. Both words emphasize the whole span of a person's life rather than one particular moment, which is why they pair so naturally with this tense.",
+        "head": "EVER / NEVER — experiencia de vida",
+        "body": "'Ever' y 'never' hablan de experiencias de toda la vida hasta ahora, sin señalar un momento concreto. 'Ever' (alguna vez) se usa sobre todo en preguntas: 'have you ever met a famous person?'. 'Never' (nunca) es su negación: 'I've never eaten oysters'.",
         "note": "Have you ever met a famous person? · I've never eaten oysters."
       }
     ],
@@ -195,7 +195,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "never"
         ],
         "ans": 2,
-        "exp": "Positive sentence, sooner than expected → 'already'."
+        "exp": "Frase afirmativa, antes de lo esperado → 'already'."
       },
       {
         "q": "Have you seen that new film ___?",
@@ -206,7 +206,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "yet"
         ],
         "ans": 3,
-        "exp": "'Yet' in questions → 'Have you seen the film yet?'"
+        "exp": "'Yet' en preguntas → 'Have you seen the film yet?'"
       },
       {
         "q": "I haven't spoken to her ___.",
@@ -217,7 +217,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "ever"
         ],
         "ans": 0,
-        "exp": "'Yet' in negatives → 'I haven't spoken to her yet.'"
+        "exp": "'Yet' en negativas → 'I haven't spoken to her yet.'"
       },
       {
         "q": "It's the most exciting film I've ___ seen!",
@@ -228,7 +228,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "already"
         ],
         "ans": 1,
-        "exp": "After superlative + present perfect → 'ever': 'I've ever seen'."
+        "exp": "Después de superlativo + present perfect → 'ever': 'I've ever seen'."
       }
     ],
     "flashcards": [
@@ -267,8 +267,8 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "'Already' suena a sorpresa o rapidez ('¡ya lo hice!'), mientras que 'yet' simplemente pregunta o niega si algo ha pasado hasta ahora."
     ],
     "dailyWords": [
-      { "w": "to pack", "ipa": "/pæk/", "def": "hacer la maleta, empacar", "ex": "Have you packed your suitcase yet?" },
-      { "w": "suitcase", "ipa": "/ˈsuːtkeɪs/", "def": "maleta", "ex": "I've already put my suitcase in the car." }
+      { "w": "to pack", "ipa": "/pæk/", "aprox": "pak", "def": "hacer la maleta, empacar", "ex": "Have you packed your suitcase yet?" },
+      { "w": "suitcase", "ipa": "/ˈsuːtkeɪs/", "aprox": "sútkeis", "def": "maleta", "ex": "I've already put my suitcase in the car." }
     ]
   },
   "9": {
@@ -276,18 +276,18 @@ export const presentPerfectUnits: Record<number, Unit> = {
     "topic": "Present Perfect",
     "explain": [
       {
-        "head": "Form",
-        "body": "The present perfect continuous is built from 'have' or 'has' plus 'been' plus the main verb in its -ing form. It combines the present perfect's link to now with the continuous's idea of an ongoing activity, which is why it needs three parts instead of two: the auxiliary, 'been' (the past participle of 'be'), and the -ing verb. In speech, the auxiliary is usually contracted, so 'they have been studying' becomes 'they've been studying'.",
+        "head": "Forma",
+        "body": "Se forma con have/has + been + verbo en -ing. Combina la conexión con el presente del present perfect con la idea de acción en curso del continuo, por eso lleva tres piezas. En el habla se contrae: 'they've been studying'.",
         "note": "I have been working · She has been waiting · They've been studying"
       },
       {
-        "head": "Action in progress until now",
-        "body": "We use the present perfect continuous for an activity that started at some point in the past and has continued up until now — either it's still going on, or it has only just stopped, with visible results in the present. 'I've been waiting for an hour' tells you the waiting started an hour ago and is still happening right now. If the activity has just finished, like 'I've been running', the emphasis is on the activity itself and why you're in your current state (tired, out of breath), rather than on what you achieved.",
+        "head": "Acción en curso hasta ahora",
+        "body": "Se usa para una actividad que empezó en el pasado y sigue hasta ahora, o que acaba de parar dejando efectos visibles. 'I've been waiting for an hour' indica que sigues esperando. Si acaba de terminar ('I've been running'), el foco está en la actividad y por qué estás así (cansado), no en el resultado.",
         "note": "I've been waiting for an hour. (I'm still waiting) · I'm tired — I've been running."
       },
       {
-        "head": "Why/how long",
-        "body": "This tense is especially useful for explaining a present situation by pointing to the activity that caused it, or for asking and answering how long something has been going on. 'Why are your hands dirty? I've been fixing the car' links a visible present clue to a recent, ongoing activity, and 'how long have you been learning English?' asks about the duration of something that started in the past and continues now. In both cases, the focus is on the activity and its duration, not on a finished result.",
+        "head": "Por qué / cuánto tiempo",
+        "body": "Sirve para explicar algo visible ahora señalando la actividad que lo causó, o para preguntar cuánto tiempo lleva pasando algo. 'Why are your hands dirty? I've been fixing the car' conecta una pista presente con su causa; 'how long have you been learning English?' pregunta la duración.",
         "note": "Why are your hands dirty? I've been fixing the car. · How long have you been learning English?"
       }
     ],
@@ -321,7 +321,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "are/doing"
         ],
         "ans": 2,
-        "exp": "Explaining a present state from a recent activity → 'have you been doing?'"
+        "exp": "Explica un estado presente por una actividad reciente → 'have you been doing?'"
       },
       {
         "q": "I ___ for an hour. Where have you been?",
@@ -332,7 +332,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "have been waiting"
         ],
         "ans": 3,
-        "exp": "Activity in progress until now → 'have been waiting'."
+        "exp": "Actividad en curso hasta ahora → 'have been waiting'."
       },
       {
         "q": "How long ___ you ___ English?",
@@ -343,7 +343,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "did/learn"
         ],
         "ans": 2,
-        "exp": "Duration of ongoing activity → 'have you been learning?'"
+        "exp": "Duración de una actividad en curso → 'have you been learning?'"
       },
       {
         "q": "I'm dirty because I ___ the garden.",
@@ -354,7 +354,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "was digging"
         ],
         "ans": 2,
-        "exp": "Explains present state (why dirty) → 'have been digging'."
+        "exp": "Explica el estado presente (por qué sucio) → 'have been digging'."
       }
     ],
     "flashcards": [
@@ -381,8 +381,8 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "'How long have you been + -ing?' es la pregunta clave para preguntar la duración de algo que sigue pasando."
     ],
     "dailyWords": [
-      { "w": "exhausted", "ipa": "/ɪɡˈzɔːstɪd/", "def": "agotado, exhausto", "ex": "I'm exhausted — I've been running for an hour." },
-      { "w": "on and off", "ipa": "/ɒn ənd ɒf/", "def": "de manera intermitente, a ratos", "ex": "I've been studying on and off all afternoon." }
+      { "w": "exhausted", "ipa": "/ɪɡˈzɔːstɪd/", "aprox": "egzósted", "def": "agotado, exhausto", "ex": "I'm exhausted — I've been running for an hour." },
+      { "w": "on and off", "ipa": "/ɒn ənd ɒf/", "aprox": "on and óf", "def": "de manera intermitente, a ratos", "ex": "I've been studying on and off all afternoon." }
     ]
   },
   "10": {
@@ -390,18 +390,18 @@ export const presentPerfectUnits: Record<number, Unit> = {
     "topic": "Present Perfect",
     "explain": [
       {
-        "head": "Continuous — activity/duration",
-        "body": "The present perfect continuous puts the focus on the activity itself and how long it has been happening, rather than on what has been achieved. 'I've been repairing my bike' tells you what you've been doing and hints that it may still not be finished, and 'she's been studying for 3 hours' emphasizes the ongoing effort and its duration. This makes it the natural choice when you're explaining a present state, like tiredness or dirty hands, that results from an activity in progress.",
+        "head": "Continuo — actividad/duración",
+        "body": "El continuo pone el foco en la actividad y cuánto ha durado, no en lo logrado. 'I've been repairing my bike' sugiere que quizá no ha terminado; 'she's been studying for 3 hours' resalta el esfuerzo y su duración. Es ideal para explicar un estado presente, como cansancio o manos sucias.",
         "note": "My hands are dirty. I've been repairing my bike. · She's been studying for 3 hours."
       },
       {
-        "head": "Simple — result/completion",
-        "body": "The present perfect simple, by contrast, emphasizes the result or completion of an action, or how much or how many were done, rather than the activity itself. 'I've repaired my bike' tells you the job is finished and the bike is ready now, and 'she's studied 3 chapters' gives a measurable, completed quantity. Choose this form when the achievement or outcome matters more than the process that led to it.",
+        "head": "Simple — resultado/finalización",
+        "body": "El simple, en cambio, resalta el resultado o la cantidad terminada, no la actividad en sí. 'I've repaired my bike' indica que ya está lista; 'she's studied 3 chapters' da una cantidad medible y completa. Úsalo cuando importa el logro, no el proceso.",
         "note": "I've repaired my bike. (it's ready now) · She's studied 3 chapters. (completed)"
       },
       {
-        "head": "Verbs not used in continuous",
-        "body": "Stative verbs — like know, want, like, need, and 'have' meaning possession — describe states rather than activities, so they don't work in continuous forms even in the present perfect. Since there's no ongoing process to emphasize with these verbs, English simply uses the present perfect simple regardless of how long the state has lasted: 'I've known him for years', never 'I've been knowing him'. This is the same restriction that blocks these verbs from the ordinary present continuous.",
+        "head": "Verbos que no van en continuo",
+        "body": "Los verbos de estado (know, want, like, need, have de posesión) describen estados, no actividades, así que nunca van en continuo, ni siquiera aquí: 'I've known him for years', nunca 'I've been knowing him'. Es la misma restricción del present continuous normal.",
         "note": "I've known him for years. (NOT: I've been knowing) · She's been a teacher since 2010."
       }
     ],
@@ -415,7 +415,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "was working"
         ],
         "ans": 2,
-        "exp": "Explains current state — emphasizes activity → 'have been working'."
+        "exp": "Explica el estado actual — resalta la actividad → 'have been working'."
       },
       {
         "q": "She ___ three emails this morning. (completed, result)",
@@ -426,7 +426,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "wrote"
         ],
         "ans": 1,
-        "exp": "Completed with result → 'has written'. (Three emails = measurable result)"
+        "exp": "Completado con resultado → 'has written'. (tres emails = cantidad medible)"
       },
       {
         "q": "I ___ Tom for ten years. We're old friends.",
@@ -437,7 +437,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "know"
         ],
         "ans": 2,
-        "exp": "Stative verb 'know' → can't be continuous: 'have known'."
+        "exp": "Verbo de estado 'know' → nunca continuo: 'have known'."
       }
     ],
     "flashcards": [
@@ -472,8 +472,8 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "Verbos de estado (know, like, be) no van en presente perfecto continuo: 'I've known him for years', nunca 'I've been knowing'."
     ],
     "dailyWords": [
-      { "w": "result", "ipa": "/rɪˈzʌlt/", "def": "resultado", "ex": "The result of all that work is a beautiful garden." },
-      { "w": "so far", "ipa": "/səʊ fɑːr/", "def": "hasta ahora", "ex": "So far, I've painted two rooms." }
+      { "w": "result", "ipa": "/rɪˈzʌlt/", "aprox": "risólt", "def": "resultado", "ex": "The result of all that work is a beautiful garden." },
+      { "w": "so far", "ipa": "/səʊ fɑːr/", "aprox": "sóu far", "def": "hasta ahora", "ex": "So far, I've painted two rooms." }
     ]
   },
   "11": {
@@ -481,18 +481,18 @@ export const presentPerfectUnits: Record<number, Unit> = {
     "topic": "Present Perfect",
     "explain": [
       {
-        "head": "How long… for ongoing situations",
-        "body": "When a situation started in the past and is still true now, English uses the present perfect (simple or continuous) together with 'how long', 'for', or 'since' to talk about its duration. 'How long have you known her?' asks about a state that began at some point and continues today, and 'I've known her for five years' or 'I've lived here since 2018' answer with the length or starting point of that ongoing situation. Because the situation hasn't ended, the past simple would be the wrong choice here.",
+        "head": "How long… para situaciones en curso",
+        "body": "Cuando una situación empezó en el pasado y sigue siendo cierta ahora, se usa present perfect (simple o continuo) con 'how long', 'for' o 'since' para hablar de su duración. 'How long have you known her?' pregunta por algo que sigue hoy; como no ha terminado, el pasado simple sería incorrecto aquí.",
         "note": "How long have you known her? · I've known her for five years. · I've lived here since 2018."
       },
       {
         "head": "FOR vs SINCE",
-        "body": "'For' and 'since' both introduce duration, but they answer slightly different questions: 'for' is followed by a length or period of time (two hours, five years, a long time), while 'since' is followed by a specific starting point (6 o'clock, 2018, last Monday). 'I've been waiting for two hours' tells you how long the waiting has lasted, whereas 'I've been waiting since 6 o'clock' tells you exactly when it began. Choosing the right one just depends on whether the information you have is a duration or a starting moment.",
+        "body": "Ambas indican duración, pero responden preguntas distintas: 'for' + un periodo (two hours, five years), 'since' + un punto de partida (6 o'clock, 2018). 'I've been waiting for two hours' dice cuánto ha durado; 'I've been waiting since 6 o'clock' dice desde cuándo.",
         "note": "I've been waiting for two hours. · I've been waiting since 6 o'clock."
       },
       {
-        "head": "How long with past simple — finished",
-        "body": "'How long' and 'for' aren't exclusive to the present perfect — when the situation being described is completely finished and no longer true, you switch to the past simple instead. 'I lived in London for two years' makes clear, through the past tense, that you no longer live there now; compare this with 'I've lived in London for two years', which would mean you still live there. So the tense you choose signals whether the situation continues into the present or belongs entirely to the past.",
+        "head": "How long con pasado simple — terminado",
+        "body": "'How long' y 'for' también funcionan con pasado simple si la situación ya terminó por completo. 'I lived in London for two years' deja claro que ya no vives allí; compáralo con 'I've lived in London for two years', que significa que sigues viviendo allí. El tiempo verbal marca si continúa o no.",
         "note": "I lived in London for two years. (I don't live there now)"
       }
     ],
@@ -506,7 +506,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "Are"
         ],
         "ans": 2,
-        "exp": "Ongoing situation up to now → present perfect: 'Have you known…?'"
+        "exp": "Situación en curso hasta ahora → present perfect: 'Have you known…?'"
       },
       {
         "q": "She has worked here ___ 2015.",
@@ -517,7 +517,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "from"
         ],
         "ans": 1,
-        "exp": "Point in time (year) → 'since 2015'."
+        "exp": "Punto en el tiempo (año) → 'since 2015'."
       },
       {
         "q": "I've been studying ___ three hours.",
@@ -528,7 +528,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "from"
         ],
         "ans": 0,
-        "exp": "Period of time → 'for three hours'."
+        "exp": "Periodo de tiempo → 'for three hours'."
       },
       {
         "q": "How long ___ you ___ Spanish?",
@@ -539,7 +539,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "did/learn"
         ],
         "ans": 2,
-        "exp": "Ongoing activity with duration → 'have you been learning?'"
+        "exp": "Actividad en curso con duración → 'have you been learning?'"
       }
     ],
     "flashcards": [
@@ -574,8 +574,8 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "Si la situación ya terminó, usa el pasado simple ('I lived there for two years'), no el presente perfecto."
     ],
     "dailyWords": [
-      { "w": "since", "ipa": "/sɪns/", "def": "desde (un punto en el tiempo)", "ex": "I've lived here since 2020." },
-      { "w": "for ages", "ipa": "/fɔːr ˈeɪdʒɪz/", "def": "desde hace mucho tiempo (coloquial)", "ex": "I haven't seen her for ages." }
+      { "w": "since", "ipa": "/sɪns/", "aprox": "sins", "def": "desde (un punto en el tiempo)", "ex": "I've lived here since 2020." },
+      { "w": "for ages", "ipa": "/fɔːr ˈeɪdʒɪz/", "aprox": "for éichis", "def": "desde hace mucho tiempo (coloquial)", "ex": "I haven't seen her for ages." }
     ]
   },
   "12": {
@@ -583,23 +583,23 @@ export const presentPerfectUnits: Record<number, Unit> = {
     "topic": "Present Perfect",
     "explain": [
       {
-        "head": "FOR — duration",
-        "body": "'For' introduces a period of time — a duration — and it can be used with almost any tense, not only the present perfect. You'll find it in the past simple ('I lived there for 3 years'), the present perfect ('I've worked here for 6 months'), and even the future ('she will be away for a week'). What stays constant is its job: measuring how long something lasts, regardless of which tense carries that information.",
+        "head": "FOR — duración",
+        "body": "'For' introduce un periodo de tiempo y funciona con casi cualquier tiempo verbal, no solo present perfect: pasado simple ('I lived there for 3 years'), present perfect ('I've worked here for 6 months') o futuro ('she will be away for a week'). Su función siempre es la misma: medir cuánto dura algo.",
         "note": "I lived there for 3 years. (past) · I've worked here for 6 months. (present perfect) · She will be away for a week. (future)"
       },
       {
-        "head": "SINCE — starting point",
-        "body": "'Since' introduces the specific point in time when a situation began, and it's almost always paired with the present perfect, because it describes something that started in the past and is still true now. 'I've been here since Monday' and 'she's worked here since she was 20' both name the starting point, not the duration, of an ongoing situation. Unlike 'for', 'since' wouldn't normally combine with a finished past-simple situation, since it implies the state continues up to the present.",
+        "head": "SINCE — punto de partida",
+        "body": "'Since' señala el punto exacto en que empezó una situación, y casi siempre acompaña al present perfect, porque describe algo que sigue siendo cierto ahora. 'I've been here since Monday' da el inicio, no la duración. A diferencia de 'for', no suele combinarse con una situación ya terminada.",
         "note": "I've been here since Monday. · She's worked here since she was 20."
       },
       {
-        "head": "When vs How long",
-        "body": "'When' asks about the specific starting point of an action and is answered with the past simple, because it's asking about one moment in the past, not about the present. 'How long', on the other hand, asks about duration up to now and is normally answered with the present perfect, since it's asking about a span of time that reaches into the present. Comparing 'when did you start learning English?' with 'how long have you been learning English?' shows how the question word itself signals which tense the answer should use.",
+        "head": "When vs. How long",
+        "body": "'When' pregunta por un momento concreto de inicio y se responde con pasado simple. 'How long' pregunta por una duración hasta ahora y se responde con present perfect. La propia pregunta indica qué tiempo verbal debe llevar la respuesta.",
         "note": "When did you start learning English? (past simple) · How long have you been learning English? (present perfect)"
       },
       {
         "head": "Truco: SINCE = semilla, FOR = flecha",
-        "body": "Here's a memory trick: think of SINCE as a seed planted at one exact point in time — it marks only the starting moment when the action began, nothing more. Think of FOR as an arrow stretching across a distance — it represents the whole length of time covered, from start to end. So 'I've lived here since 2015' points to the seed, the starting point, while 'I've lived here for 5 years' measures the arrow, the full duration.",
+        "body": "Piensa en SINCE como una semilla plantada en un punto exacto: solo marca el inicio, nada más. Piensa en FOR como una flecha que recorre una distancia: representa toda la duración, de principio a fin. 'I've lived here since 2015' es la semilla; 'I've lived here for 5 years' es la flecha.",
         "note": "I've lived here SINCE 2015. (el punto de partida) · I've lived here FOR 5 years. (la duración)"
       }
     ],
@@ -613,7 +613,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "when"
         ],
         "ans": 1,
-        "exp": "Point in time → 'since last week'."
+        "exp": "Punto en el tiempo → 'since last week'."
       },
       {
         "q": "She's been learning French ___ three years.",
@@ -624,7 +624,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "from"
         ],
         "ans": 1,
-        "exp": "Period of time → 'for three years'."
+        "exp": "Periodo de tiempo → 'for three years'."
       },
       {
         "q": "___ did you start this job? — Last May.",
@@ -635,7 +635,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "For how long"
         ],
         "ans": 2,
-        "exp": "Answer gives a past time → question with 'When?' + past simple."
+        "exp": "La respuesta da un momento pasado → pregunta con 'When?' + pasado simple."
       }
     ],
     "flashcards": [
@@ -670,8 +670,8 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "'For' funciona con casi cualquier tiempo verbal (pasado, presente perfecto, futuro); 'since' casi siempre acompaña al presente perfecto."
     ],
     "dailyWords": [
-      { "w": "to start", "ipa": "/stɑːrt/", "def": "empezar, comenzar", "ex": "When did you start your new job?" },
-      { "w": "ever since", "ipa": "/ˈevər sɪns/", "def": "desde entonces", "ex": "I moved here in 2018 and I've lived here ever since." }
+      { "w": "to start", "ipa": "/stɑːrt/", "aprox": "start", "def": "empezar, comenzar", "ex": "When did you start your new job?" },
+      { "w": "ever since", "ipa": "/ˈevər sɪns/", "aprox": "éver sins", "def": "desde entonces", "ex": "I moved here in 2018 and I've lived here ever since." }
     ]
   },
   "13": {
@@ -679,18 +679,18 @@ export const presentPerfectUnits: Record<number, Unit> = {
     "topic": "Present Perfect",
     "explain": [
       {
-        "head": "Past Simple — specific past time",
-        "body": "The past simple is the tense to use whenever you state or clearly imply exactly when something happened, even if that time reference is just a single word like 'yesterday' or 'last night'. Naming or implying the specific moment shifts the focus away from any present relevance and onto the completed event itself, situated at that point in the past. 'I lost my key yesterday' and 'she called me an hour ago' both anchor the action to a definite past moment, which is exactly what triggers past simple instead of present perfect.",
+        "head": "Past Simple — momento pasado concreto",
+        "body": "Se usa pasado simple cuando dices o das a entender exactamente cuándo pasó algo, aunque sea solo una palabra como 'yesterday'. Nombrar el momento concreto quita el foco del presente y lo pone en el hecho ya terminado: 'I lost my key yesterday', 'she called me an hour ago'.",
         "note": "I lost my key yesterday. · She called me an hour ago. · Did you see him last night?"
       },
       {
-        "head": "Present Perfect — no specific time / NOW",
-        "body": "Use the present perfect instead when no specific time is mentioned, or when the real point of the sentence is the action's connection to the present moment rather than when exactly it happened. 'I've lost my key' doesn't say when you lost it — it tells you that you don't have it now. 'Have you seen him?' asks about any time up to now, not about one particular occasion, which is the key difference from the past simple.",
+        "head": "Present Perfect — sin tiempo concreto / AHORA",
+        "body": "Usa present perfect cuando no se menciona un momento concreto, o cuando lo importante es la conexión con el presente. 'I've lost my key' no dice cuándo, solo que ahora no la tienes. 'Have you seen him?' pregunta por cualquier momento hasta ahora, no por una ocasión concreta.",
         "note": "I've lost my key. (I don't have it now) · Have you seen him? (at any time)"
       },
       {
         "head": "Just / already / yet → present perfect",
-        "body": "In British English, the time words 'just', 'already', and 'yet' are strongly associated with the present perfect rather than the past simple, because all three describe an action's relevance to right now rather than a fixed point in the past. 'She's just left', 'I've already eaten', and 'have you called yet?' all treat the action as recent or currently relevant news. (American English is more flexible and sometimes allows the past simple with these words too, but the present perfect is the standard, safer choice.)",
+        "body": "En inglés británico, 'just', 'already' y 'yet' van casi siempre con present perfect, porque describen la relevancia de la acción ahora mismo, no un momento fijo del pasado. En inglés americano a veces se acepta el pasado simple, pero present perfect es la opción más segura.",
         "note": "She's just left. · I've already eaten. · Have you called yet?"
       }
     ],
@@ -704,7 +704,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "ate/already"
         ],
         "ans": 0,
-        "exp": "'Already' + present result → present perfect: 'have already eaten'."
+        "exp": "'Already' + resultado presente → present perfect: 'have already eaten'."
       },
       {
         "q": "I ___ Tom yesterday. We had coffee together.",
@@ -715,7 +715,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "was seeing"
         ],
         "ans": 1,
-        "exp": "Specific past time (yesterday) → past simple: 'saw'."
+        "exp": "Momento pasado concreto (yesterday) → past simple: 'saw'."
       },
       {
         "q": "___ you ever ___ to Australia?",
@@ -726,7 +726,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "Do/go"
         ],
         "ans": 1,
-        "exp": "Life experience, no specific time → present perfect: 'Have you ever been?'"
+        "exp": "Experiencia de vida, sin tiempo concreto → present perfect: 'Have you ever been?'"
       }
     ],
     "flashcards": [
@@ -758,8 +758,8 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "Pregúntate: ¿importa CUÁNDO pasó (pasado simple) o importa que TENGA UN EFECTO AHORA (presente perfecto)?"
     ],
     "dailyWords": [
-      { "w": "to lose", "ipa": "/luːz/", "def": "perder", "ex": "I've lost my keys again!" },
-      { "w": "anywhere", "ipa": "/ˈeniweər/", "def": "en cualquier/ningún lugar", "ex": "I can't find it anywhere." }
+      { "w": "to lose", "ipa": "/luːz/", "aprox": "lus", "def": "perder", "ex": "I've lost my keys again!" },
+      { "w": "anywhere", "ipa": "/ˈeniweər/", "aprox": "éniuer", "def": "en cualquier/ningún lugar", "ex": "I can't find it anywhere." }
     ]
   },
   "14": {
@@ -767,13 +767,13 @@ export const presentPerfectUnits: Record<number, Unit> = {
     "topic": "Present Perfect",
     "explain": [
       {
-        "head": "News → present perfect; details → past simple",
-        "body": "A very common pattern in English is to announce a piece of news with the present perfect first, and then switch to the past simple to give the specific details of what happened. 'There's been an accident' introduces the news as newly relevant right now, and the sentences that follow — 'a car hit a tree, two people were injured' — move into the past simple because they're now describing the specific, completed events. Once listeners know 'when' through the story's details, there's no more need for the present perfect's vague, unspecified-time function.",
+        "head": "Noticia → present perfect; detalles → past simple",
+        "body": "Es muy común anunciar una noticia con present perfect y luego dar los detalles en pasado simple. 'There's been an accident' presenta la noticia como algo recién relevante; lo que sigue ('a car hit a tree, two people were injured') ya son hechos concretos, así que pasa a pasado simple.",
         "note": "There's been an accident. A car hit a tree. Two people were injured. (first = pp, details = ps)"
       },
       {
-        "head": "Gone vs been",
-        "body": "'Has gone to' and 'has been to' both use the present perfect, but they describe opposite situations. 'He has gone to Paris' means he traveled there and is still there now — he hasn't come back yet. 'He has been to Paris' means he visited at some point and has since returned, so it describes a completed experience rather than a current location. Mixing these up is a classic mistake, since the two participles here carry genuinely different meanings.",
+        "head": "Gone vs. been",
+        "body": "'Has gone to' y 'has been to' usan present perfect, pero significan lo contrario. 'He has gone to Paris' = viajó y sigue allí, no ha vuelto. 'He has been to Paris' = fue y ya volvió, es una experiencia pasada. Confundirlos es un error muy clásico.",
         "note": "She's gone to Paris. (she's there now) · She's been to Paris. (she visited, she's back)"
       }
     ],
@@ -787,7 +787,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "got/did"
         ],
         "ans": 0,
-        "exp": "News = present perfect; detail of when = past simple."
+        "exp": "Noticia = present perfect; el detalle de cuándo = past simple."
       },
       {
         "q": "Where's Tom? — He ___ to the shop. He'll be back soon.",
@@ -798,7 +798,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
           "was going"
         ],
         "ans": 2,
-        "exp": "He's there now (hasn't returned) → 'has gone'."
+        "exp": "Sigue allí (no ha vuelto) → 'has gone'."
       }
     ],
     "flashcards": [
@@ -830,8 +830,8 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "'Has gone to' = todavía está allí; 'has been to' = fue y ya volvió. Son opuestos, no sinónimos."
     ],
     "dailyWords": [
-      { "w": "to announce", "ipa": "/əˈnaʊns/", "def": "anunciar", "ex": "They've just announced the news." },
-      { "w": "these days", "ipa": "/ðiːz deɪz/", "def": "hoy en día, actualmente", "ex": "Where's Tom these days?" }
+      { "w": "to announce", "ipa": "/əˈnaʊns/", "aprox": "anáuns", "def": "anunciar", "ex": "They've just announced the news." },
+      { "w": "these days", "ipa": "/ðiːz deɪz/", "aprox": "díis déis", "def": "hoy en día, actualmente", "ex": "Where's Tom these days?" }
     ]
   }
 };

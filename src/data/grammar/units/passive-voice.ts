@@ -6,23 +6,23 @@ export const passiveVoiceUnits: Record<number, Unit> = {
     "topic": "Passive Voice",
     "explain": [
       {
-        "head": "Active vs Passive",
-        "body": "In an active sentence, the grammatical subject is the one performing the action ('Somebody cleans the office'), while in a passive sentence the subject is the one the action happens to ('The office is cleaned'). English builds the passive with a form of 'be' plus the past participle, shifting attention away from who does the action and onto what happens to the object. Choosing active or passive is a matter of what you want to emphasize — it doesn't change the basic facts of the sentence.",
+        "head": "La pasiva: forma",
+        "body": "En una frase activa el sujeto realiza la acción ('Somebody cleans the office'); en la pasiva, el sujeto la recibe ('The office is cleaned'). Se forma con BE + participio pasado. En inglés la pasiva se usa mucho más que en español, donde solemos preferir 'se limpia la oficina'.",
         "note": "Active: Somebody cleans the office. Passive: The office is cleaned."
       },
       {
-        "head": "Present passive — am/is/are + pp",
-        "body": "The present passive (am/is/are + past participle) describes actions that happen regularly or hold true right now, with the focus placed on the thing affected rather than on whoever performs the action. It's especially useful when the doer is unknown, unimportant, or obvious from context, so naming them would only add clutter. Compare it with the past passive below, which uses the same structure but shifts the time frame to something that already happened.",
+        "head": "Presente pasivo",
+        "body": "El presente pasivo (am/is/are + participio) describe acciones habituales o verdaderas ahora, centrando la atención en lo afectado, no en quién actúa. Es útil cuando quien hace la acción no importa, no se sabe, o es obvio por el contexto.",
         "note": "The windows are cleaned every week. · English is spoken here. · I am paid monthly."
       },
       {
-        "head": "Past passive — was/were + pp",
-        "body": "The past passive (was/were + past participle) works exactly like the present passive above, but places the action in the past instead of describing a current or general state. As with any passive, the emphasis stays on the person or thing affected by the action rather than on whoever performed it, which is why the subject swaps places compared with the equivalent active sentence. It's the natural choice for describing finished events when the 'who' is unknown, unimportant, or already obvious.",
+        "head": "Pasado pasivo",
+        "body": "El pasado pasivo (was/were + participio) funciona igual que el presente pero sitúa la acción en el pasado. El foco sigue en quien recibe la acción, por eso el sujeto cambia respecto a la frase activa equivalente.",
         "note": "The office was cleaned yesterday. · The letter was written by Sarah."
       },
       {
-        "head": "By + agent",
-        "body": "Even though the passive normally leaves out who performed the action, you can still mention them by adding 'by + the agent' at the end of the sentence — but only when that information is genuinely worth including, such as a well-known name or a surprising cause. If the agent is unknown, unimportant, or obvious, it's simply left out, which is one of the main reasons speakers choose the passive in the first place. Compare 'The window was broken' (we don't know or don't care who) with 'The window was broken by the storm' (the cause is worth naming).",
+        "head": "BY + agente",
+        "body": "Aunque la pasiva suele omitir quién hace la acción, puedes añadirlo con 'by' cuando de verdad aporta algo, como un nombre conocido. Compara 'The window was broken' (no sabemos quién) con 'The window was broken by the storm' (la causa interesa nombrarla).",
         "note": "The Mona Lisa was painted by Leonardo da Vinci. · The window was broken. (agent unknown)"
       }
     ],
@@ -60,7 +60,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "cleaned"
         ],
         "ans": 1,
-        "exp": "Present passive for regular action: 'is cleaned'."
+        "exp": "Presente pasivo para una acción habitual: 'is cleaned'."
       },
       {
         "q": "The Mona Lisa ___ by Leonardo da Vinci.",
@@ -71,7 +71,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "were painted"
         ],
         "ans": 0,
-        "exp": "Past passive + 'by' agent: 'was painted by'."
+        "exp": "Pasado pasivo + agente con 'by': 'was painted by'."
       },
       {
         "q": "A new hospital ___ next year.",
@@ -82,7 +82,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "builds"
         ],
         "ans": 2,
-        "exp": "Future passive: 'will be built'."
+        "exp": "Pasiva de futuro: 'will be built'."
       }
     ],
     "flashcards": [
@@ -121,8 +121,8 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       "Usa la pasiva cuando quien hace la acción no importa, no se sabe, o es obvio por el contexto — si el agente sí importa, añádelo con BY."
     ],
     "dailyWords": [
-      { "w": "footage", "ipa": "/ˈfʊtɪdʒ/", "def": "imágenes grabadas, metraje", "ex": "The security footage was deleted." },
-      { "w": "alarm", "ipa": "/əˈlɑːrm/", "def": "alarma", "ex": "The alarm didn't go off during the robbery." }
+      { "w": "footage", "ipa": "/ˈfʊtɪdʒ/", "aprox": "fútich", "def": "imágenes grabadas, metraje", "ex": "The security footage was deleted." },
+      { "w": "alarm", "ipa": "/əˈlɑːrm/", "aprox": "aláarm", "def": "alarma", "ex": "The alarm didn't go off during the robbery." }
     ]
   },
   "43": {
@@ -130,13 +130,13 @@ export const passiveVoiceUnits: Record<number, Unit> = {
     "topic": "Passive Voice",
     "explain": [
       {
-        "head": "Passive with modals — modal + be + pp",
-        "body": "Modal verbs (must, can, might, should, etc.) are always followed by the base form of the next verb, and in the passive that base form is 'be' — never 'is' or 'are' — followed by the past participle. So the passive pattern becomes modal + be + past participle, keeping the usual 'action happens to the subject' meaning of the passive, now combined with the modal's own sense of obligation, possibility, or advice. A common mistake is writing 'must is done' instead of the correct 'must be done'.",
+        "head": "Pasiva con modales",
+        "body": "Después de un modal (must, can, should...) siempre va la forma base, y en pasiva esa forma base es 'be' — nunca 'is' ni 'are'. El patrón queda: modal + be + participio. Error típico: decir 'must is done' en vez de 'must be done'.",
         "note": "The work must be done today. · The problem can be solved. · Mistakes might be made."
       },
       {
-        "head": "Passive with perfect — have been + pp",
-        "body": "The present perfect passive combines the present perfect's usual meaning — a past action connected to now, often with a present result — with the passive's focus on the receiver of the action. It's formed with have/has been + past participle, essentially inserting 'been' where the active form would simply have the past participle: compare 'They have sent the letter' with 'The letter has been sent'. Use it whenever you want the 'recently completed, still relevant' feel of the present perfect, but with attention on what was affected rather than who did it.",
+        "head": "Pasiva con perfecto",
+        "body": "El presente perfecto pasivo une el matiz del perfecto (acción pasada conectada con el presente) con el enfoque pasivo en quien recibe la acción. Se forma con have/has been + participio: 'They have sent the letter' → 'The letter has been sent'.",
         "note": "The letter has been sent. · Three people have been arrested. · The bridge has been closed."
       }
     ],
@@ -150,7 +150,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "must been"
         ],
         "ans": 0,
-        "exp": "Modal passive → modal + be + pp: 'must be finished'."
+        "exp": "Pasiva con modal → modal + be + pp: 'must be finished'."
       },
       {
         "q": "Three people ___ in the accident.",
@@ -161,7 +161,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "are injuring"
         ],
         "ans": 2,
-        "exp": "Present perfect passive: 'have been injured'."
+        "exp": "Pasiva de presente perfecto: 'have been injured'."
       }
     ],
     "flashcards": [
@@ -194,8 +194,8 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       "'Have/has been' + participio combina la idea de 'ya pasó y sigue siendo relevante' con el enfoque pasivo en quién recibe la acción."
     ],
     "dailyWords": [
-      { "w": "staff", "ipa": "/stɑːf/", "def": "personal, plantilla", "ex": "We need more staff this month." },
-      { "w": "arrest", "ipa": "/əˈrest/", "def": "arrestar, detener", "ex": "Three people have been arrested." }
+      { "w": "staff", "ipa": "/stɑːf/", "aprox": "staaf", "def": "personal, plantilla", "ex": "We need more staff this month." },
+      { "w": "arrest", "ipa": "/əˈrest/", "aprox": "arrést", "def": "arrestar, detener", "ex": "Three people have been arrested." }
     ]
   },
   "44": {
@@ -203,18 +203,18 @@ export const passiveVoiceUnits: Record<number, Unit> = {
     "topic": "Passive Voice",
     "explain": [
       {
-        "head": "Passive with two objects",
-        "body": "Verbs such as give, send, show, offer, pay, promise, sell, and tell take two objects — an indirect object (the person) and a direct object (the thing) — so either one can become the subject when the sentence is made passive. Making the person the subject ('I was given a watch') is usually more natural and common in English than making the thing the subject ('A watch was given to me'), even though both are grammatically correct. Recognizing which object has become the subject helps you keep track of who received what.",
+        "head": "Pasiva con dos objetos",
+        "body": "Verbos como give, send, show, offer, pay o tell llevan objeto indirecto (persona) y directo (cosa), así que cualquiera puede pasar a sujeto en pasiva. Poner a la persona como sujeto ('I was given a watch') es más natural y frecuente que poner la cosa ('A watch was given to me').",
         "note": "I was given a watch. (indirect object as subject) · A watch was given to me. (direct object as subject)"
       },
       {
-        "head": "GET as a passive alternative",
-        "body": "In casual, spoken English, 'get' can replace 'be' as the passive auxiliary, especially for events that happen suddenly, unexpectedly, or with a slightly unlucky or dramatic feel, like getting caught, hurt, or fired. The meaning is basically the same as with 'be', but 'get' adds a more informal, conversational tone and often suggests the event was somewhat unplanned. Because of that informality, 'be' passives remain the safer, more appropriate choice in formal writing.",
+        "head": "GET como alternativa",
+        "body": "En inglés informal, 'get' puede sustituir a 'be' como auxiliar pasivo, sobre todo para cosas repentinas o desafortunadas (get caught, get hurt, get fired). El significado es igual que con 'be', pero suena más coloquial; en textos formales conviene usar 'be'.",
         "note": "get married · get paid · get caught · get hurt"
       },
       {
-        "head": "BORN — always passive",
-        "body": "'Born' only exists as a passive participle in English — there's no active verb meaning 'to give birth to oneself' — so it's always paired with 'was/were' to describe when and where someone came into the world. This makes it a fixed exception worth memorizing on its own, since learners are sometimes tempted to treat it like a regular active verb. Whenever you talk about your own or someone else's birth, the passive 'was/were born' is the only correct option.",
+        "head": "BORN: siempre pasiva",
+        "body": "'Born' solo existe como participio pasivo — no hay verbo activo 'nacerse' — así que siempre acompaña a 'was/were'. Es una excepción fija que conviene memorizar: para hablar de un nacimiento, 'was/were born' es la única opción correcta.",
         "note": "She was born in Brazil in 1990. · Where were you born?"
       }
     ],
@@ -228,7 +228,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "am given"
         ],
         "ans": 1,
-        "exp": "Passive with two objects: 'I was given a watch' (indirect object becomes subject)."
+        "exp": "Pasiva con dos objetos: 'I was given a watch' (el objeto indirecto pasa a sujeto)."
       },
       {
         "q": "They ___ married last summer.",
@@ -239,7 +239,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "get"
         ],
         "ans": 0,
-        "exp": "'Get married' = informal passive with 'get'."
+        "exp": "'Get married' = pasiva informal con 'get'."
       },
       {
         "q": "She ___ in Brazil in 1990.",
@@ -250,7 +250,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "borns"
         ],
         "ans": 1,
-        "exp": "'Born' is always passive: 'was/were born'."
+        "exp": "'Born' siempre es pasiva: 'was/were born'."
       }
     ],
     "flashcards": [
@@ -290,8 +290,8 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       "GET + participio suena más informal que BE + participio, y suele implicar algo repentino o desafortunado: get fired, get caught, get hurt."
     ],
     "dailyWords": [
-      { "w": "severance", "ipa": "/ˈsevərəns/", "def": "indemnización (por despido)", "ex": "He received a severance package when he was fired." },
-      { "w": "fired", "ipa": "/ˈfaɪərd/", "def": "despedido", "ex": "She got fired after just two months." }
+      { "w": "severance", "ipa": "/ˈsevərəns/", "aprox": "séverans", "def": "indemnización (por despido)", "ex": "He received a severance package when he was fired." },
+      { "w": "fired", "ipa": "/ˈfaɪərd/", "aprox": "fáierd", "def": "despedido", "ex": "She got fired after just two months." }
     ]
   },
   "45": {
@@ -299,13 +299,13 @@ export const passiveVoiceUnits: Record<number, Unit> = {
     "topic": "Passive Voice",
     "explain": [
       {
-        "head": "It is said that… / He is said to…",
-        "body": "These impersonal passive structures let you report a general opinion, belief, or piece of common knowledge without naming exactly who holds it — useful when the information comes from 'people in general' rather than one identifiable source. 'It is said that + clause' and its equivalent 'subject + is said to + infinitive' express exactly the same idea in two different grammatical shapes, so you can pick whichever fits the sentence better. This pattern is common in news and formal writing, where attributing a claim to 'people say' would sound too vague or too direct.",
+        "head": "Se dice que... (impersonal)",
+        "body": "Estas estructuras pasivas impersonales sirven para transmitir una opinión o creencia general sin decir quién la sostiene. 'It is said that + oración' y 'sujeto + is said to + infinitivo' significan lo mismo con distinta gramática; se usan mucho en noticias y textos formales.",
         "note": "It is said that he is very rich. = He is said to be very rich. · It is believed that the earth is 4.5 billion years old."
       },
       {
-        "head": "Reporting verbs — thought/believed/known/claimed/expected",
-        "body": "The same 'it is + past participle + that' / 'subject + is + past participle + to' pattern extends to a whole family of reporting verbs beyond 'say' — thought, believed, known, claimed, expected, and more — each adding its own shade of meaning about certainty, expectation, or rumor. Choosing the right verb lets you signal exactly how reliable the information is, from something close to fact ('it is known that') to a widely held but unconfirmed idea ('it is thought that'). The grammar stays the same across all of them; only the verb and its implied confidence level change.",
+        "head": "Otros verbos de este tipo",
+        "body": "El mismo patrón funciona con otros verbos — thought, believed, known, claimed, expected — cada uno con su matiz de certeza o rumor. La gramática es siempre igual; solo cambia el verbo y cuánto se confía en la información, desde casi un hecho ('it is known') hasta un rumor ('it is thought').",
         "note": "It is thought that prices will rise. · She is known to be an expert. · They are expected to arrive soon."
       }
     ],
@@ -319,7 +319,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "says"
         ],
         "ans": 2,
-        "exp": "Passive reporting → 'It is said that…'"
+        "exp": "Pasiva de rumor/creencia → 'It is said that…'"
       },
       {
         "q": "She ___ to be the best player in the team.",
@@ -330,7 +330,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "says"
         ],
         "ans": 2,
-        "exp": "Personal passive: 'She is said to be…'"
+        "exp": "Pasiva personal: 'She is said to be…'"
       }
     ],
     "flashcards": [
@@ -362,8 +362,8 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       "Otros verbos siguen el mismo patrón: thought, believed, known, claimed, expected, reported — todos funcionan igual que 'said'."
     ],
     "dailyWords": [
-      { "w": "haunted", "ipa": "/ˈhɔːntɪd/", "def": "encantado (por fantasmas)", "ex": "They say the old castle is haunted." },
-      { "w": "rumour", "ipa": "/ˈruːmər/", "def": "rumor", "ex": "There's a rumour that the shop is closing." }
+      { "w": "haunted", "ipa": "/ˈhɔːntɪd/", "aprox": "jóntid", "def": "encantado (por fantasmas)", "ex": "They say the old castle is haunted." },
+      { "w": "rumour", "ipa": "/ˈruːmər/", "aprox": "rúmer", "def": "rumor", "ex": "There's a rumour that the shop is closing." }
     ]
   },
   "46": {
@@ -371,13 +371,13 @@ export const passiveVoiceUnits: Record<number, Unit> = {
     "topic": "Passive Voice",
     "explain": [
       {
-        "head": "Have something done — you arrange it",
-        "body": "This structure describes a service someone else performs for you at your request, even though the grammar puts you, not them, as the subject — you 'have' it done, meaning you arrange or pay for it rather than doing it with your own hands. The pattern is 'have + object + past participle', echoing the passive's use of a participle to show the object is on the receiving end of the action. It contrasts with simply doing the action yourself: 'I cut my hair' versus 'I had my hair cut' by a hairdresser.",
+        "head": "HAVE something done",
+        "body": "Describe un servicio que otra persona hace para ti, aunque el sujeto gramatical seas tú: lo mandas hacer, no lo haces con tus manos. Patrón: have + objeto + participio. Compara 'I cut my hair' (lo hice yo) con 'I had my hair cut' (me lo hizo un peluquero).",
         "note": "I'm having my hair cut. · We're having the house painted. · I had my car repaired."
       },
       {
-        "head": "Get something done — less formal",
-        "body": "'Get + object + past participle' expresses exactly the same arranged-service idea as 'have something done', just with a more informal, conversational tone that fits everyday speech better than writing. Both structures describe you arranging for someone else to perform a task for you, so the choice between 'have' and 'get' is mostly a matter of register rather than meaning. In casual conversation you'll hear 'get' at least as often as 'have' in this pattern.",
+        "head": "GET, versión informal",
+        "body": "'Get + objeto + participio' expresa la misma idea de servicio encargado que 'have', pero con tono más informal y coloquial. La diferencia entre 'have' y 'get' aquí es de registro, no de significado; en conversación se oye 'get' tanto o más que 'have'.",
         "note": "I need to get my watch fixed. · She got her hair done before the party."
       }
     ],
@@ -391,7 +391,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "making/repaired"
         ],
         "ans": 0,
-        "exp": "Have + object + past participle: 'having my car repaired'."
+        "exp": "Have + objeto + participio: 'having my car repaired'."
       },
       {
         "q": "They ___ their house ___ last year.",
@@ -402,7 +402,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
           "let/paint"
         ],
         "ans": 0,
-        "exp": "Have something done (past): 'had their house painted'."
+        "exp": "Have something done (pasado): 'had their house painted'."
       }
     ],
     "flashcards": [
@@ -435,8 +435,8 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       "GET + objeto + participio es la versión más informal de HAVE + objeto + participio — el significado es idéntico."
     ],
     "dailyWords": [
-      { "w": "salon", "ipa": "/səˈlɒn/", "def": "salón de belleza/peluquería", "ex": "She booked an appointment at the hair salon." },
-      { "w": "repair", "ipa": "/rɪˈpeər/", "def": "reparar, arreglar", "ex": "I need to get my bike repaired." }
+      { "w": "salon", "ipa": "/səˈlɒn/", "aprox": "salón", "def": "salón de belleza/peluquería", "ex": "She booked an appointment at the hair salon." },
+      { "w": "repair", "ipa": "/rɪˈpeər/", "aprox": "ripéer", "def": "reparar, arreglar", "ex": "I need to get my bike repaired." }
     ]
   }
 };

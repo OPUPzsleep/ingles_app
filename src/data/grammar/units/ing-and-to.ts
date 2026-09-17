@@ -6,17 +6,17 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Verbs followed by -ing",
-        "body": "Certain common verbs — like enjoy, finish, mind, suggest, avoid, keep, and stop — are always followed by the -ing form (the gerund) when another verb comes right after them, never by 'to + infinitive'. This isn't about meaning; it's simply a fixed grammatical pattern that has to be memorized verb by verb, because there's no rule that predicts which verbs take -ing and which take 'to'. Getting this list right matters, since using 'to' after one of these verbs is a very common mistake for learners.",
+        "head": "Verbos seguidos de -ing",
+        "body": "Verbos como enjoy, finish, mind, suggest, avoid, keep o stop piden siempre el verbo siguiente en -ing, nunca 'to + infinitivo'. No hay lógica detrás: es un patrón fijo que se memoriza verbo por verbo. Poner 'to' aquí es uno de los errores más repetidos.",
         "note": "enjoy, finish, mind, suggest, avoid, keep, practise, admit, deny, imagine, consider, miss, stop, give up"
       },
       {
-        "head": "Examples",
-        "body": "These sentences show the pattern in action: 'I enjoy swimming.' 'She finished reading.' 'He avoids eating meat.' 'Stop talking!' In each one, the verb right after enjoy/finish/avoid/stop takes the -ing form, confirming that these verbs never take a plain 'to + infinitive' afterwards."
+        "head": "Ejemplos",
+        "body": "Fíjate en el patrón: 'I enjoy swimming.' 'She finished reading.' 'He avoids eating meat.' 'Stop talking!' El verbo que va detrás de enjoy, finish, avoid o stop siempre termina en -ing."
       },
       {
-        "head": "After prepositions — always -ing",
-        "body": "Whenever a verb comes immediately after a preposition (at, in, of, about, without, before...), it must take the -ing form, never the infinitive — this is one of the most reliable rules in English grammar and has no real exceptions. It's easy to forget when the preposition is a small, easily overlooked word like 'at' or 'in', but the rule holds regardless of which preposition is involved. This is a separate pattern from the enjoy/finish-type verbs above: here it's the preposition, not the main verb, that forces the -ing form.",
+        "head": "Tras preposición, siempre -ing",
+        "body": "Si un verbo va justo después de una preposición (at, in, of, about, without, before...), va obligatoriamente en -ing. Es una de las reglas más fiables del inglés y no tiene excepciones reales. Aquí quien manda es la preposición, no el verbo principal.",
         "note": "good at swimming · interested in learning · before leaving · without saying goodbye"
       }
     ],
@@ -30,7 +30,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "walked"
         ],
         "ans": 2,
-        "exp": "'Enjoy' + -ing: 'I enjoy walking.'"
+        "exp": "'Enjoy' siempre lleva -ing: 'I enjoy walking.'"
       },
       {
         "q": "She suggested ___ a different route.",
@@ -41,7 +41,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "taken"
         ],
         "ans": 2,
-        "exp": "'Suggest' + -ing: 'She suggested taking a different route.'"
+        "exp": "'Suggest' siempre lleva -ing: 'She suggested taking a different route.'"
       },
       {
         "q": "I'm thinking of ___ a new car.",
@@ -52,7 +52,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "buying"
         ],
         "ans": 3,
-        "exp": "After preposition 'of' → -ing: 'thinking of buying'."
+        "exp": "Tras la preposición 'of' va -ing: 'thinking of buying'."
       }
     ],
     "flashcards": [
@@ -79,8 +79,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Truco mental: si el verbo va justo después de una preposición (at, in, of, about...), casi siempre necesita \"-ing\"."
     ],
     "dailyWords": [
-      { "w": "hobby", "ipa": "/ˈhɒbi/", "def": "afición, pasatiempo", "ex": "Reading is my favorite hobby." },
-      { "w": "habit", "ipa": "/ˈhæbɪt/", "def": "hábito, costumbre", "ex": "She's trying to break a bad habit." }
+      { "w": "hobby", "ipa": "/ˈhɒbi/", "aprox": "jóbi", "def": "afición, pasatiempo", "ex": "Reading is my favorite hobby." },
+      { "w": "habit", "ipa": "/ˈhæbɪt/", "aprox": "jábit", "def": "hábito, costumbre", "ex": "She's trying to break a bad habit." }
     ]
   },
   "54": {
@@ -88,13 +88,13 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Verbs followed by to + infinitive",
-        "body": "Certain common verbs — like want, need, decide, plan, hope, expect, and promise — are always followed by 'to + base verb' (the to-infinitive) when another verb comes right after them, never by the -ing form. As with the enjoy-type verbs, there's no logical reason why these particular verbs take 'to' instead of -ing; it's a fixed pattern you simply have to learn for each verb. Mixing up these two verb groups is one of the most frequent errors Spanish speakers make in English.",
+        "head": "Verbo + to + infinitivo",
+        "body": "Verbos como want, need, decide, plan, hope y promise van siempre seguidos de 'to + verbo base', nunca de -ing. Es un patrón fijo, sin lógica aparente, que se aprende verbo por verbo. Confundirlos con los verbos de la unidad anterior (enjoy, avoid...) es un error muy frecuente.",
         "note": "want, need, decide, plan, hope, expect, try, manage, fail, promise, refuse, offer, agree, afford"
       },
       {
-        "head": "Examples",
-        "body": "These sentences show the pattern in action: 'I want to go.' 'She decided to leave.' 'He failed to pass the exam.' 'They agreed to help.' In each case, the verb that follows want/decide/fail/agree takes 'to + base verb', confirming that these verbs are never directly followed by -ing."
+        "head": "Ejemplos",
+        "body": "Fíjate en el patrón: 'I want to go.' 'She decided to leave.' 'He failed to pass the exam.' 'They agreed to help.' Verbos como want, decide, fail o agree siempre van seguidos de 'to + verbo base', nunca de -ing."
       }
     ],
     "quiz": [
@@ -107,7 +107,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "bought"
         ],
         "ans": 2,
-        "exp": "'Want' + to infinitive: 'I want to buy'."
+        "exp": "'Want' + infinitivo con to: 'I want to buy'."
       },
       {
         "q": "She decided ___ a new job.",
@@ -118,7 +118,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "found"
         ],
         "ans": 2,
-        "exp": "'Decide' + to infinitive: 'She decided to find'."
+        "exp": "'Decide' + infinitivo con to: 'She decided to find'."
       },
       {
         "q": "He managed ___ the exam.",
@@ -129,7 +129,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "passed"
         ],
         "ans": 2,
-        "exp": "'Manage' + to infinitive: 'He managed to pass'."
+        "exp": "'Manage' + infinitivo con to: 'He managed to pass'."
       }
     ],
     "flashcards": [
@@ -160,8 +160,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Consejo práctico: memoriza estos verbos en parejas de ejemplo (\"want to go\", \"hope to see\") en vez de la regla sola — así se te queda mejor."
     ],
     "dailyWords": [
-      { "w": "goal", "ipa": "/ɡəʊl/", "def": "objetivo, meta", "ex": "My goal is to speak fluent English." },
-      { "w": "to plan", "ipa": "/tuː plæn/", "def": "planear, planificar", "ex": "We plan to move next year." }
+      { "w": "goal", "ipa": "/ɡəʊl/", "aprox": "góul", "def": "objetivo, meta", "ex": "My goal is to speak fluent English." },
+      { "w": "to plan", "ipa": "/tuː plæn/", "aprox": "tu plán", "def": "planear, planificar", "ex": "We plan to move next year." }
     ]
   },
   "55": {
@@ -169,13 +169,13 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Verb + object + to infinitive",
-        "body": "Verbs like ask, tell, want, expect, allow, remind, and warn follow a different pattern: instead of going straight into the infinitive, they first name a person (the object) and only then add 'to + base verb', because these verbs describe asking, telling, or allowing somebody else to do something. The object tells you who is expected to perform the action described by the infinitive. This differs from unit 54's pattern, where 'to + infinitive' follows the main verb directly with no object in between.",
+        "head": "Verbo + objeto + to",
+        "body": "Verbos como ask, tell, want, expect, allow, remind y warn van seguidos de una persona (objeto) y luego 'to + verbo base', porque describen pedir, decir o permitir que ALGUIEN MÁS haga algo. El objeto indica quién realiza la acción. A diferencia de la unidad 54, aquí siempre hay una persona entre el verbo y el 'to'.",
         "note": "ask, tell, want, expect, help, allow, advise, encourage, invite, remind, warn, force, teach, persuade"
       },
       {
-        "head": "Examples",
-        "body": "These sentences show the pattern in action: 'She asked me to help.' 'He told us to wait.' 'They want you to come.' 'I advised her to leave.' In each one, notice the order: verb + person (object) + 'to + base verb', with the object showing who is meant to carry out the action."
+        "head": "Ejemplos",
+        "body": "Fíjate en el orden: 'She asked me to help.' 'He told us to wait.' 'They want you to come.' 'I advised her to leave.' Siempre es verbo + persona + 'to + verbo base'."
       }
     ],
     "quiz": [
@@ -188,7 +188,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "carried"
         ],
         "ans": 2,
-        "exp": "Ask + object + to infinitive: 'asked me to carry'."
+        "exp": "Ask + objeto + infinitivo con to: 'asked me to carry'."
       },
       {
         "q": "He told us ___ quiet.",
@@ -199,7 +199,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "been"
         ],
         "ans": 2,
-        "exp": "Tell + object + to infinitive: 'told us to be quiet'."
+        "exp": "Tell + objeto + infinitivo con to: 'told us to be quiet'."
       }
     ],
     "flashcards": [
@@ -230,8 +230,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Estos verbos (ask, tell, want, remind, warn) casi siempre hablan de que ALGUIEN MÁS haga la acción, no tú."
     ],
     "dailyWords": [
-      { "w": "to remind", "ipa": "/rɪˈmaɪnd/", "def": "recordar (a alguien que haga algo)", "ex": "Please remind me to call the bank." },
-      { "w": "deadline", "ipa": "/ˈdedlaɪn/", "def": "fecha límite, plazo", "ex": "The deadline for the report is Friday." }
+      { "w": "to remind", "ipa": "/rɪˈmaɪnd/", "aprox": "rimáind", "def": "recordar (a alguien que haga algo)", "ex": "Please remind me to call the bank." },
+      { "w": "deadline", "ipa": "/ˈdedlaɪn/", "aprox": "dédlain", "def": "fecha límite, plazo", "ex": "The deadline for the report is Friday." }
     ]
   },
   "56": {
@@ -239,18 +239,18 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Remember + -ing vs to",
-        "body": "'Remember' can be followed by either -ing or 'to', and the choice completely changes the meaning: 'remember + -ing' means you recall something that already happened, looking back at a memory, while 'remember + to' means you don't forget to carry out a task that still needs doing, looking forward to the future. The direction in time — past memory versus future duty — is what tells the two forms apart. This same past-versus-future contrast reappears with 'stop' and 'try' below, so it's worth remembering as a general pattern.",
+        "head": "Remember: -ing o to",
+        "body": "'Remember' puede llevar -ing o 'to' y el significado cambia: 'remember + -ing' es recordar algo que YA pasó (mirar al pasado); 'remember + to' es no olvidar algo pendiente (mirar al futuro). Este mismo contraste pasado/futuro se repite con 'stop' y 'try' más abajo.",
         "note": "I remember meeting her. (past) · Remember to call her. (future task)"
       },
       {
-        "head": "Stop + -ing vs to",
-        "body": "'Stop + -ing' means you end an activity you were doing — you give up a habit or interrupt an ongoing action, and the -ing verb names the thing you were doing before you stopped. 'Stop + to' has a completely different structure: here 'to' introduces a purpose, so 'stop to do something' means you paused one activity in order to start a new one. It's easy to confuse the two because they look similar, but 'stop doing' ends an action while 'stop to do' begins a new one.",
+        "head": "Stop: -ing o to",
+        "body": "'Stop + -ing' significa dejar de hacer algo que ya hacías. 'Stop + to' significa parar UNA cosa PARA empezar otra: aquí 'to' indica el propósito de la pausa. Son fáciles de confundir: 'stop doing' termina una acción; 'stop to do' empieza algo nuevo.",
         "note": "I stopped smoking. (I quit) · I stopped to smoke. (I paused to have a cigarette)"
       },
       {
-        "head": "Try + -ing vs to",
-        "body": "'Try + -ing' suggests an experiment: you do something as a test, to see what result it produces, without necessarily expecting difficulty. 'Try + to' suggests a genuine attempt or effort at something that might be difficult or might fail — the focus is on the struggle to achieve it, not on testing an option. So 'try taking an aspirin' means 'see if this helps', while 'try to open the jar' means 'make an effort, even though it may not work'.",
+        "head": "Try: -ing o to",
+        "body": "'Try + -ing' es un experimento: haces algo para ver qué pasa, sin esperar dificultad. 'Try + to' es un esfuerzo genuino ante algo que puede ser difícil o fallar. Por eso 'try taking an aspirin' es 'prueba a ver si ayuda', y 'try to open the jar' es 'esfuérzate, aunque cueste'.",
         "note": "Try taking an aspirin. (as an experiment) · She tried to lift the box. (she attempted it)"
       }
     ],
@@ -264,7 +264,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "turned"
         ],
         "ans": 1,
-        "exp": "Future task to remember → 'remember to turn'."
+        "exp": "Tarea futura que hay que recordar → 'remember to turn'."
       },
       {
         "q": "I stopped ___ last year. I'm much healthier now.",
@@ -275,7 +275,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "smoked"
         ],
         "ans": 2,
-        "exp": "Giving up the habit → 'stopped smoking'."
+        "exp": "Dejar el hábito → 'stopped smoking'."
       },
       {
         "q": "She tried ___ the jar but it was too tight.",
@@ -286,7 +286,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "opened"
         ],
         "ans": 1,
-        "exp": "Making an attempt (but possibly failing) → 'tried to open'."
+        "exp": "Intentar algo (quizá sin lograrlo) → 'tried to open'."
       }
     ],
     "flashcards": [
@@ -327,8 +327,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Truco: STOP + to = \"me detuve PARA hacer algo nuevo\"; STOP + -ing = \"dejé de hacer algo que hacía\"."
     ],
     "dailyWords": [
-      { "w": "to forget", "ipa": "/fəˈɡet/", "def": "olvidar", "ex": "Don't forget to bring your umbrella." },
-      { "w": "attempt", "ipa": "/əˈtempt/", "def": "intento", "ex": "She made an attempt to fix the car." }
+      { "w": "to forget", "ipa": "/fəˈɡet/", "aprox": "forguét", "def": "olvidar", "ex": "Don't forget to bring your umbrella." },
+      { "w": "attempt", "ipa": "/əˈtempt/", "aprox": "atémpt", "def": "intento", "ex": "She made an attempt to fix the car." }
     ]
   },
   "57": {
@@ -336,18 +336,18 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Like/love/hate/prefer — both forms OK",
-        "body": "Verbs expressing likes and dislikes — like, love, hate, prefer — are flexible: you can follow them with either -ing or 'to + infinitive' with almost no change in meaning, so 'I like swimming' and 'I like to swim' both describe the same general preference. This flexibility disappears, however, as soon as you add 'would' in front of these verbs, which is covered in the next block. Either form is safe to use here, so this is one case where you don't need to worry about choosing 'correctly'.",
+        "head": "Like/love/hate/prefer: -ing o to",
+        "body": "Verbos de gustos como like, love, hate y prefer aceptan -ing o 'to + infinitivo' casi sin diferencia de significado: 'I like swimming' = 'I like to swim'. Esa libertad desaparece en cuanto añades 'would' delante, como en el bloque siguiente.",
         "note": "I like swimming. = I like to swim. · She hates waiting. = She hates to wait."
       },
       {
-        "head": "Would like/would love/would prefer — always to",
-        "body": "As soon as you put 'would' before like, love, or prefer, the rule tightens: only 'to + infinitive' is possible, and -ing becomes incorrect. This is because 'would like/love/prefer' talks about a specific wish or preference for one particular occasion (often making a polite offer or request), unlike the general, habitual liking described in the block above, which is why the two patterns behave differently even though they use the same verbs.",
+        "head": "Would like/love/prefer: siempre to",
+        "body": "Con 'would' delante de like, love o prefer, solo vale 'to + infinitivo'; el -ing es incorrecto. 'Would like/love/prefer' habla de un deseo puntual para una ocasión concreta (a menudo una oferta educada), a diferencia del gusto general del bloque anterior.",
         "note": "I'd like to go. (NOT: I'd like going) · Would you like to come? · I'd love to help."
       },
       {
-        "head": "Begin/start/continue — both forms",
-        "body": "With verbs describing the start or continuation of an action — begin, start, continue — both -ing and 'to + infinitive' are acceptable and mean essentially the same thing, so 'it started raining' and 'it started to rain' are equally correct. As with like/love/hate/prefer above, this is a case where English simply allows two equivalent structures, so you can choose whichever sounds more natural to you at the moment.",
+        "head": "Begin/start/continue: ambas formas",
+        "body": "Con verbos de inicio o continuación (begin, start, continue), -ing y 'to + infinitivo' son igual de correctos y significan lo mismo: 'it started raining' = 'it started to rain'. Aquí puedes elegir la forma que te suene mejor.",
         "note": "It started raining. = It started to rain. · She began crying. = She began to cry."
       }
     ],
@@ -361,7 +361,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "helped"
         ],
         "ans": 2,
-        "exp": "After 'would love' → to infinitive: 'I'd love to help'."
+        "exp": "Tras 'would love' → infinitivo con to: 'I'd love to help'."
       },
       {
         "q": "I like ___ to music when I study.",
@@ -372,7 +372,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "listened"
         ],
         "ans": 2,
-        "exp": "Like + -ing or to → both OK, but -ing more natural for general habit: 'like listening'."
+        "exp": "Like + -ing o to → ambos valen, pero -ing es más natural para hábitos: 'like listening'."
       }
     ],
     "flashcards": [
@@ -407,8 +407,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Pero con WOULD (would like, would love, would prefer) usa siempre \"to\" — nunca \"-ing\"."
     ],
     "dailyWords": [
-      { "w": "cosy", "ipa": "/ˈkəʊzi/", "def": "acogedor, confortable", "ex": "The cabin felt warm and cosy." },
-      { "w": "board game", "ipa": "/bɔːd ɡeɪm/", "def": "juego de mesa", "ex": "We played a board game after dinner." }
+      { "w": "cosy", "ipa": "/ˈkəʊzi/", "aprox": "kóusi", "def": "acogedor, confortable", "ex": "The cabin felt warm and cosy." },
+      { "w": "board game", "ipa": "/bɔːd ɡeɪm/", "aprox": "bord guéim", "def": "juego de mesa", "ex": "We played a board game after dinner." }
     ]
   },
   "58": {
@@ -416,13 +416,13 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Adjective/noun phrases followed by -ing or to",
-        "body": "Beyond single verbs, many fixed adjective and noun expressions also determine whether the next verb takes -ing or 'to' — phrases like 'be interested in', 'be keen on', 'it's no use', and 'there's no point in' each come with their own required form, usually because they end in a preposition. Because these are set phrases rather than general rules, the safest approach is to learn each expression together with the form it takes, rather than trying to guess from its meaning.",
+        "head": "Frases con adjetivo/sustantivo + -ing o to",
+        "body": "Muchas expresiones fijas con adjetivo o sustantivo (be interested in, be keen on, it's no use, there's no point in) exigen una forma concreta después, normalmente porque terminan en preposición. Al ser frases fijas, lo más práctico es aprender cada una junto con la forma que le sigue.",
         "note": "'be interested in + -ing' · 'be keen on + -ing' · 'It's no use + -ing' · 'There's no point in + -ing'"
       },
       {
-        "head": "It's no use / there's no point / it's worth",
-        "body": "The specific phrases 'it's no use', 'there's no point (in)', and 'it's worth' are always followed by the -ing form, never by 'to + infinitive' — you can think of 'no use' and 'no point' as judging whether an activity (named by the -ing verb) is worthwhile or not. Because 'no point' is normally followed by the preposition 'in', this fits the wider rule that a verb after a preposition takes -ing, even when 'in' is sometimes left out in casual speech.",
+        "head": "It's no use / no point / it's worth",
+        "body": "'It's no use', 'there's no point (in)' e 'it's worth' siempre llevan -ing, nunca 'to + infinitivo': valoran si una actividad merece la pena o no. Como 'no point' suele ir con la preposición 'in', encaja con la regla general de preposición + -ing.",
         "note": "It's no use worrying. · There's no point in waiting. · It's worth trying."
       }
     ],
@@ -481,8 +481,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "No confundas \"interested in doing\" (adjetivo+preposición) con \"want to do\" (verbo normal) — cada uno sigue su propia regla."
     ],
     "dailyWords": [
-      { "w": "worthwhile", "ipa": "/ˌwɜːθˈwaɪl/", "def": "que vale la pena", "ex": "It was a worthwhile experience." },
-      { "w": "to commit to", "ipa": "/kəˈmɪt tuː/", "def": "comprometerse a", "ex": "She committed to finishing the course." }
+      { "w": "worthwhile", "ipa": "/ˌwɜːθˈwaɪl/", "aprox": "uorzuáil", "def": "que vale la pena", "ex": "It was a worthwhile experience." },
+      { "w": "to commit to", "ipa": "/kəˈmɪt tuː/", "aprox": "comít tu", "def": "comprometerse a", "ex": "She committed to finishing the course." }
     ]
   },
   "59": {
@@ -490,18 +490,18 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Prefer + -ing / to + infinitive",
-        "body": "'Prefer' can express a general preference in two ways: 'prefer + -ing + to + -ing' (comparing two activities, e.g. 'I prefer swimming to running') or 'prefer + to + infinitive + rather than + base verb'. Both patterns talk about what you generally like better, not a preference for right now. Don't confuse this general 'prefer' with 'would prefer', which (like 'would like') refers to a specific choice on one occasion and always uses 'to + infinitive'.",
+        "head": "Prefer + -ing / to",
+        "body": "'Prefer' expresa una preferencia general de dos formas: 'prefer + -ing + to + -ing' (comparando dos actividades: 'I prefer swimming to running') o 'prefer to + infinitivo + rather than + verbo base'. No lo confundas con 'would prefer', que es una elección puntual y siempre lleva 'to + infinitivo'.",
         "note": "I prefer swimming to running. · I prefer to swim rather than run."
       },
       {
-        "head": "Would rather + base verb",
-        "body": "'Would rather' means almost the same as 'would prefer', but it has its own special grammar: it's followed directly by the base form of the verb, with no 'to' at all, unlike 'would prefer to' or 'would like to'. So 'I'd rather stay' is correct, while 'I'd rather to stay' is not. This makes 'would rather' behave more like a modal verb (such as 'can' or 'must') than like an ordinary verb such as 'prefer'.",
+        "head": "Would rather + verbo base",
+        "body": "'Would rather' significa casi lo mismo que 'would prefer', pero va seguido directamente del verbo base, sin 'to': 'I'd rather stay' es correcto, 'I'd rather to stay' no. Por eso se comporta más como un modal (can, must) que como un verbo normal.",
         "note": "I'd rather stay at home. · She'd rather not go. · I'd rather have tea than coffee."
       },
       {
-        "head": "Would rather somebody else did something",
-        "body": "When you want to say what you'd prefer someone else to do (not yourself), the structure changes again: 'would rather + subject + past simple', as in 'I'd rather you didn't smoke'. Just like the past simple in the second conditional, this past tense doesn't refer to past time — it's simply the grammatical marker used when the preference concerns another person's action rather than your own. This is different from the plain 'would rather + base verb' pattern above, which is used only when you yourself are the one doing the action.",
+        "head": "Would rather + otra persona",
+        "body": "Para decir lo que prefieres que haga OTRA persona (no tú), la estructura cambia: 'would rather + sujeto + pasado simple', como en 'I'd rather you didn't smoke'. Igual que en el segundo condicional, ese pasado no habla del pasado: es solo la marca gramatical para la acción de otra persona.",
         "note": "I'd rather you didn't smoke. · She'd rather we stayed home."
       }
     ],
@@ -515,7 +515,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "stayed"
         ],
         "ans": 2,
-        "exp": "'Would rather' + base verb (no to): 'I'd rather stay'."
+        "exp": "'Would rather' + verbo base (sin to): 'I'd rather stay'."
       },
       {
         "q": "I prefer ___ to cycling.",
@@ -563,8 +563,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Para hablar de lo que prefieres que OTRA persona haga, usa pasado simple: \"I'd rather you called me\" (no \"to call\")."
     ],
     "dailyWords": [
-      { "w": "topping", "ipa": "/ˈtɒpɪŋ/", "def": "ingrediente que se pone encima (de una pizza, etc.)", "ex": "My favourite pizza topping is mushroom." },
-      { "w": "to order in", "ipa": "/ˈɔːdər ɪn/", "def": "pedir comida a domicilio", "ex": "Let's order in tonight, I don't feel like cooking." }
+      { "w": "topping", "ipa": "/ˈtɒpɪŋ/", "aprox": "tópin", "def": "ingrediente que se pone encima (de una pizza, etc.)", "ex": "My favourite pizza topping is mushroom." },
+      { "w": "to order in", "ipa": "/ˈɔːdər ɪn/", "aprox": "órder in", "def": "pedir comida a domicilio", "ex": "Let's order in tonight, I don't feel like cooking." }
     ]
   },
   "60": {
@@ -572,13 +572,13 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "After prepositions — always -ing",
-        "body": "Whenever a verb directly follows a preposition — in, at, of, without, after, before — it must take the -ing form; this is one of the most consistent rules in English and applies no matter which preposition is involved or what the sentence is about. Learners often make mistakes here because some of these expressions look like they should take 'to + infinitive', but if 'to' itself is functioning as a preposition (as in 'look forward to'), the same -ing rule still applies, which is explored further in the next block.",
+        "head": "Después de preposición: siempre -ing",
+        "body": "Cuando un verbo va justo después de una preposición (in, at, of, without, after, before), siempre toma la forma -ing; es una de las reglas más fiables del inglés. Algunas expresiones despistan porque parecen pedir 'to + infinitivo', pero si ese 'to' funciona como preposición (como en 'look forward to'), sigue aplicando la regla del -ing.",
         "note": "interested in learning · good at cooking · without saying goodbye · after leaving · before eating"
       },
       {
-        "head": "Common prepositional phrases + -ing",
-        "body": "Many common fixed expressions — 'look forward to', 'be used to', 'in addition to', 'succeed in', 'be responsible for' — end in a preposition, even though some of them (like 'to') don't look like typical prepositions at first glance. Because the expression as a whole ends in a preposition, the same rule from above applies: whatever verb comes next must be in the -ing form. Recognizing that these phrases end in a preposition is the key to remembering why -ing is required.",
+        "head": "Frases fijas con preposición + -ing",
+        "body": "Expresiones muy comunes como look forward to, be used to, in addition to, succeed in o be responsible for terminan en preposición, aunque alguna (como 'to') no lo parezca a simple vista. Por eso el verbo que sigue va siempre en -ing.",
         "note": "look forward to doing · be used to doing · in addition to doing · succeed in doing · be responsible for doing"
       }
     ],
@@ -592,7 +592,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "said"
         ],
         "ans": 2,
-        "exp": "After preposition 'without' → -ing: 'without saying'."
+        "exp": "Tras la preposición 'without' → -ing: 'without saying'."
       },
       {
         "q": "I look forward to ___ from you.",
@@ -630,8 +630,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Ojo con \"to\" en frases como \"look forward to\" — ahí \"to\" es preposición, así que necesita \"-ing\", no infinitivo."
     ],
     "dailyWords": [
-      { "w": "to tidy up", "ipa": "/ˈtaɪdi ʌp/", "def": "ordenar, poner en orden", "ex": "I need to tidy up my room." },
-      { "w": "ages", "ipa": "/ˈeɪdʒɪz/", "def": "mucho tiempo (coloquial)", "ex": "I haven't seen her in ages." }
+      { "w": "to tidy up", "ipa": "/ˈtaɪdi ʌp/", "aprox": "táidi ap", "def": "ordenar, poner en orden", "ex": "I need to tidy up my room." },
+      { "w": "ages", "ipa": "/ˈeɪdʒɪz/", "aprox": "éiyis", "def": "mucho tiempo (coloquial)", "ex": "I haven't seen her in ages." }
     ]
   },
   "61": {
@@ -639,18 +639,18 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Used to + -ing (= accustomed to)",
-        "body": "'Be used to' + -ing describes something that feels normal and familiar to you now, because you've experienced it enough times that it no longer feels strange — here 'used' is an adjective meaning 'accustomed', and 'to' is a preposition, which is why the verb after it takes -ing. This describes a current state of familiarity, not an action itself. It's easy to confuse this with 'used to + base verb' (a past habit that no longer happens), which is contrasted directly in the block below.",
+        "head": "Used to + -ing (= acostumbrado a)",
+        "body": "'Be used to' + -ing describe algo que ahora te resulta normal y familiar, porque ya lo has vivido muchas veces; aquí 'used' es adjetivo ('acostumbrado') y 'to' es preposición, por eso pide -ing. Describe un estado actual, no una acción. No lo confundas con 'used to + verbo base' (hábito pasado), visto en el bloque siguiente.",
         "note": "I'm used to getting up early. · She's not used to the cold. · Are you used to the noise?"
       },
       {
         "head": "Get used to + -ing",
-        "body": "'Get used to' + -ing describes the process of becoming familiar with something, moving from finding it strange toward finding it normal — it's the change, rather than the finished state described by 'be used to'. You might say 'I'm getting used to the traffic' while you're still adjusting, and later say 'I'm used to it' once the adjustment is complete. Both phrases still take -ing afterward, since 'to' here is a preposition, not part of an infinitive.",
+        "body": "'Get used to' + -ing describe el PROCESO de acostumbrarte a algo, pasando de lo extraño a lo normal — es el cambio, no el estado ya logrado de 'be used to'. Dices 'I'm getting used to the traffic' mientras te adaptas, y 'I'm used to it' cuando ya lo has conseguido.",
         "note": "I'm getting used to the traffic. · It took time but I got used to living alone."
       },
       {
-        "head": "DIFFERENT from 'used to do'",
-        "body": "Don't confuse 'used to + base verb', which describes a habit or state that existed in the past but not anymore (e.g. 'I used to wake up late'), with 'be used to + -ing', which describes something that feels normal to you now. They look almost identical, but 'used to do' is entirely about past time with no 'to'-as-preposition involved, while 'be/get used to doing' is about present familiarity and always needs -ing after it. Reading the full sentence carefully — is 'used' acting as a verb or as an adjective after 'be'? — is the best way to tell them apart.",
+        "head": "Diferente de 'used to do'",
+        "body": "No confundas 'used to + verbo base' (hábito del pasado que ya no existe: 'I used to wake up late') con 'be used to + -ing' (algo normal para ti ahora). Se parecen, pero 'used to do' habla del pasado sin preposición, y 'be/get used to doing' habla del presente y siempre pide -ing.",
         "note": "I used to wake up late. (past habit) · I'm used to waking up early. (accustomed to now)"
       }
     ],
@@ -675,7 +675,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "feel"
         ],
         "ans": 1,
-        "exp": "Process of becoming accustomed → 'get used to it'."
+        "exp": "Proceso de acostumbrarse → 'get used to it'."
       }
     ],
     "flashcards": [
@@ -712,8 +712,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "GET used to = el proceso de acostumbrarte; BE used to = ya estás acostumbrado (el resultado final)."
     ],
     "dailyWords": [
-      { "w": "to adapt", "ipa": "/əˈdæpt/", "def": "adaptarse", "ex": "It took months to adapt to the new schedule." },
-      { "w": "umbrella", "ipa": "/ʌmˈbrelə/", "def": "paraguas", "ex": "Don't forget your umbrella, it might rain." }
+      { "w": "to adapt", "ipa": "/əˈdæpt/", "aprox": "adápt", "def": "adaptarse", "ex": "It took months to adapt to the new schedule." },
+      { "w": "umbrella", "ipa": "/ʌmˈbrelə/", "aprox": "ambréla", "def": "paraguas", "ex": "Don't forget your umbrella, it might rain." }
     ]
   },
   "62": {
@@ -721,18 +721,18 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Verb + preposition + -ing",
-        "body": "Many verbs are regularly followed by a fixed preposition (succeed IN, insist ON, apologise FOR, dream OF), and whenever a verb comes after that preposition, it must be in the -ing form — this is the same rule seen in earlier units, just applied to verb+preposition combinations rather than adjectives or fixed phrases. Learning the verb together with its preposition (e.g. 'apologise for', not just 'apologise') makes it easier to remember that -ing has to follow. The two special cases below, 'look forward to' and 'feel like', are worth learning separately because their prepositions ('to' and 'like') are easy to mistake for something else.",
+        "head": "Verbo + preposición + -ing",
+        "body": "Muchos verbos llevan una preposición fija (succeed IN, insist ON, apologise FOR, dream OF), y el verbo que sigue a esa preposición va siempre en -ing — la misma regla de otras unidades, aplicada aquí a verbo+preposición. Aprende el verbo junto con su preposición para recordar que pide -ing.",
         "note": "succeed IN doing · insist ON doing · apologise FOR doing · dream OF doing"
       },
       {
-        "head": "LOOK FORWARD TO + -ing",
-        "body": "In 'look forward to', the word 'to' is acting as a preposition, not as the 'to' of an infinitive, even though it looks exactly the same — this is one of the most common mistakes English learners make, since 'to + base verb' feels so natural elsewhere. Because it's a preposition here, the verb that follows must be -ing: 'I'm looking forward to seeing you', never 'to see you'. Whenever you see 'to' after a fixed expression like this, it's worth checking whether it's really an infinitive marker or a disguised preposition.",
+        "head": "Look forward to + -ing",
+        "body": "En 'look forward to', el 'to' funciona como preposición, no como el 'to' del infinitivo, aunque se escriba igual — uno de los errores más comunes. Por eso el verbo siguiente va en -ing: 'I'm looking forward to seeing you', nunca 'to see you'.",
         "note": "I'm looking forward to seeing you. (NOT: to see you ❌)"
       },
       {
-        "head": "FEEL LIKE + -ing",
-        "body": "'Feel like' + -ing is an informal way of saying you want to do something, usually describing a passing mood or desire rather than a firm plan — 'I don't feel like going out tonight' means 'I don't want to go out'. Here too, 'like' functions as a preposition rather than the verb 'to like', which is why -ing follows rather than 'to'. It's a useful everyday expression for talking about spontaneous wishes.",
+        "head": "Feel like + -ing",
+        "body": "'Feel like' + -ing es una forma informal de decir que te apetece algo, normalmente un impulso pasajero más que un plan firme: 'I don't feel like going out tonight' es 'no me apetece salir'. Aquí 'like' también funciona como preposición, por eso pide -ing y no 'to'.",
         "note": "I don't feel like going out tonight."
       }
     ],
@@ -746,7 +746,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "see"
         ],
         "ans": 1,
-        "exp": "'Look forward to' + -ing (to is a preposition here)."
+        "exp": "'Look forward to' + -ing (aquí 'to' es preposición)."
       },
       {
         "q": "She apologised ___ late.",
@@ -779,7 +779,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "go"
         ],
         "ans": 2,
-        "exp": "'Feel like' + -ing = want to."
+        "exp": "'Feel like' + -ing = tener ganas de."
       }
     ],
     "flashcards": [
@@ -808,8 +808,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Cuidado con \"look forward to\" y \"feel like\": aunque parezcan raros, siguen la misma regla — preposición + \"-ing\"."
     ],
     "dailyWords": [
-      { "w": "to apologise", "ipa": "/əˈpɒlədʒaɪz/", "def": "disculparse, pedir perdón", "ex": "He apologised for being late." },
-      { "w": "to insist", "ipa": "/ɪnˈsɪst/", "def": "insistir", "ex": "She insisted on paying the bill." }
+      { "w": "to apologise", "ipa": "/əˈpɒlədʒaɪz/", "aprox": "apóloyais", "def": "disculparse, pedir perdón", "ex": "He apologised for being late." },
+      { "w": "to insist", "ipa": "/ɪnˈsɪst/", "aprox": "insíst", "def": "insistir", "ex": "She insisted on paying the bill." }
     ]
   },
   "63": {
@@ -817,13 +817,13 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Expressions + -ing",
-        "body": "A whole group of fixed expressions about whether something is worthwhile or pointless — 'there's no point in', 'it's no use', 'it's not worth', 'I can't help' — are always followed by the -ing form. Most of these expressions contain a hidden preposition ('in', or an implied one), which is the underlying reason -ing is required, consistent with the general preposition + -ing rule seen elsewhere in this topic. Because they're fixed expressions, it's best to learn each one as a whole chunk rather than analyzing the grammar every time.",
+        "head": "Expresiones + -ing",
+        "body": "Expresiones fijas sobre si algo merece la pena ('there's no point in', 'it's no use', 'it's not worth', 'I can't help') siempre llevan -ing. Casi todas esconden una preposición ('in', o implícita), la misma razón de la regla general preposición + -ing. Mejor aprenderlas como bloque completo.",
         "note": "There's no point in arguing. · It's no use crying. · It's not worth worrying about it. · I can't help laughing."
       },
       {
         "head": "I can't help + -ing",
-        "body": "'Can't help' + -ing means you're unable to stop or avoid doing something, often an automatic reaction like laughing or crying, even if you wanted to control it — 'I can't help laughing' means 'I simply can't stop myself from laughing'. This is a slightly special meaning of 'help' (closer to 'avoid' than to 'assist'), so it's best learned as a fixed idiom rather than analyzed word by word. As with the other expressions in this unit, -ing follows because of the underlying idea of a preposition-like structure.",
+        "body": "'Can't help' + -ing significa que no puedes evitar hacer algo, a menudo una reacción automática como reír o llorar: 'I can't help laughing' es 'no puedo evitar reírme'. Aquí 'help' significa 'evitar', no 'ayudar' — mejor aprenderlo como modismo fijo.",
         "note": "I can't help laughing when I hear that joke. · She couldn't help crying."
       }
     ],
@@ -875,8 +875,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "CAN'T HELP + -ing significa que no puedes evitar hacer algo, como una reacción automática (reír, llorar...)."
     ],
     "dailyWords": [
-      { "w": "frustrated", "ipa": "/frʌˈstreɪtɪd/", "def": "frustrado", "ex": "He felt frustrated after waiting so long." },
-      { "w": "traffic jam", "ipa": "/ˈtræfɪk dʒæm/", "def": "atasco de tráfico", "ex": "We were stuck in a traffic jam for an hour." }
+      { "w": "frustrated", "ipa": "/frʌˈstreɪtɪd/", "aprox": "frastréitid", "def": "frustrado", "ex": "He felt frustrated after waiting so long." },
+      { "w": "traffic jam", "ipa": "/ˈtræfɪk dʒæm/", "aprox": "tráfik yam", "def": "atasco de tráfico", "ex": "We were stuck in a traffic jam for an hour." }
     ]
   },
   "64": {
@@ -884,18 +884,18 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "To + infinitive — purpose",
-        "body": "'To + infinitive' is the most direct way of explaining the purpose or reason behind an action — it answers the question 'why did you do that?' with a short verb phrase, as in 'I went to the shop to buy some milk'. It's used when the subject of the purpose is the same person as the subject of the main verb. When the purpose is expressed as a thing rather than an action, 'for + noun' is used instead, as shown in the next block.",
+        "head": "To + infinitivo: propósito",
+        "body": "'To + infinitivo' es la forma más directa de explicar el propósito de una acción, respondiendo a '¿para qué?': 'I went to the shop to buy some milk'. Se usa cuando el sujeto del propósito es el mismo que el del verbo principal. Si el propósito es una cosa, se usa 'for + sustantivo'.",
         "note": "I went to the shop to buy some milk. · She studies hard to pass the exam."
       },
       {
-        "head": "For + noun — purpose",
-        "body": "'For + noun' expresses purpose in a similar way to 'to + infinitive', but it's used when what follows is a noun (a thing) rather than a verb describing an action — 'I went to the shop for some milk' names the thing you wanted, while 'to buy some milk' names the action you performed. Mixing these up is a common error: you can't normally say 'for buy some milk', because 'for' needs a noun, not a base verb.",
+        "head": "For + sustantivo: propósito",
+        "body": "'For + sustantivo' expresa propósito igual que 'to + infinitivo', pero se usa cuando lo que sigue es una cosa, no una acción: 'I went to the shop for some milk' nombra la cosa; 'to buy some milk' nombra la acción. No digas 'for buy some milk': 'for' necesita un sustantivo.",
         "note": "I went to the shop for some milk. · This tool is for cutting wood."
       },
       {
-        "head": "So that — purpose with a subject",
-        "body": "'So that + clause' is needed when the purpose involves a different person than the subject of the main sentence, or when the purpose clause needs a modal verb like 'can', 'could', or 'would' — situations where a simple 'to + infinitive' wouldn't work grammatically. For example, 'I left early so that I could catch the bus' explains a purpose that needs the modal 'could', which 'to catch the bus' alone couldn't express as clearly. Think of 'so that' as the more flexible, clause-based option for purpose, used when the simpler 'to' or 'for' patterns aren't enough.",
+        "head": "So that: propósito con sujeto propio",
+        "body": "'So that + oración' se usa cuando el propósito involucra a otra persona distinta del sujeto principal, o necesita un modal (can, could, would) — casos donde 'to + infinitivo' no funciona. 'I left early so that I could catch the bus' expresa un propósito con 'could' que 'to catch the bus' no podría transmitir.",
         "note": "I left early so that I could catch the bus. · She speaks slowly so that people can understand."
       }
     ],
@@ -909,7 +909,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "in order that"
         ],
         "ans": 2,
-        "exp": "Purpose → 'to': 'She called to check the time.'"
+        "exp": "Propósito → 'to': 'She called to check the time.'"
       },
       {
         "q": "I spoke loudly ___ everyone could hear me.",
@@ -920,7 +920,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "because"
         ],
         "ans": 2,
-        "exp": "Purpose with modal → 'so that': 'so that everyone could hear'."
+        "exp": "Propósito con verbo modal → 'so that': 'so that everyone could hear'."
       }
     ],
     "flashcards": [
@@ -955,8 +955,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Usa SO THAT cuando el propósito necesita un verbo modal (can, could, would) o involucra a otra persona distinta del sujeto."
     ],
     "dailyWords": [
-      { "w": "errand", "ipa": "/ˈerənd/", "def": "recado, mandado", "ex": "I have to run a few errands this morning." },
-      { "w": "prescription", "ipa": "/prɪˈskrɪpʃn/", "def": "receta médica", "ex": "She picked up her prescription at the pharmacy." }
+      { "w": "errand", "ipa": "/ˈerənd/", "aprox": "érand", "def": "recado, mandado", "ex": "I have to run a few errands this morning." },
+      { "w": "prescription", "ipa": "/prɪˈskrɪpʃn/", "aprox": "priskrípshon", "def": "receta médica", "ex": "She picked up her prescription at the pharmacy." }
     ]
   },
   "65": {
@@ -964,18 +964,18 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Adjective + to infinitive",
-        "body": "Many adjectives — nice, easy, difficult, happy, sorry, and others — are naturally followed by 'to + infinitive' when they comment on an action or express a reaction, as in 'nice to meet you' or 'difficult to learn'. This is a very productive pattern: once you know an adjective can take this structure, you can use it to comment on almost any action. It's especially common in polite, fixed social phrases like 'nice to meet you' and 'sorry to hear that'.",
+        "head": "Adjetivo + to",
+        "body": "Muchos adjetivos (nice, easy, difficult, happy, sorry...) van seguidos de 'to + infinitivo' al comentar una acción o reacción: 'nice to meet you', 'difficult to learn'. Es un patrón muy productivo, especialmente en frases sociales fijas como 'nice to meet you' o 'sorry to hear that'.",
         "note": "nice to meet you · easy to understand · difficult to learn · happy to help · sorry to hear that"
       },
       {
-        "head": "It's + adjective + to",
-        "body": "'It's + adjective + to + infinitive' is a very common structure for making a general comment about an action, using 'it' as a dummy subject that doesn't refer to anything specific — 'it's easy to make mistakes' comments on the general activity of making mistakes, not on any one particular mistake. This impersonal 'it' pattern is extremely common in spoken and written English for expressing opinions and general truths.",
+        "head": "It's + adjetivo + to",
+        "body": "'It's + adjetivo + to + infinitivo' es una estructura muy común para comentar una acción en general, usando 'it' como sujeto vacío que no se refiere a nada concreto: 'it's easy to make mistakes' comenta la actividad en general, no un error concreto.",
         "note": "It's easy to make mistakes. · It's important to be on time. · It's nice to see you."
       },
       {
         "head": "Too / enough + to",
-        "body": "'Too' and 'enough' both combine with an adjective and 'to + infinitive', but with opposite logic: 'too + adjective + to' means there's an excessive degree of something that prevents the action ('too hot to go outside' = so hot that going outside isn't possible), while 'adjective + enough + to' means there's a sufficient degree of something that allows the action ('old enough to vote' = sufficiently old to be allowed to vote). Notice that 'enough' comes after the adjective, while 'too' comes before it — the word order is different for each.",
+        "body": "'Too' y 'enough' se combinan con adjetivo + 'to + infinitivo' con lógica opuesta: 'too + adjetivo + to' bloquea la acción por exceso ('too hot to go outside'), y 'adjetivo + enough + to' la permite por ser suficiente ('old enough to vote'). Ojo al orden: 'enough' va DESPUÉS del adjetivo, 'too' va ANTES.",
         "note": "It's too hot to go outside. · She's old enough to vote. · I'm not strong enough to lift it."
       }
     ],
@@ -989,7 +989,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "met"
         ],
         "ans": 2,
-        "exp": "Adjective + to infinitive: 'It's nice to meet you.'"
+        "exp": "Adjetivo + infinitivo con to: 'It's nice to meet you.'"
       },
       {
         "q": "The box is too heavy ___.",
@@ -1000,7 +1000,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "lift"
         ],
         "ans": 0,
-        "exp": "'Too + adj + to': 'too heavy to lift'."
+        "exp": "'Too + adjetivo + to': 'too heavy to lift'."
       }
     ],
     "flashcards": [
@@ -1037,8 +1037,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Adjetivo + ENOUGH significa \"suficientemente\" y permite la acción — ojo, \"enough\" va DESPUÉS del adjetivo."
     ],
     "dailyWords": [
-      { "w": "delayed", "ipa": "/dɪˈleɪd/", "def": "retrasado", "ex": "Our flight was delayed by two hours." },
-      { "w": "windy", "ipa": "/ˈwɪndi/", "def": "ventoso", "ex": "It's too windy to fly a kite today." }
+      { "w": "delayed", "ipa": "/dɪˈleɪd/", "aprox": "diléid", "def": "retrasado", "ex": "Our flight was delayed by two hours." },
+      { "w": "windy", "ipa": "/ˈwɪndi/", "aprox": "uíndi", "def": "ventoso", "ex": "It's too windy to fly a kite today." }
     ]
   },
   "66": {
@@ -1046,18 +1046,18 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "Is TO an infinitive marker, or a preposition?",
-        "body": "Most of the time, 'to' followed by a base verb is simply the infinitive marker, as in 'I want to go'. But in a handful of fixed expressions — 'look forward to', 'be/get used to', 'object to' — 'to' is secretly working as a preposition instead, which means the verb after it must be -ing, not the base form. There's no way to tell just by looking at the word 'to' itself; you have to recognize these expressions as exceptions and learn them individually.",
+        "head": "¿'To' es infinitivo o preposición?",
+        "body": "Normalmente 'to' + verbo base es la marca del infinitivo ('I want to go'). Pero en expresiones fijas como look forward to, be/get used to u object to, 'to' funciona en secreto como preposición, así que el verbo siguiente va en -ing. Hay que reconocer estas excepciones y aprenderlas una por una.",
         "note": "I want to go. (infinitive) · I'm looking forward to going. (preposition + -ing)"
       },
       {
-        "head": "BE/GET USED TO + -ing",
-        "body": "This is exactly the confusion covered in unit 61: 'used to + base verb' describes a past habit that's now over ('I used to smoke'), with no preposition involved, while 'be/get used to' + -ing describes present familiarity, where 'to' is a preposition and therefore takes -ing ('I'm used to smoking'). The two phrases share the words 'used to' but have completely different grammar and meaning, so context is essential for telling them apart.",
+        "head": "Be/get used to + -ing",
+        "body": "Es la misma confusión de la unidad 61: 'used to + verbo base' es un hábito pasado ya terminado ('I used to smoke'), sin preposición; 'be/get used to' + -ing describe familiaridad presente, donde 'to' es preposición ('I'm used to smoking'). Comparten las palabras pero tienen gramática distinta.",
         "note": "I used to smoke. (past habit) · I'm used to smoking. (accustomed, = to is a preposition) · I'm getting used to waking up early."
       },
       {
-        "head": "OBJECT TO / IN ADDITION TO + -ing",
-        "body": "'Object to' and 'in addition to' are two more expressions where 'to' is a preposition rather than an infinitive marker, so the verb that follows must be -ing: 'he objects to being told what to do', 'in addition to working, she studies at night'. These join 'look forward to' and 'be/get used to' as expressions worth memorizing as fixed chunks, since their grammar doesn't follow the more common 'to + base verb' pattern.",
+        "head": "Object to / in addition to + -ing",
+        "body": "'Object to' e 'in addition to' son otras dos expresiones donde 'to' es preposición, no marca de infinitivo, así que el verbo siguiente va en -ing: 'he objects to being told what to do', 'in addition to working, she studies at night'. Se aprenden en bloque, como 'look forward to'.",
         "note": "He objects to being told what to do. · In addition to working, she studies at night."
       }
     ],
@@ -1071,7 +1071,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "getting"
         ],
         "ans": 1,
-        "exp": "'Be used to' — 'to' is a preposition here, + -ing."
+        "exp": "'Be used to' — aquí 'to' es preposición, va con -ing."
       },
       {
         "q": "She decided ___ the job.",
@@ -1082,7 +1082,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "accept"
         ],
         "ans": 0,
-        "exp": "'Decide to' + infinitive — normal 'to'."
+        "exp": "'Decide to' + infinitivo — 'to' normal."
       },
       {
         "q": "He objects ___ asked personal questions.",
@@ -1093,7 +1093,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "be"
         ],
         "ans": 1,
-        "exp": "'Object to' + -ing — 'to' is a preposition."
+        "exp": "'Object to' + -ing — 'to' es preposición."
       }
     ],
     "flashcards": [
@@ -1127,8 +1127,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Cuando \"to\" va después de una expresión fija (look forward to, object to, in addition to), casi siempre es preposición → usa \"-ing\"."
     ],
     "dailyWords": [
-      { "w": "routine", "ipa": "/ruːˈtiːn/", "def": "rutina", "ex": "It took a while to get into a routine." },
-      { "w": "to object", "ipa": "/əbˈdʒekt/", "def": "oponerse, poner objeciones", "ex": "Nobody objected to the new plan." }
+      { "w": "routine", "ipa": "/ruːˈtiːn/", "aprox": "rutín", "def": "rutina", "ex": "It took a while to get into a routine." },
+      { "w": "to object", "ipa": "/əbˈdʒekt/", "aprox": "obyékt", "def": "oponerse, poner objeciones", "ex": "Nobody objected to the new plan." }
     ]
   },
   "67": {
@@ -1136,13 +1136,13 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "See/hear/watch + object + -ing (in progress)",
-        "body": "When you use see, hear, or watch with an object followed by -ing, you're describing that you witnessed only part of an action while it was already in progress — you don't necessarily know when it started or finished, just that you caught it happening. 'I saw her crossing the street' suggests you saw her partway through, not necessarily the whole journey from one side to the other. This contrasts with the pattern below, where the base verb form indicates you saw the entire action from start to finish.",
+        "head": "See/hear/watch + objeto + -ing (en curso)",
+        "body": "Con see, hear o watch + objeto + -ing, presenciaste solo una PARTE de la acción, ya en marcha, sin saber cuándo empezó o acabó: 'I saw her crossing the street' sugiere que la viste a medio cruce, no el trayecto entero.",
         "note": "I saw her crossing the street. · I could hear them arguing. · I watched them playing."
       },
       {
-        "head": "See/hear/watch + object + base verb (complete)",
-        "body": "When see, hear, or watch is followed by an object and the base form of the verb (no -ing), it means you witnessed the whole action, from beginning to end, as one complete event — 'I saw her cross the street' means you watched the entire crossing, start to finish. This is the opposite of the -ing form above, which only shows part of an action in progress; choosing between the two forms lets you signal exactly how much of the action you actually saw.",
+        "head": "See/hear/watch + objeto + verbo base (completa)",
+        "body": "Con see, hear o watch + objeto + verbo base (sin -ing), presenciaste la acción ENTERA, de principio a fin: 'I saw her cross the street' significa que viste todo el cruce. Elegir entre las dos formas indica cuánto viste realmente de la acción.",
         "note": "I saw her cross the street. (the whole event) · I heard him come in."
       }
     ],
@@ -1156,7 +1156,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "entered"
         ],
         "ans": 2,
-        "exp": "Complete action seen from start to end → base verb: 'saw him enter'."
+        "exp": "Acción completa vista de principio a fin → verbo base: 'saw him enter'."
       },
       {
         "q": "I could hear someone ___ in the next room.",
@@ -1167,7 +1167,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "crying"
         ],
         "ans": 3,
-        "exp": "Partial action (in progress) → -ing: 'hear someone crying'."
+        "exp": "Acción parcial (en curso) → -ing: 'hear someone crying'."
       }
     ],
     "flashcards": [
@@ -1199,8 +1199,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "SEE/HEAR/WATCH + persona + verbo base (sin \"to\") = viste la acción COMPLETA, de principio a fin."
     ],
     "dailyWords": [
-      { "w": "to rehearse", "ipa": "/rɪˈhɜːs/", "def": "ensayar", "ex": "The actors rehearsed the scene twice." },
-      { "w": "to bow", "ipa": "/baʊ/", "def": "hacer una reverencia, inclinarse", "ex": "The actor bowed at the end of the show." }
+      { "w": "to rehearse", "ipa": "/rɪˈhɜːs/", "aprox": "rijérs", "def": "ensayar", "ex": "The actors rehearsed the scene twice." },
+      { "w": "to bow", "ipa": "/baʊ/", "aprox": "báu", "def": "hacer una reverencia, inclinarse", "ex": "The actor bowed at the end of the show." }
     ]
   },
   "68": {
@@ -1208,13 +1208,13 @@ export const ingAndToUnits: Record<number, Unit> = {
     "topic": "-ing and to…",
     "explain": [
       {
-        "head": "-ing clause as adjective / subject / result",
-        "body": "An -ing clause can do several different jobs in a sentence beyond simply following a verb: it can act like an adjective describing a noun ('the man sitting in the corner'), it can act as the subject of the whole sentence ('living in a city has its advantages'), or it can describe the result of an action that was just mentioned ('she fell, hurting her knee'). In each case, the -ing form lets you pack extra information into a sentence without needing a separate clause with its own subject and conjunction.",
+        "head": "-ing como adjetivo / sujeto / resultado",
+        "body": "Una cláusula en -ing puede funcionar como adjetivo que describe un sustantivo ('the man sitting in the corner'), como sujeto de la oración ('living in a city has its advantages'), o como resultado de una acción ('she fell, hurting her knee'). Permite añadir información sin usar una oración aparte con su propio sujeto.",
         "note": "The man sitting in the corner is my uncle. · Living in a city has its advantages. · She fell, hurting her knee."
       },
       {
-        "head": "Having done — explains the past reason",
-        "body": "'Having + past participle' is used at the start of a sentence to show that one action was completed before another one began, usually explaining the reason or cause behind what happens next — 'having finished the work, I went home' means 'because/after I had finished the work, I went home'. It works like a compressed version of a time or reason clause with the past perfect, letting you combine two related past events into a single, more elegant sentence.",
+        "head": "Having + participio: razón pasada",
+        "body": "'Having + participio pasado' al inicio de una oración indica que una acción terminó antes de que empezara otra, explicando normalmente la causa de lo que sigue: 'having finished the work, I went home' es 'después de terminar el trabajo, me fui a casa'. Es una versión compacta de una oración de causa con pasado perfecto.",
         "note": "Having finished the work, I went home. (= After I had finished, I went home.)"
       }
     ],
@@ -1228,7 +1228,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "to sit"
         ],
         "ans": 2,
-        "exp": "-ing clause modifying noun: 'the woman sitting by the window'."
+        "exp": "Cláusula -ing que modifica al sustantivo: 'the woman sitting by the window'."
       },
       {
         "q": "___ all the food, we ordered more.",
@@ -1239,7 +1239,7 @@ export const ingAndToUnits: Record<number, Unit> = {
           "To eat"
         ],
         "ans": 1,
-        "exp": "'Having + pp' = after completing the action: 'Having eaten all the food'."
+        "exp": "'Having + participio' = tras completar la acción: 'Having eaten all the food'."
       }
     ],
     "flashcards": [
@@ -1271,8 +1271,8 @@ export const ingAndToUnits: Record<number, Unit> = {
       "HAVING + participio pasado indica que una acción terminó ANTES de la siguiente — es como decir \"después de haber hecho algo\"."
     ],
     "dailyWords": [
-      { "w": "croissant", "ipa": "/ˈkwʌsɒ̃/", "def": "cruasán", "ex": "She had a coffee and a croissant for breakfast." },
-      { "w": "to wrap up", "ipa": "/ræp ʌp/", "def": "abrigarse bien", "ex": "Wrap up warm, it's freezing outside." }
+      { "w": "croissant", "ipa": "/ˈkwʌsɒ̃/", "aprox": "kuáson", "def": "cruasán", "ex": "She had a coffee and a croissant for breakfast." },
+      { "w": "to wrap up", "ipa": "/ræp ʌp/", "aprox": "ráp ap", "def": "abrigarse bien", "ex": "Wrap up warm, it's freezing outside." }
     ]
   }
 };

@@ -6,17 +6,17 @@ export const pronounsUnits: Record<number, Unit> = {
     "topic": "Pronouns",
     "explain": [
       {
-        "head": "Reflexive pronouns — form",
-        "body": "Reflexive pronouns are formed by adding 'self' (singular) or 'selves' (plural) to a possessive or object pronoun: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. Each one matches a specific subject pronoun (I → myself, we → ourselves, they → themselves), so the ending always agrees in person and number with the subject of the sentence. Unlike personal pronouns such as 'me' or 'him', which can refer to someone other than the subject, reflexive pronouns specifically point back to the subject itself, as the next block explains."
+        "head": "Pronombres reflexivos — forma",
+        "body": "Los pronombres reflexivos se forman añadiendo 'self' (singular) o 'selves' (plural) a un posesivo u objeto: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. Cada uno concuerda en persona y número con el sujeto, a diferencia de 'me' o 'him', que pueden referirse a otra persona."
       },
       {
-        "head": "When the subject and object are the same",
-        "body": "A reflexive pronoun is used when the person or thing doing the action is also the one receiving it — in other words, the subject and object of the verb are the same entity. In 'I cut myself', the same person both did the cutting and got cut, so 'myself' reflects the action back onto the subject. If a different person were affected, you'd use an ordinary object pronoun instead ('I cut him'), which is why choosing the right pronoun depends on checking whether the action stays with the subject or goes to someone else.",
+        "head": "Cuando sujeto y objeto coinciden",
+        "body": "Se usa un reflexivo cuando quien hace la acción también la recibe: en 'I cut myself', la misma persona corta y es cortada. Si la acción afecta a otra persona, se usa un pronombre objeto normal ('I cut him').",
         "note": "I cut myself. · She looked at herself in the mirror. · He blamed himself."
       },
       {
-        "head": "By myself / yourself… = alone",
-        "body": "'By' followed by a reflexive pronoun is a fixed idiomatic phrase meaning alone, or without anyone else's help — a separate use from the basic reflexive meaning above. 'I live by myself' doesn't mean I live 'on' myself in any literal reflexive sense; it simply means I live alone. This phrase works the same way across all persons (by yourself, by himself, by ourselves) and is a common, natural way to express solitude or independence in English.",
+        "head": "By + reflexivo = solo",
+        "body": "'By' más un reflexivo es una expresión fija que significa 'solo', sin ayuda de nadie; no tiene sentido reflexivo literal. 'I live by myself' simplemente significa que vivo solo, y funciona igual con cualquier persona (by yourself, by himself...).",
         "note": "I live by myself. (= alone) · Did you do it by yourself? (= alone/unaided)"
       }
     ],
@@ -30,7 +30,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "its"
         ],
         "ans": 2,
-        "exp": "Same subject and object → reflexive: 'herself'."
+        "exp": "Mismo sujeto y objeto → reflexivo: 'herself'."
       },
       {
         "q": "I did it all by ___. No one helped me.",
@@ -41,7 +41,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "my"
         ],
         "ans": 2,
-        "exp": "'By + reflexive' = alone/unaided: 'by myself'."
+        "exp": "'By + reflexivo' = solo/sin ayuda: 'by myself'."
       }
     ],
     "flashcards": [
@@ -61,18 +61,18 @@ export const pronounsUnits: Record<number, Unit> = {
     "topic": "Pronouns",
     "explain": [
       {
-        "head": "A/this/that + noun + OF + possessive pronoun",
-        "body": "When you want to say that something is one among several things belonging to a person, English combines a determiner (a/an/this/some) with the noun, followed by 'of' and a possessive pronoun (mine, yours, his, hers, ours, theirs) — not the object pronoun. So 'a friend of mine' means one of my (probably several) friends, and the structure specifically requires the possessive form, never 'of me', 'of you' etc. This double-possessive pattern is the same one used for 'a friend of Tom's', just with a pronoun instead of a name.",
+        "head": "Un/este + nombre + of + posesivo",
+        "body": "Para decir que algo es uno entre varios que pertenecen a alguien, se combina un determinante (a/this/some) + nombre + 'of' + pronombre posesivo (mine, yours, his...), nunca el pronombre objeto. Así, 'a friend of mine' significa uno de mis amigos; nunca se dice 'a friend of me'.",
         "note": "a friend of mine ✅ (NOT: a friend of me ❌) · this book of yours · some friends of theirs"
       },
       {
-        "head": "MY OWN / YOUR OWN — exclusive possession",
-        "body": "Adding 'own' right after a possessive adjective (my, your, her...) emphasizes that something belongs exclusively to that person — it isn't shared, borrowed, or someone else's. 'I have my own car' stresses that the car is mine alone, as opposed to a shared family car or a rental. This use of 'own' is purely about emphasizing sole ownership, and is different from the idiomatic 'on my own', covered next, which means being alone.",
+        "head": "My own / your own",
+        "body": "Añadir 'own' después del posesivo (my, your, her...) enfatiza que algo pertenece exclusivamente a esa persona, sin compartirlo ni prestarlo. 'I have my own car' resalta que el coche es solo mío, no uno compartido.",
         "note": "I have my own car. · She has a room of her own."
       },
       {
-        "head": "ON MY OWN / ON YOUR OWN = alone",
-        "body": "'On' + possessive + 'own' is a fixed idiom meaning alone or unassisted — 'I live on my own' means exactly the same thing as 'I live by myself'. Even though it uses the word 'own' (which usually marks exclusive possession, as in the block above), here the whole phrase functions as a set expression about solitude rather than about who owns what. English speakers use 'on my own' and 'by myself' interchangeably in this meaning.",
+        "head": "On my own = solo",
+        "body": "'On' + posesivo + 'own' es una expresión fija que significa 'solo' o 'sin ayuda', igual que 'by myself'. Aunque usa la palabra 'own', aquí funciona como frase hecha sobre soledad, no sobre posesión.",
         "note": "I live on my own. · Did you paint the house on your own?"
       }
     ],
@@ -86,7 +86,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "with"
         ],
         "ans": 0,
-        "exp": "'A friend OF mine' — double possessive."
+        "exp": "'A friend OF mine' — doble posesivo."
       },
       {
         "q": "I don't want to share. I want ___ own room.",
@@ -97,7 +97,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "my's"
         ],
         "ans": 0,
-        "exp": "'My own' + noun."
+        "exp": "'My own' + nombre."
       },
       {
         "q": "She moved to the city and lives ___ own now.",
@@ -108,7 +108,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "in her"
         ],
         "ans": 1,
-        "exp": "'On her own' = alone."
+        "exp": "'On her own' = sola."
       }
     ],
     "flashcards": [
@@ -131,18 +131,18 @@ export const pronounsUnits: Record<number, Unit> = {
     "topic": "Pronouns",
     "explain": [
       {
-        "head": "THERE + BE — something exists",
-        "body": "'There' combined with a form of 'be' introduces the existence of something — it announces that a thing, person or event exists or is present, without 'there' having any real meaning of its own (it isn't pointing to a location). 'There's a café on the corner' simply states that a café exists in that spot; the true subject of the sentence ('a café') comes after the verb. This is different from using 'it', which refers to something specific and identifiable rather than announcing that it exists, as shown in the next blocks.",
+        "head": "There + be = existencia",
+        "body": "'There' con una forma de 'be' anuncia que algo existe o está presente, sin que 'there' tenga significado propio de lugar. 'There's a café on the corner' solo afirma que hay un café ahí; el verdadero sujeto ('a café') va después del verbo.",
         "note": "There's a café on the corner. · There were 200 people at the concert."
       },
       {
-        "head": "IT — weather, time, distance",
-        "body": "English requires the 'dummy' subject 'it' — not 'there' — for weather, clock time, and distances, even though 'it' isn't referring to any specific noun in these sentences. 'It's raining', 'It's 9 o'clock' and 'It's 300 km to the coast' all use 'it' simply because the sentence grammatically needs a subject, and English has settled on 'it' as the placeholder for these particular topics. Learners often want to say 'there is raining' by analogy with 'there is a problem', but weather, time and distance are a fixed exception that always take 'it'.",
+        "head": "It — clima, hora, distancia",
+        "body": "Para el clima, la hora y las distancias, el inglés usa siempre 'it' como sujeto vacío, no 'there', aunque 'it' no se refiera a nada concreto: 'It's raining', 'It's 9 o'clock', 'It's 300 km to the coast'. Es una excepción fija que hay que memorizar.",
         "note": "It's raining. · It's 9 o'clock. · It's 300 km to the coast."
       },
       {
-        "head": "IT — general situations and opinions",
-        "body": "'It' also works as a placeholder subject when you want to comment on a situation or action described later in the sentence, in the pattern 'it + be + adjective + to-infinitive'. In 'It's important to arrive early', the real point of the sentence — arriving early — is pushed to the end, and 'it' simply holds the subject position at the front. This lets you put the evaluation (important, nice, difficult) first, a very common and natural way to give opinions in English.",
+        "head": "It — opiniones y situaciones",
+        "body": "'It' también funciona como sujeto vacío para opinar sobre algo que se describe después, con el patrón 'it + be + adjetivo + to + infinitivo'. En 'It's important to arrive early', lo importante (llegar temprano) va al final y 'it' solo ocupa el lugar del sujeto.",
         "note": "It's important to arrive early. · It was nice to see you."
       }
     ],
@@ -156,7 +156,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "Has"
         ],
         "ans": 1,
-        "exp": "Existence → 'there is'."
+        "exp": "Existencia → 'there is'."
       },
       {
         "q": "___ raining when we left.",
@@ -167,7 +167,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "It were"
         ],
         "ans": 1,
-        "exp": "Weather → 'it'."
+        "exp": "Clima → 'it'."
       },
       {
         "q": "___ difficult to learn a language alone.",
@@ -178,7 +178,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "Is"
         ],
         "ans": 1,
-        "exp": "Opinion about a situation → 'it'."
+        "exp": "Opinión sobre una situación → 'it'."
       }
     ],
     "flashcards": [
@@ -198,18 +198,18 @@ export const pronounsUnits: Record<number, Unit> = {
     "topic": "Pronouns",
     "explain": [
       {
-        "head": "Some — positive sentences",
-        "body": "'Some' is the default quantifier in positive sentences when you're referring to an unspecified quantity or number of something, whether countable ('some books') or uncountable ('some money'). It simply confirms that an amount exists without needing to specify exactly how much or how many. As soon as the sentence turns negative or becomes a question, English generally switches to 'any' instead, covered next.",
+        "head": "Some en frases afirmativas",
+        "body": "'Some' es el cuantificador habitual en frases afirmativas para una cantidad indefinida, tanto contable ('some books') como incontable ('some money'). Solo confirma que existe algo, sin precisar cuánto.",
         "note": "I have some money. · She bought some books. · There are some people waiting."
       },
       {
-        "head": "Any — negative sentences and questions",
-        "body": "'Any' replaces 'some' in negative sentences and in most questions, because in these contexts you're often talking about a quantity that could be zero, or genuinely asking whether any amount exists at all — 'I don't have any money', 'Do you have any questions?'. The logical shift from 'some' (assuming existence) to 'any' (not assuming existence) is what drives the change, not just the grammatical form of the sentence. There's one important exception to this pattern, described in the next block.",
+        "head": "Any en negativas y preguntas",
+        "body": "'Any' sustituye a 'some' en negaciones y preguntas, porque ahí se habla de una cantidad que podría ser cero: 'I don't have any money', 'Do you have any questions?'. No hay un equivalente fijo en español; el cambio depende de si se asume o no que algo existe.",
         "note": "I don't have any money. · Do you have any questions? · There isn't any milk left."
       },
       {
-        "head": "Some in questions — offers and requests",
-        "body": "Even though questions normally take 'any', 'some' is used instead in offers and requests, because in these cases you already expect or hope the answer will be 'yes' — you're not genuinely uncertain whether something exists. 'Would you like some coffee?' is an offer, not a neutral request for information, so it keeps the more positive, expectant feel of 'some'. This is the main exception to the some/any rule and is worth memorizing as a fixed pattern for politeness.",
+        "head": "Some en ofertas y peticiones",
+        "body": "En ofertas y peticiones se usa 'some' aunque sea pregunta, porque ya se espera un 'sí': 'Would you like some coffee?'. Es la excepción principal a la regla some/any; conviene memorizarla como patrón fijo de cortesía.",
         "note": "Would you like some coffee? (offer) · Could I have some water please? (request)"
       }
     ],
@@ -223,7 +223,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "much"
         ],
         "ans": 1,
-        "exp": "Negative sentence → 'any': 'I don't have any money.'"
+        "exp": "Frase negativa → 'any': 'I don't have any money.'"
       },
       {
         "q": "Would you like ___ tea?",
@@ -234,7 +234,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "no"
         ],
         "ans": 0,
-        "exp": "Offer → 'some' (expecting yes): 'Would you like some tea?'"
+        "exp": "Oferta → 'some' (se espera un sí): 'Would you like some tea?'"
       }
     ],
     "flashcards": [
@@ -257,18 +257,18 @@ export const pronounsUnits: Record<number, Unit> = {
     "topic": "Pronouns",
     "explain": [
       {
-        "head": "No + noun — used as adjective",
-        "body": "'No' functions like an adjective placed directly before a noun to mean zero, or none at all, as a more emphatic alternative to 'not any' — 'There is no milk' is essentially the same as 'There isn't any milk', but more direct. Because 'no' already carries the negative meaning, the verb in the sentence stays in its normal positive form ('there is no milk', not 'there isn't no milk'), avoiding a double negative. This differs from 'none', covered next, which stands alone without a following noun.",
+        "head": "No + nombre",
+        "body": "'No' funciona como adjetivo delante de un nombre para decir 'cero' o 'ninguno', más directo que 'not any': 'There is no milk' equivale a 'There isn't any milk'. Como 'no' ya es negativo, el verbo se queda afirmativo para evitar doble negación.",
         "note": "There is no milk. · I have no money. · No problem!"
       },
       {
-        "head": "None — used alone (no noun follows)",
-        "body": "'None' carries the same 'zero' meaning as 'no', but it's used when the noun isn't repeated — either because it's understood from context ('How much milk is left?' 'None.') or because it's expressed with 'of' instead ('None of my friends came'). Think of 'none' as standing in for 'no + [noun]' when repeating the noun would be redundant. Like 'no', it expresses a complete absence, just in a different grammatical position in the sentence.",
+        "head": "None — sin nombre después",
+        "body": "'None' tiene el mismo sentido de 'cero' que 'no', pero se usa cuando el nombre no se repite: por contexto ('How much milk is left?' 'None.') o con 'of' ('None of my friends came'). Piénsalo como 'no + nombre' cuando repetir el nombre sería redundante.",
         "note": "'How much milk is left?' 'None.' · None of my friends came. · None of it was true."
       },
       {
-        "head": "Nothing / Nobody / No one — negative subjects",
-        "body": "'Nothing', 'nobody' and 'no one' already contain the negative meaning built into the word itself, so when they act as the subject of a sentence, the verb that follows stays in its normal, positive form — 'Nothing happened', 'Nobody called'. Adding a second negative to the verb ('Nobody didn't call') would create a double negative, which is incorrect in standard English, unlike in Spanish where doubling up negatives is normal. Treat these words as already carrying the negation, so the rest of the sentence stays affirmative.",
+        "head": "Nothing / Nobody / No one",
+        "body": "'Nothing', 'nobody' y 'no one' ya llevan la negación incorporada, así que el verbo que sigue se queda afirmativo: 'Nothing happened', 'Nobody called'. A diferencia del español, en inglés no se puede doblar la negación ('Nobody didn't call' es incorrecto).",
         "note": "Nothing happened. · Nobody called. · No one was hurt. (NOT: Nobody didn't call)"
       }
     ],
@@ -282,7 +282,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "Nothing"
         ],
         "ans": 2,
-        "exp": "'None' when used alone (no noun): 'None at all.'"
+        "exp": "'None' sin nombre: 'None at all.'"
       },
       {
         "q": "___ told me about the change. I didn't know.",
@@ -293,7 +293,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "None"
         ],
         "ans": 1,
-        "exp": "Nobody = no person (verb stays positive): 'Nobody told me'."
+        "exp": "Nobody = nadie (el verbo queda afirmativo): 'Nobody told me'."
       }
     ],
     "flashcards": [
@@ -313,18 +313,18 @@ export const pronounsUnits: Record<number, Unit> = {
     "topic": "Pronouns",
     "explain": [
       {
-        "head": "Much and little — uncountable",
-        "body": "'Much' and 'little' are the quantifiers reserved for uncountable nouns: 'much' points to a large quantity ('not much money'), while 'little' points to a small quantity ('very little patience'). Because they only pair with things you can't count as separate units (money, time, patience), you would never use them with a plural countable noun like 'friends'. This pairs with 'many' and 'few', covered next, which do the same job but for countable nouns.",
+        "head": "Much y little — incontables",
+        "body": "'Much' y 'little' acompañan a nombres incontables: 'much' indica cantidad grande ('not much money') y 'little' cantidad pequeña ('very little patience'). Nunca se usan con un plural contable como 'friends'.",
         "note": "not much money · a little time · How much water? · very little patience"
       },
       {
-        "head": "Many and few — countable",
-        "body": "'Many' and 'few' work the same way as 'much' and 'little', but for countable plural nouns instead of uncountable ones: 'many' signals a large number ('many people'), and 'few' signals a small number ('few options'). Since they specifically pair with things you count individually, they're used with plural nouns like 'friends' or 'books', never with an uncountable noun like 'money'. Choosing between the much/little pair and the many/few pair simply depends on whether the following noun is countable or not.",
+        "head": "Many y few — contables",
+        "body": "'Many' y 'few' hacen lo mismo pero con plurales contables: 'many' indica número grande ('many people') y 'few' número pequeño ('few options'). Se usan con nombres como 'friends' o 'books', nunca con incontables como 'money'.",
         "note": "not many people · a few friends · How many books? · very few options"
       },
       {
-        "head": "A little / a few — positive meaning",
-        "body": "Adding 'a' in front of 'little' or 'few' completely changes the tone from negative to positive: 'a little' and 'a few' mean 'a small but sufficient amount' — some, and that's fine — while 'little' and 'few' alone mean 'barely any', often implying a problem or disappointment. 'I have a little money' sounds reassuring (I have enough to get by), whereas 'I have little money' sounds like a complaint (I'm short on cash). Since the words look almost identical, that small article 'a' carries a big difference in meaning, so listen for it carefully.",
+        "head": "A little / a few — sentido positivo",
+        "body": "Añadir 'a' delante de 'little' o 'few' cambia el tono de negativo a positivo: 'a little/a few' significa 'algo, suficiente', mientras que sin 'a' significa 'casi nada', con matiz de queja. 'I have a little money' suena tranquilizador; 'I have little money' suena a problema.",
         "note": "I have a little money. (= some, not a lot) · I have little money. (= barely any, problem)"
       }
     ],
@@ -362,7 +362,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "little"
         ],
         "ans": 1,
-        "exp": "'Time' is uncountable → 'much': 'not much time'."
+        "exp": "'Time' es incontable → 'much': 'not much time'."
       },
       {
         "q": "I have ___ friends here — just Tom and Sarah.",
@@ -373,7 +373,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "a little"
         ],
         "ans": 2,
-        "exp": "'Friends' is countable → 'a few': 'a few friends' (positive — some)."
+        "exp": "'Friends' es contable → 'a few': 'a few friends' (positivo, algo)."
       }
     ],
     "flashcards": [
@@ -396,13 +396,13 @@ export const pronounsUnits: Record<number, Unit> = {
     "topic": "Pronouns",
     "explain": [
       {
-        "head": "Usage of all, most, some, any, no, none",
-        "body": "All, most, some, any, no and none form a scale of quantity, ranging from the complete total ('all students passed') down through a majority ('most people know this'), an unspecified amount ('some people disagree'), and finally zero ('no one came'). They can be used directly in front of a plural or uncountable noun to make a general statement about a whole category. The way they combine with a following 'the/this/my' and 'of' changes depending on whether you're speaking generally or about a specific, defined group, which is covered next.",
+        "head": "Escala de cantidad",
+        "body": "All, most, some, any, no y none forman una escala: desde el total ('all students passed'), pasando por mayoría ('most people know this') y cantidad indefinida ('some people disagree'), hasta cero ('no one came'). Se combinan directamente con un nombre plural o incontable para hablar en general.",
         "note": "All students passed. · Most people know this. · Some people disagree. · No one came."
       },
       {
-        "head": "Of — after these words when followed by the/this/my etc.",
-        "body": "When these quantity words are followed by a determiner like 'the', 'this', 'my' or a pronoun — meaning you're talking about a specific, already-identified group rather than people or things in general — you need to insert 'of' before it: 'all of the students', 'some of my friends', 'none of them'. Without a determiner, no 'of' is used, because you're making a general statement rather than singling out a known group ('most people', not 'most of people'). The presence of 'of' is really a signal of whether the following noun is specific or general.",
+        "head": "Of + the/this/my...",
+        "body": "Cuando estas palabras van seguidas de 'the', 'this', 'my' o un pronombre (un grupo específico ya identificado), se necesita 'of' antes: 'all of the students', 'none of them'. Sin determinante no se usa 'of', porque es una afirmación general ('most people', no 'most of people').",
         "note": "All of the students. · Most of the people. · Some of my friends. · None of them."
       }
     ],
@@ -416,7 +416,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "Most of"
         ],
         "ans": 1,
-        "exp": "Followed by 'the students' (determiner) → 'All OF the students'."
+        "exp": "Seguido de 'the students' (determinante) → 'All OF the students'."
       },
       {
         "q": "___ people like cold weather.",
@@ -427,7 +427,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "None"
         ],
         "ans": 1,
-        "exp": "General statement (no 'the') → 'Most people' (no 'of')."
+        "exp": "Afirmación general (sin 'the') → 'Most people' (sin 'of')."
       }
     ],
     "flashcards": [
@@ -447,18 +447,18 @@ export const pronounsUnits: Record<number, Unit> = {
     "topic": "Pronouns",
     "explain": [
       {
-        "head": "Both — two things (positive)",
-        "body": "'Both' is used to say that two things or people are included together — not just one of them, but the pair as a whole — and it takes a plural verb because it always refers to two items at once. 'Both (of) my sisters are married' means the statement is true for each of the two sisters. This is the positive, inclusive option in a three-way contrast with 'either' (one of two) and 'neither' (none of two), covered next.",
+        "head": "Both — los dos (positivo)",
+        "body": "'Both' indica que dos cosas o personas están incluidas juntas, no solo una, y siempre lleva verbo en plural. 'Both (of) my sisters are married' significa que la afirmación es cierta para cada una de las dos.",
         "note": "Both (of) my sisters are married. · I like both Tom and Anna. · Both options are good."
       },
       {
-        "head": "Either — one or the other",
-        "body": "'Either' refers to one or the other of two options, without specifying which — it presents a choice between exactly two things, and importantly doesn't mean both. Because it focuses on a single option being chosen from the pair, it takes a singular verb: 'either day is fine' (one day, either of the two, works). This contrasts with 'both' above (both together) and 'neither' below (neither one).",
+        "head": "Either — uno u otro",
+        "body": "'Either' se refiere a uno u otro de dos, sin especificar cuál, y no significa 'ambos'. Lleva verbo en singular: 'either day is fine' (cualquiera de los dos días sirve).",
         "note": "You can have either tea or coffee. · Either day is fine for me."
       },
       {
-        "head": "Neither — not one and not the other",
-        "body": "'Neither' is the negative counterpart of 'both': it means not one and not the other of two things, ruling both options out at once. Even though the meaning covers two items, 'neither' itself is grammatically singular and takes a singular verb — 'Neither of the options is good'. Together, both/either/neither give you a complete way to talk about inclusion, choice, and exclusion specifically when exactly two things are involved.",
+        "head": "Neither — ninguno de los dos",
+        "body": "'Neither' es lo contrario de 'both': descarta las dos opciones a la vez. Aunque habla de dos cosas, es gramaticalmente singular: 'Neither of the options is good.'",
         "note": "Neither of the options is good. · Neither Tom nor Anna was there."
       }
     ],
@@ -472,7 +472,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "All"
         ],
         "ans": 0,
-        "exp": "Both parents speak English (positive, two things) → 'Both'."
+        "exp": "Los dos padres hablan inglés (positivo, dos cosas) → 'Both'."
       },
       {
         "q": "'Would you like tea or coffee?' '___, thanks. I'll just have water.'",
@@ -483,7 +483,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "None"
         ],
         "ans": 2,
-        "exp": "Neither = not tea and not coffee: 'Neither, thanks.'"
+        "exp": "Neither = ni té ni café: 'Neither, thanks.'"
       }
     ],
     "flashcards": [
@@ -506,23 +506,23 @@ export const pronounsUnits: Record<number, Unit> = {
     "topic": "Pronouns",
     "explain": [
       {
-        "head": "ALL — the complete quantity",
-        "body": "'All' combines with plural countable nouns or uncountable nouns to refer to the complete amount of something, with nothing left out — 'all the students' means every single student, and 'all the money' means the entirety of the money. In many common time expressions, though, 'all' attaches directly to the noun with no article at all, as in 'all day' or 'all summer', rather than 'all the day'. This flexibility with articles in time phrases is a specific exception worth remembering, since 'all the day' sounds unnatural in English.",
+        "head": "All — la cantidad completa",
+        "body": "'All' se combina con plurales contables o incontables para indicar la totalidad, sin que falte nada: 'all the students' = todos los estudiantes. En expresiones de tiempo va pegado al nombre sin artículo: 'all day', no 'all the day'.",
         "note": "All the students passed. · I was tired all day. (NOT: all the day ❌)"
       },
       {
-        "head": "WHOLE — one complete thing",
-        "body": "'Whole' also means entire or complete, but unlike 'all', it's used with a single, singular noun rather than a plural or uncountable one, and it goes after the article rather than in place of it: 'the whole cake', 'a whole chicken'. Because it treats the noun as one complete, undivided unit, 'whole' naturally pairs with things that come as a single item (a cake, an afternoon), whereas 'all' spreads across multiple items or an uncountable mass. Word order is the key difference to notice: article + whole + noun, versus all + the + noun.",
+        "head": "Whole — algo completo",
+        "body": "'Whole' también significa 'entero', pero se usa con un nombre singular y va después del artículo: 'the whole cake', 'a whole chicken'. Trata el nombre como una sola unidad completa, a diferencia de 'all', que se extiende sobre varios elementos o una masa incontable.",
         "note": "the whole cake · the whole afternoon · a whole chicken"
       },
       {
-        "head": "ALL vs WHOLE — same idea, different word order",
-        "body": "For a singular noun, 'all the + noun' and 'the whole + noun' often express exactly the same idea, just built with different word order: 'all the cake' and 'the whole cake' both mean the entire cake, with nothing left over. The difference is purely structural, not a difference in meaning — 'all' comes before the article, while 'whole' comes after it. This overlap only exists for singular nouns, though, since 'whole' can't be used with plurals or uncountables the way 'all' can.",
+        "head": "All the vs the whole",
+        "body": "Para un nombre singular, 'all the + nombre' y 'the whole + nombre' significan lo mismo, solo cambia el orden: 'all the cake' = 'the whole cake'. Esta coincidencia solo aplica a singulares, ya que 'whole' no funciona con plurales ni incontables.",
         "note": "all the cake = the whole cake · all the class = the whole class"
       },
       {
-        "head": "EVERY — a quick reminder",
-        "body": "'Every' looks at all the members of a group one by one, individually, rather than treating them as a single total mass the way 'all' does — 'every student' means each student, considered separately, even though the overall meaning is similar to 'all students'. Because it focuses on one member at a time, 'every' is always followed by a singular noun and takes a singular verb, unlike 'all', which takes a plural or uncountable noun. This individual-by-individual focus is exactly the distinction covered in more detail in the next unit between 'each' and 'every'.",
+        "head": "Every — recordatorio rápido",
+        "body": "'Every' mira a cada miembro del grupo por separado, uno a uno, en vez de como masa total: 'every student' = cada estudiante individualmente. Siempre va con nombre y verbo en singular, a diferencia de 'all'.",
         "note": "Every student passed the exam."
       }
     ],
@@ -536,7 +536,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "whole the"
         ],
         "ans": 0,
-        "exp": "'The whole' + singular noun."
+        "exp": "'The whole' + nombre singular."
       },
       {
         "q": "We stayed there ___ summer.",
@@ -547,7 +547,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "all"
         ],
         "ans": 3,
-        "exp": "'All summer' — no 'the' in this time expression."
+        "exp": "'All summer' — sin 'the' en esta expresión de tiempo."
       },
       {
         "q": "___ student must bring an ID.",
@@ -558,7 +558,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "The whole"
         ],
         "ans": 1,
-        "exp": "'Every' + singular noun."
+        "exp": "'Every' + nombre singular."
       }
     ],
     "flashcards": [
@@ -578,18 +578,18 @@ export const pronounsUnits: Record<number, Unit> = {
     "topic": "Pronouns",
     "explain": [
       {
-        "head": "Each — individual items (two or more)",
-        "body": "'Each' focuses on the members of a group one at a time, as separate individuals, rather than as a collective whole — 'each student got a different question' emphasizes that every single student, considered on their own, received something different. Unlike 'every', 'each' can be used even when there are only two things or people, since it doesn't require a larger group to make sense. It always takes a singular verb, because grammatically you're talking about one member at a time.",
+        "head": "Each — de forma individual",
+        "body": "'Each' se centra en los miembros de un grupo de uno en uno, como individuos separados: 'each student got a different question' resalta que cada estudiante recibió algo distinto. A diferencia de 'every', 'each' puede usarse con solo dos elementos, y siempre lleva verbo singular.",
         "note": "Each student got a different question. · Each of the rooms has a TV. · We each paid $10."
       },
       {
-        "head": "Every — all members of a group (three or more)",
-        "body": "'Every' also refers to all the members of a group individually, but with more emphasis on the group as a whole being covered completely, with no exceptions — 'every student must attend' stresses total, universal coverage. It's normally used for groups of three or more, and, like 'each', it always takes a singular verb even though the underlying meaning involves multiple people. 'Every' is also common in expressions of repeated frequency, such as 'every day' or 'every week', a use 'each' shares less often.",
+        "head": "Every — el grupo completo",
+        "body": "'Every' también habla de cada miembro, pero enfatizando que se cubre todo el grupo sin excepción: 'every student must attend'. Se usa normalmente con grupos de tres o más y también en expresiones de frecuencia como 'every day'.",
         "note": "Every student must attend. · I exercise every day. · She calls me every week."
       },
       {
-        "head": "Every vs Each — the difference",
-        "body": "The core difference is one of focus: 'each' highlights the individual member ('each day is different'), while 'every' highlights the completeness of the whole group ('every day I wake up at 7' = without exception, day after day). A useful test is the number of items involved — 'every' requires three or more, while 'each' works even with just two. In practice, for groups of three or more, the two words often overlap and either one sounds natural, but only 'each' is correct when exactly two things are being discussed.",
+        "head": "Every vs each — diferencia",
+        "body": "La diferencia está en el enfoque: 'each' resalta al individuo, 'every' resalta lo completo del grupo. Con tres o más elementos ambos suelen sonar bien, pero solo 'each' es correcto cuando se habla de exactamente dos cosas.",
         "note": "Every day I wake up at 7. · Each day brings new challenges. (both OK for three+)"
       }
     ],
@@ -603,7 +603,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "Both"
         ],
         "ans": 1,
-        "exp": "All members collectively → 'Every student passed'."
+        "exp": "Todos los miembros en conjunto → 'Every student passed'."
       },
       {
         "q": "She gave ___ of us a gift.",
@@ -614,7 +614,7 @@ export const pronounsUnits: Record<number, Unit> = {
           "both"
         ],
         "ans": 1,
-        "exp": "Thinking of individuals → 'each of us'."
+        "exp": "Pensando en individuos → 'each of us'."
       }
     ],
     "flashcards": [

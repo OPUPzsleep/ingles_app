@@ -21,9 +21,16 @@ export function VocabCard({ entry, footer, onPress }: VocabCardProps) {
         </ThemedText>
         <SpeakButton text={entry.w} size={14} />
       </View>
-      <ThemedText type="small" themeColor="primary" style={styles.ipa}>
-        {entry.ipa}
-      </ThemedText>
+      <View style={styles.row}>
+        <ThemedText type="small" themeColor="primary" style={styles.ipa}>
+          {entry.ipa}
+        </ThemedText>
+        {!!entry.aprox && (
+          <ThemedText type="small" themeColor="textSecondary">
+            [{entry.aprox}]
+          </ThemedText>
+        )}
+      </View>
       <ThemedText type="small" themeColor="textSecondary">
         {entry.def}
       </ThemedText>

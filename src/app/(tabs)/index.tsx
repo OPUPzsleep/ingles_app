@@ -2,6 +2,7 @@ import { useRouter } from 'expo-router';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { HowItWorksCard } from '@/components/how-it-works-card';
 import { ReminderCard } from '@/components/reminder-card';
 import { StatTile } from '@/components/stat-tile';
 import { ThemedText } from '@/components/themed-text';
@@ -51,6 +52,8 @@ export default function InicioScreen() {
               {doneUnits.length === 0 ? '▶️ Empezar' : '▶️ Continuar donde quedaste'}
             </Button>
           </Card>
+
+          <HowItWorksCard />
 
           <ReminderCard />
 
