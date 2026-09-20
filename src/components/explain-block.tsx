@@ -1,13 +1,16 @@
 import { StyleSheet, View } from 'react-native';
 
+import { BionicText } from '@/components/bionic-text';
 import { SpeakButton } from '@/components/speak-button';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
+import { useSettings } from '@/context/settings-context';
 import { useTheme } from '@/hooks/use-theme';
 import { ExplainBlock as ExplainBlockData } from '@/types/grammar';
 
 export function ExplainBlock({ block }: { block: ExplainBlockData }) {
   const theme = useTheme();
+  const { focusModeEnabled } = useSettings();
 
   return (
     <View
@@ -18,7 +21,11 @@ export function ExplainBlock({ block }: { block: ExplainBlockData }) {
       <ThemedText type="label" themeColor="primary">
         {block.head}
       </ThemedText>
-      <ThemedText style={styles.body}>{block.body}</ThemedText>
+      {focusModeEnabled ? (
+        <BionicText text={block.body} style={styles.body} />
+      ) : (
+        <ThemedText style={styles.body}>{block.body}</ThemedText>
+      )}
       {!!block.note && (
         <View style={[styles.note, { backgroundColor: theme.backgroundElement, borderColor: theme.border }]}>
           <ThemedText type="small" style={styles.noteText}>

@@ -7,6 +7,8 @@ export const Colors = {
     text: '#0F1E20',
     textSecondary: '#5B6B6D',
     background: '#F5FAF9',
+    /** Fondo alternativo para el Modo TDAH: más cálido y con menos brillo. */
+    focusBackground: '#F2EDE4',
     backgroundElement: '#FFFFFF',
     backgroundSelected: '#DFF3F0',
     border: '#DCEAE8',
@@ -24,6 +26,8 @@ export const Colors = {
     text: '#EAF6F4',
     textSecondary: '#9FB4B2',
     background: '#0C1615',
+    /** Fondo alternativo para el Modo TDAH: más cálido y con menos contraste. */
+    focusBackground: '#15110D',
     backgroundElement: '#152220',
     backgroundSelected: '#1E3330',
     border: '#233A37',
