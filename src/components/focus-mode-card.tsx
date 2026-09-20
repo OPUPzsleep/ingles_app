@@ -24,6 +24,7 @@ export function FocusModeCard() {
           value={focusModeEnabled}
           onValueChange={setFocusModeEnabled}
           trackColor={{ true: theme.focusAccent, false: theme.backgroundSelected }}
+          thumbColor="#FFFFFF"
         />
       </View>
     </Card>
