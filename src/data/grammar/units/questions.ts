@@ -4,6 +4,7 @@ export const questionsUnits: Record<number, Unit> = {
   "49": {
     "title": "Questions 1",
     "topic": "Questions",
+    "level": "A2",
     "explain": [
       {
         "head": "Orden de las preguntas",
@@ -63,17 +64,42 @@ export const questionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Hi! Are you coming to the party tonight?", "translation": "¡Hola! ¿Vas a venir a la fiesta esta noche?" },
-      { "speaker": "user", "text": "Yes, I am! What time does it start?", "translation": "¡Sí! ¿A qué hora empieza?" },
-      { "speaker": "other", "text": "It starts at eight. Where do you live, by the way?", "translation": "Empieza a las ocho. ¿Dónde vives, por cierto?" },
-      { "speaker": "user", "text": "I live downtown. Who are you going with?", "translation": "Vivo en el centro. ¿Con quién vas a ir?" },
-      { "speaker": "other", "text": "I'm going with my sister. What are you bringing?", "translation": "Voy con mi hermana. ¿Qué vas a llevar?" },
-      { "speaker": "user", "text": "I'm bringing a cake. Have you met the host before?", "translation": "Voy a llevar un pastel. ¿Ya conocías al anfitrión?" }
+      {
+        "speaker": "other",
+        "text": "Hi! Are you coming to the party tonight?",
+        "translation": "¡Hola! ¿Vas a venir a la fiesta esta noche?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I am! What time does it start?",
+        "translation": "¡Sí! ¿A qué hora empieza?"
+      },
+      {
+        "speaker": "other",
+        "text": "It starts at eight. Where do you live, by the way?",
+        "translation": "Empieza a las ocho. ¿Dónde vives, por cierto?"
+      },
+      {
+        "speaker": "user",
+        "text": "I live downtown. Who are you going with?",
+        "translation": "Vivo en el centro. ¿Con quién vas a ir?"
+      },
+      {
+        "speaker": "other",
+        "text": "I'm going with my sister. What are you bringing?",
+        "translation": "Voy con mi hermana. ¿Qué vas a llevar?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'm bringing a cake. Have you met the host before?",
+        "translation": "Voy a llevar un pastel. ¿Ya conocías al anfitrión?"
+      }
     ]
   },
   "50": {
     "title": "Questions 2 (who/what/which)",
     "topic": "Questions",
+    "level": "B1",
     "explain": [
       {
         "head": "Preguntas sobre el sujeto",
@@ -117,18 +143,47 @@ export const questionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Something strange happened at the office last night.", "translation": "Algo extraño pasó en la oficina anoche." },
-      { "speaker": "user", "text": "What happened exactly?", "translation": "¿Qué pasó exactamente?" },
-      { "speaker": "other", "text": "Someone broke into the office and stole some files.", "translation": "Alguien entró a la fuerza en la oficina y robó unos archivos." },
-      { "speaker": "user", "text": "Who broke in? Do the police know?", "translation": "¿Quién entró? ¿La policía lo sabe?" },
-      { "speaker": "other", "text": "Not yet. But who called the police this morning?", "translation": "Todavía no. Pero, ¿quién llamó a la policía esta mañana?" },
-      { "speaker": "user", "text": "I did. And what did you tell them?", "translation": "Yo fui. ¿Y qué les dijiste?" },
-      { "speaker": "other", "text": "I told them everything I had seen.", "translation": "Les conté todo lo que había visto." }
+      {
+        "speaker": "other",
+        "text": "Something strange happened at the office last night.",
+        "translation": "Algo extraño pasó en la oficina anoche."
+      },
+      {
+        "speaker": "user",
+        "text": "What happened exactly?",
+        "translation": "¿Qué pasó exactamente?"
+      },
+      {
+        "speaker": "other",
+        "text": "Someone broke into the office and stole some files.",
+        "translation": "Alguien entró a la fuerza en la oficina y robó unos archivos."
+      },
+      {
+        "speaker": "user",
+        "text": "Who broke in? Do the police know?",
+        "translation": "¿Quién entró? ¿La policía lo sabe?"
+      },
+      {
+        "speaker": "other",
+        "text": "Not yet. But who called the police this morning?",
+        "translation": "Todavía no. Pero, ¿quién llamó a la policía esta mañana?"
+      },
+      {
+        "speaker": "user",
+        "text": "I did. And what did you tell them?",
+        "translation": "Yo fui. ¿Y qué les dijiste?"
+      },
+      {
+        "speaker": "other",
+        "text": "I told them everything I had seen.",
+        "translation": "Les conté todo lo que había visto."
+      }
     ]
   },
   "51": {
     "title": "Auxiliary Verbs (do/be/have)",
     "topic": "Questions",
+    "level": "B1",
     "explain": [
       {
         "head": "Auxiliares para dar énfasis",
@@ -177,19 +232,52 @@ export const questionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "You don't really like classical music, do you?", "translation": "No te gusta realmente la música clásica, ¿verdad?" },
-      { "speaker": "user", "text": "I DO like it! I listen to it every night.", "translation": "¡Sí me gusta! La escucho todas las noches." },
-      { "speaker": "other", "text": "Really? I don't believe you.", "translation": "¿En serio? No te creo." },
-      { "speaker": "user", "text": "Well, ask my roommate — he doesn't like it either.", "translation": "Bueno, pregúntale a mi compañero de cuarto — a él tampoco le gusta." },
-      { "speaker": "other", "text": "So you two disagree about a lot of things?", "translation": "¿Entonces ustedes dos no están de acuerdo en muchas cosas?" },
-      { "speaker": "user", "text": "No, actually we agree on most things. I'm tired tonight.", "translation": "No, en realidad estamos de acuerdo en casi todo. Estoy cansado esta noche." },
-      { "speaker": "other", "text": "So am I. Let's talk more tomorrow.", "translation": "Yo también. Hablemos más mañana." },
-      { "speaker": "user", "text": "Sounds good. I can't wait to show you my playlist.", "translation": "Suena bien. No puedo esperar a mostrarte mi lista de reproducción." }
+      {
+        "speaker": "other",
+        "text": "You don't really like classical music, do you?",
+        "translation": "No te gusta realmente la música clásica, ¿verdad?"
+      },
+      {
+        "speaker": "user",
+        "text": "I DO like it! I listen to it every night.",
+        "translation": "¡Sí me gusta! La escucho todas las noches."
+      },
+      {
+        "speaker": "other",
+        "text": "Really? I don't believe you.",
+        "translation": "¿En serio? No te creo."
+      },
+      {
+        "speaker": "user",
+        "text": "Well, ask my roommate — he doesn't like it either.",
+        "translation": "Bueno, pregúntale a mi compañero de cuarto — a él tampoco le gusta."
+      },
+      {
+        "speaker": "other",
+        "text": "So you two disagree about a lot of things?",
+        "translation": "¿Entonces ustedes dos no están de acuerdo en muchas cosas?"
+      },
+      {
+        "speaker": "user",
+        "text": "No, actually we agree on most things. I'm tired tonight.",
+        "translation": "No, en realidad estamos de acuerdo en casi todo. Estoy cansado esta noche."
+      },
+      {
+        "speaker": "other",
+        "text": "So am I. Let's talk more tomorrow.",
+        "translation": "Yo también. Hablemos más mañana."
+      },
+      {
+        "speaker": "user",
+        "text": "Sounds good. I can't wait to show you my playlist.",
+        "translation": "Suena bien. No puedo esperar a mostrarte mi lista de reproducción."
+      }
     ]
   },
   "52": {
     "title": "Question Tags",
     "topic": "Questions",
+    "level": "B1",
     "explain": [
       {
         "head": "Coletillas interrogativas — regla básica",
@@ -249,12 +337,36 @@ export const questionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "It's a beautiful morning, isn't it?", "translation": "Es una mañana hermosa, ¿verdad?" },
-      { "speaker": "user", "text": "Yes, it really is. You live near the park, don't you?", "translation": "Sí, de verdad. Vives cerca del parque, ¿no?" },
-      { "speaker": "other", "text": "That's right. You can't come jogging with me today, can you?", "translation": "Así es. No puedes venir a trotar conmigo hoy, ¿verdad?" },
-      { "speaker": "user", "text": "Actually, I can! I'm free this morning, aren't I lucky?", "translation": "¡De hecho, sí puedo! Estoy libre esta mañana, ¿no tengo suerte?" },
-      { "speaker": "other", "text": "You are! You haven't forgotten your shoes, have you?", "translation": "¡Sí que la tienes! No has olvidado tus zapatos, ¿verdad?" },
-      { "speaker": "user", "text": "No, I've got them right here.", "translation": "No, los tengo justo aquí." }
+      {
+        "speaker": "other",
+        "text": "It's a beautiful morning, isn't it?",
+        "translation": "Es una mañana hermosa, ¿verdad?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, it really is. You live near the park, don't you?",
+        "translation": "Sí, de verdad. Vives cerca del parque, ¿no?"
+      },
+      {
+        "speaker": "other",
+        "text": "That's right. You can't come jogging with me today, can you?",
+        "translation": "Así es. No puedes venir a trotar conmigo hoy, ¿verdad?"
+      },
+      {
+        "speaker": "user",
+        "text": "Actually, I can! I'm free this morning, aren't I lucky?",
+        "translation": "¡De hecho, sí puedo! Estoy libre esta mañana, ¿no tengo suerte?"
+      },
+      {
+        "speaker": "other",
+        "text": "You are! You haven't forgotten your shoes, have you?",
+        "translation": "¡Sí que la tienes! No has olvidado tus zapatos, ¿verdad?"
+      },
+      {
+        "speaker": "user",
+        "text": "No, I've got them right here.",
+        "translation": "No, los tengo justo aquí."
+      }
     ]
   }
 };

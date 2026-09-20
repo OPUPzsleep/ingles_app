@@ -4,6 +4,7 @@ export const futureUnits: Record<number, Unit> = {
   "19": {
     "title": "Present Tenses for the Future",
     "topic": "Future",
+    "level": "A2",
     "explain": [
       {
         "head": "Present Continuous: plan personal",
@@ -78,19 +79,52 @@ export const futureUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "What are you doing this weekend?", "translation": "¿Qué vas a hacer este fin de semana?" },
-      { "speaker": "user", "text": "I'm visiting my parents on Saturday. We planned it last week.", "translation": "Voy a visitar a mis padres el sábado. Lo planeamos la semana pasada." },
-      { "speaker": "other", "text": "Nice! How are you getting there?", "translation": "¡Qué bien! ¿Cómo vas a llegar?" },
-      { "speaker": "user", "text": "I'm taking the train. It leaves at 10.15 and arrives at noon.", "translation": "Voy a tomar el tren. Sale a las 10:15 y llega al mediodía." },
-      { "speaker": "other", "text": "And on Sunday? Are you doing anything?", "translation": "¿Y el domingo? ¿Vas a hacer algo?" },
-      { "speaker": "user", "text": "Yes, I'm meeting some old friends for lunch. We're all getting together at a new restaurant.", "translation": "Sí, voy a reunirme con unos viejos amigos para almorzar. Todos nos vamos a juntar en un restaurante nuevo." },
-      { "speaker": "other", "text": "Sounds like a great weekend. What time does the restaurant open, by the way?", "translation": "Suena como un gran fin de semana. Por cierto, ¿a qué hora abre el restaurante?" },
-      { "speaker": "user", "text": "It opens at noon, so we're arriving right when it starts.", "translation": "Abre al mediodía, así que vamos a llegar justo cuando empieza." }
+      {
+        "speaker": "other",
+        "text": "What are you doing this weekend?",
+        "translation": "¿Qué vas a hacer este fin de semana?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'm visiting my parents on Saturday. We planned it last week.",
+        "translation": "Voy a visitar a mis padres el sábado. Lo planeamos la semana pasada."
+      },
+      {
+        "speaker": "other",
+        "text": "Nice! How are you getting there?",
+        "translation": "¡Qué bien! ¿Cómo vas a llegar?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'm taking the train. It leaves at 10.15 and arrives at noon.",
+        "translation": "Voy a tomar el tren. Sale a las 10:15 y llega al mediodía."
+      },
+      {
+        "speaker": "other",
+        "text": "And on Sunday? Are you doing anything?",
+        "translation": "¿Y el domingo? ¿Vas a hacer algo?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I'm meeting some old friends for lunch. We're all getting together at a new restaurant.",
+        "translation": "Sí, voy a reunirme con unos viejos amigos para almorzar. Todos nos vamos a juntar en un restaurante nuevo."
+      },
+      {
+        "speaker": "other",
+        "text": "Sounds like a great weekend. What time does the restaurant open, by the way?",
+        "translation": "Suena como un gran fin de semana. Por cierto, ¿a qué hora abre el restaurante?"
+      },
+      {
+        "speaker": "user",
+        "text": "It opens at noon, so we're arriving right when it starts.",
+        "translation": "Abre al mediodía, así que vamos a llegar justo cuando empieza."
+      }
     ]
   },
   "20": {
     "title": "I'm Going to (do)",
     "topic": "Future",
+    "level": "A2",
     "explain": [
       {
         "head": "Going to: intención/plan",
@@ -153,6 +187,7 @@ export const futureUnits: Record<number, Unit> = {
   "21": {
     "title": "Will and Shall 1",
     "topic": "Future",
+    "level": "A2",
     "explain": [
       {
         "head": "Will: decisión espontánea",
@@ -212,19 +247,52 @@ export const futureUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Ugh, I still have three boxes left to carry to the truck.", "translation": "Uf, todavía tengo tres cajas que llevar al camión." },
-      { "speaker": "user", "text": "Don't worry, I'll carry them for you.", "translation": "No te preocupes, yo las llevo." },
-      { "speaker": "other", "text": "Thanks! Shall we take a break after this one?", "translation": "¡Gracias! ¿Tomamos un descanso después de esta?" },
-      { "speaker": "user", "text": "Good idea. Shall I get us some water from the kitchen?", "translation": "Buena idea. ¿Te traigo agua de la cocina?" },
-      { "speaker": "other", "text": "Yes please. Oh no, I think I forgot my keys inside.", "translation": "Sí, por favor. Ay no, creo que olvidé mis llaves adentro." },
-      { "speaker": "user", "text": "I'll go check for them. I promise I won't take long.", "translation": "Voy a revisar. Prometo que no me tardaré." },
-      { "speaker": "other", "text": "Thank you so much. Shall we call it a day once the truck is loaded?", "translation": "Muchísimas gracias. ¿Terminamos por hoy cuando el camión esté cargado?" },
-      { "speaker": "user", "text": "Definitely. And I'll order pizza for everyone once we're done.", "translation": "Definitivamente. Y voy a pedir pizza para todos cuando terminemos." }
+      {
+        "speaker": "other",
+        "text": "Ugh, I still have three boxes left to carry to the truck.",
+        "translation": "Uf, todavía tengo tres cajas que llevar al camión."
+      },
+      {
+        "speaker": "user",
+        "text": "Don't worry, I'll carry them for you.",
+        "translation": "No te preocupes, yo las llevo."
+      },
+      {
+        "speaker": "other",
+        "text": "Thanks! Shall we take a break after this one?",
+        "translation": "¡Gracias! ¿Tomamos un descanso después de esta?"
+      },
+      {
+        "speaker": "user",
+        "text": "Good idea. Shall I get us some water from the kitchen?",
+        "translation": "Buena idea. ¿Te traigo agua de la cocina?"
+      },
+      {
+        "speaker": "other",
+        "text": "Yes please. Oh no, I think I forgot my keys inside.",
+        "translation": "Sí, por favor. Ay no, creo que olvidé mis llaves adentro."
+      },
+      {
+        "speaker": "user",
+        "text": "I'll go check for them. I promise I won't take long.",
+        "translation": "Voy a revisar. Prometo que no me tardaré."
+      },
+      {
+        "speaker": "other",
+        "text": "Thank you so much. Shall we call it a day once the truck is loaded?",
+        "translation": "Muchísimas gracias. ¿Terminamos por hoy cuando el camión esté cargado?"
+      },
+      {
+        "speaker": "user",
+        "text": "Definitely. And I'll order pizza for everyone once we're done.",
+        "translation": "Definitivamente. Y voy a pedir pizza para todos cuando terminemos."
+      }
     ]
   },
   "22": {
     "title": "Will and Shall 2",
     "topic": "Future",
+    "level": "B1",
     "explain": [
       {
         "head": "Will: predicción",
@@ -292,6 +360,7 @@ export const futureUnits: Record<number, Unit> = {
   "23": {
     "title": "I Will and I'm Going to",
     "topic": "Future",
+    "level": "B1",
     "explain": [
       {
         "head": "Will: espontáneo, sin plan",
@@ -335,19 +404,52 @@ export const futureUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Why do you have all these paint cans in the garage?", "translation": "¿Por qué tienes todas estas latas de pintura en el garaje?" },
-      { "speaker": "user", "text": "I'm going to repaint the living room next weekend. I decided it last month.", "translation": "Voy a repintar la sala el próximo fin de semana. Lo decidí el mes pasado." },
-      { "speaker": "other", "text": "Nice! Oh wait, this can is open and it's dripping!", "translation": "¡Qué bien! Ay espera, ¡esta lata está abierta y está goteando!" },
-      { "speaker": "user", "text": "I'll grab a cloth right now, hold on.", "translation": "Voy a traer un trapo ahora mismo, espera." },
-      { "speaker": "other", "text": "Thanks. So what color are you going to use?", "translation": "Gracias. Entonces, ¿qué color vas a usar?" },
-      { "speaker": "user", "text": "I'm going to use light gray. I already bought the exact one I wanted.", "translation": "Voy a usar gris claro. Ya compré exactamente el que quería." },
-      { "speaker": "other", "text": "It's getting dark in here. Should we turn on the light?", "translation": "Está oscureciendo aquí. ¿Prendemos la luz?" },
-      { "speaker": "user", "text": "Good call, I'll turn it on now.", "translation": "Buena idea, la voy a prender ahora." }
+      {
+        "speaker": "other",
+        "text": "Why do you have all these paint cans in the garage?",
+        "translation": "¿Por qué tienes todas estas latas de pintura en el garaje?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'm going to repaint the living room next weekend. I decided it last month.",
+        "translation": "Voy a repintar la sala el próximo fin de semana. Lo decidí el mes pasado."
+      },
+      {
+        "speaker": "other",
+        "text": "Nice! Oh wait, this can is open and it's dripping!",
+        "translation": "¡Qué bien! Ay espera, ¡esta lata está abierta y está goteando!"
+      },
+      {
+        "speaker": "user",
+        "text": "I'll grab a cloth right now, hold on.",
+        "translation": "Voy a traer un trapo ahora mismo, espera."
+      },
+      {
+        "speaker": "other",
+        "text": "Thanks. So what color are you going to use?",
+        "translation": "Gracias. Entonces, ¿qué color vas a usar?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'm going to use light gray. I already bought the exact one I wanted.",
+        "translation": "Voy a usar gris claro. Ya compré exactamente el que quería."
+      },
+      {
+        "speaker": "other",
+        "text": "It's getting dark in here. Should we turn on the light?",
+        "translation": "Está oscureciendo aquí. ¿Prendemos la luz?"
+      },
+      {
+        "speaker": "user",
+        "text": "Good call, I'll turn it on now.",
+        "translation": "Buena idea, la voy a prender ahora."
+      }
     ]
   },
   "24": {
     "title": "Will Be Doing and Will Have Done",
     "topic": "Future",
+    "level": "B2",
     "explain": [
       {
         "head": "Future Continuous: en progreso",
@@ -399,6 +501,7 @@ export const futureUnits: Record<number, Unit> = {
   "25": {
     "title": "When I Do and When I've Done / If and When",
     "topic": "Future",
+    "level": "B2",
     "explain": [
       {
         "head": "Tras when/if: presente",
@@ -453,14 +556,46 @@ export const futureUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "What time are we meeting after work today?", "translation": "¿A qué hora nos vemos después del trabajo hoy?" },
-      { "speaker": "user", "text": "I'll text you when I leave the office.", "translation": "Te escribo cuando salga de la oficina." },
-      { "speaker": "other", "text": "Okay. When I've finished this call, I'll head to the café.", "translation": "Okay. Cuando termine esta llamada, iré al café." },
-      { "speaker": "user", "text": "Perfect. If it starts raining, we'll just meet inside instead.", "translation": "Perfecto. Si empieza a llover, nos vemos adentro mejor." },
-      { "speaker": "other", "text": "Good plan. As soon as I get there, I'll order us a table.", "translation": "Buen plan. En cuanto llegue, pediré una mesa para nosotros." },
-      { "speaker": "user", "text": "Great, and when I arrive, I'll bring the documents we need to sign.", "translation": "Genial, y cuando llegue, traeré los documentos que necesitamos firmar." },
-      { "speaker": "other", "text": "Sounds good. We can leave once we've finished eating.", "translation": "Suena bien. Podemos irnos en cuanto terminemos de comer." },
-      { "speaker": "user", "text": "Agreed. Unless something changes, I'll see you at six.", "translation": "De acuerdo. A menos que algo cambie, nos vemos a las seis." }
+      {
+        "speaker": "other",
+        "text": "What time are we meeting after work today?",
+        "translation": "¿A qué hora nos vemos después del trabajo hoy?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'll text you when I leave the office.",
+        "translation": "Te escribo cuando salga de la oficina."
+      },
+      {
+        "speaker": "other",
+        "text": "Okay. When I've finished this call, I'll head to the café.",
+        "translation": "Okay. Cuando termine esta llamada, iré al café."
+      },
+      {
+        "speaker": "user",
+        "text": "Perfect. If it starts raining, we'll just meet inside instead.",
+        "translation": "Perfecto. Si empieza a llover, nos vemos adentro mejor."
+      },
+      {
+        "speaker": "other",
+        "text": "Good plan. As soon as I get there, I'll order us a table.",
+        "translation": "Buen plan. En cuanto llegue, pediré una mesa para nosotros."
+      },
+      {
+        "speaker": "user",
+        "text": "Great, and when I arrive, I'll bring the documents we need to sign.",
+        "translation": "Genial, y cuando llegue, traeré los documentos que necesitamos firmar."
+      },
+      {
+        "speaker": "other",
+        "text": "Sounds good. We can leave once we've finished eating.",
+        "translation": "Suena bien. Podemos irnos en cuanto terminemos de comer."
+      },
+      {
+        "speaker": "user",
+        "text": "Agreed. Unless something changes, I'll see you at six.",
+        "translation": "De acuerdo. A menos que algo cambie, nos vemos a las seis."
+      }
     ]
   }
 };

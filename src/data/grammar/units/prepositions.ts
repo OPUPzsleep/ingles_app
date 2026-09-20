@@ -4,6 +4,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "121": {
     "title": "At / On / In (time)",
     "topic": "Prepositions",
+    "level": "A1",
     "explain": [
       {
         "head": "AT — horas y expresiones fijas",
@@ -116,6 +117,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "122": {
     "title": "On Time and In Time / At the End and In the End",
     "topic": "Prepositions",
+    "level": "B1",
     "explain": [
       {
         "head": "On time — puntual",
@@ -188,6 +190,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "123": {
     "title": "In / At / On (position) 1",
     "topic": "Prepositions",
+    "level": "A1",
     "explain": [
       {
         "head": "IN — espacio cerrado",
@@ -255,6 +258,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "124": {
     "title": "In / At / On (position) 2",
     "topic": "Prepositions",
+    "level": "A2",
     "explain": [
       {
         "head": "AT — casa, escuela, trabajo",
@@ -311,6 +315,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "125": {
     "title": "In / At / On (Position) 3",
     "topic": "Prepositions",
+    "level": "B1",
     "explain": [
       {
         "head": "IN vs ON the corner",
@@ -378,6 +383,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "126": {
     "title": "To, at, in and into",
     "topic": "Prepositions",
+    "level": "A2",
     "explain": [
       {
         "head": "TO — movimiento hacia",
@@ -439,6 +445,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "127": {
     "title": "In/on/at (other uses)",
     "topic": "Prepositions",
+    "level": "B1",
     "explain": [
       {
         "head": "IN — partes del día",
@@ -497,19 +504,52 @@ export const prepositionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "How are you getting to the concert tonight?", "translation": "¿Cómo vas a ir al concierto esta noche?" },
-      { "speaker": "user", "text": "I'm going on the train, it's faster than the bus.", "translation": "Voy en tren, es más rápido que el autobús." },
-      { "speaker": "other", "text": "Really? I usually go on the bus because it stops near my house.", "translation": "¿En serio? Yo normalmente voy en autobús porque para cerca de mi casa." },
-      { "speaker": "user", "text": "I'll be on the phone with you if I get lost, ok?", "translation": "Estaré al teléfono contigo si me pierdo, ¿vale?" },
-      { "speaker": "other", "text": "Sure. Are you at work right now?", "translation": "Claro. ¿Estás en el trabajo ahora mismo?" },
-      { "speaker": "user", "text": "Yes, I'm at the office, but I finish at six.", "translation": "Sí, estoy en la oficina, pero termino a las seis." },
-      { "speaker": "user", "text": "I'll be in bed by midnight after the concert!", "translation": "¡Estaré en la cama antes de la medianoche después del concierto!" },
-      { "speaker": "other", "text": "Ha! Have fun. See you at the station in the evening.", "translation": "¡Ja! Que lo disfrutes. Nos vemos en la estación por la noche." }
+      {
+        "speaker": "other",
+        "text": "How are you getting to the concert tonight?",
+        "translation": "¿Cómo vas a ir al concierto esta noche?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'm going on the train, it's faster than the bus.",
+        "translation": "Voy en tren, es más rápido que el autobús."
+      },
+      {
+        "speaker": "other",
+        "text": "Really? I usually go on the bus because it stops near my house.",
+        "translation": "¿En serio? Yo normalmente voy en autobús porque para cerca de mi casa."
+      },
+      {
+        "speaker": "user",
+        "text": "I'll be on the phone with you if I get lost, ok?",
+        "translation": "Estaré al teléfono contigo si me pierdo, ¿vale?"
+      },
+      {
+        "speaker": "other",
+        "text": "Sure. Are you at work right now?",
+        "translation": "Claro. ¿Estás en el trabajo ahora mismo?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I'm at the office, but I finish at six.",
+        "translation": "Sí, estoy en la oficina, pero termino a las seis."
+      },
+      {
+        "speaker": "user",
+        "text": "I'll be in bed by midnight after the concert!",
+        "translation": "¡Estaré en la cama antes de la medianoche después del concierto!"
+      },
+      {
+        "speaker": "other",
+        "text": "Ha! Have fun. See you at the station in the evening.",
+        "translation": "¡Ja! Que lo disfrutes. Nos vemos en la estación por la noche."
+      }
     ]
   },
   "128": {
     "title": "By",
     "topic": "Prepositions",
+    "level": "B1",
     "explain": [
       {
         "head": "BY — el agente en pasiva",
@@ -571,6 +611,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "129": {
     "title": "Noun + preposition",
     "topic": "Prepositions",
+    "level": "B1",
     "explain": [
       {
         "head": "Sustantivo + preposición fija",
@@ -627,6 +668,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "130": {
     "title": "Adjective + preposition 1",
     "topic": "Prepositions",
+    "level": "B1",
     "explain": [
       {
         "head": "Adjetivo + OF",
@@ -688,6 +730,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "131": {
     "title": "Adjective + preposition 2",
     "topic": "Prepositions",
+    "level": "B2",
     "explain": [
       {
         "head": "Adjetivo + TO",
@@ -744,6 +787,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "132": {
     "title": "Verb + preposition 1",
     "topic": "Prepositions",
+    "level": "B1",
     "explain": [
       {
         "head": "Verbo + TO — comunicarse",
@@ -792,17 +836,42 @@ export const prepositionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Did you see that boy shouting at his dog in the park?", "translation": "¿Viste a ese chico gritándole a su perro en el parque?" },
-      { "speaker": "user", "text": "Yes, it was terrible! He should talk to it calmly, not shout at it.", "translation": "¡Sí, fue terrible! Debería hablarle con calma, no gritarle." },
-      { "speaker": "other", "text": "I know. And then he threw a stick at the fence out of anger.", "translation": "Lo sé. Y después le tiró un palo a la cerca por enojo." },
-      { "speaker": "user", "text": "That's so different from when kids play — normally you throw the ball to someone, not at something.", "translation": "Eso es muy distinto de cuando los niños juegan — normalmente le lanzas la pelota a alguien, no le tiras algo." },
-      { "speaker": "other", "text": "Exactly. I wanted to explain to him why that's not okay.", "translation": "Exacto. Quería explicarle por qué eso no está bien." },
-      { "speaker": "user", "text": "Maybe we should speak to his parents about it.", "translation": "Tal vez deberíamos hablar con sus padres sobre esto." }
+      {
+        "speaker": "other",
+        "text": "Did you see that boy shouting at his dog in the park?",
+        "translation": "¿Viste a ese chico gritándole a su perro en el parque?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, it was terrible! He should talk to it calmly, not shout at it.",
+        "translation": "¡Sí, fue terrible! Debería hablarle con calma, no gritarle."
+      },
+      {
+        "speaker": "other",
+        "text": "I know. And then he threw a stick at the fence out of anger.",
+        "translation": "Lo sé. Y después le tiró un palo a la cerca por enojo."
+      },
+      {
+        "speaker": "user",
+        "text": "That's so different from when kids play — normally you throw the ball to someone, not at something.",
+        "translation": "Eso es muy distinto de cuando los niños juegan — normalmente le lanzas la pelota a alguien, no le tiras algo."
+      },
+      {
+        "speaker": "other",
+        "text": "Exactly. I wanted to explain to him why that's not okay.",
+        "translation": "Exacto. Quería explicarle por qué eso no está bien."
+      },
+      {
+        "speaker": "user",
+        "text": "Maybe we should speak to his parents about it.",
+        "translation": "Tal vez deberíamos hablar con sus padres sobre esto."
+      }
     ]
   },
   "133": {
     "title": "Verb + preposition 2",
     "topic": "Prepositions",
+    "level": "B1",
     "explain": [
       {
         "head": "Verbo + ABOUT — un tema",
@@ -851,17 +920,42 @@ export const prepositionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "What do you think of this restaurant?", "translation": "¿Qué piensas de este restaurante?" },
-      { "speaker": "user", "text": "Honestly, I've been thinking about it a lot, and I'm not sure.", "translation": "Honestamente, he estado pensando mucho en eso, y no estoy segura." },
-      { "speaker": "other", "text": "I keep hearing people complain about the slow service.", "translation": "Sigo escuchando a la gente quejarse del servicio lento." },
-      { "speaker": "user", "text": "Yes, and the chef always talks about using local ingredients, but this dish doesn't consist of anything special.", "translation": "Sí, y el chef siempre habla de usar ingredientes locales, pero este plato no está hecho de nada especial." },
-      { "speaker": "other", "text": "I dreamed about eating pasta all week, and now I'm disappointed!", "translation": "¡Soñé con comer pasta toda la semana, y ahora estoy decepcionado!" },
-      { "speaker": "user", "text": "Let's not worry about it — next time we'll try a different place.", "translation": "No nos preocupemos por eso — la próxima vez probaremos otro lugar." }
+      {
+        "speaker": "other",
+        "text": "What do you think of this restaurant?",
+        "translation": "¿Qué piensas de este restaurante?"
+      },
+      {
+        "speaker": "user",
+        "text": "Honestly, I've been thinking about it a lot, and I'm not sure.",
+        "translation": "Honestamente, he estado pensando mucho en eso, y no estoy segura."
+      },
+      {
+        "speaker": "other",
+        "text": "I keep hearing people complain about the slow service.",
+        "translation": "Sigo escuchando a la gente quejarse del servicio lento."
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, and the chef always talks about using local ingredients, but this dish doesn't consist of anything special.",
+        "translation": "Sí, y el chef siempre habla de usar ingredientes locales, pero este plato no está hecho de nada especial."
+      },
+      {
+        "speaker": "other",
+        "text": "I dreamed about eating pasta all week, and now I'm disappointed!",
+        "translation": "¡Soñé con comer pasta toda la semana, y ahora estoy decepcionado!"
+      },
+      {
+        "speaker": "user",
+        "text": "Let's not worry about it — next time we'll try a different place.",
+        "translation": "No nos preocupemos por eso — la próxima vez probaremos otro lugar."
+      }
     ]
   },
   "134": {
     "title": "Verb + preposition 3",
     "topic": "Prepositions",
+    "level": "B2",
     "explain": [
       {
         "head": "Verbo + FOR — propósito",
@@ -918,6 +1012,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "135": {
     "title": "Verb + preposition 4",
     "topic": "Prepositions",
+    "level": "B2",
     "explain": [
       {
         "head": "Verbo + FROM — origen, protección",
@@ -974,6 +1069,7 @@ export const prepositionsUnits: Record<number, Unit> = {
   "136": {
     "title": "Verb + preposition 5",
     "topic": "Prepositions",
+    "level": "B2",
     "explain": [
       {
         "head": "Verbo + ON — apoyo y foco",
@@ -1027,12 +1123,36 @@ export const prepositionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "I heard the good news! Congratulations on your promotion!", "translation": "¡Escuché la buena noticia! ¡Felicitaciones por tu ascenso!" },
-      { "speaker": "user", "text": "Thank you! I couldn't have done it without my team — I really rely on them.", "translation": "¡Gracias! No podría haberlo logrado sin mi equipo — de verdad dependo de ellos." },
-      { "speaker": "other", "text": "You always concentrate on your work so well. Did you spend a lot of money on the celebration dinner?", "translation": "Siempre te concentras muy bien en tu trabajo. ¿Gastaste mucho dinero en la cena de celebración?" },
-      { "speaker": "user", "text": "A little, yes! My boss commented on how much I've improved this year.", "translation": "¡Un poco, sí! Mi jefe comentó lo mucho que he mejorado este año." },
-      { "speaker": "other", "text": "That's wonderful. Everything you've achieved is based on hard work.", "translation": "Qué maravilla. Todo lo que has logrado está basado en trabajo duro." },
-      { "speaker": "user", "text": "Thanks! I insisted on inviting the whole team to celebrate together.", "translation": "¡Gracias! Insistí en invitar a todo el equipo para celebrar juntos." }
+      {
+        "speaker": "other",
+        "text": "I heard the good news! Congratulations on your promotion!",
+        "translation": "¡Escuché la buena noticia! ¡Felicitaciones por tu ascenso!"
+      },
+      {
+        "speaker": "user",
+        "text": "Thank you! I couldn't have done it without my team — I really rely on them.",
+        "translation": "¡Gracias! No podría haberlo logrado sin mi equipo — de verdad dependo de ellos."
+      },
+      {
+        "speaker": "other",
+        "text": "You always concentrate on your work so well. Did you spend a lot of money on the celebration dinner?",
+        "translation": "Siempre te concentras muy bien en tu trabajo. ¿Gastaste mucho dinero en la cena de celebración?"
+      },
+      {
+        "speaker": "user",
+        "text": "A little, yes! My boss commented on how much I've improved this year.",
+        "translation": "¡Un poco, sí! Mi jefe comentó lo mucho que he mejorado este año."
+      },
+      {
+        "speaker": "other",
+        "text": "That's wonderful. Everything you've achieved is based on hard work.",
+        "translation": "Qué maravilla. Todo lo que has logrado está basado en trabajo duro."
+      },
+      {
+        "speaker": "user",
+        "text": "Thanks! I insisted on inviting the whole team to celebrate together.",
+        "translation": "¡Gracias! Insistí en invitar a todo el equipo para celebrar juntos."
+      }
     ]
   }
 };

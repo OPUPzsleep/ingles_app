@@ -4,6 +4,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
   "137": {
     "title": "Phrasal verbs 1: introduction",
     "topic": "Phrasal Verbs",
+    "level": "A2",
     "explain": [
       {
         "head": "¿Qué es un phrasal verb?",
@@ -104,6 +105,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
   "138": {
     "title": "Phrasal verbs 2: in/out",
     "topic": "Phrasal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "IN: completar, unirse, entrar",
@@ -152,18 +154,47 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Welcome! First, can you fill in this form with your details?", "translation": "¡Bienvenido! Primero, ¿puedes llenar este formulario con tus datos?" },
-      { "speaker": "user", "text": "Sure. I hope I fit in well with the team.", "translation": "Claro. Espero encajar bien con el equipo." },
-      { "speaker": "other", "text": "Don't worry, everyone will help you find out how things work here.", "translation": "No te preocupes, todos te ayudarán a descubrir cómo funcionan las cosas aquí." },
-      { "speaker": "user", "text": "Great. Is there a meeting I can join in today?", "translation": "Genial. ¿Hay alguna reunión en la que pueda participar hoy?" },
-      { "speaker": "other", "text": "Yes, at 3pm. We need to carry out a small project this week.", "translation": "Sí, a las 3pm. Necesitamos llevar a cabo un pequeño proyecto esta semana." },
-      { "speaker": "user", "text": "Perfect, I'll look up the client's information before then.", "translation": "Perfecto, buscaré la información del cliente antes de eso." },
-      { "speaker": "other", "text": "Good idea — oh, and we just ran out of coffee, so bring your own!", "translation": "Buena idea — ah, y se nos acabó el café, ¡así que trae el tuyo!" }
+      {
+        "speaker": "other",
+        "text": "Welcome! First, can you fill in this form with your details?",
+        "translation": "¡Bienvenido! Primero, ¿puedes llenar este formulario con tus datos?"
+      },
+      {
+        "speaker": "user",
+        "text": "Sure. I hope I fit in well with the team.",
+        "translation": "Claro. Espero encajar bien con el equipo."
+      },
+      {
+        "speaker": "other",
+        "text": "Don't worry, everyone will help you find out how things work here.",
+        "translation": "No te preocupes, todos te ayudarán a descubrir cómo funcionan las cosas aquí."
+      },
+      {
+        "speaker": "user",
+        "text": "Great. Is there a meeting I can join in today?",
+        "translation": "Genial. ¿Hay alguna reunión en la que pueda participar hoy?"
+      },
+      {
+        "speaker": "other",
+        "text": "Yes, at 3pm. We need to carry out a small project this week.",
+        "translation": "Sí, a las 3pm. Necesitamos llevar a cabo un pequeño proyecto esta semana."
+      },
+      {
+        "speaker": "user",
+        "text": "Perfect, I'll look up the client's information before then.",
+        "translation": "Perfecto, buscaré la información del cliente antes de eso."
+      },
+      {
+        "speaker": "other",
+        "text": "Good idea — oh, and we just ran out of coffee, so bring your own!",
+        "translation": "Buena idea — ah, y se nos acabó el café, ¡así que trae el tuyo!"
+      }
     ]
   },
   "139": {
     "title": "Phrasal verbs 3: out",
     "topic": "Phrasal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "RUN OUT OF: se acabó",
@@ -225,6 +256,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
   "140": {
     "title": "Phrasal verbs 4: on/off (1)",
     "topic": "Phrasal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "ON: continuar y activar",
@@ -278,18 +310,47 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Your alarm went off twenty minutes ago! Why are you still in bed?", "translation": "¡Tu alarma sonó hace veinte minutos! ¿Por qué sigues en la cama?" },
-      { "speaker": "user", "text": "Sorry, I turned it off and fell back asleep.", "translation": "Perdón, la apagué y me volví a dormir." },
-      { "speaker": "other", "text": "Come on, get up! Put on your clothes, we have to go.", "translation": "¡Vamos, levántate! Ponte la ropa, tenemos que irnos." },
-      { "speaker": "user", "text": "Can we put off the meeting until tomorrow? I'm so tired.", "translation": "¿Podemos posponer la reunión hasta mañana? Estoy muy cansado." },
-      { "speaker": "other", "text": "No, we can't. Just turn on the shower and wake yourself up.", "translation": "No, no podemos. Solo enciende la ducha y despiértate." },
-      { "speaker": "user", "text": "Okay, okay, I'm going on with my morning now.", "translation": "Está bien, está bien, ya sigo con mi mañana." },
-      { "speaker": "other", "text": "Good. And don't forget to take off your pajamas first!", "translation": "Bien. ¡Y no olvides quitarte la pijama primero!" }
+      {
+        "speaker": "other",
+        "text": "Your alarm went off twenty minutes ago! Why are you still in bed?",
+        "translation": "¡Tu alarma sonó hace veinte minutos! ¿Por qué sigues en la cama?"
+      },
+      {
+        "speaker": "user",
+        "text": "Sorry, I turned it off and fell back asleep.",
+        "translation": "Perdón, la apagué y me volví a dormir."
+      },
+      {
+        "speaker": "other",
+        "text": "Come on, get up! Put on your clothes, we have to go.",
+        "translation": "¡Vamos, levántate! Ponte la ropa, tenemos que irnos."
+      },
+      {
+        "speaker": "user",
+        "text": "Can we put off the meeting until tomorrow? I'm so tired.",
+        "translation": "¿Podemos posponer la reunión hasta mañana? Estoy muy cansado."
+      },
+      {
+        "speaker": "other",
+        "text": "No, we can't. Just turn on the shower and wake yourself up.",
+        "translation": "No, no podemos. Solo enciende la ducha y despiértate."
+      },
+      {
+        "speaker": "user",
+        "text": "Okay, okay, I'm going on with my morning now.",
+        "translation": "Está bien, está bien, ya sigo con mi mañana."
+      },
+      {
+        "speaker": "other",
+        "text": "Good. And don't forget to take off your pajamas first!",
+        "translation": "Bien. ¡Y no olvides quitarte la pijama primero!"
+      }
     ]
   },
   "141": {
     "title": "Phrasal verbs 5: on/off (2)",
     "topic": "Phrasal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "GIVE UP: dejar un hábito",
@@ -351,6 +412,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
   "142": {
     "title": "Phrasal verbs 6: up/down",
     "topic": "Phrasal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "PICK UP: recoger y aprender",
@@ -404,17 +466,42 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Can you pick me up from the airport on Friday?", "translation": "¿Puedes recogerme en el aeropuerto el viernes?" },
-      { "speaker": "user", "text": "Of course, I won't let you down. What time do you land?", "translation": "Claro, no te voy a fallar. ¿A qué hora aterrizas?" },
-      { "speaker": "other", "text": "Around 6pm. By the way, I took up painting while I was traveling.", "translation": "Como a las 6pm. Por cierto, empecé a pintar como pasatiempo mientras viajaba." },
-      { "speaker": "user", "text": "Nice! Don't bring up how bad my drawings are, though.", "translation": "¡Qué bien! Pero no menciones lo malos que son mis dibujos." },
-      { "speaker": "other", "text": "Ha, I would never! I just hope I can put up with airport traffic.", "translation": "Ja, ¡jamás lo haría! Solo espero poder aguantar el tráfico del aeropuerto." },
-      { "speaker": "user", "text": "It's usually not too bad on Fridays. See you soon!", "translation": "Normalmente no está tan mal los viernes. ¡Nos vemos pronto!" }
+      {
+        "speaker": "other",
+        "text": "Can you pick me up from the airport on Friday?",
+        "translation": "¿Puedes recogerme en el aeropuerto el viernes?"
+      },
+      {
+        "speaker": "user",
+        "text": "Of course, I won't let you down. What time do you land?",
+        "translation": "Claro, no te voy a fallar. ¿A qué hora aterrizas?"
+      },
+      {
+        "speaker": "other",
+        "text": "Around 6pm. By the way, I took up painting while I was traveling.",
+        "translation": "Como a las 6pm. Por cierto, empecé a pintar como pasatiempo mientras viajaba."
+      },
+      {
+        "speaker": "user",
+        "text": "Nice! Don't bring up how bad my drawings are, though.",
+        "translation": "¡Qué bien! Pero no menciones lo malos que son mis dibujos."
+      },
+      {
+        "speaker": "other",
+        "text": "Ha, I would never! I just hope I can put up with airport traffic.",
+        "translation": "Ja, ¡jamás lo haría! Solo espero poder aguantar el tráfico del aeropuerto."
+      },
+      {
+        "speaker": "user",
+        "text": "It's usually not too bad on Fridays. See you soon!",
+        "translation": "Normalmente no está tan mal los viernes. ¡Nos vemos pronto!"
+      }
     ]
   },
   "143": {
     "title": "Phrasal verbs 7: up (1)",
     "topic": "Phrasal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "LOOK UP TO: admirar a alguien",
@@ -476,6 +563,7 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
   "144": {
     "title": "Phrasal verbs 8: up (2)",
     "topic": "Phrasal Verbs",
+    "level": "B2",
     "explain": [
       {
         "head": "DEAL WITH: manejar un problema",
@@ -529,17 +617,42 @@ export const phrasalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "How are you feeling? Are you ready to deal with all the homework?", "translation": "¿Cómo te sientes? ¿Listo para lidiar con toda la tarea?" },
-      { "speaker": "user", "text": "Not really. I don't know how I'll catch up after a whole week off.", "translation": "La verdad no. No sé cómo voy a ponerme al día después de una semana entera." },
-      { "speaker": "other", "text": "Don't worry, the teacher will come up with a plan to help you.", "translation": "No te preocupes, la profesora va a idear un plan para ayudarte." },
-      { "speaker": "user", "text": "I hope so. It's also hard to keep up with the group project.", "translation": "Eso espero. También es difícil mantener el ritmo con el proyecto grupal." },
-      { "speaker": "other", "text": "Your teammates understand. You'll get used to the new routine soon.", "translation": "Tus compañeros entienden. Pronto te acostumbrarás a la nueva rutina." },
-      { "speaker": "user", "text": "Thanks, that makes me feel better.", "translation": "Gracias, eso me hace sentir mejor." }
+      {
+        "speaker": "other",
+        "text": "How are you feeling? Are you ready to deal with all the homework?",
+        "translation": "¿Cómo te sientes? ¿Listo para lidiar con toda la tarea?"
+      },
+      {
+        "speaker": "user",
+        "text": "Not really. I don't know how I'll catch up after a whole week off.",
+        "translation": "La verdad no. No sé cómo voy a ponerme al día después de una semana entera."
+      },
+      {
+        "speaker": "other",
+        "text": "Don't worry, the teacher will come up with a plan to help you.",
+        "translation": "No te preocupes, la profesora va a idear un plan para ayudarte."
+      },
+      {
+        "speaker": "user",
+        "text": "I hope so. It's also hard to keep up with the group project.",
+        "translation": "Eso espero. También es difícil mantener el ritmo con el proyecto grupal."
+      },
+      {
+        "speaker": "other",
+        "text": "Your teammates understand. You'll get used to the new routine soon.",
+        "translation": "Tus compañeros entienden. Pronto te acostumbrarás a la nueva rutina."
+      },
+      {
+        "speaker": "user",
+        "text": "Thanks, that makes me feel better.",
+        "translation": "Gracias, eso me hace sentir mejor."
+      }
     ]
   },
   "145": {
     "title": "Phrasal verbs 9: away/back",
     "topic": "Phrasal Verbs",
+    "level": "B2",
     "explain": [
       {
         "head": "AWAY: irse, tirar, regalar",

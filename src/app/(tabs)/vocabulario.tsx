@@ -56,8 +56,8 @@ export default function VocabularioScreen() {
           renderItem={({ item }) => (
             <VocabCard
               entry={item}
-              footer={ALL_UNIT_TITLES[item.unit]}
-              onPress={() => router.push(`/unidad/${item.unit}`)}
+              footer={item.topicName ?? ALL_UNIT_TITLES[item.unit]}
+              onPress={item.unit > 0 ? () => router.push(`/unidad/${item.unit}`) : undefined}
             />
           )}
           ItemSeparatorComponent={() => <ThemedView style={{ height: Spacing.two }} />}

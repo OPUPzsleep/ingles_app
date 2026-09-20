@@ -4,6 +4,7 @@ export const pastPerfectUnits: Record<number, Unit> = {
   "15": {
     "title": "Past Perfect (I had done)",
     "topic": "Past Perfect",
+    "level": "B1",
     "explain": [
       {
         "head": "Forma: had + participio",
@@ -95,6 +96,7 @@ export const pastPerfectUnits: Record<number, Unit> = {
   "16": {
     "title": "Past Perfect Continuous (I had been doing)",
     "topic": "Past Perfect",
+    "level": "B2",
     "explain": [
       {
         "head": "Forma: had been + -ing",
@@ -146,6 +148,7 @@ export const pastPerfectUnits: Record<number, Unit> = {
   "17": {
     "title": "Have and Have Got",
     "topic": "Past Perfect",
+    "level": "A1",
     "explain": [
       {
         "head": "Have y have got: mismo significado",
@@ -205,17 +208,42 @@ export const pastPerfectUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Have you got any brothers or sisters?", "translation": "¿Tienes hermanos o hermanas?" },
-      { "speaker": "user", "text": "Yes, I've got two brothers. Do you have any pets?", "translation": "Sí, tengo dos hermanos. ¿Tú tienes alguna mascota?" },
-      { "speaker": "other", "text": "I don't have any pets now, but I had a rabbit when I was young.", "translation": "Ahora no tengo mascotas, pero tuve un conejo cuando era joven." },
-      { "speaker": "user", "text": "That's cute! Have you got a car?", "translation": "¡Qué lindo! ¿Tienes auto?" },
-      { "speaker": "other", "text": "No, I haven't got a car, but I've got a bicycle.", "translation": "No, no tengo auto, pero tengo bicicleta." },
-      { "speaker": "user", "text": "Nice! I have a car, but I didn't have one last year.", "translation": "¡Qué bien! Yo tengo auto, pero no tenía uno el año pasado." }
+      {
+        "speaker": "other",
+        "text": "Have you got any brothers or sisters?",
+        "translation": "¿Tienes hermanos o hermanas?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I've got two brothers. Do you have any pets?",
+        "translation": "Sí, tengo dos hermanos. ¿Tú tienes alguna mascota?"
+      },
+      {
+        "speaker": "other",
+        "text": "I don't have any pets now, but I had a rabbit when I was young.",
+        "translation": "Ahora no tengo mascotas, pero tuve un conejo cuando era joven."
+      },
+      {
+        "speaker": "user",
+        "text": "That's cute! Have you got a car?",
+        "translation": "¡Qué lindo! ¿Tienes auto?"
+      },
+      {
+        "speaker": "other",
+        "text": "No, I haven't got a car, but I've got a bicycle.",
+        "translation": "No, no tengo auto, pero tengo bicicleta."
+      },
+      {
+        "speaker": "user",
+        "text": "Nice! I have a car, but I didn't have one last year.",
+        "translation": "¡Qué bien! Yo tengo auto, pero no tenía uno el año pasado."
+      }
     ]
   },
   "18": {
     "title": "Used to (do)",
     "topic": "Past Perfect",
+    "level": "A2",
     "explain": [
       {
         "head": "Used to: hábito o estado pasado",

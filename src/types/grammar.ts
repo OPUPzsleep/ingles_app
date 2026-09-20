@@ -59,9 +59,21 @@ export interface ReadingStory {
   translation?: string;
 }
 
+/**
+ * Nivel del Marco Común Europeo de Referencia (CEFR) que mejor describe
+ * la dificultad real de una unidad o de un grupo de vocabulario.
+ * Es una aproximación razonable basada en la progresión estándar usada
+ * en la enseñanza de inglés (no es una certificación oficial).
+ */
+export type CefrLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1';
+
+export const CEFR_LEVELS: CefrLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
+
 export interface Unit {
   title: string;
   topic: string;
+  /** Nivel CEFR aproximado de esta unidad. Ver {@link CefrLevel}. */
+  level: CefrLevel;
   explain: ExplainBlock[];
   table?: ReferenceTable;
   quiz: QuizQuestion[];
@@ -98,4 +110,16 @@ export interface VocabEntry {
 export interface PronunUnit {
   tips: PronunTip[];
   vocab: VocabEntry[];
+}
+
+/**
+ * Grupo temático de vocabulario (familia, comida, rutina diaria, etc.),
+ * independiente de las unidades de gramática.
+ */
+export interface VocabTopic {
+  id: string;
+  name: string;
+  icon: string;
+  level: CefrLevel;
+  words: VocabEntry[];
 }

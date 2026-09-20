@@ -14,11 +14,13 @@ const DEFAULT_PROGRESS: Progress = {
   fcReviewed: 0,
   streak: 0,
   lastDate: '',
+  userLevel: 'A1',
 };
 
 const DEFAULT_SETTINGS: Settings = {
   reminderEnabled: false,
   reminderNotificationId: null,
+  focusModeEnabled: false,
 };
 
 export async function cargarProgreso(): Promise<Progress> {

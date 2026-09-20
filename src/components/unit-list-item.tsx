@@ -3,15 +3,26 @@ import { Pressable, StyleSheet, View } from 'react-native';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
+import { CefrLevel } from '@/types/grammar';
 
 interface UnitListItemProps {
   num: number;
   title: string;
   done: boolean;
   onPress: () => void;
+  level?: CefrLevel;
+  /** Si es false, se muestra el nivel atenuado (está por encima de tu nivel). */
+  atUserLevel?: boolean;
 }
 
-export function UnitListItem({ num, title, done, onPress }: UnitListItemProps) {
+export function UnitListItem({
+  num,
+  title,
+  done,
+  onPress,
+  level,
+  atUserLevel = true,
+}: UnitListItemProps) {
   const theme = useTheme();
 
   return (
@@ -20,6 +31,7 @@ export function UnitListItem({ num, title, done, onPress }: UnitListItemProps) {
       style={({ pressed }) => [
         styles.row,
         { backgroundColor: theme.backgroundElement, borderColor: theme.border },
+        !atUserLevel && styles.dimmed,
         pressed && styles.pressed,
       ]}>
       <View
@@ -32,6 +44,11 @@ export function UnitListItem({ num, title, done, onPress }: UnitListItemProps) {
         </ThemedText>
       </View>
       <ThemedText style={styles.title}>{title}</ThemedText>
+      {!!level && (
+        <ThemedText type="label" themeColor={atUserLevel ? 'primary' : 'textSecondary'}>
+          {level}
+        </ThemedText>
+      )}
       {done && <ThemedText themeColor="success">✓</ThemedText>}
     </Pressable>
   );
@@ -48,6 +65,9 @@ const styles = StyleSheet.create({
   },
   pressed: {
     opacity: 0.8,
+  },
+  dimmed: {
+    opacity: 0.5,
   },
   numBadge: {
     width: 32,

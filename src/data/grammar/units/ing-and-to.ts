@@ -4,6 +4,7 @@ export const ingAndToUnits: Record<number, Unit> = {
   "53": {
     "title": "Verb + -ing (enjoy doing)",
     "topic": "-ing and to…",
+    "level": "A2",
     "explain": [
       {
         "head": "Verbos seguidos de -ing",
@@ -62,12 +63,36 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Verb + -ing", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "enjoy / avoid / stop", "role": "verb" }, { "text": "doing", "role": "object" }
-      ] },
-      { "label": "Preposition + -ing", "chips": [
-        { "text": "good at / interested in", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] }
+      {
+        "label": "Verb + -ing",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "enjoy / avoid / stop",
+            "role": "verb"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Preposition + -ing",
+        "chips": [
+          {
+            "text": "good at / interested in",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "readingText": {
       "title": "My Weekend Habits",
@@ -79,13 +104,26 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Truco mental: si el verbo va justo después de una preposición (at, in, of, about...), casi siempre necesita \"-ing\"."
     ],
     "dailyWords": [
-      { "w": "hobby", "ipa": "/ˈhɒbi/", "aprox": "jóbi", "def": "afición, pasatiempo", "ex": "Reading is my favorite hobby." },
-      { "w": "habit", "ipa": "/ˈhæbɪt/", "aprox": "jábit", "def": "hábito, costumbre", "ex": "She's trying to break a bad habit." }
+      {
+        "w": "hobby",
+        "ipa": "/ˈhɒbi/",
+        "aprox": "jóbi",
+        "def": "afición, pasatiempo",
+        "ex": "Reading is my favorite hobby."
+      },
+      {
+        "w": "habit",
+        "ipa": "/ˈhæbɪt/",
+        "aprox": "jábit",
+        "def": "hábito, costumbre",
+        "ex": "She's trying to break a bad habit."
+      }
     ]
   },
   "54": {
     "title": "Verb + to… (want to do)",
     "topic": "-ing and to…",
+    "level": "A2",
     "explain": [
       {
         "head": "Verbo + to + infinitivo",
@@ -139,34 +177,89 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Verb + to + base verb", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "want / decide / hope", "role": "verb" }, { "text": "to do", "role": "object" }
-      ] }
+      {
+        "label": "Verb + to + base verb",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "want / decide / hope",
+            "role": "verb"
+          },
+          {
+            "text": "to do",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "VERB + -ING (enjoy)", "example": "I enjoy playing tennis.", "highlight": "enjoy playing" },
-      "right": { "label": "VERB + TO (want)", "example": "I want to play tennis.", "highlight": "want to play" },
+      "left": {
+        "label": "VERB + -ING (enjoy)",
+        "example": "I enjoy playing tennis.",
+        "highlight": "enjoy playing"
+      },
+      "right": {
+        "label": "VERB + TO (want)",
+        "example": "I want to play tennis.",
+        "highlight": "want to play"
+      },
       "caption": "Some verbs (enjoy, avoid, finish) take -ing; others (want, decide, hope) take to + infinitive — there's no rule, just memorize each verb."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "What do you want to do after university?", "translation": "¿Qué quieres hacer después de la universidad?" },
-      { "speaker": "user", "text": "I've decided to travel for a year before looking for a job.", "translation": "He decidido viajar durante un año antes de buscar trabajo." },
-      { "speaker": "other", "text": "Wow! Do you hope to visit Asia?", "translation": "¡Vaya! ¿Esperas visitar Asia?" },
-      { "speaker": "user", "text": "Yes, and I plan to learn some Japanese before I go.", "translation": "Sí, y planeo aprender algo de japonés antes de irme." },
-      { "speaker": "other", "text": "That sounds amazing. I promise to write to you!", "translation": "Suena increíble. ¡Te prometo que te escribiré!" }
+      {
+        "speaker": "other",
+        "text": "What do you want to do after university?",
+        "translation": "¿Qué quieres hacer después de la universidad?"
+      },
+      {
+        "speaker": "user",
+        "text": "I've decided to travel for a year before looking for a job.",
+        "translation": "He decidido viajar durante un año antes de buscar trabajo."
+      },
+      {
+        "speaker": "other",
+        "text": "Wow! Do you hope to visit Asia?",
+        "translation": "¡Vaya! ¿Esperas visitar Asia?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, and I plan to learn some Japanese before I go.",
+        "translation": "Sí, y planeo aprender algo de japonés antes de irme."
+      },
+      {
+        "speaker": "other",
+        "text": "That sounds amazing. I promise to write to you!",
+        "translation": "Suena increíble. ¡Te prometo que te escribiré!"
+      }
     ],
     "tips": [
       "Estos verbos (want, need, decide, plan, hope, promise) siempre van seguidos de \"to + verbo\", nunca de \"-ing\".",
       "Consejo práctico: memoriza estos verbos en parejas de ejemplo (\"want to go\", \"hope to see\") en vez de la regla sola — así se te queda mejor."
     ],
     "dailyWords": [
-      { "w": "goal", "ipa": "/ɡəʊl/", "aprox": "góul", "def": "objetivo, meta", "ex": "My goal is to speak fluent English." },
-      { "w": "to plan", "ipa": "/tuː plæn/", "aprox": "tu plán", "def": "planear, planificar", "ex": "We plan to move next year." }
+      {
+        "w": "goal",
+        "ipa": "/ɡəʊl/",
+        "aprox": "góul",
+        "def": "objetivo, meta",
+        "ex": "My goal is to speak fluent English."
+      },
+      {
+        "w": "to plan",
+        "ipa": "/tuː plæn/",
+        "aprox": "tu plán",
+        "def": "planear, planificar",
+        "ex": "We plan to move next year."
+      }
     ]
   },
   "55": {
     "title": "Verb + Object + to… (ask somebody to do)",
     "topic": "-ing and to…",
+    "level": "B1",
     "explain": [
       {
         "head": "Verbo + objeto + to",
@@ -209,34 +302,93 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Verb + object + to", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "ask / tell / want", "role": "verb" }, { "text": "somebody", "role": "object" }, { "text": "to do", "role": "connector" }
-      ] }
+      {
+        "label": "Verb + object + to",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "ask / tell / want",
+            "role": "verb"
+          },
+          {
+            "text": "somebody",
+            "role": "object"
+          },
+          {
+            "text": "to do",
+            "role": "connector"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "VERB + TO (no object)", "example": "I want to leave.", "highlight": "want to leave" },
-      "right": { "label": "VERB + OBJECT + TO", "example": "I want you to leave.", "highlight": "want you to leave" },
+      "left": {
+        "label": "VERB + TO (no object)",
+        "example": "I want to leave.",
+        "highlight": "want to leave"
+      },
+      "right": {
+        "label": "VERB + OBJECT + TO",
+        "example": "I want you to leave.",
+        "highlight": "want you to leave"
+      },
       "caption": "Some verbs go straight to the infinitive; others need a person (object) first — 'ask/tell/want + somebody + to do'."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "My boss asked me to finish the report by Friday.", "translation": "Mi jefe me pidió que terminara el informe para el viernes." },
-      { "speaker": "user", "text": "That's tight! Did she tell you to work overtime?", "translation": "¡Qué ajustado! ¿Te dijo que trabajaras horas extra?" },
-      { "speaker": "other", "text": "No, but she did want me to send her a draft tonight.", "translation": "No, pero sí quería que le enviara un borrador esta noche." },
-      { "speaker": "user", "text": "I'd advise you to ask a colleague to help.", "translation": "Yo te aconsejaría que le pidieras a un compañero que te ayudara." },
-      { "speaker": "other", "text": "Good idea — I'll invite Sam to join me tomorrow.", "translation": "Buena idea — invitaré a Sam a que se una mañana." }
+      {
+        "speaker": "other",
+        "text": "My boss asked me to finish the report by Friday.",
+        "translation": "Mi jefe me pidió que terminara el informe para el viernes."
+      },
+      {
+        "speaker": "user",
+        "text": "That's tight! Did she tell you to work overtime?",
+        "translation": "¡Qué ajustado! ¿Te dijo que trabajaras horas extra?"
+      },
+      {
+        "speaker": "other",
+        "text": "No, but she did want me to send her a draft tonight.",
+        "translation": "No, pero sí quería que le enviara un borrador esta noche."
+      },
+      {
+        "speaker": "user",
+        "text": "I'd advise you to ask a colleague to help.",
+        "translation": "Yo te aconsejaría que le pidieras a un compañero que te ayudara."
+      },
+      {
+        "speaker": "other",
+        "text": "Good idea — I'll invite Sam to join me tomorrow.",
+        "translation": "Buena idea — invitaré a Sam a que se una mañana."
+      }
     ],
     "tips": [
       "El orden nunca cambia: verbo + persona + \"to\" + verbo. Nunca digas \"ask to me\" — di \"ask me to...\"",
       "Estos verbos (ask, tell, want, remind, warn) casi siempre hablan de que ALGUIEN MÁS haga la acción, no tú."
     ],
     "dailyWords": [
-      { "w": "to remind", "ipa": "/rɪˈmaɪnd/", "aprox": "rimáind", "def": "recordar (a alguien que haga algo)", "ex": "Please remind me to call the bank." },
-      { "w": "deadline", "ipa": "/ˈdedlaɪn/", "aprox": "dédlain", "def": "fecha límite, plazo", "ex": "The deadline for the report is Friday." }
+      {
+        "w": "to remind",
+        "ipa": "/rɪˈmaɪnd/",
+        "aprox": "rimáind",
+        "def": "recordar (a alguien que haga algo)",
+        "ex": "Please remind me to call the bank."
+      },
+      {
+        "w": "deadline",
+        "ipa": "/ˈdedlaɪn/",
+        "aprox": "dédlain",
+        "def": "fecha límite, plazo",
+        "ex": "The deadline for the report is Friday."
+      }
     ]
   },
   "56": {
     "title": "Verb + -ing or to… 1 (remember, stop, try)",
     "topic": "-ing and to…",
+    "level": "B1",
     "explain": [
       {
         "head": "Remember: -ing o to",
@@ -300,40 +452,111 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Past memory", "chips": [
-        { "text": "remember", "role": "verb" }, { "text": "doing", "role": "object" }
-      ] },
-      { "label": "Future task", "chips": [
-        { "text": "remember", "role": "verb" }, { "text": "to do", "role": "object" }
-      ] },
-      { "label": "Experiment vs effort", "chips": [
-        { "text": "try", "role": "verb" }, { "text": "doing / to do", "role": "object" }
-      ] }
+      {
+        "label": "Past memory",
+        "chips": [
+          {
+            "text": "remember",
+            "role": "verb"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Future task",
+        "chips": [
+          {
+            "text": "remember",
+            "role": "verb"
+          },
+          {
+            "text": "to do",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Experiment vs effort",
+        "chips": [
+          {
+            "text": "try",
+            "role": "verb"
+          },
+          {
+            "text": "doing / to do",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "STOP + -ING (end an activity)", "example": "I stopped smoking last year.", "highlight": "stopped smoking" },
-      "right": { "label": "STOP + TO (pause in order to)", "example": "I stopped to smoke a cigarette.", "highlight": "stopped to smoke" },
+      "left": {
+        "label": "STOP + -ING (end an activity)",
+        "example": "I stopped smoking last year.",
+        "highlight": "stopped smoking"
+      },
+      "right": {
+        "label": "STOP + TO (pause in order to)",
+        "example": "I stopped to smoke a cigarette.",
+        "highlight": "stopped to smoke"
+      },
       "caption": "'Stop doing' ends a habit; 'stop to do' means you paused one activity in order to start another."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Did you remember to lock the door before we left?", "translation": "¿Te acordaste de cerrar la puerta con llave antes de salir?" },
-      { "speaker": "user", "text": "Yes, and I remember checking it twice.", "translation": "Sí, y recuerdo haberla comprobado dos veces." },
-      { "speaker": "other", "text": "Good. I tried calling you earlier but you didn't answer.", "translation": "Bien. Intenté llamarte antes pero no contestaste." },
-      { "speaker": "user", "text": "Sorry, I stopped to answer an email and lost track of time.", "translation": "Perdona, me detuve para responder un correo y se me pasó el tiempo." },
-      { "speaker": "other", "text": "No worries — maybe try turning your phone volume up next time.", "translation": "No pasa nada — quizás prueba a subir el volumen del teléfono la próxima vez." }
+      {
+        "speaker": "other",
+        "text": "Did you remember to lock the door before we left?",
+        "translation": "¿Te acordaste de cerrar la puerta con llave antes de salir?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, and I remember checking it twice.",
+        "translation": "Sí, y recuerdo haberla comprobado dos veces."
+      },
+      {
+        "speaker": "other",
+        "text": "Good. I tried calling you earlier but you didn't answer.",
+        "translation": "Bien. Intenté llamarte antes pero no contestaste."
+      },
+      {
+        "speaker": "user",
+        "text": "Sorry, I stopped to answer an email and lost track of time.",
+        "translation": "Perdona, me detuve para responder un correo y se me pasó el tiempo."
+      },
+      {
+        "speaker": "other",
+        "text": "No worries — maybe try turning your phone volume up next time.",
+        "translation": "No pasa nada — quizás prueba a subir el volumen del teléfono la próxima vez."
+      }
     ],
     "tips": [
       "REMEMBER + -ing = recuerdo algo que YA pasó; REMEMBER + to = no olvido algo que TENGO que hacer.",
       "Truco: STOP + to = \"me detuve PARA hacer algo nuevo\"; STOP + -ing = \"dejé de hacer algo que hacía\"."
     ],
     "dailyWords": [
-      { "w": "to forget", "ipa": "/fəˈɡet/", "aprox": "forguét", "def": "olvidar", "ex": "Don't forget to bring your umbrella." },
-      { "w": "attempt", "ipa": "/əˈtempt/", "aprox": "atémpt", "def": "intento", "ex": "She made an attempt to fix the car." }
+      {
+        "w": "to forget",
+        "ipa": "/fəˈɡet/",
+        "aprox": "forguét",
+        "def": "olvidar",
+        "ex": "Don't forget to bring your umbrella."
+      },
+      {
+        "w": "attempt",
+        "ipa": "/əˈtempt/",
+        "aprox": "atémpt",
+        "def": "intento",
+        "ex": "She made an attempt to fix the car."
+      }
     ]
   },
   "57": {
     "title": "Verb + -ing or to… 2 (begin, start, prefer, like, love, hate)",
     "topic": "-ing and to…",
+    "level": "B1",
     "explain": [
       {
         "head": "Like/love/hate/prefer: -ing o to",
@@ -382,19 +605,57 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "General preference (either form)", "chips": [
-        { "text": "like / love / hate", "role": "verb" }, { "text": "doing / to do", "role": "object" }
-      ] },
-      { "label": "Specific wish (only to)", "chips": [
-        { "text": "would like / love", "role": "verb" }, { "text": "to do", "role": "object" }
-      ] },
-      { "label": "Begin/start (either form)", "chips": [
-        { "text": "begin / start", "role": "verb" }, { "text": "doing / to do", "role": "object" }
-      ] }
+      {
+        "label": "General preference (either form)",
+        "chips": [
+          {
+            "text": "like / love / hate",
+            "role": "verb"
+          },
+          {
+            "text": "doing / to do",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Specific wish (only to)",
+        "chips": [
+          {
+            "text": "would like / love",
+            "role": "verb"
+          },
+          {
+            "text": "to do",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Begin/start (either form)",
+        "chips": [
+          {
+            "text": "begin / start",
+            "role": "verb"
+          },
+          {
+            "text": "doing / to do",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "LIKE (general preference)", "example": "I like swimming in the sea.", "highlight": "like swimming" },
-      "right": { "label": "WOULD LIKE (specific wish)", "example": "I'd like to swim now.", "highlight": "'d like to swim" },
+      "left": {
+        "label": "LIKE (general preference)",
+        "example": "I like swimming in the sea.",
+        "highlight": "like swimming"
+      },
+      "right": {
+        "label": "WOULD LIKE (specific wish)",
+        "example": "I'd like to swim now.",
+        "highlight": "'d like to swim"
+      },
       "caption": "'Like' + -ing/to describes a general preference; add 'would' and only 'to' works, for one specific occasion."
     },
     "readingText": {
@@ -407,13 +668,26 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Pero con WOULD (would like, would love, would prefer) usa siempre \"to\" — nunca \"-ing\"."
     ],
     "dailyWords": [
-      { "w": "cosy", "ipa": "/ˈkəʊzi/", "aprox": "kóusi", "def": "acogedor, confortable", "ex": "The cabin felt warm and cosy." },
-      { "w": "board game", "ipa": "/bɔːd ɡeɪm/", "aprox": "bord guéim", "def": "juego de mesa", "ex": "We played a board game after dinner." }
+      {
+        "w": "cosy",
+        "ipa": "/ˈkəʊzi/",
+        "aprox": "kóusi",
+        "def": "acogedor, confortable",
+        "ex": "The cabin felt warm and cosy."
+      },
+      {
+        "w": "board game",
+        "ipa": "/bɔːd ɡeɪm/",
+        "aprox": "bord guéim",
+        "def": "juego de mesa",
+        "ex": "We played a board game after dinner."
+      }
     ]
   },
   "58": {
     "title": "Verb + -ing or to… 3 (interested in doing / want to do)",
     "topic": "-ing and to…",
+    "level": "B2",
     "explain": [
       {
         "head": "Frases con adjetivo/sustantivo + -ing o to",
@@ -457,37 +731,98 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Adjective + preposition + -ing", "chips": [
-        { "text": "be interested in / keen on", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] },
-      { "label": "Fixed phrase + -ing", "chips": [
-        { "text": "it's no use / there's no point in", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] }
+      {
+        "label": "Adjective + preposition + -ing",
+        "chips": [
+          {
+            "text": "be interested in / keen on",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Fixed phrase + -ing",
+        "chips": [
+          {
+            "text": "it's no use / there's no point in",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "ADJECTIVE + PREPOSITION + -ING", "example": "I'm interested in learning Italian.", "highlight": "interested in learning" },
-      "right": { "label": "VERB + TO", "example": "I want to learn Italian.", "highlight": "want to learn" },
+      "left": {
+        "label": "ADJECTIVE + PREPOSITION + -ING",
+        "example": "I'm interested in learning Italian.",
+        "highlight": "interested in learning"
+      },
+      "right": {
+        "label": "VERB + TO",
+        "example": "I want to learn Italian.",
+        "highlight": "want to learn"
+      },
       "caption": "When a preposition (in, on, about) comes before the verb, it must take -ing — but plain verbs like 'want' take 'to'."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "I'm thinking of taking an evening class. I'm really interested in learning to paint.", "translation": "Estoy pensando en apuntarme a una clase por la tarde. Me interesa mucho aprender a pintar." },
-      { "speaker": "user", "text": "That's great! Are you keen on trying watercolours?", "translation": "¡Qué bien! ¿Te apetece probar con acuarelas?" },
-      { "speaker": "other", "text": "Yes, though there's no point in buying expensive materials at first.", "translation": "Sí, aunque no tiene sentido comprar materiales caros al principio." },
-      { "speaker": "user", "text": "True — it's worth trying cheap ones before you commit.", "translation": "Cierto — merece la pena probar con unos baratos antes de comprometerte." },
-      { "speaker": "other", "text": "Exactly. It's no use spending money if I might not stick with it.", "translation": "Exacto. No sirve de nada gastar dinero si a lo mejor no continúo." }
+      {
+        "speaker": "other",
+        "text": "I'm thinking of taking an evening class. I'm really interested in learning to paint.",
+        "translation": "Estoy pensando en apuntarme a una clase por la tarde. Me interesa mucho aprender a pintar."
+      },
+      {
+        "speaker": "user",
+        "text": "That's great! Are you keen on trying watercolours?",
+        "translation": "¡Qué bien! ¿Te apetece probar con acuarelas?"
+      },
+      {
+        "speaker": "other",
+        "text": "Yes, though there's no point in buying expensive materials at first.",
+        "translation": "Sí, aunque no tiene sentido comprar materiales caros al principio."
+      },
+      {
+        "speaker": "user",
+        "text": "True — it's worth trying cheap ones before you commit.",
+        "translation": "Cierto — merece la pena probar con unos baratos antes de comprometerte."
+      },
+      {
+        "speaker": "other",
+        "text": "Exactly. It's no use spending money if I might not stick with it.",
+        "translation": "Exacto. No sirve de nada gastar dinero si a lo mejor no continúo."
+      }
     ],
     "tips": [
       "Frases fijas como \"interested in\", \"keen on\", \"no point in\" siempre llevan \"-ing\" porque terminan en preposición.",
       "No confundas \"interested in doing\" (adjetivo+preposición) con \"want to do\" (verbo normal) — cada uno sigue su propia regla."
     ],
     "dailyWords": [
-      { "w": "worthwhile", "ipa": "/ˌwɜːθˈwaɪl/", "aprox": "uorzuáil", "def": "que vale la pena", "ex": "It was a worthwhile experience." },
-      { "w": "to commit to", "ipa": "/kəˈmɪt tuː/", "aprox": "comít tu", "def": "comprometerse a", "ex": "She committed to finishing the course." }
+      {
+        "w": "worthwhile",
+        "ipa": "/ˌwɜːθˈwaɪl/",
+        "aprox": "uorzuáil",
+        "def": "que vale la pena",
+        "ex": "It was a worthwhile experience."
+      },
+      {
+        "w": "to commit to",
+        "ipa": "/kəˈmɪt tuː/",
+        "aprox": "comít tu",
+        "def": "comprometerse a",
+        "ex": "She committed to finishing the course."
+      }
     ]
   },
   "59": {
     "title": "Prefer and Would Rather",
     "topic": "-ing and to…",
+    "level": "B1",
     "explain": [
       {
         "head": "Prefer + -ing / to",
@@ -536,40 +871,115 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Prefer (general)", "chips": [
-        { "text": "prefer", "role": "verb" }, { "text": "doing", "role": "object" }, { "text": "to doing", "role": "connector" }
-      ] },
-      { "label": "Would rather (yourself)", "chips": [
-        { "text": "'d rather", "role": "verb" }, { "text": "base verb", "role": "object" }
-      ] },
-      { "label": "Would rather (someone else)", "chips": [
-        { "text": "'d rather", "role": "verb" }, { "text": "subject + past simple", "role": "object" }
-      ] }
+      {
+        "label": "Prefer (general)",
+        "chips": [
+          {
+            "text": "prefer",
+            "role": "verb"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          },
+          {
+            "text": "to doing",
+            "role": "connector"
+          }
+        ]
+      },
+      {
+        "label": "Would rather (yourself)",
+        "chips": [
+          {
+            "text": "'d rather",
+            "role": "verb"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Would rather (someone else)",
+        "chips": [
+          {
+            "text": "'d rather",
+            "role": "verb"
+          },
+          {
+            "text": "subject + past simple",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "PREFER + -ING / TO", "example": "I prefer walking to cycling.", "highlight": "prefer walking to" },
-      "right": { "label": "WOULD RATHER + BASE VERB", "example": "I'd rather walk than cycle.", "highlight": "'d rather walk" },
+      "left": {
+        "label": "PREFER + -ING / TO",
+        "example": "I prefer walking to cycling.",
+        "highlight": "prefer walking to"
+      },
+      "right": {
+        "label": "WOULD RATHER + BASE VERB",
+        "example": "I'd rather walk than cycle.",
+        "highlight": "'d rather walk"
+      },
       "caption": "'Prefer' takes -ing (+ to) or to-infinitive (+ rather than); 'would rather' drops 'to' completely and uses the bare verb."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Shall we get pizza tonight, or would you rather cook?", "translation": "¿Pedimos pizza esta noche, o prefieres cocinar?" },
-      { "speaker": "user", "text": "Honestly, I'd rather order in — I'm exhausted.", "translation": "Sinceramente, prefiero pedir comida — estoy agotado." },
-      { "speaker": "other", "text": "Fair enough. I prefer pizza to sushi anyway.", "translation": "Vale. De todas formas prefiero la pizza al sushi." },
-      { "speaker": "user", "text": "Same here. Actually, I'd rather you chose the toppings this time.", "translation": "Yo también. De hecho, prefiero que elijas tú los ingredientes esta vez." },
-      { "speaker": "other", "text": "Deal — I'd rather have mushrooms than olives.", "translation": "Trato hecho — prefiero champiñones antes que aceitunas." }
+      {
+        "speaker": "other",
+        "text": "Shall we get pizza tonight, or would you rather cook?",
+        "translation": "¿Pedimos pizza esta noche, o prefieres cocinar?"
+      },
+      {
+        "speaker": "user",
+        "text": "Honestly, I'd rather order in — I'm exhausted.",
+        "translation": "Sinceramente, prefiero pedir comida — estoy agotado."
+      },
+      {
+        "speaker": "other",
+        "text": "Fair enough. I prefer pizza to sushi anyway.",
+        "translation": "Vale. De todas formas prefiero la pizza al sushi."
+      },
+      {
+        "speaker": "user",
+        "text": "Same here. Actually, I'd rather you chose the toppings this time.",
+        "translation": "Yo también. De hecho, prefiero que elijas tú los ingredientes esta vez."
+      },
+      {
+        "speaker": "other",
+        "text": "Deal — I'd rather have mushrooms than olives.",
+        "translation": "Trato hecho — prefiero champiñones antes que aceitunas."
+      }
     ],
     "tips": [
       "WOULD RATHER nunca lleva \"to\": di \"I'd rather stay\", no \"I'd rather to stay\".",
       "Para hablar de lo que prefieres que OTRA persona haga, usa pasado simple: \"I'd rather you called me\" (no \"to call\")."
     ],
     "dailyWords": [
-      { "w": "topping", "ipa": "/ˈtɒpɪŋ/", "aprox": "tópin", "def": "ingrediente que se pone encima (de una pizza, etc.)", "ex": "My favourite pizza topping is mushroom." },
-      { "w": "to order in", "ipa": "/ˈɔːdər ɪn/", "aprox": "órder in", "def": "pedir comida a domicilio", "ex": "Let's order in tonight, I don't feel like cooking." }
+      {
+        "w": "topping",
+        "ipa": "/ˈtɒpɪŋ/",
+        "aprox": "tópin",
+        "def": "ingrediente que se pone encima (de una pizza, etc.)",
+        "ex": "My favourite pizza topping is mushroom."
+      },
+      {
+        "w": "to order in",
+        "ipa": "/ˈɔːdər ɪn/",
+        "aprox": "órder in",
+        "def": "pedir comida a domicilio",
+        "ex": "Let's order in tonight, I don't feel like cooking."
+      }
     ]
   },
   "60": {
     "title": "Preposition + -ing",
     "topic": "-ing and to…",
+    "level": "B1",
     "explain": [
       {
         "head": "Después de preposición: siempre -ing",
@@ -613,12 +1023,32 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Preposition + -ing", "chips": [
-        { "text": "interested in / good at / without", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] },
-      { "label": "Fixed phrasal expression", "chips": [
-        { "text": "look forward to / be used to", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] }
+      {
+        "label": "Preposition + -ing",
+        "chips": [
+          {
+            "text": "interested in / good at / without",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Fixed phrasal expression",
+        "chips": [
+          {
+            "text": "look forward to / be used to",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "readingText": {
       "title": "A Letter to a Friend",
@@ -630,13 +1060,26 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Ojo con \"to\" en frases como \"look forward to\" — ahí \"to\" es preposición, así que necesita \"-ing\", no infinitivo."
     ],
     "dailyWords": [
-      { "w": "to tidy up", "ipa": "/ˈtaɪdi ʌp/", "aprox": "táidi ap", "def": "ordenar, poner en orden", "ex": "I need to tidy up my room." },
-      { "w": "ages", "ipa": "/ˈeɪdʒɪz/", "aprox": "éiyis", "def": "mucho tiempo (coloquial)", "ex": "I haven't seen her in ages." }
+      {
+        "w": "to tidy up",
+        "ipa": "/ˈtaɪdi ʌp/",
+        "aprox": "táidi ap",
+        "def": "ordenar, poner en orden",
+        "ex": "I need to tidy up my room."
+      },
+      {
+        "w": "ages",
+        "ipa": "/ˈeɪdʒɪz/",
+        "aprox": "éiyis",
+        "def": "mucho tiempo (coloquial)",
+        "ex": "I haven't seen her in ages."
+      }
     ]
   },
   "61": {
     "title": "Be/Get Used to… (I'm used to getting up early)",
     "topic": "-ing and to…",
+    "level": "B1",
     "explain": [
       {
         "head": "Used to + -ing (= acostumbrado a)",
@@ -685,40 +1128,111 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Accustomed now", "chips": [
-        { "text": "be used to", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] },
-      { "label": "Becoming accustomed", "chips": [
-        { "text": "get used to", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] },
-      { "label": "Past habit (different!)", "chips": [
-        { "text": "used to", "role": "verb" }, { "text": "base verb", "role": "object" }
-      ] }
+      {
+        "label": "Accustomed now",
+        "chips": [
+          {
+            "text": "be used to",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Becoming accustomed",
+        "chips": [
+          {
+            "text": "get used to",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Past habit (different!)",
+        "chips": [
+          {
+            "text": "used to",
+            "role": "verb"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "USED TO + BASE VERB (past habit)", "example": "I used to wake up late.", "highlight": "used to wake" },
-      "right": { "label": "BE USED TO + -ING (current habit)", "example": "I'm used to waking up early now.", "highlight": "used to waking" },
+      "left": {
+        "label": "USED TO + BASE VERB (past habit)",
+        "example": "I used to wake up late.",
+        "highlight": "used to wake"
+      },
+      "right": {
+        "label": "BE USED TO + -ING (current habit)",
+        "example": "I'm used to waking up early now.",
+        "highlight": "used to waking"
+      },
       "caption": "'Used to + verb' is a habit that's over; 'be used to + -ing' means something feels normal to you now."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "How's life in London? Are you used to the weather yet?", "translation": "¿Qué tal la vida en Londres? ¿Ya te has acostumbrado al clima?" },
-      { "speaker": "user", "text": "Slowly! I'm getting used to the rain, but I still miss the sun.", "translation": "¡Poco a poco! Me estoy acostumbrando a la lluvia, pero todavía echo de menos el sol." },
-      { "speaker": "other", "text": "I remember that. I used to complain about it constantly at first.", "translation": "Me acuerdo de eso. Al principio yo me quejaba constantemente." },
-      { "speaker": "user", "text": "Really? Are you used to it now?", "translation": "¿En serio? ¿Ya te has acostumbrado?" },
-      { "speaker": "other", "text": "Completely — I'm even used to carrying an umbrella everywhere!", "translation": "Totalmente — ¡hasta me he acostumbrado a llevar paraguas a todas partes!" }
+      {
+        "speaker": "other",
+        "text": "How's life in London? Are you used to the weather yet?",
+        "translation": "¿Qué tal la vida en Londres? ¿Ya te has acostumbrado al clima?"
+      },
+      {
+        "speaker": "user",
+        "text": "Slowly! I'm getting used to the rain, but I still miss the sun.",
+        "translation": "¡Poco a poco! Me estoy acostumbrando a la lluvia, pero todavía echo de menos el sol."
+      },
+      {
+        "speaker": "other",
+        "text": "I remember that. I used to complain about it constantly at first.",
+        "translation": "Me acuerdo de eso. Al principio yo me quejaba constantemente."
+      },
+      {
+        "speaker": "user",
+        "text": "Really? Are you used to it now?",
+        "translation": "¿En serio? ¿Ya te has acostumbrado?"
+      },
+      {
+        "speaker": "other",
+        "text": "Completely — I'm even used to carrying an umbrella everywhere!",
+        "translation": "Totalmente — ¡hasta me he acostumbrado a llevar paraguas a todas partes!"
+      }
     ],
     "tips": [
       "BE USED TO + -ing = ya es normal para ti AHORA; USED TO + verbo base = un hábito del PASADO que ya no existe.",
       "GET used to = el proceso de acostumbrarte; BE used to = ya estás acostumbrado (el resultado final)."
     ],
     "dailyWords": [
-      { "w": "to adapt", "ipa": "/əˈdæpt/", "aprox": "adápt", "def": "adaptarse", "ex": "It took months to adapt to the new schedule." },
-      { "w": "umbrella", "ipa": "/ʌmˈbrelə/", "aprox": "ambréla", "def": "paraguas", "ex": "Don't forget your umbrella, it might rain." }
+      {
+        "w": "to adapt",
+        "ipa": "/əˈdæpt/",
+        "aprox": "adápt",
+        "def": "adaptarse",
+        "ex": "It took months to adapt to the new schedule."
+      },
+      {
+        "w": "umbrella",
+        "ipa": "/ʌmˈbrelə/",
+        "aprox": "ambréla",
+        "def": "paraguas",
+        "ex": "Don't forget your umbrella, it might rain."
+      }
     ]
   },
   "62": {
     "title": "Verb + preposition + -ing",
     "topic": "-ing and to…",
+    "level": "B2",
     "explain": [
       {
         "head": "Verbo + preposición + -ing",
@@ -789,32 +1303,85 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Verb + preposition + -ing", "chips": [
-        { "text": "succeed in / insist on / apologise for", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] },
-      { "label": "Special case: look forward to", "chips": [
-        { "text": "look forward to", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] }
+      {
+        "label": "Verb + preposition + -ing",
+        "chips": [
+          {
+            "text": "succeed in / insist on / apologise for",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Special case: look forward to",
+        "chips": [
+          {
+            "text": "look forward to",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "I'm sorry, I have to cancel dinner tonight.", "translation": "Lo siento, tengo que cancelar la cena de esta noche." },
-      { "speaker": "user", "text": "No worries. I don't feel like going out much anyway.", "translation": "No te preocupes. La verdad es que hoy tampoco me apetece mucho salir." },
-      { "speaker": "other", "text": "Thanks for understanding. I apologise for cancelling so late.", "translation": "Gracias por entenderlo. Me disculpo por cancelar tan tarde." },
-      { "speaker": "user", "text": "Honestly, I'm looking forward to just staying home and resting.", "translation": "La verdad es que tengo ganas de quedarme en casa y descansar." },
-      { "speaker": "other", "text": "Same! I dream of having a whole free weekend.", "translation": "¡Igual! Sueño con tener un fin de semana entero libre." }
+      {
+        "speaker": "other",
+        "text": "I'm sorry, I have to cancel dinner tonight.",
+        "translation": "Lo siento, tengo que cancelar la cena de esta noche."
+      },
+      {
+        "speaker": "user",
+        "text": "No worries. I don't feel like going out much anyway.",
+        "translation": "No te preocupes. La verdad es que hoy tampoco me apetece mucho salir."
+      },
+      {
+        "speaker": "other",
+        "text": "Thanks for understanding. I apologise for cancelling so late.",
+        "translation": "Gracias por entenderlo. Me disculpo por cancelar tan tarde."
+      },
+      {
+        "speaker": "user",
+        "text": "Honestly, I'm looking forward to just staying home and resting.",
+        "translation": "La verdad es que tengo ganas de quedarme en casa y descansar."
+      },
+      {
+        "speaker": "other",
+        "text": "Same! I dream of having a whole free weekend.",
+        "translation": "¡Igual! Sueño con tener un fin de semana entero libre."
+      }
     ],
     "tips": [
       "Muchos verbos llevan una preposición fija (succeed IN, insist ON, apologise FOR) — apréndelos juntos, como una sola pieza.",
       "Cuidado con \"look forward to\" y \"feel like\": aunque parezcan raros, siguen la misma regla — preposición + \"-ing\"."
     ],
     "dailyWords": [
-      { "w": "to apologise", "ipa": "/əˈpɒlədʒaɪz/", "aprox": "apóloyais", "def": "disculparse, pedir perdón", "ex": "He apologised for being late." },
-      { "w": "to insist", "ipa": "/ɪnˈsɪst/", "aprox": "insíst", "def": "insistir", "ex": "She insisted on paying the bill." }
+      {
+        "w": "to apologise",
+        "ipa": "/əˈpɒlədʒaɪz/",
+        "aprox": "apóloyais",
+        "def": "disculparse, pedir perdón",
+        "ex": "He apologised for being late."
+      },
+      {
+        "w": "to insist",
+        "ipa": "/ɪnˈsɪst/",
+        "aprox": "insíst",
+        "def": "insistir",
+        "ex": "She insisted on paying the bill."
+      }
     ]
   },
   "63": {
     "title": "There's No Point in… / It's No Use…",
     "topic": "-ing and to…",
+    "level": "B2",
     "explain": [
       {
         "head": "Expresiones + -ing",
@@ -858,12 +1425,32 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Pointless/useless expressions", "chips": [
-        { "text": "there's no point in / it's no use", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] },
-      { "label": "Can't help", "chips": [
-        { "text": "can't help", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] }
+      {
+        "label": "Pointless/useless expressions",
+        "chips": [
+          {
+            "text": "there's no point in / it's no use",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Can't help",
+        "chips": [
+          {
+            "text": "can't help",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "readingText": {
       "title": "Stuck in Traffic",
@@ -875,13 +1462,26 @@ export const ingAndToUnits: Record<number, Unit> = {
       "CAN'T HELP + -ing significa que no puedes evitar hacer algo, como una reacción automática (reír, llorar...)."
     ],
     "dailyWords": [
-      { "w": "frustrated", "ipa": "/frʌˈstreɪtɪd/", "aprox": "frastréitid", "def": "frustrado", "ex": "He felt frustrated after waiting so long." },
-      { "w": "traffic jam", "ipa": "/ˈtræfɪk dʒæm/", "aprox": "tráfik yam", "def": "atasco de tráfico", "ex": "We were stuck in a traffic jam for an hour." }
+      {
+        "w": "frustrated",
+        "ipa": "/frʌˈstreɪtɪd/",
+        "aprox": "frastréitid",
+        "def": "frustrado",
+        "ex": "He felt frustrated after waiting so long."
+      },
+      {
+        "w": "traffic jam",
+        "ipa": "/ˈtræfɪk dʒæm/",
+        "aprox": "tráfik yam",
+        "def": "atasco de tráfico",
+        "ex": "We were stuck in a traffic jam for an hour."
+      }
     ]
   },
   "64": {
     "title": "To… For… So That… (Purpose)",
     "topic": "-ing and to…",
+    "level": "B1",
     "explain": [
       {
         "head": "To + infinitivo: propósito",
@@ -930,19 +1530,69 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Purpose (same subject)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "verb", "role": "verb" }, { "text": "to + base verb", "role": "connector" }
-      ] },
-      { "label": "Purpose (a thing)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "verb", "role": "verb" }, { "text": "for + noun", "role": "connector" }
-      ] },
-      { "label": "Purpose (modal/other subject)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "verb", "role": "verb" }, { "text": "so that + clause", "role": "connector" }
-      ] }
+      {
+        "label": "Purpose (same subject)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "verb",
+            "role": "verb"
+          },
+          {
+            "text": "to + base verb",
+            "role": "connector"
+          }
+        ]
+      },
+      {
+        "label": "Purpose (a thing)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "verb",
+            "role": "verb"
+          },
+          {
+            "text": "for + noun",
+            "role": "connector"
+          }
+        ]
+      },
+      {
+        "label": "Purpose (modal/other subject)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "verb",
+            "role": "verb"
+          },
+          {
+            "text": "so that + clause",
+            "role": "connector"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "TO + INFINITIVE (action)", "example": "I went to the shop to buy milk.", "highlight": "to buy" },
-      "right": { "label": "FOR + NOUN (thing)", "example": "I went to the shop for some milk.", "highlight": "for some milk" },
+      "left": {
+        "label": "TO + INFINITIVE (action)",
+        "example": "I went to the shop to buy milk.",
+        "highlight": "to buy"
+      },
+      "right": {
+        "label": "FOR + NOUN (thing)",
+        "example": "I went to the shop for some milk.",
+        "highlight": "for some milk"
+      },
       "caption": "Use 'to' before a verb (the action) and 'for' before a noun (the thing) — they express the same purpose, differently."
     },
     "readingText": {
@@ -955,13 +1605,26 @@ export const ingAndToUnits: Record<number, Unit> = {
       "Usa SO THAT cuando el propósito necesita un verbo modal (can, could, would) o involucra a otra persona distinta del sujeto."
     ],
     "dailyWords": [
-      { "w": "errand", "ipa": "/ˈerənd/", "aprox": "érand", "def": "recado, mandado", "ex": "I have to run a few errands this morning." },
-      { "w": "prescription", "ipa": "/prɪˈskrɪpʃn/", "aprox": "priskrípshon", "def": "receta médica", "ex": "She picked up her prescription at the pharmacy." }
+      {
+        "w": "errand",
+        "ipa": "/ˈerənd/",
+        "aprox": "érand",
+        "def": "recado, mandado",
+        "ex": "I have to run a few errands this morning."
+      },
+      {
+        "w": "prescription",
+        "ipa": "/prɪˈskrɪpʃn/",
+        "aprox": "priskrípshon",
+        "def": "receta médica",
+        "ex": "She picked up her prescription at the pharmacy."
+      }
     ]
   },
   "65": {
     "title": "Adjective + to…",
     "topic": "-ing and to…",
+    "level": "B1",
     "explain": [
       {
         "head": "Adjetivo + to",
@@ -1010,40 +1673,123 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Adjective + to", "chips": [
-        { "text": "It's", "role": "subject" }, { "text": "adjective", "role": "verb" }, { "text": "to do", "role": "object" }
-      ] },
-      { "label": "Too + adjective + to", "chips": [
-        { "text": "too", "role": "connector" }, { "text": "adjective", "role": "verb" }, { "text": "to do", "role": "object" }
-      ] },
-      { "label": "Adjective + enough + to", "chips": [
-        { "text": "adjective", "role": "verb" }, { "text": "enough", "role": "connector" }, { "text": "to do", "role": "object" }
-      ] }
+      {
+        "label": "Adjective + to",
+        "chips": [
+          {
+            "text": "It's",
+            "role": "subject"
+          },
+          {
+            "text": "adjective",
+            "role": "verb"
+          },
+          {
+            "text": "to do",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Too + adjective + to",
+        "chips": [
+          {
+            "text": "too",
+            "role": "connector"
+          },
+          {
+            "text": "adjective",
+            "role": "verb"
+          },
+          {
+            "text": "to do",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Adjective + enough + to",
+        "chips": [
+          {
+            "text": "adjective",
+            "role": "verb"
+          },
+          {
+            "text": "enough",
+            "role": "connector"
+          },
+          {
+            "text": "to do",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "TOO + adjective + TO (excessive, blocks action)", "example": "It's too cold to go outside.", "highlight": "too cold to go" },
-      "right": { "label": "adjective + ENOUGH + TO (sufficient, allows action)", "example": "She's old enough to vote.", "highlight": "old enough to vote" },
+      "left": {
+        "label": "TOO + adjective + TO (excessive, blocks action)",
+        "example": "It's too cold to go outside.",
+        "highlight": "too cold to go"
+      },
+      "right": {
+        "label": "adjective + ENOUGH + TO (sufficient, allows action)",
+        "example": "She's old enough to vote.",
+        "highlight": "old enough to vote"
+      },
       "caption": "'Too' comes before the adjective and blocks the action; 'enough' comes after the adjective and allows it."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "It's nice to finally meet you in person!", "translation": "¡Qué bien conocerte por fin en persona!" },
-      { "speaker": "user", "text": "You too! Sorry to hear your flight was delayed.", "translation": "¡Igualmente! Siento que tu vuelo se retrasara." },
-      { "speaker": "other", "text": "It's not too bad — I'm just glad it's warm enough to sit outside today.", "translation": "No está tan mal — me alegra que haga suficiente calor para sentarnos fuera hoy." },
-      { "speaker": "user", "text": "True, though it's too windy to stay out here long.", "translation": "Es verdad, aunque hace demasiado viento para quedarnos aquí mucho rato." },
-      { "speaker": "other", "text": "Fair point — let's find somewhere quiet enough to talk properly.", "translation": "Buen punto — busquemos un sitio suficientemente tranquilo para hablar bien." }
+      {
+        "speaker": "other",
+        "text": "It's nice to finally meet you in person!",
+        "translation": "¡Qué bien conocerte por fin en persona!"
+      },
+      {
+        "speaker": "user",
+        "text": "You too! Sorry to hear your flight was delayed.",
+        "translation": "¡Igualmente! Siento que tu vuelo se retrasara."
+      },
+      {
+        "speaker": "other",
+        "text": "It's not too bad — I'm just glad it's warm enough to sit outside today.",
+        "translation": "No está tan mal — me alegra que haga suficiente calor para sentarnos fuera hoy."
+      },
+      {
+        "speaker": "user",
+        "text": "True, though it's too windy to stay out here long.",
+        "translation": "Es verdad, aunque hace demasiado viento para quedarnos aquí mucho rato."
+      },
+      {
+        "speaker": "other",
+        "text": "Fair point — let's find somewhere quiet enough to talk properly.",
+        "translation": "Buen punto — busquemos un sitio suficientemente tranquilo para hablar bien."
+      }
     ],
     "tips": [
       "TOO + adjetivo significa \"demasiado\" y bloquea la acción: \"too heavy to lift\" (no se puede levantar).",
       "Adjetivo + ENOUGH significa \"suficientemente\" y permite la acción — ojo, \"enough\" va DESPUÉS del adjetivo."
     ],
     "dailyWords": [
-      { "w": "delayed", "ipa": "/dɪˈleɪd/", "aprox": "diléid", "def": "retrasado", "ex": "Our flight was delayed by two hours." },
-      { "w": "windy", "ipa": "/ˈwɪndi/", "aprox": "uíndi", "def": "ventoso", "ex": "It's too windy to fly a kite today." }
+      {
+        "w": "delayed",
+        "ipa": "/dɪˈleɪd/",
+        "aprox": "diléid",
+        "def": "retrasado",
+        "ex": "Our flight was delayed by two hours."
+      },
+      {
+        "w": "windy",
+        "ipa": "/ˈwɪndi/",
+        "aprox": "uíndi",
+        "def": "ventoso",
+        "ex": "It's too windy to fly a kite today."
+      }
     ]
   },
   "66": {
     "title": "to… and preposition + -ing",
     "topic": "-ing and to…",
+    "level": "B2",
     "explain": [
       {
         "head": "¿'To' es infinitivo o preposición?",
@@ -1103,37 +1849,102 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "To = infinitive marker", "chips": [
-        { "text": "want / decide", "role": "verb" }, { "text": "to", "role": "connector" }, { "text": "base verb", "role": "object" }
-      ] },
-      { "label": "To = preposition", "chips": [
-        { "text": "look forward to / be used to / object to", "role": "connector" }, { "text": "doing", "role": "object" }
-      ] }
+      {
+        "label": "To = infinitive marker",
+        "chips": [
+          {
+            "text": "want / decide",
+            "role": "verb"
+          },
+          {
+            "text": "to",
+            "role": "connector"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "To = preposition",
+        "chips": [
+          {
+            "text": "look forward to / be used to / object to",
+            "role": "connector"
+          },
+          {
+            "text": "doing",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "TO = infinitive marker", "example": "I used to smoke.", "highlight": "used to smoke" },
-      "right": { "label": "TO = preposition (+ -ing)", "example": "I'm used to smoking now.", "highlight": "used to smoking" },
+      "left": {
+        "label": "TO = infinitive marker",
+        "example": "I used to smoke.",
+        "highlight": "used to smoke"
+      },
+      "right": {
+        "label": "TO = preposition (+ -ing)",
+        "example": "I'm used to smoking now.",
+        "highlight": "used to smoking"
+      },
       "caption": "Same words, different grammar: as an infinitive marker 'to' takes the base verb; as a hidden preposition it demands -ing."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "How's the new job? Are you used to waking up so early yet?", "translation": "¿Qué tal el nuevo trabajo? ¿Ya te has acostumbrado a despertarte tan temprano?" },
-      { "speaker": "user", "text": "Not really, but I'm looking forward to getting a routine going.", "translation": "La verdad es que no, pero tengo ganas de coger una rutina." },
-      { "speaker": "other", "text": "I remember I used to hate mornings too.", "translation": "Recuerdo que a mí también solían disgustarme las mañanas." },
-      { "speaker": "user", "text": "My only problem is my boss objects to me arriving five minutes late.", "translation": "Mi único problema es que a mi jefe le molesta que llegue cinco minutos tarde." },
-      { "speaker": "other", "text": "Well, in addition to getting up earlier, maybe try leaving the house sooner!", "translation": "Bueno, además de levantarte antes, ¡quizás prueba a salir de casa antes!" }
+      {
+        "speaker": "other",
+        "text": "How's the new job? Are you used to waking up so early yet?",
+        "translation": "¿Qué tal el nuevo trabajo? ¿Ya te has acostumbrado a despertarte tan temprano?"
+      },
+      {
+        "speaker": "user",
+        "text": "Not really, but I'm looking forward to getting a routine going.",
+        "translation": "La verdad es que no, pero tengo ganas de coger una rutina."
+      },
+      {
+        "speaker": "other",
+        "text": "I remember I used to hate mornings too.",
+        "translation": "Recuerdo que a mí también solían disgustarme las mañanas."
+      },
+      {
+        "speaker": "user",
+        "text": "My only problem is my boss objects to me arriving five minutes late.",
+        "translation": "Mi único problema es que a mi jefe le molesta que llegue cinco minutos tarde."
+      },
+      {
+        "speaker": "other",
+        "text": "Well, in addition to getting up earlier, maybe try leaving the house sooner!",
+        "translation": "Bueno, además de levantarte antes, ¡quizás prueba a salir de casa antes!"
+      }
     ],
     "tips": [
       "No confundas \"used to + verbo\" (hábito pasado) con \"be used to + -ing\" (algo normal ahora) — llevan la misma palabra \"to\" pero significan cosas distintas.",
       "Cuando \"to\" va después de una expresión fija (look forward to, object to, in addition to), casi siempre es preposición → usa \"-ing\"."
     ],
     "dailyWords": [
-      { "w": "routine", "ipa": "/ruːˈtiːn/", "aprox": "rutín", "def": "rutina", "ex": "It took a while to get into a routine." },
-      { "w": "to object", "ipa": "/əbˈdʒekt/", "aprox": "obyékt", "def": "oponerse, poner objeciones", "ex": "Nobody objected to the new plan." }
+      {
+        "w": "routine",
+        "ipa": "/ruːˈtiːn/",
+        "aprox": "rutín",
+        "def": "rutina",
+        "ex": "It took a while to get into a routine."
+      },
+      {
+        "w": "to object",
+        "ipa": "/əbˈdʒekt/",
+        "aprox": "obyékt",
+        "def": "oponerse, poner objeciones",
+        "ex": "Nobody objected to the new plan."
+      }
     ]
   },
   "67": {
     "title": "See Somebody Do / Doing",
     "topic": "-ing and to…",
+    "level": "B2",
     "explain": [
       {
         "head": "See/hear/watch + objeto + -ing (en curso)",
@@ -1177,16 +1988,52 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Action in progress", "chips": [
-        { "text": "see / hear / watch", "role": "verb" }, { "text": "object", "role": "object" }, { "text": "doing", "role": "connector" }
-      ] },
-      { "label": "Complete action", "chips": [
-        { "text": "see / hear / watch", "role": "verb" }, { "text": "object", "role": "object" }, { "text": "base verb", "role": "connector" }
-      ] }
+      {
+        "label": "Action in progress",
+        "chips": [
+          {
+            "text": "see / hear / watch",
+            "role": "verb"
+          },
+          {
+            "text": "object",
+            "role": "object"
+          },
+          {
+            "text": "doing",
+            "role": "connector"
+          }
+        ]
+      },
+      {
+        "label": "Complete action",
+        "chips": [
+          {
+            "text": "see / hear / watch",
+            "role": "verb"
+          },
+          {
+            "text": "object",
+            "role": "object"
+          },
+          {
+            "text": "base verb",
+            "role": "connector"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "SEE + OBJECT + -ING (in progress)", "example": "I saw her crossing the street.", "highlight": "saw her crossing" },
-      "right": { "label": "SEE + OBJECT + BASE VERB (complete)", "example": "I saw her cross the street.", "highlight": "saw her cross" },
+      "left": {
+        "label": "SEE + OBJECT + -ING (in progress)",
+        "example": "I saw her crossing the street.",
+        "highlight": "saw her crossing"
+      },
+      "right": {
+        "label": "SEE + OBJECT + BASE VERB (complete)",
+        "example": "I saw her cross the street.",
+        "highlight": "saw her cross"
+      },
       "caption": "-ing catches only part of the action in progress; the base verb shows you witnessed it from start to finish."
     },
     "readingText": {
@@ -1199,13 +2046,26 @@ export const ingAndToUnits: Record<number, Unit> = {
       "SEE/HEAR/WATCH + persona + verbo base (sin \"to\") = viste la acción COMPLETA, de principio a fin."
     ],
     "dailyWords": [
-      { "w": "to rehearse", "ipa": "/rɪˈhɜːs/", "aprox": "rijérs", "def": "ensayar", "ex": "The actors rehearsed the scene twice." },
-      { "w": "to bow", "ipa": "/baʊ/", "aprox": "báu", "def": "hacer una reverencia, inclinarse", "ex": "The actor bowed at the end of the show." }
+      {
+        "w": "to rehearse",
+        "ipa": "/rɪˈhɜːs/",
+        "aprox": "rijérs",
+        "def": "ensayar",
+        "ex": "The actors rehearsed the scene twice."
+      },
+      {
+        "w": "to bow",
+        "ipa": "/baʊ/",
+        "aprox": "báu",
+        "def": "hacer una reverencia, inclinarse",
+        "ex": "The actor bowed at the end of the show."
+      }
     ]
   },
   "68": {
     "title": "-ing Clauses",
     "topic": "-ing and to…",
+    "level": "B2",
     "explain": [
       {
         "head": "-ing como adjetivo / sujeto / resultado",
@@ -1249,16 +2109,48 @@ export const ingAndToUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "-ing as adjective/subject/result", "chips": [
-        { "text": "-ing clause", "role": "connector" }, { "text": "noun / sentence", "role": "object" }
-      ] },
-      { "label": "Having + past participle", "chips": [
-        { "text": "Having", "role": "connector" }, { "text": "past participle", "role": "verb" }, { "text": "main clause", "role": "object" }
-      ] }
+      {
+        "label": "-ing as adjective/subject/result",
+        "chips": [
+          {
+            "text": "-ing clause",
+            "role": "connector"
+          },
+          {
+            "text": "noun / sentence",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Having + past participle",
+        "chips": [
+          {
+            "text": "Having",
+            "role": "connector"
+          },
+          {
+            "text": "past participle",
+            "role": "verb"
+          },
+          {
+            "text": "main clause",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "-ING CLAUSE (simultaneous/description)", "example": "The man sitting in the corner is my uncle.", "highlight": "sitting in the corner" },
-      "right": { "label": "HAVING + PAST PARTICIPLE (completed first)", "example": "Having finished the work, I went home.", "highlight": "Having finished" },
+      "left": {
+        "label": "-ING CLAUSE (simultaneous/description)",
+        "example": "The man sitting in the corner is my uncle.",
+        "highlight": "sitting in the corner"
+      },
+      "right": {
+        "label": "HAVING + PAST PARTICIPLE (completed first)",
+        "example": "Having finished the work, I went home.",
+        "highlight": "Having finished"
+      },
       "caption": "A plain -ing clause describes something happening at the same time; 'having done' shows one action was finished before the next began."
     },
     "readingText": {
@@ -1271,8 +2163,20 @@ export const ingAndToUnits: Record<number, Unit> = {
       "HAVING + participio pasado indica que una acción terminó ANTES de la siguiente — es como decir \"después de haber hecho algo\"."
     ],
     "dailyWords": [
-      { "w": "croissant", "ipa": "/ˈkwʌsɒ̃/", "aprox": "kuáson", "def": "cruasán", "ex": "She had a coffee and a croissant for breakfast." },
-      { "w": "to wrap up", "ipa": "/ræp ʌp/", "aprox": "ráp ap", "def": "abrigarse bien", "ex": "Wrap up warm, it's freezing outside." }
+      {
+        "w": "croissant",
+        "ipa": "/ˈkwʌsɒ̃/",
+        "aprox": "kuáson",
+        "def": "cruasán",
+        "ex": "She had a coffee and a croissant for breakfast."
+      },
+      {
+        "w": "to wrap up",
+        "ipa": "/ræp ʌp/",
+        "aprox": "ráp ap",
+        "def": "abrigarse bien",
+        "ex": "Wrap up warm, it's freezing outside."
+      }
     ]
   }
 };

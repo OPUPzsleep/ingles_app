@@ -4,6 +4,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
   "42": {
     "title": "Passive 1 (is done / was done)",
     "topic": "Passive Voice",
+    "level": "B1",
     "explain": [
       {
         "head": "La pasiva: forma",
@@ -96,19 +97,69 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Present passive", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "am/is/are", "role": "verb" }, { "text": "past participle", "role": "object" }
-      ] },
-      { "label": "Past passive", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "was/were", "role": "verb" }, { "text": "past participle", "role": "object" }
-      ] },
-      { "label": "With agent", "chips": [
-        { "text": "...+ past participle", "role": "verb" }, { "text": "by", "role": "connector" }, { "text": "agent", "role": "object" }
-      ] }
+      {
+        "label": "Present passive",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "am/is/are",
+            "role": "verb"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Past passive",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "was/were",
+            "role": "verb"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "With agent",
+        "chips": [
+          {
+            "text": "...+ past participle",
+            "role": "verb"
+          },
+          {
+            "text": "by",
+            "role": "connector"
+          },
+          {
+            "text": "agent",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "ACTIVE", "example": "Leonardo da Vinci painted the Mona Lisa.", "highlight": "painted" },
-      "right": { "label": "PASSIVE", "example": "The Mona Lisa was painted by Leonardo da Vinci.", "highlight": "was painted" },
+      "left": {
+        "label": "ACTIVE",
+        "example": "Leonardo da Vinci painted the Mona Lisa.",
+        "highlight": "painted"
+      },
+      "right": {
+        "label": "PASSIVE",
+        "example": "The Mona Lisa was painted by Leonardo da Vinci.",
+        "highlight": "was painted"
+      },
       "caption": "Active puts the doer first. Passive puts the receiver of the action first — useful when the doer is unknown, obvious, or less important than the result."
     },
     "readingText": {
@@ -121,13 +172,26 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       "Usa la pasiva cuando quien hace la acción no importa, no se sabe, o es obvio por el contexto — si el agente sí importa, añádelo con BY."
     ],
     "dailyWords": [
-      { "w": "footage", "ipa": "/ˈfʊtɪdʒ/", "aprox": "fútich", "def": "imágenes grabadas, metraje", "ex": "The security footage was deleted." },
-      { "w": "alarm", "ipa": "/əˈlɑːrm/", "aprox": "aláarm", "def": "alarma", "ex": "The alarm didn't go off during the robbery." }
+      {
+        "w": "footage",
+        "ipa": "/ˈfʊtɪdʒ/",
+        "aprox": "fútich",
+        "def": "imágenes grabadas, metraje",
+        "ex": "The security footage was deleted."
+      },
+      {
+        "w": "alarm",
+        "ipa": "/əˈlɑːrm/",
+        "aprox": "aláarm",
+        "def": "alarma",
+        "ex": "The alarm didn't go off during the robbery."
+      }
     ]
   },
   "43": {
     "title": "Passive 2 (be done / been done)",
     "topic": "Passive Voice",
+    "level": "B1",
     "explain": [
       {
         "head": "Pasiva con modales",
@@ -171,36 +235,101 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Modal passive", "chips": [
-        { "text": "modal", "role": "verb" }, { "text": "be", "role": "connector" }, { "text": "past participle", "role": "object" }
-      ] },
-      { "label": "Present perfect passive", "chips": [
-        { "text": "has/have", "role": "verb" }, { "text": "been", "role": "connector" }, { "text": "past participle", "role": "object" }
-      ] }
+      {
+        "label": "Modal passive",
+        "chips": [
+          {
+            "text": "modal",
+            "role": "verb"
+          },
+          {
+            "text": "be",
+            "role": "connector"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Present perfect passive",
+        "chips": [
+          {
+            "text": "has/have",
+            "role": "verb"
+          },
+          {
+            "text": "been",
+            "role": "connector"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "Modal + BE + pp", "example": "The bridge must be repaired before winter.", "highlight": "must be repaired" },
-      "right": { "label": "HAVE BEEN + pp", "example": "The bridge has been repaired already.", "highlight": "has been repaired" },
+      "left": {
+        "label": "Modal + BE + pp",
+        "example": "The bridge must be repaired before winter.",
+        "highlight": "must be repaired"
+      },
+      "right": {
+        "label": "HAVE BEEN + pp",
+        "example": "The bridge has been repaired already.",
+        "highlight": "has been repaired"
+      },
       "caption": "Modal passive expresses obligation or possibility about the future (must be done). Present perfect passive reports something already completed with present relevance (has been done)."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Has the report been finished yet?", "translation": "¿Se ha terminado ya el informe?" },
-      { "speaker": "user", "text": "Not yet, but it must be sent by five o'clock.", "translation": "Todavía no, pero debe enviarse antes de las cinco." },
-      { "speaker": "other", "text": "I heard two people have already been asked to help you.", "translation": "Escuché que ya se les ha pedido a dos personas que te ayuden." },
-      { "speaker": "user", "text": "Yes, and honestly, this problem could be solved much faster with more staff.", "translation": "Sí, y sinceramente, este problema podría resolverse mucho más rápido con más personal." }
+      {
+        "speaker": "other",
+        "text": "Has the report been finished yet?",
+        "translation": "¿Se ha terminado ya el informe?"
+      },
+      {
+        "speaker": "user",
+        "text": "Not yet, but it must be sent by five o'clock.",
+        "translation": "Todavía no, pero debe enviarse antes de las cinco."
+      },
+      {
+        "speaker": "other",
+        "text": "I heard two people have already been asked to help you.",
+        "translation": "Escuché que ya se les ha pedido a dos personas que te ayuden."
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, and honestly, this problem could be solved much faster with more staff.",
+        "translation": "Sí, y sinceramente, este problema podría resolverse mucho más rápido con más personal."
+      }
     ],
     "tips": [
       "Después de un modal (must, can, should) siempre va BE, nunca 'is' o 'are': 'must be done', no 'must is done'.",
       "'Have/has been' + participio combina la idea de 'ya pasó y sigue siendo relevante' con el enfoque pasivo en quién recibe la acción."
     ],
     "dailyWords": [
-      { "w": "staff", "ipa": "/stɑːf/", "aprox": "staaf", "def": "personal, plantilla", "ex": "We need more staff this month." },
-      { "w": "arrest", "ipa": "/əˈrest/", "aprox": "arrést", "def": "arrestar, detener", "ex": "Three people have been arrested." }
+      {
+        "w": "staff",
+        "ipa": "/stɑːf/",
+        "aprox": "staaf",
+        "def": "personal, plantilla",
+        "ex": "We need more staff this month."
+      },
+      {
+        "w": "arrest",
+        "ipa": "/əˈrest/",
+        "aprox": "arrést",
+        "def": "arrestar, detener",
+        "ex": "Three people have been arrested."
+      }
     ]
   },
   "44": {
     "title": "Passive 3 (two objects / get / born)",
     "topic": "Passive Voice",
+    "level": "B2",
     "explain": [
       {
         "head": "Pasiva con dos objetos",
@@ -264,39 +393,114 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Two objects → person as subject", "chips": [
-        { "text": "I", "role": "subject" }, { "text": "was given", "role": "verb" }, { "text": "a watch", "role": "object" }
-      ] },
-      { "label": "GET passive (informal)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "got", "role": "verb" }, { "text": "past participle", "role": "object" }
-      ] },
-      { "label": "BORN (always passive)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "was/were born", "role": "verb" }
-      ] }
+      {
+        "label": "Two objects → person as subject",
+        "chips": [
+          {
+            "text": "I",
+            "role": "subject"
+          },
+          {
+            "text": "was given",
+            "role": "verb"
+          },
+          {
+            "text": "a watch",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "GET passive (informal)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "got",
+            "role": "verb"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "BORN (always passive)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "was/were born",
+            "role": "verb"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "BE passive (neutral)", "example": "He was fired last month.", "highlight": "was fired" },
-      "right": { "label": "GET passive (informal, sudden)", "example": "He got fired last month.", "highlight": "got fired" },
+      "left": {
+        "label": "BE passive (neutral)",
+        "example": "He was fired last month.",
+        "highlight": "was fired"
+      },
+      "right": {
+        "label": "GET passive (informal, sudden)",
+        "example": "He got fired last month.",
+        "highlight": "got fired"
+      },
       "caption": "BE is the standard, neutral passive. GET is more informal and often suggests something sudden, unlucky, or unplanned."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Did you hear? Marcos got fired from his job yesterday!", "translation": "¿Te enteraste? ¡A Marcos lo despidieron ayer de su trabajo!" },
-      { "speaker": "user", "text": "No way! Where was he born, again? Maybe he'll go back home.", "translation": "¡No puede ser! ¿Dónde nació, otra vez? Igual vuelve a casa." },
-      { "speaker": "other", "text": "He was born in Chile, but he got married here last year.", "translation": "Nació en Chile, pero se casó aquí el año pasado." },
-      { "speaker": "user", "text": "Well, at least he was given a good severance package, I heard.", "translation": "Bueno, al menos le dieron una buena indemnización, según escuché." }
+      {
+        "speaker": "other",
+        "text": "Did you hear? Marcos got fired from his job yesterday!",
+        "translation": "¿Te enteraste? ¡A Marcos lo despidieron ayer de su trabajo!"
+      },
+      {
+        "speaker": "user",
+        "text": "No way! Where was he born, again? Maybe he'll go back home.",
+        "translation": "¡No puede ser! ¿Dónde nació, otra vez? Igual vuelve a casa."
+      },
+      {
+        "speaker": "other",
+        "text": "He was born in Chile, but he got married here last year.",
+        "translation": "Nació en Chile, pero se casó aquí el año pasado."
+      },
+      {
+        "speaker": "user",
+        "text": "Well, at least he was given a good severance package, I heard.",
+        "translation": "Bueno, al menos le dieron una buena indemnización, según escuché."
+      }
     ],
     "tips": [
       "'Born' solo existe en forma pasiva — siempre 'was/were born', nunca como verbo activo.",
       "GET + participio suena más informal que BE + participio, y suele implicar algo repentino o desafortunado: get fired, get caught, get hurt."
     ],
     "dailyWords": [
-      { "w": "severance", "ipa": "/ˈsevərəns/", "aprox": "séverans", "def": "indemnización (por despido)", "ex": "He received a severance package when he was fired." },
-      { "w": "fired", "ipa": "/ˈfaɪərd/", "aprox": "fáierd", "def": "despedido", "ex": "She got fired after just two months." }
+      {
+        "w": "severance",
+        "ipa": "/ˈsevərəns/",
+        "aprox": "séverans",
+        "def": "indemnización (por despido)",
+        "ex": "He received a severance package when he was fired."
+      },
+      {
+        "w": "fired",
+        "ipa": "/ˈfaɪərd/",
+        "aprox": "fáierd",
+        "def": "despedido",
+        "ex": "She got fired after just two months."
+      }
     ]
   },
   "45": {
     "title": "Passive 3 (it is said that…)",
     "topic": "Passive Voice",
+    "level": "B2",
     "explain": [
       {
         "head": "Se dice que... (impersonal)",
@@ -340,16 +544,52 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Impersonal", "chips": [
-        { "text": "It is", "role": "subject" }, { "text": "said / thought / believed", "role": "verb" }, { "text": "that + clause", "role": "object" }
-      ] },
-      { "label": "Personal", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "is said / thought", "role": "verb" }, { "text": "to + infinitive", "role": "object" }
-      ] }
+      {
+        "label": "Impersonal",
+        "chips": [
+          {
+            "text": "It is",
+            "role": "subject"
+          },
+          {
+            "text": "said / thought / believed",
+            "role": "verb"
+          },
+          {
+            "text": "that + clause",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Personal",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "is said / thought",
+            "role": "verb"
+          },
+          {
+            "text": "to + infinitive",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "IT IS SAID THAT (impersonal)", "example": "It is said that the house is haunted.", "highlight": "it is said that" },
-      "right": { "label": "SUBJECT IS SAID TO (personal)", "example": "The house is said to be haunted.", "highlight": "is said to be" },
+      "left": {
+        "label": "IT IS SAID THAT (impersonal)",
+        "example": "It is said that the house is haunted.",
+        "highlight": "it is said that"
+      },
+      "right": {
+        "label": "SUBJECT IS SAID TO (personal)",
+        "example": "The house is said to be haunted.",
+        "highlight": "is said to be"
+      },
       "caption": "Both mean exactly the same thing — a general belief without naming who believes it. Choose whichever fits the sentence structure better."
     },
     "readingText": {
@@ -362,13 +602,26 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       "Otros verbos siguen el mismo patrón: thought, believed, known, claimed, expected, reported — todos funcionan igual que 'said'."
     ],
     "dailyWords": [
-      { "w": "haunted", "ipa": "/ˈhɔːntɪd/", "aprox": "jóntid", "def": "encantado (por fantasmas)", "ex": "They say the old castle is haunted." },
-      { "w": "rumour", "ipa": "/ˈruːmər/", "aprox": "rúmer", "def": "rumor", "ex": "There's a rumour that the shop is closing." }
+      {
+        "w": "haunted",
+        "ipa": "/ˈhɔːntɪd/",
+        "aprox": "jóntid",
+        "def": "encantado (por fantasmas)",
+        "ex": "They say the old castle is haunted."
+      },
+      {
+        "w": "rumour",
+        "ipa": "/ˈruːmər/",
+        "aprox": "rúmer",
+        "def": "rumor",
+        "ex": "There's a rumour that the shop is closing."
+      }
     ]
   },
   "46": {
     "title": "Have Something Done",
     "topic": "Passive Voice",
+    "level": "B2",
     "explain": [
       {
         "head": "HAVE something done",
@@ -412,31 +665,95 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "HAVE + object + pp", "chips": [
-        { "text": "have", "role": "verb" }, { "text": "object", "role": "object" }, { "text": "past participle", "role": "verb" }
-      ] },
-      { "label": "GET + object + pp (informal)", "chips": [
-        { "text": "get", "role": "verb" }, { "text": "object", "role": "object" }, { "text": "past participle", "role": "verb" }
-      ] }
+      {
+        "label": "HAVE + object + pp",
+        "chips": [
+          {
+            "text": "have",
+            "role": "verb"
+          },
+          {
+            "text": "object",
+            "role": "object"
+          },
+          {
+            "text": "past participle",
+            "role": "verb"
+          }
+        ]
+      },
+      {
+        "label": "GET + object + pp (informal)",
+        "chips": [
+          {
+            "text": "get",
+            "role": "verb"
+          },
+          {
+            "text": "object",
+            "role": "object"
+          },
+          {
+            "text": "past participle",
+            "role": "verb"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "Doing it yourself", "example": "I cut my hair myself last night.", "highlight": "cut my hair" },
-      "right": { "label": "Arranging the service", "example": "I had my hair cut at the salon.", "highlight": "had my hair cut" },
+      "left": {
+        "label": "Doing it yourself",
+        "example": "I cut my hair myself last night.",
+        "highlight": "cut my hair"
+      },
+      "right": {
+        "label": "Arranging the service",
+        "example": "I had my hair cut at the salon.",
+        "highlight": "had my hair cut"
+      },
       "caption": "Doing an action yourself uses the normal active form. Arranging for someone else to do it for you uses HAVE/GET + object + past participle."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Your hair looks great! Did you cut it yourself?", "translation": "¡Tu pelo se ve genial! ¿Te lo cortaste tú misma?" },
-      { "speaker": "user", "text": "No, I had it cut at a new salon downtown.", "translation": "No, me lo cortaron en un salón nuevo del centro." },
-      { "speaker": "other", "text": "Nice. I need to get my car fixed this week too.", "translation": "Qué bien. Yo también necesito que me arreglen el coche esta semana." },
-      { "speaker": "user", "text": "You should — I got mine repaired last month and it drives so much better now.", "translation": "Deberías — el mío lo arreglaron el mes pasado y ahora conduce mucho mejor." }
+      {
+        "speaker": "other",
+        "text": "Your hair looks great! Did you cut it yourself?",
+        "translation": "¡Tu pelo se ve genial! ¿Te lo cortaste tú misma?"
+      },
+      {
+        "speaker": "user",
+        "text": "No, I had it cut at a new salon downtown.",
+        "translation": "No, me lo cortaron en un salón nuevo del centro."
+      },
+      {
+        "speaker": "other",
+        "text": "Nice. I need to get my car fixed this week too.",
+        "translation": "Qué bien. Yo también necesito que me arreglen el coche esta semana."
+      },
+      {
+        "speaker": "user",
+        "text": "You should — I got mine repaired last month and it drives so much better now.",
+        "translation": "Deberías — el mío lo arreglaron el mes pasado y ahora conduce mucho mejor."
+      }
     ],
     "tips": [
       "'Have something done' no significa que TÚ hagas la acción, sino que la pides o pagas para que otro la haga por ti.",
       "GET + objeto + participio es la versión más informal de HAVE + objeto + participio — el significado es idéntico."
     ],
     "dailyWords": [
-      { "w": "salon", "ipa": "/səˈlɒn/", "aprox": "salón", "def": "salón de belleza/peluquería", "ex": "She booked an appointment at the hair salon." },
-      { "w": "repair", "ipa": "/rɪˈpeər/", "aprox": "ripéer", "def": "reparar, arreglar", "ex": "I need to get my bike repaired." }
+      {
+        "w": "salon",
+        "ipa": "/səˈlɒn/",
+        "aprox": "salón",
+        "def": "salón de belleza/peluquería",
+        "ex": "She booked an appointment at the hair salon."
+      },
+      {
+        "w": "repair",
+        "ipa": "/rɪˈpeər/",
+        "aprox": "ripéer",
+        "def": "reparar, arreglar",
+        "ex": "I need to get my bike repaired."
+      }
     ]
   }
 };

@@ -4,6 +4,7 @@ export const pronounsUnits: Record<number, Unit> = {
   "82": {
     "title": "Myself / Yourself / Themselves (reflexive pronouns)",
     "topic": "Pronouns",
+    "level": "A2",
     "explain": [
       {
         "head": "Pronombres reflexivos — forma",
@@ -59,6 +60,7 @@ export const pronounsUnits: Record<number, Unit> = {
   "83": {
     "title": "A Friend of Mine / My Own",
     "topic": "Pronouns",
+    "level": "B1",
     "explain": [
       {
         "head": "Un/este + nombre + of + posesivo",
@@ -118,17 +120,42 @@ export const pronounsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Whose car is that outside? It's beautiful.", "translation": "¿De quién es ese auto de afuera? Es hermoso." },
-      { "speaker": "user", "text": "It belongs to a friend of mine. He just bought it last week.", "translation": "Es de un amigo mío. Lo compró la semana pasada." },
-      { "speaker": "other", "text": "Lucky him! I still don't have my own car.", "translation": "¡Qué suerte tiene! Yo todavía no tengo auto propio." },
-      { "speaker": "user", "text": "Neither do I. I always borrow one from a colleague of mine.", "translation": "Yo tampoco. Siempre le pido uno prestado a un colega mío." },
-      { "speaker": "other", "text": "I'd love to have a car of my own someday.", "translation": "Me encantaría tener un auto propio algún día." },
-      { "speaker": "user", "text": "Same here. For now, I just dream about it on my own.", "translation": "Igual yo. Por ahora, solo lo sueño yo solo." }
+      {
+        "speaker": "other",
+        "text": "Whose car is that outside? It's beautiful.",
+        "translation": "¿De quién es ese auto de afuera? Es hermoso."
+      },
+      {
+        "speaker": "user",
+        "text": "It belongs to a friend of mine. He just bought it last week.",
+        "translation": "Es de un amigo mío. Lo compró la semana pasada."
+      },
+      {
+        "speaker": "other",
+        "text": "Lucky him! I still don't have my own car.",
+        "translation": "¡Qué suerte tiene! Yo todavía no tengo auto propio."
+      },
+      {
+        "speaker": "user",
+        "text": "Neither do I. I always borrow one from a colleague of mine.",
+        "translation": "Yo tampoco. Siempre le pido uno prestado a un colega mío."
+      },
+      {
+        "speaker": "other",
+        "text": "I'd love to have a car of my own someday.",
+        "translation": "Me encantaría tener un auto propio algún día."
+      },
+      {
+        "speaker": "user",
+        "text": "Same here. For now, I just dream about it on my own.",
+        "translation": "Igual yo. Por ahora, solo lo sueño yo solo."
+      }
     ]
   },
   "84": {
     "title": "There… and It…",
     "topic": "Pronouns",
+    "level": "A2",
     "explain": [
       {
         "head": "There + be = existencia",
@@ -196,6 +223,7 @@ export const pronounsUnits: Record<number, Unit> = {
   "85": {
     "title": "Some and Any",
     "topic": "Pronouns",
+    "level": "A1",
     "explain": [
       {
         "head": "Some en frases afirmativas",
@@ -244,17 +272,42 @@ export const pronounsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Welcome! Would you like some water while you look at the menu?", "translation": "¡Bienvenidos! ¿Les gustaría algo de agua mientras miran el menú?" },
-      { "speaker": "user", "text": "Yes, please. Do you have any vegetarian options?", "translation": "Sí, por favor. ¿Tienen alguna opción vegetariana?" },
-      { "speaker": "other", "text": "Of course, we have some great salads and a few pasta dishes.", "translation": "Claro, tenemos algunas ensaladas excelentes y algunos platos de pasta." },
-      { "speaker": "user", "text": "Great. Could I also have some bread while we decide?", "translation": "Genial. ¿Podría también tener un poco de pan mientras decidimos?" },
-      { "speaker": "other", "text": "Of course. We don't have any specials tonight, but everything is fresh.", "translation": "Claro. No tenemos ningún plato especial esta noche, pero todo está fresco." },
-      { "speaker": "user", "text": "That's fine. I'll have some pasta and a salad, please.", "translation": "Está bien. Voy a pedir pasta y una ensalada, por favor." }
+      {
+        "speaker": "other",
+        "text": "Welcome! Would you like some water while you look at the menu?",
+        "translation": "¡Bienvenidos! ¿Les gustaría algo de agua mientras miran el menú?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, please. Do you have any vegetarian options?",
+        "translation": "Sí, por favor. ¿Tienen alguna opción vegetariana?"
+      },
+      {
+        "speaker": "other",
+        "text": "Of course, we have some great salads and a few pasta dishes.",
+        "translation": "Claro, tenemos algunas ensaladas excelentes y algunos platos de pasta."
+      },
+      {
+        "speaker": "user",
+        "text": "Great. Could I also have some bread while we decide?",
+        "translation": "Genial. ¿Podría también tener un poco de pan mientras decidimos?"
+      },
+      {
+        "speaker": "other",
+        "text": "Of course. We don't have any specials tonight, but everything is fresh.",
+        "translation": "Claro. No tenemos ningún plato especial esta noche, pero todo está fresco."
+      },
+      {
+        "speaker": "user",
+        "text": "That's fine. I'll have some pasta and a salad, please.",
+        "translation": "Está bien. Voy a pedir pasta y una ensalada, por favor."
+      }
     ]
   },
   "86": {
     "title": "No / None / Any / Nothing / Nobody",
     "topic": "Pronouns",
+    "level": "A2",
     "explain": [
       {
         "head": "No + nombre",
@@ -311,6 +364,7 @@ export const pronounsUnits: Record<number, Unit> = {
   "87": {
     "title": "Much, Many, Little, Few",
     "topic": "Pronouns",
+    "level": "A2",
     "explain": [
       {
         "head": "Much y little — incontables",
@@ -383,17 +437,42 @@ export const pronounsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "How much milk do we need for the recipe?", "translation": "¿Cuánta leche necesitamos para la receta?" },
-      { "speaker": "user", "text": "Not much, just a little. But we need many eggs — about six.", "translation": "No mucha, solo un poco. Pero necesitamos muchos huevos — como seis." },
-      { "speaker": "other", "text": "We only have a few left in the fridge.", "translation": "Solo nos quedan unos pocos en el refrigerador." },
-      { "speaker": "user", "text": "Then we should buy more. How many apples do you want?", "translation": "Entonces deberíamos comprar más. ¿Cuántas manzanas quieres?" },
-      { "speaker": "other", "text": "Just a few, we don't need many this week.", "translation": "Solo unas pocas, no necesitamos muchas esta semana." },
-      { "speaker": "user", "text": "Okay. We have very little time before the store closes, let's hurry!", "translation": "Bien. Tenemos muy poco tiempo antes de que cierre la tienda, ¡apurémonos!" }
+      {
+        "speaker": "other",
+        "text": "How much milk do we need for the recipe?",
+        "translation": "¿Cuánta leche necesitamos para la receta?"
+      },
+      {
+        "speaker": "user",
+        "text": "Not much, just a little. But we need many eggs — about six.",
+        "translation": "No mucha, solo un poco. Pero necesitamos muchos huevos — como seis."
+      },
+      {
+        "speaker": "other",
+        "text": "We only have a few left in the fridge.",
+        "translation": "Solo nos quedan unos pocos en el refrigerador."
+      },
+      {
+        "speaker": "user",
+        "text": "Then we should buy more. How many apples do you want?",
+        "translation": "Entonces deberíamos comprar más. ¿Cuántas manzanas quieres?"
+      },
+      {
+        "speaker": "other",
+        "text": "Just a few, we don't need many this week.",
+        "translation": "Solo unas pocas, no necesitamos muchas esta semana."
+      },
+      {
+        "speaker": "user",
+        "text": "Okay. We have very little time before the store closes, let's hurry!",
+        "translation": "Bien. Tenemos muy poco tiempo antes de que cierre la tienda, ¡apurémonos!"
+      }
     ]
   },
   "88": {
     "title": "All / Most / Some / Any / No / None",
     "topic": "Pronouns",
+    "level": "A2",
     "explain": [
       {
         "head": "Escala de cantidad",
@@ -445,6 +524,7 @@ export const pronounsUnits: Record<number, Unit> = {
   "89": {
     "title": "Both / Either / Neither",
     "topic": "Pronouns",
+    "level": "B1",
     "explain": [
       {
         "head": "Both — los dos (positivo)",
@@ -493,17 +573,42 @@ export const pronounsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Should we go to the Italian place or the Mexican one?", "translation": "¿Vamos al lugar italiano o al mexicano?" },
-      { "speaker": "user", "text": "Either is fine with me, honestly. I like both restaurants.", "translation": "Cualquiera de los dos me parece bien, honestamente. Me gustan ambos restaurantes." },
-      { "speaker": "other", "text": "I can't decide. Neither one is open on Mondays, though.", "translation": "No puedo decidir. Sin embargo, ninguno de los dos abre los lunes." },
-      { "speaker": "user", "text": "That's true. Both of them are closed today, actually.", "translation": "Es verdad. De hecho, los dos están cerrados hoy." },
-      { "speaker": "other", "text": "So neither option works tonight. What about pizza instead?", "translation": "Así que ninguna de las dos opciones funciona esta noche. ¿Qué tal pizza en su lugar?" },
-      { "speaker": "user", "text": "Perfect, I like either pizza or pasta — both sound great right now.", "translation": "Perfecto, me gusta tanto la pizza como la pasta — ambas suenan geniales ahora mismo." }
+      {
+        "speaker": "other",
+        "text": "Should we go to the Italian place or the Mexican one?",
+        "translation": "¿Vamos al lugar italiano o al mexicano?"
+      },
+      {
+        "speaker": "user",
+        "text": "Either is fine with me, honestly. I like both restaurants.",
+        "translation": "Cualquiera de los dos me parece bien, honestamente. Me gustan ambos restaurantes."
+      },
+      {
+        "speaker": "other",
+        "text": "I can't decide. Neither one is open on Mondays, though.",
+        "translation": "No puedo decidir. Sin embargo, ninguno de los dos abre los lunes."
+      },
+      {
+        "speaker": "user",
+        "text": "That's true. Both of them are closed today, actually.",
+        "translation": "Es verdad. De hecho, los dos están cerrados hoy."
+      },
+      {
+        "speaker": "other",
+        "text": "So neither option works tonight. What about pizza instead?",
+        "translation": "Así que ninguna de las dos opciones funciona esta noche. ¿Qué tal pizza en su lugar?"
+      },
+      {
+        "speaker": "user",
+        "text": "Perfect, I like either pizza or pasta — both sound great right now.",
+        "translation": "Perfecto, me gusta tanto la pizza como la pasta — ambas suenan geniales ahora mismo."
+      }
     ]
   },
   "90": {
     "title": "All / Every / Whole",
     "topic": "Pronouns",
+    "level": "B1",
     "explain": [
       {
         "head": "All — la cantidad completa",
@@ -576,6 +681,7 @@ export const pronounsUnits: Record<number, Unit> = {
   "91": {
     "title": "Each and Every",
     "topic": "Pronouns",
+    "level": "B1",
     "explain": [
       {
         "head": "Each — de forma individual",
@@ -624,12 +730,36 @@ export const pronounsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Good morning class. Each of you will get a different worksheet today.", "translation": "Buenos días clase. Cada uno de ustedes recibirá una hoja de trabajo diferente hoy." },
-      { "speaker": "user", "text": "Does every student get the same number of questions?", "translation": "¿Todos los estudiantes reciben el mismo número de preguntas?" },
-      { "speaker": "other", "text": "Yes, every worksheet has exactly ten questions, but each one is different.", "translation": "Sí, cada hoja tiene exactamente diez preguntas, pero cada una es diferente." },
-      { "speaker": "user", "text": "What if there are only two of us left in the group?", "translation": "¿Qué pasa si solo quedamos dos en el grupo?" },
-      { "speaker": "other", "text": "Then each of you will still get your own worksheet.", "translation": "Entonces cada uno de ustedes de todas formas recibirá su propia hoja." },
-      { "speaker": "user", "text": "Got it. I check my work every day, so this should be easy.", "translation": "Entendido. Reviso mi trabajo todos los días, así que esto debería ser fácil." }
+      {
+        "speaker": "other",
+        "text": "Good morning class. Each of you will get a different worksheet today.",
+        "translation": "Buenos días clase. Cada uno de ustedes recibirá una hoja de trabajo diferente hoy."
+      },
+      {
+        "speaker": "user",
+        "text": "Does every student get the same number of questions?",
+        "translation": "¿Todos los estudiantes reciben el mismo número de preguntas?"
+      },
+      {
+        "speaker": "other",
+        "text": "Yes, every worksheet has exactly ten questions, but each one is different.",
+        "translation": "Sí, cada hoja tiene exactamente diez preguntas, pero cada una es diferente."
+      },
+      {
+        "speaker": "user",
+        "text": "What if there are only two of us left in the group?",
+        "translation": "¿Qué pasa si solo quedamos dos en el grupo?"
+      },
+      {
+        "speaker": "other",
+        "text": "Then each of you will still get your own worksheet.",
+        "translation": "Entonces cada uno de ustedes de todas formas recibirá su propia hoja."
+      },
+      {
+        "speaker": "user",
+        "text": "Got it. I check my work every day, so this should be easy.",
+        "translation": "Entendido. Reviso mi trabajo todos los días, así que esto debería ser fácil."
+      }
     ]
   }
 };

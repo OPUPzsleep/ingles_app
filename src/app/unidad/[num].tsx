@@ -6,6 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { ChatSimulator } from '@/components/chat-simulator';
 import { ContrastCard } from '@/components/contrast-card';
 import { ExplainBlock } from '@/components/explain-block';
+import { FocusTimer } from '@/components/focus-timer';
 import { GrammarFormula } from '@/components/grammar-formula';
 import { PronunciationCard } from '@/components/pronunciation-card';
 import { ReadingStory } from '@/components/reading-story';
@@ -17,6 +18,7 @@ import { Card } from '@/components/ui/card';
 import { VocabCard } from '@/components/vocab-card';
 import { MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
+import { useSettings } from '@/context/settings-context';
 import { ALL_UNIT_TITLES } from '@/data/grammar/unit-titles';
 import { useTheme } from '@/hooks/use-theme';
 import { getPronunVocab, getUnit } from '@/lib/grammar';
@@ -39,6 +41,7 @@ export default function UnidadScreen() {
   const router = useRouter();
   const theme = useTheme();
   const { doneUnits, markUnitDone } = useProgress();
+  const { focusModeEnabled } = useSettings();
   const [tab, setTab] = useState<Tab>('teoria');
 
   const unit = getUnit(num);
@@ -88,6 +91,8 @@ export default function UnidadScreen() {
               {isDone ? '🔁 Repetir quiz' : '✏️ Quiz de esta unidad'}
             </Button>
           </Card>
+
+          {focusModeEnabled && <FocusTimer />}
 
           <View style={styles.tabRow}>
             <Button

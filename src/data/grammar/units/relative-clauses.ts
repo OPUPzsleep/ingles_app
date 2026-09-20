@@ -4,6 +4,7 @@ export const relativeClausesUnits: Record<number, Unit> = {
   "92": {
     "title": "Relative Clauses 1 (who/that/which)",
     "topic": "Relative Clauses",
+    "level": "B1",
     "explain": [
       {
         "head": "WHO: para personas",
@@ -52,19 +53,69 @@ export const relativeClausesUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "WHO — people", "chips": [
-        { "text": "noun (person)", "role": "subject" }, { "text": "who", "role": "connector" }, { "text": "clause", "role": "object" }
-      ] },
-      { "label": "WHICH — things", "chips": [
-        { "text": "noun (thing)", "role": "subject" }, { "text": "which", "role": "connector" }, { "text": "clause", "role": "object" }
-      ] },
-      { "label": "THAT — people or things", "chips": [
-        { "text": "noun", "role": "subject" }, { "text": "that", "role": "connector" }, { "text": "clause", "role": "object" }
-      ] }
+      {
+        "label": "WHO — people",
+        "chips": [
+          {
+            "text": "noun (person)",
+            "role": "subject"
+          },
+          {
+            "text": "who",
+            "role": "connector"
+          },
+          {
+            "text": "clause",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "WHICH — things",
+        "chips": [
+          {
+            "text": "noun (thing)",
+            "role": "subject"
+          },
+          {
+            "text": "which",
+            "role": "connector"
+          },
+          {
+            "text": "clause",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "THAT — people or things",
+        "chips": [
+          {
+            "text": "noun",
+            "role": "subject"
+          },
+          {
+            "text": "that",
+            "role": "connector"
+          },
+          {
+            "text": "clause",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "WHO (people)", "example": "The man who called you is my boss.", "highlight": "who called" },
-      "right": { "label": "WHICH (things)", "example": "The car which broke down is mine.", "highlight": "which broke down" },
+      "left": {
+        "label": "WHO (people)",
+        "example": "The man who called you is my boss.",
+        "highlight": "who called"
+      },
+      "right": {
+        "label": "WHICH (things)",
+        "example": "The car which broke down is mine.",
+        "highlight": "which broke down"
+      },
       "caption": "WHO only introduces clauses about people. WHICH only introduces clauses about things, animals or ideas. THAT can replace either one in defining clauses."
     },
     "readingText": {
@@ -77,13 +128,26 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "THAT no se puede usar después de una coma (en cláusulas no definitorias) — ahí siempre hace falta who o which."
     ],
     "dailyWords": [
-      { "w": "neighbour", "ipa": "/ˈneɪbər/", "aprox": "néibor", "def": "vecino/a", "ex": "My neighbour is a very kind person." },
-      { "w": "package", "ipa": "/ˈpækɪdʒ/", "aprox": "pákich", "def": "paquete", "ex": "I received a package this morning." }
+      {
+        "w": "neighbour",
+        "ipa": "/ˈneɪbər/",
+        "aprox": "néibor",
+        "def": "vecino/a",
+        "ex": "My neighbour is a very kind person."
+      },
+      {
+        "w": "package",
+        "ipa": "/ˈpækɪdʒ/",
+        "aprox": "pákich",
+        "def": "paquete",
+        "ex": "I received a package this morning."
+      }
     ]
   },
   "93": {
     "title": "Relative Clauses 2 (with/without who/that/which)",
     "topic": "Relative Clauses",
+    "level": "B1",
     "explain": [
       {
         "head": "Omitir el pronombre: objeto",
@@ -127,16 +191,52 @@ export const relativeClausesUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Object clause — can omit", "chips": [
-        { "text": "noun", "role": "subject" }, { "text": "(that)", "role": "connector" }, { "text": "subject + verb", "role": "object" }
-      ] },
-      { "label": "Subject clause — cannot omit", "chips": [
-        { "text": "noun", "role": "subject" }, { "text": "who/that/which", "role": "connector" }, { "text": "verb", "role": "verb" }
-      ] }
+      {
+        "label": "Object clause — can omit",
+        "chips": [
+          {
+            "text": "noun",
+            "role": "subject"
+          },
+          {
+            "text": "(that)",
+            "role": "connector"
+          },
+          {
+            "text": "subject + verb",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Subject clause — cannot omit",
+        "chips": [
+          {
+            "text": "noun",
+            "role": "subject"
+          },
+          {
+            "text": "who/that/which",
+            "role": "connector"
+          },
+          {
+            "text": "verb",
+            "role": "verb"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "Object — can omit", "example": "The book (that) I'm reading is great.", "highlight": "(that)" },
-      "right": { "label": "Subject — cannot omit", "example": "The man who called me was Tom.", "highlight": "who called" },
+      "left": {
+        "label": "Object — can omit",
+        "example": "The book (that) I'm reading is great.",
+        "highlight": "(that)"
+      },
+      "right": {
+        "label": "Subject — cannot omit",
+        "example": "The man who called me was Tom.",
+        "highlight": "who called"
+      },
       "caption": "When the pronoun is the OBJECT of its clause, you can drop it. When it's the SUBJECT, it must stay — otherwise the clause loses its subject."
     },
     "readingText": {
@@ -149,13 +249,26 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "En el habla cotidiana, omitir el pronombre objeto (the book I read, not the book that I read) suena más natural que incluirlo."
     ],
     "dailyWords": [
-      { "w": "wallet", "ipa": "/ˈwɒlɪt/", "aprox": "uólit", "def": "cartera, billetera", "ex": "I lost my wallet on the bus." },
-      { "w": "grateful", "ipa": "/ˈɡreɪtfl/", "aprox": "gréitful", "def": "agradecido", "ex": "She was very grateful for the help." }
+      {
+        "w": "wallet",
+        "ipa": "/ˈwɒlɪt/",
+        "aprox": "uólit",
+        "def": "cartera, billetera",
+        "ex": "I lost my wallet on the bus."
+      },
+      {
+        "w": "grateful",
+        "ipa": "/ˈɡreɪtfl/",
+        "aprox": "gréitful",
+        "def": "agradecido",
+        "ex": "She was very grateful for the help."
+      }
     ]
   },
   "94": {
     "title": "Relative Clauses 3 (whose/whom/where)",
     "topic": "Relative Clauses",
+    "level": "B2",
     "explain": [
       {
         "head": "WHOSE: posesivo",
@@ -204,39 +317,118 @@ export const relativeClausesUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "WHOSE — possessive", "chips": [
-        { "text": "noun", "role": "subject" }, { "text": "whose", "role": "connector" }, { "text": "+ noun", "role": "object" }
-      ] },
-      { "label": "WHOM — formal object", "chips": [
-        { "text": "noun (person)", "role": "subject" }, { "text": "whom", "role": "connector" }, { "text": "subject + verb", "role": "object" }
-      ] },
-      { "label": "WHERE — places", "chips": [
-        { "text": "place", "role": "subject" }, { "text": "where", "role": "connector" }, { "text": "clause", "role": "object" }
-      ] }
+      {
+        "label": "WHOSE — possessive",
+        "chips": [
+          {
+            "text": "noun",
+            "role": "subject"
+          },
+          {
+            "text": "whose",
+            "role": "connector"
+          },
+          {
+            "text": "+ noun",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "WHOM — formal object",
+        "chips": [
+          {
+            "text": "noun (person)",
+            "role": "subject"
+          },
+          {
+            "text": "whom",
+            "role": "connector"
+          },
+          {
+            "text": "subject + verb",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "WHERE — places",
+        "chips": [
+          {
+            "text": "place",
+            "role": "subject"
+          },
+          {
+            "text": "where",
+            "role": "connector"
+          },
+          {
+            "text": "clause",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "WHOM (formal)", "example": "The man whom I met was kind.", "highlight": "whom I met" },
-      "right": { "label": "WHO / no pronoun (informal)", "example": "The man I met was kind.", "highlight": "I met" },
+      "left": {
+        "label": "WHOM (formal)",
+        "example": "The man whom I met was kind.",
+        "highlight": "whom I met"
+      },
+      "right": {
+        "label": "WHO / no pronoun (informal)",
+        "example": "The man I met was kind.",
+        "highlight": "I met"
+      },
       "caption": "WHOM is the traditional object form of who, used mainly in formal writing. In everyday speech, people usually say 'who' or simply drop the pronoun."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Whose house is that, the big one on the corner?", "translation": "¿De quién es esa casa, la grande de la esquina?" },
-      { "speaker": "user", "text": "That's the house where my grandparents used to live.", "translation": "Esa es la casa donde solían vivir mis abuelos." },
-      { "speaker": "other", "text": "Really? And who's the woman whose car is parked outside?", "translation": "¿En serio? ¿Y quién es la mujer cuyo coche está aparcado fuera?" },
-      { "speaker": "user", "text": "That's my aunt, the one whom I told you about last week.", "translation": "Esa es mi tía, de la que te hablé la semana pasada." }
+      {
+        "speaker": "other",
+        "text": "Whose house is that, the big one on the corner?",
+        "translation": "¿De quién es esa casa, la grande de la esquina?"
+      },
+      {
+        "speaker": "user",
+        "text": "That's the house where my grandparents used to live.",
+        "translation": "Esa es la casa donde solían vivir mis abuelos."
+      },
+      {
+        "speaker": "other",
+        "text": "Really? And who's the woman whose car is parked outside?",
+        "translation": "¿En serio? ¿Y quién es la mujer cuyo coche está aparcado fuera?"
+      },
+      {
+        "speaker": "user",
+        "text": "That's my aunt, the one whom I told you about last week.",
+        "translation": "Esa es mi tía, de la que te hablé la semana pasada."
+      }
     ],
     "tips": [
       "WHOSE muestra posesión (de quién es algo) y puede usarse tanto con personas como con cosas — no lo confundas con 'who's' (who is).",
       "WHOM casi ha desaparecido del inglés hablado; en conversación normal se usa 'who' o simplemente se omite el pronombre."
     ],
     "dailyWords": [
-      { "w": "grandparents", "ipa": "/ˈɡrænpeərənts/", "aprox": "gránpearents", "def": "abuelos", "ex": "My grandparents live in the countryside." },
-      { "w": "aunt", "ipa": "/ɑːnt/", "aprox": "aant", "def": "tía", "ex": "My aunt is visiting us this weekend." }
+      {
+        "w": "grandparents",
+        "ipa": "/ˈɡrænpeərənts/",
+        "aprox": "gránpearents",
+        "def": "abuelos",
+        "ex": "My grandparents live in the countryside."
+      },
+      {
+        "w": "aunt",
+        "ipa": "/ɑːnt/",
+        "aprox": "aant",
+        "def": "tía",
+        "ex": "My aunt is visiting us this weekend."
+      }
     ]
   },
   "95": {
     "title": "Relative Clauses 4 (extra information)",
     "topic": "Relative Clauses",
+    "level": "B2",
     "explain": [
       {
         "head": "Cláusulas no definitorias",
@@ -280,16 +472,52 @@ export const relativeClausesUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Defining (no commas)", "chips": [
-        { "text": "noun", "role": "subject" }, { "text": "who/that/which", "role": "connector" }, { "text": "essential info", "role": "object" }
-      ] },
-      { "label": "Non-defining (commas)", "chips": [
-        { "text": "noun", "role": "subject" }, { "text": ", who/which,", "role": "connector" }, { "text": "extra info", "role": "object" }
-      ] }
+      {
+        "label": "Defining (no commas)",
+        "chips": [
+          {
+            "text": "noun",
+            "role": "subject"
+          },
+          {
+            "text": "who/that/which",
+            "role": "connector"
+          },
+          {
+            "text": "essential info",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Non-defining (commas)",
+        "chips": [
+          {
+            "text": "noun",
+            "role": "subject"
+          },
+          {
+            "text": ", who/which,",
+            "role": "connector"
+          },
+          {
+            "text": "extra info",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "Defining (essential)", "example": "The woman who called me is my sister.", "highlight": "who called me" },
-      "right": { "label": "Non-defining (extra info)", "example": "My sister, who called me, is a teacher.", "highlight": ", who called me," },
+      "left": {
+        "label": "Defining (essential)",
+        "example": "The woman who called me is my sister.",
+        "highlight": "who called me"
+      },
+      "right": {
+        "label": "Non-defining (extra info)",
+        "example": "My sister, who called me, is a teacher.",
+        "highlight": ", who called me,"
+      },
       "caption": "No commas = the clause is essential to know WHICH person or thing is meant. Commas = the clause just adds extra, removable detail."
     },
     "readingText": {
@@ -302,13 +530,26 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "THAT nunca se usa en cláusulas no definitorias — en esos casos hace falta who o which, aunque hables de una persona."
     ],
     "dailyWords": [
-      { "w": "reservation", "ipa": "/ˌrezəˈveɪʃn/", "aprox": "rezervéishon", "def": "reserva", "ex": "We made a reservation for eight o'clock." },
-      { "w": "thrilled", "ipa": "/θrɪld/", "aprox": "zrild", "def": "encantado, emocionadísimo", "ex": "She was thrilled to see her old friend." }
+      {
+        "w": "reservation",
+        "ipa": "/ˌrezəˈveɪʃn/",
+        "aprox": "rezervéishon",
+        "def": "reserva",
+        "ex": "We made a reservation for eight o'clock."
+      },
+      {
+        "w": "thrilled",
+        "ipa": "/θrɪld/",
+        "aprox": "zrild",
+        "def": "encantado, emocionadísimo",
+        "ex": "She was thrilled to see her old friend."
+      }
     ]
   },
   "96": {
     "title": "Relative Clauses 5 (-ing and -ed clauses)",
     "topic": "Relative Clauses",
+    "level": "B2",
     "explain": [
       {
         "head": "-ING sustituye verbo activo",
@@ -352,16 +593,44 @@ export const relativeClausesUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "who/which + is -ing → -ing", "chips": [
-        { "text": "noun", "role": "subject" }, { "text": "-ing verb", "role": "verb" }
-      ] },
-      { "label": "who/which + was pp → -ed/pp", "chips": [
-        { "text": "noun", "role": "subject" }, { "text": "past participle", "role": "verb" }
-      ] }
+      {
+        "label": "who/which + is -ing → -ing",
+        "chips": [
+          {
+            "text": "noun",
+            "role": "subject"
+          },
+          {
+            "text": "-ing verb",
+            "role": "verb"
+          }
+        ]
+      },
+      {
+        "label": "who/which + was pp → -ed/pp",
+        "chips": [
+          {
+            "text": "noun",
+            "role": "subject"
+          },
+          {
+            "text": "past participle",
+            "role": "verb"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "-ING (active)", "example": "The man standing in the corner is my uncle.", "highlight": "standing" },
-      "right": { "label": "-ED (passive)", "example": "The letter written by Tom arrived today.", "highlight": "written" },
+      "left": {
+        "label": "-ING (active)",
+        "example": "The man standing in the corner is my uncle.",
+        "highlight": "standing"
+      },
+      "right": {
+        "label": "-ED (passive)",
+        "example": "The letter written by Tom arrived today.",
+        "highlight": "written"
+      },
       "caption": "-ING replaces 'who/which is/was' + active verb. -ED (past participle) replaces 'who/which is/was' + passive verb."
     },
     "readingText": {
@@ -374,13 +643,26 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "Con verbos irregulares, el participio pasado no siempre termina en -ed: 'built', 'written', 'made' funcionan igual que 'painted' o 'parked'."
     ],
     "dailyWords": [
-      { "w": "exhibition", "ipa": "/ˌeksɪˈbɪʃn/", "aprox": "eksibíshon", "def": "exposición", "ex": "We visited an art exhibition last Sunday." },
-      { "w": "sculpture", "ipa": "/ˈskʌlptʃər/", "aprox": "skálpcher", "def": "escultura", "ex": "The sculpture in the garden is beautiful." }
+      {
+        "w": "exhibition",
+        "ipa": "/ˌeksɪˈbɪʃn/",
+        "aprox": "eksibíshon",
+        "def": "exposición",
+        "ex": "We visited an art exhibition last Sunday."
+      },
+      {
+        "w": "sculpture",
+        "ipa": "/ˈskʌlptʃər/",
+        "aprox": "skálpcher",
+        "def": "escultura",
+        "ex": "The sculpture in the garden is beautiful."
+      }
     ]
   },
   "97": {
     "title": "-ing and -ed Clauses",
     "topic": "Relative Clauses",
+    "level": "B2",
     "explain": [
       {
         "head": "-ING: significado activo",
@@ -440,16 +722,52 @@ export const relativeClausesUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "-ING = active meaning", "chips": [
-        { "text": "noun", "role": "subject" }, { "text": "-ing verb", "role": "verb" }, { "text": "(= who/which is doing)", "role": "connector" }
-      ] },
-      { "label": "-ED = passive meaning", "chips": [
-        { "text": "noun", "role": "subject" }, { "text": "past participle", "role": "verb" }, { "text": "(= who/which is done to)", "role": "connector" }
-      ] }
+      {
+        "label": "-ING = active meaning",
+        "chips": [
+          {
+            "text": "noun",
+            "role": "subject"
+          },
+          {
+            "text": "-ing verb",
+            "role": "verb"
+          },
+          {
+            "text": "(= who/which is doing)",
+            "role": "connector"
+          }
+        ]
+      },
+      {
+        "label": "-ED = passive meaning",
+        "chips": [
+          {
+            "text": "noun",
+            "role": "subject"
+          },
+          {
+            "text": "past participle",
+            "role": "verb"
+          },
+          {
+            "text": "(= who/which is done to)",
+            "role": "connector"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "-ING (doer)", "example": "Police stopped a car driving the wrong way.", "highlight": "driving" },
-      "right": { "label": "-ED (receiver)", "example": "The boy injured in the accident is in hospital.", "highlight": "injured" },
+      "left": {
+        "label": "-ING (doer)",
+        "example": "Police stopped a car driving the wrong way.",
+        "highlight": "driving"
+      },
+      "right": {
+        "label": "-ED (receiver)",
+        "example": "The boy injured in the accident is in hospital.",
+        "highlight": "injured"
+      },
       "caption": "-ING marks the noun as the one DOING the action. -ED (past participle) marks the noun as the one the action happens TO."
     },
     "readingText": {
@@ -462,8 +780,20 @@ export const relativeClausesUnits: Record<number, Unit> = {
       "Pregúntate siempre: ¿el sustantivo hace la acción (-ing) o la recibe (participio pasado)? Esa es la única regla que necesitas."
     ],
     "dailyWords": [
-      { "w": "motorway", "ipa": "/ˈməʊtəweɪ/", "aprox": "móuteuei", "def": "autopista (inglés británico)", "ex": "There was an accident on the motorway this morning." },
-      { "w": "resident", "ipa": "/ˈrezɪdənt/", "aprox": "rézident", "def": "residente, vecino", "ex": "Local residents complained about the noise." }
+      {
+        "w": "motorway",
+        "ipa": "/ˈməʊtəweɪ/",
+        "aprox": "móuteuei",
+        "def": "autopista (inglés británico)",
+        "ex": "There was an accident on the motorway this morning."
+      },
+      {
+        "w": "resident",
+        "ipa": "/ˈrezɪdənt/",
+        "aprox": "rézident",
+        "def": "residente, vecino",
+        "ex": "Local residents complained about the noise."
+      }
     ]
   }
 };

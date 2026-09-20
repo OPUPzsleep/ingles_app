@@ -4,6 +4,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
   "26": {
     "title": "Can, Could and (be) Able to",
     "topic": "Modal Verbs",
+    "level": "A2",
     "explain": [
       {
         "head": "Can: habilidad o posibilidad",
@@ -27,37 +28,129 @@ export const modalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Present ability", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "can", "role": "verb" }, { "text": "base verb", "role": "object" }
-      ] },
-      { "label": "Past ability (general)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "could", "role": "verb" }, { "text": "base verb", "role": "object" }
-      ] },
-      { "label": "Past success (specific)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "was/were able to", "role": "verb" }, { "text": "base verb", "role": "object" }
-      ] },
-      { "label": "Future ability", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "will be able to", "role": "verb" }, { "text": "base verb", "role": "object" }
-      ] }
+      {
+        "label": "Present ability",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "can",
+            "role": "verb"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Past ability (general)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "could",
+            "role": "verb"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Past success (specific)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "was/were able to",
+            "role": "verb"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Future ability",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "will be able to",
+            "role": "verb"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "COULD — general", "example": "She could speak three languages when she was a diplomat.", "highlight": "could speak" },
-      "right": { "label": "WAS ABLE TO — one success", "example": "After months of practice, she was able to pass the exam.", "highlight": "was able to pass" },
+      "left": {
+        "label": "COULD — general",
+        "example": "She could speak three languages when she was a diplomat.",
+        "highlight": "could speak"
+      },
+      "right": {
+        "label": "WAS ABLE TO — one success",
+        "example": "After months of practice, she was able to pass the exam.",
+        "highlight": "was able to pass"
+      },
       "caption": "\"Could\" describes a general or repeated ability in the past. For ONE specific achievement, use \"was/were able to\" instead."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Can you speak any other languages?", "translation": "¿Sabes hablar algún otro idioma?" },
-      { "speaker": "user", "text": "Yes, I can speak a bit of French.", "translation": "Sí, sé hablar un poco de francés." },
-      { "speaker": "other", "text": "Could you always speak it, even as a kid?", "translation": "¿Siempre lo supiste hablar, incluso de niño?" },
-      { "speaker": "user", "text": "Not really — but I was able to learn it fast at university.", "translation": "La verdad no — pero pude aprenderlo rápido en la universidad." }
+      {
+        "speaker": "other",
+        "text": "Can you speak any other languages?",
+        "translation": "¿Sabes hablar algún otro idioma?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I can speak a bit of French.",
+        "translation": "Sí, sé hablar un poco de francés."
+      },
+      {
+        "speaker": "other",
+        "text": "Could you always speak it, even as a kid?",
+        "translation": "¿Siempre lo supiste hablar, incluso de niño?"
+      },
+      {
+        "speaker": "user",
+        "text": "Not really — but I was able to learn it fast at university.",
+        "translation": "La verdad no — pero pude aprenderlo rápido en la universidad."
+      }
     ],
     "tips": [
       "En inglés hablado, \"could\" suena más natural que \"was able to\" cuando cuentas una historia general del pasado.",
       "\"Can't\" y \"can\" a veces suenan casi igual en inglés rápido — escucha la vocal: can /kən/ (débil) vs can't /kænt/ (fuerte)."
     ],
     "dailyWords": [
-      { "w": "ability", "ipa": "/əˈbɪləti/", "aprox": "abíliti", "def": "habilidad, capacidad", "ex": "She has a natural ability for languages." },
-      { "w": "manage to", "ipa": "/ˈmænɪdʒ tuː/", "aprox": "mánich tu", "def": "lograr (con esfuerzo)", "ex": "I managed to finish on time." }
+      {
+        "w": "ability",
+        "ipa": "/əˈbɪləti/",
+        "aprox": "abíliti",
+        "def": "habilidad, capacidad",
+        "ex": "She has a natural ability for languages."
+      },
+      {
+        "w": "manage to",
+        "ipa": "/ˈmænɪdʒ tuː/",
+        "aprox": "mánich tu",
+        "def": "lograr (con esfuerzo)",
+        "ex": "I managed to finish on time."
+      }
     ],
     "table": {
       "cols": [
@@ -144,6 +237,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
   "27": {
     "title": "Could (do) and Could Have (done)",
     "topic": "Modal Verbs",
+    "level": "B2",
     "explain": [
       {
         "head": "Could do: posibilidad presente/futura",
@@ -203,19 +297,69 @@ export const modalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Present/future possibility", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "could", "role": "verb" }, { "text": "base verb", "role": "object" }
-      ] },
-      { "label": "Unrealized past possibility", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "could have", "role": "verb" }, { "text": "past participle", "role": "object" }
-      ] },
-      { "label": "Past impossibility", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "couldn't have", "role": "verb" }, { "text": "past participle", "role": "object" }
-      ] }
+      {
+        "label": "Present/future possibility",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "could",
+            "role": "verb"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Unrealized past possibility",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "could have",
+            "role": "verb"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Past impossibility",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "couldn't have",
+            "role": "verb"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "COULD HAVE — possible, didn't happen", "example": "You could have called me! I waited all night.", "highlight": "could have called" },
-      "right": { "label": "COULDN'T HAVE — impossible", "example": "It couldn't have been Tom — he was abroad that week.", "highlight": "couldn't have been" },
+      "left": {
+        "label": "COULD HAVE — possible, didn't happen",
+        "example": "You could have called me! I waited all night.",
+        "highlight": "could have called"
+      },
+      "right": {
+        "label": "COULDN'T HAVE — impossible",
+        "example": "It couldn't have been Tom — he was abroad that week.",
+        "highlight": "couldn't have been"
+      },
       "caption": "\"Could have\" means something was possible but never happened; \"couldn't have\" means it was impossible for it to have happened at all."
     },
     "readingText": {
@@ -228,13 +372,26 @@ export const modalVerbsUnits: Record<number, Unit> = {
       "\"Could have\" = era posible pero no pasó; \"couldn't have\" = es imposible que pasara. No los confundas con un simple \"didn't\"."
     ],
     "dailyWords": [
-      { "w": "missed opportunity", "ipa": "/mɪst ˌɒpəˈtjuːnəti/", "aprox": "mist opotiúnati", "def": "oportunidad perdida", "ex": "Not applying for that job was a missed opportunity." },
-      { "w": "last-minute", "ipa": "/ˌlɑːst ˈmɪnɪt/", "aprox": "last mínit", "def": "de último momento", "ex": "It was a last-minute decision to join the band." }
+      {
+        "w": "missed opportunity",
+        "ipa": "/mɪst ˌɒpəˈtjuːnəti/",
+        "aprox": "mist opotiúnati",
+        "def": "oportunidad perdida",
+        "ex": "Not applying for that job was a missed opportunity."
+      },
+      {
+        "w": "last-minute",
+        "ipa": "/ˌlɑːst ˈmɪnɪt/",
+        "aprox": "last mínit",
+        "def": "de último momento",
+        "ex": "It was a last-minute decision to join the band."
+      }
     ]
   },
   "28": {
     "title": "Must and Can't (deduction)",
     "topic": "Modal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "Must: seguro que es verdad",
@@ -302,6 +459,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
   "29": {
     "title": "May and Might 1",
     "topic": "Modal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "May / might: posibilidad",
@@ -361,17 +519,42 @@ export const modalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Do you have any plans for the weekend?", "translation": "¿Tienes planes para el fin de semana?" },
-      { "speaker": "user", "text": "I'm not sure yet. I might go hiking if the weather is good.", "translation": "Todavía no estoy seguro. Podría ir de excursión si hace buen tiempo." },
-      { "speaker": "other", "text": "It may rain on Saturday, actually.", "translation": "De hecho, puede que llueva el sábado." },
-      { "speaker": "user", "text": "Then I might just stay home and read instead.", "translation": "Entonces quizás me quede en casa leyendo." },
-      { "speaker": "other", "text": "May I join you? I love reading too.", "translation": "¿Puedo unirme? A mí también me encanta leer." },
-      { "speaker": "user", "text": "Of course! You might even borrow one of my books.", "translation": "¡Claro! Hasta podrías llevarte prestado uno de mis libros." }
+      {
+        "speaker": "other",
+        "text": "Do you have any plans for the weekend?",
+        "translation": "¿Tienes planes para el fin de semana?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'm not sure yet. I might go hiking if the weather is good.",
+        "translation": "Todavía no estoy seguro. Podría ir de excursión si hace buen tiempo."
+      },
+      {
+        "speaker": "other",
+        "text": "It may rain on Saturday, actually.",
+        "translation": "De hecho, puede que llueva el sábado."
+      },
+      {
+        "speaker": "user",
+        "text": "Then I might just stay home and read instead.",
+        "translation": "Entonces quizás me quede en casa leyendo."
+      },
+      {
+        "speaker": "other",
+        "text": "May I join you? I love reading too.",
+        "translation": "¿Puedo unirme? A mí también me encanta leer."
+      },
+      {
+        "speaker": "user",
+        "text": "Of course! You might even borrow one of my books.",
+        "translation": "¡Claro! Hasta podrías llevarte prestado uno de mis libros."
+      }
     ]
   },
   "30": {
     "title": "May and Might 2",
     "topic": "Modal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "Might as well / may as well",
@@ -423,6 +606,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
   "31": {
     "title": "Have To and Must",
     "topic": "Modal Verbs",
+    "level": "A2",
     "explain": [
       {
         "head": "Must: obligación personal",
@@ -502,17 +686,42 @@ export const modalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Do you have to wear a uniform at your new job?", "translation": "¿Tienes que usar uniforme en tu nuevo trabajo?" },
-      { "speaker": "user", "text": "Yes, I have to wear a suit every day. It's company policy.", "translation": "Sí, tengo que usar traje todos los días. Es política de la empresa." },
-      { "speaker": "other", "text": "That sounds strict. I must say, I really admire how professional you look.", "translation": "Suena estricto. Debo decir que admiro lo profesional que te ves." },
-      { "speaker": "user", "text": "Thanks! But I don't have to wear a tie on Fridays, which is nice.", "translation": "¡Gracias! Pero no tengo que usar corbata los viernes, lo cual es agradable." },
-      { "speaker": "other", "text": "I must remember to dress better for my interview tomorrow.", "translation": "Debo acordarme de vestirme mejor para mi entrevista de mañana." },
-      { "speaker": "user", "text": "You really must! First impressions matter a lot.", "translation": "¡De verdad debes hacerlo! Las primeras impresiones importan mucho." }
+      {
+        "speaker": "other",
+        "text": "Do you have to wear a uniform at your new job?",
+        "translation": "¿Tienes que usar uniforme en tu nuevo trabajo?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I have to wear a suit every day. It's company policy.",
+        "translation": "Sí, tengo que usar traje todos los días. Es política de la empresa."
+      },
+      {
+        "speaker": "other",
+        "text": "That sounds strict. I must say, I really admire how professional you look.",
+        "translation": "Suena estricto. Debo decir que admiro lo profesional que te ves."
+      },
+      {
+        "speaker": "user",
+        "text": "Thanks! But I don't have to wear a tie on Fridays, which is nice.",
+        "translation": "¡Gracias! Pero no tengo que usar corbata los viernes, lo cual es agradable."
+      },
+      {
+        "speaker": "other",
+        "text": "I must remember to dress better for my interview tomorrow.",
+        "translation": "Debo acordarme de vestirme mejor para mi entrevista de mañana."
+      },
+      {
+        "speaker": "user",
+        "text": "You really must! First impressions matter a lot.",
+        "translation": "¡De verdad debes hacerlo! Las primeras impresiones importan mucho."
+      }
     ]
   },
   "32": {
     "title": "Must / Mustn't / Needn't",
     "topic": "Modal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "Must: obligación",
@@ -569,6 +778,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
   "33": {
     "title": "Should 1",
     "topic": "Modal Verbs",
+    "level": "A2",
     "explain": [
       {
         "head": "Should: consejo o recomendación",
@@ -628,17 +838,42 @@ export const modalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "I've had a terrible headache all day.", "translation": "He tenido un dolor de cabeza terrible todo el día." },
-      { "speaker": "user", "text": "You should drink some water and rest for a while.", "translation": "Deberías tomar agua y descansar un rato." },
-      { "speaker": "other", "text": "Maybe you're right. Do you think I should see a doctor?", "translation": "Tal vez tengas razón. ¿Crees que debería ir al médico?" },
-      { "speaker": "user", "text": "If it doesn't go away by tomorrow, you should definitely go.", "translation": "Si no se te quita para mañana, definitivamente deberías ir." },
-      { "speaker": "other", "text": "The pharmacy should still be open now, right?", "translation": "La farmacia debería seguir abierta ahora, ¿verdad?" },
-      { "speaker": "user", "text": "Yes, it should be — they close at nine. You shouldn't wait any longer.", "translation": "Sí, debería estarlo — cierran a las nueve. No deberías esperar más." }
+      {
+        "speaker": "other",
+        "text": "I've had a terrible headache all day.",
+        "translation": "He tenido un dolor de cabeza terrible todo el día."
+      },
+      {
+        "speaker": "user",
+        "text": "You should drink some water and rest for a while.",
+        "translation": "Deberías tomar agua y descansar un rato."
+      },
+      {
+        "speaker": "other",
+        "text": "Maybe you're right. Do you think I should see a doctor?",
+        "translation": "Tal vez tengas razón. ¿Crees que debería ir al médico?"
+      },
+      {
+        "speaker": "user",
+        "text": "If it doesn't go away by tomorrow, you should definitely go.",
+        "translation": "Si no se te quita para mañana, definitivamente deberías ir."
+      },
+      {
+        "speaker": "other",
+        "text": "The pharmacy should still be open now, right?",
+        "translation": "La farmacia debería seguir abierta ahora, ¿verdad?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, it should be — they close at nine. You shouldn't wait any longer.",
+        "translation": "Sí, debería estarlo — cierran a las nueve. No deberías esperar más."
+      }
     ]
   },
   "34": {
     "title": "Should 2",
     "topic": "Modal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "Should have done: arrepentimiento",
@@ -690,6 +925,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
   "35": {
     "title": "I'd Better / It's Time…",
     "topic": "Modal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "I'd better: consejo urgente",
@@ -733,17 +969,42 @@ export const modalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "It's already 7:45! It's time we left for the airport.", "translation": "¡Ya son las 7:45! Ya es hora de que salgamos para el aeropuerto." },
-      { "speaker": "user", "text": "You're right, we'd better hurry or we'll miss the flight.", "translation": "Tienes razón, mejor nos apuramos o perderemos el vuelo." },
-      { "speaker": "other", "text": "Where are the passports? It's time you found them!", "translation": "¿Dónde están los pasaportes? ¡Ya es hora de que los encuentres!" },
-      { "speaker": "user", "text": "I've got them. We'd better call a taxi right now.", "translation": "Los tengo. Mejor pedimos un taxi ahora mismo." },
-      { "speaker": "other", "text": "You'd better not forget your phone charger again.", "translation": "Mejor no olvides tu cargador de teléfono otra vez." },
-      { "speaker": "user", "text": "Don't worry, it's already in my bag. It's time to go!", "translation": "No te preocupes, ya está en mi bolso. ¡Es hora de irnos!" }
+      {
+        "speaker": "other",
+        "text": "It's already 7:45! It's time we left for the airport.",
+        "translation": "¡Ya son las 7:45! Ya es hora de que salgamos para el aeropuerto."
+      },
+      {
+        "speaker": "user",
+        "text": "You're right, we'd better hurry or we'll miss the flight.",
+        "translation": "Tienes razón, mejor nos apuramos o perderemos el vuelo."
+      },
+      {
+        "speaker": "other",
+        "text": "Where are the passports? It's time you found them!",
+        "translation": "¿Dónde están los pasaportes? ¡Ya es hora de que los encuentres!"
+      },
+      {
+        "speaker": "user",
+        "text": "I've got them. We'd better call a taxi right now.",
+        "translation": "Los tengo. Mejor pedimos un taxi ahora mismo."
+      },
+      {
+        "speaker": "other",
+        "text": "You'd better not forget your phone charger again.",
+        "translation": "Mejor no olvides tu cargador de teléfono otra vez."
+      },
+      {
+        "speaker": "user",
+        "text": "Don't worry, it's already in my bag. It's time to go!",
+        "translation": "No te preocupes, ya está en mi bolso. ¡Es hora de irnos!"
+      }
     ]
   },
   "36": {
     "title": "Would",
     "topic": "Modal Verbs",
+    "level": "B1",
     "explain": [
       {
         "head": "Would: condicional",
@@ -811,6 +1072,7 @@ export const modalVerbsUnits: Record<number, Unit> = {
   "37": {
     "title": "Can / Could / Would you…? (Requests)",
     "topic": "Modal Verbs",
+    "level": "A2",
     "explain": [
       {
         "head": "Peticiones: escala de cortesía",
@@ -859,12 +1121,36 @@ export const modalVerbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Excuse me, could you help me carry these boxes?", "translation": "Disculpa, ¿podrías ayudarme a cargar estas cajas?" },
-      { "speaker": "user", "text": "Of course! Can you tell me where they need to go?", "translation": "¡Claro! ¿Puedes decirme adónde tienen que ir?" },
-      { "speaker": "other", "text": "To the meeting room upstairs, please. Would you mind taking the heavier one?", "translation": "A la sala de reuniones de arriba, por favor. ¿Te importaría llevar la más pesada?" },
-      { "speaker": "user", "text": "Not at all. Would you mind holding the door for me?", "translation": "Para nada. ¿Te importaría sostenerme la puerta?" },
-      { "speaker": "other", "text": "Sure. Do you mind if I go ahead and turn on the lights?", "translation": "Claro. ¿Te molesta si me adelanto y enciendo las luces?" },
-      { "speaker": "user", "text": "Not at all, go ahead. Could you also grab my notebook from the desk?", "translation": "Para nada, adelante. ¿Podrías también agarrar mi cuaderno del escritorio?" }
+      {
+        "speaker": "other",
+        "text": "Excuse me, could you help me carry these boxes?",
+        "translation": "Disculpa, ¿podrías ayudarme a cargar estas cajas?"
+      },
+      {
+        "speaker": "user",
+        "text": "Of course! Can you tell me where they need to go?",
+        "translation": "¡Claro! ¿Puedes decirme adónde tienen que ir?"
+      },
+      {
+        "speaker": "other",
+        "text": "To the meeting room upstairs, please. Would you mind taking the heavier one?",
+        "translation": "A la sala de reuniones de arriba, por favor. ¿Te importaría llevar la más pesada?"
+      },
+      {
+        "speaker": "user",
+        "text": "Not at all. Would you mind holding the door for me?",
+        "translation": "Para nada. ¿Te importaría sostenerme la puerta?"
+      },
+      {
+        "speaker": "other",
+        "text": "Sure. Do you mind if I go ahead and turn on the lights?",
+        "translation": "Claro. ¿Te molesta si me adelanto y enciendo las luces?"
+      },
+      {
+        "speaker": "user",
+        "text": "Not at all, go ahead. Could you also grab my notebook from the desk?",
+        "translation": "Para nada, adelante. ¿Podrías también agarrar mi cuaderno del escritorio?"
+      }
     ]
   }
 };

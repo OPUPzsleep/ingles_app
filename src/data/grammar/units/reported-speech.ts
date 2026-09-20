@@ -4,6 +4,7 @@ export const reportedSpeechUnits: Record<number, Unit> = {
   "47": {
     "title": "Reported Speech (He said…)",
     "topic": "Reported Speech",
+    "level": "B1",
     "explain": [
       {
         "head": "Estilo directo e indirecto",
@@ -106,6 +107,7 @@ export const reportedSpeechUnits: Record<number, Unit> = {
   "48": {
     "title": "Reported Speech 2 (Questions)",
     "topic": "Reported Speech",
+    "level": "B2",
     "explain": [
       {
         "head": "Orden de frase afirmativa",
@@ -154,14 +156,46 @@ export const reportedSpeechUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "How was your job interview?", "translation": "¿Cómo estuvo tu entrevista de trabajo?" },
-      { "speaker": "user", "text": "It was interesting. They asked me where I had studied.", "translation": "Estuvo interesante. Me preguntaron dónde había estudiado." },
-      { "speaker": "other", "text": "What else did they ask?", "translation": "¿Qué más te preguntaron?" },
-      { "speaker": "user", "text": "They asked if I was available to start immediately.", "translation": "Me preguntaron si estaba disponible para empezar de inmediato." },
-      { "speaker": "other", "text": "Did they ask about your salary expectations?", "translation": "¿Te preguntaron sobre tus expectativas salariales?" },
-      { "speaker": "user", "text": "Yes, they asked how much I wanted to earn.", "translation": "Sí, me preguntaron cuánto quería ganar." },
-      { "speaker": "other", "text": "What did you say?", "translation": "¿Qué dijiste?" },
-      { "speaker": "user", "text": "I told them I wasn't sure yet.", "translation": "Les dije que todavía no estaba seguro." }
+      {
+        "speaker": "other",
+        "text": "How was your job interview?",
+        "translation": "¿Cómo estuvo tu entrevista de trabajo?"
+      },
+      {
+        "speaker": "user",
+        "text": "It was interesting. They asked me where I had studied.",
+        "translation": "Estuvo interesante. Me preguntaron dónde había estudiado."
+      },
+      {
+        "speaker": "other",
+        "text": "What else did they ask?",
+        "translation": "¿Qué más te preguntaron?"
+      },
+      {
+        "speaker": "user",
+        "text": "They asked if I was available to start immediately.",
+        "translation": "Me preguntaron si estaba disponible para empezar de inmediato."
+      },
+      {
+        "speaker": "other",
+        "text": "Did they ask about your salary expectations?",
+        "translation": "¿Te preguntaron sobre tus expectativas salariales?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, they asked how much I wanted to earn.",
+        "translation": "Sí, me preguntaron cuánto quería ganar."
+      },
+      {
+        "speaker": "other",
+        "text": "What did you say?",
+        "translation": "¿Qué dijiste?"
+      },
+      {
+        "speaker": "user",
+        "text": "I told them I wasn't sure yet.",
+        "translation": "Les dije que todavía no estaba seguro."
+      }
     ]
   }
 };

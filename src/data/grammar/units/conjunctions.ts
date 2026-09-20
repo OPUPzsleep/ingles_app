@@ -4,6 +4,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
   "113": {
     "title": "Although / Though / Even though / In spite of / Despite",
     "topic": "Conjunctions",
+    "level": "B1",
     "explain": [
       {
         "head": "Although: contraste + oración",
@@ -66,6 +67,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
   "114": {
     "title": "In Case",
     "topic": "Conjunctions",
+    "level": "B1",
     "explain": [
       {
         "head": "In case: precaución",
@@ -108,18 +110,47 @@ export const conjunctionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Are you all packed for the camping trip?", "translation": "¿Ya tienes todo empacado para el viaje de campamento?" },
-      { "speaker": "user", "text": "Almost. I'm bringing a first-aid kit in case someone gets hurt.", "translation": "Casi. Voy a llevar un botiquín de primeros auxilios por si alguien se lastima." },
-      { "speaker": "other", "text": "Good idea. What about the weather?", "translation": "Buena idea. ¿Y qué hay del clima?" },
-      { "speaker": "user", "text": "I'm taking a rain jacket in case it rains, even though the forecast looks fine.", "translation": "Voy a llevar una chaqueta impermeable por si llueve, aunque el pronóstico se ve bien." },
-      { "speaker": "other", "text": "Smart. I never bring extra water in case we run out.", "translation": "Inteligente. Yo nunca llevo agua extra por si se nos acaba." },
-      { "speaker": "user", "text": "You should! I always pack extra snacks in case we get hungry on the trail.", "translation": "¡Deberías! Yo siempre empaco bocadillos extra por si nos da hambre en el sendero." },
-      { "speaker": "other", "text": "Okay, you've convinced me. I'll bring a flashlight in case it gets dark before we set up camp.", "translation": "Bien, me convenciste. Voy a llevar una linterna por si oscurece antes de que armemos el campamento." }
+      {
+        "speaker": "other",
+        "text": "Are you all packed for the camping trip?",
+        "translation": "¿Ya tienes todo empacado para el viaje de campamento?"
+      },
+      {
+        "speaker": "user",
+        "text": "Almost. I'm bringing a first-aid kit in case someone gets hurt.",
+        "translation": "Casi. Voy a llevar un botiquín de primeros auxilios por si alguien se lastima."
+      },
+      {
+        "speaker": "other",
+        "text": "Good idea. What about the weather?",
+        "translation": "Buena idea. ¿Y qué hay del clima?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'm taking a rain jacket in case it rains, even though the forecast looks fine.",
+        "translation": "Voy a llevar una chaqueta impermeable por si llueve, aunque el pronóstico se ve bien."
+      },
+      {
+        "speaker": "other",
+        "text": "Smart. I never bring extra water in case we run out.",
+        "translation": "Inteligente. Yo nunca llevo agua extra por si se nos acaba."
+      },
+      {
+        "speaker": "user",
+        "text": "You should! I always pack extra snacks in case we get hungry on the trail.",
+        "translation": "¡Deberías! Yo siempre empaco bocadillos extra por si nos da hambre en el sendero."
+      },
+      {
+        "speaker": "other",
+        "text": "Okay, you've convinced me. I'll bring a flashlight in case it gets dark before we set up camp.",
+        "translation": "Bien, me convenciste. Voy a llevar una linterna por si oscurece antes de que armemos el campamento."
+      }
     ]
   },
   "115": {
     "title": "Unless / As Long As / Provided",
     "topic": "Conjunctions",
+    "level": "B1",
     "explain": [
       {
         "head": "Unless: si no",
@@ -163,18 +194,47 @@ export const conjunctionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Can I bring my little brother to your party?", "translation": "¿Puedo llevar a mi hermano pequeño a tu fiesta?" },
-      { "speaker": "user", "text": "Sure, as long as he doesn't touch the sound system.", "translation": "Claro, siempre y cuando no toque el equipo de sonido." },
-      { "speaker": "other", "text": "He won't. What time should we arrive?", "translation": "No lo hará. ¿A qué hora deberíamos llegar?" },
-      { "speaker": "user", "text": "Anytime after seven, unless it's raining — then we'll move it inside.", "translation": "En cualquier momento después de las siete, a menos que esté lloviendo — entonces la haremos adentro." },
-      { "speaker": "other", "text": "Got it. Can I bring my dog too?", "translation": "Entendido. ¿Puedo llevar a mi perro también?" },
-      { "speaker": "user", "text": "That's fine, provided he's friendly with other dogs.", "translation": "Está bien, siempre que sea amigable con otros perros." },
-      { "speaker": "other", "text": "He's very friendly, unless someone tries to take his food!", "translation": "Es muy amigable, ¡a menos que alguien intente quitarle su comida!" }
+      {
+        "speaker": "other",
+        "text": "Can I bring my little brother to your party?",
+        "translation": "¿Puedo llevar a mi hermano pequeño a tu fiesta?"
+      },
+      {
+        "speaker": "user",
+        "text": "Sure, as long as he doesn't touch the sound system.",
+        "translation": "Claro, siempre y cuando no toque el equipo de sonido."
+      },
+      {
+        "speaker": "other",
+        "text": "He won't. What time should we arrive?",
+        "translation": "No lo hará. ¿A qué hora deberíamos llegar?"
+      },
+      {
+        "speaker": "user",
+        "text": "Anytime after seven, unless it's raining — then we'll move it inside.",
+        "translation": "En cualquier momento después de las siete, a menos que esté lloviendo — entonces la haremos adentro."
+      },
+      {
+        "speaker": "other",
+        "text": "Got it. Can I bring my dog too?",
+        "translation": "Entendido. ¿Puedo llevar a mi perro también?"
+      },
+      {
+        "speaker": "user",
+        "text": "That's fine, provided he's friendly with other dogs.",
+        "translation": "Está bien, siempre que sea amigable con otros perros."
+      },
+      {
+        "speaker": "other",
+        "text": "He's very friendly, unless someone tries to take his food!",
+        "translation": "Es muy amigable, ¡a menos que alguien intente quitarle su comida!"
+      }
     ]
   },
   "116": {
     "title": "As (time/manner/reason)",
     "topic": "Conjunctions",
+    "level": "B2",
     "explain": [
       {
         "head": "As: al mismo tiempo",
@@ -231,6 +291,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
   "117": {
     "title": "Like and As",
     "topic": "Conjunctions",
+    "level": "B2",
     "explain": [
       {
         "head": "Like: preposición (parecido a)",
@@ -279,17 +340,42 @@ export const conjunctionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Tell me about your new coworker.", "translation": "Cuéntame sobre tu nuevo compañero de trabajo." },
-      { "speaker": "user", "text": "He's really talented. He works as a graphic designer, but he draws like a professional artist.", "translation": "Es muy talentoso. Trabaja como diseñador gráfico, pero dibuja como un artista profesional." },
-      { "speaker": "other", "text": "Wow. Does he act like the boss sometimes?", "translation": "Vaya. ¿Actúa como el jefe a veces?" },
-      { "speaker": "user", "text": "No, but he sometimes acts as team leader when our manager is away.", "translation": "No, pero a veces actúa como líder del equipo cuando nuestro gerente no está." },
-      { "speaker": "other", "text": "That's a real responsibility, not just a comparison then.", "translation": "Esa es una responsabilidad real, entonces, no solo una comparación." },
-      { "speaker": "user", "text": "Exactly. And he treats every project as his own — he cares like a real owner.", "translation": "Exacto. Y trata cada proyecto como si fuera suyo — se preocupa como un verdadero dueño." }
+      {
+        "speaker": "other",
+        "text": "Tell me about your new coworker.",
+        "translation": "Cuéntame sobre tu nuevo compañero de trabajo."
+      },
+      {
+        "speaker": "user",
+        "text": "He's really talented. He works as a graphic designer, but he draws like a professional artist.",
+        "translation": "Es muy talentoso. Trabaja como diseñador gráfico, pero dibuja como un artista profesional."
+      },
+      {
+        "speaker": "other",
+        "text": "Wow. Does he act like the boss sometimes?",
+        "translation": "Vaya. ¿Actúa como el jefe a veces?"
+      },
+      {
+        "speaker": "user",
+        "text": "No, but he sometimes acts as team leader when our manager is away.",
+        "translation": "No, pero a veces actúa como líder del equipo cuando nuestro gerente no está."
+      },
+      {
+        "speaker": "other",
+        "text": "That's a real responsibility, not just a comparison then.",
+        "translation": "Esa es una responsabilidad real, entonces, no solo una comparación."
+      },
+      {
+        "speaker": "user",
+        "text": "Exactly. And he treats every project as his own — he cares like a real owner.",
+        "translation": "Exacto. Y trata cada proyecto como si fuera suyo — se preocupa como un verdadero dueño."
+      }
     ]
   },
   "118": {
     "title": "Like / As If / As Though",
     "topic": "Conjunctions",
+    "level": "B2",
     "explain": [
       {
         "head": "Like + sustantivo: comparación",
@@ -357,6 +443,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
   "119": {
     "title": "During / For / While",
     "topic": "Conjunctions",
+    "level": "A2",
     "explain": [
       {
         "head": "During + sustantivo: cuándo",
@@ -424,6 +511,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
   "120": {
     "title": "By and Until / By the Time",
     "topic": "Conjunctions",
+    "level": "B1",
     "explain": [
       {
         "head": "By: a más tardar",
@@ -472,12 +560,36 @@ export const conjunctionsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Can you finish the presentation by Thursday?", "translation": "¿Puedes terminar la presentación para el jueves?" },
-      { "speaker": "user", "text": "Yes, I'll have it ready by Wednesday night, actually.", "translation": "Sí, de hecho la tendré lista para el miércoles por la noche." },
-      { "speaker": "other", "text": "Great. Will you be in the office until then?", "translation": "Genial. ¿Vas a estar en la oficina hasta entonces?" },
-      { "speaker": "user", "text": "I'll be working until pretty late tonight, but I should be done by nine.", "translation": "Voy a estar trabajando hasta bastante tarde esta noche, pero debería terminar para las nueve." },
-      { "speaker": "other", "text": "And by the time the client arrives tomorrow, everything will be ready?", "translation": "¿Y para cuando llegue el cliente mañana, todo estará listo?" },
-      { "speaker": "user", "text": "Definitely. By the time they walk in, we'll have set up the whole room.", "translation": "Definitivamente. Para cuando entren, ya habremos organizado toda la sala." }
+      {
+        "speaker": "other",
+        "text": "Can you finish the presentation by Thursday?",
+        "translation": "¿Puedes terminar la presentación para el jueves?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I'll have it ready by Wednesday night, actually.",
+        "translation": "Sí, de hecho la tendré lista para el miércoles por la noche."
+      },
+      {
+        "speaker": "other",
+        "text": "Great. Will you be in the office until then?",
+        "translation": "Genial. ¿Vas a estar en la oficina hasta entonces?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'll be working until pretty late tonight, but I should be done by nine.",
+        "translation": "Voy a estar trabajando hasta bastante tarde esta noche, pero debería terminar para las nueve."
+      },
+      {
+        "speaker": "other",
+        "text": "And by the time the client arrives tomorrow, everything will be ready?",
+        "translation": "¿Y para cuando llegue el cliente mañana, todo estará listo?"
+      },
+      {
+        "speaker": "user",
+        "text": "Definitely. By the time they walk in, we'll have set up the whole room.",
+        "translation": "Definitivamente. Para cuando entren, ya habremos organizado toda la sala."
+      }
     ]
   }
 };

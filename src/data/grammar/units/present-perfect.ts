@@ -4,6 +4,7 @@ export const presentPerfectUnits: Record<number, Unit> = {
   "7": {
     "title": "Present Perfect 1 (I have done)",
     "topic": "Present Perfect",
+    "level": "B1",
     "explain": [
       {
         "head": "Forma",
@@ -102,33 +103,102 @@ export const presentPerfectUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Affirmative", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "have/has", "role": "verb" }, { "text": "past participle", "role": "object" }
-      ] },
-      { "label": "Life experience question", "chips": [
-        { "text": "Have/Has", "role": "verb" }, { "text": "subject", "role": "subject" }, { "text": "ever", "role": "connector" }, { "text": "past participle", "role": "object" }
-      ] }
+      {
+        "label": "Affirmative",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "have/has",
+            "role": "verb"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Life experience question",
+        "chips": [
+          {
+            "text": "Have/Has",
+            "role": "verb"
+          },
+          {
+            "text": "subject",
+            "role": "subject"
+          },
+          {
+            "text": "ever",
+            "role": "connector"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Guess what — I've just found a really nice flat near the city centre!", "translation": "Adivina qué — ¡acabo de encontrar un piso muy bonito cerca del centro!" },
-      { "speaker": "user", "text": "That's great news! Have you already told your parents?", "translation": "¡Qué buena noticia! ¿Ya se lo has contado a tus padres?" },
-      { "speaker": "other", "text": "Yes, I've already called them. They're really happy for me.", "translation": "Sí, ya les he llamado. Están muy contentos por mí." },
-      { "speaker": "user", "text": "Have you ever lived on your own before, or is this your first time?", "translation": "¿Has vivido alguna vez sola antes, o es tu primera vez?" },
-      { "speaker": "other", "text": "No, I've never lived alone — this will be a completely new experience for me!", "translation": "No, nunca he vivido sola — ¡va a ser una experiencia totalmente nueva para mí!" },
-      { "speaker": "user", "text": "Well, I've been to that neighbourhood before, and it's lovely. You'll love it.", "translation": "Bueno, yo he estado en ese barrio antes, y es precioso. Te va a encantar." }
+      {
+        "speaker": "other",
+        "text": "Guess what — I've just found a really nice flat near the city centre!",
+        "translation": "Adivina qué — ¡acabo de encontrar un piso muy bonito cerca del centro!"
+      },
+      {
+        "speaker": "user",
+        "text": "That's great news! Have you already told your parents?",
+        "translation": "¡Qué buena noticia! ¿Ya se lo has contado a tus padres?"
+      },
+      {
+        "speaker": "other",
+        "text": "Yes, I've already called them. They're really happy for me.",
+        "translation": "Sí, ya les he llamado. Están muy contentos por mí."
+      },
+      {
+        "speaker": "user",
+        "text": "Have you ever lived on your own before, or is this your first time?",
+        "translation": "¿Has vivido alguna vez sola antes, o es tu primera vez?"
+      },
+      {
+        "speaker": "other",
+        "text": "No, I've never lived alone — this will be a completely new experience for me!",
+        "translation": "No, nunca he vivido sola — ¡va a ser una experiencia totalmente nueva para mí!"
+      },
+      {
+        "speaker": "user",
+        "text": "Well, I've been to that neighbourhood before, and it's lovely. You'll love it.",
+        "translation": "Bueno, yo he estado en ese barrio antes, y es precioso. Te va a encantar."
+      }
     ],
     "tips": [
       "'Have/has' casi siempre se contrae en el habla: I've, she's, they've — decir 'I have' completo suena muy formal o enfático.",
       "'Has gone' (sigue allí) y 'has been' (fue y volvió) no son intercambiables — confundirlos es un error clásico."
     ],
     "dailyWords": [
-      { "w": "news", "ipa": "/njuːz/", "aprox": "niús", "def": "noticia(s)", "ex": "I've got some good news for you." },
-      { "w": "experience", "ipa": "/ɪkˈspɪəriəns/", "aprox": "ekspírians", "def": "experiencia", "ex": "Have you ever had this experience before?" }
+      {
+        "w": "news",
+        "ipa": "/njuːz/",
+        "aprox": "niús",
+        "def": "noticia(s)",
+        "ex": "I've got some good news for you."
+      },
+      {
+        "w": "experience",
+        "ipa": "/ɪkˈspɪəriəns/",
+        "aprox": "ekspírians",
+        "def": "experiencia",
+        "ex": "Have you ever had this experience before?"
+      }
     ]
   },
   "8": {
     "title": "Present Perfect 2 (just/already/yet/ever/never)",
     "topic": "Present Perfect",
+    "level": "B1",
     "explain": [
       {
         "head": "JUST — hace un momento",
@@ -242,38 +312,119 @@ export const presentPerfectUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Just / Already", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "have/has", "role": "verb" }, { "text": "just/already", "role": "connector" }, { "text": "past participle", "role": "object" }
-      ] },
-      { "label": "Yet (question/negative)", "chips": [
-        { "text": "Have/Haven't", "role": "verb" }, { "text": "subject", "role": "subject" }, { "text": "past participle", "role": "object" }, { "text": "yet", "role": "connector" }
-      ] }
+      {
+        "label": "Just / Already",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "have/has",
+            "role": "verb"
+          },
+          {
+            "text": "just/already",
+            "role": "connector"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Yet (question/negative)",
+        "chips": [
+          {
+            "text": "Have/Haven't",
+            "role": "verb"
+          },
+          {
+            "text": "subject",
+            "role": "subject"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          },
+          {
+            "text": "yet",
+            "role": "connector"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "ALREADY — positive sentences", "example": "I've already finished my homework.", "highlight": "already finished" },
-      "right": { "label": "YET — negatives & questions", "example": "I haven't finished my homework yet.", "highlight": "finished... yet" },
+      "left": {
+        "label": "ALREADY — positive sentences",
+        "example": "I've already finished my homework.",
+        "highlight": "already finished"
+      },
+      "right": {
+        "label": "YET — negatives & questions",
+        "example": "I haven't finished my homework yet.",
+        "highlight": "finished... yet"
+      },
       "caption": "Use 'already' in positive sentences to show something happened sooner than expected; use 'yet' in negatives and questions to ask or say if it has happened by now."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Have you packed your suitcase yet? We're leaving soon!", "translation": "¿Ya has hecho la maleta? ¡Nos vamos pronto!" },
-      { "speaker": "user", "text": "Yes, I've already packed it — I did it last night.", "translation": "Sí, ya la he hecho — la hice anoche." },
-      { "speaker": "other", "text": "Great. Have you called the taxi yet?", "translation": "Genial. ¿Ya has llamado al taxi?" },
-      { "speaker": "user", "text": "I've just called them, actually — they'll be here in ten minutes.", "translation": "La verdad es que acabo de llamarles — llegarán en diez minutos." },
-      { "speaker": "other", "text": "Perfect. Oh, have you ever forgotten your passport before a trip?", "translation": "Perfecto. Oye, ¿alguna vez se te ha olvidado el pasaporte antes de un viaje?" },
-      { "speaker": "user", "text": "Ha, no, I've never forgotten it, but I almost did once!", "translation": "Ja, no, nunca se me ha olvidado, ¡pero una vez estuve a punto!" }
+      {
+        "speaker": "other",
+        "text": "Have you packed your suitcase yet? We're leaving soon!",
+        "translation": "¿Ya has hecho la maleta? ¡Nos vamos pronto!"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I've already packed it — I did it last night.",
+        "translation": "Sí, ya la he hecho — la hice anoche."
+      },
+      {
+        "speaker": "other",
+        "text": "Great. Have you called the taxi yet?",
+        "translation": "Genial. ¿Ya has llamado al taxi?"
+      },
+      {
+        "speaker": "user",
+        "text": "I've just called them, actually — they'll be here in ten minutes.",
+        "translation": "La verdad es que acabo de llamarles — llegarán en diez minutos."
+      },
+      {
+        "speaker": "other",
+        "text": "Perfect. Oh, have you ever forgotten your passport before a trip?",
+        "translation": "Perfecto. Oye, ¿alguna vez se te ha olvidado el pasaporte antes de un viaje?"
+      },
+      {
+        "speaker": "user",
+        "text": "Ha, no, I've never forgotten it, but I almost did once!",
+        "translation": "Ja, no, nunca se me ha olvidado, ¡pero una vez estuve a punto!"
+      }
     ],
     "tips": [
       "'Yet' va casi siempre al final de la frase: 'Have you finished yet?', no en medio como 'already'.",
       "'Already' suena a sorpresa o rapidez ('¡ya lo hice!'), mientras que 'yet' simplemente pregunta o niega si algo ha pasado hasta ahora."
     ],
     "dailyWords": [
-      { "w": "to pack", "ipa": "/pæk/", "aprox": "pak", "def": "hacer la maleta, empacar", "ex": "Have you packed your suitcase yet?" },
-      { "w": "suitcase", "ipa": "/ˈsuːtkeɪs/", "aprox": "sútkeis", "def": "maleta", "ex": "I've already put my suitcase in the car." }
+      {
+        "w": "to pack",
+        "ipa": "/pæk/",
+        "aprox": "pak",
+        "def": "hacer la maleta, empacar",
+        "ex": "Have you packed your suitcase yet?"
+      },
+      {
+        "w": "suitcase",
+        "ipa": "/ˈsuːtkeɪs/",
+        "aprox": "sútkeis",
+        "def": "maleta",
+        "ex": "I've already put my suitcase in the car."
+      }
     ]
   },
   "9": {
     "title": "Present Perfect Continuous (I have been doing)",
     "topic": "Present Perfect",
+    "level": "B1",
     "explain": [
       {
         "head": "Forma",
@@ -364,12 +515,44 @@ export const presentPerfectUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Form", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "have/has been", "role": "verb" }, { "text": "verb-ing", "role": "object" }
-      ] },
-      { "label": "Duration question", "chips": [
-        { "text": "How long", "role": "connector" }, { "text": "have/has", "role": "verb" }, { "text": "subject", "role": "subject" }, { "text": "been + verb-ing", "role": "object" }
-      ] }
+      {
+        "label": "Form",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "have/has been",
+            "role": "verb"
+          },
+          {
+            "text": "verb-ing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Duration question",
+        "chips": [
+          {
+            "text": "How long",
+            "role": "connector"
+          },
+          {
+            "text": "have/has",
+            "role": "verb"
+          },
+          {
+            "text": "subject",
+            "role": "subject"
+          },
+          {
+            "text": "been + verb-ing",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "readingText": {
       "title": "A Long Day",
@@ -381,13 +564,26 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "'How long have you been + -ing?' es la pregunta clave para preguntar la duración de algo que sigue pasando."
     ],
     "dailyWords": [
-      { "w": "exhausted", "ipa": "/ɪɡˈzɔːstɪd/", "aprox": "egzósted", "def": "agotado, exhausto", "ex": "I'm exhausted — I've been running for an hour." },
-      { "w": "on and off", "ipa": "/ɒn ənd ɒf/", "aprox": "on and óf", "def": "de manera intermitente, a ratos", "ex": "I've been studying on and off all afternoon." }
+      {
+        "w": "exhausted",
+        "ipa": "/ɪɡˈzɔːstɪd/",
+        "aprox": "egzósted",
+        "def": "agotado, exhausto",
+        "ex": "I'm exhausted — I've been running for an hour."
+      },
+      {
+        "w": "on and off",
+        "ipa": "/ɒn ənd ɒf/",
+        "aprox": "on and óf",
+        "def": "de manera intermitente, a ratos",
+        "ex": "I've been studying on and off all afternoon."
+      }
     ]
   },
   "10": {
     "title": "Present Perfect Continuous and Simple",
     "topic": "Present Perfect",
+    "level": "B1",
     "explain": [
       {
         "head": "Continuo — actividad/duración",
@@ -447,38 +643,111 @@ export const presentPerfectUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Continuous (activity)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "have/has been", "role": "verb" }, { "text": "verb-ing", "role": "object" }
-      ] },
-      { "label": "Simple (result)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "have/has", "role": "verb" }, { "text": "past participle (+ quantity)", "role": "object" }
-      ] }
+      {
+        "label": "Continuous (activity)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "have/has been",
+            "role": "verb"
+          },
+          {
+            "text": "verb-ing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Simple (result)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "have/has",
+            "role": "verb"
+          },
+          {
+            "text": "past participle (+ quantity)",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "CONTINUOUS — activity", "example": "I've been painting the fence.", "highlight": "'ve been painting" },
-      "right": { "label": "SIMPLE — result", "example": "I've painted the fence.", "highlight": "'ve painted" },
+      "left": {
+        "label": "CONTINUOUS — activity",
+        "example": "I've been painting the fence.",
+        "highlight": "'ve been painting"
+      },
+      "right": {
+        "label": "SIMPLE — result",
+        "example": "I've painted the fence.",
+        "highlight": "'ve painted"
+      },
       "caption": "Continuous highlights the activity and how long it took; simple highlights the finished result."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Wow, your hands are covered in paint! What have you been doing?", "translation": "¡Vaya, tienes las manos llenas de pintura! ¿Qué has estado haciendo?" },
-      { "speaker": "user", "text": "I've been painting the kitchen all afternoon. Look, I've already painted two walls!", "translation": "He estado pintando la cocina toda la tarde. Mira, ¡ya he pintado dos paredes!" },
-      { "speaker": "other", "text": "That's a great result. Have you been cleaning the garden too?", "translation": "Ese es un gran resultado. ¿También has estado limpiando el jardín?" },
-      { "speaker": "user", "text": "Yes, I've been working out there as well, but I haven't finished it yet — I've only cut half the grass.", "translation": "Sí, también he estado trabajando ahí fuera, pero todavía no he terminado — solo he cortado la mitad del césped." },
-      { "speaker": "other", "text": "You've done so much today! Do you know Mark? He's been a gardener since 2010.", "translation": "¡Has hecho muchísimo hoy! ¿Conoces a Mark? Es jardinero desde 2010." },
-      { "speaker": "user", "text": "Really? I've known him for years but I never knew that!", "translation": "¿En serio? Le conozco desde hace años pero nunca supe eso." }
+      {
+        "speaker": "other",
+        "text": "Wow, your hands are covered in paint! What have you been doing?",
+        "translation": "¡Vaya, tienes las manos llenas de pintura! ¿Qué has estado haciendo?"
+      },
+      {
+        "speaker": "user",
+        "text": "I've been painting the kitchen all afternoon. Look, I've already painted two walls!",
+        "translation": "He estado pintando la cocina toda la tarde. Mira, ¡ya he pintado dos paredes!"
+      },
+      {
+        "speaker": "other",
+        "text": "That's a great result. Have you been cleaning the garden too?",
+        "translation": "Ese es un gran resultado. ¿También has estado limpiando el jardín?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I've been working out there as well, but I haven't finished it yet — I've only cut half the grass.",
+        "translation": "Sí, también he estado trabajando ahí fuera, pero todavía no he terminado — solo he cortado la mitad del césped."
+      },
+      {
+        "speaker": "other",
+        "text": "You've done so much today! Do you know Mark? He's been a gardener since 2010.",
+        "translation": "¡Has hecho muchísimo hoy! ¿Conoces a Mark? Es jardinero desde 2010."
+      },
+      {
+        "speaker": "user",
+        "text": "Really? I've known him for years but I never knew that!",
+        "translation": "¿En serio? Le conozco desde hace años pero nunca supe eso."
+      }
     ],
     "tips": [
       "Si puedes contar 'cuántos' o 'cuánto', usa la forma simple (he leído 3 libros); si describes la actividad en sí, usa la continua (he estado leyendo).",
       "Verbos de estado (know, like, be) no van en presente perfecto continuo: 'I've known him for years', nunca 'I've been knowing'."
     ],
     "dailyWords": [
-      { "w": "result", "ipa": "/rɪˈzʌlt/", "aprox": "risólt", "def": "resultado", "ex": "The result of all that work is a beautiful garden." },
-      { "w": "so far", "ipa": "/səʊ fɑːr/", "aprox": "sóu far", "def": "hasta ahora", "ex": "So far, I've painted two rooms." }
+      {
+        "w": "result",
+        "ipa": "/rɪˈzʌlt/",
+        "aprox": "risólt",
+        "def": "resultado",
+        "ex": "The result of all that work is a beautiful garden."
+      },
+      {
+        "w": "so far",
+        "ipa": "/səʊ fɑːr/",
+        "aprox": "sóu far",
+        "def": "hasta ahora",
+        "ex": "So far, I've painted two rooms."
+      }
     ]
   },
   "11": {
     "title": "How long have you (been)…?",
     "topic": "Present Perfect",
+    "level": "B1",
     "explain": [
       {
         "head": "How long… para situaciones en curso",
@@ -549,38 +818,119 @@ export const presentPerfectUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Ongoing duration", "chips": [
-        { "text": "How long", "role": "connector" }, { "text": "have/has", "role": "verb" }, { "text": "subject", "role": "subject" }, { "text": "past participle / been + -ing", "role": "object" }
-      ] },
-      { "label": "For / Since", "chips": [
-        { "text": "for", "role": "connector" }, { "text": "+ period", "role": "object" }, { "text": "since", "role": "connector" }, { "text": "+ point in time", "role": "object" }
-      ] }
+      {
+        "label": "Ongoing duration",
+        "chips": [
+          {
+            "text": "How long",
+            "role": "connector"
+          },
+          {
+            "text": "have/has",
+            "role": "verb"
+          },
+          {
+            "text": "subject",
+            "role": "subject"
+          },
+          {
+            "text": "past participle / been + -ing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "For / Since",
+        "chips": [
+          {
+            "text": "for",
+            "role": "connector"
+          },
+          {
+            "text": "+ period",
+            "role": "object"
+          },
+          {
+            "text": "since",
+            "role": "connector"
+          },
+          {
+            "text": "+ point in time",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "FOR — a period", "example": "I've lived here for five years.", "highlight": "for five years" },
-      "right": { "label": "SINCE — a starting point", "example": "I've lived here since 2018.", "highlight": "since 2018" },
+      "left": {
+        "label": "FOR — a period",
+        "example": "I've lived here for five years.",
+        "highlight": "for five years"
+      },
+      "right": {
+        "label": "SINCE — a starting point",
+        "example": "I've lived here since 2018.",
+        "highlight": "since 2018"
+      },
       "caption": "'For' is followed by a length of time; 'since' is followed by the specific point when the situation began."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "How long have you known your best friend?", "translation": "¿Cuánto tiempo hace que conoces a tu mejor amiga?" },
-      { "speaker": "user", "text": "I've known her for over ten years — since we were at school together.", "translation": "La conozco desde hace más de diez años — desde que estábamos juntas en el colegio." },
-      { "speaker": "other", "text": "Wow, that's a long time! And how long have you been living in this city?", "translation": "¡Vaya, cuánto tiempo! ¿Y cuánto llevas viviendo en esta ciudad?" },
-      { "speaker": "user", "text": "I've been living here since 2019, so about six years now.", "translation": "Vivo aquí desde 2019, o sea unos seis años ya." },
-      { "speaker": "other", "text": "Did you use to live somewhere else before that?", "translation": "¿Vivías en otro sitio antes de eso?" },
-      { "speaker": "user", "text": "Yes, I lived in a small town for two years, but I don't live there anymore.", "translation": "Sí, viví en un pueblo pequeño durante dos años, pero ya no vivo allí." }
+      {
+        "speaker": "other",
+        "text": "How long have you known your best friend?",
+        "translation": "¿Cuánto tiempo hace que conoces a tu mejor amiga?"
+      },
+      {
+        "speaker": "user",
+        "text": "I've known her for over ten years — since we were at school together.",
+        "translation": "La conozco desde hace más de diez años — desde que estábamos juntas en el colegio."
+      },
+      {
+        "speaker": "other",
+        "text": "Wow, that's a long time! And how long have you been living in this city?",
+        "translation": "¡Vaya, cuánto tiempo! ¿Y cuánto llevas viviendo en esta ciudad?"
+      },
+      {
+        "speaker": "user",
+        "text": "I've been living here since 2019, so about six years now.",
+        "translation": "Vivo aquí desde 2019, o sea unos seis años ya."
+      },
+      {
+        "speaker": "other",
+        "text": "Did you use to live somewhere else before that?",
+        "translation": "¿Vivías en otro sitio antes de eso?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I lived in a small town for two years, but I don't live there anymore.",
+        "translation": "Sí, viví en un pueblo pequeño durante dos años, pero ya no vivo allí."
+      }
     ],
     "tips": [
       "Trucos para recordar: SINCE = semilla (un punto exacto), FOR = flecha (una duración completa).",
       "Si la situación ya terminó, usa el pasado simple ('I lived there for two years'), no el presente perfecto."
     ],
     "dailyWords": [
-      { "w": "since", "ipa": "/sɪns/", "aprox": "sins", "def": "desde (un punto en el tiempo)", "ex": "I've lived here since 2020." },
-      { "w": "for ages", "ipa": "/fɔːr ˈeɪdʒɪz/", "aprox": "for éichis", "def": "desde hace mucho tiempo (coloquial)", "ex": "I haven't seen her for ages." }
+      {
+        "w": "since",
+        "ipa": "/sɪns/",
+        "aprox": "sins",
+        "def": "desde (un punto en el tiempo)",
+        "ex": "I've lived here since 2020."
+      },
+      {
+        "w": "for ages",
+        "ipa": "/fɔːr ˈeɪdʒɪz/",
+        "aprox": "for éichis",
+        "def": "desde hace mucho tiempo (coloquial)",
+        "ex": "I haven't seen her for ages."
+      }
     ]
   },
   "12": {
     "title": "For and Since / When…? and How long…?",
     "topic": "Present Perfect",
+    "level": "B1",
     "explain": [
       {
         "head": "FOR — duración",
@@ -645,38 +995,119 @@ export const presentPerfectUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "When + past simple", "chips": [
-        { "text": "When", "role": "connector" }, { "text": "did", "role": "verb" }, { "text": "subject", "role": "subject" }, { "text": "base verb", "role": "object" }
-      ] },
-      { "label": "How long + present perfect", "chips": [
-        { "text": "How long", "role": "connector" }, { "text": "have/has", "role": "verb" }, { "text": "subject", "role": "subject" }, { "text": "past participle", "role": "object" }
-      ] }
+      {
+        "label": "When + past simple",
+        "chips": [
+          {
+            "text": "When",
+            "role": "connector"
+          },
+          {
+            "text": "did",
+            "role": "verb"
+          },
+          {
+            "text": "subject",
+            "role": "subject"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "How long + present perfect",
+        "chips": [
+          {
+            "text": "How long",
+            "role": "connector"
+          },
+          {
+            "text": "have/has",
+            "role": "verb"
+          },
+          {
+            "text": "subject",
+            "role": "subject"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "WHEN — past simple", "example": "When did you start this job?", "highlight": "did you start" },
-      "right": { "label": "HOW LONG — present perfect", "example": "How long have you had this job?", "highlight": "have you had" },
+      "left": {
+        "label": "WHEN — past simple",
+        "example": "When did you start this job?",
+        "highlight": "did you start"
+      },
+      "right": {
+        "label": "HOW LONG — present perfect",
+        "example": "How long have you had this job?",
+        "highlight": "have you had"
+      },
       "caption": "'When' asks about one past moment (answered with past simple); 'how long' asks about a duration up to now (answered with present perfect)."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "When did you start working at this company?", "translation": "¿Cuándo empezaste a trabajar en esta empresa?" },
-      { "speaker": "user", "text": "I started three years ago, in 2023.", "translation": "Empecé hace tres años, en 2023." },
-      { "speaker": "other", "text": "And how long have you been the team leader?", "translation": "¿Y cuánto tiempo llevas siendo el líder del equipo?" },
-      { "speaker": "user", "text": "I've been the team leader since last January — so about eight months.", "translation": "Llevo siendo el líder del equipo desde enero pasado — o sea, unos ocho meses." },
-      { "speaker": "other", "text": "I see. When did you move to this city, by the way?", "translation": "Ya veo. Por cierto, ¿cuándo te mudaste a esta ciudad?" },
-      { "speaker": "user", "text": "I moved here for the job, five years ago. I've lived here ever since.", "translation": "Me mudé aquí por el trabajo, hace cinco años. He vivido aquí desde entonces." }
+      {
+        "speaker": "other",
+        "text": "When did you start working at this company?",
+        "translation": "¿Cuándo empezaste a trabajar en esta empresa?"
+      },
+      {
+        "speaker": "user",
+        "text": "I started three years ago, in 2023.",
+        "translation": "Empecé hace tres años, en 2023."
+      },
+      {
+        "speaker": "other",
+        "text": "And how long have you been the team leader?",
+        "translation": "¿Y cuánto tiempo llevas siendo el líder del equipo?"
+      },
+      {
+        "speaker": "user",
+        "text": "I've been the team leader since last January — so about eight months.",
+        "translation": "Llevo siendo el líder del equipo desde enero pasado — o sea, unos ocho meses."
+      },
+      {
+        "speaker": "other",
+        "text": "I see. When did you move to this city, by the way?",
+        "translation": "Ya veo. Por cierto, ¿cuándo te mudaste a esta ciudad?"
+      },
+      {
+        "speaker": "user",
+        "text": "I moved here for the job, five years ago. I've lived here ever since.",
+        "translation": "Me mudé aquí por el trabajo, hace cinco años. He vivido aquí desde entonces."
+      }
     ],
     "tips": [
       "'When' siempre lleva pasado simple: pregunta por UN momento concreto, no por una duración.",
       "'For' funciona con casi cualquier tiempo verbal (pasado, presente perfecto, futuro); 'since' casi siempre acompaña al presente perfecto."
     ],
     "dailyWords": [
-      { "w": "to start", "ipa": "/stɑːrt/", "aprox": "start", "def": "empezar, comenzar", "ex": "When did you start your new job?" },
-      { "w": "ever since", "ipa": "/ˈevər sɪns/", "aprox": "éver sins", "def": "desde entonces", "ex": "I moved here in 2018 and I've lived here ever since." }
+      {
+        "w": "to start",
+        "ipa": "/stɑːrt/",
+        "aprox": "start",
+        "def": "empezar, comenzar",
+        "ex": "When did you start your new job?"
+      },
+      {
+        "w": "ever since",
+        "ipa": "/ˈevər sɪns/",
+        "aprox": "éver sins",
+        "def": "desde entonces",
+        "ex": "I moved here in 2018 and I've lived here ever since."
+      }
     ]
   },
   "13": {
     "title": "Present Perfect and Past Simple 1",
     "topic": "Present Perfect",
+    "level": "B1",
     "explain": [
       {
         "head": "Past Simple — momento pasado concreto",
@@ -736,16 +1167,52 @@ export const presentPerfectUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Past simple (specific time)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "verb+ed / irregular", "role": "verb" }, { "text": "time expression", "role": "object" }
-      ] },
-      { "label": "Present perfect (unspecified time)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "have/has", "role": "verb" }, { "text": "past participle", "role": "object" }
-      ] }
+      {
+        "label": "Past simple (specific time)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "verb+ed / irregular",
+            "role": "verb"
+          },
+          {
+            "text": "time expression",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Present perfect (unspecified time)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "have/has",
+            "role": "verb"
+          },
+          {
+            "text": "past participle",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "PAST SIMPLE — specific time", "example": "I lost my key yesterday.", "highlight": "lost... yesterday" },
-      "right": { "label": "PRESENT PERFECT — no specific time", "example": "I've lost my key.", "highlight": "'ve lost" },
+      "left": {
+        "label": "PAST SIMPLE — specific time",
+        "example": "I lost my key yesterday.",
+        "highlight": "lost... yesterday"
+      },
+      "right": {
+        "label": "PRESENT PERFECT — no specific time",
+        "example": "I've lost my key.",
+        "highlight": "'ve lost"
+      },
       "caption": "Name a specific past time (yesterday, last week) and use the past simple. Leave the time unspecified, focusing on the present result, and use the present perfect."
     },
     "readingText": {
@@ -758,13 +1225,26 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "Pregúntate: ¿importa CUÁNDO pasó (pasado simple) o importa que TENGA UN EFECTO AHORA (presente perfecto)?"
     ],
     "dailyWords": [
-      { "w": "to lose", "ipa": "/luːz/", "aprox": "lus", "def": "perder", "ex": "I've lost my keys again!" },
-      { "w": "anywhere", "ipa": "/ˈeniweər/", "aprox": "éniuer", "def": "en cualquier/ningún lugar", "ex": "I can't find it anywhere." }
+      {
+        "w": "to lose",
+        "ipa": "/luːz/",
+        "aprox": "lus",
+        "def": "perder",
+        "ex": "I've lost my keys again!"
+      },
+      {
+        "w": "anywhere",
+        "ipa": "/ˈeniweər/",
+        "aprox": "éniuer",
+        "def": "en cualquier/ningún lugar",
+        "ex": "I can't find it anywhere."
+      }
     ]
   },
   "14": {
     "title": "Present Perfect and Past Simple 2",
     "topic": "Present Perfect",
+    "level": "B2",
     "explain": [
       {
         "head": "Noticia → present perfect; detalles → past simple",
@@ -808,16 +1288,52 @@ export const presentPerfectUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Giving news", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "have/has + participle", "role": "verb" }, { "text": "(the news)", "role": "object" }
-      ] },
-      { "label": "Giving details", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "past simple verb", "role": "verb" }, { "text": "(when/how)", "role": "object" }
-      ] }
+      {
+        "label": "Giving news",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "have/has + participle",
+            "role": "verb"
+          },
+          {
+            "text": "(the news)",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Giving details",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "past simple verb",
+            "role": "verb"
+          },
+          {
+            "text": "(when/how)",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "HAS GONE — still there", "example": "She has gone to Paris.", "highlight": "has gone" },
-      "right": { "label": "HAS BEEN — went and returned", "example": "She has been to Paris.", "highlight": "has been" },
+      "left": {
+        "label": "HAS GONE — still there",
+        "example": "She has gone to Paris.",
+        "highlight": "has gone"
+      },
+      "right": {
+        "label": "HAS BEEN — went and returned",
+        "example": "She has been to Paris.",
+        "highlight": "has been"
+      },
       "caption": "'Has gone' means the person is still there now. 'Has been' means they went and already came back."
     },
     "readingText": {
@@ -830,8 +1346,20 @@ export const presentPerfectUnits: Record<number, Unit> = {
       "'Has gone to' = todavía está allí; 'has been to' = fue y ya volvió. Son opuestos, no sinónimos."
     ],
     "dailyWords": [
-      { "w": "to announce", "ipa": "/əˈnaʊns/", "aprox": "anáuns", "def": "anunciar", "ex": "They've just announced the news." },
-      { "w": "these days", "ipa": "/ðiːz deɪz/", "aprox": "díis déis", "def": "hoy en día, actualmente", "ex": "Where's Tom these days?" }
+      {
+        "w": "to announce",
+        "ipa": "/əˈnaʊns/",
+        "aprox": "anáuns",
+        "def": "anunciar",
+        "ex": "They've just announced the news."
+      },
+      {
+        "w": "these days",
+        "ipa": "/ðiːz deɪz/",
+        "aprox": "díis déis",
+        "def": "hoy en día, actualmente",
+        "ex": "Where's Tom these days?"
+      }
     ]
   }
 };

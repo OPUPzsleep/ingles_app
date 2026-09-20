@@ -4,6 +4,7 @@ export const presentAndPastUnits: Record<number, Unit> = {
   "1": {
     "title": "Present Continuous (I am doing)",
     "topic": "Present & Past",
+    "level": "A1",
     "explain": [
       {
         "head": "Forma",
@@ -107,33 +108,98 @@ export const presentAndPastUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Affirmative", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "am/is/are", "role": "verb" }, { "text": "verb-ing", "role": "object" }
-      ] },
-      { "label": "Question", "chips": [
-        { "text": "Am/Is/Are", "role": "verb" }, { "text": "subject", "role": "subject" }, { "text": "verb-ing", "role": "object" }
-      ] }
+      {
+        "label": "Affirmative",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "am/is/are",
+            "role": "verb"
+          },
+          {
+            "text": "verb-ing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Question",
+        "chips": [
+          {
+            "text": "Am/Is/Are",
+            "role": "verb"
+          },
+          {
+            "text": "subject",
+            "role": "subject"
+          },
+          {
+            "text": "verb-ing",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Hi! What are you doing right now?", "translation": "¡Hola! ¿Qué estás haciendo ahora mismo?" },
-      { "speaker": "user", "text": "I'm cooking dinner, actually. Can I call you back?", "translation": "Estoy cocinando la cena, la verdad. ¿Te puedo llamar luego?" },
-      { "speaker": "other", "text": "Sure. Are you still staying at your parents' house this week?", "translation": "Claro. ¿Sigues quedándote en casa de tus padres esta semana?" },
-      { "speaker": "user", "text": "Yes, I'm staying there until Friday — my kitchen is being renovated.", "translation": "Sí, me quedo allí hasta el viernes — me están reformando la cocina." },
-      { "speaker": "other", "text": "Oh right, is it getting better?", "translation": "Ah, cierto, ¿está mejorando?" },
-      { "speaker": "user", "text": "Yes, it's improving a lot. It's almost finished.", "translation": "Sí, está mejorando mucho. Ya casi está terminada." }
+      {
+        "speaker": "other",
+        "text": "Hi! What are you doing right now?",
+        "translation": "¡Hola! ¿Qué estás haciendo ahora mismo?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'm cooking dinner, actually. Can I call you back?",
+        "translation": "Estoy cocinando la cena, la verdad. ¿Te puedo llamar luego?"
+      },
+      {
+        "speaker": "other",
+        "text": "Sure. Are you still staying at your parents' house this week?",
+        "translation": "Claro. ¿Sigues quedándote en casa de tus padres esta semana?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I'm staying there until Friday — my kitchen is being renovated.",
+        "translation": "Sí, me quedo allí hasta el viernes — me están reformando la cocina."
+      },
+      {
+        "speaker": "other",
+        "text": "Oh right, is it getting better?",
+        "translation": "Ah, cierto, ¿está mejorando?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, it's improving a lot. It's almost finished.",
+        "translation": "Sí, está mejorando mucho. Ya casi está terminada."
+      }
     ],
     "tips": [
       "En español decimos 'estoy trabajando' sin pensar en un verbo auxiliar aparte, pero en inglés SIEMPRE necesitas am/is/are antes del verbo + -ing: 'I am working', nunca solo 'working'.",
       "Contrae 'is' y 'are' al hablar para sonar natural: 'she's eating', 'they're playing' — la forma completa suena muy formal."
     ],
     "dailyWords": [
-      { "w": "currently", "ipa": "/ˈkʌrəntli/", "aprox": "kárentli", "def": "actualmente, en este momento", "ex": "I'm currently working on a new project." },
-      { "w": "at the moment", "ipa": "/ət ðə ˈməʊmənt/", "aprox": "at de móument", "def": "en este momento, ahora mismo", "ex": "She's busy at the moment." }
+      {
+        "w": "currently",
+        "ipa": "/ˈkʌrəntli/",
+        "aprox": "kárentli",
+        "def": "actualmente, en este momento",
+        "ex": "I'm currently working on a new project."
+      },
+      {
+        "w": "at the moment",
+        "ipa": "/ət ðə ˈməʊmənt/",
+        "aprox": "at de móument",
+        "def": "en este momento, ahora mismo",
+        "ex": "She's busy at the moment."
+      }
     ]
   },
   "2": {
     "title": "Present Simple (I do)",
     "topic": "Present & Past",
+    "level": "A1",
     "explain": [
       {
         "head": "Forma",
@@ -235,12 +301,40 @@ export const presentAndPastUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Affirmative", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "verb (+s/es)", "role": "verb" }, { "text": "object", "role": "object" }
-      ] },
-      { "label": "Negative / Question", "chips": [
-        { "text": "Do/Does(n't)", "role": "verb" }, { "text": "subject", "role": "subject" }, { "text": "base verb", "role": "object" }
-      ] }
+      {
+        "label": "Affirmative",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "verb (+s/es)",
+            "role": "verb"
+          },
+          {
+            "text": "object",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Negative / Question",
+        "chips": [
+          {
+            "text": "Do/Does(n't)",
+            "role": "verb"
+          },
+          {
+            "text": "subject",
+            "role": "subject"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "readingText": {
       "title": "A Typical Day",
@@ -252,13 +346,26 @@ export const presentAndPastUnits: Record<number, Unit> = {
       "Para preguntas y negaciones usa 'do/does' y deja el verbo principal en su forma base: 'Does she work?', nunca 'Works she?'."
     ],
     "dailyWords": [
-      { "w": "routine", "ipa": "/ruːˈtiːn/", "aprox": "rutín", "def": "rutina", "ex": "Coffee is part of my morning routine." },
-      { "w": "usually", "ipa": "/ˈjuːʒuəli/", "aprox": "iúshuali", "def": "normalmente, generalmente", "ex": "I usually walk to work." }
+      {
+        "w": "routine",
+        "ipa": "/ruːˈtiːn/",
+        "aprox": "rutín",
+        "def": "rutina",
+        "ex": "Coffee is part of my morning routine."
+      },
+      {
+        "w": "usually",
+        "ipa": "/ˈjuːʒuəli/",
+        "aprox": "iúshuali",
+        "def": "normalmente, generalmente",
+        "ex": "I usually walk to work."
+      }
     ]
   },
   "3": {
     "title": "Continuous and Simple 1",
     "topic": "Present & Past",
+    "level": "A2",
     "explain": [
       {
         "head": "Continuo: ahora o temporal",
@@ -349,38 +456,111 @@ export const presentAndPastUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Temporary (continuous)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "am/is/are", "role": "verb" }, { "text": "verb-ing", "role": "object" }
-      ] },
-      { "label": "Permanent (simple)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "verb (+s)", "role": "verb" }, { "text": "object", "role": "object" }
-      ] }
+      {
+        "label": "Temporary (continuous)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "am/is/are",
+            "role": "verb"
+          },
+          {
+            "text": "verb-ing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Permanent (simple)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "verb (+s)",
+            "role": "verb"
+          },
+          {
+            "text": "object",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "TEMPORARY — continuous", "example": "I'm staying with friends this week.", "highlight": "'m staying" },
-      "right": { "label": "PERMANENT — simple", "example": "My parents live in London.", "highlight": "live" },
+      "left": {
+        "label": "TEMPORARY — continuous",
+        "example": "I'm staying with friends this week.",
+        "highlight": "'m staying"
+      },
+      "right": {
+        "label": "PERMANENT — simple",
+        "example": "My parents live in London.",
+        "highlight": "live"
+      },
       "caption": "Use the continuous for something temporary or in progress now; use the simple form for habits and permanent situations."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Do you live in Madrid?", "translation": "¿Vives en Madrid?" },
-      { "speaker": "user", "text": "Yes, I live there, but I'm staying with my sister in Valencia this month while my flat is being painted.", "translation": "Sí, vivo allí, pero este mes me estoy quedando con mi hermana en Valencia mientras me pintan el piso." },
-      { "speaker": "other", "text": "That makes sense. Is she always so messy? You mentioned that before.", "translation": "Tiene sentido. ¿Es siempre tan desordenada? Ya me lo habías comentado." },
-      { "speaker": "user", "text": "Ha, yes — she's always leaving her clothes everywhere! But normally she lives alone, so I guess she's not used to sharing.", "translation": "Ja, sí — siempre deja la ropa por todas partes. Pero normalmente vive sola, así que supongo que no está acostumbrada a compartir." },
-      { "speaker": "other", "text": "Well, my parents live in the same house they've had for thirty years — completely different lifestyle!", "translation": "Bueno, mis padres viven en la misma casa que tienen desde hace treinta años — un estilo de vida totalmente distinto." },
-      { "speaker": "user", "text": "Exactly — some things never change, and some things are just temporary.", "translation": "Exacto — hay cosas que nunca cambian, y otras que son solo temporales." }
+      {
+        "speaker": "other",
+        "text": "Do you live in Madrid?",
+        "translation": "¿Vives en Madrid?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I live there, but I'm staying with my sister in Valencia this month while my flat is being painted.",
+        "translation": "Sí, vivo allí, pero este mes me estoy quedando con mi hermana en Valencia mientras me pintan el piso."
+      },
+      {
+        "speaker": "other",
+        "text": "That makes sense. Is she always so messy? You mentioned that before.",
+        "translation": "Tiene sentido. ¿Es siempre tan desordenada? Ya me lo habías comentado."
+      },
+      {
+        "speaker": "user",
+        "text": "Ha, yes — she's always leaving her clothes everywhere! But normally she lives alone, so I guess she's not used to sharing.",
+        "translation": "Ja, sí — siempre deja la ropa por todas partes. Pero normalmente vive sola, así que supongo que no está acostumbrada a compartir."
+      },
+      {
+        "speaker": "other",
+        "text": "Well, my parents live in the same house they've had for thirty years — completely different lifestyle!",
+        "translation": "Bueno, mis padres viven en la misma casa que tienen desde hace treinta años — un estilo de vida totalmente distinto."
+      },
+      {
+        "speaker": "user",
+        "text": "Exactly — some things never change, and some things are just temporary.",
+        "translation": "Exacto — hay cosas que nunca cambian, y otras que son solo temporales."
+      }
     ],
     "tips": [
       "'Always' + presente continuo (she's always losing her keys) no significa 'siempre' literalmente, sino que algo pasa demasiado a menudo y te molesta.",
       "Antes de traducir desde el español, pregúntate: ¿es algo temporal (continuo) o permanente/habitual (simple)? Esa es la clave para elegir el tiempo correcto."
     ],
     "dailyWords": [
-      { "w": "temporary", "ipa": "/ˈtemprəri/", "aprox": "témprari", "def": "temporal, provisional", "ex": "It's just a temporary solution." },
-      { "w": "for now", "ipa": "/fɔːr naʊ/", "aprox": "for náu", "def": "por ahora, de momento", "ex": "I'm staying here for now." }
+      {
+        "w": "temporary",
+        "ipa": "/ˈtemprəri/",
+        "aprox": "témprari",
+        "def": "temporal, provisional",
+        "ex": "It's just a temporary solution."
+      },
+      {
+        "w": "for now",
+        "ipa": "/fɔːr naʊ/",
+        "aprox": "for náu",
+        "def": "por ahora, de momento",
+        "ex": "I'm staying here for now."
+      }
     ]
   },
   "4": {
     "title": "Continuous and Simple 2 (stative verbs)",
     "topic": "Present & Past",
+    "level": "A2",
     "explain": [
       {
         "head": "Verbos de estado",
@@ -484,38 +664,111 @@ export const presentAndPastUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Stative (simple only)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "know/want/like", "role": "verb" }, { "text": "object", "role": "object" }
-      ] },
-      { "label": "Be + adjective (temporary behaviour)", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "is/are being", "role": "verb" }, { "text": "adjective", "role": "object" }
-      ] }
+      {
+        "label": "Stative (simple only)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "know/want/like",
+            "role": "verb"
+          },
+          {
+            "text": "object",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Be + adjective (temporary behaviour)",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "is/are being",
+            "role": "verb"
+          },
+          {
+            "text": "adjective",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "Permanent trait (simple)", "example": "He is selfish. He never shares.", "highlight": "is selfish" },
-      "right": { "label": "Temporary behaviour (continuous)", "example": "He's being very selfish today — that's not like him.", "highlight": "'s being" },
+      "left": {
+        "label": "Permanent trait (simple)",
+        "example": "He is selfish. He never shares.",
+        "highlight": "is selfish"
+      },
+      "right": {
+        "label": "Temporary behaviour (continuous)",
+        "example": "He's being very selfish today — that's not like him.",
+        "highlight": "'s being"
+      },
       "caption": "'Be' is normally stative, but 'be + adjective' can take the continuous to describe temporary behaviour, not permanent character."
     },
     "simulatedChat": [
-      { "speaker": "other", "text": "Why is Mark being so rude today? He's usually so nice.", "translation": "¿Por qué está siendo Mark tan borde hoy? Normalmente es tan majo." },
-      { "speaker": "user", "text": "I don't know! He's being really difficult with everyone this morning.", "translation": "¡No lo sé! Está siendo muy difícil con todo el mundo esta mañana." },
-      { "speaker": "other", "text": "Do you think something's wrong? What do you think happened?", "translation": "¿Crees que le pasa algo? ¿Qué crees que ha pasado?" },
-      { "speaker": "user", "text": "I'm thinking it might be about his exam results — he's seeing the results this afternoon.", "translation": "Estoy pensando que puede ser por sus notas del examen — ve los resultados esta tarde." },
-      { "speaker": "other", "text": "Ah, that makes sense. I understand now — he's probably just nervous.", "translation": "Ah, tiene sentido. Ahora lo entiendo — seguramente está nervioso." },
-      { "speaker": "user", "text": "Yes, I think you're right. He isn't normally like this at all.", "translation": "Sí, creo que tienes razón. Normalmente no es nada así." }
+      {
+        "speaker": "other",
+        "text": "Why is Mark being so rude today? He's usually so nice.",
+        "translation": "¿Por qué está siendo Mark tan borde hoy? Normalmente es tan majo."
+      },
+      {
+        "speaker": "user",
+        "text": "I don't know! He's being really difficult with everyone this morning.",
+        "translation": "¡No lo sé! Está siendo muy difícil con todo el mundo esta mañana."
+      },
+      {
+        "speaker": "other",
+        "text": "Do you think something's wrong? What do you think happened?",
+        "translation": "¿Crees que le pasa algo? ¿Qué crees que ha pasado?"
+      },
+      {
+        "speaker": "user",
+        "text": "I'm thinking it might be about his exam results — he's seeing the results this afternoon.",
+        "translation": "Estoy pensando que puede ser por sus notas del examen — ve los resultados esta tarde."
+      },
+      {
+        "speaker": "other",
+        "text": "Ah, that makes sense. I understand now — he's probably just nervous.",
+        "translation": "Ah, tiene sentido. Ahora lo entiendo — seguramente está nervioso."
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I think you're right. He isn't normally like this at all.",
+        "translation": "Sí, creo que tienes razón. Normalmente no es nada así."
+      }
     ],
     "tips": [
       "Verbos de percepción (see, hear, smell) casi nunca llevan -ing, salvo que signifiquen una acción planeada: 'I'm seeing the doctor' = tengo cita, no estoy percibiendo nada.",
       "'Think' tiene dos caras: para dar una opinión usa la forma simple ('I think it's great'); para plantearte algo usa la continua ('I'm thinking about it')."
     ],
     "dailyWords": [
-      { "w": "behaviour", "ipa": "/bɪˈheɪvjər/", "aprox": "bijéivior", "def": "comportamiento", "ex": "His behaviour was strange yesterday." },
-      { "w": "to consider", "ipa": "/kənˈsɪdər/", "aprox": "kensíder", "def": "considerar, plantearse", "ex": "I'm considering a change of job." }
+      {
+        "w": "behaviour",
+        "ipa": "/bɪˈheɪvjər/",
+        "aprox": "bijéivior",
+        "def": "comportamiento",
+        "ex": "His behaviour was strange yesterday."
+      },
+      {
+        "w": "to consider",
+        "ipa": "/kənˈsɪdər/",
+        "aprox": "kensíder",
+        "def": "considerar, plantearse",
+        "ex": "I'm considering a change of job."
+      }
     ]
   },
   "5": {
     "title": "Past Simple (I did)",
     "topic": "Present & Past",
+    "level": "A1",
     "explain": [
       {
         "head": "Verbos regulares: -ed",
@@ -621,16 +874,52 @@ export const presentAndPastUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Regular verbs", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "verb + ed", "role": "verb" }, { "text": "object", "role": "object" }
-      ] },
-      { "label": "Question / Negative", "chips": [
-        { "text": "Did/Didn't", "role": "verb" }, { "text": "subject", "role": "subject" }, { "text": "base verb", "role": "object" }
-      ] }
+      {
+        "label": "Regular verbs",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "verb + ed",
+            "role": "verb"
+          },
+          {
+            "text": "object",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Question / Negative",
+        "chips": [
+          {
+            "text": "Did/Didn't",
+            "role": "verb"
+          },
+          {
+            "text": "subject",
+            "role": "subject"
+          },
+          {
+            "text": "base verb",
+            "role": "object"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "Regular verb", "example": "I worked late last night.", "highlight": "worked" },
-      "right": { "label": "Irregular verb", "example": "I went to bed very late.", "highlight": "went" },
+      "left": {
+        "label": "Regular verb",
+        "example": "I worked late last night.",
+        "highlight": "worked"
+      },
+      "right": {
+        "label": "Irregular verb",
+        "example": "I went to bed very late.",
+        "highlight": "went"
+      },
       "caption": "Regular verbs simply add -ed. Irregular verbs change unpredictably and must be memorized individually."
     },
     "readingText": {
@@ -643,13 +932,26 @@ export const presentAndPastUnits: Record<number, Unit> = {
       "Después de 'did/didn't', el verbo principal SIEMPRE va en infinitivo sin 'to': 'did you go?', nunca 'did you went?'."
     ],
     "dailyWords": [
-      { "w": "to arrive", "ipa": "/əˈraɪv/", "aprox": "aráiv", "def": "llegar", "ex": "The train arrived late again." },
-      { "w": "in the end", "ipa": "/ɪn ðə end/", "aprox": "in de énd", "def": "al final, a fin de cuentas", "ex": "In the end, we decided to stay home." }
+      {
+        "w": "to arrive",
+        "ipa": "/əˈraɪv/",
+        "aprox": "aráiv",
+        "def": "llegar",
+        "ex": "The train arrived late again."
+      },
+      {
+        "w": "in the end",
+        "ipa": "/ɪn ðə end/",
+        "aprox": "in de énd",
+        "def": "al final, a fin de cuentas",
+        "ex": "In the end, we decided to stay home."
+      }
     ]
   },
   "6": {
     "title": "Past Continuous (I was doing)",
     "topic": "Present & Past",
+    "level": "A2",
     "explain": [
       {
         "head": "Forma",
@@ -753,16 +1055,52 @@ export const presentAndPastUnits: Record<number, Unit> = {
       }
     ],
     "syntaxChips": [
-      { "label": "Action in progress", "chips": [
-        { "text": "Subject", "role": "subject" }, { "text": "was/were", "role": "verb" }, { "text": "verb-ing", "role": "object" }
-      ] },
-      { "label": "Interrupted action", "chips": [
-        { "text": "while/when", "role": "connector" }, { "text": "was/were + -ing", "role": "verb" }, { "text": "past simple", "role": "verb" }
-      ] }
+      {
+        "label": "Action in progress",
+        "chips": [
+          {
+            "text": "Subject",
+            "role": "subject"
+          },
+          {
+            "text": "was/were",
+            "role": "verb"
+          },
+          {
+            "text": "verb-ing",
+            "role": "object"
+          }
+        ]
+      },
+      {
+        "label": "Interrupted action",
+        "chips": [
+          {
+            "text": "while/when",
+            "role": "connector"
+          },
+          {
+            "text": "was/were + -ing",
+            "role": "verb"
+          },
+          {
+            "text": "past simple",
+            "role": "verb"
+          }
+        ]
+      }
     ],
     "contrastCard": {
-      "left": { "label": "Past continuous — in progress", "example": "I was watching TV...", "highlight": "was watching" },
-      "right": { "label": "Past simple — interruption", "example": "...when the phone rang.", "highlight": "rang" },
+      "left": {
+        "label": "Past continuous — in progress",
+        "example": "I was watching TV...",
+        "highlight": "was watching"
+      },
+      "right": {
+        "label": "Past simple — interruption",
+        "example": "...when the phone rang.",
+        "highlight": "rang"
+      },
       "caption": "The longer background action takes the past continuous; the shorter action that interrupts it takes the past simple."
     },
     "readingText": {
@@ -775,8 +1113,20 @@ export const presentAndPastUnits: Record<number, Unit> = {
       "'While' suele introducir el pasado continuo (la acción en progreso), y 'when' suele introducir la interrupción en pasado simple."
     ],
     "dailyWords": [
-      { "w": "suddenly", "ipa": "/ˈsʌdənli/", "aprox": "sádenli", "def": "de repente", "ex": "Suddenly, the lights went out." },
-      { "w": "meanwhile", "ipa": "/ˈmiːnwaɪl/", "aprox": "míinuail", "def": "mientras tanto", "ex": "Meanwhile, my sister was watching TV." }
+      {
+        "w": "suddenly",
+        "ipa": "/ˈsʌdənli/",
+        "aprox": "sádenli",
+        "def": "de repente",
+        "ex": "Suddenly, the lights went out."
+      },
+      {
+        "w": "meanwhile",
+        "ipa": "/ˈmiːnwaɪl/",
+        "aprox": "míinuail",
+        "def": "mientras tanto",
+        "ex": "Meanwhile, my sister was watching TV."
+      }
     ]
   }
 };

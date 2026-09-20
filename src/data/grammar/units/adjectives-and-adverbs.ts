@@ -4,6 +4,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "98": {
     "title": "Adjectives -ing and -ed",
     "topic": "Adjectives & Adverbs",
+    "level": "A2",
     "explain": [
       {
         "head": "Adjetivos en -ING: la causa",
@@ -107,6 +108,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "99": {
     "title": "Adjectives: Order",
     "topic": "Adjectives & Adverbs",
+    "level": "B1",
     "explain": [
       {
         "head": "Orden de los adjetivos",
@@ -158,6 +160,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "100": {
     "title": "Adjectives and Adverbs 1",
     "topic": "Adjectives & Adverbs",
+    "level": "A2",
     "explain": [
       {
         "head": "Los adjetivos describen sustantivos",
@@ -214,6 +217,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "101": {
     "title": "Adjectives and Adverbs 2 (fast/hard/hardly)",
     "topic": "Adjectives & Adverbs",
+    "level": "B1",
     "explain": [
       {
         "head": "Palabras iguales como adjetivo y adverbio",
@@ -265,6 +269,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "102": {
     "title": "So and Such",
     "topic": "Adjectives & Adverbs",
+    "level": "B1",
     "explain": [
       {
         "head": "So + adjetivo/adverbio",
@@ -316,6 +321,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "103": {
     "title": "Enough and Too",
     "topic": "Adjectives & Adverbs",
+    "level": "A2",
     "explain": [
       {
         "head": "Too: demasiado",
@@ -364,18 +370,47 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "user", "text": "Can you taste the soup? I think it might be too salty.", "translation": "¿Puedes probar la sopa? Creo que podría estar demasiado salada." },
-      { "speaker": "other", "text": "Hmm, it's not too salty, but it's not hot enough yet.", "translation": "Mmm, no está demasiado salada, pero todavía no está suficientemente caliente." },
-      { "speaker": "user", "text": "Okay, I'll leave it on the stove a bit longer. Is the rice ready?", "translation": "Bueno, la dejaré en la estufa un poco más. ¿Está lista el arroz?" },
-      { "speaker": "other", "text": "Almost — it's too hard to eat right now, it needs five more minutes.", "translation": "Casi — está demasiado dura para comer ahora mismo, necesita cinco minutos más." },
-      { "speaker": "user", "text": "Good. Do we have enough bread for everyone?", "translation": "Bien. ¿Tenemos suficiente pan para todos?" },
-      { "speaker": "other", "text": "I think so, but I'm not sure it's fresh enough to serve. Let me check.", "translation": "Creo que sí, pero no estoy seguro de que esté suficientemente fresco para servirlo. Déjame revisar." },
-      { "speaker": "user", "text": "It smells fine. I think we're finally ready to eat!", "translation": "Huele bien. ¡Creo que por fin estamos listos para comer!" }
+      {
+        "speaker": "user",
+        "text": "Can you taste the soup? I think it might be too salty.",
+        "translation": "¿Puedes probar la sopa? Creo que podría estar demasiado salada."
+      },
+      {
+        "speaker": "other",
+        "text": "Hmm, it's not too salty, but it's not hot enough yet.",
+        "translation": "Mmm, no está demasiado salada, pero todavía no está suficientemente caliente."
+      },
+      {
+        "speaker": "user",
+        "text": "Okay, I'll leave it on the stove a bit longer. Is the rice ready?",
+        "translation": "Bueno, la dejaré en la estufa un poco más. ¿Está lista el arroz?"
+      },
+      {
+        "speaker": "other",
+        "text": "Almost — it's too hard to eat right now, it needs five more minutes.",
+        "translation": "Casi — está demasiado dura para comer ahora mismo, necesita cinco minutos más."
+      },
+      {
+        "speaker": "user",
+        "text": "Good. Do we have enough bread for everyone?",
+        "translation": "Bien. ¿Tenemos suficiente pan para todos?"
+      },
+      {
+        "speaker": "other",
+        "text": "I think so, but I'm not sure it's fresh enough to serve. Let me check.",
+        "translation": "Creo que sí, pero no estoy seguro de que esté suficientemente fresco para servirlo. Déjame revisar."
+      },
+      {
+        "speaker": "user",
+        "text": "It smells fine. I think we're finally ready to eat!",
+        "translation": "Huele bien. ¡Creo que por fin estamos listos para comer!"
+      }
     ]
   },
   "104": {
     "title": "Quite, Pretty, Rather and Fairly",
     "topic": "Adjectives & Adverbs",
+    "level": "B1",
     "explain": [
       {
         "head": "Fairly: moderadamente",
@@ -437,6 +472,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "105": {
     "title": "Comparative 1 (bigger / more expensive)",
     "topic": "Adjectives & Adverbs",
+    "level": "A1",
     "explain": [
       {
         "head": "Adjetivos cortos: añade -er",
@@ -543,6 +579,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "106": {
     "title": "Comparative 2 (much better / getting better)",
     "topic": "Adjectives & Adverbs",
+    "level": "A2",
     "explain": [
       {
         "head": "Much/far/a lot: reforzar el comparativo",
@@ -599,6 +636,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "107": {
     "title": "Comparative 3 (as … as)",
     "topic": "Adjectives & Adverbs",
+    "level": "B1",
     "explain": [
       {
         "head": "As...as: igual grado",
@@ -647,18 +685,47 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "user", "text": "Have you met my cousin Daniel? He's as tall as my dad now!", "translation": "¿Conociste a mi primo Daniel? ¡Ahora es tan alto como mi papá!" },
-      { "speaker": "other", "text": "Really? Is he as old as you?", "translation": "¿En serio? ¿Es tan mayor como tú?" },
-      { "speaker": "user", "text": "No, he's younger, but he's not as shy as he used to be.", "translation": "No, es menor, pero ya no es tan tímido como antes." },
-      { "speaker": "other", "text": "That's funny, my sister is the same. She's as confident as our older brother now.", "translation": "Qué gracioso, mi hermana es igual. Ahora es tan segura de sí misma como nuestro hermano mayor." },
-      { "speaker": "user", "text": "Their personalities are similar to each other's, actually.", "translation": "Sus personalidades son bastante parecidas, la verdad." },
-      { "speaker": "other", "text": "True, but Daniel isn't as talkative as your sister, is he?", "translation": "Cierto, pero Daniel no es tan hablador como tu hermana, ¿verdad?" },
-      { "speaker": "user", "text": "Ha, no one is as talkative as her!", "translation": "Ja, ¡nadie es tan hablador como ella!" }
+      {
+        "speaker": "user",
+        "text": "Have you met my cousin Daniel? He's as tall as my dad now!",
+        "translation": "¿Conociste a mi primo Daniel? ¡Ahora es tan alto como mi papá!"
+      },
+      {
+        "speaker": "other",
+        "text": "Really? Is he as old as you?",
+        "translation": "¿En serio? ¿Es tan mayor como tú?"
+      },
+      {
+        "speaker": "user",
+        "text": "No, he's younger, but he's not as shy as he used to be.",
+        "translation": "No, es menor, pero ya no es tan tímido como antes."
+      },
+      {
+        "speaker": "other",
+        "text": "That's funny, my sister is the same. She's as confident as our older brother now.",
+        "translation": "Qué gracioso, mi hermana es igual. Ahora es tan segura de sí misma como nuestro hermano mayor."
+      },
+      {
+        "speaker": "user",
+        "text": "Their personalities are similar to each other's, actually.",
+        "translation": "Sus personalidades son bastante parecidas, la verdad."
+      },
+      {
+        "speaker": "other",
+        "text": "True, but Daniel isn't as talkative as your sister, is he?",
+        "translation": "Cierto, pero Daniel no es tan hablador como tu hermana, ¿verdad?"
+      },
+      {
+        "speaker": "user",
+        "text": "Ha, no one is as talkative as her!",
+        "translation": "Ja, ¡nadie es tan hablador como ella!"
+      }
     ]
   },
   "108": {
     "title": "Superlative (the biggest / the most beautiful)",
     "topic": "Adjectives & Adverbs",
+    "level": "A2",
     "explain": [
       {
         "head": "Superlativos: adjetivos cortos",
@@ -720,6 +787,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "109": {
     "title": "Word Order 1",
     "topic": "Adjectives & Adverbs",
+    "level": "B1",
     "explain": [
       {
         "head": "Orden básico: S + V + O",
@@ -765,6 +833,7 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
   "110": {
     "title": "Word Order 2 (adverbs with the verb)",
     "topic": "Adjectives & Adverbs",
+    "level": "B2",
     "explain": [
       {
         "head": "Adverbios de frecuencia: antes del verbo principal",
@@ -813,18 +882,47 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "What's your morning routine like on weekdays?", "translation": "¿Cómo es tu rutina matutina entre semana?" },
-      { "speaker": "user", "text": "I usually wake up at six, but I'm always tired at first.", "translation": "Normalmente me despierto a las seis, pero siempre estoy cansado al principio." },
-      { "speaker": "other", "text": "Do you always have breakfast before work?", "translation": "¿Siempre desayunas antes del trabajo?" },
-      { "speaker": "user", "text": "I usually do, but sometimes I'm too late and I don't usually eat much.", "translation": "Normalmente sí, pero a veces se me hace tarde y normalmente no como mucho." },
-      { "speaker": "other", "text": "I'm never hungry that early, honestly.", "translation": "Sinceramente, nunca tengo hambre tan temprano." },
-      { "speaker": "user", "text": "Really? I'm often starving by nine o'clock.", "translation": "¿En serio? Seguido tengo mucha hambre para las nueve." },
-      { "speaker": "other", "text": "That's funny — I've never noticed that about you before.", "translation": "Qué gracioso — nunca me había fijado en eso antes." }
+      {
+        "speaker": "other",
+        "text": "What's your morning routine like on weekdays?",
+        "translation": "¿Cómo es tu rutina matutina entre semana?"
+      },
+      {
+        "speaker": "user",
+        "text": "I usually wake up at six, but I'm always tired at first.",
+        "translation": "Normalmente me despierto a las seis, pero siempre estoy cansado al principio."
+      },
+      {
+        "speaker": "other",
+        "text": "Do you always have breakfast before work?",
+        "translation": "¿Siempre desayunas antes del trabajo?"
+      },
+      {
+        "speaker": "user",
+        "text": "I usually do, but sometimes I'm too late and I don't usually eat much.",
+        "translation": "Normalmente sí, pero a veces se me hace tarde y normalmente no como mucho."
+      },
+      {
+        "speaker": "other",
+        "text": "I'm never hungry that early, honestly.",
+        "translation": "Sinceramente, nunca tengo hambre tan temprano."
+      },
+      {
+        "speaker": "user",
+        "text": "Really? I'm often starving by nine o'clock.",
+        "translation": "¿En serio? Seguido tengo mucha hambre para las nueve."
+      },
+      {
+        "speaker": "other",
+        "text": "That's funny — I've never noticed that about you before.",
+        "translation": "Qué gracioso — nunca me había fijado en eso antes."
+      }
     ]
   },
   "111": {
     "title": "Still / Any More / Yet / Already",
     "topic": "Adjectives & Adverbs",
+    "level": "B1",
     "explain": [
       {
         "head": "Still: sigue pasando",
@@ -878,18 +976,47 @@ export const adjectivesAndAdverbsUnits: Record<number, Unit> = {
       }
     ],
     "simulatedChat": [
-      { "speaker": "other", "text": "Have you washed the dishes yet?", "translation": "¿Ya lavaste los platos?" },
-      { "speaker": "user", "text": "Yes, I've already washed them, and I've already taken out the trash too.", "translation": "Sí, ya los lavé, y ya saqué la basura también." },
-      { "speaker": "other", "text": "Great. Is Marco still cleaning his room?", "translation": "Genial. ¿Marco todavía está limpiando su cuarto?" },
-      { "speaker": "user", "text": "He's still doing it — he's been in there for two hours!", "translation": "Todavía lo está haciendo — ¡lleva dos horas ahí adentro!" },
-      { "speaker": "other", "text": "Wow. Doesn't he live with his girlfriend any more?", "translation": "Vaya. ¿Ya no vive con su novia?" },
-      { "speaker": "user", "text": "No, they broke up, so he doesn't live there any more. He moved back here.", "translation": "No, terminaron, así que ya no vive ahí. Se regresó aquí." },
-      { "speaker": "other", "text": "I see. Well, I haven't finished my homework yet, so I should go study.", "translation": "Ya veo. Bueno, todavía no he terminado mi tarea, así que debería ir a estudiar." }
+      {
+        "speaker": "other",
+        "text": "Have you washed the dishes yet?",
+        "translation": "¿Ya lavaste los platos?"
+      },
+      {
+        "speaker": "user",
+        "text": "Yes, I've already washed them, and I've already taken out the trash too.",
+        "translation": "Sí, ya los lavé, y ya saqué la basura también."
+      },
+      {
+        "speaker": "other",
+        "text": "Great. Is Marco still cleaning his room?",
+        "translation": "Genial. ¿Marco todavía está limpiando su cuarto?"
+      },
+      {
+        "speaker": "user",
+        "text": "He's still doing it — he's been in there for two hours!",
+        "translation": "Todavía lo está haciendo — ¡lleva dos horas ahí adentro!"
+      },
+      {
+        "speaker": "other",
+        "text": "Wow. Doesn't he live with his girlfriend any more?",
+        "translation": "Vaya. ¿Ya no vive con su novia?"
+      },
+      {
+        "speaker": "user",
+        "text": "No, they broke up, so he doesn't live there any more. He moved back here.",
+        "translation": "No, terminaron, así que ya no vive ahí. Se regresó aquí."
+      },
+      {
+        "speaker": "other",
+        "text": "I see. Well, I haven't finished my homework yet, so I should go study.",
+        "translation": "Ya veo. Bueno, todavía no he terminado mi tarea, así que debería ir a estudiar."
+      }
     ]
   },
   "112": {
     "title": "Even",
     "topic": "Adjectives & Adverbs",
+    "level": "B2",
     "explain": [
       {
         "head": "Even: lo más sorprendente",

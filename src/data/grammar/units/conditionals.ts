@@ -4,6 +4,7 @@ export const conditionalsUnits: Record<number, Unit> = {
   "38": {
     "title": "If I Do… and If I Did… (Conditionals 1 & 2)",
     "topic": "Conditionals",
+    "level": "B1",
     "explain": [
       {
         "head": "1er condicional: futuro real",
@@ -90,6 +91,7 @@ export const conditionalsUnits: Record<number, Unit> = {
   "39": {
     "title": "If I Knew… / I Wish I Knew…",
     "topic": "Conditionals",
+    "level": "B1",
     "explain": [
       {
         "head": "Wish + pasado simple: deseo presente",
@@ -157,6 +159,7 @@ export const conditionalsUnits: Record<number, Unit> = {
   "40": {
     "title": "If I Had Known… / I Wish I Had Known…",
     "topic": "Conditionals",
+    "level": "B2",
     "explain": [
       {
         "head": "3er condicional: pasado imaginario",
@@ -219,6 +222,7 @@ export const conditionalsUnits: Record<number, Unit> = {
   "41": {
     "title": "Wish",
     "topic": "Conditionals",
+    "level": "B2",
     "explain": [
       {
         "head": "Wish: resumen de usos",

@@ -3,6 +3,7 @@ import { createContext, ReactNode, useCallback, useContext, useEffect, useMemo, 
 import { getSrsEntry, rateSrs } from '@/lib/flashcards';
 import { applyDailyStreak } from '@/lib/progress';
 import { cargarProgreso, cargarSrs, guardarProgreso, guardarSrs } from '@/lib/storage';
+import { CefrLevel } from '@/types/grammar';
 import { Progress, SrsMap } from '@/types/progress';
 
 interface ProgressContextValue extends Progress {
@@ -12,6 +13,7 @@ interface ProgressContextValue extends Progress {
   registerQuizAnswer: (correct: boolean) => void;
   registerFlashcardFlip: () => void;
   rateFlashcard: (cardId: string, rating: 0 | 1 | 2) => void;
+  setUserLevel: (level: CefrLevel) => void;
 }
 
 const ProgressContext = createContext<ProgressContextValue | null>(null);
@@ -25,6 +27,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     fcReviewed: 0,
     streak: 0,
     lastDate: '',
+    userLevel: 'A1',
   });
   const [srs, setSrs] = useState<SrsMap>({});
   const [loading, setLoading] = useState(true);
@@ -88,6 +91,13 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     [srs, progress, persist]
   );
 
+  const setUserLevel = useCallback(
+    (level: CefrLevel) => {
+      persist({ ...progress, userLevel: level });
+    },
+    [progress, persist]
+  );
+
   const value = useMemo<ProgressContextValue>(
     () => ({
       ...progress,
@@ -97,8 +107,18 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       registerQuizAnswer,
       registerFlashcardFlip,
       rateFlashcard,
+      setUserLevel,
     }),
-    [progress, loading, srs, markUnitDone, registerQuizAnswer, registerFlashcardFlip, rateFlashcard]
+    [
+      progress,
+      loading,
+      srs,
+      markUnitDone,
+      registerQuizAnswer,
+      registerFlashcardFlip,
+      rateFlashcard,
+      setUserLevel,
+    ]
   );
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>;
