@@ -4,17 +4,20 @@ import { Platform } from 'react-native';
 
 export const Colors = {
   light: {
-    text: '#0F1E20',
-    textSecondary: '#5B6B6D',
-    background: '#F5FAF9',
-    /** Fondo alternativo para el Modo TDAH: más cálido y con menos brillo. */
-    focusBackground: '#F2EDE4',
+    text: '#1B1B1B',
+    textSecondary: '#6E6E6E',
+    background: '#F4F4F3',
+    /** Fondo alternativo para el Modo TDAH: gris aún más neutro, sin brillo. */
+    focusBackground: '#ECECEA',
     backgroundElement: '#FFFFFF',
-    backgroundSelected: '#DFF3F0',
-    border: '#DCEAE8',
-    primary: '#0D9488',
-    primaryMuted: '#E1F5F2',
+    backgroundSelected: '#E7E7E6',
+    border: '#D8D8D7',
+    primary: '#2B2B2B',
+    primaryMuted: '#E3E3E2',
     onPrimary: '#FFFFFF',
+    /** Único color no-gris de la paleta: resalta lo relacionado al Modo TDAH. */
+    focusAccent: '#B45309',
+    focusAccentMuted: '#FDECD3',
     success: '#0FA968',
     successMuted: '#E3F8EE',
     warning: '#E08A00',
@@ -23,17 +26,20 @@ export const Colors = {
     dangerMuted: '#FDE8EB',
   },
   dark: {
-    text: '#EAF6F4',
-    textSecondary: '#9FB4B2',
-    background: '#0C1615',
-    /** Fondo alternativo para el Modo TDAH: más cálido y con menos contraste. */
-    focusBackground: '#15110D',
-    backgroundElement: '#152220',
-    backgroundSelected: '#1E3330',
-    border: '#233A37',
-    primary: '#2DD4BF',
-    primaryMuted: '#153733',
-    onPrimary: '#04302A',
+    text: '#EDEDED',
+    textSecondary: '#9C9C9C',
+    background: '#121212',
+    /** Fondo alternativo para el Modo TDAH: casi negro, mínimo brillo. */
+    focusBackground: '#0D0D0D',
+    backgroundElement: '#1D1D1D',
+    backgroundSelected: '#292929',
+    border: '#333333',
+    primary: '#E9E9E9',
+    primaryMuted: '#2E2E2E',
+    onPrimary: '#141414',
+    /** Único color no-gris de la paleta: resalta lo relacionado al Modo TDAH. */
+    focusAccent: '#FBBF24',
+    focusAccentMuted: '#3A2A0E',
     success: '#3DDC97',
     successMuted: '#123829',
     warning: '#FFB74D',

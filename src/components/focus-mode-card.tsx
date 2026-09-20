@@ -14,7 +14,7 @@ export function FocusModeCard() {
     <Card>
       <View style={styles.row}>
         <View style={styles.text}>
-          <ThemedText type="cardTitle">⚡ Modo TDAH</ThemedText>
+          <ThemedText type="cardTitle" themeColor="focusAccent">⚡ Modo TDAH</ThemedText>
           <ThemedText type="small" themeColor="textSecondary">
             Menos opciones a la vez, un temporizador de sesión corta y menos
             distracciones en pantalla.
@@ -23,7 +23,7 @@ export function FocusModeCard() {
         <Switch
           value={focusModeEnabled}
           onValueChange={setFocusModeEnabled}
-          trackColor={{ true: theme.primary, false: theme.backgroundSelected }}
+          trackColor={{ true: theme.focusAccent, false: theme.backgroundSelected }}
         />
       </View>
     </Card>

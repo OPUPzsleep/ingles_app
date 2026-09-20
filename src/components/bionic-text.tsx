@@ -30,7 +30,7 @@ export function BionicText({ text, themeColor = 'text', style }: BionicTextProps
         const { bold, rest } = splitWord(token);
         return (
           <Text key={i}>
-            <Text style={styles.bold}>{bold}</Text>
+            <Text style={[styles.bold, { color: theme.focusAccent }]}>{bold}</Text>
             {rest}
           </Text>
         );
