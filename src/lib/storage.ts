@@ -21,6 +21,8 @@ const DEFAULT_SETTINGS: Settings = {
   reminderEnabled: false,
   reminderNotificationId: null,
   focusModeEnabled: false,
+  textScale: 1,
+  themeName: 'auto',
 };
 
 export async function cargarProgreso(): Promise<Progress> {

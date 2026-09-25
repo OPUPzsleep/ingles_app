@@ -6,6 +6,7 @@ import {
   pedirPermisos,
   programarRecordatorioDiario,
 } from '@/lib/notifications';
+import type { ThemeName } from '@/constants/theme';
 import { cargarAjustes, guardarAjustes } from '@/lib/storage';
 import { Settings } from '@/types/progress';
 
@@ -15,7 +16,15 @@ interface SettingsContextValue {
   setReminderEnabled: (enabled: boolean) => Promise<boolean>;
   focusModeEnabled: boolean;
   setFocusModeEnabled: (enabled: boolean) => void;
+  textScale: number;
+  setTextScale: (scale: number) => void;
+  themeName: ThemeName;
+  setThemeName: (name: ThemeName) => void;
 }
+
+export const TEXT_SCALE_MIN = 0.85;
+export const TEXT_SCALE_MAX = 1.6;
+export const TEXT_SCALE_STEP = 0.15;
 
 const SettingsContext = createContext<SettingsContextValue | null>(null);
 
@@ -24,6 +33,8 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     reminderEnabled: false,
     reminderNotificationId: null,
     focusModeEnabled: false,
+    textScale: 1,
+    themeName: 'auto',
   });
   const [loading, setLoading] = useState(true);
 
@@ -82,6 +93,25 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     [settings]
   );
 
+  const setTextScale = useCallback(
+    (scale: number) => {
+      const clamped = Math.round(Math.min(TEXT_SCALE_MAX, Math.max(TEXT_SCALE_MIN, scale)) * 100) / 100;
+      const next: Settings = { ...settings, textScale: clamped };
+      setSettings(next);
+      guardarAjustes(next);
+    },
+    [settings]
+  );
+
+  const setThemeName = useCallback(
+    (name: ThemeName) => {
+      const next: Settings = { ...settings, themeName: name };
+      setSettings(next);
+      guardarAjustes(next);
+    },
+    [settings]
+  );
+
   const value = useMemo<SettingsContextValue>(
     () => ({
       loading,
@@ -89,11 +119,40 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
       setReminderEnabled,
       focusModeEnabled: settings.focusModeEnabled,
       setFocusModeEnabled,
+      textScale: settings.textScale,
+      setTextScale,
+      themeName: settings.themeName,
+      setThemeName,
     }),
-    [loading, settings.reminderEnabled, setReminderEnabled, settings.focusModeEnabled, setFocusModeEnabled]
+    [
+      settings.themeName,
+      setThemeName,
+      loading,
+      settings.reminderEnabled,
+      setReminderEnabled,
+      settings.focusModeEnabled,
+      setFocusModeEnabled,
+      settings.textScale,
+      setTextScale,
+    ]
   );
 
   return <SettingsContext.Provider value={value}>{children}</SettingsContext.Provider>;
+}
+
+/** Tema elegido; 'auto' si se usa fuera del provider. */
+export function useThemeName(): ThemeName {
+  return useContext(SettingsContext)?.themeName ?? 'auto';
+}
+
+/** Modo TDAH activo; false si se usa fuera del provider. */
+export function useFocusMode(): boolean {
+  return useContext(SettingsContext)?.focusModeEnabled ?? false;
+}
+
+/** Escala de texto actual; 1 si se usa fuera del provider. */
+export function useTextScale() {
+  return useContext(SettingsContext)?.textScale ?? 1;
 }
 
 export function useSettings() {

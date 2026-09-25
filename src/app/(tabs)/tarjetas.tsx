@@ -13,7 +13,7 @@ export default function TarjetasScreen() {
         <ScrollView contentContainerStyle={styles.content}>
           <ThemedText type="subtitle">Tarjetas</ThemedText>
           <ThemedText themeColor="textSecondary" style={styles.subtitle}>
-            Repaso espaciado
+            300 frases del día a día · presente, pasado y futuro
           </ThemedText>
           <FlashcardView />
         </ScrollView>
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    padding: Spacing.four,
+    padding: Spacing.three,
     paddingBottom: BottomTabInset + Spacing.four,
     maxWidth: MaxContentWidth,
     alignSelf: 'center',

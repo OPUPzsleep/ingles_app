@@ -1,6 +1,7 @@
 import { Text, TextStyle, StyleProp } from 'react-native';
 
 import type { ThemeColor } from '@/constants/theme';
+import { useScaledTextStyle } from '@/hooks/use-scaled-text-style';
 import { useTheme } from '@/hooks/use-theme';
 
 function splitWord(word: string): { bold: string; rest: string } {
@@ -22,9 +23,10 @@ interface BionicTextProps {
 export function BionicText({ text, themeColor = 'text', style }: BionicTextProps) {
   const theme = useTheme();
   const tokens = text.split(/(\s+)/);
+  const scaledStyle = useScaledTextStyle([{ color: theme[themeColor] }, style]);
 
   return (
-    <Text style={[{ color: theme[themeColor] }, style]}>
+    <Text style={scaledStyle}>
       {tokens.map((token, i) => {
         if (token === '' || /^\s+$/.test(token)) return token;
         const { bold, rest } = splitWord(token);

@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    padding: Spacing.four,
+    padding: Spacing.three,
     gap: Spacing.three,
     maxWidth: MaxContentWidth,
     alignSelf: 'center',

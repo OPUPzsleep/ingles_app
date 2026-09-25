@@ -3,17 +3,27 @@
  * https://docs.expo.dev/guides/color-schemes/
  */
 
-import { Colors } from '@/constants/theme';
-import { useSettings } from '@/context/settings-context';
+import { Palette, Palettes } from '@/constants/theme';
+import { useFocusMode, useThemeName } from '@/context/settings-context';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
-export function useTheme() {
+/** Tema resuelto: paleta de colores y si es oscuro (para la barra de estado y la navegación). */
+export function useResolvedTheme(): { colors: Palette; dark: boolean } {
   const scheme = useColorScheme();
-  const theme = scheme === 'unspecified' ? 'light' : scheme;
-  const { focusModeEnabled } = useSettings();
+  const themeName = useThemeName();
+  const focusModeEnabled = useFocusMode();
 
-  const base = Colors[theme];
-  // En Modo TDAH usamos un fondo más cálido y de menor contraste en toda la
-  // app, sin tocar los demás colores (tarjetas, texto, etc.).
-  return focusModeEnabled ? { ...base, background: base.focusBackground } : base;
+  const name = themeName === 'auto' ? (scheme === 'dark' ? 'oscuro' : 'claro') : themeName;
+  const { colors, dark } = Palettes[name];
+
+  // En Modo TDAH usamos un fondo de menor contraste en toda la app,
+  // sin tocar los demás colores (tarjetas, texto, etc.).
+  return {
+    colors: focusModeEnabled ? { ...colors, background: colors.focusBackground } : colors,
+    dark,
+  };
+}
+
+export function useTheme(): Palette {
+  return useResolvedTheme().colors;
 }

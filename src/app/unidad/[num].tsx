@@ -6,19 +6,17 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { ChatSimulator } from '@/components/chat-simulator';
 import { ContrastCard } from '@/components/contrast-card';
 import { ExplainBlock } from '@/components/explain-block';
-import { FocusTimer } from '@/components/focus-timer';
 import { GrammarFormula } from '@/components/grammar-formula';
 import { PronunciationCard } from '@/components/pronunciation-card';
+import { QuickReviewItem } from '@/components/quick-review-item';
 import { ReadingStory } from '@/components/reading-story';
 import { ReferenceTable } from '@/components/reference-table';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { VocabCard } from '@/components/vocab-card';
 import { MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
-import { useSettings } from '@/context/settings-context';
 import { ALL_UNIT_TITLES } from '@/data/grammar/unit-titles';
 import { useTheme } from '@/hooks/use-theme';
 import { getPronunVocab, getUnit } from '@/lib/grammar';
@@ -41,7 +39,6 @@ export default function UnidadScreen() {
   const router = useRouter();
   const theme = useTheme();
   const { doneUnits, markUnitDone } = useProgress();
-  const { focusModeEnabled } = useSettings();
   const [tab, setTab] = useState<Tab>('teoria');
 
   const unit = getUnit(num);
@@ -75,7 +72,7 @@ export default function UnidadScreen() {
   }
 
   const hasLectura = !!unit.simulatedChat?.length || !!unit.readingText || !!pv?.tips.length;
-  const hasConsejos = !!unit.tips?.length || !!unit.dailyWords?.length || !!pv?.vocab.length;
+  const hasConsejos = !!unit.tips?.length || !!unit.flashcards?.length;
 
   return (
     <ThemedView style={styles.container}>
@@ -92,7 +89,6 @@ export default function UnidadScreen() {
             </Button>
           </Card>
 
-          {focusModeEnabled && <FocusTimer />}
 
           <View style={styles.tabRow}>
             <Button
@@ -117,15 +113,12 @@ export default function UnidadScreen() {
 
           {tab === 'teoria' && (
             <>
-              <Card>
-                <ThemedText type="label" themeColor="primary">
-                  📖 Teoría
-                </ThemedText>
+              <View style={styles.theory}>
                 {unit.explain.map((block, i) => (
                   <ExplainBlock key={i} block={block} />
                 ))}
                 {!!unit.syntaxChips?.length && <GrammarFormula formulas={unit.syntaxChips} />}
-              </Card>
+              </View>
 
               {unit.contrastCard && (
                 <Card>
@@ -201,29 +194,17 @@ export default function UnidadScreen() {
                   </Card>
                 )}
 
-                {!!unit.dailyWords?.length && (
+                {!!unit.flashcards?.length && (
                   <Card>
                     <ThemedText type="label" themeColor="primary">
-                      🗓️ Palabras del día a día
+                      🧠 Repaso rápido
                     </ThemedText>
-                    <View style={styles.vocabGrid}>
-                      {unit.dailyWords.map((entry, i) => (
-                        <VocabCard key={i} entry={entry} />
-                      ))}
-                    </View>
-                  </Card>
-                )}
-
-                {!!pv?.vocab.length && (
-                  <Card>
-                    <ThemedText type="label" themeColor="primary">
-                      📝 Vocabulario frecuente
+                    <ThemedText type="small" themeColor="textSecondary">
+                      Piensa la respuesta y toca cada pregunta para comprobarla.
                     </ThemedText>
-                    <View style={styles.vocabGrid}>
-                      {pv.vocab.map((entry, i) => (
-                        <VocabCard key={i} entry={entry} />
-                      ))}
-                    </View>
+                    {unit.flashcards.map((fc, i) => (
+                      <QuickReviewItem key={i} question={fc.front} answer={fc.back} />
+                    ))}
                   </Card>
                 )}
               </>
@@ -259,7 +240,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    padding: Spacing.four,
+    padding: Spacing.three,
     gap: Spacing.three,
     maxWidth: MaxContentWidth,
     alignSelf: 'center',
@@ -272,8 +253,9 @@ const styles = StyleSheet.create({
   tabButton: {
     flex: 1,
   },
-  vocabGrid: {
-    gap: Spacing.two,
+  theory: {
+    gap: Spacing.four,
+    paddingVertical: Spacing.two,
   },
   tipBox: {
     borderRadius: Radius.small,

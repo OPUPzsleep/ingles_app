@@ -1,31 +1,49 @@
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
-import { useColorScheme } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { ReactNode, useMemo } from 'react';
 
-import { Colors } from '@/constants/theme';
+import { TextSizeControl } from '@/components/text-size-control';
 import { ProgressProvider } from '@/context/progress-context';
 import { SettingsProvider } from '@/context/settings-context';
+import { useResolvedTheme } from '@/hooks/use-theme';
 
-const LightTheme = {
-  ...DefaultTheme,
-  colors: { ...DefaultTheme.colors, primary: Colors.light.primary, background: Colors.light.background },
-};
-const DarkNavTheme = {
-  ...DarkTheme,
-  colors: { ...DarkTheme.colors, primary: Colors.dark.primary, background: Colors.dark.background },
-};
+/** Aplica el tema elegido a la navegación (cabeceras, fondos) y a la barra de estado. */
+function NavigationTheme({ children }: { children: ReactNode }) {
+  const { colors, dark } = useResolvedTheme();
 
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
+  const navTheme = useMemo(() => {
+    const base = dark ? DarkTheme : DefaultTheme;
+    return {
+      ...base,
+      colors: {
+        ...base.colors,
+        primary: colors.primary,
+        background: colors.background,
+        card: colors.backgroundElement,
+        text: colors.text,
+        border: colors.border,
+      },
+    };
+  }, [colors, dark]);
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkNavTheme : LightTheme}>
-      <ProgressProvider>
-        <SettingsProvider>
-          <Stack>
+    <ThemeProvider value={navTheme}>
+      <StatusBar style={dark ? 'light' : 'dark'} />
+      {children}
+    </ThemeProvider>
+  );
+}
+
+export default function RootLayout() {
+  return (
+    <SettingsProvider>
+      <NavigationTheme>
+        <ProgressProvider>
+          <Stack screenOptions={{ headerRight: () => <TextSizeControl /> }}>
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           </Stack>
-        </SettingsProvider>
-      </ProgressProvider>
-    </ThemeProvider>
+        </ProgressProvider>
+      </NavigationTheme>
+    </SettingsProvider>
   );
 }

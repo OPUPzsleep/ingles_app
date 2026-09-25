@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   card: {
     borderRadius: Radius.medium,
     borderWidth: 1,
-    padding: Spacing.four,
+    padding: Spacing.three + Spacing.one,
     gap: Spacing.two,
   },
   pressed: {

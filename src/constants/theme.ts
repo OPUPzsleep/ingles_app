@@ -51,6 +51,70 @@ export const Colors = {
 
 export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
 
+export type Palette = Record<ThemeColor, string>;
+
+/** Temas que el usuario puede elegir. "auto" sigue el modo claro/oscuro del teléfono. */
+export type ThemeName = 'auto' | 'claro' | 'crema' | 'noche' | 'oscuro';
+
+export const Palettes: Record<Exclude<ThemeName, 'auto'>, { dark: boolean; colors: Palette }> = {
+  claro: { dark: false, colors: Colors.light },
+  crema: {
+    dark: false,
+    colors: {
+      text: '#3B2F25',
+      textSecondary: '#7A6A5A',
+      background: '#F6EEDC',
+      focusBackground: '#F2E8D3',
+      backgroundElement: '#FFF9EE',
+      backgroundSelected: '#EDE2CB',
+      border: '#E0D3B8',
+      primary: '#5A4636',
+      primaryMuted: '#EADFC8',
+      onPrimary: '#FFF9EE',
+      focusAccent: '#B5562B',
+      focusAccentMuted: '#F6DCCB',
+      success: '#3F8F5A',
+      successMuted: '#E1EFD9',
+      warning: '#C27C0E',
+      warningMuted: '#F8E7C4',
+      danger: '#C0392B',
+      dangerMuted: '#F7DCD6',
+    },
+  },
+  noche: {
+    dark: true,
+    colors: {
+      text: '#E6E8EC',
+      textSecondary: '#A0A7B4',
+      background: '#1E2430',
+      focusBackground: '#1B202B',
+      backgroundElement: '#272E3B',
+      backgroundSelected: '#323A49',
+      border: '#3A4353',
+      primary: '#DCE3EE',
+      primaryMuted: '#343C4B',
+      onPrimary: '#1E2430',
+      focusAccent: '#8FB8DE',
+      focusAccentMuted: '#2B3A4E',
+      success: '#6FCF97',
+      successMuted: '#1F3A2E',
+      warning: '#E8B86B',
+      warningMuted: '#3D3222',
+      danger: '#F08A8A',
+      dangerMuted: '#3E2528',
+    },
+  },
+  oscuro: { dark: true, colors: Colors.dark },
+};
+
+export const THEME_OPTIONS: { value: ThemeName; label: string }[] = [
+  { value: 'auto', label: 'Automático' },
+  { value: 'claro', label: 'Claro' },
+  { value: 'crema', label: 'Crema' },
+  { value: 'noche', label: 'Noche' },
+  { value: 'oscuro', label: 'Oscuro' },
+];
+
 export const Fonts = Platform.select({
   ios: {
     /** iOS `UIFontDescriptorSystemDesignDefault` */
@@ -94,4 +158,5 @@ export const Radius = {
 } as const;
 
 export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
-export const MaxContentWidth = 800;
+/** Ancho máximo del contenido: en tablets deja una columna cómoda de leer, en celulares no afecta. */
+export const MaxContentWidth = 640;

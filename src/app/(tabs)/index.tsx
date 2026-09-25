@@ -4,8 +4,11 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { HowItWorksCard } from '@/components/how-it-works-card';
 import { FocusModeCard } from '@/components/focus-mode-card';
+import { FocusTimer } from '@/components/focus-timer';
 import { ReminderCard } from '@/components/reminder-card';
 import { StatTile } from '@/components/stat-tile';
+import { TextSizeCard } from '@/components/text-size-card';
+import { ThemeCard } from '@/components/theme-card';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Button } from '@/components/ui/button';
@@ -65,6 +68,11 @@ export default function InicioScreen() {
 
           <FocusModeCard />
 
+          {focusModeEnabled && <FocusTimer />}
+
+          <TextSizeCard />
+
+          <ThemeCard />
           {!focusModeEnabled && (
             <>
               <HowItWorksCard />
@@ -93,7 +101,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    padding: Spacing.four,
+    padding: Spacing.three,
     paddingBottom: BottomTabInset + Spacing.four,
     gap: Spacing.three,
     maxWidth: MaxContentWidth,

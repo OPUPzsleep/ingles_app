@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    padding: Spacing.four,
+    padding: Spacing.three,
     maxWidth: MaxContentWidth,
     alignSelf: 'center',
     width: '100%',

@@ -450,7 +450,7 @@ export const pronounsUnits: Record<number, Unit> = {
       {
         "speaker": "other",
         "text": "We only have a few left in the fridge.",
-        "translation": "Solo nos quedan unos pocos en el refrigerador."
+        "translation": "Solo nos quedan unos pocos en la refrigeradora."
       },
       {
         "speaker": "user",

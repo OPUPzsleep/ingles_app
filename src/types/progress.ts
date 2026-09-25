@@ -1,3 +1,4 @@
+import type { ThemeName } from '@/constants/theme';
 import { CefrLevel } from '@/types/grammar';
 
 export interface Progress {
@@ -24,4 +25,8 @@ export interface Settings {
   reminderNotificationId: string | null;
   /** Modo TDAH: sesiones cortas, menos opciones a la vez, temporizador visible. */
   focusModeEnabled: boolean;
+  /** Multiplicador del tamaño de letra elegido por el usuario (1 = normal). */
+  textScale: number;
+  /** Tema de colores elegido ('auto' sigue al teléfono). */
+  themeName: ThemeName;
 }

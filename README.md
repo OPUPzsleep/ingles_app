@@ -1,57 +1,103 @@
-# Welcome to your Expo app 👋
+# Aprende Inglés 🇺🇸
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[Español](#español) · [English](#english)
 
-## Get started
+---
 
-1. Install dependencies
+## Español
+
+App para aprender inglés desde el español, basada en *English Grammar in Use* (Raymond Murphy). Hecha con [Expo](https://expo.dev) y React Native, pensada para Android.
+
+### Qué incluye
+
+- **Aprender:** 145 unidades de gramática con teoría, lectura, diálogos, consejos y un quiz por unidad. En la pestaña Consejos cada unidad tiene un **Repaso rápido**: preguntas que muestran la respuesta al tocarlas.
+- **Tarjetas:** 300 frases del día a día (100 en presente, 100 en pasado y 100 en futuro), con traducción y el tipo de oración (simple, continuo, perfecto…). Usan repaso espaciado y se pueden filtrar por tiempo.
+- **Vocabulario:** 280 verbos (157 irregulares) con presente, pasado, participio y la forma -ing, pronunciación aproximada al español y ejemplos en cada tiempo.
+- **Gramática para hispanohablantes:** conceptos explicados comparando el español con el inglés.
+- **Modo TDAH:** menos opciones en pantalla, lectura "biónica" y un temporizador de sesión enfocada en Inicio.
+- **Accesibilidad:** tamaño de letra ajustable (A− / A+) y temas de color: Automático, Claro, Crema, Noche y Oscuro.
+- Recordatorio diario opcional.
+
+### Cómo correrla
+
+1. Instala las dependencias:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Compila e instala la app en el emulador o el teléfono (la primera vez, o cuando cambies código nativo o `app.json`):
+
+   ```bash
+   npx expo run:android
+   ```
+
+3. Para el día a día, con la app ya instalada, basta con:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   Presiona `a` para abrirla en Android. Los cambios en `src/` se ven al guardar (Fast Refresh); si no, presiona `r` para recargar.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Estructura
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+| Carpeta | Contenido |
+|---|---|
+| `src/app/` | Pantallas (rutas de expo-router) |
+| `src/components/` | Componentes de interfaz |
+| `src/data/` | Contenido: unidades, frases, verbos, conceptos |
+| `src/context/` | Progreso y ajustes (tema, letra, Modo TDAH) |
+| `src/constants/theme.ts` | Colores, temas y espaciados |
 
-## Get a fresh project
+Para revisar el código: `npx tsc --noEmit` y `npx expo lint`.
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## English
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+An app for Spanish speakers learning English, based on *English Grammar in Use* (Raymond Murphy). Built with [Expo](https://expo.dev) and React Native, targeting Android. The interface is in Spanish.
 
-### Other setup steps
+### Features
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+- **Learn:** 145 grammar units with theory, reading, dialogues, tips and a quiz per unit. Each unit's Tips tab has a **Quick review**: questions that reveal their answer when tapped.
+- **Flashcards:** 300 everyday sentences (100 present, 100 past, 100 future), each with its translation and tense (simple, continuous, perfect…). They use spaced repetition and can be filtered by tense.
+- **Vocabulary:** 280 verbs (157 irregular) with base form, past, past participle and -ing form, a Spanish-style pronunciation guide and examples in every tense.
+- **Grammar for Spanish speakers:** concepts explained by contrasting Spanish and English.
+- **ADHD mode:** fewer options on screen, "bionic" reading and a focus-session timer on the Home screen.
+- **Accessibility:** adjustable text size (A− / A+) and color themes: Automatic, Light, Cream, Night and Dark.
+- Optional daily reminder.
 
-## Learn more
+### Running it
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Install dependencies:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+   ```bash
+   npm install
+   ```
 
-## Join the community
+2. Build and install the app on an emulator or device (first time, or after changing native code or `app.json`):
 
-Join our community of developers creating universal apps.
+   ```bash
+   npx expo run:android
+   ```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# ingles_app
+3. Day to day, once the app is installed:
+
+   ```bash
+   npx expo start
+   ```
+
+   Press `a` to open it on Android. Changes in `src/` show up on save (Fast Refresh); if not, press `r` to reload.
+
+### Project layout
+
+| Folder | Contents |
+|---|---|
+| `src/app/` | Screens (expo-router routes) |
+| `src/components/` | UI components |
+| `src/data/` | Content: units, sentences, verbs, concepts |
+| `src/context/` | Progress and settings (theme, text size, ADHD mode) |
+| `src/constants/theme.ts` | Colors, themes and spacing |
+
+To check the code: `npx tsc --noEmit` and `npx expo lint`.

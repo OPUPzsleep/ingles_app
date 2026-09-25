@@ -88,7 +88,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "Como el verbo ya indica la persona, el orden es flexible:\nYo como pizza. / Pizza como yo.",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "El orden es fijo, el sujeto siempre va primero:\nI eat pizza. ✅ / Pizza eat I. ❌"
@@ -155,7 +155,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "Los sustantivos tienen género (masculino/femenino) y número (singular/plural).\n\nel carro / la casa\nlos carros / las casas",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "Los sustantivos NO tienen género gramatical. Solo cambian en plural (generalmente +s).\n\nthe car / the house\nthe cars / the houses"
@@ -193,7 +193,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "El pronombre sujeto es opcional porque el verbo ya indica la persona:\n\n(Yo) hablo inglés.\n(Ella) trabaja aquí.",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "El pronombre sujeto es OBLIGATORIO. Sin él la oración no es correcta:\n\nI speak English. ✅\nSpeak English. ❌"
@@ -226,7 +226,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "Los verbos se conjugan completamente para cada persona:\n\nhablo / hablas / habla\nhablamos / habláis / hablan",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "El verbo casi no cambia. Solo agrega -s en 3ª persona singular:\n\nI work / you work / he works\nwe work / they work"
@@ -250,7 +250,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "El adjetivo va después del sustantivo y concuerda en género y número:\n\nun carro rojo\nuna casa bonita\nunos libros interesantes",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "El adjetivo va antes del sustantivo y NO cambia ni en género ni en número:\n\na red car\na beautiful house\nsome interesting books"
@@ -284,7 +284,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "Los adverbios de modo se forman con -mente:\n\nrápido → rápidamente\nlento → lentamente\nclaro → claramente",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "Los adverbios de modo se forman con -ly:\n\nquick → quickly\nslow → slowly\nclear → clearly"
@@ -366,7 +366,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "Artículos definidos:\nel, la, los, las\n\nArtículos indefinidos:\nun, una, unos, unas\n\n(6 formas, con género y número)",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "Artículo definido:\nTHE (solo uno para todo)\n\nArtículo indefinido:\nA (antes de consonante)\nAN (antes de vocal)\n\n(3 formas, sin género)"
@@ -395,7 +395,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "El infinitivo termina en -ar, -er, -ir:\n\nhablar · comer · vivir\n\nEs UNA sola palabra.",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "El infinitivo es to + verbo base:\n\nto speak · to eat · to live\n\nO solo la base después de modales:\ncan speak · must eat"
@@ -439,7 +439,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "El gerundio en español termina en -ando/-iendo y solo funciona como ADVERBIO o en tiempos progresivos:\n\nhablando · comiendo · viviendo\n\nEl INFINITIVO funciona como sustantivo:\n\"Nadar es saludable.\"",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "La forma -ing funciona como:\n1. SUSTANTIVO (gerundio): Swimming is healthy.\n2. En tiempos continuos: I am swimming.\n3. Después de preposiciones: before eating\n4. Después de ciertos verbos: enjoy swimming"
@@ -473,7 +473,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "El participio pasado termina en -ado/-ido:\n\nhablar → hablado\ncomer → comido\nvivir → vivido\n\nIrregulares: hacer→hecho, decir→dicho",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "Regulares: verbo + -ed\nwork→worked · play→played\n\nIrregulares: formas propias\ngo→gone · see→seen\neat→eaten · write→written"
@@ -560,7 +560,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "\"Trabajo\" puede significar:\n→ Trabajo todos los días. (hábito)\n→ Ahora mismo trabajo. (ahora)\n\n¡Una sola forma para todo!",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "Hay que elegir:\n→ I work every day. (hábito)\n→ I am working right now. (ahora)\n\n¡Dos formas distintas!"
@@ -599,7 +599,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "En español usamos el pretérito perfecto (he + participio) de forma similar, pero también el pretérito indefinido para eventos recientes:\n\n\"He terminado.\" / \"Terminé.\"\nAmbas pueden ser válidas según el contexto o región.",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "El Present Perfect se usa cuando la acción pasada tiene relevancia o resultado en el presente:\n\n\"I have finished.\" (y por eso ahora estoy libre)\nNO se puede decir cuándo exactamente."
@@ -737,7 +737,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "El orden es flexible:\n\nMaría come manzanas.\nCome manzanas María.\nManzanas come María.\n\nTodas son gramaticalmente posibles (aunque con diferente énfasis).",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "El orden es RÍGIDO:\n\nMaria eats apples. ✅\nEats Maria apples. ❌\nApples eats Maria. ❌\n\nSolo hay una forma correcta."
@@ -788,7 +788,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Activa → Pasiva",
+        "esLabel": "🌎 Activa → Pasiva",
         "esBody": "María escribió el libro.\n↓\nEl libro fue escrito por María.\n\nSe usa mucho la forma \"SE\":\n\"Se habla inglés aquí.\"\n\"Se vendieron 100 coches.\"",
         "enLabel": "🇺🇸 Activa → Pasiva",
         "enBody": "Maria wrote the book.\n↓\nThe book was written by Maria.\n\nLa forma \"SE\" en español se traduce como pasiva:\n\"English is spoken here.\"\n\"100 cars were sold.\""
@@ -863,7 +863,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       {
         "type": "def",
         "heading": "10. \"ser\" y \"estar\" = solo \"be\"",
-        "body": "ES: Soy de México. (origen) / Estoy cansado. (estado) | EN: I AM from Mexico. / I AM tired. (mismo verbo para todo)"
+        "body": "ES: Soy de Perú. (origen) / Estoy cansado. (estado) | EN: I AM from Peru. / I AM tired. (mismo verbo para todo)"
       }
     ]
   },
@@ -880,10 +880,10 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
-        "esBody": "SER (permanente):\nSoy mexicano.\nEs médico.\nLa mesa es de madera.\n\nESTAR (temporal):\nEstoy cansado.\nEstá en casa.\nEstoy estudiando.",
+        "esLabel": "🌎 Español",
+        "esBody": "SER (permanente):\nSoy peruano.\nEs médico.\nLa mesa es de madera.\n\nESTAR (temporal):\nEstoy cansado.\nEstá en casa.\nEstoy estudiando.",
         "enLabel": "🇺🇸 Inglés",
-        "enBody": "BE (para todo):\nI am Mexican.\nHe is a doctor.\nThe table is made of wood.\n\n\nI am tired.\nShe is at home.\nI am studying."
+        "enBody": "BE (para todo):\nI am Peruvian.\nHe is a doctor.\nThe table is made of wood.\n\n\nI am tired.\nShe is at home.\nI am studying."
       },
       {
         "type": "def",
@@ -936,7 +936,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "Todo con \"EN\":\nEstá en la habitación.\nEstá en la mesa.\nEstá en la puerta.",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "Se distingue el espacio:\nShe's IN the room.\nIt's ON the table.\nShe's AT the door."
@@ -974,7 +974,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "Vivo aquí desde 2020.\nVivo aquí desde hace 5 años.",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "I've lived here SINCE 2020.\nI've lived here FOR 5 years."
@@ -1006,14 +1006,14 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
-        "esBody": "Hacer un pastel.\nHacer la tarea.\nHacer una decisión / decidir.\nHacer los platos.",
+        "esLabel": "🌎 Español",
+        "esBody": "Hacer una torta.\nHacer la tarea.\nHacer una decisión / decidir.\nHacer los platos.",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "MAKE a cake.\nDO homework.\nMAKE a decision.\nDO the dishes."
       },
       {
         "type": "tip",
-        "body": "Consejo práctico: usa MAKE cuando al final obtienes algo nuevo, un resultado u objeto que antes no existía (make a cake, make money, make a plan, make a mistake, make noise). Usa DO para actividades, tareas o tiempo dedicado a algo, sin crear un objeto nuevo (do homework, do the shopping, do exercise, do a favor). Truco rápido: si al terminar puedes señalar \"esto\" con el dedo (un pastel, un plan, un error), probablemente es MAKE; si es una actividad o tarea general, es DO."
+        "body": "Consejo práctico: usa MAKE cuando al final obtienes algo nuevo, un resultado u objeto que antes no existía (make a cake, make money, make a plan, make a mistake, make noise). Usa DO para actividades, tareas o tiempo dedicado a algo, sin crear un objeto nuevo (do homework, do the shopping, do exercise, do a favor). Truco rápido: si al terminar puedes señalar \"esto\" con el dedo (una torta, un plan, un error), probablemente es MAKE; si es una actividad o tarea general, es DO."
       },
       {
         "type": "tip",
@@ -1038,7 +1038,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "Trae tu laptop a la reunión (hacia acá).\nLleva estos documentos a la oficina (hacia allá).",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "Bring your laptop to the meeting.\nTake these documents to the office."
@@ -1066,7 +1066,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "Me dijo la verdad.\nDijo \"hola\".\nHablamos por dos horas.\nHabla inglés.",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "He told me the truth.\nHe said \"hello\".\nWe talked for two hours.\nHe speaks English."
@@ -1320,7 +1320,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       {
         "type": "example",
         "text": "For dessert, we had chocolate cake. · The Sahara is the largest hot desert in the world.",
-        "transl": "De postre, comimos pastel de chocolate. · El Sahara es el desierto cálido más grande del mundo."
+        "transl": "De postre, comimos torta de chocolate. · El Sahara es el desierto cálido más grande del mundo."
       }
     ]
   },
@@ -1337,7 +1337,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "No tenemos este sonido. Solemos decir algo como \"tink\" o \"sink\" en vez de \"think\".",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "Se produce con la punta de la lengua ENTRE los dientes, dejando salir el aire suavemente."
@@ -1366,7 +1366,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "\"Vaca\" y \"baca\" suenan igual — no hay diferencia al hablar.",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "\"vote\" /voʊt/ (votar) y \"boat\" /boʊt/ (barco) son palabras completamente distintas."
@@ -1394,7 +1394,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "compare",
-        "esLabel": "🇲🇽 Español",
+        "esLabel": "🌎 Español",
         "esBody": "El acento casi nunca distingue entre sustantivo y verbo.",
         "enLabel": "🇺🇸 Inglés",
         "enBody": "PREsent (sustantivo: regalo) vs preSENT (verbo: presentar) — misma palabra, distinto significado según el acento."

@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    padding: Spacing.four,
+    padding: Spacing.three,
     paddingBottom: BottomTabInset + Spacing.four,
     gap: Spacing.three,
     maxWidth: MaxContentWidth,

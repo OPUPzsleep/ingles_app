@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { BionicText } from '@/components/bionic-text';
 import { SpeakButton } from '@/components/speak-button';
 import { ThemedText } from '@/components/themed-text';
-import { Radius, Spacing } from '@/constants/theme';
+import { Spacing } from '@/constants/theme';
 import { useSettings } from '@/context/settings-context';
 import { useTheme } from '@/hooks/use-theme';
 import { ExplainBlock as ExplainBlockData } from '@/types/grammar';
@@ -16,7 +16,7 @@ export function ExplainBlock({ block }: { block: ExplainBlockData }) {
     <View
       style={[
         styles.box,
-        { backgroundColor: theme.backgroundSelected, borderLeftColor: theme.primary },
+        { borderLeftColor: focusModeEnabled ? theme.focusAccent : theme.primary },
       ]}>
       <ThemedText type="label" themeColor="primary">
         {block.head}
@@ -27,7 +27,7 @@ export function ExplainBlock({ block }: { block: ExplainBlockData }) {
         <ThemedText style={styles.body}>{block.body}</ThemedText>
       )}
       {!!block.note && (
-        <View style={[styles.note, { backgroundColor: theme.backgroundElement, borderColor: theme.border }]}>
+        <View style={styles.note}>
           <ThemedText type="small" style={styles.noteText}>
             {block.note}
           </ThemedText>
@@ -40,9 +40,9 @@ export function ExplainBlock({ block }: { block: ExplainBlockData }) {
 
 const styles = StyleSheet.create({
   box: {
-    borderLeftWidth: 3,
-    borderRadius: Radius.small,
-    padding: Spacing.three,
+    borderLeftWidth: 4,
+    paddingLeft: Spacing.three,
+    paddingVertical: Spacing.one,
     gap: Spacing.two,
   },
   body: {
@@ -52,9 +52,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: Spacing.two,
-    borderRadius: Radius.small,
-    borderWidth: 1,
-    padding: Spacing.two,
+    paddingTop: Spacing.one,
   },
   noteText: {
     flex: 1,

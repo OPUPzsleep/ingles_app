@@ -92,7 +92,7 @@ export const questionsUnits: Record<number, Unit> = {
       {
         "speaker": "user",
         "text": "I'm bringing a cake. Have you met the host before?",
-        "translation": "Voy a llevar un pastel. ¿Ya conocías al anfitrión?"
+        "translation": "Voy a llevar una torta. ¿Ya conocías al anfitrión?"
       }
     ]
   },

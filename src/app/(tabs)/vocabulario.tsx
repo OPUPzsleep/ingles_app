@@ -1,66 +1,103 @@
-import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { FlatList, StyleSheet, TextInput } from 'react-native';
+import { FlatList, Pressable, StyleSheet, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { VocabCard } from '@/components/vocab-card';
+import { VerbRow } from '@/components/verb-row';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
-import { ALL_UNIT_TITLES } from '@/data/grammar/unit-titles';
-import { getAllVocab } from '@/lib/grammar';
+import { ALL_VERBOS } from '@/lib/verbos';
+
+type Filtro = 'todos' | 'irregulares' | 'regulares';
+
+const FILTROS: { value: Filtro; label: string }[] = [
+  { value: 'todos', label: 'Todos' },
+  { value: 'irregulares', label: 'Irregulares' },
+  { value: 'regulares', label: 'Regulares' },
+];
 
 export default function VocabularioScreen() {
-  const router = useRouter();
   const theme = useTheme();
   const [search, setSearch] = useState('');
-  const all = useMemo(() => getAllVocab(), []);
+  const [filtro, setFiltro] = useState<Filtro>('todos');
 
   const filtered = useMemo(() => {
     const s = search.trim().toLowerCase();
-    if (!s) return all;
-    return all.filter((v) => v.w.toLowerCase().includes(s) || v.def.toLowerCase().includes(s));
-  }, [all, search]);
+    return ALL_VERBOS.filter((v) => {
+      if (filtro === 'irregulares' && !v.irregular) return false;
+      if (filtro === 'regulares' && v.irregular) return false;
+      if (!s) return true;
+      return [v.base, v.pasado, v.participio, v.ing, v.tercera, v.es].some((f) =>
+        f.toLowerCase().includes(s)
+      );
+    });
+  }, [search, filtro]);
+
+  const total = ALL_VERBOS.length;
+  const irregulares = ALL_VERBOS.filter((v) => v.irregular).length;
 
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea} edges={['top']}>
         <FlatList
           data={filtered}
-          keyExtractor={(item, i) => `${item.unit}-${item.w}-${i}`}
+          keyExtractor={(item) => item.base}
           contentContainerStyle={styles.content}
+          keyboardShouldPersistTaps="handled"
           ListHeaderComponent={
             <>
-              <ThemedText type="subtitle">Vocabulario</ThemedText>
+              <ThemedText type="subtitle">Verbos</ThemedText>
               <ThemedText themeColor="textSecondary" style={styles.subtitle}>
-                {all.length} palabras con pronunciación, traducción y ejemplo
+                {total} verbos que cambian según el tiempo ({irregulares} irregulares). Toca uno para ver
+                todas sus formas.
+              </ThemedText>
+              <ThemedText type="small" themeColor="textSecondary" style={styles.subtitle}>
+                Pronunciación: j = h suave · th = lengua entre los dientes · u = w · y = j inglesa · la tilde
+                marca la sílaba fuerte.
               </ThemedText>
               <TextInput
                 value={search}
                 onChangeText={setSearch}
-                placeholder="🔍 Buscar palabra o traducción…"
+                placeholder="🔍 Buscar: went, comer, gone…"
                 placeholderTextColor={theme.textSecondary}
+                autoCapitalize="none"
+                autoCorrect={false}
                 style={[
                   styles.search,
                   { backgroundColor: theme.backgroundSelected, color: theme.text, borderColor: theme.border },
                 ]}
               />
+              <View style={styles.filterRow}>
+                {FILTROS.map((f) => {
+                  const active = f.value === filtro;
+                  return (
+                    <Pressable
+                      key={f.value}
+                      onPress={() => setFiltro(f.value)}
+                      style={[
+                        styles.chip,
+                        {
+                          backgroundColor: active ? theme.primary : theme.backgroundElement,
+                          borderColor: theme.border,
+                        },
+                      ]}>
+                      <ThemedText type="smallBold" themeColor={active ? 'onPrimary' : 'text'}>
+                        {f.label}
+                      </ThemedText>
+                    </Pressable>
+                  );
+                })}
+              </View>
             </>
           }
           ListEmptyComponent={
             <ThemedText themeColor="textSecondary">
-              No se encontraron palabras para &quot;{search}&quot;.
+              No se encontraron verbos para &quot;{search}&quot;.
             </ThemedText>
           }
-          renderItem={({ item }) => (
-            <VocabCard
-              entry={item}
-              footer={item.topicName ?? ALL_UNIT_TITLES[item.unit]}
-              onPress={item.unit > 0 ? () => router.push(`/unidad/${item.unit}`) : undefined}
-            />
-          )}
-          ItemSeparatorComponent={() => <ThemedView style={{ height: Spacing.two }} />}
+          renderItem={({ item }) => <VerbRow verbo={item} />}
+          ItemSeparatorComponent={() => <View style={{ height: Spacing.two }} />}
         />
       </SafeAreaView>
     </ThemedView>
@@ -75,7 +112,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    padding: Spacing.four,
+    padding: Spacing.three,
     paddingBottom: BottomTabInset + Spacing.four,
     maxWidth: MaxContentWidth,
     alignSelf: 'center',
@@ -91,5 +128,17 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.two,
     marginBottom: Spacing.three,
     fontSize: 15,
+  },
+  filterRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.two,
+    marginBottom: Spacing.three,
+  },
+  chip: {
+    paddingVertical: Spacing.two,
+    paddingHorizontal: Spacing.three,
+    borderRadius: Radius.pill,
+    borderWidth: 1,
   },
 });
