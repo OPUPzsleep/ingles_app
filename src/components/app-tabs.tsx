@@ -20,6 +20,11 @@ export default function AppTabs() {
         <NativeTabs.Trigger.Icon sf="book.fill" md="menu_book" />
       </NativeTabs.Trigger>
 
+      <NativeTabs.Trigger name="practicar">
+        <NativeTabs.Trigger.Label>Practicar</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="dumbbell.fill" md="fitness_center" />
+      </NativeTabs.Trigger>
+
       <NativeTabs.Trigger name="tarjetas">
         <NativeTabs.Trigger.Label>Tarjetas</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon sf="rectangle.stack.fill" md="layers" />

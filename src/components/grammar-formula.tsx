@@ -12,6 +12,7 @@ export function GrammarFormula({ formulas }: { formulas: GrammarFormulaData[] })
     if (role === 'subject') return { bg: theme.primaryMuted, fg: theme.primary };
     if (role === 'verb') return { bg: theme.successMuted, fg: theme.success };
     if (role === 'object') return { bg: theme.warningMuted, fg: theme.warning };
+    if (role === 'negation') return { bg: theme.dangerMuted, fg: theme.danger };
     return { bg: theme.backgroundSelected, fg: theme.textSecondary };
   };
 

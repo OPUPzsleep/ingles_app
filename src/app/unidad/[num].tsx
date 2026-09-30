@@ -1,231 +1,26 @@
-import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { useState } from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { Stack, useLocalSearchParams } from 'expo-router';
+import { ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { ChatSimulator } from '@/components/chat-simulator';
-import { ContrastCard } from '@/components/contrast-card';
-import { ExplainBlock } from '@/components/explain-block';
-import { GrammarFormula } from '@/components/grammar-formula';
-import { PronunciationCard } from '@/components/pronunciation-card';
-import { QuickReviewItem } from '@/components/quick-review-item';
-import { ReadingStory } from '@/components/reading-story';
-import { ReferenceTable } from '@/components/reference-table';
-import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { MaxContentWidth, Radius, Spacing } from '@/constants/theme';
-import { useProgress } from '@/context/progress-context';
+import { UnitView } from '@/components/unit-view';
+import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { ALL_UNIT_TITLES } from '@/data/grammar/unit-titles';
-import { useTheme } from '@/hooks/use-theme';
-import { getPronunVocab, getUnit } from '@/lib/grammar';
-
-type Tab = 'teoria' | 'lectura' | 'consejos';
-
-function EmptyTab() {
-  return (
-    <Card>
-      <ThemedText type="small" themeColor="textSecondary" style={styles.emptyText}>
-        🚧 Todavía no hay contenido en esta sección.
-      </ThemedText>
-    </Card>
-  );
-}
+import { useIsWide } from '@/hooks/use-is-wide';
+import { getUnit } from '@/lib/grammar';
 
 export default function UnidadScreen() {
   const { num: numParam } = useLocalSearchParams<{ num: string }>();
   const num = Number(numParam);
-  const router = useRouter();
-  const theme = useTheme();
-  const { doneUnits, markUnitDone } = useProgress();
-  const [tab, setTab] = useState<Tab>('teoria');
-
-  const unit = getUnit(num);
-  const isDone = doneUnits.includes(num);
-  const pv = getPronunVocab(num);
-  const prevNum = num > 1 ? num - 1 : null;
-  const nextNum = num < 145 ? num + 1 : null;
-
-  if (!unit) {
-    return (
-      <ThemedView style={styles.container}>
-        <Stack.Screen options={{ title: ALL_UNIT_TITLES[num] ?? `Unit ${num}` }} />
-        <SafeAreaView style={styles.safeArea} edges={['bottom']}>
-          <ScrollView contentContainerStyle={styles.content}>
-            <Card>
-              <ThemedText type="label" themeColor="primary">
-                Unit {num}
-              </ThemedText>
-              <ThemedText type="cardTitle">{ALL_UNIT_TITLES[num]}</ThemedText>
-              <ThemedText themeColor="textSecondary">
-                Esta unidad todavía no tiene contenido cargado en la app.
-              </ThemedText>
-              <Button variant="secondary" onPress={() => markUnitDone(num)}>
-                ✅ Marcar como estudiada
-              </Button>
-            </Card>
-          </ScrollView>
-        </SafeAreaView>
-      </ThemedView>
-    );
-  }
-
-  const hasLectura = !!unit.simulatedChat?.length || !!unit.readingText || !!pv?.tips.length;
-  const hasConsejos = !!unit.tips?.length || !!unit.flashcards?.length;
+  const isWide = useIsWide();
+  const title = getUnit(num)?.title ?? ALL_UNIT_TITLES[num] ?? `Unit ${num}`;
 
   return (
     <ThemedView style={styles.container}>
-      <Stack.Screen options={{ title: unit.title }} />
+      <Stack.Screen options={{ title }} />
       <SafeAreaView style={styles.safeArea} edges={['bottom']}>
-        <ScrollView contentContainerStyle={styles.content}>
-          <Card>
-            <ThemedText type="label" themeColor="primary">
-              Unit {num} · {unit.topic}
-            </ThemedText>
-            <ThemedText type="cardTitle">{unit.title}</ThemedText>
-            <Button variant="primary" onPress={() => router.push(`/quiz/unidad/${num}`)}>
-              {isDone ? '🔁 Repetir quiz' : '✏️ Quiz de esta unidad'}
-            </Button>
-          </Card>
-
-
-          <View style={styles.tabRow}>
-            <Button
-              variant={tab === 'teoria' ? 'primary' : 'secondary'}
-              onPress={() => setTab('teoria')}
-              style={styles.tabButton}>
-              📖 Teoría
-            </Button>
-            <Button
-              variant={tab === 'lectura' ? 'primary' : 'secondary'}
-              onPress={() => setTab('lectura')}
-              style={styles.tabButton}>
-              💬 Zona Lectora
-            </Button>
-            <Button
-              variant={tab === 'consejos' ? 'primary' : 'secondary'}
-              onPress={() => setTab('consejos')}
-              style={styles.tabButton}>
-              💡 Consejos
-            </Button>
-          </View>
-
-          {tab === 'teoria' && (
-            <>
-              <View style={styles.theory}>
-                {unit.explain.map((block, i) => (
-                  <ExplainBlock key={i} block={block} />
-                ))}
-                {!!unit.syntaxChips?.length && <GrammarFormula formulas={unit.syntaxChips} />}
-              </View>
-
-              {unit.contrastCard && (
-                <Card>
-                  <ThemedText type="label" themeColor="primary">
-                    🔍 Compara la diferencia
-                  </ThemedText>
-                  <ContrastCard data={unit.contrastCard} />
-                </Card>
-              )}
-
-              {unit.table && (
-                <Card>
-                  <ThemedText type="label" themeColor="primary">
-                    📊 Tabla de referencia rápida
-                  </ThemedText>
-                  <ReferenceTable table={unit.table} />
-                </Card>
-              )}
-            </>
-          )}
-
-          {tab === 'lectura' &&
-            (hasLectura ? (
-              <>
-                {!!unit.readingText && (
-                  <Card>
-                    <ThemedText type="label" themeColor="primary">
-                      📰 Lectura
-                    </ThemedText>
-                    <ReadingStory story={unit.readingText} />
-                  </Card>
-                )}
-
-                {!!unit.simulatedChat?.length && (
-                  <Card>
-                    <ThemedText type="label" themeColor="primary">
-                      💬 Diálogo simulado
-                    </ThemedText>
-                    <ChatSimulator messages={unit.simulatedChat} />
-                  </Card>
-                )}
-
-                {!!pv?.tips.length && (
-                  <Card>
-                    <ThemedText type="label" themeColor="primary">
-                      🔊 Pronunciación
-                    </ThemedText>
-                    {pv.tips.map((tip, i) => (
-                      <PronunciationCard key={i} tip={tip} />
-                    ))}
-                  </Card>
-                )}
-              </>
-            ) : (
-              <EmptyTab />
-            ))}
-
-          {tab === 'consejos' &&
-            (hasConsejos ? (
-              <>
-                {!!unit.tips?.length && (
-                  <Card>
-                    <ThemedText type="label" themeColor="primary">
-                      💡 Consejos
-                    </ThemedText>
-                    {unit.tips.map((tip, i) => (
-                      <View key={i} style={[styles.tipBox, { backgroundColor: theme.warningMuted }]}>
-                        <ThemedText type="small" style={styles.tipText}>
-                          💡 {tip}
-                        </ThemedText>
-                      </View>
-                    ))}
-                  </Card>
-                )}
-
-                {!!unit.flashcards?.length && (
-                  <Card>
-                    <ThemedText type="label" themeColor="primary">
-                      🧠 Repaso rápido
-                    </ThemedText>
-                    <ThemedText type="small" themeColor="textSecondary">
-                      Piensa la respuesta y toca cada pregunta para comprobarla.
-                    </ThemedText>
-                    {unit.flashcards.map((fc, i) => (
-                      <QuickReviewItem key={i} question={fc.front} answer={fc.back} />
-                    ))}
-                  </Card>
-                )}
-              </>
-            ) : (
-              <EmptyTab />
-            ))}
-
-          <View style={styles.navRow}>
-            {prevNum ? (
-              <Button variant="secondary" onPress={() => router.push(`/unidad/${prevNum}`)} style={styles.navButton}>
-                {`← Unidad ${prevNum}`}
-              </Button>
-            ) : (
-              <View style={styles.navButton} />
-            )}
-            {nextNum && (
-              <Button variant="primary" onPress={() => router.push(`/unidad/${nextNum}`)} style={styles.navButton}>
-                {`Unidad ${nextNum} →`}
-              </Button>
-            )}
-          </View>
+        <ScrollView contentContainerStyle={[styles.content, isWide && styles.contentAncho]}>
+          <UnitView num={num} />
         </ScrollView>
       </SafeAreaView>
     </ThemedView>
@@ -241,37 +36,13 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: Spacing.three,
-    gap: Spacing.three,
     maxWidth: MaxContentWidth,
     alignSelf: 'center',
     width: '100%',
   },
-  tabRow: {
-    flexDirection: 'row',
-    gap: Spacing.two,
-  },
-  tabButton: {
-    flex: 1,
-  },
-  theory: {
-    gap: Spacing.four,
-    paddingVertical: Spacing.two,
-  },
-  tipBox: {
-    borderRadius: Radius.small,
-    padding: Spacing.three,
-  },
-  tipText: {
-    lineHeight: 21,
-  },
-  emptyText: {
-    textAlign: 'center',
-  },
-  navRow: {
-    flexDirection: 'row',
-    gap: Spacing.two,
-  },
-  navButton: {
-    flex: 1,
+  // En pantalla ancha la unidad se reparte en dos columnas (UnitView limita su propio ancho).
+  contentAncho: {
+    maxWidth: 1400,
+    padding: Spacing.four,
   },
 });

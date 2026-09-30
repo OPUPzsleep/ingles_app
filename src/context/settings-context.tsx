@@ -20,6 +20,8 @@ interface SettingsContextValue {
   setTextScale: (scale: number) => void;
   themeName: ThemeName;
   setThemeName: (name: ThemeName) => void;
+  panelListaAbierto: boolean;
+  setPanelListaAbierto: (abierto: boolean) => void;
 }
 
 export const TEXT_SCALE_MIN = 0.85;
@@ -35,6 +37,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     focusModeEnabled: false,
     textScale: 1,
     themeName: 'auto',
+    panelListaAbierto: true,
   });
   const [loading, setLoading] = useState(true);
 
@@ -112,6 +115,15 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     [settings]
   );
 
+  const setPanelListaAbierto = useCallback(
+    (abierto: boolean) => {
+      const next: Settings = { ...settings, panelListaAbierto: abierto };
+      setSettings(next);
+      guardarAjustes(next);
+    },
+    [settings]
+  );
+
   const value = useMemo<SettingsContextValue>(
     () => ({
       loading,
@@ -123,10 +135,14 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
       setTextScale,
       themeName: settings.themeName,
       setThemeName,
+      panelListaAbierto: settings.panelListaAbierto,
+      setPanelListaAbierto,
     }),
     [
       settings.themeName,
       setThemeName,
+      settings.panelListaAbierto,
+      setPanelListaAbierto,
       loading,
       settings.reminderEnabled,
       setReminderEnabled,

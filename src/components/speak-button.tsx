@@ -7,12 +7,14 @@ interface SpeakButtonProps {
   text: string;
   size?: number;
   style?: StyleProp<ViewStyle>;
+  /** Velocidad de la voz (1 = normal, 0.6 = lento). */
+  rate?: number;
 }
 
-export function SpeakButton({ text, size = 16, style }: SpeakButtonProps) {
+export function SpeakButton({ text, size = 16, style, rate }: SpeakButtonProps) {
   const onPress = async () => {
     await Speech.stop();
-    Speech.speak(text, { language: 'en-US' });
+    Speech.speak(text, { language: 'en-US', rate });
   };
 
   return (

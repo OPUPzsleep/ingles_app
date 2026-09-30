@@ -160,3 +160,6 @@ export const Radius = {
 export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
 /** Ancho máximo del contenido: en tablets deja una columna cómoda de leer, en celulares no afecta. */
 export const MaxContentWidth = 640;
+
+/** Desde este ancho (web o tablet horizontal) las pantallas con lista y detalle se muestran en dos columnas. */
+export const WideBreakpoint = 900;

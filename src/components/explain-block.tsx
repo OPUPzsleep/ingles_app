@@ -3,14 +3,50 @@ import { StyleSheet, View } from 'react-native';
 import { BionicText } from '@/components/bionic-text';
 import { SpeakButton } from '@/components/speak-button';
 import { ThemedText } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { Card } from '@/components/ui/card';
+import { Radius, Spacing } from '@/constants/theme';
 import { useSettings } from '@/context/settings-context';
 import { useTheme } from '@/hooks/use-theme';
 import { ExplainBlock as ExplainBlockData } from '@/types/grammar';
 
-export function ExplainBlock({ block }: { block: ExplainBlockData }) {
+interface ExplainBlockProps {
+  block: ExplainBlockData;
+  /**
+   * Pantalla ancha: el bloque va en un cuadro, como las demás tarjetas de la unidad (estructura, tabla…),
+   * con la explicación suelta dentro y los ejemplos en una caja aparte. Sin esto (celular) va suelto, con su barra al lado.
+   */
+  enCuadro?: boolean;
+}
+
+export function ExplainBlock({ block, enCuadro = false }: ExplainBlockProps) {
   const theme = useTheme();
   const { focusModeEnabled } = useSettings();
+
+  const cuerpo = focusModeEnabled ? (
+    <BionicText text={block.body} style={styles.body} />
+  ) : (
+    <ThemedText style={styles.body}>{block.body}</ThemedText>
+  );
+
+  if (enCuadro) {
+    return (
+      // En Modo TDAH el cuadro conserva la barra de color a la izquierda que ya marcaba los bloques.
+      <Card style={focusModeEnabled ? { borderLeftWidth: 4, borderLeftColor: theme.focusAccent } : undefined}>
+        <ThemedText type="label" themeColor="primary">
+          {block.head}
+        </ThemedText>
+        {cuerpo}
+        {!!block.note && (
+          <View style={[styles.ejemplos, { backgroundColor: theme.backgroundSelected }]}>
+            <ThemedText type="small" style={styles.noteText}>
+              {block.note}
+            </ThemedText>
+            <SpeakButton text={block.note} />
+          </View>
+        )}
+      </Card>
+    );
+  }
 
   return (
     <View
@@ -21,11 +57,7 @@ export function ExplainBlock({ block }: { block: ExplainBlockData }) {
       <ThemedText type="label" themeColor="primary">
         {block.head}
       </ThemedText>
-      {focusModeEnabled ? (
-        <BionicText text={block.body} style={styles.body} />
-      ) : (
-        <ThemedText style={styles.body}>{block.body}</ThemedText>
-      )}
+      {cuerpo}
       {!!block.note && (
         <View style={styles.note}>
           <ThemedText type="small" style={styles.noteText}>
@@ -53,6 +85,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: Spacing.two,
     paddingTop: Spacing.one,
+  },
+  // Los ejemplos de un bloque en cuadro: una caja con fondo propio, con el botón de audio a un lado.
+  ejemplos: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.two,
+    borderRadius: Radius.small,
+    paddingVertical: Spacing.two + Spacing.one,
+    paddingHorizontal: Spacing.three,
   },
   noteText: {
     flex: 1,

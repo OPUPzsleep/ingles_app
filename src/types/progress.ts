@@ -16,6 +16,8 @@ export interface Progress {
 export interface SrsEntry {
   box: number;
   due: number;
+  /** Veces que lo marcaste como no sabido. Sirve para el "Repaso de lo difícil". */
+  lapses?: number;
 }
 
 export type SrsMap = Record<string, SrsEntry>;
@@ -29,4 +31,6 @@ export interface Settings {
   textScale: number;
   /** Tema de colores elegido ('auto' sigue al teléfono). */
   themeName: ThemeName;
+  /** Panel izquierdo de las pantallas de dos columnas (lista de temas, mapa): true = visible, false = escondido. */
+  panelListaAbierto: boolean;
 }

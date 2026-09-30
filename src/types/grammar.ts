@@ -21,7 +21,7 @@ export interface Flashcard {
   back: string;
 }
 
-export type SyntaxRole = 'subject' | 'verb' | 'object' | 'connector';
+export type SyntaxRole = 'subject' | 'verb' | 'object' | 'connector' | 'negation';
 
 export interface SyntaxChip {
   text: string;
@@ -31,6 +31,24 @@ export interface SyntaxChip {
 export interface GrammarFormula {
   label?: string;
   chips: SyntaxChip[];
+}
+
+/** Una de las tres formas de una estructura (afirmativa, negativa o pregunta): su fórmula y ejemplos [inglés, español]. */
+export interface FormaDetalle {
+  /** Una fórmula, o dos cuando la estructura tiene variantes (con label: "Continuous", "Perfect"…). */
+  formulas: GrammarFormula[];
+  ejemplos: [string, string][];
+}
+
+/** Las tres formas de una unidad de verbos, para tenerlas siempre a la vista. */
+export interface FormasUnidad {
+  afirmativa: FormaDetalle;
+  negativa: FormaDetalle;
+  pregunta: FormaDetalle;
+  /** Para recordar: contracciones, respuestas cortas y otros detalles de las tres formas. */
+  nota?: string;
+  /** El error típico de quien habla español con estas formas. */
+  ojo?: string;
 }
 
 export interface ContrastSide {

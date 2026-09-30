@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { FlatList, Pressable, StyleSheet, TextInput, View } from 'react-native';
+import { FlatList, Pressable, StyleSheet, TextInput, useWindowDimensions, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
@@ -7,7 +7,7 @@ import { ThemedView } from '@/components/themed-view';
 import { VerbRow } from '@/components/verb-row';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
-import { ALL_VERBOS } from '@/lib/verbos';
+import { ALL_VERBOS, type Verbo } from '@/lib/verbos';
 
 type Filtro = 'todos' | 'irregulares' | 'regulares';
 
@@ -17,8 +17,17 @@ const FILTROS: { value: Filtro; label: string }[] = [
   { value: 'regulares', label: 'Regulares' },
 ];
 
+/** Cuántas columnas de verbos caben según el ancho de la ventana (1 en celular). */
+function columnasPara(ancho: number) {
+  if (ancho >= 1500) return 3;
+  if (ancho >= 1000) return 2;
+  return 1;
+}
+
 export default function VocabularioScreen() {
   const theme = useTheme();
+  const { width } = useWindowDimensions();
+  const columnas = columnasPara(width);
   const [search, setSearch] = useState('');
   const [filtro, setFiltro] = useState<Filtro>('todos');
 
@@ -34,19 +43,31 @@ export default function VocabularioScreen() {
     });
   }, [search, filtro]);
 
+  // Con varias columnas, se completa la última fila con huecos para que sus verbos no se estiren.
+  const datos = useMemo<(Verbo | null)[]>(() => {
+    const relleno = columnas > 1 ? (columnas - (filtered.length % columnas)) % columnas : 0;
+    return [...filtered, ...Array<null>(relleno).fill(null)];
+  }, [filtered, columnas]);
+
   const total = ALL_VERBOS.length;
   const irregulares = ALL_VERBOS.filter((v) => v.irregular).length;
+  const anchoMax = columnas === 3 ? 1440 : columnas === 2 ? 1080 : MaxContentWidth;
 
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea} edges={['top']}>
         <FlatList
-          data={filtered}
-          keyExtractor={(item) => item.base}
-          contentContainerStyle={styles.content}
+          // FlatList no deja cambiar numColumns "al vuelo": otra clave = lista nueva.
+          key={columnas}
+          numColumns={columnas}
+          data={datos}
+          keyExtractor={(item, i) => item?.base ?? `hueco-${i}`}
+          contentContainerStyle={[styles.content, { maxWidth: anchoMax }]}
+          columnWrapperStyle={columnas > 1 ? styles.fila : undefined}
           keyboardShouldPersistTaps="handled"
           ListHeaderComponent={
-            <>
+            // El encabezado (texto y buscador) no se estira: con varias columnas se queda a un ancho cómodo.
+            <View style={columnas > 1 ? styles.cabeceraAncha : undefined}>
               <ThemedText type="subtitle">Verbos</ThemedText>
               <ThemedText themeColor="textSecondary" style={styles.subtitle}>
                 {total} verbos que cambian según el tiempo ({irregulares} irregulares). Toca uno para ver
@@ -89,14 +110,23 @@ export default function VocabularioScreen() {
                   );
                 })}
               </View>
-            </>
+            </View>
           }
           ListEmptyComponent={
             <ThemedText themeColor="textSecondary">
               No se encontraron verbos para &quot;{search}&quot;.
             </ThemedText>
           }
-          renderItem={({ item }) => <VerbRow verbo={item} />}
+          renderItem={({ item }) => {
+            if (columnas === 1) return item ? <VerbRow verbo={item} /> : null;
+            return item ? (
+              <View style={styles.celda}>
+                <VerbRow verbo={item} />
+              </View>
+            ) : (
+              <View style={styles.celdaVacia} />
+            );
+          }}
           ItemSeparatorComponent={() => <View style={{ height: Spacing.two }} />}
         />
       </SafeAreaView>
@@ -114,9 +144,22 @@ const styles = StyleSheet.create({
   content: {
     padding: Spacing.three,
     paddingBottom: BottomTabInset + Spacing.four,
-    maxWidth: MaxContentWidth,
     alignSelf: 'center',
     width: '100%',
+  },
+  cabeceraAncha: {
+    maxWidth: MaxContentWidth,
+  },
+  fila: {
+    gap: Spacing.two,
+  },
+  // Una celda no se estira a lo alto: si abres un verbo, el de al lado no cambia de tamaño.
+  celda: {
+    flex: 1,
+    alignSelf: 'flex-start',
+  },
+  celdaVacia: {
+    flex: 1,
   },
   subtitle: {
     marginBottom: Spacing.three,

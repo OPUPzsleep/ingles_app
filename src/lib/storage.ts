@@ -23,6 +23,7 @@ const DEFAULT_SETTINGS: Settings = {
   focusModeEnabled: false,
   textScale: 1,
   themeName: 'auto',
+  panelListaAbierto: true,
 };
 
 export async function cargarProgreso(): Promise<Progress> {

@@ -1,7 +1,8 @@
 import { useRouter } from 'expo-router';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { Platform, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { Columnas } from '@/components/columnas';
 import { HowItWorksCard } from '@/components/how-it-works-card';
 import { FocusModeCard } from '@/components/focus-mode-card';
 import { FocusTimer } from '@/components/focus-timer';
@@ -17,12 +18,14 @@ import { ProgressBar } from '@/components/ui/progress-bar';
 import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
 import { useSettings } from '@/context/settings-context';
+import { useIsWide } from '@/hooks/use-is-wide';
 import { nextRecommendedUnit } from '@/lib/grammar';
 
 const TOTAL_UNITS = 145;
 
 export default function InicioScreen() {
   const router = useRouter();
+  const isWide = useIsWide();
   const { xp, doneUnits, streak, quizCorrect, quizTotal, userLevel } = useProgress();
   const { focusModeEnabled } = useSettings();
 
@@ -31,63 +34,108 @@ export default function InicioScreen() {
   const pct = Math.round((doneUnits.length / TOTAL_UNITS) * 100);
   const quizPct = quizTotal > 0 ? Math.round((quizCorrect / quizTotal) * 100) : null;
 
+  const titulo = <ThemedText type="subtitle">Aprende Inglés</ThemedText>;
+  const subtitulo = !focusModeEnabled && (
+    <ThemedText themeColor="textSecondary">English Grammar in Use · Raymond Murphy</ThemedText>
+  );
+  const nivel = (
+    <ThemedText type="small" themeColor="primary">
+      Tu nivel: {userLevel} · cámbialo en la pestaña Aprender
+    </ThemedText>
+  );
+  const estadisticas = !focusModeEnabled && (
+    <View style={styles.statsRow}>
+      <StatTile value={xp} label="XP" />
+      <StatTile value={streak} label="Racha 🔥" />
+      <StatTile value={quizPct !== null ? `${quizPct}%` : '—'} label="Quiz" />
+    </View>
+  );
+  const progreso = (
+    <Card>
+      <ThemedText type="cardTitle">{focusModeEnabled ? 'Tu única tarea ahora' : 'Progreso general'}</ThemedText>
+      {!focusModeEnabled && <ProgressBar percent={pct} />}
+      <ThemedText type="small" themeColor="textSecondary">
+        {doneUnits.length} de {TOTAL_UNITS} unidades
+      </ThemedText>
+      <Button variant="primary" onPress={() => router.push(`/unidad/${nextUnit}`)}>
+        {doneUnits.length === 0 ? '▶️ Empezar' : '▶️ Continuar donde quedaste'}
+      </Button>
+    </Card>
+  );
+  const practica = !focusModeEnabled && (
+    <Card onPress={() => router.push('/practica/dia')}>
+      <ThemedText type="cardTitle">⭐ Práctica del día</ThemedText>
+      <ThemedText type="small" themeColor="textSecondary">
+        10 ejercicios mezclados en unos 5 minutos. Lo que falles queda para repasar.
+      </ThemedText>
+    </Card>
+  );
+  const modoTdah = <FocusModeCard />;
+  const temporizador = focusModeEnabled && <FocusTimer />;
+  const tamano = <TextSizeCard />;
+  const tema = <ThemeCard />;
+  const comoFunciona = !focusModeEnabled && <HowItWorksCard />;
+  const recordatorio = !focusModeEnabled && Platform.OS !== 'web' && <ReminderCard />;
+  const gramatica = !focusModeEnabled && (
+    <Card onPress={() => router.push('/gramatica')}>
+      <ThemedText type="cardTitle">📚 Gramática para Hispanohablantes</ThemedText>
+      <ThemedText type="small" themeColor="textSecondary">
+        Conceptos de gramática explicados en español, comparando con el inglés.
+      </ThemedText>
+    </Card>
+  );
+
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea} edges={['top']}>
-        <ScrollView contentContainerStyle={styles.content}>
-          <ThemedText type="subtitle">Aprende Inglés</ThemedText>
-          {!focusModeEnabled && (
-            <ThemedText themeColor="textSecondary">
-              English Grammar in Use · Raymond Murphy
-            </ThemedText>
-          )}
-          <ThemedText type="small" themeColor="primary">
-            Tu nivel: {userLevel} · cámbialo en la pestaña Aprender
-          </ThemedText>
-
-          {!focusModeEnabled && (
-            <View style={styles.statsRow}>
-              <StatTile value={xp} label="XP" />
-              <StatTile value={streak} label="Racha 🔥" />
-              <StatTile value={quizPct !== null ? `${quizPct}%` : '—'} label="Quiz" />
-            </View>
-          )}
-
-          <Card>
-            <ThemedText type="cardTitle">
-              {focusModeEnabled ? 'Tu única tarea ahora' : 'Progreso general'}
-            </ThemedText>
-            {!focusModeEnabled && <ProgressBar percent={pct} />}
-            <ThemedText type="small" themeColor="textSecondary">
-              {doneUnits.length} de {TOTAL_UNITS} unidades
-            </ThemedText>
-            <Button variant="primary" onPress={() => router.push(`/unidad/${nextUnit}`)}>
-              {doneUnits.length === 0 ? '▶️ Empezar' : '▶️ Continuar donde quedaste'}
-            </Button>
-          </Card>
-
-          <FocusModeCard />
-
-          {focusModeEnabled && <FocusTimer />}
-
-          <TextSizeCard />
-
-          <ThemeCard />
-          {!focusModeEnabled && (
-            <>
-              <HowItWorksCard />
-
-              <ReminderCard />
-
-              <Card onPress={() => router.push('/gramatica')}>
-                <ThemedText type="cardTitle">📚 Gramática para Hispanohablantes</ThemedText>
-                <ThemedText type="small" themeColor="textSecondary">
-                  Conceptos de gramática explicados en español, comparando con el inglés.
-                </ThemedText>
-              </Card>
-            </>
-          )}
-        </ScrollView>
+        {isWide ? (
+          // Pantalla ancha: lo de estudiar a la izquierda; los ajustes a la derecha.
+          <ScrollView contentContainerStyle={[styles.content, styles.contentAncho]}>
+            <Columnas
+              desde={900}
+              proporcion={[1.15, 1]}
+              principal={
+                <>
+                  {titulo}
+                  {subtitulo}
+                  {nivel}
+                  {estadisticas}
+                  {progreso}
+                  {practica}
+                  {gramatica}
+                  {comoFunciona}
+                  {/* En Modo TDAH lo esencial (el interruptor y el temporizador) se queda junto a la tarea. */}
+                  {focusModeEnabled && modoTdah}
+                  {temporizador}
+                </>
+              }
+              lateral={
+                <>
+                  {!focusModeEnabled && modoTdah}
+                  {tamano}
+                  {tema}
+                  {recordatorio}
+                </>
+              }
+            />
+          </ScrollView>
+        ) : (
+          <ScrollView contentContainerStyle={styles.content}>
+            {titulo}
+            {subtitulo}
+            {nivel}
+            {estadisticas}
+            {progreso}
+            {practica}
+            {modoTdah}
+            {temporizador}
+            {tamano}
+            {tema}
+            {comoFunciona}
+            {recordatorio}
+            {gramatica}
+          </ScrollView>
+        )}
       </SafeAreaView>
     </ThemedView>
   );
@@ -107,6 +155,10 @@ const styles = StyleSheet.create({
     maxWidth: MaxContentWidth,
     alignSelf: 'center',
     width: '100%',
+  },
+  contentAncho: {
+    maxWidth: 1120,
+    padding: Spacing.four,
   },
   statsRow: {
     flexDirection: 'row',

@@ -13,6 +13,8 @@ interface UnitListItemProps {
   level?: CefrLevel;
   /** Si es false, se muestra el nivel atenuado (está por encima de tu nivel). */
   atUserLevel?: boolean;
+  /** Resalta la unidad que se está viendo (en la vista de dos columnas). */
+  selected?: boolean;
 }
 
 export function UnitListItem({
@@ -22,6 +24,7 @@ export function UnitListItem({
   onPress,
   level,
   atUserLevel = true,
+  selected = false,
 }: UnitListItemProps) {
   const theme = useTheme();
 
@@ -30,8 +33,10 @@ export function UnitListItem({
       onPress={onPress}
       style={({ pressed }) => [
         styles.row,
-        { backgroundColor: theme.backgroundElement, borderColor: theme.border },
-        !atUserLevel && styles.dimmed,
+        selected
+          ? { backgroundColor: theme.backgroundSelected, borderColor: theme.primary }
+          : { backgroundColor: theme.backgroundElement, borderColor: theme.border },
+        !atUserLevel && !selected && styles.dimmed,
         pressed && styles.pressed,
       ]}>
       <View

@@ -47,6 +47,11 @@ export const TIPOS: Record<TipoOracion, TipoInfo> = {
   'future-perfect-continuous': { tiempo: 'futuro', es: 'Futuro perfecto continuo', en: 'Future Perfect Continuous', formula: 'will have been + verbo-ing' },
 };
 
+/** Comprueba que un valor (por ejemplo, un parámetro de la URL) sea un tipo de oración válido. */
+export function esTipoOracion(valor: unknown): valor is TipoOracion {
+  return typeof valor === 'string' && Object.prototype.hasOwnProperty.call(TIPOS, valor);
+}
+
 export const FRASES_POR_TIPO: Record<TipoOracion, [string, string][]> = {
   // ─────────────── PRESENTE (100) ───────────────
   'present-simple': [
