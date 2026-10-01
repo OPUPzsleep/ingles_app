@@ -11,6 +11,15 @@ export interface Progress {
   lastDate: string;
   /** Nivel CEFR actual del usuario (se usa para recomendar unidades). */
   userLevel: CefrLevel;
+  /** Mejor resultado (porcentaje) del quiz final de cada nivel. */
+  levelBest?: Partial<Record<CefrLevel, number>>;
+  /** Mejor resultado (porcentaje) del quiz de cada tema dentro de un nivel; la clave es "A1|Present & Past". */
+  temaBest?: Record<string, number>;
+  /**
+   * Con qué numeración de unidades se guardó `doneUnits`: 2 = la actual, por niveles. Sin valor = la del libro
+   * (versión 1.5.0 y anteriores), que se pasa a la actual una sola vez al cargar (ver `cargarProgreso`).
+   */
+  numeracion?: number;
 }
 
 export interface SrsEntry {

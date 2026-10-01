@@ -1,7 +1,7 @@
 import { Unit } from '@/types/grammar';
 
 export const questionsUnits: Record<number, Unit> = {
-  "49": {
+  "24": {
     "title": "Questions 1",
     "topic": "Questions",
     "level": "A2",
@@ -96,7 +96,7 @@ export const questionsUnits: Record<number, Unit> = {
       }
     ]
   },
-  "50": {
+  "68": {
     "title": "Questions 2 (who/what/which)",
     "topic": "Questions",
     "level": "B1",
@@ -180,7 +180,7 @@ export const questionsUnits: Record<number, Unit> = {
       }
     ]
   },
-  "51": {
+  "69": {
     "title": "Auxiliary Verbs (do/be/have)",
     "topic": "Questions",
     "level": "B1",
@@ -274,7 +274,7 @@ export const questionsUnits: Record<number, Unit> = {
       }
     ]
   },
-  "52": {
+  "70": {
     "title": "Question Tags",
     "topic": "Questions",
     "level": "B1",

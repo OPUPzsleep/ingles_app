@@ -1,7 +1,7 @@
 import { Unit } from '@/types/grammar';
 
 export const passiveVoiceUnits: Record<number, Unit> = {
-  "42": {
+  "65": {
     "title": "Passive 1 (is done / was done)",
     "topic": "Passive Voice",
     "level": "B1",
@@ -188,7 +188,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       }
     ]
   },
-  "43": {
+  "66": {
     "title": "Passive 2 (be done / been done)",
     "topic": "Passive Voice",
     "level": "B1",
@@ -326,7 +326,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       }
     ]
   },
-  "44": {
+  "120": {
     "title": "Passive 3 (two objects / get / born)",
     "topic": "Passive Voice",
     "level": "B2",
@@ -497,7 +497,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       }
     ]
   },
-  "45": {
+  "121": {
     "title": "Passive 3 (it is said that…)",
     "topic": "Passive Voice",
     "level": "B2",
@@ -618,7 +618,7 @@ export const passiveVoiceUnits: Record<number, Unit> = {
       }
     ]
   },
-  "46": {
+  "122": {
     "title": "Have Something Done",
     "topic": "Passive Voice",
     "level": "B2",

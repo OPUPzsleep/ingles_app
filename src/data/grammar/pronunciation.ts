@@ -1,8 +1,8 @@
 import { PronunUnit } from '@/types/grammar';
 
-// Anchors: only some units have pronunciation/vocab data. getPronunVocab()
-// falls back to the nearest lower anchor, so later units in a topic reuse
-// the anchor closest to (and at or below) them.
+// Anchors: only some units have pronunciation/vocab data (keys are the current unit numbers, see numeracion.ts).
+// getPronunVocab() falls back to the nearest lower anchor *in book order*, so later units in a topic reuse
+// the anchor closest to (and at or below) them in the book they come from.
 export const PRONUN_DATA: Record<number, PronunUnit> = {
   "1": {
     "tips": [
@@ -135,7 +135,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "5": {
+  "3": {
     "tips": [
       {
         "head": "Pasado de verbos regulares -ed",
@@ -202,7 +202,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "7": {
+  "46": {
     "tips": [
       {
         "head": "Have vs Has",
@@ -269,7 +269,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "15": {
+  "55": {
     "tips": [
       {
         "head": "Had — forma débil",
@@ -312,7 +312,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "26": {
+  "20": {
     "tips": [
       {
         "head": "CAN y COULD — pronunciación",
@@ -378,7 +378,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "38": {
+  "63": {
     "tips": [
       {
         "head": "IF en condicionales",
@@ -443,7 +443,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "42": {
+  "65": {
     "tips": [
       {
         "head": "Pasiva con BY",
@@ -509,7 +509,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "69": {
+  "5": {
     "tips": [
       {
         "head": "THE vs sin artículo",
@@ -575,7 +575,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "82": {
+  "32": {
     "tips": [
       {
         "head": "WHO vs WHICH vs THAT",
@@ -618,7 +618,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "101": {
+  "89": {
     "tips": [
       {
         "head": "ALTHOUGH vs DESPITE",
@@ -661,7 +661,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "105": {
+  "10": {
     "tips": [
       {
         "head": "Comparativos y superlativas — acento",
@@ -726,7 +726,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "109": {
+  "93": {
     "tips": [
       {
         "head": "AT / ON / IN — pronunciación rápida",
@@ -783,7 +783,7 @@ export const PRONUN_DATA: Record<number, PronunUnit> = {
       }
     ]
   },
-  "113": {
+  "95": {
     "tips": [
       {
         "head": "Phrasal verbs: partícula tónica",

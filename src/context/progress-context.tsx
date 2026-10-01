@@ -1,6 +1,7 @@
 import { createContext, ReactNode, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
 import { getSrsEntry, rateSrs } from '@/lib/flashcards';
+import { claveQuizTema } from '@/lib/grammar';
 import { applyDailyStreak } from '@/lib/progress';
 import { cargarProgreso, cargarSrs, guardarProgreso, guardarSrs } from '@/lib/storage';
 import { CefrLevel } from '@/types/grammar';
@@ -14,6 +15,10 @@ interface ProgressContextValue extends Progress {
   registerFlashcardFlip: () => void;
   rateFlashcard: (cardId: string, rating: 0 | 1 | 2) => void;
   setUserLevel: (level: CefrLevel) => void;
+  /** Guarda el resultado (porcentaje) del quiz final de un nivel; se queda con el mejor. */
+  registerLevelQuiz: (level: CefrLevel, pct: number) => void;
+  /** Guarda el resultado (porcentaje) del quiz de un tema dentro de un nivel; se queda con el mejor. */
+  registerTopicQuiz: (level: CefrLevel, topicName: string, pct: number) => void;
 }
 
 const ProgressContext = createContext<ProgressContextValue | null>(null);
@@ -98,6 +103,25 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     [progress, persist]
   );
 
+  const registerLevelQuiz = useCallback(
+    (level: CefrLevel, pct: number) => {
+      const anterior = progress.levelBest?.[level];
+      if (anterior !== undefined && pct <= anterior) return;
+      persist({ ...progress, levelBest: { ...progress.levelBest, [level]: pct } });
+    },
+    [progress, persist]
+  );
+
+  const registerTopicQuiz = useCallback(
+    (level: CefrLevel, topicName: string, pct: number) => {
+      const clave = claveQuizTema(level, topicName);
+      const anterior = progress.temaBest?.[clave];
+      if (anterior !== undefined && pct <= anterior) return;
+      persist({ ...progress, temaBest: { ...progress.temaBest, [clave]: pct } });
+    },
+    [progress, persist]
+  );
+
   const value = useMemo<ProgressContextValue>(
     () => ({
       ...progress,
@@ -108,6 +132,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       registerFlashcardFlip,
       rateFlashcard,
       setUserLevel,
+      registerLevelQuiz,
+      registerTopicQuiz,
     }),
     [
       progress,
@@ -118,6 +144,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       registerFlashcardFlip,
       rateFlashcard,
       setUserLevel,
+      registerLevelQuiz,
+      registerTopicQuiz,
     ]
   );
 

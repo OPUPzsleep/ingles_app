@@ -1,13 +1,13 @@
 import { useRouter } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { NivelCard } from '@/components/nivel-card';
+import { NivelUnidades } from '@/components/nivel-unidades';
 import { SplitLayout } from '@/components/split-layout';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { TopicCard } from '@/components/topic-card';
-import { TopicUnits } from '@/components/topic-units';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { UnitView } from '@/components/unit-view';
@@ -16,50 +16,84 @@ import { useTheme } from '@/hooks/use-theme';
 import { useIsWide } from '@/hooks/use-is-wide';
 import { useProgress } from '@/context/progress-context';
 import { useSettings } from '@/context/settings-context';
-import { TOPICS } from '@/data/grammar/topics';
-import { nextRecommendedUnit, topicProgress } from '@/lib/grammar';
-import { CEFR_LEVELS } from '@/types/grammar';
-
-const FOCUS_MODE_VISIBLE_COUNT = 3;
+import { getUnit, NIVELES, nextRecommendedUnit, progresoDeNivel, siguienteNivel } from '@/lib/grammar';
+import { CEFR_LEVELS, type CefrLevel } from '@/types/grammar';
 
 export default function AprenderScreen() {
   const router = useRouter();
   const theme = useTheme();
   const isWide = useIsWide();
-  const { doneUnits, userLevel, setUserLevel } = useProgress();
+  const { doneUnits, userLevel, setUserLevel, levelBest } = useProgress();
   const { focusModeEnabled } = useSettings();
   const [showAll, setShowAll] = useState(false);
-  // Solo en pantalla ancha: el tema abierto en la lista y la unidad que se ve a la derecha.
-  const [temaAbierto, setTemaAbierto] = useState<string | null>(null);
+  // Solo en pantalla ancha: el nivel desplegado en la lista y la unidad que se ve a la derecha.
+  // null = automático: se despliega el nivel de la unidad que se está viendo; 'ninguno' = todos plegados.
+  const [nivelAbierto, setNivelAbierto] = useState<CefrLevel | 'ninguno' | null>(null);
   const [unidadElegida, setUnidadElegida] = useState<number | null>(null);
 
-  const orderedTopics = useMemo(() => {
-    const withProgress = TOPICS.map((topic) => ({
-      topic,
-      progress: topicProgress(topic.name, doneUnits, userLevel),
-    }));
-    // Los temas con unidades a tu nivel van primero; entre ellos, respeta el
-    // orden original. Los que todavía no tienen nada a tu nivel van al final.
-    return [...withProgress].sort((a, b) => {
-      const aReady = a.progress.atLevelCount > 0 ? 0 : 1;
-      const bReady = b.progress.atLevelCount > 0 ? 0 : 1;
-      return aReady - bReady;
-    });
-  }, [doneUnits, userLevel]);
+  // Al desplegar un nivel, la lista sube hasta él para que sus unidades queden a la vista (ver explorador de Gramática).
+  const refLista = useRef<ScrollView>(null);
+  const subirA = useRef<CefrLevel | null>(null);
 
-  const visibleTopics =
-    focusModeEnabled && !showAll ? orderedTopics.slice(0, FOCUS_MODE_VISIBLE_COUNT) : orderedTopics;
+  // Modo TDAH: solo tu nivel y el siguiente (el resto queda detrás de "Ver todos").
+  const nivelBase = NIVELES.includes(userLevel) ? userLevel : NIVELES[NIVELES.length - 1];
+  const nivelesVisibles: CefrLevel[] =
+    focusModeEnabled && !showAll
+      ? [nivelBase, siguienteNivel(nivelBase)].filter((nivel): nivel is CefrLevel => nivel !== null)
+      : NIVELES;
 
   // Por defecto, la columna derecha muestra la siguiente unidad recomendada.
   const unidad = unidadElegida ?? nextRecommendedUnit(doneUnits, userLevel);
+  const elegirUnidad = (num: number) => {
+    setUnidadElegida(num);
+    setNivelAbierto(null); // la lista vuelve a seguir a la unidad que se ve
+  };
+  const nivelDesplegado: CefrLevel | null =
+    nivelAbierto === null ? (getUnit(unidad)?.level ?? null) : nivelAbierto === 'ninguno' ? null : nivelAbierto;
+
+  const alternarNivel = (nivel: CefrLevel, abierto: boolean) => {
+    subirA.current = abierto ? null : nivel;
+    setNivelAbierto(abierto ? 'ninguno' : nivel);
+  };
+
+  const listaNiveles = nivelesVisibles.map((nivel) => {
+    const { hechas, total } = progresoDeNivel(nivel, doneUnits);
+    const abierto = isWide && nivelDesplegado === nivel;
+    return (
+      <View
+        key={nivel}
+        style={styles.bloqueNivel}
+        onLayout={
+          isWide
+            ? (evento) => {
+                if (subirA.current !== nivel) return;
+                subirA.current = null;
+                refLista.current?.scrollTo({ y: Math.max(0, evento.nativeEvent.layout.y - Spacing.three), animated: true });
+              }
+            : undefined
+        }>
+        <NivelCard
+          nivel={nivel}
+          hechas={hechas}
+          total={total}
+          mejor={levelBest?.[nivel]}
+          esTuNivel={nivel === userLevel}
+          compact={isWide}
+          abierto={abierto}
+          onPress={() => (isWide ? alternarNivel(nivel, abierto) : router.push(`/nivel/${nivel}`))}
+        />
+        {abierto && <NivelUnidades nivel={nivel} selectedUnit={unidad} onSelectUnit={elegirUnidad} />}
+      </View>
+    );
+  });
 
   const lista = (
     <>
       <ThemedText type="subtitle">Aprender</ThemedText>
       <ThemedText themeColor="textSecondary">
         {focusModeEnabled
-          ? 'Modo TDAH: solo tus próximos temas, sin lista larga'
-          : 'Los temas con unidades a tu nivel aparecen primero'}
+          ? 'Modo TDAH: solo tu nivel y el siguiente, sin lista larga'
+          : 'Avanza nivel por nivel: cada tema y cada nivel terminan con su propio quiz'}
       </ThemedText>
 
       <View style={styles.levelRow}>
@@ -97,30 +131,11 @@ export default function AprenderScreen() {
         )}
       </Card>
 
-      {visibleTopics.map(({ topic, progress }) => (
-        <View key={topic.name} style={styles.tema}>
-          <TopicCard
-            topic={topic}
-            done={progress.done}
-            hasContent={progress.hasContent}
-            atLevelCount={progress.atLevelCount}
-            minLevel={progress.minLevel}
-            compact={isWide}
-            onPress={() =>
-              isWide
-                ? setTemaAbierto((actual) => (actual === topic.name ? null : topic.name))
-                : router.push(`/tema/${encodeURIComponent(topic.name)}`)
-            }
-          />
-          {isWide && temaAbierto === topic.name && (
-            <TopicUnits topicName={topic.name} selectedUnit={unidad} onSelectUnit={setUnidadElegida} />
-          )}
-        </View>
-      ))}
+      {listaNiveles}
 
       {focusModeEnabled && (
         <Button variant="ghost" onPress={() => setShowAll((v) => !v)}>
-          {showAll ? '🙈 Mostrar menos' : `👀 Ver todos los temas (${orderedTopics.length})`}
+          {showAll ? '🙈 Mostrar menos' : `👀 Ver todos los niveles (${NIVELES.length})`}
         </Button>
       )}
     </>
@@ -132,9 +147,10 @@ export default function AprenderScreen() {
         {isWide ? (
           <SplitLayout
             izquierda={lista}
-            derecha={<UnitView num={unidad} onSelectUnit={setUnidadElegida} />}
+            derecha={<UnitView num={unidad} onSelectUnit={elegirUnidad} />}
             claveDerecha={unidad}
-            nombrePanel="la lista de temas"
+            nombrePanel="la lista de niveles"
+            refLista={refLista}
           />
         ) : (
           <ScrollView contentContainerStyle={styles.content}>{lista}</ScrollView>
@@ -159,7 +175,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     width: '100%',
   },
-  tema: {
+  bloqueNivel: {
     gap: Spacing.two,
   },
   mapaCompacto: {

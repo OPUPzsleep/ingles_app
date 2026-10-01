@@ -104,10 +104,10 @@ export interface Unit {
   dailyWords?: VocabEntry[];
 }
 
+/** Un tema de gramática. Cada unidad dice a cuál pertenece (`Unit.topic`), y cada nivel los muestra como secciones. */
 export interface Topic {
   name: string;
   icon: string;
-  units: number[];
 }
 
 export interface PronunTip {

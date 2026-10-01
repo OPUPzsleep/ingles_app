@@ -2,6 +2,7 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Dimensions, StyleSheet, View } from 'react-native';
 
+import { useIrAlInicio } from '@/components/boton-inicio';
 import { ChatSimulator } from '@/components/chat-simulator';
 import { ANCHO_DOS_COLUMNAS, Columnas } from '@/components/columnas';
 import { ContrastCard } from '@/components/contrast-card';
@@ -20,7 +21,15 @@ import { useProgress } from '@/context/progress-context';
 import { FORMAS_UNIDAD } from '@/data/grammar/formas';
 import { ALL_UNIT_TITLES } from '@/data/grammar/unit-titles';
 import { useTheme } from '@/hooks/use-theme';
-import { getPronunVocab, getUnit } from '@/lib/grammar';
+import {
+  cantidadPreguntasQuizNivel,
+  cantidadPreguntasQuizTema,
+  etiquetaDeTema,
+  getPronunVocab,
+  getUnit,
+  seccionDeUnidad,
+  vecinasEnRuta,
+} from '@/lib/grammar';
 
 type Tab = 'teoria' | 'lectura' | 'consejos';
 
@@ -58,6 +67,7 @@ interface UnitViewProps {
  */
 export function UnitView({ num, onSelectUnit }: UnitViewProps) {
   const router = useRouter();
+  const irAlInicio = useIrAlInicio();
   const theme = useTheme();
   const { doneUnits, markUnitDone } = useProgress();
   const [tab, setTab] = useState<Tab>('teoria');
@@ -69,8 +79,8 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
   const unit = getUnit(num);
   const isDone = doneUnits.includes(num);
   const pv = getPronunVocab(num);
-  const prevNum = num > 1 ? num - 1 : null;
-  const nextNum = num < 145 ? num + 1 : null;
+  // Anterior y siguiente siguen el recorrido por niveles (todo A1, luego todo A2…), que es el orden de los números.
+  const { anterior: prevNum, siguiente: nextNum } = vecinasEnRuta(num);
 
   const irAUnidad = (destino: number) =>
     onSelectUnit ? onSelectUnit(destino) : router.push(`/unidad/${destino}`);
@@ -94,6 +104,13 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
 
   const hasLectura = !!unit.simulatedChat?.length || !!unit.readingText || !!pv?.tips.length;
   const hasConsejos = !!unit.tips?.length || !!unit.flashcards?.length;
+
+  // Al final de la última unidad de un tema (dentro de su nivel) se ofrece el quiz del tema; al final de la última
+  // del nivel, el quiz del nivel.
+  const seccion = seccionDeUnidad(num);
+  const cierraTema = !!seccion && seccion.unidades[seccion.unidades.length - 1] === num;
+  const cierraNivel = !nextNum || getUnit(nextNum)?.level !== unit.level;
+  const nombreTema = seccion ? etiquetaDeTema(unit.level, seccion.tema).nombre : unit.topic;
 
   // ─── Teoría ───
   // Con ancho de sobra (desde ~600 px) cada bloque de teoría va en un cuadro, como el resto de tarjetas de la unidad;
@@ -203,7 +220,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
         <View style={holgado ? styles.encabezadoAncho : styles.encabezado}>
           <View style={styles.tituloUnidad}>
             <ThemedText type="label" themeColor="primary">
-              Unit {num} · {unit.topic}
+              Unit {num} · {nombreTema} · {unit.level}
             </ThemedText>
             <ThemedText type="cardTitle">{unit.title}</ThemedText>
           </View>
@@ -322,6 +339,42 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
           <EmptyTab />
         ))}
 
+      {/* La última unidad de cada tema (dentro de su nivel) cierra con el quiz de ese tema… */}
+      {cierraTema && seccion && (
+        <Card>
+          <ThemedText type="label" themeColor="primary">
+            {`🎯 Fin del tema ${nombreTema}`}
+          </ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">
+            {`Es la última unidad de este tema en el nivel ${unit.level}. Ciérralo con su quiz de ${cantidadPreguntasQuizTema(unit.level, seccion)} preguntas.`}
+          </ThemedText>
+          <Button
+            variant="primary"
+            onPress={() => router.push(`/quiz/tema/${unit.level}/${encodeURIComponent(seccion.tema.name)}`)}
+            style={holgado ? styles.botonDeTarjetaAncho : undefined}>
+            {`🎯 Quiz de ${nombreTema}`}
+          </Button>
+        </Card>
+      )}
+
+      {/* …y la última de cada nivel, con el quiz de ese nivel. */}
+      {cierraNivel && (
+        <Card>
+          <ThemedText type="label" themeColor="primary">
+            🏁 Fin del nivel {unit.level}
+          </ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">
+            Es la última unidad de este nivel. Ciérralo con su quiz de {cantidadPreguntasQuizNivel(unit.level)} preguntas.
+          </ThemedText>
+          <Button
+            variant={cierraTema ? 'secondary' : 'primary'}
+            onPress={() => router.push(`/quiz/nivel/${unit.level}`)}
+            style={holgado ? styles.botonDeTarjetaAncho : undefined}>
+            {`🏁 Quiz del nivel ${unit.level}`}
+          </Button>
+        </Card>
+      )}
+
       <View style={styles.navRow}>
         {prevNum ? (
           <Button
@@ -342,6 +395,10 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
           </Button>
         )}
       </View>
+
+      <Button variant="secondary" onPress={irAlInicio} style={holgado ? styles.botonInicioAncho : undefined}>
+        🏠 Volver al inicio
+      </Button>
     </View>
   );
 }
@@ -368,6 +425,11 @@ const styles = StyleSheet.create({
     flexShrink: 1,
   },
   botonAncho: {
+    minWidth: 240,
+  },
+  // Botón dentro de una tarjeta (fin de tema, fin de nivel): en pantalla ancha mide lo que su texto, sin estirarse.
+  botonDeTarjetaAncho: {
+    alignSelf: 'flex-start',
     minWidth: 240,
   },
   tabRow: {
@@ -408,6 +470,11 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   navButtonAncho: {
+    minWidth: 220,
+  },
+  // En pantalla ancha el botón de Inicio mide lo que su texto, a la izquierda, sin estirarse.
+  botonInicioAncho: {
+    alignSelf: 'flex-start',
     minWidth: 220,
   },
 });

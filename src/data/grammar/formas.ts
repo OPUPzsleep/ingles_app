@@ -89,7 +89,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: 'Con I/you/we/they se usa do / don\'t; con he/she/it, does / doesn\'t. Respuestas cortas: Yes, I do. / No, she doesn\'t.',
     ojo: "La -s se queda en el auxiliar: 'She doesn't work' y 'Does she work?' (no 'doesn't works').",
   },
-  5: {
+  3: {
     afirmativa: {
       formulas: [f(suj('Subject'), verbo('verb + -ed / irregular'))],
       ejemplos: [
@@ -114,7 +114,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "did / didn't ya marcan el pasado, así que el verbo vuelve a su forma base. Respuestas cortas: Yes, I did. / No, she didn't. Con el verbo be no se usa did: I wasn't · Were you?",
     ojo: "No pongas el pasado dos veces: 'Did she went?' ✗ → 'Did she go?' ✓.",
   },
-  6: {
+  15: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('was / were'), verbo('verb-ing'))],
       ejemplos: [
@@ -141,7 +141,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
   },
 
   // ─── Present Perfect ───
-  7: {
+  46: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('have / has'), verbo('past participle'))],
       ejemplos: [
@@ -166,7 +166,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "Contracciones: I've · she's (= has) · haven't · hasn't. Respuestas cortas: Yes, I have. / No, she hasn't.",
     ojo: "Tras have/has va el participio: 'I have seen', no 'I have saw'. Y have/has aquí es el auxiliar 'haber', no 'tener'.",
   },
-  9: {
+  48: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('have / has'), aux('been'), verbo('verb-ing'))],
       ejemplos: [
@@ -193,7 +193,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
   },
 
   // ─── Past Perfect ───
-  15: {
+  55: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('had'), verbo('past participle'))],
       ejemplos: [
@@ -218,7 +218,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "had es igual para todas las personas. Contracciones: I'd · she'd · hadn't. Respuestas cortas: Yes, I had. / No, he hadn't.",
     ojo: "'d puede ser had o would: si después viene un participio (I'd left), es had; si viene un verbo en base (I'd go), es would.",
   },
-  16: {
+  116: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('had'), aux('been'), verbo('verb-ing'))],
       ejemplos: [
@@ -243,7 +243,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: 'Es la versión en pasado del present perfect continuous: had been + verbo con -ing. Respuestas cortas: Yes, I had. / No, I hadn\'t.',
     ojo: "No lleva have/has: es 'had been', no 'have been' (eso ya es presente).",
   },
-  17: {
+  4: {
     afirmativa: {
       formulas: [
         fl('Con have', suj('Subject'), aux('have / has'), resto('object')),
@@ -277,7 +277,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "have y have got significan lo mismo (tener: posesión, familia, enfermedades, horarios). have got es más informal y solo existe en presente. Respuestas cortas: Yes, I do. / No, I haven't.",
     ojo: "No los mezcles: 'Do you have got…?' ✗. En pasado solo se usa had: 'I didn't have time'.",
   },
-  18: {
+  19: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('used to'), verbo('verb'))],
       ejemplos: [
@@ -304,7 +304,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
   },
 
   // ─── Future ───
-  20: {
+  17: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('am / is / are'), aux('going to'), verbo('verb'))],
       ejemplos: [
@@ -329,9 +329,9 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "Contracciones: I'm not · isn't · aren't. Respuestas cortas: Yes, I am. / No, I'm not. En el habla informal, going to suena 'gonna'.",
     ojo: "El verbo tras going to va en base: 'going to eat', no 'going to eating' ni 'going to to eat'.",
   },
-  21: WILL,
-  22: WILL,
-  24: {
+  18: WILL,
+  53: WILL,
+  114: {
     afirmativa: {
       formulas: [
         fl('Continuous', suj('Subject'), aux('will be'), verbo('verb-ing')),
@@ -367,7 +367,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
   },
 
   // ─── Modal Verbs ───
-  26: {
+  20: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('can / could'), verbo('verb'))],
       ejemplos: [
@@ -392,7 +392,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "can / could no cambian con la persona (sin -s) y el verbo va en base, sin to. Se escribe can't o cannot (junto). Para otros tiempos se usa be able to: 'I'll be able to', 'I haven't been able to'.",
     ojo: "'She cans' ✗ y 'can to swim' ✗ → 'She can swim' ✓.",
   },
-  27: {
+  117: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('could have'), verbo('past participle'))],
       ejemplos: [
@@ -417,7 +417,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: 'could have + participio = algo que era posible pero no pasó (y, en negativa, algo imposible en el pasado). Es igual para todas las personas.',
     ojo: "El participio no cambia: 'could have gone', no 'could have went'.",
   },
-  28: {
+  56: {
     afirmativa: {
       formulas: [
         fl('Ahora', suj('Subject'), aux('must'), verbo('be / verb')),
@@ -451,7 +451,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "Para deducir: must = 'seguro que sí' y can't = 'seguro que no'. Para preguntar se evita must: se usa 'Do you think…?' o could.",
     ojo: "'Seguro que no' es can't, no mustn't: mustn't significa prohibición ('No debes').",
   },
-  29: {
+  57: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('may / might'), verbo('verb'))],
       ejemplos: [
@@ -479,7 +479,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "may / might no cambian con la persona y el verbo va en base, sin to. Para preguntar por posibilidad no se usa may/might: se dice 'Do you think…?'. May I…? pide permiso con cortesía.",
     ojo: "No existe 'mayn't' en el uso normal: se dice may not / might not.",
   },
-  31: {
+  21: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('have to / has to'), verbo('verb'))],
       ejemplos: [
@@ -504,7 +504,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "En pasado: had to · didn't have to · Did you have to…? Respuestas cortas: Yes, I do. / No, she doesn't.",
     ojo: "don't have to = no hace falta; mustn't = está prohibido. 'You don't have to smoke here' no significa 'prohibido fumar'.",
   },
-  33: {
+  22: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('should'), verbo('verb'))],
       ejemplos: [
@@ -529,7 +529,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "should no cambia con la persona y el verbo va en base, sin to. Respuestas cortas: Yes, you should. / No, you shouldn't. Es un consejo, más suave que must.",
     ojo: "'You should to go' ✗ → 'You should go' ✓.",
   },
-  34: {
+  60: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('should have'), verbo('past participle'))],
       ejemplos: [
@@ -554,7 +554,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: 'should have + participio = crítica o arrepentimiento por algo pasado. Es igual para todas las personas. Respuestas cortas: Yes, you should have. / No, you shouldn\'t have.',
     ojo: "Se pronuncia 'shouldve', pero se escribe should have, nunca 'should of'.",
   },
-  36: {
+  62: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('would'), verbo('verb'))],
       ejemplos: [
@@ -581,7 +581,7 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
   },
 
   // ─── Passive Voice ───
-  42: {
+  65: {
     afirmativa: {
       formulas: [
         fl('Presente', suj('Subject'), aux('am / is / are'), verbo('past participle')),

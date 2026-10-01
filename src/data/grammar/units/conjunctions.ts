@@ -1,7 +1,7 @@
 import { Unit } from '@/types/grammar';
 
 export const conjunctionsUnits: Record<number, Unit> = {
-  "113": {
+  "95": {
     "title": "Although / Though / Even though / In spite of / Despite",
     "topic": "Conjunctions",
     "level": "B1",
@@ -64,7 +64,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
       "translation": "Aunque el pronóstico del tiempo era terrible, decidimos ir de excursión de todos modos. Aun cuando empezó a llover después de una hora, nadie quería regresar. A pesar del barro y el viento frío, seguimos subiendo, riéndonos de lo ridículos que nos veíamos. A pesar de sentirnos agotados, llegamos a la cima justo antes del atardecer. Aunque la vista estaba oculta por las nubes, estábamos orgullosos de nosotros mismos. Mi hermana dijo: 'Aunque estamos empapados y helados, valió la pena.' A pesar de todo lo que salió mal, resultó ser uno de nuestros viajes favoritos, y ya estamos planeando el próximo, aunque la próxima vez revisaremos el clima con más cuidado."
     }
   },
-  "114": {
+  "96": {
     "title": "In Case",
     "topic": "Conjunctions",
     "level": "B1",
@@ -147,7 +147,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
       }
     ]
   },
-  "115": {
+  "97": {
     "title": "Unless / As Long As / Provided",
     "topic": "Conjunctions",
     "level": "B1",
@@ -231,7 +231,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
       }
     ]
   },
-  "116": {
+  "137": {
     "title": "As (time/manner/reason)",
     "topic": "Conjunctions",
     "level": "B2",
@@ -288,7 +288,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
       "translation": "Mientras mi abuela me enseñaba a hacer sopa, explicaba cada paso con cuidado. 'Hazlo como yo lo hago, no como dice la receta', me dijo, revolviendo la olla lentamente. A medida que las cebollas comenzaban a ablandarse, la cocina se llenó de un aroma maravilloso. Como no había albahaca fresca en el refrigerador, usamos albahaca seca en su lugar. 'No sabrá exactamente como pretende la receta original', dijo, 'pero seguirá siendo deliciosa.' Mientras esperábamos a que se cocinara la sopa, me contó historias sobre su propia abuela. Mientras la observaba trabajar, me di cuenta de que cocinar no se trataba solo de seguir instrucciones — se trataba de paciencia, amor y hacer las cosas como ella siempre las había hecho."
     }
   },
-  "117": {
+  "138": {
     "title": "Like and As",
     "topic": "Conjunctions",
     "level": "B2",
@@ -372,7 +372,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
       }
     ]
   },
-  "118": {
+  "139": {
     "title": "Like / As If / As Though",
     "topic": "Conjunctions",
     "level": "B2",
@@ -440,7 +440,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
       "translation": "Nuestro nuevo vecino es muy extraño. Parece como si nunca durmiera — sus ojos siempre se ven oscuros y cansados. Habla como si conociera a todos en el pueblo, aunque se mudó aquí apenas el mes pasado. Ayer me saludó como si fuéramos viejos amigos, pero nunca había hablado con él antes. Suena como si trabajara de noche, porque sus luces siempre están encendidas. Conduce un auto viejo que suena como si estuviera a punto de desarmarse. Mi mamá dice que actúa como si fuera dueño de toda la calle, caminando como si fuera el alcalde. Sinceramente, se siente como si viviéramos junto a un misterio."
     }
   },
-  "119": {
+  "42": {
     "title": "During / For / While",
     "topic": "Conjunctions",
     "level": "A2",
@@ -508,7 +508,7 @@ export const conjunctionsUnits: Record<number, Unit> = {
       "translation": "Mi teléfono sonó tres veces durante la reunión de la mañana, lo cual fue vergonzoso. Había estado trabajando en el mismo informe durante seis horas, y mientras intentaba terminarlo, mi computadora se apagó de repente. Durante el almuerzo, ni siquiera paré para comer — seguí escribiendo mientras mi sándwich quedó intacto por más de una hora. Mi jefa pasó mientras yo reescribía todo el documento de memoria. 'Has estado en tu escritorio todo el día', dijo, sorprendida. Durante la tarde, las cosas finalmente se calmaron, y mientras mis compañeros se fueron temprano, yo me quedé dos horas más para terminar todo. Al final, había estado trabajando casi doce horas seguidas."
     }
   },
-  "120": {
+  "98": {
     "title": "By and Until / By the Time",
     "topic": "Conjunctions",
     "level": "B1",

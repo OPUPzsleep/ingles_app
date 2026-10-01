@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
@@ -14,14 +14,24 @@ interface PooledQuizQuestion extends QuizQuestion {
   unitTitle: string;
 }
 
+export interface ResultadoQuiz {
+  correctas: number;
+  total: number;
+}
+
 interface QuizSessionProps {
   pool: PooledQuizQuestion[];
   modeLabel: string;
-  onFinish?: () => void;
+  /** Se llama al contestar la última pregunta, con el resultado de la sesión. */
+  onFinish?: (resultado: ResultadoQuiz) => void;
   onExit: () => void;
+  /** Si se pasa, "Repetir" lo llama (por ejemplo, para sacar otras preguntas) en vez de repetir las mismas. */
+  onRepetir?: () => void;
+  /** Botones extra en la pantalla de resultados (por ejemplo, "Seguir con el nivel A2"). */
+  resultActions?: ReactNode;
 }
 
-export function QuizSession({ pool, modeLabel, onFinish, onExit }: QuizSessionProps) {
+export function QuizSession({ pool, modeLabel, onFinish, onExit, onRepetir, resultActions }: QuizSessionProps) {
   const { registerQuizAnswer } = useProgress();
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
@@ -61,9 +71,14 @@ export function QuizSession({ pool, modeLabel, onFinish, onExit }: QuizSessionPr
         </ThemedText>
         <ThemedText style={styles.resultsMsg}>{msg}</ThemedText>
         <View style={styles.resultsButtons}>
+          {resultActions}
           <Button
-            variant="primary"
+            variant={resultActions ? 'secondary' : 'primary'}
             onPress={() => {
+              if (onRepetir) {
+                onRepetir();
+                return;
+              }
               setIdx(0);
               setSessionCorrect(0);
               setSessionTotal(0);
@@ -95,7 +110,7 @@ export function QuizSession({ pool, modeLabel, onFinish, onExit }: QuizSessionPr
   const next = () => {
     const nextIdx = idx + 1;
     setSelected(null);
-    if (nextIdx >= pool.length) onFinish?.();
+    if (nextIdx >= pool.length) onFinish?.({ correctas: sessionCorrect, total: sessionTotal });
     setIdx(nextIdx);
   };
 

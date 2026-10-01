@@ -1,7 +1,7 @@
 import { Unit } from '@/types/grammar';
 
 export const pronounsUnits: Record<number, Unit> = {
-  "82": {
+  "32": {
     "title": "Myself / Yourself / Themselves (reflexive pronouns)",
     "topic": "Pronouns",
     "level": "A2",
@@ -57,7 +57,7 @@ export const pronounsUnits: Record<number, Unit> = {
       "translation": "Después de la universidad, Daniel decidió vivir solo por primera vez. Al principio, le pareció extraño cocinar solo para sí mismo y hablar consigo mismo en el apartamento vacío. Una noche, se cortó mientras picaba verduras y se rió, diciendo: \"¡De verdad necesito tener más cuidado cuando estoy solo!\" Poco a poco, aprendió a disfrutar de su propia compañía. Se enseñó a sí mismo a cocinar platos nuevos e incluso empezó a pintar, solo para él. Sus amigos a menudo le preguntaban: \"¿No te sientes solo viviendo por tu cuenta?\" Pero Daniel sonreía y decía: \"La verdad no — he aprendido a cuidarme a mí mismo, y estoy orgulloso de eso.\""
     }
   },
-  "83": {
+  "82": {
     "title": "A Friend of Mine / My Own",
     "topic": "Pronouns",
     "level": "B1",
@@ -152,7 +152,7 @@ export const pronounsUnits: Record<number, Unit> = {
       }
     ]
   },
-  "84": {
+  "33": {
     "title": "There… and It…",
     "topic": "Pronouns",
     "level": "A2",
@@ -220,7 +220,7 @@ export const pronounsUnits: Record<number, Unit> = {
       "translation": "Hay un pueblito cerca de las montañas que visito cada verano. Ahí normalmente hace frío, incluso en julio, así que es importante llevar una chaqueta abrigada. Solo viven unas doscientas personas en el pueblo, pero siempre está pasando algo interesante. El año pasado, llovía todos los días, lo cual era inusual. Había un pequeño café donde me sentaba por horas; es el lugar perfecto para leer un libro. Queda a unas dos horas en auto desde la ciudad, pero vale cada minuto. No hay nada como despertar ahí y mirar las montañas por la ventana."
     }
   },
-  "85": {
+  "9": {
     "title": "Some and Any",
     "topic": "Pronouns",
     "level": "A1",
@@ -304,7 +304,7 @@ export const pronounsUnits: Record<number, Unit> = {
       }
     ]
   },
-  "86": {
+  "34": {
     "title": "No / None / Any / Nothing / Nobody",
     "topic": "Pronouns",
     "level": "A2",
@@ -361,7 +361,7 @@ export const pronounsUnits: Record<number, Unit> = {
       "translation": "La oficina estaba completamente vacía el lunes por la mañana. No había ninguna señal de los archivos desaparecidos, y nadie sabía adónde habían ido. \"¿Alguien vio algo extraño anoche?\" preguntó la gerente, pero nadie respondió. Revisó las cámaras de seguridad, pero no había nada inusual en las grabaciones — nadie había entrado al edificio fuera de horario. \"Ninguna de las puertas fue forzada\", dijo el guardia de seguridad, \"y ninguna de las ventanas se rompió tampoco.\" La gerente suspiró. \"Entonces no se robó nada, y nadie entró, pero los archivos no están. Eso no tiene ningún sentido.\" Parecía que no había ninguna explicación — hasta que alguien recordó que el personal de limpieza había movido cajas el día anterior."
     }
   },
-  "87": {
+  "35": {
     "title": "Much, Many, Little, Few",
     "topic": "Pronouns",
     "level": "A2",
@@ -469,7 +469,7 @@ export const pronounsUnits: Record<number, Unit> = {
       }
     ]
   },
-  "88": {
+  "36": {
     "title": "All / Most / Some / Any / No / None",
     "topic": "Pronouns",
     "level": "A2",
@@ -521,7 +521,7 @@ export const pronounsUnits: Record<number, Unit> = {
       "translation": "Nuestra maestra le dio a la clase una encuesta sobre el tiempo libre. Todos los estudiantes respondieron con sinceridad, y los resultados fueron sorprendentes. La mayoría de la clase dijo que pasa demasiado tiempo en su teléfono. Algunos de los estudiantes admitieron que leen libros todos los días, pero ninguno de ellos dijo que lee más de una hora. Curiosamente, todos los estudiantes estuvieron de acuerdo en que necesitan más tiempo libre en general. Cuando se les preguntó si alguno quería menos tarea, se levantaron todas las manos. \"Ninguno de ustedes está solo sintiéndose así\", se rió la maestra. \"La mayoría de las personas de su edad se sienten exactamente igual.\""
     }
   },
-  "89": {
+  "83": {
     "title": "Both / Either / Neither",
     "topic": "Pronouns",
     "level": "B1",
@@ -605,7 +605,7 @@ export const pronounsUnits: Record<number, Unit> = {
       }
     ]
   },
-  "90": {
+  "84": {
     "title": "All / Every / Whole",
     "topic": "Pronouns",
     "level": "B1",
@@ -678,7 +678,7 @@ export const pronounsUnits: Record<number, Unit> = {
       "translation": "María tenía toda una lista de cosas por hacer. Pasó toda la mañana limpiando la casa y cada habitación necesitaba atención. Al mediodía, ya había limpiado toda la cocina, toda la sala y hasta todo el garaje. Trabajó todo el día sin parar, y cada tarea se sentía más difícil que la anterior. \"Limpié todo el apartamento\", dijo, agotada, \"y lo hice yo sola.\" También había pasado toda la tarde con la ropa — cada prenda finalmente estaba limpia. Esa noche, se sentó y pensó: \"Merezco todo el fin de semana para descansar después de trabajar toda la semana así.\""
     }
   },
-  "91": {
+  "85": {
     "title": "Each and Every",
     "topic": "Pronouns",
     "level": "B1",

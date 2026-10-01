@@ -1,7 +1,7 @@
 import { Unit } from '@/types/grammar';
 
 export const reportedSpeechUnits: Record<number, Unit> = {
-  "47": {
+  "67": {
     "title": "Reported Speech (He said…)",
     "topic": "Reported Speech",
     "level": "B1",
@@ -104,7 +104,7 @@ export const reportedSpeechUnits: Record<number, Unit> = {
       "translation": "Ayer me encontré con mi vieja amiga Laura. Me dijo que ahora trabajaba en un hospital. 'Trabajo aquí como enfermera,' dijo, y parecía realmente feliz. También dijo que estaba estudiando para una nueva certificación y que la terminaría el próximo año. Le pregunté por su hermano, y dijo que se había mudado a Canadá hace dos años. Me contó que ahora podía hablar francés con fluidez. Antes de despedirnos, dijo que me llamaría pronto para ponernos al día como es debido. ¡Realmente espero que lo haga!"
     }
   },
-  "48": {
+  "123": {
     "title": "Reported Speech 2 (Questions)",
     "topic": "Reported Speech",
     "level": "B2",
