@@ -1,5 +1,6 @@
 /**
- * Los números de unidad siguen el recorrido por niveles: A1 (1–12), A2 (13–45), B1 (46–112) y B2 (113–145).
+ * Los ids internos de unidad siguen el recorrido por niveles: A1 (1–12), A2 (13–45), B1 (46–112) y B2 (113–145). Lo que se
+ * ve en pantalla es el número dentro del nivel (`numeroEnNivel` en `lib/grammar.ts`) y hay ids escondidos (`ESCONDIDAS`).
  * Dentro de cada nivel las unidades van agrupadas por tema y, dentro de cada tema, en el orden del libro.
  *
  * `LIBRO_DE_NUEVO[n - 1]` es el número que tenía la unidad n en el libro en que se basa (y en la app hasta la

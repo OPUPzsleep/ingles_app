@@ -200,9 +200,9 @@ export interface VocabResult extends VocabEntry {
 export function getAllVocab(): VocabResult[] {
   const all: VocabResult[] = [];
 
-  // Las anclas del libro de las unidades que ya son de un curso no se cuentan: el curso trae las suyas.
+  // Las anclas del libro que son de una unidad del curso (el curso trae las suyas) o escondida no se cuentan.
   const pronunciaciones: Record<number, PronunUnit> = {
-    ...Object.fromEntries(Object.entries(PRONUN_DATA).filter(([clave]) => !UNIDADES_CURSO[Number(clave)])),
+    ...Object.fromEntries(Object.entries(PRONUN_DATA).filter(([clave]) => UNITS[Number(clave)] && !UNIDADES_CURSO[Number(clave)])),
     ...PRONUN_CURSO,
   };
   const pronunKeys = Object.keys(pronunciaciones)

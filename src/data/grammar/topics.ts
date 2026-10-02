@@ -1,6 +1,6 @@
 import { Topic } from '@/types/grammar';
 
-/** Los 4 bloques del curso A1 (unidades 1–12): cada uno es un tema del nivel y cierra con un examen de 20 ejercicios propios. */
+/** Los 4 bloques del curso A1 (unidades 1–12 del nivel): cada uno es un tema del nivel y cierra con un examen de 20 ejercicios propios. */
 export const BLOQUE_1 = 'Bloque 1 · Verbo To Be y sustantivos';
 export const BLOQUE_2 = 'Bloque 2 · Presente simple y cuantificadores';
 export const BLOQUE_3 = 'Bloque 3 · Presente continuo, modales y necesidades';

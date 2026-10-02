@@ -32,7 +32,7 @@ export interface Doc {
   titulo: string;
   cuerpo: string;
   nota?: string;
-  /** De dónde sale («Unidad 46 · Present perfect 1»). */
+  /** De dónde sale («B1 · Unidad 1 · Present perfect 1»). */
   fuente: string;
   ruta: string;
   etiquetaRuta: string;

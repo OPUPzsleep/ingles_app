@@ -157,8 +157,6 @@ const UNIDAD_10: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: El Pasado: simple, continuo y perfecto', ruta: '/gramatica/concepto/el-pasado-simple-vs-continuo-vs-perfecto' },
     { etiqueta: '🔊 Gramática: La terminación -ED', ruta: '/gramatica/concepto/ed-pronunciacion' },
-    { etiqueta: '➡️ Unidad 15 · Past continuous (A2)', ruta: '/unidad/15' },
-    { etiqueta: '➡️ Unidad 19 · used to (A2)', ruta: '/unidad/19' },
   ],
 };
 
@@ -343,9 +341,6 @@ const UNIDAD_11: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: El Sustantivo (Noun)', ruta: '/gramatica/concepto/el-sustantivo-noun' },
     { etiqueta: '📖 Gramática: Determinantes y Cuantificadores', ruta: '/gramatica/concepto/determinantes-y-cuantificadores-determiners' },
-    { etiqueta: '➡️ Unidad 27 · Countable and uncountable 2 (A2)', ruta: '/unidad/27' },
-    { etiqueta: '➡️ Unidad 35 · much, many, little, few (A2)', ruta: '/unidad/35' },
-    { etiqueta: '➡️ Unidad 23 · can/could/would you…? (A2)', ruta: '/unidad/23' },
   ],
 };
 
@@ -456,9 +451,7 @@ const UNIDAD_12: Unit = {
   dailyWords: palabras('many', 'much', 'few', 'little', 'money', 'people'),
   relacionados: [
     { etiqueta: '📖 Gramática: Determinantes y Cuantificadores', ruta: '/gramatica/concepto/determinantes-y-cuantificadores-determiners' },
-    { etiqueta: '➡️ Unidad 34 · no/none/any (A2)', ruta: '/unidad/34' },
-    { etiqueta: '➡️ Unidad 35 · much, many, little, few (A2)', ruta: '/unidad/35' },
-    { etiqueta: '➡️ Unidad 36 · all/most/none (A2)', ruta: '/unidad/36' },
+    { etiqueta: '📖 Gramática: El Sustantivo (Noun)', ruta: '/gramatica/concepto/el-sustantivo-noun' },
   ],
 };
 

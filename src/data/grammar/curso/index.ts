@@ -66,7 +66,30 @@ export const EXAMENES_CURSO: Partial<Record<CefrLevel, Record<string, QuizQuesti
 );
 
 /**
- * Unidades del libro que se esconden (no se borran) y por qué: «absorbida en A2·U#» o «sin coincidencia». Se llena en
- * la Fase 0c; el validador la imprime.
+ * Unidades del libro que se esconden (no se borran: sus archivos siguen en `units/`) y por qué: «absorbida en A2·U#» si
+ * lo útil pasó a una unidad del curso, «sin coincidencia» si no hay tema equivalente en el plan. Cuando suban B1, B2 y
+ * C1 se revisan y las que sigan sin coincidencia se vuelven a agregar. El validador las imprime.
  */
-export const ESCONDIDAS: Record<number, string> = {};
+export const ESCONDIDAS: Record<number, string> = {
+  25: 'absorbida en A2·U2 (verbo + -ing)',
+  26: 'absorbida en A2·U2 (verbo + to)',
+  27: 'sin coincidencia (contables e incontables 2)',
+  28: 'absorbida en A2·U5 (the 1)',
+  29: 'absorbida en A2·U5 (the 2)',
+  30: 'sin coincidencia (noun + noun)',
+  31: "absorbida en A2·U8 (-'s y of)",
+  32: 'absorbida en A2·U9 (reflexivos)',
+  33: 'absorbida en A2·U6 (there… and it…) y A2·U7 (it + be + adjetivo + to)',
+  34: 'absorbida en A2·U2 (no / none / nothing / nobody)',
+  35: 'sin coincidencia (much / many / little / few)',
+  36: 'absorbida en A2·U5 (all / most / some / no / none)',
+  37: 'sin coincidencia (adjetivos -ing / -ed)',
+  38: 'sin coincidencia (adjetivos y adverbios 1)',
+  39: 'sin coincidencia (enough / too)',
+  40: 'absorbida en A2·U10 (comparativos 2)',
+  41: 'sin coincidencia (superlativo)',
+  42: 'sin coincidencia (during / for / while)',
+  43: 'absorbida en A2·U8 (in / at / on, posición 2)',
+  44: 'sin coincidencia (to / at / in / into)',
+  45: 'sin coincidencia (phrasal verbs, introducción)',
+};

@@ -263,7 +263,7 @@ export const ingAndToUnits: Record<number, Unit> = {
     "explain": [
       {
         "head": "Verbo + objeto + to",
-        "body": "Verbos como ask, tell, want, expect, allow, remind y warn van seguidos de una persona (objeto) y luego 'to + verbo base', porque describen pedir, decir o permitir que ALGUIEN MÁS haga algo. El objeto indica quién realiza la acción. A diferencia de la unidad 26, aquí siempre hay una persona entre el verbo y el 'to'.",
+        "body": "Verbos como ask, tell, want, expect, allow, remind y warn van seguidos de una persona (objeto) y luego 'to + verbo base', porque describen pedir, decir o permitir que ALGUIEN MÁS haga algo. El objeto indica quién realiza la acción. A diferencia de «verbo + to» (sin persona en medio), aquí siempre hay una persona entre el verbo y el 'to'.",
         "note": "ask, tell, want, expect, help, allow, advise, encourage, invite, remind, warn, force, teach, persuade"
       },
       {
@@ -1798,7 +1798,7 @@ export const ingAndToUnits: Record<number, Unit> = {
       },
       {
         "head": "Be/get used to + -ing",
-        "body": "Es la misma confusión de la unidad 76: 'used to + verbo base' es un hábito pasado ya terminado ('I used to smoke'), sin preposición; 'be/get used to' + -ing describe familiaridad presente, donde 'to' es preposición ('I'm used to smoking'). Comparten las palabras pero tienen gramática distinta.",
+        "body": "Es la misma confusión de la unidad de «used to»: 'used to + verbo base' es un hábito pasado ya terminado ('I used to smoke'), sin preposición; 'be/get used to' + -ing describe familiaridad presente, donde 'to' es preposición ('I'm used to smoking'). Comparten las palabras pero tienen gramática distinta.",
         "note": "I used to smoke. (past habit) · I'm used to smoking. (accustomed, = to is a preposition) · I'm getting used to waking up early."
       },
       {

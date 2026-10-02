@@ -171,7 +171,7 @@ const UNIDAD_4: Unit = {
   dailyWords: palabras('always', 'usually', 'often', 'sometimes', 'never', 'breakfast'),
   relacionados: [
     { etiqueta: '📖 Gramática: Presente simple vs. continuo', ruta: '/gramatica/concepto/el-presente-simple-vs-continuo' },
-    { etiqueta: '➡️ Unidad 13 · Continuous and simple 1 (A2)', ruta: '/unidad/13' },
+    { etiqueta: '📖 Gramática: Verbos Auxiliares (Auxiliary Verbs)', ruta: '/gramatica/concepto/verbos-auxiliares-auxiliary-verbs' },
   ],
 };
 
@@ -369,8 +369,6 @@ const UNIDAD_5: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: Determinantes y Cuantificadores', ruta: '/gramatica/concepto/determinantes-y-cuantificadores-determiners' },
     { etiqueta: '📖 Gramática: IN / ON / AT — lugar', ruta: '/gramatica/concepto/in-on-at-preposiciones-de-lugar' },
-    { etiqueta: '➡️ Unidad 33 · there… and it… (A2)', ruta: '/unidad/33' },
-    { etiqueta: '➡️ Unidad 35 · much, many, little, few (A2)', ruta: '/unidad/35' },
   ],
 };
 
@@ -517,7 +515,6 @@ const UNIDAD_6: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: Frases para opinar, acordar y reaccionar', ruta: '/gramatica/concepto/frases-para-opinar-acordar-y-reaccionar' },
     { etiqueta: '📖 Gramática: SINCE / FOR — tiempo', ruta: '/gramatica/concepto/since-for-tiempo' },
-    { etiqueta: '➡️ Unidad 23 · can / could / would you…? (A2)', ruta: '/unidad/23' },
   ],
 };
 

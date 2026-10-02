@@ -156,7 +156,7 @@ const UNIDAD_1: Unit = {
   dailyWords: palabras('hungry', 'tired', 'happy', 'student', 'teacher', 'friend'),
   relacionados: [
     { etiqueta: '📖 Gramática: Ser vs. Estar = BE', ruta: '/gramatica/concepto/ser-vs-estar-be' },
-    { etiqueta: '➡️ Unidad 24 · Questions 1 (A2)', ruta: '/unidad/24' },
+    { etiqueta: '📖 Gramática: El Verbo (Verb)', ruta: '/gramatica/concepto/el-verbo-verb' },
   ],
 };
 
@@ -353,7 +353,6 @@ const UNIDAD_2: Unit = {
     { etiqueta: '📖 Gramática: El Artículo (Article)', ruta: '/gramatica/concepto/el-articulo-article' },
     { etiqueta: '📖 Gramática: El Sustantivo (Noun)', ruta: '/gramatica/concepto/el-sustantivo-noun' },
     { etiqueta: '🔊 Gramática: El sonido TH', ruta: '/gramatica/concepto/sonido-th' },
-    { etiqueta: '➡️ Unidad 28 · the 1 (A2)', ruta: '/unidad/28' },
   ],
 };
 
@@ -521,7 +520,7 @@ const UNIDAD_3: Unit = {
   dailyWords: palabras('family', 'mother', 'father', 'brother', 'sister', 'husband'),
   relacionados: [
     { etiqueta: '📖 Gramática: El Pronombre (Pronoun)', ruta: '/gramatica/concepto/el-pronombre-pronoun' },
-    { etiqueta: "➡️ Unidad 31 · -'s and of… (A2)", ruta: '/unidad/31' },
+    { etiqueta: '📖 Gramática: El Adjetivo (Adjective)', ruta: '/gramatica/concepto/el-adjetivo-adjective' },
   ],
 };
 

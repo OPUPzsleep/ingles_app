@@ -171,8 +171,6 @@ const UNIDAD_7: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: Presente simple vs. continuo', ruta: '/gramatica/concepto/el-presente-simple-vs-continuo' },
     { etiqueta: '📖 Gramática: El Gerundio / Forma -ing', ruta: '/gramatica/concepto/el-gerundio-forma-ing-gerund' },
-    { etiqueta: '➡️ Unidad 13 · Continuous and simple 1 (A2)', ruta: '/unidad/13' },
-    { etiqueta: '➡️ Unidad 14 · Continuous and simple 2 (A2)', ruta: '/unidad/14' },
   ],
 };
 
@@ -339,9 +337,7 @@ const UNIDAD_8: Unit = {
   dailyWords: palabras('careful', 'open', 'learn', 'like', 'money', 'time'),
   relacionados: [
     { etiqueta: '📖 Gramática: El Infinitivo (Infinitive)', ruta: '/gramatica/concepto/el-infinitivo-infinitive' },
-    { etiqueta: '➡️ Unidad 21 · have to and must (A2)', ruta: '/unidad/21' },
-    { etiqueta: '➡️ Unidad 25 · Verb + -ing (A2)', ruta: '/unidad/25' },
-    { etiqueta: '➡️ Unidad 26 · Verb + to… (A2)', ruta: '/unidad/26' },
+    { etiqueta: '📖 Gramática: El Verbo (Verb)', ruta: '/gramatica/concepto/el-verbo-verb' },
   ],
 };
 
@@ -503,8 +499,7 @@ const UNIDAD_9: Unit = {
   dailyWords: palabras('price', 'cost', 'cheap', 'expensive', 'money', 'shoes'),
   relacionados: [
     { etiqueta: '📖 Gramática: Expresiones Modales', ruta: '/gramatica/concepto/expresiones-modales-semi-modals' },
-    { etiqueta: '➡️ Unidad 20 · can, could and able to (A2)', ruta: '/unidad/20' },
-    { etiqueta: '➡️ Unidad 23 · can/could/would you…? (A2)', ruta: '/unidad/23' },
+    { etiqueta: '📖 Gramática: Verbos Auxiliares (Auxiliary Verbs)', ruta: '/gramatica/concepto/verbos-auxiliares-auxiliary-verbs' },
   ],
 };
 
