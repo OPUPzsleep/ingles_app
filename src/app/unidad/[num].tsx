@@ -1,4 +1,4 @@
-import { Stack, useLocalSearchParams } from 'expo-router';
+import { Redirect, Stack, useLocalSearchParams } from 'expo-router';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -10,7 +10,7 @@ import { UnitView } from '@/components/unit-view';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { ALL_UNIT_TITLES } from '@/data/grammar/unit-titles';
 import { useIsWide } from '@/hooks/use-is-wide';
-import { getUnit } from '@/lib/grammar';
+import { etiquetaDeUnidad, getUnit } from '@/lib/grammar';
 
 /** Lo que va a la derecha del encabezado de una unidad: volver al Inicio y el tamaño de letra. */
 function AccionesDeEncabezado() {
@@ -26,7 +26,10 @@ export default function UnidadScreen() {
   const { num: numParam } = useLocalSearchParams<{ num: string }>();
   const num = Number(numParam);
   const isWide = useIsWide();
-  const title = getUnit(num)?.title ?? ALL_UNIT_TITLES[num] ?? `Unit ${num}`;
+  const title = getUnit(num)?.title ?? ALL_UNIT_TITLES[num] ?? etiquetaDeUnidad(num);
+
+  // Un id que no es de una unidad visible (por ejemplo, una escondida o un enlace viejo) vuelve al Inicio, como +not-found.
+  if (!getUnit(num)) return <Redirect href="/" />;
 
   return (
     <ThemedView style={styles.container}>

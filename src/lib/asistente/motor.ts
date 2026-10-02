@@ -5,14 +5,14 @@ import { UNITS } from '@/data/grammar/units';
 import { FRASES_UTILES } from '@/data/vocabulario/frases-utiles';
 import { VOCAB_TOPICS } from '@/data/vocabulario/tematico';
 import { buscarFrasesExactas, buscarPalabrasExactas, buscarVerbos, type VerboHallado } from '@/lib/asistente/diccionario';
-import { numeroDeUnidad, resolverDestinos } from '@/lib/asistente/destinos';
+import { resolverDestinos } from '@/lib/asistente/destinos';
 import { buscarDocs, type Doc, type Hallazgo, todosLosDocs, type Termino, type TipoDoc } from '@/lib/asistente/indice';
 import { anioEnIngles, numeroEnIngles } from '@/lib/asistente/numeros';
 import { SUGERENCIAS_INICIALES, textoDeAyuda } from '@/lib/asistente/sugerencias';
 import { ampliarConSinonimos, consultaSinPreguntas, palabrasConPreguntas, palabrasSueltas, tokenizar, tokensDeConsulta } from '@/lib/asistente/tokens';
 import type { Bloque, ContextoAsistente, Enlace, Respuesta } from '@/lib/asistente/tipos';
 import { buscarFrases } from '@/lib/buscar-vocabulario';
-import { nextRecommendedUnit, RUTA } from '@/lib/grammar';
+import { contarUnidadesHechas, etiquetaDeUnidad, nextRecommendedUnit, RUTA } from '@/lib/grammar';
 import { normalizar } from '@/lib/texto';
 
 // ───────────────────────── Cómo se muestra lo encontrado ─────────────────────────
@@ -114,15 +114,13 @@ function charla(limpio: string): Respuesta | null {
 
 // ───────────────────────── Ir a una pantalla ─────────────────────────
 
-function navegacion(limpio: string): Respuesta | null {
-  const { enlaces, resto } = resolverDestinos(limpio);
+function navegacion(limpio: string, ctx: ContextoAsistente): Respuesta | null {
+  const { enlaces, resto, intro: introDeUnidad } = resolverDestinos(limpio, ctx.userLevel);
   if (enlaces.length === 0) return null;
   // Si la frase dice algo más que el lugar («frases para el aeropuerto»), es una pregunta y no un «llévame a…».
   if (resto.length > 0) return null;
 
-  const unidad = numeroDeUnidad(limpio);
-  const intro = unidad !== null ? `Aquí tienes la unidad ${unidad}:` : 'Claro, aquí lo tienes:';
-  return respuesta([texto(intro), { tipo: 'enlaces', enlaces }]);
+  return respuesta([texto(introDeUnidad ?? 'Claro, aquí lo tienes:'), { tipo: 'enlaces', enlaces }]);
 }
 
 // ───────────────────────── Qué estudiar y cómo voy ─────────────────────────
@@ -133,7 +131,7 @@ const PROGRESO = /\b(?:mi progreso|mi avance|cuanto (?:llevo|me falta|he avanzad
 function progreso(limpio: string, ctx: ContextoAsistente): Respuesta | null {
   if (!PROGRESO.test(limpio)) return null;
   const total = RUTA.length;
-  const hechas = ctx.doneUnits.length;
+  const hechas = contarUnidadesHechas(ctx.doneUnits);
   const n = nextRecommendedUnit(ctx.doneUnits, ctx.userLevel);
   const pct = Math.round((hechas / total) * 100);
   const partes = [
@@ -145,14 +143,14 @@ function progreso(limpio: string, ctx: ContextoAsistente): Respuesta | null {
   const enlaces: Enlace[] =
     hechas >= total
       ? [{ etiqueta: '⭐ Práctica del día', ruta: '/practica/dia' }]
-      : [{ etiqueta: `▶️ ${hechas === 0 ? 'Empezar' : 'Continuar'}: unidad ${n}`, ruta: `/unidad/${n}` }];
+      : [{ etiqueta: `▶️ ${hechas === 0 ? 'Empezar' : 'Continuar'}: ${etiquetaDeUnidad(n)}`, ruta: `/unidad/${n}` }];
   if (ctx.dificiles > 0) enlaces.push({ etiqueta: '⚠️ Repaso de lo difícil', ruta: '/practica/dificil' });
   return respuesta([texto(partes.join(' ')), { tipo: 'enlaces', enlaces }], ['¿Qué estudio hoy?']);
 }
 
 function recomendacion(limpio: string, ctx: ContextoAsistente): Respuesta | null {
   if (!RECOMENDAR.test(limpio)) return null;
-  const hechas = ctx.doneUnits.length;
+  const hechas = contarUnidadesHechas(ctx.doneUnits);
   if (hechas >= RUTA.length) {
     const repaso: Enlace[] = [{ etiqueta: '⭐ Práctica del día (5 minutos)', ruta: '/practica/dia' }];
     if (ctx.dificiles > 0) repaso.push({ etiqueta: `⚠️ Repasar lo difícil (${ctx.dificiles})`, ruta: '/practica/dificil' });
@@ -163,9 +161,9 @@ function recomendacion(limpio: string, ctx: ContextoAsistente): Respuesta | null
   const unidad = UNITS[n];
   const intro =
     hechas === 0
-      ? `Empieza por aquí: la unidad ${n}, «${unidad.title}» (nivel ${unidad.level}).`
-      : `Tu nivel es ${ctx.userLevel} y llevas ${hechas} de ${RUTA.length} unidades. Lo que sigue es la unidad ${n}, «${unidad.title}».`;
-  const enlaces: Enlace[] = [{ etiqueta: `▶️ Abrir la unidad ${n}`, ruta: `/unidad/${n}` }];
+      ? `Empieza por aquí: ${etiquetaDeUnidad(n)}, «${unidad.title}».`
+      : `Tu nivel es ${ctx.userLevel} y llevas ${hechas} de ${RUTA.length} unidades. Lo que sigue es ${etiquetaDeUnidad(n)}, «${unidad.title}».`;
+  const enlaces: Enlace[] = [{ etiqueta: `▶️ Abrir ${etiquetaDeUnidad(n)}`, ruta: `/unidad/${n}` }];
   if (ctx.dificiles > 0) enlaces.push({ etiqueta: `⚠️ Repasar lo difícil (${ctx.dificiles})`, ruta: '/practica/dificil' });
   enlaces.push({ etiqueta: '⭐ Práctica del día (5 minutos)', ruta: '/practica/dia' });
   return respuesta([texto(intro), { tipo: 'enlaces', enlaces }], ['¿Cuánto llevo avanzado?'], `u${n}-e0`);
@@ -294,7 +292,7 @@ function consultarDiccionario(limpio: string, buscado: string, explicito: Objeti
 
   for (const e of claras) {
     const info = e.tema ? VOCAB_TOPICS.find((t) => t.id === e.tema) : undefined;
-    bloques.push({ tipo: 'palabra', entrada: e.entrada, pie: info ? `${info.icon} ${info.name}` : e.unidad ? `Unidad ${e.unidad}` : undefined });
+    bloques.push({ tipo: 'palabra', entrada: e.entrada, pie: info ? `${info.icon} ${info.name}` : e.unidad ? etiquetaDeUnidad(e.unidad) : undefined });
   }
   bloques.push(...bloquesDeVerbos(verbosUtiles, claras.length > 0 ? 1 : 2));
   if (frases.length > 0) bloques.push({ tipo: 'frases', titulo: '💬 Frases', frases: frases.map((f) => f.frase) });
@@ -645,7 +643,7 @@ function seguimiento(limpio: string, ultimoDoc?: string): Respuesta | null {
     if (!doc) return respuesta([texto('Te propongo la práctica del día: 10 ejercicios mezclados.'), { tipo: 'enlaces', enlaces: [{ etiqueta: '⭐ Práctica del día', ruta: '/practica/dia' }] }]);
     const unidad = doc.id.match(/^u(\d+)-/)?.[1];
     const enlaces: Enlace[] = unidad
-      ? [{ etiqueta: `✏️ Quiz de la unidad ${unidad}`, ruta: `/quiz/unidad/${unidad}` }]
+      ? [{ etiqueta: `✏️ Quiz de ${etiquetaDeUnidad(Number(unidad))}`, ruta: `/quiz/unidad/${unidad}` }]
       : doc.tipo === 'tiempo' && doc.ref
         ? [{ etiqueta: '🃏 Tarjetas de este tiempo', ruta: `/tarjetas?tipo=${doc.ref}` }]
         : [{ etiqueta: '⭐ Práctica del día', ruta: '/practica/dia' }];
@@ -684,7 +682,7 @@ export function responder(pregunta: string, ctx: ContextoAsistente, ultimoDoc?: 
   const pideTraducir = extraerObjetivo(limpio) !== null;
   const directa =
     charla(limpio) ??
-    navegacion(limpio) ??
+    navegacion(limpio, ctx) ??
     (pideTraducir ? null : (progreso(limpio, ctx) ?? recomendacion(limpio, ctx))) ??
     preguntaFrecuente(limpio) ??
     seguimiento(limpio, ultimoDoc) ??

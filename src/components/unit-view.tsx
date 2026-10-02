@@ -1,4 +1,4 @@
-import { type Href, useRouter } from 'expo-router';
+import { type Href, Redirect, useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Dimensions, StyleSheet, View } from 'react-native';
 
@@ -19,12 +19,12 @@ import { Card } from '@/components/ui/card';
 import { Radius, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
 import { FORMAS_UNIDAD } from '@/data/grammar/formas';
-import { ALL_UNIT_TITLES } from '@/data/grammar/unit-titles';
 import { useTheme } from '@/hooks/use-theme';
 import {
   cantidadPreguntasQuizNivel,
   cantidadPreguntasQuizTema,
   etiquetaDeTema,
+  etiquetaDeVecina,
   getPronunVocab,
   getUnit,
   seccionDeUnidad,
@@ -69,7 +69,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
   const router = useRouter();
   const irAlInicio = useIrAlInicio();
   const theme = useTheme();
-  const { doneUnits, markUnitDone } = useProgress();
+  const { doneUnits } = useProgress();
   const [tab, setTab] = useState<Tab>('teoria');
   // Ancho estimado con el de la ventana hasta que onLayout da el real (evita un parpadeo al abrir).
   const [ancho, setAncho] = useState(() => Dimensions.get('window').width);
@@ -85,22 +85,8 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
   const irAUnidad = (destino: number) =>
     onSelectUnit ? onSelectUnit(destino) : router.push(`/unidad/${destino}`);
 
-  if (!unit) {
-    return (
-      <Card>
-        <ThemedText type="label" themeColor="primary">
-          Unit {num}
-        </ThemedText>
-        <ThemedText type="cardTitle">{ALL_UNIT_TITLES[num]}</ThemedText>
-        <ThemedText themeColor="textSecondary">
-          Esta unidad todavía no tiene contenido cargado en la app.
-        </ThemedText>
-        <Button variant="secondary" onPress={() => markUnitDone(num)}>
-          ✅ Marcar como estudiada
-        </Button>
-      </Card>
-    );
-  }
+  // Un id que no es de una unidad visible (escondida, o un enlace viejo) vuelve al Inicio, como +not-found.
+  if (!unit) return <Redirect href="/" />;
 
   const hasLectura = !!unit.simulatedChat?.length || !!unit.readingText || !!pv?.tips.length;
   const hasConsejos = !!unit.tips?.length || !!unit.flashcards?.length;
@@ -423,7 +409,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
             variant="secondary"
             onPress={() => irAUnidad(prevNum)}
             style={holgado ? styles.navButtonAncho : styles.navButton}>
-            {`← Unidad ${prevNum}`}
+            {`← ${etiquetaDeVecina(prevNum, unit.level)}`}
           </Button>
         ) : (
           <View style={styles.navButton} />
@@ -433,7 +419,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
             variant="primary"
             onPress={() => irAUnidad(nextNum)}
             style={holgado ? styles.navButtonAncho : styles.navButton}>
-            {`Unidad ${nextNum} →`}
+            {`${etiquetaDeVecina(nextNum, unit.level)} →`}
           </Button>
         )}
       </View>

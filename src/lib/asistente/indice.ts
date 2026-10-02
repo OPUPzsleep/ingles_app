@@ -9,6 +9,7 @@ import { UNITS } from '@/data/grammar/units';
 import { FRASES_UTILES } from '@/data/vocabulario/frases-utiles';
 import { VOCAB_TOPICS } from '@/data/vocabulario/tematico';
 import { tokenizar } from '@/lib/asistente/tokens';
+import { etiquetaDeUnidad } from '@/lib/grammar';
 import type { GrammarFormula, PronunUnit } from '@/types/grammar';
 
 export type TipoDoc =
@@ -48,9 +49,9 @@ const formula = (f: GrammarFormula) => (f.label ? `${f.label}: ` : '') + f.chips
 function docsDeUnidades(docs: Doc[]) {
   for (const [clave, unidad] of Object.entries(UNITS)) {
     const n = Number(clave);
-    const fuente = `Unidad ${n} · ${unidad.title}`;
+    const fuente = `${etiquetaDeUnidad(n)} · ${unidad.title}`;
     const ruta = `/unidad/${n}`;
-    const etiquetaRuta = `📖 Abrir la unidad ${n}`;
+    const etiquetaRuta = `📖 Abrir ${etiquetaDeUnidad(n)}`;
 
     unidad.explain.forEach((bloque, i) => {
       const ejemplos = (bloque.ejemplos ?? []).map(([en, es]) => `${en} — ${es}`);
@@ -243,9 +244,9 @@ function docsDePronunciacion(docs: Doc[]) {
         titulo: consejo.head,
         cuerpo: consejo.body,
         nota: consejo.examples.join(' · '),
-        fuente: `Pronunciación · Unidad ${clave}`,
+        fuente: `Pronunciación · ${etiquetaDeUnidad(Number(clave))}`,
         ruta: `/unidad/${clave}`,
-        etiquetaRuta: `📖 Abrir la unidad ${clave}`,
+        etiquetaRuta: `📖 Abrir ${etiquetaDeUnidad(Number(clave))}`,
         claveTitulo: `${consejo.head} pronunciacion pronunciar`,
         claveExtra: 'pronunciacion sonido',
         texto: `${consejo.body} ${consejo.examples.join(' ')}`,

@@ -16,8 +16,8 @@ export interface Progress {
   /** Mejor resultado (porcentaje) del quiz de cada tema dentro de un nivel; la clave es "A1|Present & Past". */
   temaBest?: Record<string, number>;
   /**
-   * Con qué numeración de unidades se guardó `doneUnits`: 2 = la actual, por niveles. Sin valor = la del libro
-   * (versión 1.5.0 y anteriores), que se pasa a la actual una sola vez al cargar (ver `cargarProgreso`).
+   * Con qué numeración de unidades se guardó `doneUnits` (ver `NUMERACION_ACTUAL` en `lib/migracion-progreso.ts`).
+   * Sin valor = la del libro (versión 1.5.0 y anteriores). Se pasa a la actual una sola vez al cargar (`cargarProgreso`).
    */
   numeracion?: number;
 }

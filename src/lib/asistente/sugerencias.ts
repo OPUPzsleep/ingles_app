@@ -23,7 +23,7 @@ export function textoDeAyuda(): string {
     '• Verbos: «pasado de go»',
     '• Frases: «frases para el aeropuerto»',
     '• Qué estudiar: «¿Qué estudio hoy?»',
-    '• Ir a una pantalla: «llévame a la unidad 20»',
+    '• Ir a una pantalla: «llévame a la unidad 5 de B1»',
     'Funciono sin internet ni inteligencia artificial: solo sé lo que hay en la app.',
   ].join('\n');
 }

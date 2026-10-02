@@ -7,7 +7,7 @@ import { QuizSession } from '@/components/quiz-session';
 import { ThemedView } from '@/components/themed-view';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
-import { getUnit, buildUnitQuizPool } from '@/lib/grammar';
+import { buildUnitQuizPool, etiquetaDeUnidad, getUnit } from '@/lib/grammar';
 
 export default function QuizUnidadScreen() {
   const { num: numParam } = useLocalSearchParams<{ num: string }>();
@@ -20,12 +20,12 @@ export default function QuizUnidadScreen() {
 
   return (
     <ThemedView style={styles.container}>
-      <Stack.Screen options={{ title: `Quiz · Unit ${num}` }} />
+      <Stack.Screen options={{ title: `Quiz · ${etiquetaDeUnidad(num)}` }} />
       <SafeAreaView style={styles.safeArea} edges={['bottom']}>
         <ThemedView style={styles.content}>
           <QuizSession
             pool={pool}
-            modeLabel={`Unit ${num}: ${unit?.title ?? ''}`}
+            modeLabel={`${etiquetaDeUnidad(num)}: ${unit?.title ?? ''}`}
             onFinish={() => markUnitDone(num)}
             onExit={() => router.back()}
           />

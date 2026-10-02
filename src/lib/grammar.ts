@@ -25,18 +25,57 @@ export function esNivel(valor: unknown): valor is CefrLevel {
   return typeof valor === 'string' && (NIVELES as string[]).includes(valor);
 }
 
-/** Las unidades de un nivel, en orden. Sus números son seguidos: A1 va de la 1 a la 12, A2 de la 13 a la 45… */
+/** Orden de dos ids: primero por nivel y, dentro del nivel, por id (los ids de unidades que vuelvan a agregarse serán ≥ 1000). */
+const porNivelEId = (a: number, b: number) =>
+  CEFR_LEVELS.indexOf(UNITS[a].level) - CEFR_LEVELS.indexOf(UNITS[b].level) || a - b;
+
+const UNIDADES_POR_NIVEL = new Map<CefrLevel, number[]>();
+
+/** Las unidades visibles de un nivel (ids internos), en orden. Los ids pueden tener huecos: para el número que se ve, `numeroEnNivel`. */
 export function unidadesDeNivel(nivel: CefrLevel): number[] {
-  return Object.keys(UNITS)
-    .map(Number)
-    .filter((n) => UNITS[n].level === nivel)
-    .sort((a, b) => a - b);
+  let lista = UNIDADES_POR_NIVEL.get(nivel);
+  if (!lista) {
+    lista = Object.keys(UNITS)
+      .map(Number)
+      .filter((n) => UNITS[n].level === nivel)
+      .sort(porNivelEId);
+    UNIDADES_POR_NIVEL.set(nivel, lista);
+  }
+  return lista;
 }
 
-/** El recorrido completo. Como los números de unidad ya siguen los niveles (todo A1, luego todo A2…), es 1, 2, 3… */
-export const RUTA: number[] = Object.keys(UNITS)
-  .map(Number)
-  .sort((a, b) => a - b);
+/** El número que se ve de una unidad dentro de su nivel (A2 → 1–12…), o null si el id no es una unidad visible. */
+export function numeroEnNivel(id: number): number | null {
+  const unidad = UNITS[id];
+  if (!unidad) return null;
+  return unidadesDeNivel(unidad.level).indexOf(id) + 1;
+}
+
+/** El id interno de la unidad número `n` de un nivel (A2 · Unidad 5), o null si no existe. */
+export function idDeUnidadEnNivel(nivel: CefrLevel, n: number): number | null {
+  return unidadesDeNivel(nivel)[n - 1] ?? null;
+}
+
+/** Cómo se nombra una unidad en pantalla: «A2 · Unidad 5» (o «Unidad 5» con `sinNivel`). */
+export function etiquetaDeUnidad(id: number, sinNivel = false): string {
+  const unidad = UNITS[id];
+  const numero = numeroEnNivel(id);
+  if (!unidad || numero === null) return `Unidad ${id}`;
+  return sinNivel ? `Unidad ${numero}` : `${unidad.level} · Unidad ${numero}`;
+}
+
+/** La etiqueta de una unidad vecina (botones «← / →»): con el nivel solo si cambia respecto al de la unidad que se ve. */
+export function etiquetaDeVecina(id: number, nivelActual: CefrLevel): string {
+  return etiquetaDeUnidad(id, UNITS[id]?.level === nivelActual);
+}
+
+/** Cuántos de los ids guardados como estudiados son de unidades que existen (los de unidades escondidas no cuentan). */
+export function contarUnidadesHechas(doneUnits: number[]): number {
+  return new Set(doneUnits.filter((n) => UNITS[n])).size;
+}
+
+/** El recorrido completo, por nivel (todo A1, luego todo A2…) y, dentro del nivel, por id. */
+export const RUTA: number[] = Object.keys(UNITS).map(Number).sort(porNivelEId);
 
 /** Unidad anterior y siguiente dentro del recorrido por niveles (null en los extremos). */
 export function vecinasEnRuta(num: number): { anterior: number | null; siguiente: number | null } {
@@ -216,7 +255,7 @@ export const PREGUNTAS_QUIZ_NIVEL = 20;
  */
 function gruposDeSeccion(nivel: CefrLevel, seccion: SeccionTema): PooledQuizQuestion[][] {
   const grupos = seccion.unidades.map((n) =>
-    shuffle(UNITS[n].quiz.map((q) => ({ ...q, unitTitle: `Unit ${n}: ${UNITS[n].title}` })))
+    shuffle(UNITS[n].quiz.map((q) => ({ ...q, unitTitle: `${etiquetaDeUnidad(n, true)}: ${UNITS[n].title}` })))
   );
   const propias = preguntasExtraDeTema(nivel, seccion.tema.name);
   if (propias.length > 0) {

@@ -19,9 +19,9 @@ import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
 import { useSettings } from '@/context/settings-context';
 import { useIsWide } from '@/hooks/use-is-wide';
-import { nextRecommendedUnit } from '@/lib/grammar';
+import { contarUnidadesHechas, nextRecommendedUnit, RUTA } from '@/lib/grammar';
 
-const TOTAL_UNITS = 145;
+const TOTAL_UNITS = RUTA.length;
 
 export default function InicioScreen() {
   const router = useRouter();
@@ -31,7 +31,8 @@ export default function InicioScreen() {
 
   const nextUnit = nextRecommendedUnit(doneUnits, userLevel);
 
-  const pct = Math.round((doneUnits.length / TOTAL_UNITS) * 100);
+  const hechas = contarUnidadesHechas(doneUnits);
+  const pct = Math.round((hechas / TOTAL_UNITS) * 100);
   const quizPct = quizTotal > 0 ? Math.round((quizCorrect / quizTotal) * 100) : null;
 
   const titulo = <ThemedText type="subtitle">Aprende Inglés</ThemedText>;
@@ -55,10 +56,10 @@ export default function InicioScreen() {
       <ThemedText type="cardTitle">{focusModeEnabled ? 'Tu única tarea ahora' : 'Progreso general'}</ThemedText>
       {!focusModeEnabled && <ProgressBar percent={pct} />}
       <ThemedText type="small" themeColor="textSecondary">
-        {doneUnits.length} de {TOTAL_UNITS} unidades
+        {hechas} de {TOTAL_UNITS} unidades
       </ThemedText>
       <Button variant="primary" onPress={() => router.push(`/unidad/${nextUnit}`)}>
-        {doneUnits.length === 0 ? '▶️ Empezar' : '▶️ Continuar donde quedaste'}
+        {hechas === 0 ? '▶️ Empezar' : '▶️ Continuar donde quedaste'}
       </Button>
     </Card>
   );

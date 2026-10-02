@@ -14,6 +14,8 @@ import {
   cantidadPreguntasQuizTema,
   claveQuizTema,
   etiquetaDeTema,
+  etiquetaDeUnidad,
+  numeroEnNivel,
   progresoDeNivel,
   progresoDeSeccion,
   seccionesDeNivel,
@@ -58,8 +60,8 @@ export function NivelUnidades({ nivel, onSelectUnit, selectedUnit }: NivelUnidad
             {seccion.unidades.map((num) => (
               <UnitListItem
                 key={num}
-                num={num}
-                title={ALL_UNIT_TITLES[num] ?? `Unit ${num}`}
+                num={numeroEnNivel(num) ?? num}
+                title={ALL_UNIT_TITLES[num] ?? etiquetaDeUnidad(num)}
                 done={doneUnits.includes(num)}
                 selected={num === selectedUnit}
                 onPress={() => onSelectUnit(num)}

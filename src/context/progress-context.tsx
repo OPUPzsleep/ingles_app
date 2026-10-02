@@ -1,6 +1,7 @@
 import { createContext, ReactNode, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
 import { getSrsEntry, rateSrs } from '@/lib/flashcards';
+import { UNITS } from '@/data/grammar/units';
 import { claveQuizTema } from '@/lib/grammar';
 import { applyDailyStreak } from '@/lib/progress';
 import { cargarProgreso, cargarSrs, guardarProgreso, guardarSrs } from '@/lib/storage';
@@ -60,7 +61,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
   const markUnitDone = useCallback(
     (num: number) => {
-      if (progress.doneUnits.includes(num)) return;
+      // Los ids de unidades escondidas (o que no existen) no se guardan.
+      if (!UNITS[num] || progress.doneUnits.includes(num)) return;
       persist({
         ...progress,
         doneUnits: [...progress.doneUnits, num],

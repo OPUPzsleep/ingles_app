@@ -1,6 +1,7 @@
 import { UNITS } from '@/data/grammar/units';
 import type { Enlace } from '@/lib/asistente/tipos';
-import { NIVELES } from '@/lib/grammar';
+import { esNivel, etiquetaDeUnidad, idDeUnidadEnNivel, NIVELES } from '@/lib/grammar';
+import type { CefrLevel } from '@/types/grammar';
 
 interface Destino {
   /** Cómo se escribe, ya sin tildes ni signos, para reconocerlo en la frase («mapa de tiempos»). */
@@ -25,8 +26,6 @@ const DESTINOS: Destino[] = [
   { nombres: ['inicio', 'pantalla principal', 'home', 'menu principal'], enlace: { etiqueta: '🏠 Inicio', ruta: '/' } },
 ];
 
-const TOTAL_UNIDADES = Object.keys(UNITS).length;
-
 /** Palabras que acompañan a un destino sin cambiar su sentido («llévame a la unidad 20»). */
 const RELLENO = new Set(
   `el la los las un una de del a al mi mis en por favor me nos te lo
@@ -39,16 +38,37 @@ const PALABRAS_DE_QUIZ = ['quiz', 'examen', 'test', 'evaluacion', 'final'];
 
 const entreEspacios = (limpio: string) => ` ${limpio} `;
 
-/** Un número de unidad escrito en la frase («unidad 20», «lección 7»), con el texto que lo dice, o null. */
-function unidadEscrita(limpio: string): { numero: number; texto: string } | null {
-  const m = limpio.match(/\b(?:unidad|unit|leccion|tema)\s+(?:numero\s+|n\s+|no\s+)?(\d{1,3})\b/);
-  if (!m) return null;
-  const n = Number(m[1]);
-  return n >= 1 && n <= TOTAL_UNIDADES ? { numero: n, texto: m[0] } : null;
+/** Una unidad escrita en la frase («unidad 5 de B1»): el número, el texto que la dice y los ids que puede ser. */
+interface UnidadEscrita {
+  numero: number;
+  texto: string;
+  /** Los ids internos candidatos (uno por nivel que tenga esa unidad), el nivel dicho o el del usuario primero. */
+  ids: number[];
+  /** El nivel que dijo la frase («de B1»), si lo dijo. */
+  nivel: CefrLevel | null;
 }
 
-export function numeroDeUnidad(limpio: string): number | null {
-  return unidadEscrita(limpio)?.numero ?? null;
+/**
+ * Un número de unidad escrito en la frase («unidad 5», «lección 7 de B1»). Los números son por nivel (A2 · Unidad 5), así
+ * que se resuelven con (nivel, número) → id y nunca por rango. Si no dice el nivel, salen todas las candidatas con la
+ * del nivel del usuario primero.
+ */
+function unidadEscrita(limpio: string, nivelUsuario: CefrLevel): UnidadEscrita | null {
+  const m = limpio.match(/\b(?:unidad|unit|leccion|tema)\s+(?:numero\s+|n\s+|no\s+)?(\d{1,3})\b(?:\s+(?:de(?:l)?|en)\s+(?:nivel\s+)?(a1|a2|b1|b2|c1)\b)?/);
+  if (!m) return null;
+  const numero = Number(m[1]);
+  const dicho = m[2] ? (m[2].toUpperCase() as CefrLevel) : null;
+  const niveles = dicho ? [dicho] : [nivelUsuario, ...NIVELES.filter((nivel) => nivel !== nivelUsuario)];
+  const ids = niveles.map((nivel) => idDeUnidadEnNivel(nivel, numero)).filter((id): id is number => id !== null);
+  return ids.length > 0 ? { numero, texto: m[0], ids, nivel: dicho } : null;
+}
+
+export interface Destinos {
+  enlaces: Enlace[];
+  /** Palabras de la frase que no son parte del destino. */
+  resto: string[];
+  /** Qué decir antes de los enlaces cuando la frase pidió una unidad (dice siempre la unidad resuelta). */
+  intro?: string;
 }
 
 /** Lo que queda de la frase cuando se quita el destino y las palabras de relleno: si queda algo, era otra cosa. */
@@ -58,25 +78,25 @@ function sobrante(limpio: string, quitar: string[]): string[] {
   return resto.split(' ').filter((p) => p && !RELLENO.has(p));
 }
 
-export interface Destinos {
-  enlaces: Enlace[];
-  /** Palabras de la frase que no son parte del destino. */
-  resto: string[];
-}
-
 /** Los lugares de la app que nombra la frase (el más específico primero), o ninguno. */
-export function resolverDestinos(limpio: string): Destinos {
-  const unidad = unidadEscrita(limpio);
+export function resolverDestinos(limpio: string, nivelUsuario: CefrLevel): Destinos {
+  const unidad = unidadEscrita(limpio, nivelUsuario);
   if (unidad) {
     const quiz = PALABRAS_DE_QUIZ.some((p) => entreEspacios(limpio).includes(entreEspacios(p)));
-    const enlace: Enlace = quiz
-      ? { etiqueta: `✏️ Quiz de la unidad ${unidad.numero}`, ruta: `/quiz/unidad/${unidad.numero}` }
-      : { etiqueta: `📖 Unidad ${unidad.numero}: ${UNITS[unidad.numero].title}`, ruta: `/unidad/${unidad.numero}` };
-    return { enlaces: [enlace], resto: sobrante(limpio, [unidad.texto, ...PALABRAS_DE_QUIZ.map((p) => ` ${p} `)]) };
+    const enlaces: Enlace[] = unidad.ids.map((id) =>
+      quiz
+        ? { etiqueta: `✏️ Quiz de ${etiquetaDeUnidad(id)}`, ruta: `/quiz/unidad/${id}` }
+        : { etiqueta: `📖 ${etiquetaDeUnidad(id)}: ${UNITS[id].title}`, ruta: `/unidad/${id}` }
+    );
+    const intro =
+      enlaces.length === 1
+        ? `Aquí tienes ${etiquetaDeUnidad(unidad.ids[0])}:`
+        : `La unidad ${unidad.numero} existe en varios niveles; te dejo la de tu nivel primero y las demás. Para elegir una, di por ejemplo «unidad ${unidad.numero} de B1»:`;
+    return { enlaces, intro, resto: sobrante(limpio, [unidad.texto, ...PALABRAS_DE_QUIZ.map((p) => ` ${p} `)]) };
   }
 
   const nivelDicho = limpio.match(/\bnivel\s+(a1|a2|b1|b2|c1)\b/);
-  if (nivelDicho && (NIVELES as string[]).includes(nivelDicho[1].toUpperCase())) {
+  if (nivelDicho && esNivel(nivelDicho[1].toUpperCase())) {
     const nivel = nivelDicho[1].toUpperCase();
     const quiz = PALABRAS_DE_QUIZ.some((p) => entreEspacios(limpio).includes(entreEspacios(p)));
     const enlace: Enlace = quiz
