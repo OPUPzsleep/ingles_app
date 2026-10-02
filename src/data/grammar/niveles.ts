@@ -12,7 +12,7 @@ export const INFO_NIVEL: Record<CefrLevel, { icono: string; nombre: string; resu
     icono: '🌿',
     nombre: 'Elemental',
     resumen:
-      'Más tiempos (continuo vs simple, pasado continuo, used to, futuro), modales básicos, preguntas, verbo + -ing o to, pronombres, comparativos y superlativos.',
+      'Tu curso en 4 bloques: repasos y expresión de intereses; futuro, pasado y ciudad; viajes, hogar y eventos pasados; comunicación, apariencia y futuro. Cada unidad trae regla, estructura, ejemplos y 5 ejercicios, y cada bloque cierra con un examen de 20.',
   },
   B1: {
     icono: '🌳',

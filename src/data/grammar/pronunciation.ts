@@ -3,8 +3,8 @@ import { PronunUnit } from '@/types/grammar';
 // Anchors: only some units have pronunciation/vocab data (keys are the current unit numbers, see numeracion.ts).
 // getPronunVocab() falls back to the nearest lower anchor *in book order*, so later units in a topic reuse
 // the anchor closest to (and at or below) them in the book they come from.
-// The keys 1, 2, 3, 5 and 10 belong to the A1 units of the book (the A1 course replaced them: it has its own
-// pronunciation in curso-a1/pronunciacion.ts); they stay only as anchors for the A2+ units that fall back to them.
+// The keys 1, 2, 3, 5 and 10 belong to the A1 units of the book and 20 and 32 to A2 ones (the A1 and A2 courses replaced them: they have
+// their own pronunciation in curso-a1/ and curso-a2/pronunciacion.ts); they stay only as anchors for the B1+ units that fall back to them.
 export const PRONUN_DATA: Record<number, PronunUnit> = {
   "1": {
     "tips": [

@@ -297,7 +297,7 @@ function totalPreguntasDeSeccion(nivel: CefrLevel, seccion: SeccionTema): number
 }
 
 /**
- * Cuántas preguntas saldrán en el quiz de un tema dentro de un nivel. Un bloque del curso A1 es un examen con sus
+ * Cuántas preguntas saldrán en el quiz de un tema dentro de un nivel. Un bloque de un curso (A1, A2) es un examen con sus
  * ejercicios propios (20); los demás temas arman su quiz con las preguntas de sus unidades y de repaso.
  */
 export function cantidadPreguntasQuizTema(nivel: CefrLevel, seccion: SeccionTema): number {
@@ -308,7 +308,7 @@ export function cantidadPreguntasQuizTema(nivel: CefrLevel, seccion: SeccionTema
 
 /**
  * Preguntas del quiz de un tema dentro de un nivel: las de sus unidades más las propias de repaso del tema. El examen de
- * un bloque del curso A1 usa solo sus ejercicios propios, distintos a los de sus unidades.
+ * un bloque de un curso (A1, A2) usa solo sus ejercicios propios, distintos a los de sus unidades.
  */
 export function buildTopicQuizPool(
   nivel: CefrLevel,

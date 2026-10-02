@@ -370,7 +370,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
         </Card>
       )}
 
-      {/* La última unidad de cada tema (dentro de su nivel) cierra con el quiz de ese tema (en el curso A1, el examen del bloque)… */}
+      {/* La última unidad de cada tema (dentro de su nivel) cierra con el quiz de ese tema (en los cursos A1 y A2, el examen del bloque)… */}
       {cierraTema && seccion && (
         <Card>
           <ThemedText type="label" themeColor="primary">
