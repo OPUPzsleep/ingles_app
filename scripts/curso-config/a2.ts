@@ -95,6 +95,25 @@ COBERTURA[21] = [
   ['Pronombres reflexivos', /Pronombres reflexivos/],
 ];
 
+COBERTURA[22] = [
+  ['Adjetivos comparativos con -er', /Comparativo con -er/],
+  ['Adjetivos comparativos con more', /Comparativo con more/],
+  ['Uso de More, Less y Fewer', /More, less y fewer/],
+];
+COBERTURA[23] = [
+  ['Preguntas y respuestas para describir personas', /What does she look like/],
+  ["Uso de 'Have got'", /Have got: afirmativa/],
+  ['Frases con VERBO + -ING para identificar personas', /verbo \+ -ing/],
+  ['Preposiciones para identificar personas', /Identificar personas con preposiciones/],
+];
+COBERTURA[24] = [
+  ['Futuro con WILL', /Will: predicciones/],
+  ['Futuro con MAY y MIGHT', /May y might/],
+  ['Presente continuo y Going to: repaso y contraste', /Presente continuo y going to/],
+  ['Cláusulas con IF y WHEN', /Cláusulas con if y when/],
+  ['Cláusulas con AFTER y BEFORE', /after y before/],
+];
+
 export const CONFIG_A2: ConfigCurso = {
   nivel: 'A2',
   ids: [13, 24],

@@ -184,4 +184,64 @@ export const PRONUN_CURSO_A2: Record<number, PronunUnit> = {
     ],
     vocab: palabras('myself', 'yourself', 'himself', 'herself', 'ourselves', 'themselves'),
   },
+  22: {
+    tips: [
+      {
+        head: 'La terminación -er',
+        body: 'En los comparativos la terminación -er suena /ər/, muy débil: taller suena /ˈtɔːlər/. El acento va en la primera sílaba, no en -er.',
+        examples: ['taller /ˈtɔːlər/', 'faster /ˈfæstər/', 'bigger /ˈbɪɡər/'],
+      },
+      {
+        head: 'than y as son débiles',
+        body: 'En una frase normal than suena /ðən/ y as suena /əz/. En as… as ambas son débiles: /əz ˈtɔːl əz/.',
+        examples: ['than me /ðən mi/', 'as tall as /əz ˈtɔːl əz/'],
+      },
+      {
+        head: 'more, less y fewer',
+        body: 'more suena /mɔːr/, less suena /les/ y fewer suena /ˈfjuːər/ (empieza con un sonido como «fiu»).',
+        examples: ['more /mɔːr/', 'less /les/', 'fewer /ˈfjuːər/'],
+      },
+    ],
+    vocab: palabras('tall', 'short', 'fast', 'slow', 'big', 'small'),
+  },
+  23: {
+    tips: [
+      {
+        head: "have got y sus contracciones",
+        body: "I've got suena /aɪv ɡɑːt/ y she's got suena /ʃiːz ɡɑːt/. En el habla rápida la contracción casi se pega a got.",
+        examples: ["I've got /aɪv ɡɑːt/", "she's got /ʃiːz ɡɑːt/", "haven't got /ˈhævənt ɡɑːt/"],
+      },
+      {
+        head: 'What does she look like?',
+        body: 'La voz baja al final de la pregunta. Las palabras look like se pronuncian juntas: /lʊk laɪk/. El acento fuerte va en look.',
+        examples: ['look like /lʊk laɪk/', 'What does she look like?'],
+      },
+      {
+        head: 'Palabras de apariencia',
+        body: 'hair suena /her/, eye suena /aɪ/ y beard suena /bɪrd/ (la ea es como una i). curly suena /ˈkɜːrli/.',
+        examples: ['hair /her/', 'eyes /aɪz/', 'beard /bɪrd/', 'curly /ˈkɜːrli/'],
+      },
+    ],
+    vocab: palabras('young', 'old', 'pretty', 'ugly', 'thin', 'married'),
+  },
+  24: {
+    tips: [
+      {
+        head: "will, 'll y won't",
+        body: "En el habla rápida will se contrae a 'll: I'll suena /aɪl/. won't suena /woʊnt/, y se parece a want /wɑːnt/: la vocal es distinta.",
+        examples: ["I'll /aɪl/", "she'll /ʃiːl/", "won't /woʊnt/", 'want /wɑːnt/'],
+      },
+      {
+        head: 'may y might',
+        body: 'may suena /meɪ/ y might suena /maɪt/ (la gh es muda, como en night). Se usan para posibilidad y la t de might casi se pierde antes de otra consonante.',
+        examples: ['may /meɪ/', 'might /maɪt/', 'night /naɪt/'],
+      },
+      {
+        head: 'if, when, after, before',
+        body: 'En una frase con coma hay una pausa corta después de la primera cláusula. if y when son débiles; after /ˈæftər/ y before /bɪˈfɔːr/ tienen la sílaba fuerte en negrita.',
+        examples: ['after /ˈæftər/', 'before /bɪˈfɔːr/', 'until /ənˈtɪl/'],
+      },
+    ],
+    vocab: palabras('forecast', 'storm', 'sunny', 'cloudy', 'windy', 'weather'),
+  },
 };
