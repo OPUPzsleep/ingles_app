@@ -9,7 +9,7 @@
  *  - invariantes entre cursos y unidades visibles (títulos, formas, temas, nombres de examen) y el registro de escondidas;
  *  - avisos (no fallan): palabras en inglés que no son del vocabulario del nivel, para revisarlas a mano.
  *
- * Se corre con `npx tsx scripts/valida-curso.ts a1|a2|b1`; con `--completo` exige las 12 unidades y los 4 exámenes.
+ * Se corre con `npx tsx scripts/valida-curso.ts a1|a2|b1|b2`; con `--completo` exige las 12 unidades y los 4 exámenes.
  * Termina con error si algo falla.
  */
 import { enlaceDeRelacionado } from '@/lib/grammar';
@@ -26,15 +26,16 @@ import type { FormasUnidad, QuizQuestion, Unit } from '@/types/grammar';
 import { CONFIG_A1 } from './curso-config/a1';
 import { CONFIG_A2 } from './curso-config/a2';
 import { CONFIG_B1 } from './curso-config/b1';
+import { CONFIG_B2 } from './curso-config/b2';
 
 const COMPLETO = process.argv.includes('--completo');
-const PEDIDO = process.argv.slice(2).find((arg: string) => /^(a1|a2|b1)$/i.test(arg));
+const PEDIDO = process.argv.slice(2).find((arg: string) => /^(a1|a2|b1|b2|b2)$/i.test(arg));
 if (!PEDIDO) {
-  console.error('Uso: npx tsx scripts/valida-curso.ts a1|a2|b1 [--completo]');
+  console.error('Uso: npx tsx scripts/valida-curso.ts a1|a2|b1|b2 [--completo]');
   process.exit(2);
 }
 const ELEGIDO = PEDIDO.toUpperCase() as NivelDeCurso;
-const CONFIG = { A1: CONFIG_A1, A2: CONFIG_A2, B1: CONFIG_B1 }[ELEGIDO];
+const CONFIG = { A1: CONFIG_A1, A2: CONFIG_A2, B1: CONFIG_B1, B2: CONFIG_B2 }[ELEGIDO];
 const CURSO = CURSOS[ELEGIDO];
 const { bloques: BLOQUES, bloqueDeUnidad: BLOQUE_DE_UNIDAD, conFormas: CON_FORMAS, cobertura: COBERTURA } = CONFIG;
 const NIVEL = ELEGIDO;

@@ -24,7 +24,7 @@ export const INFO_NIVEL: Record<CefrLevel, { icono: string; nombre: string; resu
     icono: '🏔️',
     nombre: 'Intermedio alto',
     resumen:
-      'Estructuras avanzadas: futuro continuo y perfecto, condicionales del pasado y wish, pasiva avanzada, estilo indirecto en preguntas, relativas y verbos con preposición.',
+      'Tu curso en 4 bloques: vidas interesantes, gustos personales y culturas; vida social, ley y orden, y eventos extraños; resolución de problemas, comportamiento y el mundo material; fama, tendencias y páginas profesionales. Cada unidad trae regla, estructura, ejemplos y 5 ejercicios, y cada bloque cierra con un examen de 20.',
   },
   C1: {
     icono: '🚀',

@@ -18,6 +18,12 @@ export const BLOQUE_B1_2 = 'Bloque 2 · Vida familiar, comida y organización';
 export const BLOQUE_B1_3 = 'Bloque 3 · Relaciones, situaciones imaginarias y tecnología';
 export const BLOQUE_B1_4 = 'Bloque 4 · Actualidad, impresiones y noticias';
 
+/** Los 4 bloques del curso B2 (ids 113–124, Unidad 1–12 del nivel): también cierran con un examen de 20 ejercicios propios. */
+export const BLOQUE_B2_1 = 'Bloque 1 · Vidas interesantes, gustos personales y culturas';
+export const BLOQUE_B2_2 = 'Bloque 2 · Vida social, ley y orden, y eventos extraños';
+export const BLOQUE_B2_3 = 'Bloque 3 · Resolución de problemas, comportamiento y el mundo material';
+export const BLOQUE_B2_4 = 'Bloque 4 · Fama, tendencias y páginas profesionales';
+
 /** Los temas de gramática, en el orden en que aparecen dentro de cada nivel. Cada unidad dice a cuál pertenece (`topic`). */
 export const TOPICS: Topic[] = [
   { name: BLOQUE_1, icon: '🧱', examen: 20 },
@@ -32,6 +38,10 @@ export const TOPICS: Topic[] = [
   { name: BLOQUE_B1_2, icon: '🍽️', examen: 20 },
   { name: BLOQUE_B1_3, icon: '💭', examen: 20 },
   { name: BLOQUE_B1_4, icon: '📰', examen: 20 },
+  { name: BLOQUE_B2_1, icon: '🌍', examen: 20 },
+  { name: BLOQUE_B2_2, icon: '⚖️', examen: 20 },
+  { name: BLOQUE_B2_3, icon: '🛠️', examen: 20 },
+  { name: BLOQUE_B2_4, icon: '⭐', examen: 20 },
   { name: 'Present & Past', icon: '🕐' },
   { name: 'Present Perfect', icon: '✅' },
   { name: 'Future', icon: '🚀' },

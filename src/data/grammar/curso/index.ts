@@ -4,17 +4,19 @@ import { EXAMENES_CURSO_A2, FORMAS_CURSO_A2, UNIDADES_CURSO_A2 } from '@/data/gr
 import { PRONUN_CURSO_A2 } from '@/data/grammar/curso-a2/pronunciacion';
 import { EXAMENES_CURSO_B1, FORMAS_CURSO_B1, UNIDADES_CURSO_B1 } from '@/data/grammar/curso-b1';
 import { PRONUN_CURSO_B1 } from '@/data/grammar/curso-b1/pronunciacion';
+import { EXAMENES_CURSO_B2, FORMAS_CURSO_B2, UNIDADES_CURSO_B2 } from '@/data/grammar/curso-b2';
+import { PRONUN_CURSO_B2 } from '@/data/grammar/curso-b2/pronunciacion';
 import type { CefrLevel, FormasUnidad, PronunUnit, QuizQuestion, Unit } from '@/types/grammar';
 
 import { repartirRespuestas } from './ayuda';
 
 /** Los cursos propios de la app (el resto de las unidades vienen del libro, en `units/`). */
-export type NivelDeCurso = 'A1' | 'A2' | 'B1';
+export type NivelDeCurso = 'A1' | 'A2' | 'B1' | 'B2';
 
 /** Un curso: sus unidades, formas, pronunciación y exámenes de bloque. */
 export interface Curso {
   nivel: NivelDeCurso;
-  /** El id interno de la primera unidad del curso (A1 = 1, A2 = 13, B1 = 46). */
+  /** El id interno de la primera unidad del curso (A1 = 1, A2 = 13, B1 = 46, B2 = 113). */
   primerId: number;
   unidades: Record<number, Unit>;
   formas: Record<number, FormasUnidad | FormasUnidad[]>;
@@ -56,6 +58,14 @@ export const CURSOS: Record<NivelDeCurso, Curso> = {
     formas: FORMAS_CURSO_B1,
     pronunciacion: PRONUN_CURSO_B1,
     examenes: conExamenesRepartidos(EXAMENES_CURSO_B1),
+  },
+  B2: {
+    nivel: 'B2',
+    primerId: 113,
+    unidades: conRespuestasRepartidas(UNIDADES_CURSO_B2, 113),
+    formas: FORMAS_CURSO_B2,
+    pronunciacion: PRONUN_CURSO_B2,
+    examenes: conExamenesRepartidos(EXAMENES_CURSO_B2),
   },
 };
 
@@ -159,4 +169,26 @@ export const ESCONDIDAS: Record<number, string> = {
   110: 'absorbida en B1·U9 (phrasal verbs on/off 2)',
   111: 'sin coincidencia (phrasal verbs up/down)',
   112: 'sin coincidencia (phrasal verbs up 1)',
+  // B2 del libro (125–145); las 113–124 las tapa el curso B2
+  125: 'absorbida en B2·U3 (verb + preposition + -ing)',
+  126: 'absorbida en B2·U3 (there is no point in -ing)',
+  127: 'absorbida en B2·U3 (to… and preposition + -ing)',
+  128: 'absorbida en B2·U5 (catch + persona + -ing; see somebody do/doing)',
+  129: 'sin coincidencia (-ing clauses)',
+  130: 'sin coincidencia (names with/without the 2)',
+  131: 'absorbida en B2·U12 (relative clauses 3)',
+  132: 'sin coincidencia (relative clauses 4)',
+  133: 'sin coincidencia (relative clauses 5)',
+  134: 'absorbida en B2·U12 (-ing and -ed clauses)',
+  135: 'sin coincidencia (word order 2)',
+  136: 'sin coincidencia (even)',
+  137: 'absorbida en B2·U2 (as)',
+  138: 'absorbida en B2·U2 (like and as)',
+  139: 'sin coincidencia (like / as if)',
+  140: 'sin coincidencia (adjective + preposition 2)',
+  141: 'sin coincidencia (verb + preposition 3)',
+  142: 'sin coincidencia (verb + preposition 4)',
+  143: 'sin coincidencia (verb + preposition 5)',
+  144: 'sin coincidencia (phrasal verbs up 2)',
+  145: 'sin coincidencia (phrasal verbs away/back)',
 };
