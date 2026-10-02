@@ -18,7 +18,7 @@ export const INFO_NIVEL: Record<CefrLevel, { icono: string; nombre: string; resu
     icono: '🌳',
     nombre: 'Intermedio',
     resumen:
-      'Presente perfecto, pasado perfecto, condicionales, pasiva, estilo indirecto, oraciones relativas, conectores, preposiciones y phrasal verbs.',
+      'Tu curso en 4 bloques: personalidad, experiencias y superlativos; vida familiar, comida y organización; relaciones, situaciones imaginarias y tecnología; actualidad, impresiones y noticias. Cada unidad trae regla, estructura, ejemplos y 5 ejercicios, y cada bloque cierra con un examen de 20.',
   },
   B2: {
     icono: '🏔️',
