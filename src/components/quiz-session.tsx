@@ -29,9 +29,11 @@ interface QuizSessionProps {
   onRepetir?: () => void;
   /** Botones extra en la pantalla de resultados (por ejemplo, "Seguir con el nivel A2"). */
   resultActions?: ReactNode;
+  /** Es el examen de un bloque del curso (con preguntas propias): se llama «Examen» en vez de «Quiz». */
+  examen?: boolean;
 }
 
-export function QuizSession({ pool, modeLabel, onFinish, onExit, onRepetir, resultActions }: QuizSessionProps) {
+export function QuizSession({ pool, modeLabel, onFinish, onExit, onRepetir, resultActions, examen = false }: QuizSessionProps) {
   const { registerQuizAnswer } = useProgress();
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
@@ -62,7 +64,9 @@ export function QuizSession({ pool, modeLabel, onFinish, onExit, onRepetir, resu
     return (
       <Card style={styles.resultsCard}>
         <ThemedText style={styles.resultsEmoji}>{emoji}</ThemedText>
-        <ThemedText type="cardTitle">Quiz completado — {modeLabel}</ThemedText>
+        <ThemedText type="cardTitle">
+          {examen ? 'Examen' : 'Quiz'} completado — {modeLabel}
+        </ThemedText>
         <ThemedText type="title" themeColor="primary" style={styles.resultsPct}>
           {pct}%
         </ThemedText>
@@ -119,7 +123,7 @@ export function QuizSession({ pool, modeLabel, onFinish, onExit, onRepetir, resu
       <Card style={styles.headerCard}>
         <View style={styles.headerRow}>
           <ThemedText type="label" themeColor="primary">
-            ✏️ Quiz — {modeLabel}
+            {examen ? '📝 Examen' : '✏️ Quiz'} — {modeLabel}
           </ThemedText>
           <ThemedText type="smallBold" themeColor="primary">
             {sessionTotal > 0 ? `${Math.round((sessionCorrect / sessionTotal) * 100)}%` : '—'}

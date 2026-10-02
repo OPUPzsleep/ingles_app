@@ -44,6 +44,7 @@ export function ExplainBlock({ block, enCuadro = false }: ExplainBlockProps) {
             <SpeakButton text={block.note} />
           </View>
         )}
+        {!!block.ejemplos?.length && <EjemplosTraducidos ejemplos={block.ejemplos} />}
       </Card>
     );
   }
@@ -66,6 +67,28 @@ export function ExplainBlock({ block, enCuadro = false }: ExplainBlockProps) {
           <SpeakButton text={block.note} />
         </View>
       )}
+      {!!block.ejemplos?.length && <EjemplosTraducidos ejemplos={block.ejemplos} />}
+    </View>
+  );
+}
+
+/** Los ejemplos de un bloque: la frase en inglés con su audio y, debajo, la traducción. */
+function EjemplosTraducidos({ ejemplos }: { ejemplos: [string, string][] }) {
+  const theme = useTheme();
+
+  return (
+    <View style={styles.listaEjemplos}>
+      {ejemplos.map(([en, es]) => (
+        <View key={en} style={[styles.ejemploTraducido, { backgroundColor: theme.backgroundSelected }]}>
+          <View style={styles.textoEjemplo}>
+            <ThemedText type="smallBold">{en}</ThemedText>
+            <ThemedText type="small" themeColor="textSecondary">
+              {es}
+            </ThemedText>
+          </View>
+          <SpeakButton text={en} />
+        </View>
+      ))}
     </View>
   );
 }
@@ -98,5 +121,20 @@ const styles = StyleSheet.create({
   noteText: {
     flex: 1,
     fontStyle: 'italic',
+  },
+  listaEjemplos: {
+    gap: Spacing.two,
+  },
+  ejemploTraducido: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.two,
+    borderRadius: Radius.small,
+    paddingVertical: Spacing.two,
+    paddingHorizontal: Spacing.three,
+  },
+  textoEjemplo: {
+    flex: 1,
+    gap: Spacing.half,
   },
 });

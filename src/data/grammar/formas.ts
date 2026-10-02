@@ -1,14 +1,8 @@
-import type { FormasUnidad, GrammarFormula, SyntaxChip } from '@/types/grammar';
+import { FORMAS_CURSO_A1 } from '@/data/grammar/curso-a1';
+import { aux, f, fl, neg, resto, suj, verbo } from '@/data/grammar/formulas';
+import type { FormasUnidad } from '@/types/grammar';
 
 // Las tres formas (afirmativa, negativa y pregunta) de las unidades de verbos, para tenerlas siempre a la vista.
-// Colores de las fichas: sujeto (gris oscuro), auxiliar (verde), negación (rojo), verbo principal (naranja), resto (gris).
-const suj = (text: string): SyntaxChip => ({ text, role: 'subject' });
-const aux = (text: string): SyntaxChip => ({ text, role: 'verb' });
-const neg = (text: string): SyntaxChip => ({ text, role: 'negation' });
-const verbo = (text: string): SyntaxChip => ({ text, role: 'object' });
-const resto = (text: string): SyntaxChip => ({ text, role: 'connector' });
-const f = (...chips: SyntaxChip[]): GrammarFormula => ({ chips });
-const fl = (label: string, ...chips: SyntaxChip[]): GrammarFormula => ({ label, chips });
 
 const WILL: FormasUnidad = {
   afirmativa: {
@@ -36,84 +30,9 @@ const WILL: FormasUnidad = {
   ojo: "Después de will va el verbo en base: 'she will go', no 'she will goes' ni 'she will to go'.",
 };
 
-/** Por número de unidad. Las unidades que no están aquí (no son de verbos) no muestran este bloque. */
-export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
+/** Las formas de las unidades de A2 a B2, por número de unidad. */
+const FORMAS_DEL_LIBRO: Record<number, FormasUnidad> = {
   // ─── Present & Past ───
-  1: {
-    afirmativa: {
-      formulas: [f(suj('Subject'), aux('am / is / are'), verbo('verb-ing'))],
-      ejemplos: [
-        ['I am working.', 'Estoy trabajando.'],
-        ['She is eating lunch.', 'Ella está almorzando.'],
-      ],
-    },
-    negativa: {
-      formulas: [f(suj('Subject'), aux('am / is / are'), neg('not'), verbo('verb-ing'))],
-      ejemplos: [
-        ["I'm not working.", 'No estoy trabajando.'],
-        ["They aren't playing.", 'Ellos no están jugando.'],
-      ],
-    },
-    pregunta: {
-      formulas: [f(aux('Am / Is / Are'), suj('subject'), verbo('verb-ing'))],
-      ejemplos: [
-        ['Are you working?', '¿Estás trabajando?'],
-        ['What is she eating?', '¿Qué está comiendo ella?'],
-      ],
-    },
-    nota: "Contracciones: I'm not · he/she/it isn't · you/we/they aren't. Respuestas cortas: Yes, I am. / No, I'm not. (nunca 'Yes, I'm').",
-    ojo: "El auxiliar nunca se omite: 'Are you working?', no 'You working?'. Y la negación va después de am/is/are: 'She isn't eating', no 'She no is eating'.",
-  },
-  2: {
-    afirmativa: {
-      formulas: [f(suj('Subject'), verbo('verb (+s / es)'))],
-      ejemplos: [
-        ['I work here.', 'Yo trabajo aquí.'],
-        ['She works here.', 'Ella trabaja aquí.'],
-      ],
-    },
-    negativa: {
-      formulas: [f(suj('Subject'), neg("don't / doesn't"), verbo('verb'))],
-      ejemplos: [
-        ["I don't work here.", 'Yo no trabajo aquí.'],
-        ["He doesn't like coffee.", 'A él no le gusta el café.'],
-      ],
-    },
-    pregunta: {
-      formulas: [f(aux('Do / Does'), suj('subject'), verbo('verb'))],
-      ejemplos: [
-        ['Do you work here?', '¿Trabajas aquí?'],
-        ['Does she like coffee?', '¿A ella le gusta el café?'],
-      ],
-    },
-    nota: 'Con I/you/we/they se usa do / don\'t; con he/she/it, does / doesn\'t. Respuestas cortas: Yes, I do. / No, she doesn\'t.',
-    ojo: "La -s se queda en el auxiliar: 'She doesn't work' y 'Does she work?' (no 'doesn't works').",
-  },
-  3: {
-    afirmativa: {
-      formulas: [f(suj('Subject'), verbo('verb + -ed / irregular'))],
-      ejemplos: [
-        ['I worked yesterday.', 'Trabajé ayer.'],
-        ['She went home early.', 'Ella se fue temprano a casa.'],
-      ],
-    },
-    negativa: {
-      formulas: [f(suj('Subject'), neg("didn't"), verbo('verb'))],
-      ejemplos: [
-        ["I didn't work yesterday.", 'No trabajé ayer.'],
-        ["She didn't go home.", 'Ella no se fue a casa.'],
-      ],
-    },
-    pregunta: {
-      formulas: [f(aux('Did'), suj('subject'), verbo('verb'))],
-      ejemplos: [
-        ['Did you work yesterday?', '¿Trabajaste ayer?'],
-        ['Where did she go?', '¿Adónde fue ella?'],
-      ],
-    },
-    nota: "did / didn't ya marcan el pasado, así que el verbo vuelve a su forma base. Respuestas cortas: Yes, I did. / No, she didn't. Con el verbo be no se usa did: I wasn't · Were you?",
-    ojo: "No pongas el pasado dos veces: 'Did she went?' ✗ → 'Did she go?' ✓.",
-  },
   15: {
     afirmativa: {
       formulas: [f(suj('Subject'), aux('was / were'), verbo('verb-ing'))],
@@ -242,40 +161,6 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     },
     nota: 'Es la versión en pasado del present perfect continuous: had been + verbo con -ing. Respuestas cortas: Yes, I had. / No, I hadn\'t.',
     ojo: "No lleva have/has: es 'had been', no 'have been' (eso ya es presente).",
-  },
-  4: {
-    afirmativa: {
-      formulas: [
-        fl('Con have', suj('Subject'), aux('have / has'), resto('object')),
-        fl('Con have got', suj('Subject'), aux('have / has'), aux('got'), resto('object')),
-      ],
-      ejemplos: [
-        ["I have a sister. / I've got a sister.", 'Tengo una hermana.'],
-        ["She has a new phone. / She's got a new phone.", 'Ella tiene un teléfono nuevo.'],
-      ],
-    },
-    negativa: {
-      formulas: [
-        fl('Con have', suj('Subject'), neg("don't / doesn't"), aux('have'), resto('object')),
-        fl('Con have got', suj('Subject'), neg("haven't / hasn't"), aux('got'), resto('object')),
-      ],
-      ejemplos: [
-        ["I don't have any money. / I haven't got any money.", 'No tengo dinero.'],
-        ["He doesn't have time. / He hasn't got time.", 'Él no tiene tiempo.'],
-      ],
-    },
-    pregunta: {
-      formulas: [
-        fl('Con have', aux('Do / Does'), suj('subject'), aux('have'), resto('object')),
-        fl('Con have got', aux('Have / Has'), suj('subject'), aux('got'), resto('object')),
-      ],
-      ejemplos: [
-        ['Do you have a pen? / Have you got a pen?', '¿Tienes un lápiz?'],
-        ['Does she have a brother? / Has she got a brother?', '¿Ella tiene un hermano?'],
-      ],
-    },
-    nota: "have y have got significan lo mismo (tener: posesión, familia, enfermedades, horarios). have got es más informal y solo existe en presente. Respuestas cortas: Yes, I do. / No, I haven't.",
-    ojo: "No los mezcles: 'Do you have got…?' ✗. En pasado solo se usa had: 'I didn't have time'.",
   },
   19: {
     afirmativa: {
@@ -615,4 +500,13 @@ export const FORMAS_UNIDAD: Record<number, FormasUnidad> = {
     nota: "Solo cambia be (am / is / are / was / were); el participio se queda igual. Para decir quién hizo la acción se añade by: 'written by Tom'.",
     ojo: "El español usa 'se' (Se habla inglés); el inglés usa be + participio: 'English is spoken'.",
   },
+};
+
+/**
+ * Por número de unidad (una, o varias cuando la unidad tiene más de una estructura). Las unidades que no están aquí
+ * (no son de verbos) no muestran este bloque. Las unidades 1–12 son las del curso A1 (`FORMAS_CURSO_A1`).
+ */
+export const FORMAS_UNIDAD: Record<number, FormasUnidad | FormasUnidad[]> = {
+  ...FORMAS_DEL_LIBRO,
+  ...FORMAS_CURSO_A1,
 };

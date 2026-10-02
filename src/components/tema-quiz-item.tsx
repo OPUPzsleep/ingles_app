@@ -9,19 +9,22 @@ interface TemaQuizItemProps {
   preguntas: number;
   /** Mejor resultado (porcentaje) de este quiz, si ya se hizo. */
   mejor?: number;
+  /** El quiz es el examen de un bloque del curso (con preguntas propias), no un repaso de las unidades. */
+  examen?: boolean;
   onPress: () => void;
 }
 
 /** La fila que cierra un tema dentro de un nivel: su quiz. Se ve como las filas de unidad, pero con 🎯 y el nombre en color. */
-export function TemaQuizItem({ tema, preguntas, mejor, onPress }: TemaQuizItemProps) {
+export function TemaQuizItem({ tema, preguntas, mejor, examen = false, onPress }: TemaQuizItemProps) {
   const theme = useTheme();
   const hecho = mejor !== undefined;
+  const titulo = examen ? `Examen del ${tema}` : `Quiz de ${tema}`;
 
   return (
     <Pressable
       onPress={onPress}
       accessibilityRole="button"
-      accessibilityLabel={`Quiz de ${tema}, ${preguntas} preguntas`}
+      accessibilityLabel={`${titulo}, ${preguntas} preguntas`}
       style={({ pressed }) => [
         styles.row,
         { backgroundColor: theme.backgroundElement, borderColor: theme.border },
@@ -31,7 +34,7 @@ export function TemaQuizItem({ tema, preguntas, mejor, onPress }: TemaQuizItemPr
         <ThemedText type="smallBold">🎯</ThemedText>
       </View>
       <View style={styles.textos}>
-        <ThemedText themeColor="primary">{`Quiz de ${tema}`}</ThemedText>
+        <ThemedText themeColor="primary">{titulo}</ThemedText>
         <ThemedText type="small" themeColor="textSecondary">
           {hecho ? `${preguntas} preguntas · Tu mejor resultado: ${mejor}%` : `${preguntas} preguntas`}
         </ThemedText>

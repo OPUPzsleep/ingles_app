@@ -1,3 +1,5 @@
+import { UNIDADES_CURSO_A1 } from '@/data/grammar/curso-a1';
+import { PRONUN_CURSO_A1 } from '@/data/grammar/curso-a1/pronunciacion';
 import { LIBRO_DE_NUEVO } from '@/data/grammar/numeracion';
 import { preguntasExtraDeTema } from '@/data/grammar/preguntas-tema';
 import { PRONUN_DATA } from '@/data/grammar/pronunciation';
@@ -99,10 +101,9 @@ export function claveQuizTema(nivel: CefrLevel, nombreTema: string): string {
 
 /**
  * Cómo se muestra un tema dentro de un nivel: casi siempre su nombre e icono, salvo donde el nombre confundiría.
- * "Past Perfect" junta cuatro unidades del libro y en A1 y A2 solo están "have / have got" y "used to".
+ * "Past Perfect" junta cuatro unidades del libro y en A2 solo está "used to".
  */
 const ETIQUETA_EN_NIVEL: Record<string, { nombre: string; icono: string }> = {
-  'A1|Past Perfect': { nombre: 'have / have got', icono: '🎒' },
   'A2|Past Perfect': { nombre: 'used to', icono: '🕰️' },
 };
 
@@ -126,8 +127,11 @@ export function nextRecommendedUnit(doneUnits: number[], userLevel: CefrLevel): 
 /**
  * La pronunciación de una unidad: la suya si tiene, y si no la del "ancla" más cercana hacia atrás en el orden
  * del libro (los números actuales siguen los niveles, no el libro, así que se compara por el número del libro).
+ * Las unidades del curso A1 usan solo la suya; las anclas del libro con sus números (1, 2, 3, 5, 10) quedan para
+ * repartir la pronunciación entre las unidades de A2 en adelante.
  */
 export function getPronunVocab(num: number): PronunUnit | null {
+  if (UNIDADES_CURSO_A1[num]) return PRONUN_CURSO_A1[num] ?? null;
   if (PRONUN_DATA[num]) return PRONUN_DATA[num];
   const delLibro = LIBRO_DE_NUEVO[num - 1];
   if (delLibro === undefined) return null;
@@ -158,11 +162,16 @@ export interface VocabResult extends VocabEntry {
 export function getAllVocab(): VocabResult[] {
   const all: VocabResult[] = [];
 
-  const pronunKeys = Object.keys(PRONUN_DATA)
+  // Las anclas del libro de las unidades que ya son del curso A1 no se cuentan: el curso trae las suyas.
+  const pronunciaciones: Record<number, PronunUnit> = {
+    ...Object.fromEntries(Object.entries(PRONUN_DATA).filter(([clave]) => !UNIDADES_CURSO_A1[Number(clave)])),
+    ...PRONUN_CURSO_A1,
+  };
+  const pronunKeys = Object.keys(pronunciaciones)
     .map(Number)
     .sort((a, b) => a - b);
   for (const key of pronunKeys) {
-    for (const entry of PRONUN_DATA[key].vocab) {
+    for (const entry of pronunciaciones[key].vocab) {
       all.push({ ...entry, unit: key });
     }
   }
@@ -241,17 +250,31 @@ function totalPreguntasDeSeccion(nivel: CefrLevel, seccion: SeccionTema): number
   return deUnidades + preguntasExtraDeTema(nivel, seccion.tema.name).length;
 }
 
-/** Cuántas preguntas saldrán en el quiz de un tema dentro de un nivel. */
+/**
+ * Cuántas preguntas saldrán en el quiz de un tema dentro de un nivel. Un bloque del curso A1 es un examen con sus
+ * ejercicios propios (20); los demás temas arman su quiz con las preguntas de sus unidades y de repaso.
+ */
 export function cantidadPreguntasQuizTema(nivel: CefrLevel, seccion: SeccionTema): number {
+  const examen = seccion.tema.examen;
+  if (examen) return Math.min(examen, preguntasExtraDeTema(nivel, seccion.tema.name).length);
   return Math.min(PREGUNTAS_QUIZ_TEMA, totalPreguntasDeSeccion(nivel, seccion));
 }
 
-/** Preguntas del quiz de un tema dentro de un nivel: las de sus unidades más las propias de repaso del tema. */
+/**
+ * Preguntas del quiz de un tema dentro de un nivel: las de sus unidades más las propias de repaso del tema. El examen de
+ * un bloque del curso A1 usa solo sus ejercicios propios, distintos a los de sus unidades.
+ */
 export function buildTopicQuizPool(
   nivel: CefrLevel,
   seccion: SeccionTema,
   cantidad = PREGUNTAS_QUIZ_TEMA
 ): PooledQuizQuestion[] {
+  const examen = seccion.tema.examen;
+  if (examen) {
+    const { nombre } = etiquetaDeTema(nivel, seccion.tema);
+    const propias = preguntasExtraDeTema(nivel, seccion.tema.name).map((q) => ({ ...q, unitTitle: `Examen · ${nombre}` }));
+    return shuffle(propias).slice(0, examen);
+  }
   return tomarPreguntas(gruposDeSeccion(nivel, seccion), cantidad);
 }
 

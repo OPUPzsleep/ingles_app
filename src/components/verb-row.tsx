@@ -8,9 +8,9 @@ import { useTheme } from '@/hooks/use-theme';
 import { ejemplos, Verbo } from '@/lib/verbos';
 
 /** Renglón compacto de un verbo; al tocarlo se expande con todas sus formas y ejemplos. */
-export const VerbRow = memo(function VerbRow({ verbo }: { verbo: Verbo }) {
+export const VerbRow = memo(function VerbRow({ verbo, abierto = false }: { verbo: Verbo; abierto?: boolean }) {
   const theme = useTheme();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(abierto);
   const ej = ejemplos(verbo);
 
   const forma = (label: string, value: string, aprox?: string) => (

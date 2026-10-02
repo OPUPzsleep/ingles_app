@@ -1,4 +1,4 @@
-import { useRouter } from 'expo-router';
+import { type Href, useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Dimensions, StyleSheet, View } from 'react-native';
 
@@ -125,10 +125,12 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
   );
   // Las unidades de verbos muestran arriba sus tres formas (afirmativa, negativa y pregunta): si ya las tienen, en
   // "Estructura" quedan solo las fórmulas que no repiten eso (por ejemplo, "Regular verbs" o "Duration question").
-  const formas = FORMAS_UNIDAD[num];
-  const fichas = formas
-    ? unit.syntaxChips?.filter((formula) => !ETIQUETA_DE_FORMA.test(formula.label ?? ''))
-    : unit.syntaxChips;
+  const formasDeLaUnidad = FORMAS_UNIDAD[num];
+  const listaDeFormas = formasDeLaUnidad ? (Array.isArray(formasDeLaUnidad) ? formasDeLaUnidad : [formasDeLaUnidad]) : [];
+  const fichas =
+    listaDeFormas.length > 0
+      ? unit.syntaxChips?.filter((formula) => !ETIQUETA_DE_FORMA.test(formula.label ?? ''))
+      : unit.syntaxChips;
   const formulas = !!fichas?.length && <GrammarFormula formulas={fichas} />;
   const tarjetaEstructura = formulas && (
     <Card>
@@ -254,7 +256,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
         </Button>
       </View>
 
-      {tab === 'teoria' && !!formas && <FormasUnidad formas={formas} ancha={ancha} />}
+      {tab === 'teoria' && listaDeFormas.map((formas, i) => <FormasUnidad key={i} formas={formas} ancha={ancha} />)}
 
       {tab === 'teoria' &&
         (ancha ? (
@@ -339,20 +341,60 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
           <EmptyTab />
         ))}
 
-      {/* La última unidad de cada tema (dentro de su nivel) cierra con el quiz de ese tema… */}
+      {/* Al final de cada unidad: más para profundizar y sus propios ejercicios. */}
+      {!!unit.relacionados?.length && (
+        <Card>
+          <ThemedText type="label" themeColor="primary">
+            📚 Para profundizar
+          </ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">
+            Otras unidades y páginas de Gramática del mismo tema.
+          </ThemedText>
+          {unit.relacionados.map((relacionado) => (
+            <Button
+              key={relacionado.ruta}
+              variant="secondary"
+              onPress={() => router.push(relacionado.ruta as Href)}
+              style={holgado ? styles.botonDeTarjetaAncho : undefined}>
+              {relacionado.etiqueta}
+            </Button>
+          ))}
+        </Card>
+      )}
+
+      {unit.quiz.length > 0 && (
+        <Card>
+          <ThemedText type="label" themeColor="primary">
+            ✏️ Ponte a prueba
+          </ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">
+            {`${unit.quiz.length} ejercicios de esta unidad: contestas y te explico cada respuesta.`}
+          </ThemedText>
+          <Button
+            variant={isDone ? 'secondary' : 'primary'}
+            onPress={() => router.push(`/quiz/unidad/${num}`)}
+            style={holgado ? styles.botonDeTarjetaAncho : undefined}>
+            {isDone ? '🔁 Repetir los ejercicios' : `✏️ Hacer los ${unit.quiz.length} ejercicios`}
+          </Button>
+        </Card>
+      )}
+
+      {/* La última unidad de cada tema (dentro de su nivel) cierra con el quiz de ese tema (en el curso A1, el examen del bloque)… */}
       {cierraTema && seccion && (
         <Card>
           <ThemedText type="label" themeColor="primary">
-            {`🎯 Fin del tema ${nombreTema}`}
+            {seccion.tema.examen ? `🎯 Fin del ${nombreTema}` : `🎯 Fin del tema ${nombreTema}`}
           </ThemedText>
           <ThemedText type="small" themeColor="textSecondary">
-            {`Es la última unidad de este tema en el nivel ${unit.level}. Ciérralo con su quiz de ${cantidadPreguntasQuizTema(unit.level, seccion)} preguntas.`}
+            {seccion.tema.examen
+              ? `Es la última unidad de este bloque. Ciérralo con su examen de ${cantidadPreguntasQuizTema(unit.level, seccion)} preguntas, distintas a las de las unidades.`
+              : `Es la última unidad de este tema en el nivel ${unit.level}. Ciérralo con su quiz de ${cantidadPreguntasQuizTema(unit.level, seccion)} preguntas.`}
           </ThemedText>
           <Button
             variant="primary"
             onPress={() => router.push(`/quiz/tema/${unit.level}/${encodeURIComponent(seccion.tema.name)}`)}
             style={holgado ? styles.botonDeTarjetaAncho : undefined}>
-            {`🎯 Quiz de ${nombreTema}`}
+            {seccion.tema.examen ? '🎯 Hacer el examen del bloque' : `🎯 Quiz de ${nombreTema}`}
           </Button>
         </Card>
       )}

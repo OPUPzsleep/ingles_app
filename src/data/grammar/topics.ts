@@ -1,7 +1,17 @@
 import { Topic } from '@/types/grammar';
 
+/** Los 4 bloques del curso A1 (unidades 1–12): cada uno es un tema del nivel y cierra con un examen de 20 ejercicios propios. */
+export const BLOQUE_1 = 'Bloque 1 · Verbo To Be y sustantivos';
+export const BLOQUE_2 = 'Bloque 2 · Presente simple y cuantificadores';
+export const BLOQUE_3 = 'Bloque 3 · Presente continuo, modales y necesidades';
+export const BLOQUE_4 = 'Bloque 4 · Pasado simple, contables e incontables';
+
 /** Los temas de gramática, en el orden en que aparecen dentro de cada nivel. Cada unidad dice a cuál pertenece (`topic`). */
 export const TOPICS: Topic[] = [
+  { name: BLOQUE_1, icon: '🧱', examen: 20 },
+  { name: BLOQUE_2, icon: '🔁', examen: 20 },
+  { name: BLOQUE_3, icon: '🎯', examen: 20 },
+  { name: BLOQUE_4, icon: '⏪', examen: 20 },
   { name: 'Present & Past', icon: '🕐' },
   { name: 'Present Perfect', icon: '✅' },
   { name: 'Future', icon: '🚀' },

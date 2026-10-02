@@ -6,7 +6,7 @@ export const INFO_NIVEL: Record<CefrLevel, { icono: string; nombre: string; resu
     icono: '🌱',
     nombre: 'Principiante',
     resumen:
-      'Las bases: presente y pasado simple, have got, sustantivos, artículos, some y any, comparativos y preposiciones de tiempo y lugar.',
+      'Tu curso en 4 bloques: verbo to be y sustantivos; presente simple y cuantificadores; presente continuo, can y necesidades; pasado simple, contables e incontables. Cada unidad trae regla, estructura, ejemplos y 5 ejercicios, y cada bloque cierra con un examen de 20.',
   },
   A2: {
     icono: '🌿',

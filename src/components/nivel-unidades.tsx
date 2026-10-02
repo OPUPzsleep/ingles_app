@@ -68,6 +68,7 @@ export function NivelUnidades({ nivel, onSelectUnit, selectedUnit }: NivelUnidad
             <TemaQuizItem
               tema={nombre}
               preguntas={cantidadPreguntasQuizTema(nivel, seccion)}
+              examen={!!tema.examen}
               mejor={temaBest?.[claveQuizTema(nivel, tema.name)]}
               onPress={() => router.push(`/quiz/tema/${nivel}/${encodeURIComponent(tema.name)}`)}
             />

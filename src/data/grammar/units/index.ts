@@ -1,3 +1,4 @@
+import { UNIDADES_CURSO_A1 } from '@/data/grammar/curso-a1';
 import { Unit } from '@/types/grammar';
 
 import { presentAndPastUnits } from './present-and-past';
@@ -18,6 +19,7 @@ import { conjunctionsUnits } from './conjunctions';
 import { prepositionsUnits } from './prepositions';
 import { phrasalVerbsUnits } from './phrasal-verbs';
 
+/** Todas las unidades por número: las del curso A1 (1–12, `UNIDADES_CURSO_A1`) y las de A2 a B2 (13–145), que vienen de estos archivos. */
 export const UNITS: Record<number, Unit> = {
   ...presentAndPastUnits,
   ...presentPerfectUnits,
@@ -36,4 +38,5 @@ export const UNITS: Record<number, Unit> = {
   ...conjunctionsUnits,
   ...prepositionsUnits,
   ...phrasalVerbsUnits,
+  ...UNIDADES_CURSO_A1,
 };

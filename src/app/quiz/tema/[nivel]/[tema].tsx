@@ -6,6 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { QuizSession } from '@/components/quiz-session';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { TituloDeEncabezado } from '@/components/titulo-de-encabezado';
 import { Button } from '@/components/ui/button';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
@@ -47,6 +48,7 @@ function QuizDelTema({
   return (
     <QuizSession
       pool={pool}
+      examen={!!seccion.tema.examen}
       modeLabel={`${nombre} · ${nivel}`}
       onFinish={({ correctas, total }) => {
         if (total > 0) registerTopicQuiz(nivel, seccion.tema.name, Math.round((correctas / total) * 100));
@@ -75,12 +77,12 @@ export default function QuizTemaScreen() {
   const seccion = nivel ? seccionDeTema(nivel, decodificar(temaParam)) : null;
   // Cada "Repetir" vuelve a montar la sesión, y así salen otras preguntas del tema.
   const [ronda, setRonda] = useState(0);
+  const tituloDelQuiz =
+    seccion && nivel ? `${seccion.tema.examen ? 'Examen' : 'Quiz'} · ${etiquetaDeTema(nivel, seccion.tema).nombre} (${nivel})` : 'Quiz';
 
   return (
     <ThemedView style={styles.container}>
-      <Stack.Screen
-        options={{ title: seccion && nivel ? `Quiz · ${etiquetaDeTema(nivel, seccion.tema).nombre} (${nivel})` : 'Quiz' }}
-      />
+      <Stack.Screen options={{ title: tituloDelQuiz, headerTitle: () => <TituloDeEncabezado>{tituloDelQuiz}</TituloDeEncabezado> }} />
       <SafeAreaView style={styles.safeArea} edges={['bottom']}>
         <ThemedView style={styles.content}>
           {nivel && seccion ? (

@@ -84,6 +84,11 @@ interface FormasUnidadProps {
 export function FormasUnidad({ formas, ancha }: FormasUnidadProps) {
   return (
     <View style={styles.contenedor}>
+      {!!formas.titulo && (
+        <ThemedText type="label" themeColor="primary">
+          {formas.titulo}
+        </ThemedText>
+      )}
       <View style={ancha ? styles.fila : styles.columna}>
         {PANELES.map(({ clave, etiqueta, color }) => (
           <PanelForma key={clave} etiqueta={etiqueta} color={color} detalle={formas[clave]} enFila={ancha} />

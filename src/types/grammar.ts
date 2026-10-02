@@ -2,6 +2,8 @@ export interface ExplainBlock {
   head: string;
   body: string;
   note?: string;
+  /** Ejemplos con su traducción [inglés, español]: se ven debajo de la explicación, cada uno con audio. */
+  ejemplos?: [string, string][];
 }
 
 export interface ReferenceTable {
@@ -42,6 +44,8 @@ export interface FormaDetalle {
 
 /** Las tres formas de una unidad de verbos, para tenerlas siempre a la vista. */
 export interface FormasUnidad {
+  /** Cuando una unidad trae varias estructuras (pasado simple y pasado de BE), cada una lleva su título. */
+  titulo?: string;
   afirmativa: FormaDetalle;
   negativa: FormaDetalle;
   pregunta: FormaDetalle;
@@ -102,12 +106,26 @@ export interface Unit {
   readingText?: ReadingStory;
   tips?: string[];
   dailyWords?: VocabEntry[];
+  /** Para profundizar: otras unidades y páginas de Gramática ES del mismo tema. */
+  relacionados?: Relacionado[];
+}
+
+/** Un enlace a otra parte de la app (una unidad, un concepto de Gramática ES…). */
+export interface Relacionado {
+  etiqueta: string;
+  /** Dirección de expo-router: «/unidad/20», «/gramatica/concepto/ser-vs-estar-be». */
+  ruta: string;
 }
 
 /** Un tema de gramática. Cada unidad dice a cuál pertenece (`Unit.topic`), y cada nivel los muestra como secciones. */
 export interface Topic {
   name: string;
   icon: string;
+  /**
+   * Si está, el quiz de este tema (un bloque del curso A1) es un examen con sus preguntas propias, distintas a las de sus
+   * unidades, y este es su número de preguntas.
+   */
+  examen?: number;
 }
 
 export interface PronunTip {

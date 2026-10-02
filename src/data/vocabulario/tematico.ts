@@ -1,11 +1,12 @@
+import { PALABRAS_AGREGADAS, PALABRAS_NUEVAS } from '@/data/vocabulario/palabras';
 import { VocabTopic } from '@/types/grammar';
 
 /**
  * Vocabulario temático independiente de las unidades de gramática.
- * Pensado para nivel A1: palabras de alta frecuencia agrupadas por tema,
- * en vez de depender de en qué unidad de gramática vayas.
+ * Palabras de alta frecuencia agrupadas por tema, en vez de depender de en qué unidad de gramática vayas.
+ * Estos son los primeros grupos (A1); el resto está en `palabras/` y se suma al final de `VOCAB_TOPICS`.
  */
-export const VOCAB_TOPICS: VocabTopic[] = [
+const VOCAB_TOPICS_BASE: VocabTopic[] = [
   {
     id: 'numeros',
     name: 'Números',
@@ -162,3 +163,9 @@ export const VOCAB_TOPICS: VocabTopic[] = [
     ],
   },
 ];
+
+/** Todo el vocabulario temático: los grupos de arriba y los de `palabras/`, con las palabras que se agregaron a algunos. */
+export const VOCAB_TOPICS: VocabTopic[] = [...VOCAB_TOPICS_BASE, ...PALABRAS_NUEVAS].map((grupo) => ({
+  ...grupo,
+  words: [...grupo.words, ...(PALABRAS_AGREGADAS[grupo.id] ?? [])],
+}));

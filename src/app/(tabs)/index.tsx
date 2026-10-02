@@ -70,6 +70,14 @@ export default function InicioScreen() {
       </ThemedText>
     </Card>
   );
+  const asistente = !focusModeEnabled && (
+    <Card onPress={() => router.push('/asistente')}>
+      <ThemedText type="cardTitle">💬 Pregúntale a la app</ThemedText>
+      <ThemedText type="small" themeColor="textSecondary">
+        Escribe tu duda de gramática, una palabra o un verbo y te contesta con lo que hay en la app, sin internet.
+      </ThemedText>
+    </Card>
+  );
   const modoTdah = <FocusModeCard />;
   const temporizador = focusModeEnabled && <FocusTimer />;
   const tamano = <TextSizeCard />;
@@ -102,6 +110,7 @@ export default function InicioScreen() {
                   {estadisticas}
                   {progreso}
                   {practica}
+                  {asistente}
                   {gramatica}
                   {comoFunciona}
                   {/* En Modo TDAH lo esencial (el interruptor y el temporizador) se queda junto a la tarea. */}
@@ -127,6 +136,7 @@ export default function InicioScreen() {
             {estadisticas}
             {progreso}
             {practica}
+            {asistente}
             {modoTdah}
             {temporizador}
             {tamano}

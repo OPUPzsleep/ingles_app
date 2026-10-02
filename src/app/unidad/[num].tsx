@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { BotonInicio } from '@/components/boton-inicio';
 import { TextSizeControl } from '@/components/text-size-control';
 import { ThemedView } from '@/components/themed-view';
+import { TituloDeEncabezado } from '@/components/titulo-de-encabezado';
 import { UnitView } from '@/components/unit-view';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { ALL_UNIT_TITLES } from '@/data/grammar/unit-titles';
@@ -29,7 +30,13 @@ export default function UnidadScreen() {
 
   return (
     <ThemedView style={styles.container}>
-      <Stack.Screen options={{ title, headerRight: () => <AccionesDeEncabezado /> }} />
+      <Stack.Screen
+        options={{
+          title,
+          headerTitle: () => <TituloDeEncabezado>{title}</TituloDeEncabezado>,
+          headerRight: () => <AccionesDeEncabezado />,
+        }}
+      />
       <SafeAreaView style={styles.safeArea} edges={['bottom']}>
         <ScrollView contentContainerStyle={[styles.content, isWide && styles.contentAncho]}>
           <UnitView num={num} />

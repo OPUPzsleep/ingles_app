@@ -7,8 +7,11 @@ const KEY_PROGRESS = 'aprende-ingles/progress';
 const KEY_SRS = 'aprende-ingles/srs';
 const KEY_SETTINGS = 'aprende-ingles/settings';
 
-/** Numeración de unidades vigente: 2 = por niveles (A1 1–12, A2 13–45…). Antes (hasta la 1.5.0) era la del libro. */
-const NUMERACION_ACTUAL = 2;
+/**
+ * Numeración de unidades vigente: 2 = por niveles (A1 1–12, A2 13–45…) y 3 = lo mismo, pero con las unidades 1–12 del
+ * curso A1 nuevo en lugar de las del libro. Antes (hasta la 1.5.0) era la del libro.
+ */
+const NUMERACION_ACTUAL = 3;
 
 const DEFAULT_PROGRESS: Progress = {
   xp: 0,
@@ -37,6 +40,17 @@ export function unidadesConNumeracionActual(doneUnits: number[]): number[] {
   return [...new Set(nuevas)];
 }
 
+/**
+ * Las unidades 1–12 ahora son otras (el curso A1): se borran las que estaban marcadas, el mejor resultado de los quizzes de
+ * A1 y los de sus temas. XP, racha y el progreso de A2 en adelante se conservan.
+ */
+function conA1Reiniciado(doneUnits: number[], progreso: Progress): Pick<Progress, 'doneUnits' | 'temaBest' | 'levelBest'> {
+  const temaBest = Object.fromEntries(Object.entries(progreso.temaBest ?? {}).filter(([clave]) => !clave.startsWith('A1|')));
+  const levelBest = { ...progreso.levelBest };
+  delete levelBest.A1;
+  return { doneUnits: doneUnits.filter((n) => n > 12), temaBest, levelBest };
+}
+
 export async function cargarProgreso(): Promise<Progress> {
   const raw = await AsyncStorage.getItem(KEY_PROGRESS);
   if (!raw) return DEFAULT_PROGRESS;
@@ -46,9 +60,12 @@ export async function cargarProgreso(): Promise<Progress> {
     // Lo guardado antes de la numeración por niveles no trae `numeracion` (ojo: hay que mirarlo en lo guardado,
     // no en `progreso`, donde el valor por defecto lo taparía). Se pasa una sola vez y se guarda de inmediato.
     if (guardado.numeracion === NUMERACION_ACTUAL) return progreso;
+    const unidades: number[] = Array.isArray(guardado.doneUnits) ? guardado.doneUnits : [];
+    // De la numeración del libro (sin `numeracion`) se pasa a la 2; de la 2 a la 3 solo cambia lo del A1.
+    const porNiveles = guardado.numeracion === 2 ? unidades : unidadesConNumeracionActual(unidades);
     const migrado: Progress = {
       ...progreso,
-      doneUnits: unidadesConNumeracionActual(Array.isArray(guardado.doneUnits) ? guardado.doneUnits : []),
+      ...conA1Reiniciado(porNiveles, progreso),
       numeracion: NUMERACION_ACTUAL,
     };
     await guardarProgreso(migrado);

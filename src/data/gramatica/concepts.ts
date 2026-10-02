@@ -1,3 +1,6 @@
+import { CONCEPTOS_COMPLEMENTOS } from '@/data/gramatica/complementos';
+import { CONCEPTOS_FAQ } from '@/data/gramatica/faq';
+import { CONCEPTOS_EXTRA } from '@/data/gramatica/mas-paginas';
 import { GramConcept } from '@/types/gramatica';
 
 export const GRAM_CONCEPTS: GramConcept[] = [
@@ -100,7 +103,7 @@ export const GRAM_CONCEPTS: GramConcept[] = [
       },
       {
         "type": "tip",
-        "body": "Con esta base ya puedes arrancar la Unidad 1 (Present Continuous). No hace falta saber más gramática todavía — el resto lo vas a ir armando unidad por unidad."
+        "body": "Con esta base ya puedes arrancar la Unidad 1 (Verb To Be). No hace falta saber más gramática todavía — el resto lo vas a ir armando unidad por unidad."
       }
     ]
   },
@@ -1450,5 +1453,8 @@ export const GRAM_CONCEPTS: GramConcept[] = [
         "body": "Truco: solo cuando el verbo YA termina en T o D se agrega una sílaba extra (\"id\") — es como si la palabra necesitara una sílaba de más para no chocar con el mismo sonido. En todos los demás casos, -ed es solo un sonido /t/ o /d/ pegado al final, sin sílaba nueva."
       }
     ]
-  }
+  },
+  ...CONCEPTOS_COMPLEMENTOS,
+  ...CONCEPTOS_EXTRA,
+  ...CONCEPTOS_FAQ,
 ];
