@@ -13,6 +13,7 @@ import { useProgress } from '@/context/progress-context';
 import { useSettings } from '@/context/settings-context';
 import { useIsWide } from '@/hooks/use-is-wide';
 import { contarDificiles, TITULOS_MODO, type Modo } from '@/lib/practice';
+import { useEstiloHorizontal, useHorizontal } from '@/hooks/use-horizontal';
 
 const OPCIONES: { modo: Modo; descripcion: string }[] = [
   {
@@ -25,6 +26,8 @@ const OPCIONES: { modo: Modo; descripcion: string }[] = [
 ];
 
 export default function PracticarScreen() {
+  const horizontal = useHorizontal();
+  const estiloHorizontal = useEstiloHorizontal(1000);
   const router = useRouter();
   const isWide = useIsWide();
   const { srs } = useProgress();
@@ -40,14 +43,14 @@ export default function PracticarScreen() {
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea} edges={['top']}>
         {/* Modo TDAH con una sola tarjeta: columna angosta y centrada, no media pantalla vacía. */}
-        <ScrollView contentContainerStyle={[styles.content, isWide && !soloUna && styles.contentAncho]}>
+        <ScrollView contentContainerStyle={[styles.content, isWide && !soloUna && styles.contentAncho, estiloHorizontal]}>
           <ThemedText type="subtitle">Practicar</ThemedText>
           <ThemedText themeColor="textSecondary">
             Sesiones cortas de 10 ejercicios. Lo que falles se repite pronto.
           </ThemedText>
 
           {/* En pantalla ancha las tarjetas van en cuadrícula; en celular, una debajo de otra. */}
-          <Cuadricula minColumna={440}>
+          <Cuadricula minColumna={horizontal ? 340 : 440}>
             {opciones.map(({ modo, descripcion }) => (
               <Card key={modo} style={styles.celda} onPress={() => router.push(`/practica/${modo}`)}>
                 <ThemedText type="cardTitle">{TITULOS_MODO[modo]}</ThemedText>

@@ -2,9 +2,18 @@ import { useState, type ReactNode } from 'react';
 import { Dimensions, StyleSheet, View } from 'react-native';
 
 import { Spacing } from '@/constants/theme';
+import { useHorizontal } from '@/hooks/use-horizontal';
 
 /** Ancho del contenedor a partir del cual se usan dos columnas. */
 export const ANCHO_DOS_COLUMNAS = 940;
+
+/** Lo mismo en un celular en horizontal: ahí lo que falta es alto, no ancho, así que las columnas empiezan antes. */
+const ANCHO_DOS_COLUMNAS_HORIZONTAL = 700;
+
+/** Desde qué ancho del contenedor se usan dos columnas en esta pantalla. */
+export function useAnchoDosColumnas(): number {
+  return useHorizontal() ? ANCHO_DOS_COLUMNAS_HORIZONTAL : ANCHO_DOS_COLUMNAS;
+}
 
 interface ColumnasProps {
   /** Contenido principal: va a la izquierda con dos columnas, y arriba con una sola. */
@@ -27,10 +36,12 @@ interface ColumnasProps {
 export function Columnas({
   principal,
   lateral,
-  desde = ANCHO_DOS_COLUMNAS,
+  desde: desdeIndicado,
   proporcion = [3, 2],
   anchoSolo = 820,
 }: ColumnasProps) {
+  const desdePorDefecto = useAnchoDosColumnas();
+  const desde = desdeIndicado ?? desdePorDefecto;
   // Se arranca con el ancho de la ventana como estimación (así no parpadea); onLayout da el ancho real.
   const [ancho, setAncho] = useState(() => Dimensions.get('window').width);
   const dos = !!lateral && ancho >= desde;

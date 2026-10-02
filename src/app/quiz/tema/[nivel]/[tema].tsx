@@ -10,6 +10,7 @@ import { TituloDeEncabezado } from '@/components/titulo-de-encabezado';
 import { Button } from '@/components/ui/button';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 import {
   buildTopicQuizPool,
   esNivel,
@@ -72,6 +73,7 @@ function QuizDelTema({
 
 /** Quiz de un tema dentro de un nivel: preguntas de sus unidades y de repaso del tema. */
 export default function QuizTemaScreen() {
+  const estiloHorizontal = useEstiloHorizontal(760);
   const { nivel: nivelParam, tema: temaParam } = useLocalSearchParams<{ nivel: string; tema: string }>();
   const nivel = esNivel(nivelParam) ? nivelParam : null;
   const seccion = nivel ? seccionDeTema(nivel, decodificar(temaParam)) : null;
@@ -84,7 +86,7 @@ export default function QuizTemaScreen() {
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: tituloDelQuiz, headerTitle: () => <TituloDeEncabezado>{tituloDelQuiz}</TituloDeEncabezado> }} />
       <SafeAreaView style={styles.safeArea} edges={['bottom']}>
-        <ThemedView style={styles.content}>
+        <ThemedView style={[styles.content, estiloHorizontal]}>
           {nivel && seccion ? (
             <QuizDelTema key={ronda} nivel={nivel} seccion={seccion} onRepetir={() => setRonda((r) => r + 1)} />
           ) : (

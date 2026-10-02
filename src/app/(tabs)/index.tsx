@@ -20,10 +20,12 @@ import { useProgress } from '@/context/progress-context';
 import { useSettings } from '@/context/settings-context';
 import { useIsWide } from '@/hooks/use-is-wide';
 import { contarUnidadesHechas, nextRecommendedUnit, RUTA } from '@/lib/grammar';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 
 const TOTAL_UNITS = RUTA.length;
 
 export default function InicioScreen() {
+  const estiloHorizontal = useEstiloHorizontal(1000);
   const router = useRouter();
   const isWide = useIsWide();
   const { xp, doneUnits, streak, quizCorrect, quizTotal, userLevel } = useProgress();
@@ -130,7 +132,7 @@ export default function InicioScreen() {
             />
           </ScrollView>
         ) : (
-          <ScrollView contentContainerStyle={styles.content}>
+          <ScrollView contentContainerStyle={[styles.content, estiloHorizontal]}>
             {titulo}
             {subtitulo}
             {nivel}

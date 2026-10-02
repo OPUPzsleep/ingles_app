@@ -7,6 +7,7 @@ import { Card } from '@/components/ui/card';
 import { ProgressBar } from '@/components/ui/progress-bar';
 import { Radius, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
+import { useHorizontal } from '@/hooks/use-horizontal';
 import { useTheme } from '@/hooks/use-theme';
 import { QuizQuestion } from '@/types/grammar';
 
@@ -40,6 +41,7 @@ export function QuizSession({ pool, modeLabel, onFinish, onExit, onRepetir, resu
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionTotal, setSessionTotal] = useState(0);
   const theme = useTheme();
+  const horizontal = useHorizontal();
 
   if (!pool.length) {
     return (
@@ -145,7 +147,7 @@ export function QuizSession({ pool, modeLabel, onFinish, onExit, onRepetir, resu
           📌 {q.unitTitle}
         </ThemedText>
         <ThemedText style={styles.question}>{q.q}</ThemedText>
-        <View style={styles.options}>
+        <View style={[styles.options, horizontal && styles.optionsHorizontal]}>
           {q.opts.map((opt, i) => {
             const isCorrect = answered && i === q.ans;
             const isWrong = answered && i === selected && i !== q.ans;
@@ -156,6 +158,7 @@ export function QuizSession({ pool, modeLabel, onFinish, onExit, onRepetir, resu
                 disabled={answered}
                 style={[
                   styles.option,
+                  horizontal && styles.optionHorizontal,
                   { borderColor: theme.border, backgroundColor: theme.backgroundSelected },
                   isCorrect && { borderColor: theme.success, backgroundColor: theme.successMuted },
                   isWrong && { borderColor: theme.danger, backgroundColor: theme.dangerMuted },
@@ -214,6 +217,16 @@ const styles = StyleSheet.create({
   },
   options: {
     gap: Spacing.two,
+  },
+  // Celular en horizontal: las cuatro opciones en dos columnas, para que quepan sin tanto scroll.
+  optionsHorizontal: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+  optionHorizontal: {
+    flexBasis: '48%',
+    flexGrow: 1,
+    paddingVertical: Spacing.two,
   },
   option: {
     borderWidth: 1,

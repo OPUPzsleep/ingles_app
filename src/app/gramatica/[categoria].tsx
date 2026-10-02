@@ -10,8 +10,10 @@ import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { GRAM_CATS } from '@/data/gramatica/categories';
 import { GRAM_CONCEPTS } from '@/data/gramatica/concepts';
 import { useIsWide } from '@/hooks/use-is-wide';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 
 export default function GramaticaCategoriaScreen() {
+  const estiloHorizontal = useEstiloHorizontal(900);
   const { categoria } = useLocalSearchParams<{ categoria: string }>();
   const router = useRouter();
   const isWide = useIsWide();
@@ -26,7 +28,7 @@ export default function GramaticaCategoriaScreen() {
         {isWide ? (
           <ExploradorGramatica categoriaId={categoria} />
         ) : (
-          <ScrollView contentContainerStyle={styles.content}>
+          <ScrollView contentContainerStyle={[styles.content, estiloHorizontal]}>
             {concepts.length === 0 ? (
               <ThemedText themeColor="textSecondary">
                 Esta categoría todavía no tiene conceptos cargados.

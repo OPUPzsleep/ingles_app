@@ -10,9 +10,11 @@ import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
 import { INFO_NIVEL } from '@/data/grammar/niveles';
 import { esNivel, progresoDeNivel } from '@/lib/grammar';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 
 /** Un nivel del recorrido: sus unidades en orden y, al final, su quiz. */
 export default function NivelScreen() {
+  const estiloHorizontal = useEstiloHorizontal(1000);
   const { nivel: param } = useLocalSearchParams<{ nivel: string }>();
   const router = useRouter();
   const { doneUnits } = useProgress();
@@ -23,7 +25,7 @@ export default function NivelScreen() {
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: nivel ? `Nivel ${nivel}` : 'Nivel' }} />
       <SafeAreaView style={styles.safeArea} edges={['bottom']}>
-        <ScrollView contentContainerStyle={styles.content}>
+        <ScrollView contentContainerStyle={[styles.content, estiloHorizontal]}>
           {!nivel ? (
             <ThemedText themeColor="textSecondary">No se encontró este nivel.</ThemedText>
           ) : (

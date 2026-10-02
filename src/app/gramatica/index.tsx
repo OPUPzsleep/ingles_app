@@ -10,8 +10,10 @@ import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { GRAM_CATS } from '@/data/gramatica/categories';
 import { GRAM_CONCEPTS } from '@/data/gramatica/concepts';
 import { useIsWide } from '@/hooks/use-is-wide';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 
 export default function GramaticaIndexScreen() {
+  const estiloHorizontal = useEstiloHorizontal(1000);
   const router = useRouter();
   const isWide = useIsWide();
 
@@ -22,7 +24,7 @@ export default function GramaticaIndexScreen() {
         {isWide ? (
           <ExploradorGramatica />
         ) : (
-          <ScrollView contentContainerStyle={styles.content}>
+          <ScrollView contentContainerStyle={[styles.content, estiloHorizontal]}>
             <ThemedText type="subtitle">📚 Gramática para Hispanohablantes</ThemedText>
             <ThemedText themeColor="textSecondary" style={styles.subtitle}>
               Conceptos gramaticales explicados en español

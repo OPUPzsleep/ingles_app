@@ -2,7 +2,8 @@ import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { ReactNode, useMemo } from 'react';
 
-import { TextSizeControl } from '@/components/text-size-control';
+import { AccionesDeEncabezado, BotonAtras } from '@/components/acciones-de-encabezado';
+import { TituloDeEncabezado } from '@/components/titulo-de-encabezado';
 import { ProgressProvider } from '@/context/progress-context';
 import { SettingsProvider } from '@/context/settings-context';
 import { useResolvedTheme } from '@/hooks/use-theme';
@@ -39,7 +40,13 @@ export default function RootLayout() {
     <SettingsProvider>
       <NavigationTheme>
         <ProgressProvider>
-          <Stack screenOptions={{ headerRight: () => <TextSizeControl /> }}>
+          <Stack
+            screenOptions={{
+              headerBackVisible: false,
+              headerLeft: () => <BotonAtras />,
+              headerTitle: ({ children }) => <TituloDeEncabezado>{children}</TituloDeEncabezado>,
+              headerRight: () => <AccionesDeEncabezado />,
+            }}>
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           </Stack>
         </ProgressProvider>

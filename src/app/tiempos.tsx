@@ -11,8 +11,10 @@ import { ThemedView } from '@/components/themed-view';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { esTipoOracion, type TipoOracion } from '@/data/frases/frases-tiempos';
 import { useIsWide } from '@/hooks/use-is-wide';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 
 export default function TiemposScreen() {
+  const estiloHorizontal = useEstiloHorizontal(900);
   const { tipo: tipoParam } = useLocalSearchParams<{ tipo?: string }>();
   const router = useRouter();
   const isWide = useIsWide();
@@ -64,7 +66,7 @@ export default function TiemposScreen() {
             anchoMaxDetalle={860}
           />
         ) : (
-          <ScrollView ref={scrollRef} contentContainerStyle={styles.content}>
+          <ScrollView ref={scrollRef} contentContainerStyle={[styles.content, estiloHorizontal]}>
             {intro}
             <MapaTiempos seleccionado={seleccionado} onSelect={elegir} />
             <View onLayout={(evento) => (detalleY.current = evento.nativeEvent.layout.y)}>{detalle}</View>

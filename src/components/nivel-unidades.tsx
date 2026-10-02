@@ -1,6 +1,7 @@
 import { useRouter } from 'expo-router';
 import { StyleSheet, View } from 'react-native';
 
+import { Cuadricula } from '@/components/cuadricula';
 import { TemaQuizItem } from '@/components/tema-quiz-item';
 import { ThemedText } from '@/components/themed-text';
 import { Button } from '@/components/ui/button';
@@ -9,6 +10,7 @@ import { UnitListItem } from '@/components/unit-list-item';
 import { Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
 import { ALL_UNIT_TITLES } from '@/data/grammar/unit-titles';
+import { useHorizontal } from '@/hooks/use-horizontal';
 import {
   cantidadPreguntasQuizNivel,
   cantidadPreguntasQuizTema,
@@ -35,6 +37,7 @@ interface NivelUnidadesProps {
  */
 export function NivelUnidades({ nivel, onSelectUnit, selectedUnit }: NivelUnidadesProps) {
   const router = useRouter();
+  const horizontal = useHorizontal();
   const { doneUnits, levelBest, temaBest } = useProgress();
 
   const { hechas, total } = progresoDeNivel(nivel, doneUnits);
@@ -47,6 +50,26 @@ export function NivelUnidades({ nivel, onSelectUnit, selectedUnit }: NivelUnidad
         const { tema } = seccion;
         const { nombre, icono } = etiquetaDeTema(nivel, tema);
         const avance = progresoDeSeccion(seccion, doneUnits);
+        const filas = [
+          ...seccion.unidades.map((num) => (
+            <UnitListItem
+              key={num}
+              num={numeroEnNivel(num) ?? num}
+              title={ALL_UNIT_TITLES[num] ?? etiquetaDeUnidad(num)}
+              done={doneUnits.includes(num)}
+              selected={num === selectedUnit}
+              onPress={() => onSelectUnit(num)}
+            />
+          )),
+          <TemaQuizItem
+            key="quiz"
+            tema={nombre}
+            preguntas={cantidadPreguntasQuizTema(nivel, seccion)}
+            examen={!!tema.examen}
+            mejor={temaBest?.[claveQuizTema(nivel, tema.name)]}
+            onPress={() => router.push(`/quiz/tema/${nivel}/${encodeURIComponent(tema.name)}`)}
+          />,
+        ];
         return (
           <View key={tema.name} style={styles.seccion}>
             <View style={styles.encabezado} accessibilityRole="header">
@@ -57,23 +80,18 @@ export function NivelUnidades({ nivel, onSelectUnit, selectedUnit }: NivelUnidad
                 {`${avance.hechas}/${avance.total}`}
               </ThemedText>
             </View>
-            {seccion.unidades.map((num) => (
-              <UnitListItem
-                key={num}
-                num={numeroEnNivel(num) ?? num}
-                title={ALL_UNIT_TITLES[num] ?? etiquetaDeUnidad(num)}
-                done={doneUnits.includes(num)}
-                selected={num === selectedUnit}
-                onPress={() => onSelectUnit(num)}
-              />
-            ))}
-            <TemaQuizItem
-              tema={nombre}
-              preguntas={cantidadPreguntasQuizTema(nivel, seccion)}
-              examen={!!tema.examen}
-              mejor={temaBest?.[claveQuizTema(nivel, tema.name)]}
-              onPress={() => router.push(`/quiz/tema/${nivel}/${encodeURIComponent(tema.name)}`)}
-            />
+            {horizontal ? (
+              // Celular girado: las unidades y el quiz del tema en dos columnas, para no recorrer una lista larguísima.
+              <Cuadricula minColumna={360} maxColumnas={2}>
+                {filas.map((fila, i) => (
+                  <View key={i} style={styles.celda}>
+                    {fila}
+                  </View>
+                ))}
+              </Cuadricula>
+            ) : (
+              filas
+            )}
           </View>
         );
       })}
@@ -108,6 +126,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.one,
   },
   nombreTema: {
+    flex: 1,
+  },
+  celda: {
     flex: 1,
   },
   quiz: {

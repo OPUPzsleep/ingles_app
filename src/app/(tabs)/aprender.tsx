@@ -18,8 +18,10 @@ import { useProgress } from '@/context/progress-context';
 import { useSettings } from '@/context/settings-context';
 import { getUnit, NIVELES, nextRecommendedUnit, progresoDeNivel, siguienteNivel } from '@/lib/grammar';
 import { CEFR_LEVELS, type CefrLevel } from '@/types/grammar';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 
 export default function AprenderScreen() {
+  const estiloHorizontal = useEstiloHorizontal(1000);
   const router = useRouter();
   const theme = useTheme();
   const isWide = useIsWide();
@@ -153,7 +155,7 @@ export default function AprenderScreen() {
             refLista={refLista}
           />
         ) : (
-          <ScrollView contentContainerStyle={styles.content}>{lista}</ScrollView>
+          <ScrollView contentContainerStyle={[styles.content, estiloHorizontal]}>{lista}</ScrollView>
         )}
       </SafeAreaView>
     </ThemedView>

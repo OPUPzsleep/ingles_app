@@ -1,34 +1,31 @@
 import { Stack } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Chat } from '@/components/asistente/chat';
-import { TextSizeControl } from '@/components/text-size-control';
+import { AccionesDeEncabezado } from '@/components/acciones-de-encabezado';
 import { ThemedView } from '@/components/themed-view';
 import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
-/** Lo que va a la derecha del encabezado: borrar la conversación y el tamaño de letra. */
-function AccionesDeEncabezado({ onBorrar }: { onBorrar: () => void }) {
+/** Botón 🧹 del encabezado: borra la conversación. */
+function BotonBorrar({ onBorrar }: { onBorrar: () => void }) {
   const theme = useTheme();
 
   return (
-    <View style={styles.acciones}>
-      <Pressable
-        onPress={onBorrar}
-        hitSlop={6}
-        accessibilityRole="button"
-        accessibilityLabel="Borrar la conversación"
-        style={({ pressed }) => [
-          styles.boton,
-          { borderColor: theme.border, backgroundColor: theme.backgroundElement },
-          pressed && styles.pulsado,
-        ]}>
-        <Text style={styles.icono}>🧹</Text>
-      </Pressable>
-      <TextSizeControl />
-    </View>
+    <Pressable
+      onPress={onBorrar}
+      hitSlop={6}
+      accessibilityRole="button"
+      accessibilityLabel="Borrar la conversación"
+      style={({ pressed }) => [
+        styles.boton,
+        { borderColor: theme.border, backgroundColor: theme.backgroundElement },
+        pressed && styles.pulsado,
+      ]}>
+      <Text style={styles.icono}>🧹</Text>
+    </Pressable>
   );
 }
 
@@ -40,8 +37,12 @@ export default function AsistenteScreen() {
     <ThemedView style={styles.container}>
       <Stack.Screen
         options={{
-          title: 'Pregúntale a la app',
-          headerRight: () => <AccionesDeEncabezado onBorrar={() => setConversacion((n) => n + 1)} />,
+          title: 'Asistente',
+          headerRight: () => (
+            <AccionesDeEncabezado>
+              <BotonBorrar onBorrar={() => setConversacion((n) => n + 1)} />
+            </AccionesDeEncabezado>
+          ),
         }}
       />
       <SafeAreaView style={styles.safeArea} edges={['bottom']}>
@@ -57,11 +58,6 @@ const styles = StyleSheet.create({
   },
   safeArea: {
     flex: 1,
-  },
-  acciones: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: Spacing.two,
   },
   // Mismo tamaño y estilo que A− / A+ (y que el 🏠 de las unidades).
   boton: {

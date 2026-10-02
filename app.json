@@ -3,7 +3,7 @@
     "name": "Aprende Inglés",
     "slug": "aprende-ingles",
     "version": "1.6.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "aprendeingles",
     "userInterfaceStyle": "automatic",

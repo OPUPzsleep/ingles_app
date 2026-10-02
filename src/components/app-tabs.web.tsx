@@ -12,6 +12,7 @@ import { ThemedText } from './themed-text';
 import { ThemedView } from './themed-view';
 
 import { Spacing, WideBreakpoint } from '@/constants/theme';
+import { useHorizontal } from '@/hooks/use-horizontal';
 import { useTheme } from '@/hooks/use-theme';
 
 /** Por debajo de este ancho la barra muestra solo el emoji (y el nombre de la pestaña activa). */
@@ -73,6 +74,8 @@ export function CustomTabList(props: TabListProps) {
   const { width } = useWindowDimensions();
   const compact = width < COMPACT_WIDTH;
   const wide = width >= WideBreakpoint;
+  // Celular girado: la barra es baja para que no se coma el poco alto que hay.
+  const horizontal = useHorizontal();
 
   return (
     // El fondo va aquí porque la barra ya no flota sobre las pantallas: ocupa su propia franja.
@@ -82,6 +85,7 @@ export function CustomTabList(props: TabListProps) {
         styles.tabListContainer,
         compact && styles.tabListContainerCompact,
         wide && styles.tabListContainerWide,
+        horizontal && styles.tabListContainerHorizontal,
       ]}>
       <ThemedView
         type="backgroundElement"
@@ -89,6 +93,7 @@ export function CustomTabList(props: TabListProps) {
           styles.innerContainer,
           compact && styles.innerContainerCompact,
           wide && styles.innerContainerWide,
+          horizontal && styles.innerContainerHorizontal,
           { borderColor: colors.border },
         ]}>
         {!compact && (
@@ -146,6 +151,14 @@ const styles = StyleSheet.create({
     borderWidth: 0,
     borderBottomWidth: 1,
     paddingHorizontal: Spacing.four,
+  },
+  tabListContainerHorizontal: {
+    paddingVertical: Spacing.one,
+    paddingHorizontal: Spacing.two,
+  },
+  innerContainerHorizontal: {
+    paddingVertical: Spacing.one,
+    maxWidth: '100%',
   },
   brandText: {
     marginRight: 'auto',

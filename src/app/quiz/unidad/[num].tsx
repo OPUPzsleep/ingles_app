@@ -8,8 +8,10 @@ import { ThemedView } from '@/components/themed-view';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
 import { buildUnitQuizPool, etiquetaDeUnidad, getUnit } from '@/lib/grammar';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 
 export default function QuizUnidadScreen() {
+  const estiloHorizontal = useEstiloHorizontal(760);
   const { num: numParam } = useLocalSearchParams<{ num: string }>();
   const num = Number(numParam);
   const router = useRouter();
@@ -22,7 +24,7 @@ export default function QuizUnidadScreen() {
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: `Quiz · ${etiquetaDeUnidad(num)}` }} />
       <SafeAreaView style={styles.safeArea} edges={['bottom']}>
-        <ThemedView style={styles.content}>
+        <ThemedView style={[styles.content, estiloHorizontal]}>
           <QuizSession
             pool={pool}
             modeLabel={`${etiquetaDeUnidad(num)}: ${unit?.title ?? ''}`}

@@ -11,6 +11,7 @@ import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
 import { buildLevelQuizPool, esNivel, siguienteNivel } from '@/lib/grammar';
 import type { CefrLevel } from '@/types/grammar';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 
 /** La sesión de un quiz de nivel: junta sus preguntas al empezar (cada vez que se vuelve a montar salen otras). */
 function QuizDelNivel({ nivel, onRepetir }: { nivel: CefrLevel; onRepetir: () => void }) {
@@ -41,6 +42,7 @@ function QuizDelNivel({ nivel, onRepetir }: { nivel: CefrLevel; onRepetir: () =>
 
 /** Quiz final de un nivel: preguntas de las unidades de ese nivel. */
 export default function QuizNivelScreen() {
+  const estiloHorizontal = useEstiloHorizontal(760);
   const { nivel: param } = useLocalSearchParams<{ nivel: string }>();
   const nivel = esNivel(param) ? param : null;
   // Cada "Repetir" vuelve a montar la sesión, y así salen otras preguntas del nivel.
@@ -50,7 +52,7 @@ export default function QuizNivelScreen() {
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: nivel ? `Quiz · Nivel ${nivel}` : 'Quiz' }} />
       <SafeAreaView style={styles.safeArea} edges={['bottom']}>
-        <ThemedView style={styles.content}>
+        <ThemedView style={[styles.content, estiloHorizontal]}>
           {nivel ? (
             <QuizDelNivel key={ronda} nivel={nivel} onRepetir={() => setRonda((r) => r + 1)} />
           ) : (

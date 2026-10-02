@@ -9,8 +9,10 @@ import { ThemedView } from '@/components/themed-view';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { GRAM_CONCEPTS } from '@/data/gramatica/concepts';
 import { useIsWide } from '@/hooks/use-is-wide';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 
 export default function GramaticaConceptoScreen() {
+  const estiloHorizontal = useEstiloHorizontal(900);
   const { id } = useLocalSearchParams<{ id: string }>();
   const isWide = useIsWide();
   const concept = GRAM_CONCEPTS.find((c) => c.id === id);
@@ -22,7 +24,7 @@ export default function GramaticaConceptoScreen() {
         {isWide ? (
           <ExploradorGramatica conceptoId={id} />
         ) : (
-          <ScrollView contentContainerStyle={styles.content}>
+          <ScrollView contentContainerStyle={[styles.content, estiloHorizontal]}>
             {!concept ? (
               <ThemedText themeColor="textSecondary">No se encontró este concepto.</ThemedText>
             ) : (

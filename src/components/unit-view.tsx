@@ -4,7 +4,7 @@ import { Dimensions, StyleSheet, View } from 'react-native';
 
 import { useIrAlInicio } from '@/components/boton-inicio';
 import { ChatSimulator } from '@/components/chat-simulator';
-import { ANCHO_DOS_COLUMNAS, Columnas } from '@/components/columnas';
+import { ANCHO_DOS_COLUMNAS, Columnas, useAnchoDosColumnas } from '@/components/columnas';
 import { ContrastCard } from '@/components/contrast-card';
 import { ExplainBlock } from '@/components/explain-block';
 import { FormasUnidad } from '@/components/formas-unidad';
@@ -19,6 +19,7 @@ import { Card } from '@/components/ui/card';
 import { Radius, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
 import { FORMAS_UNIDAD } from '@/data/grammar/formas';
+import { useHorizontal } from '@/hooks/use-horizontal';
 import { useTheme } from '@/hooks/use-theme';
 import {
   cantidadPreguntasQuizNivel,
@@ -40,6 +41,9 @@ const ANCHO_MAX_UNIDAD = 1320;
 
 /** Desde este ancho el encabezado, las pestañas y los botones ya no se estiran (tablet vertical, panel medio). */
 const ANCHO_HOLGADO = 600;
+
+/** Lo mismo para las tres formas en un celular en horizontal. */
+const ANCHO_FORMAS_EN_FILA_HORIZONTAL = 760;
 
 /** Fórmulas de "Estructura" que solo repiten la forma afirmativa, negativa o de pregunta ("Affirmative", "Negative / Question"…). */
 const ETIQUETA_DE_FORMA = /^(affirmative|negative|question|form)(\s*\/\s*(negative|question))?$/i;
@@ -75,7 +79,12 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
   const [tab, setTab] = useState<Tab>('teoria');
   // Ancho estimado con el de la ventana hasta que onLayout da el real (evita un parpadeo al abrir).
   const [ancho, setAncho] = useState(() => Dimensions.get('window').width);
-  const ancha = ancho >= ANCHO_DOS_COLUMNAS;
+  const horizontal = useHorizontal();
+  // Las tres formas (afirmativa, negativa, pregunta) van en fila desde este ancho; en un celular girado caben antes.
+  const ancha = ancho >= (horizontal ? ANCHO_FORMAS_EN_FILA_HORIZONTAL : ANCHO_DOS_COLUMNAS);
+  // Las dos columnas (teoría | tabla) empiezan antes en un celular en horizontal; las tres formas en fila, no.
+  const anchoDosColumnas = useAnchoDosColumnas();
+  const dosColumnas = ancho >= anchoDosColumnas;
   const holgado = ancho >= ANCHO_HOLGADO;
 
   const unit = getUnit(num);
@@ -247,7 +256,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
       {tab === 'teoria' && listaDeFormas.map((formas, i) => <FormasUnidad key={i} formas={formas} ancha={ancha} />)}
 
       {tab === 'teoria' &&
-        (ancha ? (
+        (dosColumnas ? (
           <Columnas
             principal={bloquesTeoria}
             lateral={
@@ -282,7 +291,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
 
       {tab === 'lectura' &&
         (hasLectura ? (
-          ancha ? (
+          dosColumnas ? (
             // Con dos o tres bloques se reparten en dos columnas parejas; con uno solo, no se estira.
             presentesLectura.length === 3 ? (
               <Columnas
@@ -313,7 +322,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
 
       {tab === 'consejos' &&
         (hasConsejos ? (
-          ancha ? (
+          dosColumnas ? (
             tarjetaConsejos ? (
               <Columnas principal={tarjetaConsejos} lateral={tarjetaRepaso || null} proporcion={[1, 1]} />
             ) : (

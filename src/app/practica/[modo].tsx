@@ -11,6 +11,7 @@ import { Card } from '@/components/ui/card';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
 import { armarSesion, esModo, TITULOS_MODO, type Modo } from '@/lib/practice';
+import { useEstiloHorizontal } from '@/hooks/use-horizontal';
 
 /** Se monta solo cuando el progreso ya cargó, así la sesión prioriza lo vencido y lo difícil de verdad. */
 function Sesion({ modo, onSalir }: { modo: Modo; onSalir: () => void }) {
@@ -43,6 +44,7 @@ function Sesion({ modo, onSalir }: { modo: Modo; onSalir: () => void }) {
 }
 
 export default function PracticaScreen() {
+  const estiloHorizontal = useEstiloHorizontal(760);
   const { modo } = useLocalSearchParams<{ modo: string }>();
   const router = useRouter();
   const { loading } = useProgress();
@@ -69,7 +71,7 @@ export default function PracticaScreen() {
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: esModo(modo) ? TITULOS_MODO[modo] : 'Práctica' }} />
       <SafeAreaView style={styles.safeArea} edges={['bottom']}>
-        <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
+        <ScrollView contentContainerStyle={[styles.content, estiloHorizontal]} keyboardShouldPersistTaps="handled">
           {contenido}
         </ScrollView>
       </SafeAreaView>
