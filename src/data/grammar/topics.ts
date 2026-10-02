@@ -24,6 +24,12 @@ export const BLOQUE_B2_2 = 'Bloque 2 · Vida social, ley y orden, y eventos extr
 export const BLOQUE_B2_3 = 'Bloque 3 · Resolución de problemas, comportamiento y el mundo material';
 export const BLOQUE_B2_4 = 'Bloque 4 · Fama, tendencias y páginas profesionales';
 
+/** Los 4 bloques del curso C1 (ids 146–157, Unidad 1–12 del nivel): también cierran con un examen de 20 ejercicios propios. */
+export const BLOQUE_C1_1 = 'Bloque 1 · Redes sociales, los medios e historias';
+export const BLOQUE_C1_2 = 'Bloque 2 · Vida laboral, desafíos y el futuro';
+export const BLOQUE_C1_3 = 'Bloque 3 · Convivencia, ciencia de los alimentos y éxito / felicidad';
+export const BLOQUE_C1_4 = 'Bloque 4 · Viajes, cultura y habilidad';
+
 /** Los temas de gramática, en el orden en que aparecen dentro de cada nivel. Cada unidad dice a cuál pertenece (`topic`). */
 export const TOPICS: Topic[] = [
   { name: BLOQUE_1, icon: '🧱', examen: 20 },
@@ -42,6 +48,10 @@ export const TOPICS: Topic[] = [
   { name: BLOQUE_B2_2, icon: '⚖️', examen: 20 },
   { name: BLOQUE_B2_3, icon: '🛠️', examen: 20 },
   { name: BLOQUE_B2_4, icon: '⭐', examen: 20 },
+  { name: BLOQUE_C1_1, icon: '📱', examen: 20 },
+  { name: BLOQUE_C1_2, icon: '💼', examen: 20 },
+  { name: BLOQUE_C1_3, icon: '🧪', examen: 20 },
+  { name: BLOQUE_C1_4, icon: '🧭', examen: 20 },
   { name: 'Present & Past', icon: '🕐' },
   { name: 'Present Perfect', icon: '✅' },
   { name: 'Future', icon: '🚀' },

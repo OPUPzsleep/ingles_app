@@ -29,6 +29,7 @@ export const INFO_NIVEL: Record<CefrLevel, { icono: string; nombre: string; resu
   C1: {
     icono: '🚀',
     nombre: 'Avanzado',
-    resumen: '',
+    resumen:
+      'Tu curso en 4 bloques: redes sociales, medios e historias; vida laboral, desafíos y el futuro; convivencia, ciencia de los alimentos y éxito; viajes, cultura y habilidad. Cada unidad trae regla, estructura, ejemplos, estrategias de conversación y 5 ejercicios, y cada bloque cierra con un examen de 20.',
   },
 };

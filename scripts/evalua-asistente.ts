@@ -155,7 +155,7 @@ const CASOS: [string, Esperado | Esperado[]][] = [
   ['had better ought to would rather', { fuente: /Had better|Would rather|Talking About the Future/i }],
   ['cláusulas relativas de objeto', { fuente: /relativas de objeto|Relative Clauses/i }],
   ['wish más pasado deseos', { fuente: /Wish/i }],
-  ['segundo condicional if I had would', { fuente: /Segundo condicional|Second Conditional/i }],
+  ['segundo condicional if I had would', { fuente: /Segundo condicional|Second Conditional|segundo o tercer|segundo y tercer/i }],
   ['preguntas dentro de oraciones do you know where', { fuente: /Preguntas dentro de oraciones|Questions Within Sentences/i }],
   ['phrasal verbs separables turn it off', { fuente: /Phrasal verbs separables|Separable Phrasal/i }],
   ['presente perfecto continuo', { tiempo: 'Presente perfecto continuo' }],
@@ -163,6 +163,16 @@ const CASOS: [string, Esperado | Esperado[]][] = [
   ['must might can\'t para especular', { fuente: /Especular|Speculating/i }],
   ['adjetivos terminados en ed e ing bored boring', { fuente: /bored|-ed|Speculating/i }],
   ['voz pasiva presente y pasado simple', { fuente: /Passive|pasiva/i }],
+  // Curso C1 (Unidad 1–12)
+  ['tend to para hábitos', { fuente: /tend to|Habits/i }],
+  ['oraciones de relativo defining y non-defining', { fuente: /relativo|Relative/i }],
+  ['no wonder', { fuente: /No wonder|Narrative/i }],
+  ['condicionales mixtos', { fuente: /Condicional mixto|Mixed/i }],
+  ['wish if only', { fuente: /Wish|Mixed/i }],
+  ['as far as i\'m concerned', { fuente: /As far as|Determiners/i }],
+  ['estilo indirecto de preguntas', { fuente: /Estilo indirecto|Reported/i }],
+  ['whose en oraciones de relativo', { ruta: /^\/unidad\/(147|156)$/ }],
+  ['yeah no cuando lo uso', { fuente: /Yeah, no|Where, when/i }],
   // Curso B2 (Unidad 1–12)
   ['remember to o remember doing', { fuente: /Remember y forget|Simple and Continuous/i }],
   ['as as comparaciones igualdad', { fuente: /As… as|Comparisons/i }],
@@ -319,7 +329,7 @@ const CASOS: [string, Esperado | Esperado[]][] = [
   // ── Estudio ──
   ['¿qué estudio hoy?', { ruta: /^\/unidad\// }],
   ['por dónde empiezo', { ruta: /^\/unidad\// }],
-  ['cuánto llevo avanzado', { texto: /Llevas 3 de 48/ }],
+  ['cuánto llevo avanzado', { texto: /Llevas 3 de 60/ }],
   // ── Charla ──
   ['hola', { texto: /Hola/ }],
   ['gracias', { texto: /De nada/ }],

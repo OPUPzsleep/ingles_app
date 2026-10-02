@@ -6,17 +6,19 @@ import { EXAMENES_CURSO_B1, FORMAS_CURSO_B1, UNIDADES_CURSO_B1 } from '@/data/gr
 import { PRONUN_CURSO_B1 } from '@/data/grammar/curso-b1/pronunciacion';
 import { EXAMENES_CURSO_B2, FORMAS_CURSO_B2, UNIDADES_CURSO_B2 } from '@/data/grammar/curso-b2';
 import { PRONUN_CURSO_B2 } from '@/data/grammar/curso-b2/pronunciacion';
+import { EXAMENES_CURSO_C1, FORMAS_CURSO_C1, UNIDADES_CURSO_C1 } from '@/data/grammar/curso-c1';
+import { PRONUN_CURSO_C1 } from '@/data/grammar/curso-c1/pronunciacion';
 import type { CefrLevel, FormasUnidad, PronunUnit, QuizQuestion, Unit } from '@/types/grammar';
 
 import { repartirRespuestas } from './ayuda';
 
 /** Los cursos propios de la app (el resto de las unidades vienen del libro, en `units/`). */
-export type NivelDeCurso = 'A1' | 'A2' | 'B1' | 'B2';
+export type NivelDeCurso = 'A1' | 'A2' | 'B1' | 'B2' | 'C1';
 
 /** Un curso: sus unidades, formas, pronunciación y exámenes de bloque. */
 export interface Curso {
   nivel: NivelDeCurso;
-  /** El id interno de la primera unidad del curso (A1 = 1, A2 = 13, B1 = 46, B2 = 113). */
+  /** El id interno de la primera unidad del curso (A1 = 1, A2 = 13, B1 = 46, B2 = 113, C1 = 146). */
   primerId: number;
   unidades: Record<number, Unit>;
   formas: Record<number, FormasUnidad | FormasUnidad[]>;
@@ -66,6 +68,14 @@ export const CURSOS: Record<NivelDeCurso, Curso> = {
     formas: FORMAS_CURSO_B2,
     pronunciacion: PRONUN_CURSO_B2,
     examenes: conExamenesRepartidos(EXAMENES_CURSO_B2),
+  },
+  C1: {
+    nivel: 'C1',
+    primerId: 146,
+    unidades: conRespuestasRepartidas(UNIDADES_CURSO_C1, 146),
+    formas: FORMAS_CURSO_C1,
+    pronunciacion: PRONUN_CURSO_C1,
+    examenes: conExamenesRepartidos(EXAMENES_CURSO_C1),
   },
 };
 
