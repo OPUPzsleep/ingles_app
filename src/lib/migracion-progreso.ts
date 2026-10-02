@@ -4,9 +4,9 @@ import type { Progress } from '@/types/progress';
 
 /**
  * Numeración de unidades vigente. 1 (sin valor) = la del libro (hasta la 1.5.0); 2 = por niveles; 3 = con el curso A1
- * nuevo en los ids 1–12; 4 = con el curso A2 nuevo en los ids 13–24 (el resto de A2, 25–45, se esconde).
+ * nuevo en los ids 1–12; 4 = con el curso A2 nuevo en los ids 13–24 (el resto de A2, 25–45, se esconde); 5 = con el curso B1 nuevo en los ids 46–57 (el resto de B1, 58–112, se esconde).
  */
-export const NUMERACION_ACTUAL = 4;
+export const NUMERACION_ACTUAL = 5;
 
 /**
  * Qué se borra cuando cambia el contenido de un nivel: si lo guardado tiene una numeración menor que `version`, se
@@ -16,6 +16,7 @@ export const NUMERACION_ACTUAL = 4;
 const REINICIOS: { version: number; nivel: CefrLevel; ids: [primero: number, ultimo: number] }[] = [
   { version: 3, nivel: 'A1', ids: [1, 12] },
   { version: 4, nivel: 'A2', ids: [13, 45] },
+  { version: 5, nivel: 'B1', ids: [46, 112] },
 ];
 
 /** Pasa las unidades completadas de los números del libro a los números por niveles. */

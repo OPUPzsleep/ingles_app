@@ -10,7 +10,8 @@ const POR_NIVEL: Partial<Record<CefrLevel, Record<string, QuizQuestion[]>>> = {
   A1: EXAMENES_CURSO.A1 ?? {},
   // En A2 las preguntas propias de los bloques del curso son sus exámenes de 20; las viejas (sin uso) se conservan.
   A2: { ...PREGUNTAS_TEMA_A2, ...(EXAMENES_CURSO.A2 ?? {}) },
-  B1: PREGUNTAS_TEMA_B1,
+  // En B1 también: las preguntas propias de los bloques del curso son sus exámenes de 20.
+  B1: { ...PREGUNTAS_TEMA_B1, ...(EXAMENES_CURSO.B1 ?? {}) },
   B2: PREGUNTAS_TEMA_B2,
 };
 

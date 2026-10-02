@@ -2,7 +2,7 @@ import type { CefrLevel } from '@/types/grammar';
 
 /** Lo que cambia de un curso a otro en `scripts/valida-curso.ts`. */
 export interface ConfigCurso {
-  nivel: 'A1' | 'A2';
+  nivel: 'A1' | 'A2' | 'B1';
   /** El primer y el último id interno de las unidades del curso. */
   ids: [primero: number, ultimo: number];
   /** Los nombres de los temas (bloques) del curso, en orden. */
