@@ -25,6 +25,7 @@ import {
   cantidadPreguntasQuizTema,
   etiquetaDeTema,
   enlaceDeRelacionado,
+  etiquetaDeUnidad,
   etiquetaDeVecina,
   getPronunVocab,
   getUnit,
@@ -209,7 +210,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
         <View style={holgado ? styles.encabezadoAncho : styles.encabezado}>
           <View style={styles.tituloUnidad}>
             <ThemedText type="label" themeColor="primary">
-              Unit {num} · {nombreTema} · {unit.level}
+              {etiquetaDeUnidad(num, true)} · {nombreTema} · {unit.level}
             </ThemedText>
             <ThemedText type="cardTitle">{unit.title}</ThemedText>
           </View>
