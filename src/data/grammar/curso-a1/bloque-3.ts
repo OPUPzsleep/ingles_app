@@ -171,6 +171,7 @@ const UNIDAD_7: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: Presente simple vs. continuo', ruta: '/gramatica/concepto/el-presente-simple-vs-continuo' },
     { etiqueta: '📖 Gramática: El Gerundio / Forma -ing', ruta: '/gramatica/concepto/el-gerundio-forma-ing-gerund' },
+    { unidad: 15 },
   ],
 };
 
@@ -338,6 +339,7 @@ const UNIDAD_8: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: El Infinitivo (Infinitive)', ruta: '/gramatica/concepto/el-infinitivo-infinitive' },
     { etiqueta: '📖 Gramática: El Verbo (Verb)', ruta: '/gramatica/concepto/el-verbo-verb' },
+    { unidad: 14 },
   ],
 };
 

@@ -110,6 +110,13 @@ const CASOS: [string, Esperado | Esperado[]][] = [
   ['cuándo uso in, on y at', { fuente: /IN \/ ON \/ AT|in\/at\/on|at\/on\/in/i }],
   ['¿cuál es la diferencia entre make y do?', { fuente: /MAKE \/ DO|Preguntas frecuentes/i }],
   ['cuándo se usa bring y take', { fuente: /BRING \/ TAKE/i }],
+  // Curso A2 · Bloque 1 (Unidad 1–3)
+  ['respuestas con too yo también', { fuente: /too/i }],
+  ['respuestas con either', { fuente: /either/i }],
+  ['pronombres objeto me him her', { fuente: /Pronombres objeto/ }],
+  ['pronombres indefinidos something nobody', { fuente: /Pronombres indefinidos/ }],
+  ['verbos de estado que no llevan ing', { fuente: /Verbos de estado/ }],
+  ['cláusulas con when en presente simple', { fuente: /Cláusulas con (if|when)/ }],
   ['ser o estar en inglés', { fuente: /Ser vs\. Estar|BE/i }],
   ['diferencia entre por y para en inglés', { fuente: /Por \/ Para/i }],
   ['cuándo uso el gerundio', { fuente: /Gerundio|Verb \+ -ing|-ing/i }],

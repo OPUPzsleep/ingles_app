@@ -12,6 +12,7 @@
  * Se corre con `npx tsx scripts/valida-curso.ts a1|a2`; con `--completo` exige las 12 unidades y los 4 exámenes.
  * Termina con error si algo falla.
  */
+import { enlaceDeRelacionado } from '@/lib/grammar';
 import { PALABRAS_FALTANTES } from '@/data/grammar/curso/ayuda';
 import { CURSOS, ESCONDIDAS, type NivelDeCurso } from '@/data/grammar/curso';
 import { FORMAS_UNIDAD } from '@/data/grammar/formas';
@@ -38,6 +39,8 @@ const { bloques: BLOQUES, bloqueDeUnidad: BLOQUE_DE_UNIDAD, conFormas: CON_FORMA
 const NIVEL = ELEGIDO;
 const [PRIMER_ID, ULTIMO_ID] = CONFIG.ids;
 
+/** Los enlaces de «Para profundizar» de las unidades del curso, con el título al que apuntan (se imprimen al final). */
+const enlaces: string[] = [];
 const errores: string[] = [];
 const avisos: string[] = [];
 const error = (donde: string, mensaje: string) => errores.push(`${donde}: ${mensaje}`);
@@ -214,14 +217,20 @@ function revisarUnidad(num: number, unit: Unit) {
   // Los enlaces de «Para profundizar» llevan a algo que existe.
   if ((unit.relacionados?.length ?? 0) < 2) error(donde, 'le faltan enlaces de «Para profundizar» (mínimo 2)');
   for (const relacionado of unit.relacionados ?? []) {
-    const unidad = /^\/unidad\/(\d+)$/.exec(relacionado.ruta);
-    const concepto = /^\/gramatica\/concepto\/([\w-]+)$/.exec(relacionado.ruta);
+    const enlace = enlaceDeRelacionado(relacionado);
+    if (!enlace) {
+      error(donde, `un enlace de «Para profundizar» lleva a una unidad que no es visible: ${JSON.stringify(relacionado)}`);
+      continue;
+    }
+    enlaces.push(`${donde} → ${enlace.etiqueta}`);
+    const unidad = /^\/unidad\/(\d+)$/.exec(enlace.ruta);
+    const concepto = /^\/gramatica\/concepto\/([\w-]+)$/.exec(enlace.ruta);
     if (unidad) {
-      if (!UNITS[Number(unidad[1])]) error(donde, `el enlace «${relacionado.etiqueta}» lleva a una unidad que no existe`);
+      if (!UNITS[Number(unidad[1])]) error(donde, `el enlace «${enlace.etiqueta}» lleva a una unidad que no existe`);
     } else if (concepto) {
-      if (!GRAM_CONCEPTS.some((c) => c.id === concepto[1])) error(donde, `el enlace «${relacionado.etiqueta}» lleva a una página que no existe`);
+      if (!GRAM_CONCEPTS.some((c) => c.id === concepto[1])) error(donde, `el enlace «${enlace.etiqueta}» lleva a una página que no existe`);
     } else {
-      error(donde, `el enlace «${relacionado.etiqueta}» tiene una ruta rara: ${relacionado.ruta}`);
+      error(donde, `el enlace «${enlace.etiqueta}» tiene una ruta rara: ${enlace.ruta}`);
     }
   }
 
@@ -324,6 +333,8 @@ for (const curso of Object.values(CURSOS)) {
     }
   }
 }
+console.log(`  Enlaces «Para profundizar» a otras unidades: ${enlaces.filter((e) => e.includes('➡️')).length}`);
+for (const enlace of enlaces.filter((e) => e.includes('➡️'))) console.log(`    ${enlace}`);
 const escondidas = Object.entries(ESCONDIDAS);
 console.log(`  Unidades escondidas del libro: ${escondidas.length}`);
 for (const [id, motivo] of escondidas) {

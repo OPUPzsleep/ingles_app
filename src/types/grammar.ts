@@ -110,19 +110,19 @@ export interface Unit {
   relacionados?: Relacionado[];
 }
 
-/** Un enlace a otra parte de la app (una unidad, un concepto de Gramática ES…). */
-export interface Relacionado {
-  etiqueta: string;
-  /** Dirección de expo-router: «/unidad/20», «/gramatica/concepto/ser-vs-estar-be». */
-  ruta: string;
-}
+/**
+ * Un enlace a otra parte de la app: un concepto de Gramática ES (`etiqueta` y `ruta`: «/gramatica/concepto/ser-vs-estar-be»)
+ * o una unidad por su id interno (`{ unidad: 17 }`); la etiqueta de la unidad se arma al dibujar, porque los archivos de
+ * datos no pueden importar `lib/grammar` (ciclo).
+ */
+export type Relacionado = { etiqueta: string; ruta: string } | { unidad: number };
 
 /** Un tema de gramática. Cada unidad dice a cuál pertenece (`Unit.topic`), y cada nivel los muestra como secciones. */
 export interface Topic {
   name: string;
   icon: string;
   /**
-   * Si está, el quiz de este tema (un bloque del curso A1) es un examen con sus preguntas propias, distintas a las de sus
+   * Si está, el quiz de este tema (un bloque de un curso, A1 o A2) es un examen con sus preguntas propias, distintas a las de sus
    * unidades, y este es su número de preguntas.
    */
   examen?: number;

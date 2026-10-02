@@ -5,7 +5,7 @@ import { PRONUN_DATA } from '@/data/grammar/pronunciation';
 import { TOPICS } from '@/data/grammar/topics';
 import { UNITS } from '@/data/grammar/units';
 import { VOCAB_TOPICS } from '@/data/vocabulario/tematico';
-import { CEFR_LEVELS, CefrLevel, PronunUnit, QuizQuestion, Topic, VocabEntry } from '@/types/grammar';
+import { CEFR_LEVELS, CefrLevel, PronunUnit, QuizQuestion, Relacionado, Topic, VocabEntry } from '@/types/grammar';
 
 export function getUnit(num: number) {
   return UNITS[num];
@@ -62,6 +62,14 @@ export function etiquetaDeUnidad(id: number, sinNivel = false): string {
   const numero = numeroEnNivel(id);
   if (!unidad || numero === null) return `Unidad ${id}`;
   return sinNivel ? `Unidad ${numero}` : `${unidad.level} · Unidad ${numero}`;
+}
+
+/** El enlace de un «Para profundizar»: tal cual, o el de una unidad por id (null si esa unidad no es visible). */
+export function enlaceDeRelacionado(relacionado: Relacionado): { etiqueta: string; ruta: string } | null {
+  if (!('unidad' in relacionado)) return relacionado;
+  const unidad = UNITS[relacionado.unidad];
+  if (!unidad) return null;
+  return { etiqueta: `➡️ ${etiquetaDeUnidad(relacionado.unidad)} · ${unidad.title}`, ruta: `/unidad/${relacionado.unidad}` };
 }
 
 /** La etiqueta de una unidad vecina (botones «← / →»): con el nivel solo si cambia respecto al de la unidad que se ve. */

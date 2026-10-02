@@ -24,6 +24,7 @@ import {
   cantidadPreguntasQuizNivel,
   cantidadPreguntasQuizTema,
   etiquetaDeTema,
+  enlaceDeRelacionado,
   etiquetaDeVecina,
   getPronunVocab,
   getUnit,
@@ -336,15 +337,19 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
           <ThemedText type="small" themeColor="textSecondary">
             Otras unidades y páginas de Gramática del mismo tema.
           </ThemedText>
-          {unit.relacionados.map((relacionado) => (
-            <Button
-              key={relacionado.ruta}
-              variant="secondary"
-              onPress={() => router.push(relacionado.ruta as Href)}
-              style={holgado ? styles.botonDeTarjetaAncho : undefined}>
-              {relacionado.etiqueta}
-            </Button>
-          ))}
+          {unit.relacionados.map((relacionado) => {
+            const enlace = enlaceDeRelacionado(relacionado);
+            if (!enlace) return null;
+            return (
+              <Button
+                key={enlace.ruta}
+                variant="secondary"
+                onPress={() => router.push(enlace.ruta as Href)}
+                style={holgado ? styles.botonDeTarjetaAncho : undefined}>
+                {enlace.etiqueta}
+              </Button>
+            );
+          })}
         </Card>
       )}
 
