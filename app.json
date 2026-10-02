@@ -2,7 +2,7 @@
   "expo": {
     "name": "Aprende Inglés",
     "slug": "aprende-ingles",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "aprendeingles",
@@ -19,7 +19,7 @@
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.alonso_00_lol.aprendeingles",
-      "versionCode": 5
+      "versionCode": 6
     },
     "web": {
       "output": "single",
