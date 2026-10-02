@@ -26,7 +26,7 @@ function Contenido({ entrada }: { entrada: Entrada }) {
 
   return (
     <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea} edges={['top']}>
+      <SafeAreaView style={styles.safeArea} edges={['top', 'left', 'right']}>
         {vista === 'verbos' && <ListaVerbos encabezado={selector} />}
         {vista === 'palabras' && (
           <ListaPalabras encabezado={selector} tema={entrada.tema} busqueda={entrada.busqueda} />

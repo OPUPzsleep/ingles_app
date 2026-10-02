@@ -92,7 +92,7 @@ function BloqueView({ bloque, onAbrir }: { bloque: Bloque; onAbrir: (ruta: strin
       );
 
     case 'palabra':
-      return <TarjetaPalabra entrada={bloque.entrada} pie={bloque.pie} />;
+      return <TarjetaPalabra entrada={bloque.entrada} pie={bloque.pie} completa />;
 
     case 'verbo':
       return <VerbRow verbo={bloque.verbo} abierto />;
@@ -102,7 +102,7 @@ function BloqueView({ bloque, onAbrir }: { bloque: Bloque; onAbrir: (ruta: strin
         <View style={styles.columna}>
           <ThemedText type="smallBold">{bloque.titulo}</ThemedText>
           {bloque.frases.map((frase, i) => (
-            <TarjetaFrase key={`${i}-${frase.en}`} frase={frase} />
+            <TarjetaFrase key={`${i}-${frase.en}`} frase={frase} completa />
           ))}
           {!!bloque.enlace && <BotonEnlace enlace={bloque.enlace} onAbrir={onAbrir} />}
         </View>

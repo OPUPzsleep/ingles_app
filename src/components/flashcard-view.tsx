@@ -1,6 +1,6 @@
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { PanResponder, Pressable, StyleSheet, View } from 'react-native';
 
 import { FlashcardFace, RatingButtons } from '@/components/practice/flashcard-face';
 import { ThemedText } from '@/components/themed-text';
@@ -9,6 +9,7 @@ import { ProgressBar } from '@/components/ui/progress-bar';
 import { Radius, Spacing } from '@/constants/theme';
 import { useProgress } from '@/context/progress-context';
 import { TIPOS, type TipoOracion } from '@/data/frases/frases-tiempos';
+import { useHorizontal } from '@/hooks/use-horizontal';
 import { useTheme } from '@/hooks/use-theme';
 import { buildFcDeck, FiltroTiempo } from '@/lib/flashcards';
 import type { Rating } from '@/lib/grading';
@@ -35,11 +36,24 @@ export function FlashcardView({ tipo, onQuitarTipo }: FlashcardViewProps) {
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const theme = useTheme();
+  const horizontal = useHorizontal();
 
   const goTo = (next: number) => {
     setIndex(next);
     setFlipped(false);
   };
+
+  // Deslizar la tarjeta a los lados pasa a la siguiente o vuelve a la anterior (tocar sigue dándole la vuelta).
+  const [deslizar] = useState(() =>
+    PanResponder.create({
+      onMoveShouldSetPanResponder: (_, g) => Math.abs(g.dx) > 24 && Math.abs(g.dx) > Math.abs(g.dy) * 1.5,
+      onPanResponderRelease: (_, g) => {
+        if (Math.abs(g.dx) <= 50) return;
+        setIndex((i) => i + (g.dx < 0 ? 1 : -1));
+        setFlipped(false);
+      },
+    })
+  );
 
   const cambiarFiltro = (nuevo: FiltroTiempo) => {
     setFiltro(nuevo);
@@ -113,59 +127,106 @@ export function FlashcardView({ tipo, onQuitarTipo }: FlashcardViewProps) {
     goTo(index + 1);
   };
 
-  return (
-    <View>
-      {filtroRow}
-
-      <View style={[styles.headerCard, { backgroundColor: theme.backgroundElement, borderColor: theme.border }]}>
-        <ThemedText type="label" themeColor="primary">
-          {freeReview ? '🃏 Repaso libre — no tienes tarjetas vencidas hoy' : '🃏 Frases — Repaso espaciado'}
-        </ThemedText>
-        <ProgressBar percent={pct} />
-        <View style={styles.headerRow}>
-          <ThemedText type="small" themeColor="textSecondary">
-            Tarjeta {idx + 1} de {deck.length}
-          </ThemedText>
-          <ThemedText type="small" themeColor="textSecondary">
-            {fcReviewed} revisadas en total
-          </ThemedText>
-        </View>
-      </View>
-
-      <ThemedText type="small" themeColor="textSecondary" style={styles.hint}>
-        {flipped ? 'Toca la tarjeta para volver a la frase' : 'Tradúcela en tu mente y toca para ver la respuesta'}
+  const cabecera = (
+    <View style={[styles.headerCard, { backgroundColor: theme.backgroundElement, borderColor: theme.border }]}>
+      <ThemedText type="label" themeColor="primary">
+        {freeReview ? '🃏 Repaso libre — no tienes tarjetas vencidas hoy' : '🃏 Frases — Repaso espaciado'}
       </ThemedText>
+      <ProgressBar percent={pct} />
+      <View style={styles.headerRow}>
+        <ThemedText type="small" themeColor="textSecondary">
+          Tarjeta {idx + 1} de {deck.length}
+        </ThemedText>
+        <ThemedText type="small" themeColor="textSecondary">
+          {fcReviewed} revisadas en total
+        </ThemedText>
+      </View>
+    </View>
+  );
 
+  const pista = (
+    <ThemedText type="small" themeColor="textSecondary" style={styles.hint}>
+      {flipped
+        ? 'Toca la tarjeta para volver a la frase · desliza para cambiar de tarjeta'
+        : 'Tradúcela en tu mente y toca para ver la respuesta · desliza para cambiar de tarjeta'}
+    </ThemedText>
+  );
+
+  const cara = (
+    <View {...deslizar.panHandlers}>
       <FlashcardFace
         card={card}
         flipped={flipped}
         onFlip={flip}
+        compacta={horizontal}
         onVerMapa={() => router.push({ pathname: '/tiempos', params: { tipo: card.tipo } })}
       />
+    </View>
+  );
 
-      {flipped && <RatingButtons onRate={rate} />}
+  const botones = (
+    <View style={styles.navRow}>
+      <Button variant="secondary" onPress={() => goTo(index - 1)}>
+        ← Anterior
+      </Button>
+      <Button
+        variant="secondary"
+        onPress={() => {
+          setDeckState(buildFcDeck(srs, filtro, tipo));
+          goTo(0);
+        }}>
+        🔀 Mezclar
+      </Button>
+      <Button variant="secondary" onPress={() => goTo(index + 1)}>
+        Siguiente →
+      </Button>
+    </View>
+  );
 
-      <View style={styles.navRow}>
-        <Button variant="secondary" onPress={() => goTo(index - 1)}>
-          ← Anterior
-        </Button>
-        <Button
-          variant="secondary"
-          onPress={() => {
-            setDeckState(buildFcDeck(srs, filtro, tipo));
-            goTo(0);
-          }}>
-          🔀 Mezclar
-        </Button>
-        <Button variant="secondary" onPress={() => goTo(index + 1)}>
-          Siguiente →
-        </Button>
+  // Celular en horizontal: los controles a la izquierda y la tarjeta a la derecha, todo a la vista sin recorrer la pantalla.
+  if (horizontal) {
+    return (
+      <View style={styles.dosColumnas}>
+        <View style={styles.columnaControles}>
+          {filtroRow}
+          {cabecera}
+          {botones}
+        </View>
+        <View style={styles.columnaTarjeta}>
+          {pista}
+          {cara}
+          {flipped && <RatingButtons onRate={rate} />}
+        </View>
       </View>
+    );
+  }
+
+  return (
+    <View>
+      {filtroRow}
+      {cabecera}
+      {pista}
+      {cara}
+      {flipped && <RatingButtons onRate={rate} />}
+      {botones}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  dosColumnas: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: Spacing.three,
+  },
+  columnaControles: {
+    flex: 2,
+    minWidth: 0,
+  },
+  columnaTarjeta: {
+    flex: 3,
+    minWidth: 0,
+  },
   filterRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',

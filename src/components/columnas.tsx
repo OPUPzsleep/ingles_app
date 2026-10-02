@@ -40,6 +40,7 @@ export function Columnas({
   proporcion = [3, 2],
   anchoSolo = 820,
 }: ColumnasProps) {
+  const horizontal = useHorizontal();
   const desdePorDefecto = useAnchoDosColumnas();
   const desde = desdeIndicado ?? desdePorDefecto;
   // Se arranca con el ancho de la ventana como estimación (así no parpadea); onLayout da el ancho real.
@@ -48,11 +49,22 @@ export function Columnas({
   const solaYAncha = !lateral && ancho >= desde;
 
   return (
-    <View onLayout={(evento) => setAncho(evento.nativeEvent.layout.width)} style={dos ? styles.fila : styles.apilado}>
-      <View style={[styles.columna, dos && { flex: proporcion[0] }, solaYAncha && { maxWidth: anchoSolo }]}>
+    <View
+      onLayout={(evento) => setAncho(evento.nativeEvent.layout.width)}
+      style={dos ? [styles.fila, horizontal && styles.filaQueBaja] : styles.apilado}>
+      <View
+        style={[
+          styles.columna,
+          dos && (horizontal ? { flexGrow: proporcion[0], flexBasis: 320, maxWidth: '100%' } : { flex: proporcion[0] }),
+          solaYAncha && { maxWidth: anchoSolo },
+        ]}>
         {principal}
       </View>
-      {!!lateral && <View style={[styles.columna, dos && { flex: proporcion[1] }]}>{lateral}</View>}
+      {!!lateral && (
+        <View style={[styles.columna, dos && (horizontal ? { flexGrow: proporcion[1], flexBasis: 240, maxWidth: '100%' } : { flex: proporcion[1] })]}>
+          {lateral}
+        </View>
+      )}
     </View>
   );
 }
@@ -65,6 +77,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     gap: Spacing.four,
+  },
+  // Celular girado: si las dos columnas no caben, la segunda baja debajo (nunca queda fuera de la pantalla).
+  filaQueBaja: {
+    flexWrap: 'wrap',
   },
   columna: {
     gap: Spacing.three,

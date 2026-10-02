@@ -1,6 +1,6 @@
 import { type Href, Redirect, useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Dimensions, StyleSheet, View } from 'react-native';
+import { Dimensions, StyleSheet, useWindowDimensions, View } from 'react-native';
 
 import { useIrAlInicio } from '@/components/boton-inicio';
 import { ChatSimulator } from '@/components/chat-simulator';
@@ -80,6 +80,7 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
   // Ancho estimado con el de la ventana hasta que onLayout da el real (evita un parpadeo al abrir).
   const [ancho, setAncho] = useState(() => Dimensions.get('window').width);
   const horizontal = useHorizontal();
+  const { width: anchoVentana } = useWindowDimensions();
   // Las tres formas (afirmativa, negativa, pregunta) van en fila desde este ancho; en un celular girado caben antes.
   const ancha = ancho >= (horizontal ? ANCHO_FORMAS_EN_FILA_HORIZONTAL : ANCHO_DOS_COLUMNAS);
   // Las dos columnas (teoría | tabla) empiezan antes en un celular en horizontal; las tres formas en fila, no.
@@ -214,12 +215,15 @@ export function UnitView({ num, onSelectUnit }: UnitViewProps) {
   );
 
   return (
-    <View onLayout={(evento) => setAncho(evento.nativeEvent.layout.width)} style={styles.cuerpo}>
+    <View
+      onLayout={(evento) => setAncho(evento.nativeEvent.layout.width)}
+      style={[styles.cuerpo, { maxWidth: Math.min(ANCHO_MAX_UNIDAD, anchoVentana) }]}>
       <Card>
         <View style={holgado ? styles.encabezadoAncho : styles.encabezado}>
           <View style={styles.tituloUnidad}>
             <ThemedText type="label" themeColor="primary">
-              {etiquetaDeUnidad(num, true)} · {nombreTema} · {unit.level}
+              {etiquetaDeUnidad(num, true)} · {nombreTema}
+              {nombreTema.endsWith(unit.level) ? '' : ` · ${unit.level}`}
             </ThemedText>
             <ThemedText type="cardTitle">{unit.title}</ThemedText>
           </View>

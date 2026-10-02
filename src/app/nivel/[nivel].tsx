@@ -24,7 +24,7 @@ export default function NivelScreen() {
   return (
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: nivel ? `Nivel ${nivel}` : 'Nivel' }} />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
         <ScrollView contentContainerStyle={[styles.content, estiloHorizontal]}>
           {!nivel ? (
             <ThemedText themeColor="textSecondary">No se encontró este nivel.</ThemedText>

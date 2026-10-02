@@ -3,14 +3,19 @@ import { Pressable, StyleSheet, View } from 'react-native';
 
 import { SpeakButton } from '@/components/speak-button';
 import { ThemedText } from '@/components/themed-text';
+import { DatoDeVentana, VentanaEmergente } from '@/components/ventana-emergente';
 import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 import { ejemplos, Verbo } from '@/lib/verbos';
 
-/** Renglón compacto de un verbo; al tocarlo se expande con todas sus formas y ejemplos. */
+/**
+ * Renglón compacto de un verbo: al tocarlo se abre una ventana emergente con su significado, todas sus formas y ejemplos.
+ * Con `abierto` (respuesta del asistente) se ve todo en el mismo renglón, que se pliega y se despliega.
+ */
 export const VerbRow = memo(function VerbRow({ verbo, abierto = false }: { verbo: Verbo; abierto?: boolean }) {
   const theme = useTheme();
   const [open, setOpen] = useState(abierto);
+  const [ventana, setVentana] = useState(false);
   const ej = ejemplos(verbo);
 
   const forma = (label: string, value: string, aprox?: string) => (
@@ -38,6 +43,73 @@ export const VerbRow = memo(function VerbRow({ verbo, abierto = false }: { verbo
     </View>
   );
 
+  const cuerpo = (
+    <View style={styles.body}>
+      <View style={styles.formsGrid}>
+        {forma('Presente', `${verbo.base} / ${verbo.tercera}`, verbo.aprox)}
+        {forma('Pasado', verbo.pasado, verbo.aproxPasado)}
+        {forma('Participio', verbo.participio, verbo.aproxParticipio)}
+        {forma('-ing', verbo.ing)}
+      </View>
+
+      <View style={styles.examples}>
+        {ejemplo('🕐 Presente', ej.presente)}
+        {ejemplo('🕐 Ahora', ej.continuo)}
+        {ejemplo('⏪ Pasado', ej.pasado)}
+        {ejemplo('✔️ Perfecto', ej.perfecto)}
+        {ejemplo('⏩ Futuro', ej.futuro)}
+      </View>
+
+      <View style={styles.footer}>
+        <ThemedText type="small" themeColor="textSecondary">
+          {verbo.irregular ? '⚠️ Irregular: hay que memorizarlo' : '✅ Regular: solo agrega -ed'}
+        </ThemedText>
+        <SpeakButton text={`${verbo.base}, ${verbo.pasado.replace(' / ', ', ')}, ${verbo.participio.replace(' / ', ', ')}`} size={20} />
+      </View>
+    </View>
+  );
+
+  if (!abierto) {
+    return (
+      <>
+        <Pressable
+          onPress={() => setVentana(true)}
+          style={({ pressed }) => [
+            styles.row,
+            { backgroundColor: theme.backgroundElement, borderColor: theme.border },
+            pressed && styles.pressed,
+          ]}>
+          <View style={styles.headerText}>
+            <ThemedText type="cardTitle">
+              {verbo.base}{' '}
+              <ThemedText type="small" themeColor="textSecondary">
+                {verbo.aprox}
+              </ThemedText>
+            </ThemedText>
+            <ThemedText type="small" themeColor="primary">
+              {verbo.base} → {verbo.pasado} → {verbo.participio}
+            </ThemedText>
+            <ThemedText type="small" themeColor="textSecondary">
+              Toca para ver el significado
+            </ThemedText>
+          </View>
+        </Pressable>
+        <VentanaEmergente visible={ventana} onClose={() => setVentana(false)}>
+          <View style={styles.header}>
+            <ThemedText type="subtitle" style={styles.headerText}>
+              {verbo.base}
+            </ThemedText>
+            <SpeakButton text={verbo.base} size={22} />
+          </View>
+          <DatoDeVentana etiqueta="Significado">
+            <ThemedText>{verbo.es}</ThemedText>
+          </DatoDeVentana>
+          {cuerpo}
+        </VentanaEmergente>
+      </>
+    );
+  }
+
   return (
     <Pressable
       onPress={() => setOpen((o) => !o)}
@@ -61,31 +133,7 @@ export const VerbRow = memo(function VerbRow({ verbo, abierto = false }: { verbo
         <ThemedText themeColor="textSecondary">{open ? '▲' : '▼'}</ThemedText>
       </View>
 
-      {open && (
-        <View style={styles.body}>
-          <View style={styles.formsGrid}>
-            {forma('Presente', `${verbo.base} / ${verbo.tercera}`, verbo.aprox)}
-            {forma('Pasado', verbo.pasado, verbo.aproxPasado)}
-            {forma('Participio', verbo.participio, verbo.aproxParticipio)}
-            {forma('-ing', verbo.ing)}
-          </View>
-
-          <View style={styles.examples}>
-            {ejemplo('🕐 Presente', ej.presente)}
-            {ejemplo('🕐 Ahora', ej.continuo)}
-            {ejemplo('⏪ Pasado', ej.pasado)}
-            {ejemplo('✔️ Perfecto', ej.perfecto)}
-            {ejemplo('⏩ Futuro', ej.futuro)}
-          </View>
-
-          <View style={styles.footer}>
-            <ThemedText type="small" themeColor="textSecondary">
-              {verbo.irregular ? '⚠️ Irregular: hay que memorizarlo' : '✅ Regular: solo agrega -ed'}
-            </ThemedText>
-            <SpeakButton text={`${verbo.base}, ${verbo.pasado.replace(' / ', ', ')}, ${verbo.participio.replace(' / ', ', ')}`} size={20} />
-          </View>
-        </View>
-      )}
+      {open && cuerpo}
     </Pressable>
   );
 });
@@ -110,7 +158,7 @@ const styles = StyleSheet.create({
     gap: Spacing.half,
   },
   body: {
-    marginTop: Spacing.three,
+    marginTop: Spacing.one,
     gap: Spacing.three,
   },
   formsGrid: {

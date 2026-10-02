@@ -85,7 +85,7 @@ export default function QuizTemaScreen() {
   return (
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: tituloDelQuiz, headerTitle: () => <TituloDeEncabezado>{tituloDelQuiz}</TituloDeEncabezado> }} />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
         <ThemedView style={[styles.content, estiloHorizontal]}>
           {nivel && seccion ? (
             <QuizDelTema key={ronda} nivel={nivel} seccion={seccion} onRepetir={() => setRonda((r) => r + 1)} />

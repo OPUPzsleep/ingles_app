@@ -143,7 +143,7 @@ const CASOS: [string, Esperado | Esperado[]][] = [
   ['identificar personas the man talking to', { fuente: /Identificar personas|Describing People/i }],
   ['cuándo uso will en inglés', { fuente: /Will|will/ }],
   ['diferencia entre may y might', { fuente: /May y might|may|might/i }],
-  ['después de if y when va el presente', { fuente: /Cláusulas con if|Future Clauses|1er condicional/i }],
+  ['después de if y when va el presente', { fuente: /Cláusulas con if|Future Clauses|1er condicional|Primer o segundo condicional/i }],
   // Curso B1 (Unidad 1–12)
   ['adverbios de modo quickly carefully', { fuente: /Adjective|Adverb|Adjetivo/i }],
   ['prefijos de adjetivos un im il ir', { fuente: /Prefijos|Prefixes/i }],
@@ -174,7 +174,7 @@ const CASOS: [string, Esperado | Esperado[]][] = [
   ['whose en oraciones de relativo', { ruta: /^\/unidad\/(147|156)$/ }],
   ['yeah no cuando lo uso', { fuente: /Yeah, no|Where, when/i }],
   // Curso B2 (Unidad 1–12)
-  ['remember to o remember doing', { fuente: /Remember y forget|Simple and Continuous/i }],
+  ['remember to o remember doing', { fuente: /Remember y forget|Remember, Stop, Try|Simple and Continuous/i }],
   ['as as comparaciones igualdad', { fuente: /As… as|Comparisons/i }],
   ['preguntas negativas cómo responder', { fuente: /Preguntas negativas|Negative Questions|Cómo responder/i }],
   ['be supposed to', { fuente: /supposed to/i }],
@@ -326,10 +326,23 @@ const CASOS: [string, Esperado | Esperado[]][] = [
   ['ir al inicio', { ruta: /^\/$/ }],
   ['gramática', { ruta: /^\/gramatica$/ }],
   ['unidad 11 de b1', { ruta: /^\/unidad\/56$/ }],
+  // ── Bloques extra (temas del libro que el plan no incluye) ──
+  ['qué es noun + noun como a bus stop', { fuente: /Noun \+ Noun|Dos sustantivos/i }],
+  ['diferencia entre during for y while', { fuente: /During, For and While|During \+ sustantivo/i }],
+  ['cuándo uso into y cuándo in', { fuente: /To, At, In and Into|Into: entrar/i }],
+  ['although o though o even though', { fuente: /Although|Even Though/i }],
+  ['para qué sirve in case', { fuente: /In Case|In case: por si acaso/i }],
+  ['diferencia entre by y until', { fuente: /By, Until|By o until|Until: hasta/i }],
+  ["mustn't y needn't", { fuente: /Must, Mustn|Needn't y don't have to/i }],
+  ['qué son los question tags', { fuente: /Question Tags|question tags|tag question/i }],
+  ['orden de los adverbios de frecuencia', { fuente: /Word Order|Adverbios de frecuencia/i }],
+  ['even if y even though', { fuente: /Even, As If|Even if y even though/i }],
+  ['cuándo uso whose y where en relativas', { fuente: /Relative Clauses: Whose|Whose: de quien/i }],
+  ['phrasal verbs con up away y back', { fuente: /Phrasal Verbs With Up|con up|con away/i }],
   // ── Estudio ──
   ['¿qué estudio hoy?', { ruta: /^\/unidad\// }],
   ['por dónde empiezo', { ruta: /^\/unidad\// }],
-  ['cuánto llevo avanzado', { texto: /Llevas 3 de 60/ }],
+  ['cuánto llevo avanzado', { texto: /Llevas 3 de 77/ }],
   // ── Charla ──
   ['hola', { texto: /Hola/ }],
   ['gracias', { texto: /De nada/ }],

@@ -1,5 +1,5 @@
 import { Redirect, Stack, useLocalSearchParams } from 'expo-router';
-import { ScrollView, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AccionesDeEncabezado } from '@/components/acciones-de-encabezado';
@@ -17,6 +17,7 @@ export default function UnidadScreen() {
   const num = Number(numParam);
   const isWide = useIsWide();
   const horizontal = useHorizontal();
+  const { width: anchoVentana } = useWindowDimensions();
   const title = getUnit(num)?.title ?? ALL_UNIT_TITLES[num] ?? etiquetaDeUnidad(num);
 
   // Un id que no es de una unidad visible (por ejemplo, una escondida o un enlace viejo) vuelve al Inicio, como +not-found.
@@ -31,8 +32,13 @@ export default function UnidadScreen() {
           headerRight: () => <AccionesDeEncabezado />,
         }}
       />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
-        <ScrollView contentContainerStyle={[styles.content, isWide && styles.contentAncho, horizontal && styles.contentHorizontal]}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
+        <ScrollView contentContainerStyle={[
+            styles.content,
+            isWide && styles.contentAncho,
+            horizontal && styles.contentHorizontal,
+            { maxWidth: Math.min(isWide || horizontal ? 1400 : MaxContentWidth, anchoVentana) },
+          ]}>
           <UnitView num={num} />
         </ScrollView>
       </SafeAreaView>

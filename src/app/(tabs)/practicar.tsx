@@ -41,13 +41,15 @@ export default function PracticarScreen() {
 
   return (
     <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea} edges={['top']}>
+      <SafeAreaView style={styles.safeArea} edges={['top', 'left', 'right']}>
         {/* Modo TDAH con una sola tarjeta: columna angosta y centrada, no media pantalla vacía. */}
         <ScrollView contentContainerStyle={[styles.content, isWide && !soloUna && styles.contentAncho, estiloHorizontal]}>
           <ThemedText type="subtitle">Practicar</ThemedText>
-          <ThemedText themeColor="textSecondary">
-            Sesiones cortas de 10 ejercicios. Lo que falles se repite pronto.
-          </ThemedText>
+          {!horizontal && (
+            <ThemedText themeColor="textSecondary">
+              Sesiones cortas de 10 ejercicios. Lo que falles se repite pronto.
+            </ThemedText>
+          )}
 
           {/* En pantalla ancha las tarjetas van en cuadrícula; en celular, una debajo de otra. */}
           <Cuadricula minColumna={horizontal ? 340 : 440}>

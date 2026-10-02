@@ -23,7 +23,7 @@ export default function QuizUnidadScreen() {
   return (
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: `Quiz · ${etiquetaDeUnidad(num)}` }} />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
         <ThemedView style={[styles.content, estiloHorizontal]}>
           <QuizSession
             pool={pool}

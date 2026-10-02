@@ -41,6 +41,8 @@ const CURSO = CURSOS[ELEGIDO];
 const { bloques: BLOQUES, bloqueDeUnidad: BLOQUE_DE_UNIDAD, conFormas: CON_FORMAS, cobertura: COBERTURA } = CONFIG;
 const NIVEL = ELEGIDO;
 const [PRIMER_ID, ULTIMO_ID] = CONFIG.ids;
+/** Desde este id las unidades son del bloque extra del nivel. */
+const ID_EXTRA = 1000;
 
 /** Los enlaces de «Para profundizar» de las unidades del curso, con el título al que apuntan (se imprimen al final). */
 const enlaces: string[] = [];
@@ -260,7 +262,8 @@ if (COMPLETO) {
   for (let n = PRIMER_ID; n <= ULTIMO_ID; n++) if (!CURSO.unidades[n]) error(`${NIVEL} · id ${n}`, 'falta');
 }
 for (const num of numeros) {
-  if (num < PRIMER_ID || num > ULTIMO_ID) error(`${NIVEL} · id ${num}`, `las unidades del curso son de la ${PRIMER_ID} a la ${ULTIMO_ID}`);
+  // Los ids ≥ 1000 son del bloque extra (opcional, sin examen).
+  if (num < PRIMER_ID || (num > ULTIMO_ID && num < ID_EXTRA)) error(`${NIVEL} · id ${num}`, `las unidades del curso son de la ${PRIMER_ID} a la ${ULTIMO_ID} (o del bloque extra, desde la ${ID_EXTRA})`);
   else revisarUnidad(num, CURSO.unidades[num]);
 }
 

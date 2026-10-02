@@ -70,7 +70,7 @@ export default function PracticaScreen() {
   return (
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: esModo(modo) ? TITULOS_MODO[modo] : 'Práctica' }} />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
         <ScrollView contentContainerStyle={[styles.content, estiloHorizontal]} keyboardShouldPersistTaps="handled">
           {contenido}
         </ScrollView>

@@ -24,7 +24,7 @@ export default function GramaticaCategoriaScreen() {
   return (
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: isWide ? 'Gramática ES' : (cat?.name ?? 'Gramática') }} />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
         {isWide ? (
           <ExploradorGramatica categoriaId={categoria} />
         ) : (

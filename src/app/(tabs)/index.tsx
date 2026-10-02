@@ -20,11 +20,12 @@ import { useProgress } from '@/context/progress-context';
 import { useSettings } from '@/context/settings-context';
 import { useIsWide } from '@/hooks/use-is-wide';
 import { contarUnidadesHechas, nextRecommendedUnit, RUTA } from '@/lib/grammar';
-import { useEstiloHorizontal } from '@/hooks/use-horizontal';
+import { useEstiloHorizontal, useHorizontal } from '@/hooks/use-horizontal';
 
 const TOTAL_UNITS = RUTA.length;
 
 export default function InicioScreen() {
+  const horizontal = useHorizontal();
   const estiloHorizontal = useEstiloHorizontal(1000);
   const router = useRouter();
   const isWide = useIsWide();
@@ -38,7 +39,7 @@ export default function InicioScreen() {
   const quizPct = quizTotal > 0 ? Math.round((quizCorrect / quizTotal) * 100) : null;
 
   const titulo = <ThemedText type="subtitle">Aprende Inglés</ThemedText>;
-  const subtitulo = !focusModeEnabled && (
+  const subtitulo = !focusModeEnabled && !horizontal && (
     <ThemedText themeColor="textSecondary">English Grammar in Use · Raymond Murphy</ThemedText>
   );
   const nivel = (
@@ -98,7 +99,7 @@ export default function InicioScreen() {
 
   return (
     <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea} edges={['top']}>
+      <SafeAreaView style={styles.safeArea} edges={['top', 'left', 'right']}>
         {isWide ? (
           // Pantalla ancha: lo de estudiar a la izquierda; los ajustes a la derecha.
           <ScrollView contentContainerStyle={[styles.content, styles.contentAncho]}>

@@ -55,10 +55,13 @@ export function FlashcardFace({
   flipped,
   onFlip,
   onVerMapa,
+  compacta = false,
 }: {
   card: FlashcardEntry;
   flipped: boolean;
   onFlip: () => void;
+  /** Más baja (celular en horizontal): cabe en la pantalla junto a sus botones. */
+  compacta?: boolean;
   /** Si se pasa, el reverso ofrece un enlace al mapa de tiempos verbales. */
   onVerMapa?: () => void;
 }) {
@@ -67,7 +70,11 @@ export function FlashcardFace({
   return (
     <Pressable
       onPress={onFlip}
-      style={[styles.card, { backgroundColor: theme.backgroundElement, borderColor: theme.border }]}>
+      style={[
+        styles.card,
+        compacta && styles.cardCompacta,
+        { backgroundColor: theme.backgroundElement, borderColor: theme.border },
+      ]}>
       {!flipped ? (
         <View style={styles.content}>
           <ThemedText type="label" themeColor="textSecondary">
@@ -133,6 +140,11 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.four,
     paddingHorizontal: Spacing.three,
     marginBottom: Spacing.three,
+  },
+  cardCompacta: {
+    minHeight: 150,
+    paddingVertical: Spacing.two,
+    marginBottom: Spacing.two,
   },
   content: {
     alignItems: 'center',

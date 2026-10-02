@@ -29,7 +29,7 @@ function PanelForma({ etiqueta, color, detalle, enFila }: PanelFormaProps) {
   const theme = useTheme();
 
   return (
-    <Card style={[enFila && styles.panelEnFila, { borderLeftWidth: 4, borderLeftColor: theme[color] }]}>
+    <Card style={[enFila && styles.panelQueBaja, { borderLeftWidth: 4, borderLeftColor: theme[color] }]}>
       <ThemedText type="label" themeColor={color}>
         {etiqueta}
       </ThemedText>
@@ -82,6 +82,9 @@ interface FormasUnidadProps {
  * ejemplos con traducción y audio, y debajo las contracciones, las respuestas cortas y el error típico.
  */
 export function FormasUnidad({ formas, ancha }: FormasUnidadProps) {
+  // Si los tres paneles no caben en fila, el que sobra baja a la línea siguiente: nunca queda fuera de la pantalla.
+  const filaDeEstilo = styles.filaQueBaja;
+
   return (
     <View style={styles.contenedor}>
       {!!formas.titulo && (
@@ -89,14 +92,14 @@ export function FormasUnidad({ formas, ancha }: FormasUnidadProps) {
           {formas.titulo}
         </ThemedText>
       )}
-      <View style={ancha ? styles.fila : styles.columna}>
+      <View style={ancha ? filaDeEstilo : styles.columna}>
         {PANELES.map(({ clave, etiqueta, color }) => (
           <PanelForma key={clave} etiqueta={etiqueta} color={color} detalle={formas[clave]} enFila={ancha} />
         ))}
       </View>
 
       {(!!formas.nota || !!formas.ojo) && (
-        <View style={ancha ? styles.fila : styles.columna}>
+        <View style={ancha ? filaDeEstilo : styles.columna}>
           {!!formas.nota && (
             <CajaNota
               titulo="📌 Para recordar"
@@ -116,16 +119,19 @@ const styles = StyleSheet.create({
   contenedor: {
     gap: Spacing.three,
   },
-  fila: {
+  filaQueBaja: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     gap: Spacing.three,
   },
   columna: {
     gap: Spacing.three,
   },
-  panelEnFila: {
-    flex: 1,
-    minWidth: 0,
+  panelQueBaja: {
+    flexGrow: 1,
+    flexBasis: 280,
+    minWidth: 240,
+    maxWidth: '100%',
   },
   ejemplos: {
     gap: Spacing.two,

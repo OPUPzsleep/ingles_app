@@ -1,4 +1,4 @@
-import { BLOQUE_A2_1, BLOQUE_A2_2, BLOQUE_A2_3, BLOQUE_A2_4 } from '@/data/grammar/topics';
+import { BLOQUE_A2_1, BLOQUE_A2_2, BLOQUE_A2_3, BLOQUE_A2_4, BLOQUE_EXTRA_A2 } from '@/data/grammar/topics';
 
 import type { ConfigCurso } from './tipos';
 
@@ -16,6 +16,11 @@ const BLOQUE_DE_UNIDAD: Record<number, string> = {
   22: BLOQUE_A2_4,
   23: BLOQUE_A2_4,
   24: BLOQUE_A2_4,
+  // Bloque extra (ids ≥ 1000)
+  1001: BLOQUE_EXTRA_A2,
+  1002: BLOQUE_EXTRA_A2,
+  1003: BLOQUE_EXTRA_A2,
+  1004: BLOQUE_EXTRA_A2,
 };
 
 /** Las unidades con sus tres formas (afirmativa, negativa, pregunta): to be + presente simple, going to, pasado simple, there is / are, should, pasado continuo, have got, will y may / might. */
@@ -112,6 +117,32 @@ COBERTURA[24] = [
   ['Presente continuo y Going to: repaso y contraste', /Presente continuo y going to/],
   ['Cláusulas con IF y WHEN', /Cláusulas con if y when/],
   ['Cláusulas con AFTER y BEFORE', /after y before/],
+];
+
+// Bloque extra: temas del libro que el plan no incluye.
+COBERTURA[1001] = [
+  ['Dos sustantivos juntos', /Dos sustantivos juntos/],
+  ['Plural del primer sustantivo', /primer sustantivo va en singular/],
+  ["Noun + noun o 's", /Noun \+ noun o 's/],
+  ['Con números', /Con números/],
+];
+COBERTURA[1002] = [
+  ['During', /During \+ sustantivo/],
+  ['For', /For \+ cuánto tiempo/],
+  ['While', /While \+ una oración/],
+  ['For o during', /For o during/],
+];
+COBERTURA[1003] = [
+  ['To', /To: movimiento/],
+  ['At', /At: un punto/],
+  ['In', /In: dentro de/],
+  ['Into', /Into: entrar/],
+  ['Get in, get on', /get in, get on/],
+];
+COBERTURA[1004] = [
+  ['Qué es un phrasal verb', /Qué es un phrasal verb/],
+  ['Separables', /puedes separarlos/],
+  ['No separables', /no se separan/],
 ];
 
 export const CONFIG_A2: ConfigCurso = {

@@ -20,7 +20,7 @@ export default function GramaticaIndexScreen() {
   return (
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: 'Gramática ES' }} />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
         {isWide ? (
           <ExploradorGramatica />
         ) : (

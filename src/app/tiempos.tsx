@@ -49,7 +49,7 @@ export default function TiemposScreen() {
   return (
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: 'Tiempos verbales' }} />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
         {isWide ? (
           <SplitLayout
             izquierda={

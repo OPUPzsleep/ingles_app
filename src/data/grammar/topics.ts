@@ -30,6 +30,14 @@ export const BLOQUE_C1_2 = 'Bloque 2 · Vida laboral, desafíos y el futuro';
 export const BLOQUE_C1_3 = 'Bloque 3 · Convivencia, ciencia de los alimentos y éxito / felicidad';
 export const BLOQUE_C1_4 = 'Bloque 4 · Viajes, cultura y habilidad';
 
+/**
+ * Un «Bloque extra» por nivel (A2, B1, B2) con los temas del libro que el plan de estudios no incluye: unidades opcionales
+ * con ids ≥ 1000 que se ven después del bloque 4. Su quiz es normal (12 preguntas de sus unidades), sin examen de 20.
+ */
+export const BLOQUE_EXTRA_A2 = 'Extras del libro · A2';
+export const BLOQUE_EXTRA_B1 = 'Extras del libro · B1';
+export const BLOQUE_EXTRA_B2 = 'Extras del libro · B2';
+
 /** Los temas de gramática, en el orden en que aparecen dentro de cada nivel. Cada unidad dice a cuál pertenece (`topic`). */
 export const TOPICS: Topic[] = [
   { name: BLOQUE_1, icon: '🧱', examen: 20 },
@@ -40,14 +48,17 @@ export const TOPICS: Topic[] = [
   { name: BLOQUE_A2_2, icon: '🏙️', examen: 20 },
   { name: BLOQUE_A2_3, icon: '🧳', examen: 20 },
   { name: BLOQUE_A2_4, icon: '🗣️', examen: 20 },
+  { name: BLOQUE_EXTRA_A2, icon: '📚' },
   { name: BLOQUE_B1_1, icon: '🎭', examen: 20 },
   { name: BLOQUE_B1_2, icon: '🍽️', examen: 20 },
   { name: BLOQUE_B1_3, icon: '💭', examen: 20 },
   { name: BLOQUE_B1_4, icon: '📰', examen: 20 },
+  { name: BLOQUE_EXTRA_B1, icon: '📚' },
   { name: BLOQUE_B2_1, icon: '🌍', examen: 20 },
   { name: BLOQUE_B2_2, icon: '⚖️', examen: 20 },
   { name: BLOQUE_B2_3, icon: '🛠️', examen: 20 },
   { name: BLOQUE_B2_4, icon: '⭐', examen: 20 },
+  { name: BLOQUE_EXTRA_B2, icon: '📚' },
   { name: BLOQUE_C1_1, icon: '📱', examen: 20 },
   { name: BLOQUE_C1_2, icon: '💼', examen: 20 },
   { name: BLOQUE_C1_3, icon: '🧪', examen: 20 },

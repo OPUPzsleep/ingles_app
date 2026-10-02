@@ -18,9 +18,10 @@ import { useProgress } from '@/context/progress-context';
 import { useSettings } from '@/context/settings-context';
 import { getUnit, NIVELES, nextRecommendedUnit, progresoDeNivel, siguienteNivel } from '@/lib/grammar';
 import { CEFR_LEVELS, type CefrLevel } from '@/types/grammar';
-import { useEstiloHorizontal } from '@/hooks/use-horizontal';
+import { useEstiloHorizontal, useHorizontal } from '@/hooks/use-horizontal';
 
 export default function AprenderScreen() {
+  const horizontal = useHorizontal();
   const estiloHorizontal = useEstiloHorizontal(1000);
   const router = useRouter();
   const theme = useTheme();
@@ -92,11 +93,13 @@ export default function AprenderScreen() {
   const lista = (
     <>
       <ThemedText type="subtitle">Aprender</ThemedText>
-      <ThemedText themeColor="textSecondary">
-        {focusModeEnabled
-          ? 'Modo TDAH: solo tu nivel y el siguiente, sin lista larga'
-          : 'Avanza nivel por nivel: cada tema y cada nivel terminan con su propio quiz'}
-      </ThemedText>
+      {!horizontal && (
+        <ThemedText themeColor="textSecondary">
+          {focusModeEnabled
+            ? 'Modo TDAH: solo tu nivel y el siguiente, sin lista larga'
+            : 'Avanza nivel por nivel: cada tema y cada nivel terminan con su propio quiz'}
+        </ThemedText>
+      )}
 
       <View style={styles.levelRow}>
         <ThemedText type="smallBold" style={styles.levelLabel}>
@@ -120,9 +123,11 @@ export default function AprenderScreen() {
           </Pressable>
         ))}
       </View>
-      <ThemedText type="small" themeColor="textSecondary" style={styles.levelHint}>
-        Ajusta esto según tu resultado del EF SET u otro test de nivel.
-      </ThemedText>
+      {!horizontal && (
+        <ThemedText type="small" themeColor="textSecondary" style={styles.levelHint}>
+          Ajusta esto según tu resultado del EF SET u otro test de nivel.
+        </ThemedText>
+      )}
 
       <Card onPress={() => router.push('/tiempos')} style={isWide ? styles.mapaCompacto : undefined}>
         <ThemedText type={isWide ? 'smallBold' : 'cardTitle'}>🗺️ Mapa de tiempos verbales</ThemedText>
@@ -145,7 +150,7 @@ export default function AprenderScreen() {
 
   return (
     <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea} edges={['top']}>
+      <SafeAreaView style={styles.safeArea} edges={['top', 'left', 'right']}>
         {isWide ? (
           <SplitLayout
             izquierda={lista}

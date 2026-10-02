@@ -51,7 +51,7 @@ export default function QuizNivelScreen() {
   return (
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: nivel ? `Quiz · Nivel ${nivel}` : 'Quiz' }} />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
         <ThemedView style={[styles.content, estiloHorizontal]}>
           {nivel ? (
             <QuizDelNivel key={ronda} nivel={nivel} onRepetir={() => setRonda((r) => r + 1)} />

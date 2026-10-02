@@ -20,7 +20,7 @@ export default function GramaticaConceptoScreen() {
   return (
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: isWide ? 'Gramática ES' : (concept?.title ?? 'Concepto') }} />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
         {isWide ? (
           <ExploradorGramatica conceptoId={id} />
         ) : (

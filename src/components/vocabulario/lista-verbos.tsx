@@ -6,6 +6,7 @@ import { VerbRow } from '@/components/verb-row';
 import { CampoBusqueda } from '@/components/vocabulario/campo-busqueda';
 import { anchoMaximo, columnasPara, NOTA_PRONUNCIACION } from '@/components/vocabulario/comun';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
+import { useHorizontal } from '@/hooks/use-horizontal';
 import { useTheme } from '@/hooks/use-theme';
 import { normalizar } from '@/lib/texto';
 import { ALL_VERBOS, type Verbo } from '@/lib/verbos';
@@ -20,6 +21,7 @@ const FILTROS: { value: Filtro; label: string }[] = [
 
 /** Los verbos con todas sus formas; se buscan en inglés o en español. */
 export function ListaVerbos({ encabezado }: { encabezado: ReactNode }) {
+  const horizontal = useHorizontal();
   const theme = useTheme();
   const { width } = useWindowDimensions();
   const columnas = columnasPara(width);
@@ -60,13 +62,17 @@ export function ListaVerbos({ encabezado }: { encabezado: ReactNode }) {
         <View style={columnas > 1 ? styles.cabeceraAncha : undefined}>
           {encabezado}
           <ThemedText type="subtitle">Verbos</ThemedText>
-          <ThemedText themeColor="textSecondary" style={styles.subtitle}>
-            {total} verbos que cambian según el tiempo ({irregulares} irregulares). Toca uno para ver todas sus
-            formas.
-          </ThemedText>
-          <ThemedText type="small" themeColor="textSecondary" style={styles.subtitle}>
-            {NOTA_PRONUNCIACION}
-          </ThemedText>
+          {!horizontal && (
+            <>
+              <ThemedText themeColor="textSecondary" style={styles.subtitle}>
+                {total} verbos que cambian según el tiempo ({irregulares} irregulares). Toca uno para ver su significado
+                y todas sus formas.
+              </ThemedText>
+              <ThemedText type="small" themeColor="textSecondary" style={styles.subtitle}>
+                {NOTA_PRONUNCIACION}
+              </ThemedText>
+            </>
+          )}
           <CampoBusqueda valor={search} onChange={setSearch} placeholder="🔍 Buscar: went, comer, gone…" />
           <View style={styles.filterRow}>
             {FILTROS.map((f) => {

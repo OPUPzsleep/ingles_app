@@ -5,6 +5,7 @@ import { ThemedText } from '@/components/themed-text';
 import { CampoBusqueda } from '@/components/vocabulario/campo-busqueda';
 import { anchoMaximo, columnasPara } from '@/components/vocabulario/comun';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
+import { useHorizontal } from '@/hooks/use-horizontal';
 import { useTheme } from '@/hooks/use-theme';
 import type { Resultado } from '@/lib/buscar-vocabulario';
 import { normalizar } from '@/lib/texto';
@@ -91,6 +92,7 @@ export function Explorador<T>({
   delGrupo,
   tarjeta,
 }: ExploradorProps<T>) {
+  const horizontal = useHorizontal();
   const theme = useTheme();
   const { width } = useWindowDimensions();
   const columnas = columnasPara(width);
@@ -161,12 +163,14 @@ export function Explorador<T>({
           ) : (
             <>
               <ThemedText type="subtitle">{titulo}</ThemedText>
-              <ThemedText themeColor="textSecondary" style={styles.espacio}>
-                {descripcion}
-              </ThemedText>
+              {!horizontal && (
+                <ThemedText themeColor="textSecondary" style={styles.espacio}>
+                  {descripcion}
+                </ThemedText>
+              )}
             </>
           )}
-          {!!nota && (
+          {!!nota && !horizontal && (
             <ThemedText type="small" themeColor="textSecondary" style={styles.espacio}>
               {nota}
             </ThemedText>

@@ -1,4 +1,4 @@
-import { BLOQUE_B2_1, BLOQUE_B2_2, BLOQUE_B2_3, BLOQUE_B2_4 } from '@/data/grammar/topics';
+import { BLOQUE_B2_1, BLOQUE_B2_2, BLOQUE_B2_3, BLOQUE_B2_4, BLOQUE_EXTRA_B2 } from '@/data/grammar/topics';
 
 import type { ConfigCurso } from './tipos';
 
@@ -16,6 +16,11 @@ const BLOQUE_DE_UNIDAD: Record<number, string> = {
   122: BLOQUE_B2_4,
   123: BLOQUE_B2_4,
   124: BLOQUE_B2_4,
+  // Bloque extra (ids ≥ 1000)
+  1201: BLOQUE_EXTRA_B2,
+  1202: BLOQUE_EXTRA_B2,
+  1203: BLOQUE_EXTRA_B2,
+  1204: BLOQUE_EXTRA_B2,
 };
 
 /** Las unidades con sus tres formas (se llena con cada bloque). */
@@ -88,6 +93,32 @@ const COBERTURA: Record<number, [tema: string, buscar: RegExp][]> = {
     ["La posición de 'not'", /La posición de not/],
   ],
 };
+
+
+COBERTURA[1201] = [
+  ['Verbos con preposición fija', /Verbos con una preposición fija/],
+  ['Verbo + objeto + preposición', /Verbo \+ objeto \+ preposición/],
+  ['Adjetivos con preposición', /Adjetivos con preposición/],
+  ['Errores típicos', /Errores típicos/],
+];
+COBERTURA[1202] = [
+  ['Whose', /Whose/],
+  ['Where, when, why', /Where, when y why/],
+  ['Preposición + whom', /Preposición \+ whom/],
+  ['Cláusulas con -ing', /Cláusulas con -ing/],
+];
+COBERTURA[1203] = [
+  ['Even', /Even: incluso/],
+  ['Even if / even though', /Even if y even though/],
+  ['As if', /As if y as though/],
+  ['When + presente perfecto', /When, after y as soon as/],
+];
+COBERTURA[1204] = [
+  ['Con up', /con up/],
+  ['Con away', /con away/],
+  ['Con back', /con back/],
+  ['Separables', /Separables e inseparables/],
+];
 
 export const CONFIG_B2: ConfigCurso = {
   nivel: 'B2',

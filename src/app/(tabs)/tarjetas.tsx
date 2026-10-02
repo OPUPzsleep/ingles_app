@@ -7,10 +7,11 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
 import { esTipoOracion } from '@/data/frases/frases-tiempos';
-import { useEstiloHorizontal } from '@/hooks/use-horizontal';
+import { useEstiloHorizontal, useHorizontal } from '@/hooks/use-horizontal';
 
 export default function TarjetasScreen() {
-  const estiloHorizontal = useEstiloHorizontal(900);
+  const estiloHorizontal = useEstiloHorizontal(1000);
+  const horizontal = useHorizontal();
   // `?tipo=past-simple` llega desde el mapa de tiempos ("Practicar estas frases").
   const { tipo: tipoParam } = useLocalSearchParams<{ tipo?: string }>();
   const router = useRouter();
@@ -18,12 +19,16 @@ export default function TarjetasScreen() {
 
   return (
     <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea} edges={['top']}>
+      <SafeAreaView style={styles.safeArea} edges={['top', 'left', 'right']}>
         <ScrollView contentContainerStyle={[styles.content, estiloHorizontal]}>
-          <ThemedText type="subtitle">Tarjetas</ThemedText>
-          <ThemedText themeColor="textSecondary" style={styles.subtitle}>
-            300 frases del día a día · presente, pasado y futuro
-          </ThemedText>
+          {!horizontal && (
+            <>
+              <ThemedText type="subtitle">Tarjetas</ThemedText>
+              <ThemedText themeColor="textSecondary" style={styles.subtitle}>
+                300 frases del día a día · presente, pasado y futuro
+              </ThemedText>
+            </>
+          )}
           <FlashcardView
             key={tipo ?? 'todas'}
             tipo={tipo}

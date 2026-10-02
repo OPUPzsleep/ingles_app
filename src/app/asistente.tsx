@@ -45,7 +45,7 @@ export default function AsistenteScreen() {
           ),
         }}
       />
-      <SafeAreaView style={styles.safeArea} edges={['bottom']}>
+      <SafeAreaView style={styles.safeArea} edges={['bottom', 'left', 'right']}>
         <Chat key={conversacion} />
       </SafeAreaView>
     </ThemedView>

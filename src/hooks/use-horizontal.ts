@@ -20,5 +20,7 @@ export function useHorizontal(): boolean {
  */
 export function useEstiloHorizontal(anchoMaximo = 1000): ViewStyle | undefined {
   const horizontal = useHorizontal();
-  return horizontal ? { maxWidth: anchoMaximo, paddingVertical: Spacing.two } : undefined;
+  const { width } = useWindowDimensions();
+  // El tope nunca pasa del ancho de la ventana: así ninguna columna puede quedar fuera de la pantalla.
+  return horizontal ? { maxWidth: Math.min(anchoMaximo, width), paddingVertical: Spacing.two } : undefined;
 }
