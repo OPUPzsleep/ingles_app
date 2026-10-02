@@ -522,6 +522,7 @@ const UNIDAD_3: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: El Pronombre (Pronoun)', ruta: '/gramatica/concepto/el-pronombre-pronoun' },
     { etiqueta: '📖 Gramática: El Adjetivo (Adjective)', ruta: '/gramatica/concepto/el-adjetivo-adjective' },
+    { unidad: 20 },
   ],
 };
 

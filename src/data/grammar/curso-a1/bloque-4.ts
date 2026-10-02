@@ -157,6 +157,7 @@ const UNIDAD_10: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: El Pasado: simple, continuo y perfecto', ruta: '/gramatica/concepto/el-pasado-simple-vs-continuo-vs-perfecto' },
     { etiqueta: '🔊 Gramática: La terminación -ED', ruta: '/gramatica/concepto/ed-pronunciacion' },
+    { unidad: 21 },
   ],
 };
 

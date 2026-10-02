@@ -124,4 +124,64 @@ export const PRONUN_CURSO_A2: Record<number, PronunUnit> = {
     ],
     vocab: palabras('bank', 'pharmacy', 'restaurant', 'street', 'near', 'far'),
   },
+  19: {
+    tips: [
+      {
+        head: 'should: la l no suena',
+        body: 'En should y shouldn\'t la l es muda: should suena /ʃʊd/ y shouldn\'t suena /ˈʃʊdnt/. Pasa igual con could y would.',
+        examples: ['should /ʃʊd/', "shouldn't /ˈʃʊdnt/", 'could /kʊd/'],
+      },
+      {
+        head: 'to de propósito es débil',
+        body: 'En I went to buy bread el to suena débil /tə/ y se une con el verbo. En It\'s easy to learn, igual.',
+        examples: ['to buy /tə baɪ/', "easy to learn /ˈiːzi tə lɜːrn/"],
+      },
+      {
+        head: "Let's y Why don't we",
+        body: "Let's suena /lets/ y se une con el verbo siguiente. En Why don't we la t casi no se oye: /waɪ doʊn wi/.",
+        examples: ["Let's go /lets ɡoʊ/", "Why don't we /waɪ doʊn wi/"],
+      },
+    ],
+    vocab: palabras('doctor', 'headache', 'sleep', 'important', 'dangerous', 'healthy'),
+  },
+  20: {
+    tips: [
+      {
+        head: 'Whose y who\'s suenan igual',
+        body: "Whose y who's se pronuncian igual /huːz/. Solo el contexto y la escritura las distinguen: «Whose bag is this?» · «Who's that?».",
+        examples: ['Whose /huːz/', "Who's /huːz/"],
+      },
+      {
+        head: 'Los pronombres posesivos',
+        body: 'Los pronombres posesivos terminan en un sonido /z/ (menos mine y his). Suenan como una palabra corta y fuerte.',
+        examples: ['mine /maɪn/', 'yours /jɔːrz/', 'hers /hɜːrz/', 'ours /ˈaʊərz/'],
+      },
+      {
+        head: 'one y ones',
+        body: 'one empieza con el sonido /w/ aunque se escribe con o: /wʌn/. ones suena /wʌnz/ con una /z/ al final.',
+        examples: ['one /wʌn/', 'ones /wʌnz/', 'the red one /ðə red wʌn/'],
+      },
+    ],
+    vocab: palabras('bag', 'jacket', 'shoes', 'key', 'umbrella', 'watch'),
+  },
+  21: {
+    tips: [
+      {
+        head: 'was y were con -ing',
+        body: 'En el pasado continuo was suena /wəz/ y were suena /wər/ (débiles). El -ing suena /ɪŋ/ y el acento va en el verbo.',
+        examples: ['I was cooking /aɪ wəz ˈkʊkɪŋ/', 'they were playing /ðeɪ wər ˈpleɪɪŋ/'],
+      },
+      {
+        head: 'when y while',
+        body: 'when suena /wen/ y while suena /waɪl/. Son parecidas, pero while es larga (un diptongo) y when es corta.',
+        examples: ['when /wen/', 'while /waɪl/'],
+      },
+      {
+        head: 'Los reflexivos',
+        body: 'En los reflexivos el acento va en -self: myself /maɪˈself/, yourself /jɔːrˈself/. En himself, la h casi no se oye: /hɪmˈself/.',
+        examples: ['myself /maɪˈself/', 'herself /hərˈself/', 'themselves /ðəmˈselvz/'],
+      },
+    ],
+    vocab: palabras('myself', 'yourself', 'himself', 'herself', 'ourselves', 'themselves'),
+  },
 };

@@ -73,6 +73,28 @@ COBERTURA[18] = [
   ['Peticiones con CAN y COULD', /Peticiones con can y could/],
 ];
 
+COBERTURA[19] = [
+  ['Infinitivos para expresar razones', /Infinitivo de propósito/],
+  ["Estructura: It's + adjetivo + to", /It's \+ adjetivo \+ to/],
+  ['Formas de dar consejos', /Dar consejos/],
+  ['Formas de hacer sugerencias', /Hacer sugerencias/],
+];
+COBERTURA[20] = [
+  ['Preguntas con Whose…?', /Whose/],
+  ['Pronombres posesivos', /Pronombres posesivos/],
+  ['Orden de los adjetivos', /orden de los adjetivos/i],
+  ['Pronombres ONE y ONES', /One y ones/],
+  ['Expresiones de ubicación después de sustantivos', /Ubicación después de un sustantivo/],
+  ['Expresiones de ubicación después de pronombres', /Ubicación después de one y ones/],
+];
+COBERTURA[21] = [
+  ['Pasado continuo: cuándo se usa', /Pasado continuo: ¿cuándo/],
+  ['Afirmativas', /Afirmativa/],
+  ['Negativas', /Negativa/],
+  ['Preguntas', /Preguntas y respuestas/],
+  ['Pronombres reflexivos', /Pronombres reflexivos/],
+];
+
 export const CONFIG_A2: ConfigCurso = {
   nivel: 'A2',
   ids: [13, 24],
