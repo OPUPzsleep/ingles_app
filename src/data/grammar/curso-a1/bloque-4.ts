@@ -341,6 +341,7 @@ const UNIDAD_11: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: El Sustantivo (Noun)', ruta: '/gramatica/concepto/el-sustantivo-noun' },
     { etiqueta: '📖 Gramática: Determinantes y Cuantificadores', ruta: '/gramatica/concepto/determinantes-y-cuantificadores-determiners' },
+    { unidad: 18 },
   ],
 };
 
@@ -453,6 +454,7 @@ const UNIDAD_12: Unit = {
     { etiqueta: '📖 Gramática: Determinantes y Cuantificadores', ruta: '/gramatica/concepto/determinantes-y-cuantificadores-determiners' },
     { etiqueta: '📖 Gramática: El Sustantivo (Noun)', ruta: '/gramatica/concepto/el-sustantivo-noun' },
     { unidad: 14 },
+    { unidad: 17 },
   ],
 };
 

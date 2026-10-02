@@ -64,4 +64,64 @@ export const PRONUN_CURSO_A2: Record<number, PronunUnit> = {
     ],
     vocab: palabras('usually', 'always', 'weather', 'rain', 'ice', 'temperature'),
   },
+  16: {
+    tips: [
+      {
+        head: 'going to suena «gonna»',
+        body: "Al hablar rápido going to se pronuncia /ˈɡʌnə/ (gonna). Se escucha mucho en inglés informal; al escribir se usa going to. En I'm going to el to es muy débil /tə/.",
+        examples: ["I'm going to /aɪm ˈɡoʊɪŋ tə/", "I'm gonna go /aɪm ˈɡʌnə ɡoʊ/"],
+      },
+      {
+        head: 'Las contracciones del futuro',
+        body: "En una conversación se usan las formas cortas: I'm, he's, she's, we're, they're. La negativa se contrae con n't: isn't, aren't.",
+        examples: ["she's going /ʃiːz ˈɡoʊɪŋ/", "we're going /wɪr ˈɡoʊɪŋ/", "isn't /ˈɪzənt/"],
+      },
+      {
+        head: 'tomorrow y tonight',
+        body: 'En tomorrow el acento va en la segunda sílaba /təˈmɑːroʊ/. En tonight también /təˈnaɪt/. La primera sílaba es muy débil.',
+        examples: ['tomorrow /təˈmɑːroʊ/', 'tonight /təˈnaɪt/'],
+      },
+    ],
+    vocab: palabras('tomorrow', 'weekend', 'plan', 'trip', 'gift', 'present'),
+  },
+  17: {
+    tips: [
+      {
+        head: 'La terminación -ed: tres sonidos',
+        body: 'La -ed del pasado suena /t/ después de sonidos sordos, /d/ después de sonidos sonoros y /ɪd/ solo después de t o d. Casi nunca es una sílaba extra.',
+        examples: ['worked /wɜːrkt/', 'played /pleɪd/', 'wanted /ˈwɑːntɪd/'],
+      },
+      {
+        head: 'was y were son débiles',
+        body: 'En una frase normal was suena /wəz/ y were suena /wər/. En una respuesta corta se dicen completos: «Yes, I was» /wʌz/.',
+        examples: ['I was at home /aɪ wəz/', 'Yes, I was. /jes aɪ ˈwʌz/'],
+      },
+      {
+        head: 'the: dos sonidos',
+        body: 'The suena /ðə/ antes de una consonante (the book) y /ði/ antes de una vocal (the apple). Con the + énfasis se dice /ðiː/.',
+        examples: ['the book /ðə bʊk/', 'the apple /ði ˈæpəl/'],
+      },
+    ],
+    vocab: palabras('yesterday', 'birthday', 'party', 'story', 'life', 'year'),
+  },
+  18: {
+    tips: [
+      {
+        head: "there's y there are",
+        body: "there's suena /ðerz/ y there are suena /ðer ər/. Se parece a theirs /ðerz/ (de ellos), así que el contexto ayuda a distinguirlas.",
+        examples: ["there's /ðerz/", 'there are /ðer ər/', 'Is there? /ɪz ðer/'],
+      },
+      {
+        head: 'Could you… suena «cudyu»',
+        body: 'En Could you la d y la y se unen y suenan /dʒ/: /ˈkʊdʒu/. Pasa igual con Would you /ˈwʊdʒu/ y Can I /kən aɪ/.',
+        examples: ['Could you /ˈkʊdʒu/', 'Would you /ˈwʊdʒu/', 'Can I /ˈkæn aɪ/'],
+      },
+      {
+        head: 'one y some',
+        body: 'one suena /wʌn/ (empieza como una w) y some suena /sʌm/. La o de las dos suena como una a corta.',
+        examples: ['one /wʌn/', 'some /sʌm/', "there's one /ðerz wʌn/"],
+      },
+    ],
+    vocab: palabras('bank', 'pharmacy', 'restaurant', 'street', 'near', 'far'),
+  },
 };

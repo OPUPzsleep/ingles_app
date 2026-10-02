@@ -51,6 +51,28 @@ const COBERTURA: Record<number, [tema: string, buscar: RegExp][]> = {
   ],
 };
 
+COBERTURA[16] = [
+  ['Futuro con GOING TO', /Going to: planes/],
+  ['Going to: negativa y preguntas', /Going to: negativa/],
+  ['Objetos indirectos', /Objetos indirectos/],
+  ['Pronombres de objeto indirecto', /Pronombres de objeto indirecto/],
+  ['Presente continuo para el futuro', /Presente continuo para el futuro/],
+];
+COBERTURA[17] = [
+  ['Pasado simple: afirmativa', /Pasado simple: afirmativa/],
+  ['Pasado simple: negativa', /Pasado simple: negativa/],
+  ['Pasado simple: preguntas', /Preguntas de Sí \/ No/],
+  ["Uso de 'Be born'", /Be born/],
+  ['Uso general de determinantes', /Uso general/],
+  ['Uso específico de determinantes', /Uso específico/],
+];
+COBERTURA[18] = [
+  ['Is there? / Are there?', /Is there…\?/],
+  ['Pronombres ONE y SOME', /One y some/],
+  ['Ofrecimientos con CAN', /Ofrecimientos con can/],
+  ['Peticiones con CAN y COULD', /Peticiones con can y could/],
+];
+
 export const CONFIG_A2: ConfigCurso = {
   nivel: 'A2',
   ids: [13, 24],

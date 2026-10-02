@@ -370,6 +370,7 @@ const UNIDAD_5: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: Determinantes y Cuantificadores', ruta: '/gramatica/concepto/determinantes-y-cuantificadores-determiners' },
     { etiqueta: '📖 Gramática: IN / ON / AT — lugar', ruta: '/gramatica/concepto/in-on-at-preposiciones-de-lugar' },
+    { unidad: 18 },
   ],
 };
 
@@ -516,6 +517,7 @@ const UNIDAD_6: Unit = {
   relacionados: [
     { etiqueta: '📖 Gramática: Frases para opinar, acordar y reaccionar', ruta: '/gramatica/concepto/frases-para-opinar-acordar-y-reaccionar' },
     { etiqueta: '📖 Gramática: SINCE / FOR — tiempo', ruta: '/gramatica/concepto/since-for-tiempo' },
+    { unidad: 18 },
   ],
 };
 
