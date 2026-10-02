@@ -1,4 +1,4 @@
-import { FORMAS_CURSO_A1 } from '@/data/grammar/curso-a1';
+import { FORMAS_CURSO } from '@/data/grammar/curso';
 import { aux, f, fl, neg, resto, suj, verbo } from '@/data/grammar/formulas';
 import type { FormasUnidad } from '@/types/grammar';
 
@@ -504,9 +504,9 @@ const FORMAS_DEL_LIBRO: Record<number, FormasUnidad> = {
 
 /**
  * Por número de unidad (una, o varias cuando la unidad tiene más de una estructura). Las unidades que no están aquí
- * (no son de verbos) no muestran este bloque. Las unidades 1–12 son las del curso A1 (`FORMAS_CURSO_A1`).
+ * (no son de verbos) no muestran este bloque. Las unidades 1–12 son las del curso A1 (`FORMAS_CURSO`).
  */
 export const FORMAS_UNIDAD: Record<number, FormasUnidad | FormasUnidad[]> = {
   ...FORMAS_DEL_LIBRO,
-  ...FORMAS_CURSO_A1,
+  ...FORMAS_CURSO,
 };

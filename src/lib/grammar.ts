@@ -1,5 +1,4 @@
-import { UNIDADES_CURSO_A1 } from '@/data/grammar/curso-a1';
-import { PRONUN_CURSO_A1 } from '@/data/grammar/curso-a1/pronunciacion';
+import { PRONUN_CURSO, UNIDADES_CURSO } from '@/data/grammar/curso';
 import { LIBRO_DE_NUEVO } from '@/data/grammar/numeracion';
 import { preguntasExtraDeTema } from '@/data/grammar/preguntas-tema';
 import { PRONUN_DATA } from '@/data/grammar/pronunciation';
@@ -127,11 +126,11 @@ export function nextRecommendedUnit(doneUnits: number[], userLevel: CefrLevel): 
 /**
  * La pronunciación de una unidad: la suya si tiene, y si no la del "ancla" más cercana hacia atrás en el orden
  * del libro (los números actuales siguen los niveles, no el libro, así que se compara por el número del libro).
- * Las unidades del curso A1 usan solo la suya; las anclas del libro con sus números (1, 2, 3, 5, 10) quedan para
- * repartir la pronunciación entre las unidades de A2 en adelante.
+ * Las unidades de un curso (A1, A2) usan solo la suya; las anclas del libro que no son de un curso quedan para
+ * repartir la pronunciación entre el resto de las unidades.
  */
 export function getPronunVocab(num: number): PronunUnit | null {
-  if (UNIDADES_CURSO_A1[num]) return PRONUN_CURSO_A1[num] ?? null;
+  if (UNIDADES_CURSO[num]) return PRONUN_CURSO[num] ?? null;
   if (PRONUN_DATA[num]) return PRONUN_DATA[num];
   const delLibro = LIBRO_DE_NUEVO[num - 1];
   if (delLibro === undefined) return null;
@@ -162,10 +161,10 @@ export interface VocabResult extends VocabEntry {
 export function getAllVocab(): VocabResult[] {
   const all: VocabResult[] = [];
 
-  // Las anclas del libro de las unidades que ya son del curso A1 no se cuentan: el curso trae las suyas.
+  // Las anclas del libro de las unidades que ya son de un curso no se cuentan: el curso trae las suyas.
   const pronunciaciones: Record<number, PronunUnit> = {
-    ...Object.fromEntries(Object.entries(PRONUN_DATA).filter(([clave]) => !UNIDADES_CURSO_A1[Number(clave)])),
-    ...PRONUN_CURSO_A1,
+    ...Object.fromEntries(Object.entries(PRONUN_DATA).filter(([clave]) => !UNIDADES_CURSO[Number(clave)])),
+    ...PRONUN_CURSO,
   };
   const pronunKeys = Object.keys(pronunciaciones)
     .map(Number)

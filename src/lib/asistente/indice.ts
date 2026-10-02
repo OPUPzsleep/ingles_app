@@ -2,13 +2,14 @@ import { TIPOS, type TipoOracion } from '@/data/frases/frases-tiempos';
 import { TIEMPOS_INFO } from '@/data/frases/tiempos-info';
 import { GRAM_CONCEPTS } from '@/data/gramatica/concepts';
 import { FORMAS_UNIDAD } from '@/data/grammar/formas';
+import { PRONUN_CURSO, UNIDADES_CURSO } from '@/data/grammar/curso';
 import { INFO_NIVEL } from '@/data/grammar/niveles';
 import { PRONUN_DATA } from '@/data/grammar/pronunciation';
 import { UNITS } from '@/data/grammar/units';
 import { FRASES_UTILES } from '@/data/vocabulario/frases-utiles';
 import { VOCAB_TOPICS } from '@/data/vocabulario/tematico';
 import { tokenizar } from '@/lib/asistente/tokens';
-import type { GrammarFormula } from '@/types/grammar';
+import type { GrammarFormula, PronunUnit } from '@/types/grammar';
 
 export type TipoDoc =
   | 'unidad'
@@ -229,7 +230,12 @@ function docsDeTiempos(docs: Doc[]) {
 }
 
 function docsDePronunciacion(docs: Doc[]) {
-  for (const [clave, unidad] of Object.entries(PRONUN_DATA)) {
+  // La pronunciación de los cursos, y las anclas del libro solo si son de una unidad visible que no sea del curso.
+  const pronunciaciones: [string, PronunUnit][] = [
+    ...Object.entries(PRONUN_DATA).filter(([clave]) => UNITS[Number(clave)] && !UNIDADES_CURSO[Number(clave)]),
+    ...Object.entries(PRONUN_CURSO),
+  ];
+  for (const [clave, unidad] of pronunciaciones) {
     unidad.tips.forEach((consejo, i) =>
       docs.push({
         id: `p${clave}-${i}`,

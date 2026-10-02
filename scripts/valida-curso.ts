@@ -1,130 +1,42 @@
 /**
- * Revisa el contenido del curso A1 (las unidades 1–12 y el examen de 20 ejercicios de cada uno de sus 4 bloques):
+ * Revisa el contenido de un curso (A1: unidades 1–12; A2: unidades 13–24; cada una con el examen de 20 ejercicios de
+ * sus 4 bloques):
  *  - cada unidad trae sus 5 ejercicios y cada bloque su examen de 20, todos con 4 opciones distintas, una respuesta
- *    marcada y su explicación, y sin repetirse entre unidades y exámenes;
+ *    marcada y su explicación, y sin repetirse entre unidades y exámenes (ni entre cursos);
  *  - cada tema (bloque de teoría) trae al menos 3 ejemplos con su traducción, y las unidades de verbos sus tres formas;
  *  - cada tema del plan de estudios aparece en su unidad (lista de verificación);
  *  - los enlaces de «Para profundizar» llevan a algo que existe, y las palabras pedidas a Vocabulario están ahí;
- *  - avisos (no fallan): palabras en inglés que no son del vocabulario A1, para revisarlas a mano.
+ *  - invariantes entre cursos y unidades visibles (títulos, formas, temas, nombres de examen) y el registro de escondidas;
+ *  - avisos (no fallan): palabras en inglés que no son del vocabulario del nivel, para revisarlas a mano.
  *
- * Se corre con `npx tsx scripts/valida-curso-a1.ts`; con `--completo` exige las 12 unidades y los 4 exámenes.
+ * Se corre con `npx tsx scripts/valida-curso.ts a1|a2`; con `--completo` exige las 12 unidades y los 4 exámenes.
  * Termina con error si algo falla.
  */
-import { PALABRAS_FALTANTES } from '@/data/grammar/curso-a1/ayuda';
-import { EXAMENES_CURSO_A1, FORMAS_CURSO_A1, UNIDADES_CURSO_A1 } from '@/data/grammar/curso-a1';
-import { PRONUN_CURSO_A1 } from '@/data/grammar/curso-a1/pronunciacion';
-import { BLOQUE_1, BLOQUE_2, BLOQUE_3, BLOQUE_4 } from '@/data/grammar/topics';
+import { PALABRAS_FALTANTES } from '@/data/grammar/curso/ayuda';
+import { CURSOS, ESCONDIDAS, type NivelDeCurso } from '@/data/grammar/curso';
+import { FORMAS_UNIDAD } from '@/data/grammar/formas';
+import { TOPICS } from '@/data/grammar/topics';
+import { ALL_UNIT_TITLES } from '@/data/grammar/unit-titles';
 import { UNITS } from '@/data/grammar/units';
 import { GRAM_CONCEPTS } from '@/data/gramatica/concepts';
 import { VOCAB_TOPICS } from '@/data/vocabulario/tematico';
 import type { FormasUnidad, QuizQuestion, Unit } from '@/types/grammar';
 
+import { CONFIG_A1 } from './curso-config/a1';
+import { CONFIG_A2 } from './curso-config/a2';
+
 const COMPLETO = process.argv.includes('--completo');
-
-/** El bloque al que pertenece cada unidad del curso. */
-const BLOQUE_DE_UNIDAD: Record<number, string> = {
-  1: BLOQUE_1,
-  2: BLOQUE_1,
-  3: BLOQUE_1,
-  4: BLOQUE_2,
-  5: BLOQUE_2,
-  6: BLOQUE_2,
-  7: BLOQUE_3,
-  8: BLOQUE_3,
-  9: BLOQUE_3,
-  10: BLOQUE_4,
-  11: BLOQUE_4,
-  12: BLOQUE_4,
-};
-const BLOQUES = [BLOQUE_1, BLOQUE_2, BLOQUE_3, BLOQUE_4];
-
-/** Las unidades de verbos, que deben traer sus tres formas (afirmativa, negativa y pregunta). */
-const CON_FORMAS = [1, 4, 5, 7, 9, 10];
-
-/**
- * Lista de verificación: los temas del plan de estudios de cada unidad. Cada uno se busca en los títulos de los bloques
- * de teoría de la unidad (y en su texto): si falta, la unidad se quedó a medias.
- */
-const COBERTURA: Record<number, [tema: string, buscar: RegExp][]> = {
-  1: [
-    ['Verbo BE con I, you, we, he, she, they', /to be: ser o estar/i],
-    ['Afirmativas', /Afirmativa/i],
-    ['Negativas', /Negativa/i],
-    ['Preguntas de Sí / No', /Preguntas de S/i],
-    ['Respuestas cortas', /Respuestas cortas/i],
-    ["What's…? y Where…?", /What's…\? y Where/i],
-  ],
-  2: [
-    ['Artículos a / an', /A y an/],
-    ['Artículo the', /The: el, la/],
-    ['This y these', /This y these/],
-    ['Plurales regulares', /Plurales regulares/],
-    ['Plurales irregulares', /Plurales irregulares/],
-  ],
-  3: [
-    ["Posesivo con 's", /Posesivo con 's/],
-    ["Posesivo con s'", /Posesivo con s'/],
-    ['Adjetivos posesivos', /Adjetivos posesivos/],
-  ],
-  4: [
-    ['Presente simple: cuándo se usa', /Presente simple: ¿cuándo/],
-    ['Afirmativas', /Afirmativa/],
-    ['Negativas', /Negativa/],
-    ['Preguntas de Sí / No', /Preguntas de Sí/],
-    ['Respuestas cortas', /Respuestas cortas/],
-    ['Preguntas de información', /Preguntas de información/],
-    ['Adverbios de frecuencia', /Adverbios de frecuencia/],
-  ],
-  5: [
-    ['There is / There are', /There is \/ There are/],
-    ['Negativa, pregunta y respuestas cortas', /Negativa, pregunta/],
-    ['Cuantificadores', /Cuantificadores/],
-    ['Adjetivos antes del sustantivo', /Adjetivos antes del sustantivo/],
-  ],
-  7: [
-    ['Presente continuo: cuándo se usa', /Presente continuo: ¿cuándo/],
-    ['Afirmativas', /Afirmativa/],
-    ['Negativas', /Negativa/],
-    ['Preguntas de Sí / No', /Preguntas de Sí/],
-    ['Respuestas cortas', /Respuestas cortas/],
-    ['Preguntas de información', /Preguntas de información/],
-  ],
-  8: [
-    ['Imperativos', /Imperativos/],
-    ['Imperativo negativo', /Imperativo negativo/],
-    ['Verbos seguidos de infinitivo (like to, want to, need to, have to)', /like to \/ want to \/ need to \/ have to/],
-  ],
-  9: [
-    ['Preguntas con How much', /How much/],
-    ['This / these / that / those', /This \/ these \/ that \/ those/],
-    ["Can y can't", /Can y can't/],
-  ],
-  10: [
-    ['Pasado simple: cuándo se usa', /Pasado simple: ¿cuándo/],
-    ['Verbos regulares', /Verbos regulares/],
-    ['Verbos irregulares', /Verbos irregulares/],
-    ['Negativa', /Negativa/],
-    ['Preguntas de Sí / No', /Preguntas de Sí/],
-    ['Preguntas de información con did', /Preguntas de información con did/],
-    ['Pasado de to be: afirmativa y negativa', /Pasado de to be/],
-    ['Pasado de to be: preguntas de información', /was \/ were/],
-  ],
-  11: [
-    ['Sustantivos contables e incontables', /Sustantivos contables e incontables/],
-    ['How much / How many', /How much\? \/ How many\?/],
-    ['Would you like (to)…?', /Would you like/],
-  ],
-  12: [
-    ['Some', /Some:/],
-    ['Any', /Any:/],
-    ['A lot of, much y many', /A lot of, much y many/],
-  ],
-  6: [
-    ['La hora', /La hora/],
-    ['A qué hora', /A qué hora/],
-    ["Sugerencias con Let's", /Let's: sugerencias/],
-  ],
-};
+const PEDIDO = process.argv.slice(2).find((arg: string) => /^a[12]$/i.test(arg));
+if (!PEDIDO) {
+  console.error('Uso: npx tsx scripts/valida-curso.ts a1|a2 [--completo]');
+  process.exit(2);
+}
+const ELEGIDO = PEDIDO.toUpperCase() as NivelDeCurso;
+const CONFIG = ELEGIDO === 'A1' ? CONFIG_A1 : CONFIG_A2;
+const CURSO = CURSOS[ELEGIDO];
+const { bloques: BLOQUES, bloqueDeUnidad: BLOQUE_DE_UNIDAD, conFormas: CON_FORMAS, cobertura: COBERTURA } = CONFIG;
+const NIVEL = ELEGIDO;
+const [PRIMER_ID, ULTIMO_ID] = CONFIG.ids;
 
 const errores: string[] = [];
 const avisos: string[] = [];
@@ -135,7 +47,7 @@ const normalizar = (texto: string) => texto.toLowerCase().replace(/\s+/g, ' ').t
 /** Caracteres de control que no deben estar en ningún texto (salvo el salto de línea). */
 const CONTROL = /[\u0000-\u0009\u000b-\u001f]/;
 
-// ─── Vocabulario A1 (para los avisos) ───
+// ─── Vocabulario del nivel (para los avisos) ───
 
 const BASICAS = `a an the this that these those i you he she it we they me him her us them my your his its our their mine yours
 am is are was were be been being do does did done have has had having go goes went gone going can could will would shall
@@ -160,11 +72,11 @@ ok okay oh wow yeah well maybe really together every maybe`;
 
 const CONOCIDAS = new Set<string>(BASICAS.split(/\s+/).filter(Boolean));
 for (const tema of VOCAB_TOPICS) {
-  if (tema.level !== 'A1') continue;
+  if (!CONFIG.nivelesDeVocabulario.includes(tema.level)) continue;
   for (const entrada of tema.words) for (const palabra of entrada.w.toLowerCase().split(/[^a-z']+/)) if (palabra) CONOCIDAS.add(palabra);
 }
 
-/** ¿La palabra (o su base: sin -s, -es, -ed, -ing, -ly, con 's) es del vocabulario A1? */
+/** ¿La palabra (o su base: sin -s, -es, -ed, -ing, -ly, con 's) es del vocabulario del nivel? */
 function esConocida(palabra: string): boolean {
   const base = palabra.replace(/'s$/, '').replace(/n't$/, '').replace(/'(m|re|ve|ll|d)$/, '');
   if (!base || CONOCIDAS.has(base)) return true;
@@ -219,8 +131,8 @@ const clave = (q: QuizQuestion) => normalizar(`${q.q} ${q.opts[q.ans] ?? ''}`);
 // ─── Revisión de unidades ───
 
 function revisarUnidad(num: number, unit: Unit) {
-  const donde = `Unidad ${num}`;
-  if (unit.level !== 'A1') error(donde, `el nivel es ${unit.level}`);
+  const donde = `${NIVEL} · id ${num}`;
+  if (unit.level !== NIVEL) error(donde, `el nivel es ${unit.level}`);
   if (unit.topic !== BLOQUE_DE_UNIDAD[num]) error(donde, `el tema es «${unit.topic}» y debería ser «${BLOQUE_DE_UNIDAD[num]}»`);
   if (!unit.title.trim()) error(donde, 'sin título');
 
@@ -248,7 +160,7 @@ function revisarUnidad(num: number, unit: Unit) {
     }
   });
 
-  const formas = FORMAS_CURSO_A1[num];
+  const formas = CURSO.formas[num];
   const listaDeFormas: FormasUnidad[] = formas ? (Array.isArray(formas) ? formas : [formas]) : [];
   if (CON_FORMAS.includes(num) && listaDeFormas.length === 0) error(donde, 'le faltan sus tres formas (afirmativa, negativa, pregunta)');
   for (const forma of listaDeFormas) {
@@ -289,7 +201,7 @@ function revisarUnidad(num: number, unit: Unit) {
   if (!unit.table) aviso(donde, 'no tiene tabla de referencia');
   if (!unit.contrastCard) aviso(donde, 'no tiene tarjeta de contraste');
 
-  const pronunciacion = PRONUN_CURSO_A1[num];
+  const pronunciacion = CURSO.pronunciacion[num];
   if (!pronunciacion || pronunciacion.tips.length < 2) error(donde, 'le faltan consejos de pronunciación (mínimo 2)');
   if (!pronunciacion || pronunciacion.vocab.length < 4) error(donde, 'le faltan palabras con pronunciación (mínimo 4)');
   // Los ejemplos de pronunciación van en una sola línea: más largos que esto se salen de la pantalla del celular.
@@ -321,7 +233,7 @@ function revisarUnidad(num: number, unit: Unit) {
   if (!COBERTURA[num]) aviso(donde, 'no tiene lista de verificación de temas');
 
   const raras = palabrasDesconocidas(textosEnIngles);
-  if (raras.length > 0) aviso(donde, `palabras fuera del vocabulario A1 para revisar: ${raras.join(', ')}`);
+  if (raras.length > 0) aviso(donde, `palabras fuera del vocabulario ${NIVEL} para revisar: ${raras.join(', ')}`);
 
   console.log(
     `  Unidad ${String(num).padStart(2)} · ${unit.title}\n` +
@@ -330,23 +242,33 @@ function revisarUnidad(num: number, unit: Unit) {
   );
 }
 
-console.log('\n== Curso A1: unidades ==');
-const numeros = Object.keys(UNIDADES_CURSO_A1).map(Number).sort((a, b) => a - b);
+console.log(`\n== Curso ${NIVEL}: unidades ==`);
+const numeros = Object.keys(CURSO.unidades).map(Number).sort((a, b) => a - b);
 if (COMPLETO) {
-  for (let n = 1; n <= 12; n++) if (!UNIDADES_CURSO_A1[n]) error(`Unidad ${n}`, 'falta');
+  for (let n = PRIMER_ID; n <= ULTIMO_ID; n++) if (!CURSO.unidades[n]) error(`${NIVEL} · id ${n}`, 'falta');
 }
 for (const num of numeros) {
-  if (num < 1 || num > 12) error(`Unidad ${num}`, 'las unidades del curso son de la 1 a la 12');
-  else revisarUnidad(num, UNIDADES_CURSO_A1[num]);
+  if (num < PRIMER_ID || num > ULTIMO_ID) error(`${NIVEL} · id ${num}`, `las unidades del curso son de la ${PRIMER_ID} a la ${ULTIMO_ID}`);
+  else revisarUnidad(num, CURSO.unidades[num]);
 }
 
-console.log('\n== Curso A1: exámenes de bloque ==');
+console.log(`\n== Curso ${NIVEL}: exámenes de bloque ==`);
 const todas = new Map<string, string>();
+// Los ejercicios de los otros cursos también cuentan: no se repiten entre cursos.
+for (const otro of Object.values(CURSOS)) {
+  if (otro === CURSO) continue;
+  for (const [id, unit] of Object.entries(otro.unidades)) for (const q of unit.quiz) todas.set(clave(q), `${otro.nivel} · id ${id}`);
+  for (const [tema, examen] of Object.entries(otro.examenes)) for (const q of examen) todas.set(clave(q), `examen «${tema}» (${otro.nivel})`);
+}
 for (const num of numeros) {
-  for (const q of UNIDADES_CURSO_A1[num].quiz) todas.set(clave(q), `unidad ${num}`);
+  for (const q of CURSO.unidades[num].quiz) {
+    const otra = todas.get(clave(q));
+    if (otra) error(`${NIVEL} · id ${num}`, `«${q.q}» ya está en ${otra}`);
+    todas.set(clave(q), `unidad ${num}`);
+  }
 }
 for (const bloque of BLOQUES) {
-  const examen = EXAMENES_CURSO_A1[bloque];
+  const examen = CURSO.examenes[bloque];
   const unidadesDelBloque = numeros.filter((n) => BLOQUE_DE_UNIDAD[n] === bloque);
   if (!examen) {
     if (COMPLETO || unidadesDelBloque.length > 0) error(bloque, 'falta el examen');
@@ -363,10 +285,50 @@ for (const bloque of BLOQUES) {
   // De cada pregunta solo se miran las partes en inglés (sin lo que va entre paréntesis ni lo que empieza con «¿»).
   const textosEnIngles = examen.flatMap((q) => [q.q.replace(/\([^)]*\)/g, ' ').replace(/¿.*$/, ' '), q.opts[q.ans]]);
   const raras = palabrasDesconocidas(textosEnIngles);
-  if (raras.length > 0) aviso(donde, `palabras fuera del vocabulario A1 para revisar: ${raras.join(', ')}`);
+  if (raras.length > 0) aviso(donde, `palabras fuera del vocabulario ${NIVEL} para revisar: ${raras.join(', ')}`);
   const reparto = posiciones(examen);
   if (Math.max(...reparto) > 6) aviso(donde, `la respuesta correcta se concentra en una letra: ${reparto.join(' / ')} (A / B / C / D)`);
   console.log(`  ${bloque}: ${examen.length} ejercicios · respuestas A/B/C/D: ${reparto.join(' / ')}`);
+}
+
+// ─── Invariantes entre cursos y unidades visibles ───
+
+console.log('\n== Invariantes ==');
+for (const id of Object.keys(UNITS).map(Number)) {
+  if (!ALL_UNIT_TITLES[id]) error(`Unidad ${id}`, 'está en UNITS y no tiene título en ALL_UNIT_TITLES');
+}
+for (const id of Object.keys(FORMAS_UNIDAD).map(Number)) {
+  if (!UNITS[id]) error(`Formas ${id}`, 'FORMAS_UNIDAD tiene una clave que no es una unidad');
+}
+for (const curso of Object.values(CURSOS)) {
+  for (const id of Object.keys(curso.unidades).map(Number)) {
+    if (FORMAS_UNIDAD[id] !== curso.formas[id]) error(`${curso.nivel} · id ${id}`, 'las formas visibles no son las del curso (¿clave vieja pegada al id?)');
+  }
+}
+const nombresDeTema = new Set(TOPICS.map((tema) => tema.name));
+for (const curso of Object.values(CURSOS)) {
+  for (const tema of Object.keys(curso.examenes)) {
+    if (!nombresDeTema.has(tema)) error(`Examen «${tema}»`, `no es un tema de TOPICS (${curso.nivel})`);
+  }
+  for (const [id, unit] of Object.entries(curso.unidades)) {
+    if (!nombresDeTema.has(unit.topic)) error(`${curso.nivel} · id ${id}`, `su tema «${unit.topic}» no está en TOPICS`);
+  }
+}
+{
+  const vistos = new Map<string, string>();
+  for (const curso of Object.values(CURSOS)) {
+    for (const tema of Object.keys(curso.examenes)) {
+      const otro = vistos.get(tema);
+      if (otro) error(`Examen «${tema}»`, `el nombre está repetido entre ${otro} y ${curso.nivel}`);
+      vistos.set(tema, curso.nivel);
+    }
+  }
+}
+const escondidas = Object.entries(ESCONDIDAS);
+console.log(`  Unidades escondidas del libro: ${escondidas.length}`);
+for (const [id, motivo] of escondidas) {
+  console.log(`    ${id}: ${motivo}`);
+  if (UNITS[Number(id)]) error(`Unidad ${id}`, 'está en ESCONDIDAS y sigue en UNITS');
 }
 
 if (PALABRAS_FALTANTES.length > 0) error('Vocabulario', `palabras pedidas que no están en Vocabulario: ${[...new Set(PALABRAS_FALTANTES)].join(', ')}`);
@@ -381,4 +343,4 @@ if (errores.length > 0) {
   console.log(`\n${errores.length} falla(s).`);
   process.exit(1);
 }
-console.log('\n✓ El curso A1 pasa todas las revisiones.');
+console.log(`\n✓ El curso ${NIVEL} pasa todas las revisiones.`);
